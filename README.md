@@ -1,4 +1,5 @@
 # discord.py-docs-한글화-프로젝트
+https://jebserver.iptime.org/dpdocs/index.html  
 이곳에서는 로케일 파일만 올립니다.  
 Team EG Main Project  
 
