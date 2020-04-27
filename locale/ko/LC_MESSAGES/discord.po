@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../discord.rst:4
 msgid "Creating a Bot Account"
-msgstr ""
+msgstr "봇 계정 제작"
 
 #: ../../discord.rst:6
 msgid ""
@@ -45,11 +45,11 @@ msgstr ""
 
 #: ../../discord.rst:12
 msgid "Click on the \"New Application\" button."
-msgstr ""
+msgstr "\"New Application\" 버튼을 클릭하세요."
 
 #: ../../discord.rst:17
 msgid "Give the application a name and click \"Create\"."
-msgstr ""
+msgstr "이름을 입력한 후 \"create\" 버튼을 누르세요."
 
 #: ../../discord.rst:22
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../discord.rst:24
 msgid "Click \"Yes, do it!\" to continue."
-msgstr ""
+msgstr "\"Yes, do it!\" 버튼을 눌러 계속 진행하세요."
 
 #: ../../discord.rst:28
 msgid ""
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../discord.rst:36
 msgid "Copy the token using the \"Copy\" button."
-msgstr ""
+msgstr "\"Copy\" 버튼으로 토큰을 복사하세요."
 
 #: ../../discord.rst:38
 msgid "**This is not the Client Secret at the General Information page**"
@@ -110,27 +110,27 @@ msgstr ""
 
 #: ../../discord.rst:58
 msgid "Inviting Your Bot"
-msgstr ""
+msgstr "서버에 봇 초대"
 
 #: ../../discord.rst:60
 msgid "So you've made a Bot User but it's not actually in any server."
-msgstr ""
+msgstr "봇 계정이 만들어졌지만 아직 그 봇은 아무 서버에도 들어가있지 않습니다."
 
 #: ../../discord.rst:62
 msgid "If you want to invite your bot you must create an invite URL for it."
-msgstr ""
+msgstr "만약 봇을 초대하고 싶으시다면 초대 URL을 생성하셔야 합니다."
 
 #: ../../discord.rst:66
 msgid "Click on your bot's page."
-msgstr ""
+msgstr "봇 페이지로 들어가세요."
 
 #: ../../discord.rst:67
 msgid "Go to the \"OAuth2\" tab."
-msgstr ""
+msgstr "\"OAuth2\" 탭으로 들어가세요."
 
 #: ../../discord.rst:72
 msgid "Tick the \"bot\" checkbox under \"scopes\"."
-msgstr ""
+msgstr "\"scopes\" 밑에 있는 \"bot\" 체크박스를 체크하세요."
 
 #: ../../discord.rst:77
 msgid ""
