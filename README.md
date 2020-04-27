@@ -12,6 +12,7 @@
     2-2. (옵션) <http://www.sphinx-doc.org/en/master/usage/advanced/intl.html> 여기를 참고해서 html로 변환해서 테스트를 진행해주세요.  
 3. Pull Request에 변경한 파일 리스트를 함께 적어서 올려주세요. 쉬운 검수를 위함입니다.  
 
-## 질문이 있나요
+## 질문이 있나요?
 
-디스코드: eunwoo1104#9600
+번역을 순조롭게 진행하기 위해 디스코드 서버를 개설했습니다.  
+<https://discord.gg/YbfbxpX>
