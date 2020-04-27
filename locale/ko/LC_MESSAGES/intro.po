@@ -59,7 +59,7 @@ msgid ""
 "To get voice support, you should use ``discord.py[voice]`` instead of "
 "``discord.py``, e.g. ::"
 msgstr "음성 기능을 사용하기 위해서는 ``discord.py`` 대신 "
-"``discord.py[voice]``를 사용하셔야 합니다. 예를 들어: ::"
+" ``discord.py[voice]`` 를 사용하셔야 합니다. 예를 들어: ::"
 
 #: ../../intro.rst:37
 msgid ""
