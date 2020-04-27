@@ -23,4 +23,6 @@ msgid ""
 "Created using <a href=\"http://sphinx-doc.org/\">Sphinx</a> "
 "%(sphinx_version)s."
 msgstr ""
+"<a href=\"http://sphinx-doc.org/\">Sphinx</a>"
+"%(sphinx_version)(을)를 사용하여 제작되었습니다."
 
