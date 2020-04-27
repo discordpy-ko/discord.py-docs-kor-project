@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../faq.rst:5
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "자주 묻는 질문들"
 
 #: ../../faq.rst:7
 msgid ""
@@ -30,19 +30,19 @@ msgstr ""
 
 #: ../../faq.rst:11
 msgid "Questions"
-msgstr ""
+msgstr "질문들"
 
 #: ../../faq.rst:14
 msgid "Coroutines"
-msgstr ""
+msgstr "코루틴"
 
 #: ../../faq.rst:16
 msgid "Questions regarding coroutines and asyncio belong here."
-msgstr ""
+msgstr "코루틴과 asyncio 관련 질문은 이쪽에 있습니다."
 
 #: ../../faq.rst:19
 msgid "What is a coroutine?"
-msgstr ""
+msgstr "코루틴이 뭔가요?"
 
 #: ../../faq.rst:21
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../faq.rst:29
 msgid "Where can I use ``await``\\?"
-msgstr ""
+msgstr "``await``을 어디에 사용하나요?"
 
 #: ../../faq.rst:31
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../faq.rst:34
 msgid "What does \"blocking\" mean?"
-msgstr ""
+msgstr "\"blocking\"의 뜻이 뭔가요?"
 
 #: ../../faq.rst:36
 msgid ""
@@ -115,15 +115,15 @@ msgstr ""
 
 #: ../../faq.rst:75
 msgid "General"
-msgstr ""
+msgstr "일반"
 
 #: ../../faq.rst:77
 msgid "General questions regarding library usage belong here."
-msgstr ""
+msgstr "라이브러리와 관련된 일반적인 질문은 이쪽에 있습니다."
 
 #: ../../faq.rst:80
 msgid "Where can I find usage examples?"
-msgstr ""
+msgstr "예시들을 어디서 볼 수 있나요?"
 
 #: ../../faq.rst:82
 msgid ""
@@ -134,7 +134,7 @@ msgstr ""
 
 #: ../../faq.rst:86
 msgid "How do I set the \"Playing\" status?"
-msgstr ""
+msgstr "봇의 \"하는 중\" 상태 메시지를 어디서 설정할 수 있나요?"
 
 #: ../../faq.rst:88
 msgid ""
@@ -164,17 +164,17 @@ msgstr ""
 
 #: ../../faq.rst:106
 msgid "How do I send a message to a specific channel?"
-msgstr ""
+msgstr "어떻게 특정한 채널에 미시지를 보낼 수 있나요?"
 
 #: ../../faq.rst:108
 msgid ""
 "You must fetch the channel directly and then call the appropriate method."
 " Example: ::"
-msgstr ""
+msgstr "채널의 정보(ID 등)을 바로 가져와 적절한 메서드를 호출해야 합니다."
 
 #: ../../faq.rst:114
 msgid "How do I send a DM?"
-msgstr ""
+msgstr "어떻게 DM(개인 메시지)을 보낼 수 있나요?"
 
 #: ../../faq.rst:116
 msgid ""
@@ -190,7 +190,7 @@ msgstr ""
 
 #: ../../faq.rst:126
 msgid "How do I get the ID of a sent message?"
-msgstr ""
+msgstr "어떻게 보낸 메시지의 ID를 얻을 수 있나요?"
 
 #: ../../faq.rst:128
 msgid ""
@@ -200,11 +200,11 @@ msgstr ""
 
 #: ../../faq.rst:135
 msgid "How do I upload an image?"
-msgstr ""
+msgstr "어떻게 이미지를 업로드할 수 있나요?"
 
 #: ../../faq.rst:137
 msgid "To upload something to Discord you have to use the :class:`File` object."
-msgstr ""
+msgstr "디스코드에 무언가를 업로드하기 위해서는 :class:`File` 오브젝트를 활용해야 합니다."
 
 #: ../../faq.rst:139
 msgid ""
@@ -235,11 +235,11 @@ msgstr ""
 
 #: ../../faq.rst:176
 msgid "How can I add a reaction to a message?"
-msgstr ""
+msgstr "어떻게 하면 메시지에 반응을 추가할 수 있나요?"
 
 #: ../../faq.rst:178
 msgid "You use the :meth:`Message.add_reaction` method."
-msgstr ""
+msgstr ":meth:`Message.add_reaction` 메서드를 활용하세요."
 
 #: ../../faq.rst:180
 msgid ""
@@ -263,7 +263,7 @@ msgstr ""
 #: ../../faq.rst:186 ../../faq.rst:202 ../../faq.rst:277 ../../faq.rst:293
 #: ../../faq.rst:313
 msgid "Quick example: ::"
-msgstr ""
+msgstr "빠른 예시: ::"
 
 #: ../../faq.rst:192
 msgid ""
