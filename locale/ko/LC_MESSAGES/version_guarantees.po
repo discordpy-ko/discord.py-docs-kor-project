@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../version_guarantees.rst:4
 msgid "Version Guarantees"
-msgstr ""
+msgstr "버전 개런티"
 
 #: ../../version_guarantees.rst:6
 msgid ""
@@ -30,6 +30,10 @@ msgid ""
 " with the fairly dynamic nature of Python it can be hard to discern what "
 "can be considered a breaking change and what isn't."
 msgstr ""
+"라이브러리는 `유의적 버전화 원리 <https://semver.org/>`_를 따릅니다. 이는"
+" 주요 버전이 업데이트될 때마다 호환되지 않는 API 변경이 발생한다는 뜻입니다."
+" 그러나 Python의 상당히 역동적인 성격과 달리 디스코드의 부족한 개런티로는"
+" 무엇이 큰 변화이고 아닌지를 분별하기는 어려울 수 있습니다."
 
 #: ../../version_guarantees.rst:8
 msgid ""
@@ -39,52 +43,56 @@ msgid ""
 "bound to change. This includes attributes that start with an underscore "
 "or functions without an underscore that are not documented."
 msgstr ""
+"첫 번째로 알아두어야 할 것은 큰 변화는 **공개적으로 작성된 함수와 클래스**에만"
+" 적용된다는 점입니다. 만약 이 문서에 등록되지 않았다면 그것은 공개 API의 일부가"
+" 아니므로 변경되어야 합니다. 문서에 작성되지 않은 밑줄로 시작하는 속성 또는"
+" 밑줄로 시작하지 않는 함수가 여기에 포함됩니다."
 
 #: ../../version_guarantees.rst:12
 msgid "The examples below are non-exhaustive."
-msgstr ""
+msgstr "아래의 예시들은 포괄적이지 않습니다."
 
 #: ../../version_guarantees.rst:15
 msgid "Examples of Breaking Changes"
-msgstr ""
+msgstr "큰 변화의 예"
 
 #: ../../version_guarantees.rst:17
 msgid "Changing the default parameter value to something else."
-msgstr ""
+msgstr "기본 매개 변수 값을 다른 것으로 바꾸는 것."
 
 #: ../../version_guarantees.rst:18
 msgid "Renaming a function without an alias to an old function."
-msgstr ""
+msgstr "기존 함수를 별칭으로 두지 않고 함수의 이름을 바꾸는 것."
 
 #: ../../version_guarantees.rst:19
 msgid "Adding or removing parameters to an event."
-msgstr ""
+msgstr "이벤트에 매개 변수 추가 또는 삭제."
 
 #: ../../version_guarantees.rst:22
 msgid "Examples of Non-Breaking Changes"
-msgstr ""
+msgstr "큰 변화가 아닌 것의 예"
 
 #: ../../version_guarantees.rst:24
 msgid "Adding or removing private underscored attributes."
-msgstr ""
+msgstr "비공개 밑줄 속성의 추가 또는 제거."
 
 #: ../../version_guarantees.rst:25
 msgid "Adding an element into the ``__slots__`` of a data class."
-msgstr ""
+msgstr "``__slots__``의 데이터 클래스에 요소 추가."
 
 #: ../../version_guarantees.rst:26
 msgid "Changing the behaviour of a function to fix a bug."
-msgstr ""
+msgstr "버그를 해결하기 위한 함수의 작동 방식 변경."
 
 #: ../../version_guarantees.rst:27
 msgid "Changes in the documentation."
-msgstr ""
+msgstr "문서의 변경."
 
 #: ../../version_guarantees.rst:28
 msgid "Modifying the internal HTTP handling."
-msgstr ""
+msgstr "내부적인 HTTP 처리 수정."
 
 #: ../../version_guarantees.rst:29
 msgid "Upgrading the dependencies to a new version, major or otherwise."
-msgstr ""
+msgstr "주 버전 또는 다른 새로운 버전으로의 의존성 업그레이드."
 
