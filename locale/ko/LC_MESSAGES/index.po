@@ -33,7 +33,7 @@ msgstr "**기능들:**"
 
 #: ../../index.rst:16
 msgid "Modern Pythonic API using ``async``\\/``await`` syntax"
-msgstr "``async``와 ``await`` 구문을 사용한 최신의 Python스러운 API"
+msgstr "``async``\\/``await`` 구문을 사용한 최신의 Python스러운 API"
 
 #: ../../index.rst:17
 msgid "Sane rate limit handling that prevents 429s"
@@ -75,9 +75,9 @@ msgstr "찾으시는 내용이 없다면, 아래의 페이지에서 시도해보
 
 #: ../../index.rst:58
 msgid ":ref:`genindex`"
-msgstr ":ref:`색인`"
+msgstr ":ref:`genindex`"
 
 #: ../../index.rst:59
 msgid ":ref:`search`"
-msgstr ":ref:`검색`"
+msgstr ":ref:`search`"
 

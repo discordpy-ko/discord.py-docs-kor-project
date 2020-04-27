@@ -25,7 +25,7 @@ msgstr "빠른 시작"
 msgid ""
 "This page gives a brief introduction to the library. It assumes you have "
 "the library installed, if you don't check the :ref:`installing` portion."
-msgstr "이 페이지는 라이브러리에 대한 간결한 소개를 합니다. 라이브러리가 설치되있다고 가정하므로, 만약에 그렇지 않다면 :ref:`설치` 항목을 확인해주세요."
+msgstr "이 페이지는 라이브러리에 대한 간결한 소개를 합니다. 라이브러리가 설치되있다고 가정하므로, 만약에 그렇지 않다면 :ref:`installing` 항목을 확인해주세요."
 
 #: ../../quickstart.rst:12
 msgid "A Minimal Bot"
@@ -35,28 +35,28 @@ msgstr "최소한의 봇"
 msgid ""
 "Let's make a bot that replies to a specific message and walk you through "
 "it."
-msgstr ""
+msgstr "한번 특정 메시지에 답변하는 봇을 만들고 어떻게 작동하는지 봅시다."
 
 #: ../../quickstart.rst:16
 msgid "It looks something like this:"
-msgstr ""
+msgstr "그것은 이렇게 생겼습니다:"
 
 #: ../../quickstart.rst:38
 msgid ""
 "Let's name this file ``example_bot.py``. Make sure not to name it "
 "``discord.py`` as that'll conflict with the library."
-msgstr ""
+msgstr "이제 이 파일의 이름을 ``example_bot.py`` 로 합시다. 이름을 ``discord.py`` 로 하면 라이브러리와 충돌하므로 주의하세요."
 
 #: ../../quickstart.rst:41
 msgid "There's a lot going on here, so let's walk you through it step by step."
-msgstr ""
+msgstr "여기에 많은 것들이 진행되므로, 단계별로 진행해봅시다."
 
 #: ../../quickstart.rst:43
 msgid ""
 "The first line just imports the library, if this raises a "
 "`ModuleNotFoundError` or `ImportError` then head on over to "
 ":ref:`installing` section to properly install."
-msgstr ""
+msgstr "첫번째 줄은 그저 라이브러리를 불러오는데, 만약에 `ModuleNotFoundError`나 `ImportError`를 일으킨다면 :ref:`installing` 로 가서 제대로 설치하세요."
 
 #: ../../quickstart.rst:45
 msgid ""
