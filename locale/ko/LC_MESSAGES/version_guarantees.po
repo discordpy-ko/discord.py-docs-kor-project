@@ -78,7 +78,7 @@ msgstr "비공개 밑줄 속성의 추가 또는 제거."
 
 #: ../../version_guarantees.rst:25
 msgid "Adding an element into the ``__slots__`` of a data class."
-msgstr " ``__slots__`` 의 데이터 클래스에 요소 추가."
+msgstr "``__slots__`` 의 데이터 클래스에 요소 추가."
 
 #: ../../version_guarantees.rst:26
 msgid "Changing the behaviour of a function to fix a bug."
