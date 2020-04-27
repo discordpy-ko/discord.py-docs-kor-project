@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py 1.4.0a\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-27 13:27+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../discord.rst:4
+msgid "Creating a Bot Account"
+msgstr ""
+
+#: ../../discord.rst:6
+msgid ""
+"In order to work with the library and the Discord API in general, we must"
+" first create a Discord Bot account."
+msgstr ""
+
+#: ../../discord.rst:8
+msgid "Creating a Bot account is a pretty straightforward process."
+msgstr ""
+
+#: ../../discord.rst:10 ../../discord.rst:64
+msgid ""
+"Make sure you're logged on to the `Discord website "
+"<https://discordapp.com>`_."
+msgstr ""
+
+#: ../../discord.rst:11 ../../discord.rst:65
+msgid ""
+"Navigate to the `application page "
+"<https://discordapp.com/developers/applications>`_"
+msgstr ""
+
+#: ../../discord.rst:12
+msgid "Click on the \"New Application\" button."
+msgstr ""
+
+#: ../../discord.rst:17
+msgid "Give the application a name and click \"Create\"."
+msgstr ""
+
+#: ../../discord.rst:22
+msgid ""
+"Create a Bot User by navigating to the \"Bot\" tab and clicking \"Add "
+"Bot\"."
+msgstr ""
+
+#: ../../discord.rst:24
+msgid "Click \"Yes, do it!\" to continue."
+msgstr ""
+
+#: ../../discord.rst:28
+msgid ""
+"Make sure that **Public Bot** is ticked if you want others to invite your"
+" bot."
+msgstr ""
+
+#: ../../discord.rst:30
+msgid ""
+"You should also make sure that **Require OAuth2 Code Grant** is unchecked"
+" unless you are developing a service that needs it. If you're unsure, "
+"then **leave it unchecked**."
+msgstr ""
+
+#: ../../discord.rst:36
+msgid "Copy the token using the \"Copy\" button."
+msgstr ""
+
+#: ../../discord.rst:38
+msgid "**This is not the Client Secret at the General Information page**"
+msgstr ""
+
+#: ../../discord.rst:42
+msgid ""
+"It should be worth noting that this token is essentially your bot's "
+"password. You should **never** share this to someone else. In doing so, "
+"someone can log in to your bot and do malicious things, such as leaving "
+"servers, ban all members inside a server, or pinging everyone "
+"maliciously."
+msgstr ""
+
+#: ../../discord.rst:47
+msgid "The possibilities are endless, so **do not share this token.**"
+msgstr ""
+
+#: ../../discord.rst:49
+msgid ""
+"If you accidentally leaked your token, click the \"Regenerate\" button as"
+" soon as possible. This revokes your old token and re-generates a new "
+"one. Now you need to use the new token to login."
+msgstr ""
+
+#: ../../discord.rst:53
+msgid ""
+"And that's it. You now have a bot account and you can login with that "
+"token."
+msgstr ""
+
+#: ../../discord.rst:58
+msgid "Inviting Your Bot"
+msgstr ""
+
+#: ../../discord.rst:60
+msgid "So you've made a Bot User but it's not actually in any server."
+msgstr ""
+
+#: ../../discord.rst:62
+msgid "If you want to invite your bot you must create an invite URL for it."
+msgstr ""
+
+#: ../../discord.rst:66
+msgid "Click on your bot's page."
+msgstr ""
+
+#: ../../discord.rst:67
+msgid "Go to the \"OAuth2\" tab."
+msgstr ""
+
+#: ../../discord.rst:72
+msgid "Tick the \"bot\" checkbox under \"scopes\"."
+msgstr ""
+
+#: ../../discord.rst:77
+msgid ""
+"Tick the permissions required for your bot to function under \"Bot "
+"Permissions\"."
+msgstr ""
+
+#: ../../discord.rst:79
+msgid ""
+"Please be aware of the consequences of requiring your bot to have the "
+"\"Administrator\" permission."
+msgstr ""
+
+#: ../../discord.rst:81
+msgid ""
+"Bot owners must have 2FA enabled for certain actions and permissions when"
+" added in servers that have Server-Wide 2FA enabled. Check the `2FA "
+"support page <https://support.discordapp.com/hc/en-us/articles/219576828"
+"-Setting-up-Two-Factor-Authentication>`_ for more information."
+msgstr ""
+
+#: ../../discord.rst:86
+msgid ""
+"Now the resulting URL can be used to add your bot to a server. Copy and "
+"paste the URL into your browser, choose a server to invite the bot to, "
+"and click \"Authorize\"."
+msgstr ""
+
+#: ../../discord.rst:91
+msgid "The person adding the bot needs \"Manage Server\" permissions to do so."
+msgstr ""
+
+#: ../../discord.rst:93
+msgid ""
+"If you want to generate this URL dynamically at run-time inside your bot "
+"and using the :class:`discord.Permissions` interface, you can use "
+":func:`discord.utils.oauth_url`."
+msgstr ""
+
