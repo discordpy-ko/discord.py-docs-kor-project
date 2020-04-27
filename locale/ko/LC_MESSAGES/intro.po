@@ -109,7 +109,7 @@ msgstr "라이브러리를 난잡한 시스템으로부터 분리시키거나, "
 
 #: ../../intro.rst:59
 msgid "A more in-depth tutorial is found on :doc:`py:tutorial/venv`."
-msgstr ":doc:`py:tutorial/venv`에서 더 많은 정보를 확인하세요."
+msgstr " :doc:`py:tutorial/venv` 에서 더 많은 정보를 확인하세요."
 
 #: ../../intro.rst:61
 msgid "However, for the quick and dirty:"
