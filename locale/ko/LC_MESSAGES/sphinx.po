@@ -1,4 +1,4 @@
-# SOME DESCRIPTIVE TITLE
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2015-2020, Rapptz
 # This file is distributed under the same license as the discord.py package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
