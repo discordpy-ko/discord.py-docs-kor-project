@@ -42,7 +42,7 @@ msgid ""
 msgstr ""
 "discord.py는 Python 3.5.3 버전 이상에서 동작합니다. "
 "그 이하 혹은 Python 2.7 이하에서는 지원되지 않습니다. "
-"Python 3.4 이하에서는 discord.py에 필요한 :doc:`aiohttp <aio:index>`가 지원되지 않습니다."
+"Python 3.4 이하에서는 discord.py에 필요한 (:doc:`aiohttp <aio:index>`)가 지원되지 않습니다."
 
 #: ../../intro.rst:22
 msgid "Installing"
@@ -111,7 +111,7 @@ msgstr "라이브러리를 난잡한 시스템으로부터 분리시키거나, "
 
 #: ../../intro.rst:59
 msgid "A more in-depth tutorial is found on :doc:`py:tutorial/venv`."
-msgstr " :doc:`py:tutorial/venv` 에서 더 많은 정보를 확인하세요."
+msgstr ":doc:`py:tutorial/venv` 에서 더 많은 정보를 확인하세요."
 
 #: ../../intro.rst:61
 msgid "However, for the quick and dirty:"
@@ -147,7 +147,7 @@ msgid ""
 "events>`. An event is something you listen to and then respond to. For "
 "example, when a message happens, you will receive an event about it that "
 "you can respond to."
-msgstr "discord.py는 이벤트 개념을 중심으로 진행됩니다. "
+msgstr "discord.py는 :ref:`events <discord-api-events>` 개념을 중심으로 진행됩니다. "
 "이벤트는 봇이 감지하고 응답하는 것입니다. "
 "예를 들어, 메시지가 발생하면 이벤트가 수신됩니다."
 

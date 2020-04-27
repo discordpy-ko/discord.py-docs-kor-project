@@ -56,7 +56,7 @@ msgid ""
 "The first line just imports the library, if this raises a "
 "`ModuleNotFoundError` or `ImportError` then head on over to "
 ":ref:`installing` section to properly install."
-msgstr "첫번째 줄은 그저 라이브러리를 불러오는데, 만약에 `ModuleNotFoundError`나 `ImportError`를 일으킨다면 :ref:`installing` 로 가서 제대로 설치하세요."
+msgstr "첫번째 줄은 그저 라이브러리를 불러오는데, 만약에 `ModuleNotFoundError` 나 `ImportError` 를 일으킨다면 :ref:`installing` 로 가서 제대로 설치하세요."
 
 #: ../../quickstart.rst:45
 msgid ""
