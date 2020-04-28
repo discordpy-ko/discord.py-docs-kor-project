@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../faq.rst:5
 msgid "Frequently Asked Questions"
-msgstr "자주 묻는 질문들"
+msgstr "자주 묻는 질문"
 
 #: ../../faq.rst:7
 msgid ""
@@ -27,10 +27,13 @@ msgid ""
 "``discord.py`` and its extension modules. Feel free to suggest a new "
 "question or submit one via pull requests."
 msgstr ""
+"이 페이지는 ``discord.py`` 와 추가적인 모듈의 자주 묻는 질문의 목록이"
+" 나열되어 있습니다. 언제든지 pull request를 통해 새로운 질문을"
+" 제안하거나 제출하세요.
 
 #: ../../faq.rst:11
 msgid "Questions"
-msgstr "질문들"
+msgstr "질문"
 
 #: ../../faq.rst:14
 msgid "Coroutines"
@@ -38,7 +41,7 @@ msgstr "코루틴"
 
 #: ../../faq.rst:16
 msgid "Questions regarding coroutines and asyncio belong here."
-msgstr "코루틴과 asyncio 관련 질문은 이쪽에 있습니다."
+msgstr "코루틴과 asyncio 관련 질문은 여기에 나열되어 있습니다."
 
 #: ../../faq.rst:19
 msgid "What is a coroutine?"
@@ -53,22 +56,29 @@ msgid ""
 "program to be doing multiple things at the same time without using "
 "threads or complicated multiprocessing."
 msgstr ""
+"|coroutine_link|_ 함수는 반드시 ``await`` 또는 ``yield from`` 과 함께 적용"
+"되어야 합니다. Python은 ``await`` 과 맞닥뜨릴 경우 해당 함수의 실행을 중지하고"
+" 다른 작업을 끝내고 다시 그 지점으로 돌아옵니다. 이것은 당신의 프로그램이"
+" 쓰레드나 복잡한 멀티프로세싱 없이 여러 작업을 동시에 할 수 있게 만들어줍니다."
 
 #: ../../faq.rst:26
 msgid ""
 "**If you forget to await a coroutine then the coroutine will not run. "
 "Never forget to await a coroutine.**"
 msgstr ""
+"**만약 코루틴을 await 하는 것을 까먹었다면, 해당 코루틴은 실행되지 않습니다."
+" 절대 코루틴을 await 하는 것을 잊지 마세요.**"
 
 #: ../../faq.rst:29
 msgid "Where can I use ``await``\\?"
-msgstr "``await``을 어디에 사용하나요?"
+msgstr "``await``\\을 어디에 사용할 수 있나요?"
 
 #: ../../faq.rst:31
 msgid ""
 "You can only use ``await`` inside ``async def`` functions and nowhere "
 "else."
 msgstr ""
+"``await`` 은 ``async def`` 함수 안에만 사용할 수 있습니다."
 
 #: ../../faq.rst:34
 msgid "What does \"blocking\" mean?"

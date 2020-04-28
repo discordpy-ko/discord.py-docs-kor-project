@@ -19,70 +19,70 @@ msgstr ""
 
 #: ../../ext/tasks/index.rst:4
 msgid "``discord.ext.tasks`` -- asyncio.Task helpers"
-msgstr ""
+msgstr "``discord.ext.tasks`` -- asyncio.Task 헬퍼"
 
 #: ../../ext/tasks/index.rst:8
 msgid ""
 "One of the most common operations when making a bot is having a loop run "
 "in the background at a specified interval. This pattern is very common "
 "but has a lot of things you need to look out for:"
-msgstr ""
+msgstr "봇을 만들 때 하는 가장 흔한 작업은 특정한 간격으로 백그라운드에서 돌아가는 루프를 갖는 것입니다. 이 패턴은 매우 흔하지만 당신이 조심해야할 많은 것들이 있습니다:"
 
 #: ../../ext/tasks/index.rst:10
 msgid "How do I handle :exc:`asyncio.CancelledError`?"
-msgstr ""
+msgstr ":exc:`asyncio.CancelledError` 는 어떻게 다루나요?"
 
 #: ../../ext/tasks/index.rst:11
 msgid "What do I do if the internet goes out?"
-msgstr ""
+msgstr "만약에 인터넷이 끊기면 어떻게 해야하나요?"
 
 #: ../../ext/tasks/index.rst:12
 msgid "What is the maximum number of seconds I can sleep anyway?"
-msgstr ""
+msgstr "아무튼 제가 잘 수 있는 최고 시간은 몇초인가요?"
 
 #: ../../ext/tasks/index.rst:14
 msgid ""
 "The goal of this discord.py extension is to abstract all these worries "
 "away from you."
-msgstr ""
+msgstr "이 discord.py 확장의 목적은 이런 관념적인 걱정들을 덜어주는 것입니다."
 
 #: ../../ext/tasks/index.rst:17
 msgid "Recipes"
-msgstr ""
+msgstr "레시피"
 
 #: ../../ext/tasks/index.rst:19
 msgid "A simple background task in a :class:`~discord.ext.commands.Cog`:"
-msgstr ""
+msgstr ":class:`~discord.ext.commands.Cog` 에서의 간단한 백그라운드 태스크:"
 
 #: ../../ext/tasks/index.rst:38
 msgid "Adding an exception to handle during reconnect:"
-msgstr ""
+msgstr "재연결중 발생하는 예외를 처리하기 위해 예외 추가:"
 
 #: ../../ext/tasks/index.rst:61
 msgid "Looping a certain amount of times before exiting:"
-msgstr ""
+msgstr "종료하기 전에 특정 개수만큼 반복:"
 
 #: ../../ext/tasks/index.rst:77
 msgid "Waiting until the bot is ready before the loop starts:"
-msgstr ""
+msgstr "루프를 시작하기 전에 봇이 준비되기 전까지 기다림:"
 
 #: ../../ext/tasks/index.rst:102
 msgid "Doing something during cancellation:"
-msgstr ""
+msgstr "취소하는 동안 무언가를 하기:"
 
 #: ../../ext/tasks/index.rst:136
 msgid "API Reference"
-msgstr ""
+msgstr "API 레퍼런스"
 
 #: discord.ext.tasks.Loop:1 of
 msgid ""
 "A background task helper that abstracts the loop and reconnection logic "
 "for you."
-msgstr ""
+msgstr "당신을 위해 루프와 재연결 로직을 추상화하는 백그라운드 태스크 헬퍼."
 
 #: discord.ext.tasks.Loop:3 of
 msgid "The main interface to create this is through :func:`loop`."
-msgstr ""
+msgstr "이것을 생성하는 주요 인터페이스는 :func:`loop` 를 통한 것입니다."
 
 #: discord.ext.tasks.Loop.current_loop:1 of
 msgid "The current iteration of the loop."

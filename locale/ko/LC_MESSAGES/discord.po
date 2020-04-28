@@ -38,7 +38,7 @@ msgid ""
 "Make sure you're logged on to the `Discord website "
 "<https://discordapp.com>`_."
 msgstr ""
-"`디스코드 웹사이트 <https://discordapp.com>`_에"
+"`디스코드 웹사이트 <https://discordapp.com>`_ 에"
 " 로그인 했는지 확인하세요."
 
 #: ../../discord.rst:11 ../../discord.rst:65
@@ -47,7 +47,7 @@ msgid ""
 "<https://discordapp.com/developers/applications>`_"
 msgstr ""
 "`애플리케이션 페이지 <https://discordapp.com/developers/applications>`_"
-"로 이동합니다."
+" 로 이동합니다."
 
 #: ../../discord.rst:12
 msgid "Click on the \"New Application\" button."
@@ -55,24 +55,24 @@ msgstr "\"New Application\" 버튼을 클릭합니다."
 
 #: ../../discord.rst:17
 msgid "Give the application a name and click \"Create\"."
-msgstr "애플리케이션의 이름을 짓고 \"Create\"를 클릭합니다."
+msgstr "애플리케이션의 이름을 짓고 \"Create\" 를 클릭합니다."
 
 #: ../../discord.rst:22
 msgid ""
 "Create a Bot User by navigating to the \"Bot\" tab and clicking \"Add "
 "Bot\"."
-msgstr "\"Bot\" 탭으로 이동해 \"Add Bot\"을 클릭하여 봇 유저를 생성합니다."
+msgstr "\"Bot\" 탭으로 이동해 \"Add Bot\" 을 클릭하여 봇 유저를 생성합니다."
 
 #: ../../discord.rst:24
 msgid "Click \"Yes, do it!\" to continue."
-msgstr "계속하기 위해서 \"Yes, do it!\"을 클릭합니다."
+msgstr "계속하기 위해서 \"Yes, do it!\" 을 클릭합니다."
 
 #: ../../discord.rst:28
 msgid ""
 "Make sure that **Public Bot** is ticked if you want others to invite your"
 " bot."
 msgstr ""
-"다른 사람들이 당신의 봇을 초대하는 것을 원한다면 **Public Bot**이"
+"다른 사람들이 당신의 봇을 초대하는 것을 원한다면 **Public Bot** 이"
 " 체크되어 있는지 확인하세요."
 
 #: ../../discord.rst:30
@@ -81,7 +81,7 @@ msgid ""
 " unless you are developing a service that needs it. If you're unsure, "
 "then **leave it unchecked**."
 msgstr ""
-"당신은 또한 **Require OAuth2 Code Grant**를 필요로 하는게 아니라면"
+"당신은 또한 **Require OAuth2 Code Grant** 를 필요로 하는게 아니라면"
 " 체크가 해제되어 있는지 확인해야 합니다. 확실하지 않다면 그냥"
 " 체크가 해제된 상태로 놔두세요."
 
@@ -149,13 +149,13 @@ msgstr "\"OAuth2\" 탭으로 이동합니다."
 
 #: ../../discord.rst:72
 msgid "Tick the \"bot\" checkbox under \"scopes\"."
-msgstr "\"scopes\"에서 \"bot\" 체크박스에 체크합니다."
+msgstr "\"scopes\" 에서 \"bot\" 체크박스에 체크합니다."
 
 #: ../../discord.rst:77
 msgid ""
 "Tick the permissions required for your bot to function under \"Bot "
 "Permissions\"."
-msgstr "\"Bot Permissions\"에서 봇에 필요한 권한을 체크합니다."
+msgstr "\"Bot Permissions\" 에서 봇에 필요한 권한을 체크합니다."
 
 #: ../../discord.rst:79
 msgid ""
@@ -173,7 +173,7 @@ msgstr ""
 "봇의 소유자는 2FA가 활성화된 서버에 봇이 추가될 때 특정 작업 및 권한에"
 " 대해 2FA를 사용하도록 설정해야 합니다. `2FA 지원 페이지 <https://suppo"
 "rt.discordapp.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-"
-"Authentication>`_에서 자세한 정보를 확인하세요."
+"Authentication>`_ 에서 자세한 정보를 확인하세요."
 
 #: ../../discord.rst:86
 msgid ""
@@ -182,7 +182,7 @@ msgid ""
 "and click \"Authorize\"."
 msgstr ""
 "이제 생성된 URL을 사용하여 봇을 서버에 초대할 수 있습니다. 브라우저에 URL을"
-" 복사 및 붙여넣기 하여 봇이 접속할 서버를 선택하고 \"Authorize\"를 클릭하세요."
+" 복사 및 붙여넣기 하여 봇이 접속할 서버를 선택하고 \"Authorize\" 를 클릭하세요."
 
 #: ../../discord.rst:91
 msgid "The person adding the bot needs \"Manage Server\" permissions to do so."
@@ -194,6 +194,6 @@ msgid ""
 "and using the :class:`discord.Permissions` interface, you can use "
 ":func:`discord.utils.oauth_url`."
 msgstr ""
-"만약 :class:`discord.Permissions`를 사용하여 봇의 런타임에서 동적 URL을"
-" 생성하고 싶다면 :func:`discord.utils.oauth_url`을 사용하세요."
+"만약 :class:`discord.Permissions` 를 사용하여 봇의 런타임에서 동적 URL을"
+" 생성하고 싶다면 :func:`discord.utils.oauth_url` 을 사용하세요."
 
