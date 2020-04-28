@@ -27,7 +27,7 @@ msgid ""
 "``discord.py`` and its extension modules. Feel free to suggest a new "
 "question or submit one via pull requests."
 msgstr ""
-"이 페이지는 ``discord.py``와 추가적인 모듈의 자주 묻는 질문의 목록이"
+"이 페이지는 ``discord.py`` 와 추가적인 모듈의 자주 묻는 질문의 목록이"
 " 나열되어 있습니다. 언제든지 pull request를 통해 새로운 질문을"
 " 제안하거나 제출하세요.
 
@@ -56,8 +56,8 @@ msgid ""
 "program to be doing multiple things at the same time without using "
 "threads or complicated multiprocessing."
 msgstr ""
-"|coroutine_link|_ 함수는 반드시 ``await`` 또는 ``yield from``과 함께 적용"
-"되어야 합니다. Python은 ``await``와 맞닥뜨릴 경우 해당 함수의 실행을 중지하고"
+"|coroutine_link|_ 함수는 반드시 ``await`` 또는 ``yield from`` 과 함께 적용"
+"되어야 합니다. Python은 ``await`` 과 맞닥뜨릴 경우 해당 함수의 실행을 중지하고"
 " 다른 작업을 끝내고 다시 그 지점으로 돌아옵니다. 이것은 당신의 프로그램이"
 " 쓰레드나 복잡한 멀티프로세싱 없이 여러 작업을 동시에 할 수 있게 만들어줍니다."
 
@@ -78,7 +78,7 @@ msgid ""
 "You can only use ``await`` inside ``async def`` functions and nowhere "
 "else."
 msgstr ""
-"``await``은 ``async def`` 함수 안에만 사용할 수 있습니다."
+"``await`` 은 ``async def`` 함수 안에만 사용할 수 있습니다."
 
 #: ../../faq.rst:34
 msgid "What does \"blocking\" mean?"
