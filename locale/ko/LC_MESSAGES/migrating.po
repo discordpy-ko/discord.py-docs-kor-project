@@ -19,30 +19,33 @@ msgstr ""
 
 #: ../../migrating.rst:6
 msgid "Migrating to v1.0"
-msgstr ""
+msgstr "1.0 버전으로 이전하기"
 
 #: ../../migrating.rst:8
 msgid ""
 "v1.0 is one of the biggest breaking changes in the library due to a "
 "complete redesign."
-msgstr ""
+msgstr "1.0 버전은 전체적인 재설계로 인해 구 버전과 크게 달라졌습니다."
 
 #: ../../migrating.rst:11
 msgid ""
 "The amount of changes are so massive and long that for all intents and "
 "purposes, it is a completely new library."
-msgstr ""
+msgstr "모든 의도들과 목적들을 위한 변경점들은 매우 방대하고 길기 때문에,"
+"이것은 완전히 새로운 라이브러리가 되었습니다."
 
 #: ../../migrating.rst:14
 msgid ""
 "Part of the redesign involves making things more easy to use and natural."
 " Things are done on the :ref:`models <discord_api_models>` instead of "
 "requiring a :class:`Client` instance to do any work."
-msgstr ""
+msgstr "재설계에는 여러가지 요소들을 더 쉽게, 그리고 더 자연스럽게 만드는 것이 포함됩니다."
+"이러한 작업들은 어떤 일을 하기 위해 :class:`Client`의 객체를 요구하는 대신에"
+":ref:`models <discord_api_models>`위에서 완료됩니다."
 
 #: ../../migrating.rst:18
 msgid "Python Version Change"
-msgstr ""
+msgstr "파이썬의 버전 변화"
 
 #: ../../migrating.rst:20
 msgid ""
@@ -51,28 +54,34 @@ msgid ""
 "to remove support for Python versions lower than 3.5.3, which essentially"
 " means that **support for Python 3.4 is dropped**."
 msgstr ""
+"개발을 더 쉽게 만들기 위해, 그리고 우리가 의존하는 라이브러리들이"
+"3.7 이상의 버전들을 지원하는것을 허락하기 위해 버전을 올리는 것을 허락하기 위해, discord.py는"
+"3.5.3 아래의 파이썬 버전들을 더 이상 지원하지 않기로 했습니다. 이것은 본질적으로"
+" **파이썬 3.4버전을 지원하는 일이 취소되었음** 을 의미합니다."
 
 #: ../../migrating.rst:25
 msgid "Major Model Changes"
-msgstr ""
+msgstr "주요 모델 변화"
 
 #: ../../migrating.rst:27
 msgid "Below are major model changes that have happened in v1.0"
-msgstr ""
+msgstr "아래에는 1.0 버전에서 발생한 주요 모델들의 변경점들을 기술합니다."
 
 #: ../../migrating.rst:30
 msgid "Snowflakes are int"
-msgstr ""
+msgstr "Snowflake는 정수형입니다."
 
 #: ../../migrating.rst:32
 msgid ""
 "Before v1.0, all snowflakes (the ``id`` attribute) were strings. This has"
 " been changed to :class:`int`."
 msgstr ""
+"1.0 이전 버전에서는, 모든 snowflake들(``id`` 특성)은 문자열이었습니다. 이것은"
+" :class:`int`로 변경되었습니다."
 
 #: ../../migrating.rst:34 ../../migrating.rst:254
 msgid "Quick example: ::"
-msgstr ""
+msgstr "간단한 예제입니다: ::"
 
 #: ../../migrating.rst:46
 msgid ""
@@ -81,10 +90,12 @@ msgid ""
 " for optimisation opportunities by allowing ETF to be used instead of "
 "JSON internally."
 msgstr ""
+"이 변경점은 ID를 따옴표로 감싸지 않게 만들어 공식 클라이언트에서 ID를 복사하는 기능을 사용했을 때 발생하는 오류의 수를 줄일 수 있게 합니다."
+"또한, 이 변경점은 내부적으로 JSON 대신 ETF가 사용될 수 있게 해 최적화 기회를 제공합니다."
 
 #: ../../migrating.rst:50
 msgid "Server is now Guild"
-msgstr ""
+msgstr "Server는 이제 Guild입니다."
 
 #: ../../migrating.rst:52
 msgid ""
@@ -93,18 +104,21 @@ msgid ""
 "necessary, the model has been renamed to :class:`Guild` and all instances"
 " referring to it has been changed as well."
 msgstr ""
+"공식 API 문서는 \"Server\"의 개념을 \"Guild\"라고 부릅니다."
+"필요할 때 API 문서와 더 일치시키기 위해서, 이 모델은 :class:`Guild`로 개명되었고"
+" 이를 참조하는 모든 객체들 또한 변경되었습니다."
 
 #: ../../migrating.rst:56
 msgid "A list of changes is as follows:"
-msgstr ""
+msgstr "아래는 변경된 항목들입니다."
 
 #: ../../migrating.rst:59 ../../migrating.rst:95 ../../migrating.rst:869
 msgid "Before"
-msgstr ""
+msgstr "이전"
 
 #: ../../migrating.rst:59 ../../migrating.rst:95 ../../migrating.rst:869
 msgid "After"
-msgstr ""
+msgstr "이후"
 
 #: ../../migrating.rst:61
 msgid "``Message.server``"
@@ -196,7 +210,7 @@ msgstr ""
 
 #: ../../migrating.rst:87
 msgid "Models are Stateful"
-msgstr ""
+msgstr "모델들은 "
 
 #: ../../migrating.rst:89
 msgid ""
@@ -204,10 +218,12 @@ msgid ""
 ":class:`Client` and put into their respective :ref:`model "
 "<discord_api_models>`."
 msgstr ""
+"이전에 언급했듯이, 많은 기능들이 :class:`Client`의 밖으로 이동해 각각의 :ref:`model "
+"<discord_api_models>`에 포함되었습니다."
 
 #: ../../migrating.rst:92
 msgid "A list of these changes is enumerated below."
-msgstr ""
+msgstr "변경된 항목들은 아래에 기재되어 있습니다."
 
 #: ../../migrating.rst:97
 msgid "``Client.add_reaction``"
