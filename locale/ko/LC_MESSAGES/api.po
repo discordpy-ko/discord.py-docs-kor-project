@@ -7007,25 +7007,31 @@ msgstr ""
 
 #: ../../api.rst:2274
 msgid "Discord Models"
-msgstr ""
+msgstr "디스코드 모델"
 
 #: ../../api.rst:2276
 msgid ""
 "Models are classes that are received from Discord and are not meant to be"
 " created by the user of the library."
 msgstr ""
+"모델은 디스코드에서 수신되는 클래스로."
+", 라이브러리 사용자에 의해 생성되지 않습니다"
 
 #: ../../api.rst:2281
 msgid ""
 "The classes listed below are **not intended to be created by users** and "
-"are also **read-only**."
+"are also **읽기 전용** 입니다."
 msgstr ""
+"아래에 나열된 클래스는 **유저들에 의해 생성되도록 의도된 것**이 아니며 "
+"**읽기 전용** 입니다."
 
 #: ../../api.rst:2284
 msgid ""
 "For example, this means that you should not make your own :class:`User` "
 "instances nor should you modify the :class:`User` instance yourself."
 msgstr ""
+"예를 들어,  :class:`User` 인스턴스를 직접 만들거나  "
+":class:`User` 인스턴스를 직접 수정해서는 안됩니다."
 
 #: ../../api.rst:2287
 msgid ""
@@ -7034,129 +7040,137 @@ msgid ""
 ":func:`utils.find` function or attributes of model classes that you "
 "receive from the events specified in the :ref:`discord-api-events`."
 msgstr ""
+"이런 모델 클래스 인스턴스 중 하나를 얻기 위해서는 캐시를 거치는 것이며, 그 중 가장 일반적인 방법은 "
+" :ref:`discord-api-events`에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의  "
+":func:`utils.find` 함수 또는 속성을 거치는 것입니다."
 
 #: ../../api.rst:2294 ../../api.rst:2559
 msgid ""
 "Nearly all classes here have :ref:`py:slots` defined which means that it "
 "is impossible to have dynamic attributes to the data classes."
 msgstr ""
+"여기의 거의 모든 클래스에는 :ref:`py:slots`가 정의되어 있으므로 "
+"데이터 클래스에 동적 속성을 가질 수 없습니다."
+
 
 #: ../../api.rst:2299
 msgid "ClientUser"
-msgstr ""
+msgstr "클라이언트 사용자"
 
 #: discord.ClientUser:1 of
 msgid "Represents your Discord user."
-msgstr ""
+msgstr "디스코드 사용자를 나타냅니다."
 
 #: discord.ClientUser:7 discord.User:7 of
 msgid "Checks if two users are equal."
-msgstr ""
+msgstr "두 사용자가 같은지 확인합니다."
 
 #: discord.ClientUser:11 discord.User:11 of
 msgid "Checks if two users are not equal."
-msgstr ""
+msgstr "두 명의 사용자가 다른지 확인합니다."
 
 #: discord.ClientUser:15 discord.User:15 of
 msgid "Return the user's hash."
-msgstr ""
+msgstr "사용자의 해시를 리턴합니다."
 
 #: discord.ClientUser:19 discord.User:19 of
 msgid "Returns the user's name with discriminator."
-msgstr ""
+msgstr "태그와 함께 사용자 이름을 리턴합니다."
 
 #: discord.ClientUser:29 discord.User:29 of
 msgid "The user's unique ID."
-msgstr ""
+msgstr "사용자의 고유 ID"
 
 #: discord.ClientUser:35 discord.User:35 of
 msgid "The user's discriminator. This is given when the username has conflicts."
-msgstr ""
+msgstr "사용자의 태그. 사용자 이름이 충돌 할 때 쓰입니다."
 
 #: discord.ClientUser:41 discord.User:41 of
 msgid "The avatar hash the user has. Could be None."
-msgstr ""
+msgstr "사용자가 가지고 있는 아바타 해시. None 일 수 있습니다."
 
 #: discord.ClientUser:53 discord.User:53 of
 msgid ""
 "Specifies if the user is a system user (i.e. represents Discord "
 "officially)."
 msgstr ""
+"사용자가 시스템 사용자인지를 지정 (예 : 공식적으로 "
+"디스코드를 나타냄)"
 
 #: discord.ClientUser:61 of
 msgid "Specifies if the user is a verified account."
-msgstr ""
+msgstr "사용자가 확인 된 계정 인지를 지정"
 
 #: discord.ClientUser:67 of
 msgid "The email the user used when registering."
-msgstr ""
+msgstr "사용자가 등록 할 때 사용한 이메일"
 
 #: discord.ClientUser:73 of
 msgid "The IETF language tag used to identify the language the user is using."
-msgstr ""
+msgstr "사용자가 사용중인 언어를 식별하는 데 사용되는 IETF 언어태그"
 
 #: discord.ClientUser:79 of
 msgid "Specifies if the user has MFA turned on and working."
-msgstr ""
+msgstr "사용자가 MFA를 켜고 작동 중인지 여부를 지정"
 
 #: discord.ClientUser:85 of
 msgid "Specifies if the user is a premium user (e.g. has Discord Nitro)."
-msgstr ""
+msgstr "사용자가 프리미엄 사용자인지 여부를 지정(예 : Discord Nitro 사용)"
 
 #: discord.ClientUser:91 of
 msgid ""
 "Specifies the type of premium a user has (e.g. Nitro or Nitro Classic). "
 "Could be None if the user is not premium."
-msgstr ""
+msgstr "사용자가 가진 프리미엄 유형을 지정 (예 : Nitro 또는 Nitro Classic) 사용자가 프리미엄이 아닌 경우 None 일 수 있습니다."
 
 #: discord.ClientUser:93 of
 msgid "Optional[:class:`PremiumType`]"
-msgstr ""
+msgstr "선택 사항 [:class:`PremiumType`]"
 
 #: discord.ClientUser.get_relationship:1 of
 msgid "Retrieves the :class:`Relationship` if applicable."
-msgstr ""
+msgstr ":class:`Relationship`이 적용 가능한 경우를 검색"
 
 #: discord.ClientUser.get_relationship:7 of
 msgid "The user ID to check if we have a relationship with them."
-msgstr ""
+msgstr "관계가 있는지 확인할 사용자 ID"
 
 #: discord.ClientUser.get_relationship:10 of
 msgid "The relationship if available or ``None``."
-msgstr ""
+msgstr "가능한 경우 관계 또는 ``None`` "
 
 #: discord.ClientUser.get_relationship:11 of
 msgid "Optional[:class:`Relationship`]"
-msgstr ""
+msgstr "선택 사항[:class:`Relationship`]"
 
 #: discord.ClientUser.relationships:1 of
 msgid "Returns all the relationships that the user has."
-msgstr ""
+msgstr "사용자가 가진 모든 관계를 리턴"
 
 #: discord.CallMessage:16 discord.ClientUser.blocked:7
 #: discord.ClientUser.friends:7 discord.ClientUser.relationships:7
 #: discord.GroupCall:21 discord.GroupCall.connected:3 discord.GroupChannel:25
 #: discord.Member.mutual_friends:13 discord.User.mutual_friends:13 of
 msgid "List[:class:`User`]"
-msgstr ""
+msgstr "리스트 [:class:`User`]"
 
 #: discord.ClientUser.friends:1 of
 msgid "Returns all the users that the user is friends with."
-msgstr ""
+msgstr "사용자와 친구인 모든 사용자를 리턴"
 
 #: discord.ClientUser.blocked:1 of
 msgid "Returns all the users that the user has blocked."
-msgstr ""
+msgstr "사용자가 차단한 모든 사용자를 리턴"
 
 #: discord.ClientUser.edit:3 of
 msgid "Edits the current profile of the client."
-msgstr ""
+msgstr "클라이언트의 프로필을 편집"
 
 #: discord.ClientUser.edit:5 of
 msgid ""
 "If a bot account is used then a password field is optional, otherwise it "
 "is required."
-msgstr ""
+msgstr "봇 계정을 사용하는 경우 비밀번호 필드는 선택 사항이며 그렇지 않은 경우는 비밀번호 필드가 필요합니다."
 
 #: discord.ClientUser.edit:10 of
 msgid ""
@@ -7165,24 +7179,26 @@ msgid ""
 "then the file must be opened via ``open('some_filename', 'rb')`` and the "
 ":term:`py:bytes-like object` is given through the use of ``fp.read()``."
 msgstr ""
+"아바타를 업로드 하려면 :term:`py:bytes-like object`형식의 이미지로 전달해야 합니다. "
+"``open('파일이름', 'rb')``로 파일을 열어야 하며, ``fp.read()``로 전달해야 합니다. "
 
 #: discord.ClientUser.edit:15 of
 msgid "The only image formats supported for uploading is JPEG and PNG."
-msgstr ""
+msgstr "업로드는 JPEG 또는 PNG형식으로만 해야합니다."
 
 #: discord.ClientUser.edit:17 of
 msgid ""
 "The current password for the client's account. Only applicable to user "
 "accounts."
-msgstr ""
+msgstr "클라이언트 계정의 현재 비밀번호 입니다. 유저 계정에만 적용됩니다."
 
 #: discord.ClientUser.edit:20 of
 msgid "The new password you wish to change to. Only applicable to user accounts."
-msgstr ""
+msgstr "변경하려는 새 비밀번호입니다. 유저 계정에만 적용됩니다."
 
 #: discord.ClientUser.edit:23 of
 msgid "The new email you wish to change to. Only applicable to user accounts."
-msgstr ""
+msgstr "변경하려는 새 이메일입니다. 유저 계정에만 적용됩니다."
 
 #: discord.ClientUser.edit:26 of
 msgid ""
@@ -7192,189 +7208,189 @@ msgstr ""
 
 #: discord.ClientUser.edit:30 of
 msgid "The new username you wish to change to."
-msgstr ""
+msgstr "변경하려는 새 사용자 이름입니다."
 
 #: discord.ClientUser.edit:32 of
 msgid ""
 "A :term:`py:bytes-like object` representing the image to upload. Could be"
 " ``None`` to denote no avatar."
-msgstr ""
+msgstr "업로드 할 이미지를 가진 :term:`py:bytes-like object` 입니다. ``None``로 아바타 없음을 표시 할 수 있습니다."
 
 #: discord.ClientUser.edit:36 of
 msgid "Editing your profile failed."
-msgstr ""
+msgstr "프로필 편집에 실패했습니다."
 
 #: discord.ClientUser.edit:37 of
 msgid "Wrong image format passed for ``avatar``."
-msgstr ""
+msgstr "``avatar``에 잘못된 이미지 형식이 전달되었습니다."
 
 #: discord.ClientUser.edit:38 of
 msgid ""
 "Password is required for non-bot accounts.     House field was not a "
 "HypeSquadHouse."
-msgstr ""
+msgstr "봇이 아닌 계정에는 암호가 필요합니다. house 필드는 HypeSquadHouse가 아닙니다."
 
 #: discord.ClientUser.create_group:3 of
 msgid ""
 "Creates a group direct message with the recipients provided. These "
 "recipients must be have a relationship of type "
 ":attr:`RelationshipType.friend`."
-msgstr ""
+msgstr "제공된 유저와 그룹 채팅을 합니다. 이런 유저는 :attr:`RelationshipType.friend` 유형이여야 합니다."
 
 #: discord.ClientUser.create_group:11 of
 msgid "An argument :class:`list` of :class:`User` to have in your group."
-msgstr ""
+msgstr "그룹의 :class:`User`이 담겨있는 :class:`list`입니다."
 
 #: discord.ClientUser.create_group:15 of
 msgid "Failed to create the group direct message."
-msgstr ""
+msgstr "그룹 채팅을 작성하지 못했습니다."
 
 #: discord.ClientUser.create_group:16 of
 msgid ""
 "Attempted to create a group with only one recipient.     This does not "
 "include yourself."
-msgstr ""
+msgstr "유저가 한 명인 그룹을 만드려고 했습니다. 여기에는 자신이 포함되지 않습니다. "
 
 #: discord.ClientUser.create_group:18 of
 msgid "The new group channel."
-msgstr ""
+msgstr "새로운 그룹 채팅"
 
 #: discord.ClientUser.create_group:19 of
 msgid ":class:`GroupChannel`"
-msgstr ""
+msgstr ":class:`GroupChannel`"
 
 #: discord.ClientUser.edit_settings:3 of
 msgid "Edits the client user's settings."
-msgstr ""
+msgstr "클라이언트의 설정을 편집합니다."
 
 #: discord.ClientUser.edit_settings:9 of
 msgid ""
 "How long (in seconds) the user needs to be AFK until Discord sends push "
 "notifications to your mobile device."
-msgstr ""
+msgstr "디스코드에서 모바일 기기로 푸시 알림을 보낼 때까지 사용자가 잠수 상태여야 하는 시간(초)입니다."
 
 #: discord.ClientUser.edit_settings:12 of
 msgid "Whether or not to animate emojis in the chat."
-msgstr ""
+msgstr "채팅에서 이모티콘을 자동으로 재생할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:14 of
 msgid ""
 "Whether or not to automatically convert emoticons into emojis. e.g. :-) "
 "-> 😃"
-msgstr ""
+msgstr "채팅 이모티콘을 이모티콘으로 자동 변환할지 여부입니다. 예) :-) -> 😃"
 
 #: discord.ClientUser.edit_settings:17 of
 msgid ""
 "Whether or not to automatically disable DMs between you and members of "
 "new guilds you join."
-msgstr ""
+msgstr "가입한 새로운 서버에서 클라이언트와 구성원 사이에서 DM을 자동으로 비활성화할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:20 of
 msgid ""
 "Whether or not to automatically detect accounts from services like Steam "
 "and Blizzard when you open the Discord client."
-msgstr ""
+msgstr "디스코드를 켤 때 스팀 및 블리자드와 같은 서비스에서 계정을 자동으로 감지할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:23 of
 msgid "Whether or not to enable developer mode."
-msgstr ""
+msgstr "개발자 모드를 사용할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:25 of
 msgid "Whether or not to disable the showing of the Games tab."
-msgstr ""
+msgstr "게임 탭 표시를 비활성화할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:27 of
 msgid "Whether or not to allow tts messages to be played/sent."
-msgstr ""
+msgstr "tts 메시지의 재생 / 전송 허용 여부입니다."
 
 #: discord.ClientUser.edit_settings:29 of
 msgid "The filter for explicit content in all messages."
-msgstr ""
+msgstr "모든 메시지의 내용에 대한 필터입니다."
 
 #: discord.ClientUser.edit_settings:31 of
 msgid "Who can add you as a friend."
-msgstr ""
+msgstr "친구로 나를 추가 할 수있는 사람입니다."
 
 #: discord.ClientUser.edit_settings:33 of
 msgid "Whether or not to automatically play gifs that are in the chat."
-msgstr ""
+msgstr "채팅중에 GIF를 자동으로 재생할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:35 of
 msgid ""
 "A list of guilds in order of the guild/guild icons that are on the left "
 "hand side of the UI."
-msgstr ""
+msgstr "UI 왼쪽에있는 길드 / 길드 아이콘 순서대로 길드 목록입니다."
 
 #: discord.ClientUser.edit_settings:38 of
 msgid "Whether or not to display attachments when they are uploaded in chat."
-msgstr ""
+msgstr "첨부 파일을 채팅에 업로드 할 때 첨부 파일을 표시할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:40 of
 msgid "Whether or not to display videos and images from links posted in chat."
-msgstr ""
+msgstr "채팅에 올라온 링크의 비디오 및 이미지를 표시할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:42 of
 msgid ""
 "The :rfc:`3066` language identifier of the locale to use for the language"
 " of the Discord client."
-msgstr ""
+msgstr "디스코드 언어에 사용할 로케일의 RFC 3066 언어 ID입니다."
 
 #: discord.ClientUser.edit_settings:45 of
 msgid "Whether or not to use the compact Discord display mode."
-msgstr ""
+msgstr "메시지 컴팩트 모드 사용 여부입니다."
 
 #: discord.ClientUser.edit_settings:47 of
 msgid "Whether or not to render embeds that are sent in the chat."
-msgstr ""
+msgstr "채팅에서 전송된 임베드를 렌더링할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:49 of
 msgid "Whether or not to render reactions that are added to messages."
-msgstr ""
+msgstr "메시지에 추가된 반응을 렌더링할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:51 of
 msgid "A list of guilds that you will not receive DMs from."
-msgstr ""
+msgstr "DM을 받지 않을 길드 목록입니다."
 
 #: discord.ClientUser.edit_settings:53 of
 msgid "Whether or not to display the game that you are currently playing."
-msgstr ""
+msgstr "현재 플레이중인 게임을 표시할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:55 of
 msgid "The clients status that is shown to others."
-msgstr ""
+msgstr "다른 사람에게 표시되는 상태입니다."
 
 #: discord.ClientUser.edit_settings:57 of
 msgid "The theme of the Discord UI."
-msgstr ""
+msgstr "디스코드 UI의 테마입니다."
 
 #: discord.ClientUser.edit_settings:59 of
 msgid "The timezone offset to use."
-msgstr ""
+msgstr "사용할 시간대 입니다."
 
 #: discord.ClientUser.edit_settings:62 of
 msgid "Editing the settings failed."
-msgstr ""
+msgstr "설정 편집에 실패했습니다."
 
 #: discord.ClientUser.edit_settings:63 of
 msgid "The client is a bot user and not a user account."
-msgstr ""
+msgstr "클라이언트는 봇 사용자이며 사용자 계정이 아닙니다."
 
 #: discord.ClientUser.edit_settings:65 of
 msgid "The client user's updated settings."
-msgstr ""
+msgstr "클라이언트 사용자의 업데이트 된 설정."
 
 #: discord.Activity:57 discord.Activity:69 discord.Activity:78
 #: discord.ClientUser.edit_settings:66 discord.RawMessageUpdateEvent:21
 #: discord.Streaming:61 of
 msgid ":class:`dict`"
-msgstr ""
+msgstr ":class:`dict`"
 
 #: discord.ClientUser.avatar_url:1 discord.ClientUser.avatar_url_as:1
 #: discord.Member.avatar_url_as:1 discord.User.avatar_url:1
 #: discord.User.avatar_url_as:1 discord.WidgetMember.avatar_url:1
 #: discord.WidgetMember.avatar_url_as:1 of
 msgid "Returns an :class:`Asset` for the avatar the user has."
-msgstr ""
+msgstr "사용자의 :class:`Asset`에서 아바타를 리턴합니다."
 
 #: discord.ClientUser.avatar_url:3 discord.ClientUser.avatar_url_as:3
 #: discord.Member.avatar_url_as:3 discord.User.avatar_url:3
@@ -7383,14 +7399,14 @@ msgstr ""
 msgid ""
 "If the user does not have a traditional avatar, an asset for the default "
 "avatar is returned instead."
-msgstr ""
+msgstr "만약 사용자에게 기존 아바타가 없는 경우 기본 아바타의 자산을 대신 리턴합니다."
 
 #: discord.ClientUser.avatar_url:6 discord.User.avatar_url:6
 #: discord.WidgetMember.avatar_url:6 of
 msgid ""
 "This is equivalent to calling :meth:`avatar_url_as` with the default "
 "parameters (i.e. webp/gif detection and a size of 1024)."
-msgstr ""
+msgstr "이는 :meth:`avatar_url_as`의 기본인 (webp / gif , 크기: 1024) 를 사용하여 호출 하는 것과 같습니다."
 
 #: discord.ClientUser.avatar_url_as:6 discord.Guild.icon_url_as:3
 #: discord.Member.avatar_url_as:6 discord.User.avatar_url_as:6
@@ -7399,7 +7415,7 @@ msgid ""
 "The format must be one of 'webp', 'jpeg', 'jpg', 'png' or 'gif', and "
 "'gif' is only valid for animated avatars. The size must be a power of 2 "
 "between 16 and 4096."
-msgstr ""
+msgstr "형식은 'webp', 'jpeg', 'jpg', 'png', 'gif'중 하나여야 하며, 'gif'는 애미메이션 아바타에만 유효합니다. 크기는 16에서 4096사이의 2의 거듭 제곱 이여야합니다."
 
 #: discord.ClientUser.avatar_url_as:10 discord.Member.avatar_url_as:10
 #: discord.User.avatar_url_as:10 discord.WidgetMember.avatar_url_as:10 of
@@ -7407,117 +7423,117 @@ msgid ""
 "The format to attempt to convert the avatar to. If the format is "
 "``None``, then it is automatically detected into either 'gif' or "
 "static_format depending on the avatar being animated or not."
-msgstr ""
+msgstr "아바타 변환을 시도 할 형식입니다. 형식이 ``None``일 경우 'gif' 또는 정적 포맷으로 자동 감지합니다."
 
 #: discord.ClientUser.avatar_url_as:15 discord.Member.avatar_url_as:15
 #: discord.User.avatar_url_as:15 discord.WidgetMember.avatar_url_as:15 of
 msgid ""
 "Format to attempt to convert only non-animated avatars to. Defaults to "
 "'webp'"
-msgstr ""
+msgstr "애니메이션이 없는 아바타만 변환하려고 하는 형식입니다. 기본값은 'webp' 입니다."
 
 #: discord.ClientUser.avatar_url_as:21 discord.Member.avatar_url_as:21
 #: discord.User.avatar_url_as:21 discord.WidgetMember.avatar_url_as:21 of
 msgid ""
 "Bad image format passed to ``format`` or ``static_format``, or     "
 "invalid ``size``."
-msgstr ""
+msgstr "잘못된 형식이  ``format`` 또는 ``static_format``에 전달되었거나, ``size``가 유효하지 않습니다."
 
 #: discord.ClientUser.color:1 discord.User.color:1 discord.WidgetMember.color:1
 #: of
 msgid ""
 "A property that returns a color denoting the rendered color for the user."
 " This always returns :meth:`Colour.default`."
-msgstr ""
+msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`를 리턴합니다."
 
 #: discord.ClientUser.color:4 discord.Member.color:5 discord.User.color:4
 #: discord.WidgetMember.color:4 of
 msgid "There is an alias for this named :meth:`colour`."
-msgstr ""
+msgstr ":meth:`colour` 이라는 별칭이 있습니다."
 
 #: discord.ClientUser.color:6 discord.ClientUser.colour:6
 #: discord.Member.color:7 discord.Member.colour:7 discord.Role.color:3
 #: discord.Role.colour:3 discord.User.color:6 discord.User.colour:6
 #: discord.WidgetMember.color:6 discord.WidgetMember.colour:6 of
 msgid ":class:`Colour`"
-msgstr ""
+msgstr ":class:`Colour`"
 
 #: discord.ClientUser.colour:1 discord.User.colour:1
 #: discord.WidgetMember.colour:1 of
 msgid ""
 "A property that returns a colour denoting the rendered colour for the "
 "user. This always returns :meth:`Colour.default`."
-msgstr ""
+msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`를 리턴합니다."
 
 #: discord.ClientUser.colour:4 discord.Member.colour:5 discord.User.colour:4
 #: discord.WidgetMember.colour:4 of
 msgid "There is an alias for this named :meth:`color`."
-msgstr ""
+msgstr ":meth:`color` 이라는 별칭이 있습니다."
 
 #: discord.ClientUser.created_at:1 discord.User.created_at:1
 #: discord.WidgetMember.created_at:1 of
 msgid "Returns the user's creation time in UTC."
-msgstr ""
+msgstr "사용자 계정의 생성시간을 UTC로 리턴합니다."
 
 #: discord.ClientUser.created_at:3 discord.User.created_at:3
 #: discord.WidgetMember.created_at:3 of
 msgid "This is when the user's Discord account was created."
-msgstr ""
+msgstr "사용자의 디스코드 계정이 생성 된 시점입니다."
 
 #: discord.ClientUser.default_avatar:1 discord.User.default_avatar:1
 #: discord.WidgetMember.default_avatar:1 of
 msgid ""
 "Returns the default avatar for a given user. This is calculated by the "
 "user's discriminator."
-msgstr ""
+msgstr "지정된 사용자의 기본 아바타를 리턴합니다. 이것은 사용자의 태그에 의해 계산됩니다."
 
 #: discord.ClientUser.default_avatar:3 discord.User.default_avatar:3
 #: discord.WidgetMember.default_avatar:3 of
 msgid ":class:`DefaultAvatar`"
-msgstr ""
+msgstr ":class:`DefaultAvatar`"
 
 #: discord.ClientUser.default_avatar_url:1 discord.User.default_avatar_url:1
 #: discord.WidgetMember.default_avatar_url:1 of
 msgid "Returns a URL for a user's default avatar."
-msgstr ""
+msgstr "사용자의 기본 아바타에 대한 URL을 리턴합니다."
 
 #: discord.ClientUser.display_name:3 discord.Member.display_name:3
 #: discord.User.display_name:3 of
 msgid ""
 "For regular users this is just their username, but if they have a guild "
 "specific nickname then that is returned instead."
-msgstr ""
+msgstr "일반 사용자의 경우에는 사용자 이름이지만 길드별 닉네임이 있는 경우 해당 닉네임을 리턴합니다."
 
 #: discord.ClientUser.is_avatar_animated:1 discord.Member.is_avatar_animated:1
 #: discord.User.is_avatar_animated:1 discord.WidgetMember.is_avatar_animated:1
 #: of
 msgid "Indicates if the user has an animated avatar."
-msgstr ""
+msgstr "사용자에게 애니메이션 아바타가 있는지 여부를 나타냅니다."
 
 #: discord.ClientUser.mentioned_in:1 discord.User.mentioned_in:1
 #: discord.WidgetMember.mentioned_in:1 of
 msgid "Checks if the user is mentioned in the specified message."
-msgstr ""
+msgstr "지정된 메시지에서 사용자가 언급되었는지 확인합니다."
 
 #: discord.ClientUser.mentioned_in:3 discord.Member.mentioned_in:3
 #: discord.User.mentioned_in:3 discord.WidgetMember.mentioned_in:3 of
 msgid "The message to check if you're mentioned in."
-msgstr ""
+msgstr "언급된 메시지 입니다."
 
 #: discord.ClientUser.permissions_in:1 discord.Member.permissions_in:1
 #: discord.User.permissions_in:1 discord.WidgetMember.permissions_in:1 of
 msgid "An alias for :meth:`abc.GuildChannel.permissions_for`."
-msgstr ""
+msgstr ":meth:`abc.GuildChannel.permissions_for` 의 별칭입니다."
 
 #: discord.ClientUser.permissions_in:3 discord.Member.permissions_in:3
 #: discord.User.permissions_in:3 discord.WidgetMember.permissions_in:3 of
 msgid "Basically equivalent to:"
-msgstr ""
+msgstr "기본적으로 다음과 같습니다."
 
 #: discord.ClientUser.permissions_in:9 discord.Member.permissions_in:9
 #: discord.User.permissions_in:9 discord.WidgetMember.permissions_in:9 of
 msgid "The channel to check your permissions for."
-msgstr ""
+msgstr "권한을 확인할 채널입니다."
 
 #: ../../api.rst:2306
 msgid "Relationship"
@@ -13960,5 +13976,5 @@ msgstr ""
 
 #: ../../api.rst:2699
 msgid ":exc:`NotFound`"
-msgstr ""
 
+msgstr ""
