@@ -6165,7 +6165,7 @@ msgstr ""
 
 #: discord.ClientUser:23 discord.User:23 discord.abc.User:13 of
 msgid "The user's username."
-msgstr ""
+msgstr "사용자의 사용자 이름"
 
 #: discord.abc.User:19 of
 msgid "The user's discriminator."
@@ -7021,9 +7021,7 @@ msgstr ""
 msgid ""
 "The classes listed below are **not intended to be created by users** and "
 "are also **읽기 전용** 입니다."
-msgstr ""
-"아래에 나열된 클래스는 **유저들에 의해 생성되도록 의도된 것**이 아니며 "
-"**읽기 전용** 입니다."
+msgstr "아래에 나열된 클래스들는 **유저들에 의해 생성되도록 의도된 것**이 아니며 **읽기 전용** 입니다."
 
 #: ../../api.rst:2284
 msgid ""
@@ -7041,8 +7039,7 @@ msgid ""
 "receive from the events specified in the :ref:`discord-api-events`."
 msgstr ""
 "이런 모델 클래스 인스턴스 중 하나를 얻기 위해서는 캐시를 거치는 것이며, 그 중 가장 일반적인 방법은 "
-" :ref:`discord-api-events`\\에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의  "
-":func:`utils.find` 함수 또는 속성을 거치는 것입니다."
+" :ref:`discord-api-events`\\에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의 :func:`utils.find` 함수 또는 속성을 거치는 것입니다."
 
 #: ../../api.rst:2294 ../../api.rst:2559
 msgid ""
@@ -7133,11 +7130,11 @@ msgstr ":class:`Relationship` 이 적용 가능한 경우를 검색"
 
 #: discord.ClientUser.get_relationship:7 of
 msgid "The user ID to check if we have a relationship with them."
-msgstr "관계가 있는지 확인할 사용자 ID"
+msgstr "관련성이 있는지 확인할 사용자 ID"
 
 #: discord.ClientUser.get_relationship:10 of
 msgid "The relationship if available or ``None``."
-msgstr "가능한 경우 관계 또는 ``None`` "
+msgstr "가능한 경우 관련성 또는 ``None`` "
 
 #: discord.ClientUser.get_relationship:11 of
 msgid "Optional[:class:`Relationship`]"
@@ -7145,7 +7142,7 @@ msgstr "선택 사항[:class:`Relationship`]"
 
 #: discord.ClientUser.relationships:1 of
 msgid "Returns all the relationships that the user has."
-msgstr "사용자가 가진 모든 관계를 리턴"
+msgstr "사용자가 가진 모든 관련성를 리턴"
 
 #: discord.CallMessage:16 discord.ClientUser.blocked:7
 #: discord.ClientUser.friends:7 discord.ClientUser.relationships:7
@@ -7179,8 +7176,8 @@ msgid ""
 "then the file must be opened via ``open('some_filename', 'rb')`` and the "
 ":term:`py:bytes-like object` is given through the use of ``fp.read()``."
 msgstr ""
-"아바타를 업로드 하려면 :term:`py:bytes-like object`\\형식의 이미지로 전달해야 합니다. "
-"``open('파일이름', 'rb')``로 파일을 열어야 하며, ``fp.read()``로 전달해야 합니다. "
+"아바타를 업로드 하려면 :term:`py:bytes-like object` 형식의 이미지로 전달해야 합니다. "
+"``open('파일이름', 'rb')`` 로 파일을 열어야 하며, ``fp.read()`` 로 전달해야 합니다. "
 
 #: discord.ClientUser.edit:15 of
 msgid "The only image formats supported for uploading is JPEG and PNG."
@@ -7222,7 +7219,7 @@ msgstr "프로필 편집에 실패했습니다."
 
 #: discord.ClientUser.edit:37 of
 msgid "Wrong image format passed for ``avatar``."
-msgstr "``avatar``에 잘못된 이미지 형식이 전달되었습니다."
+msgstr "``avatar`` 에 잘못된 이미지 형식이 전달되었습니다."
 
 #: discord.ClientUser.edit:38 of
 msgid ""
@@ -7239,7 +7236,7 @@ msgstr "제공된 유저와 그룹 채팅을 합니다. 이런 유저는 :attr:`
 
 #: discord.ClientUser.create_group:11 of
 msgid "An argument :class:`list` of :class:`User` to have in your group."
-msgstr "그룹의 :class:`User`\\이 담겨있는 :class:`list`\\입니다."
+msgstr "그룹의 :class:`User`\\가 담겨있는 :class:`list`\\입니다."
 
 #: discord.ClientUser.create_group:15 of
 msgid "Failed to create the group direct message."
@@ -7415,7 +7412,7 @@ msgid ""
 "The format must be one of 'webp', 'jpeg', 'jpg', 'png' or 'gif', and "
 "'gif' is only valid for animated avatars. The size must be a power of 2 "
 "between 16 and 4096."
-msgstr "형식은 'webp', 'jpeg', 'jpg', 'png', 'gif'중 하나여야 하며, 'gif'는 애미메이션 아바타에만 유효합니다. 크기는 16에서 4096사이의 2의 거듭 제곱 이여야합니다."
+msgstr "형식은 'webp', 'jpeg', 'jpg', 'png', 'gif' 중 하나여야 하며, 'gif' 은 애미메이션 아바타에만 유효합니다. 크기는 16에서 4096사이의 2의 거듭 제곱 이여야합니다."
 
 #: discord.ClientUser.avatar_url_as:10 discord.Member.avatar_url_as:10
 #: discord.User.avatar_url_as:10 discord.WidgetMember.avatar_url_as:10 of
@@ -7437,7 +7434,7 @@ msgstr "애니메이션이 없는 아바타만 변환하려고 하는 형식입�
 msgid ""
 "Bad image format passed to ``format`` or ``static_format``, or     "
 "invalid ``size``."
-msgstr "잘못된 형식이  ``format`` 또는 ``static_format``에 전달되었거나, ``size``가 유효하지 않습니다."
+msgstr "잘못된 형식이  ``format`` 또는 ``static_format`` 에 전달되었거나, ``size`` 가 유효하지 않습니다."
 
 #: discord.ClientUser.color:1 discord.User.color:1 discord.WidgetMember.color:1
 #: of
@@ -7537,45 +7534,45 @@ msgstr "권한을 확인할 채널입니다."
 
 #: ../../api.rst:2306
 msgid "Relationship"
-msgstr ""
+msgstr "관련성"
 
 #: discord.Relationship:1 of
 msgid "Represents a relationship in Discord."
-msgstr ""
+msgstr "디스코드에서 관련성을 나타냄"
 
 #: discord.Relationship:3 of
 msgid ""
 "A relationship is like a friendship, a person who is blocked, etc. Only "
 "non-bot accounts can have relationships."
-msgstr ""
+msgstr "관련성은 친구, 차단 된 유저와 같습니다. 봇이 아닌 계정만 관련성이 있습니다."
 
 #: discord.Relationship:8 of
 msgid "The user you have the relationship with."
-msgstr ""
+msgstr "관련성이 있는 사용자"
 
 #: discord.Relationship:14 of
 msgid "The type of relationship you have."
-msgstr ""
+msgstr "관령성의 타입"
 
 #: discord.Relationship:16 of
 msgid ":class:`RelationshipType`"
-msgstr ""
+msgstr ":class:`RelationshipType`"
 
 #: discord.Relationship.delete:3 of
 msgid "Deletes the relationship."
-msgstr ""
+msgstr "관련성을 삭제"
 
 #: discord.Relationship.delete:5 of
 msgid "Deleting the relationship failed."
-msgstr ""
+msgstr "관련성 삭제에 실패했습니다."
 
 #: discord.Relationship.accept:3 of
 msgid "Accepts the relationship request. e.g. accepting a friend request."
-msgstr ""
+msgstr "친구 요청을 수락"
 
 #: discord.Relationship.accept:6 of
 msgid "Accepting the relationship failed."
-msgstr ""
+msgstr "친구 요청 수락에 실패했습니다."
 
 #: ../../api.rst:2312
 msgid "User"

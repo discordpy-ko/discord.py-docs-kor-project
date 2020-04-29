@@ -90,7 +90,7 @@ msgstr ""
 
 #: discord.ext.tasks.Loop.current_loop discord.ext.tasks.Loop.next_iteration of
 msgid "type"
-msgstr "종류"
+msgstr "형식"
 
 #: discord.ext.tasks.Loop.current_loop:3 of
 msgid ":class:`int`"
@@ -106,7 +106,7 @@ msgstr "옵션[:class:`datetime.datetime`]"
 
 #: discord.ext.tasks.Loop.start:1 of
 msgid "Starts the internal task in the event loop."
-msgstr ""
+msgstr "이벤트 루프에서 내부 태스크를 시작합니다."
 
 #: discord.ext.tasks.Loop.add_exception_type discord.ext.tasks.Loop.after_loop
 #: discord.ext.tasks.Loop.before_loop discord.ext.tasks.Loop.change_interval
@@ -114,22 +114,22 @@ msgstr ""
 #: discord.ext.tasks.Loop.restart discord.ext.tasks.Loop.start
 #: discord.ext.tasks.loop of
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: discord.ext.tasks.Loop.start:3 of
 msgid "The arguments to use."
-msgstr ""
+msgstr "사용할 전달인자."
 
 #: discord.ext.tasks.Loop.restart:9 discord.ext.tasks.Loop.start:4 of
 msgid "The keyword arguments to use."
-msgstr ""
+msgstr "사용할 키워드 전달인자."
 
 #: discord.ext.tasks.Loop.add_exception_type discord.ext.tasks.Loop.after_loop
 #: discord.ext.tasks.Loop.before_loop discord.ext.tasks.Loop.change_interval
 #: discord.ext.tasks.Loop.error discord.ext.tasks.Loop.start
 #: discord.ext.tasks.loop of
 msgid "Raises"
-msgstr ""
+msgstr "예외"
 
 #: discord.ext.tasks.Loop.start:6 of
 msgid "A task has already been launched and is running."
@@ -137,7 +137,7 @@ msgstr ""
 
 #: discord.ext.tasks.Loop.remove_exception_type discord.ext.tasks.Loop.start of
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: discord.ext.tasks.Loop.start:8 of
 msgid "The task that has been created."
@@ -145,21 +145,21 @@ msgstr ""
 
 #: discord.ext.tasks.Loop.remove_exception_type discord.ext.tasks.Loop.start of
 msgid "Return type"
-msgstr ""
+msgstr "반환 형식"
 
 #: discord.ext.tasks.Loop.start:9 of
 msgid ":class:`asyncio.Task`"
-msgstr ""
+msgstr ":class:`asyncio.Task`"
 
 #: discord.ext.tasks.Loop.stop:1 of
 msgid "Gracefully stops the task from running."
-msgstr ""
+msgstr "돌아가는 태스크를 정지합니다."
 
 #: discord.ext.tasks.Loop.stop:3 of
 msgid ""
 "Unlike :meth:`cancel`\\, this allows the task to finish its current "
 "iteration before gracefully exiting."
-msgstr ""
+msgstr ":meth:`cancel`\\과는 달리, 태스크를 정지하기 전에 현재 반복중인 것을 완료하게 만듭니다."
 
 #: discord.ext.tasks.Loop.stop:8 of
 msgid ""
@@ -221,11 +221,11 @@ msgstr ""
 
 #: discord.ext.tasks.Loop.clear_exception_types:1 of
 msgid "Removes all exception types that are handled."
-msgstr ""
+msgstr "처리 가능한 모든 형식의 예외를 삭제합니다."
 
 #: discord.ext.tasks.Loop.clear_exception_types:5 of
 msgid "This operation obviously cannot be undone!"
-msgstr ""
+msgstr "이 작업은 당연히 되돌릴 수 없습니다!"
 
 #: discord.ext.tasks.Loop.remove_exception_type:1 of
 msgid "Removes exception types from being handled during the reconnect logic."
