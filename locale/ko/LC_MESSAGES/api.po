@@ -7041,7 +7041,7 @@ msgid ""
 "receive from the events specified in the :ref:`discord-api-events`."
 msgstr ""
 "이런 모델 클래스 인스턴스 중 하나를 얻기 위해서는 캐시를 거치는 것이며, 그 중 가장 일반적인 방법은 "
-" :ref:`discord-api-events`\\에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의  "
+" :ref:`discord-api-events`에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의  "
 ":func:`utils.find` 함수 또는 속성을 거치는 것입니다."
 
 #: ../../api.rst:2294 ../../api.rst:2559
@@ -7049,7 +7049,7 @@ msgid ""
 "Nearly all classes here have :ref:`py:slots` defined which means that it "
 "is impossible to have dynamic attributes to the data classes."
 msgstr ""
-"여기의 거의 모든 클래스에는 :ref:`py:slots` 이 정의되어 있으므로 "
+"여기의 거의 모든 클래스에는 :ref:`py:slots`가 정의되어 있으므로 "
 "데이터 클래스에 동적 속성을 가질 수 없습니다."
 
 
@@ -7129,7 +7129,7 @@ msgstr "선택 사항 [:class:`PremiumType`]"
 
 #: discord.ClientUser.get_relationship:1 of
 msgid "Retrieves the :class:`Relationship` if applicable."
-msgstr ":class:`Relationship` 이 적용 가능한 경우를 검색"
+msgstr ":class:`Relationship`이 적용 가능한 경우를 검색"
 
 #: discord.ClientUser.get_relationship:7 of
 msgid "The user ID to check if we have a relationship with them."
@@ -7179,7 +7179,7 @@ msgid ""
 "then the file must be opened via ``open('some_filename', 'rb')`` and the "
 ":term:`py:bytes-like object` is given through the use of ``fp.read()``."
 msgstr ""
-"아바타를 업로드 하려면 :term:`py:bytes-like object`\\형식의 이미지로 전달해야 합니다. "
+"아바타를 업로드 하려면 :term:`py:bytes-like object`형식의 이미지로 전달해야 합니다. "
 "``open('파일이름', 'rb')``로 파일을 열어야 하며, ``fp.read()``로 전달해야 합니다. "
 
 #: discord.ClientUser.edit:15 of
@@ -7214,7 +7214,7 @@ msgstr "변경하려는 새 사용자 이름입니다."
 msgid ""
 "A :term:`py:bytes-like object` representing the image to upload. Could be"
 " ``None`` to denote no avatar."
-msgstr "업로드 할 이미지를 가진 :term:`py:bytes-like object` 입니다. ``None``\\로 아바타 없음을 표시 할 수 있습니다."
+msgstr "업로드 할 이미지를 가진 :term:`py:bytes-like object` 입니다. ``None``로 아바타 없음을 표시 할 수 있습니다."
 
 #: discord.ClientUser.edit:36 of
 msgid "Editing your profile failed."
@@ -7239,7 +7239,7 @@ msgstr "제공된 유저와 그룹 채팅을 합니다. 이런 유저는 :attr:`
 
 #: discord.ClientUser.create_group:11 of
 msgid "An argument :class:`list` of :class:`User` to have in your group."
-msgstr "그룹의 :class:`User`\\이 담겨있는 :class:`list`\\입니다."
+msgstr "그룹의 :class:`User`이 담겨있는 :class:`list`입니다."
 
 #: discord.ClientUser.create_group:15 of
 msgid "Failed to create the group direct message."
@@ -7333,7 +7333,7 @@ msgstr "채팅에 올라온 링크의 비디오 및 이미지를 표시할지 �
 msgid ""
 "The :rfc:`3066` language identifier of the locale to use for the language"
 " of the Discord client."
-msgstr "디스코드 언어에 사용할 로케일의 :rfc:`3066` 언어 ID입니다."
+msgstr "디스코드 언어에 사용할 로케일의 RFC 3066 언어 ID입니다."
 
 #: discord.ClientUser.edit_settings:45 of
 msgid "Whether or not to use the compact Discord display mode."
@@ -7390,7 +7390,7 @@ msgstr ":class:`dict`"
 #: discord.User.avatar_url_as:1 discord.WidgetMember.avatar_url:1
 #: discord.WidgetMember.avatar_url_as:1 of
 msgid "Returns an :class:`Asset` for the avatar the user has."
-msgstr "사용자의 :class:`Asset`\\에서 아바타를 리턴합니다."
+msgstr "사용자의 :class:`Asset`에서 아바타를 리턴합니다."
 
 #: discord.ClientUser.avatar_url:3 discord.ClientUser.avatar_url_as:3
 #: discord.Member.avatar_url_as:3 discord.User.avatar_url:3
@@ -7406,7 +7406,7 @@ msgstr "만약 사용자에게 기존 아바타가 없는 경우 기본 아바�
 msgid ""
 "This is equivalent to calling :meth:`avatar_url_as` with the default "
 "parameters (i.e. webp/gif detection and a size of 1024)."
-msgstr "이는 :meth:`avatar_url_as`\\의 기본인 (webp / gif , 크기: 1024) 를 사용하여 호출 하는 것과 같습니다."
+msgstr "이는 :meth:`avatar_url_as`의 기본인 (webp / gif , 크기: 1024) 를 사용하여 호출 하는 것과 같습니다."
 
 #: discord.ClientUser.avatar_url_as:6 discord.Guild.icon_url_as:3
 #: discord.Member.avatar_url_as:6 discord.User.avatar_url_as:6
@@ -7444,7 +7444,7 @@ msgstr "잘못된 형식이  ``format`` 또는 ``static_format``에 전달되었
 msgid ""
 "A property that returns a color denoting the rendered color for the user."
 " This always returns :meth:`Colour.default`."
-msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 리턴합니다."
+msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`를 리턴합니다."
 
 #: discord.ClientUser.color:4 discord.Member.color:5 discord.User.color:4
 #: discord.WidgetMember.color:4 of
@@ -7463,7 +7463,7 @@ msgstr ":class:`Colour`"
 msgid ""
 "A property that returns a colour denoting the rendered colour for the "
 "user. This always returns :meth:`Colour.default`."
-msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 리턴합니다."
+msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`를 리턴합니다."
 
 #: discord.ClientUser.colour:4 discord.Member.colour:5 discord.User.colour:4
 #: discord.WidgetMember.colour:4 of
