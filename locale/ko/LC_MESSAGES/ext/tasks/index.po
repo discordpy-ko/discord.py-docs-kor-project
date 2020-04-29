@@ -90,11 +90,11 @@ msgstr ""
 
 #: discord.ext.tasks.Loop.current_loop discord.ext.tasks.Loop.next_iteration of
 msgid "type"
-msgstr "종류"
+msgstr ""
 
 #: discord.ext.tasks.Loop.current_loop:3 of
 msgid ":class:`int`"
-msgstr ":class:`int`"
+msgstr ""
 
 #: discord.ext.tasks.Loop.next_iteration:1 of
 msgid "When the next iteration of the loop will occur."
@@ -102,7 +102,7 @@ msgstr ""
 
 #: discord.ext.tasks.Loop.next_iteration:5 of
 msgid "Optional[:class:`datetime.datetime`]"
-msgstr "옵션 [:class:`datetime.datetime`]"
+msgstr ""
 
 #: discord.ext.tasks.Loop.start:1 of
 msgid "Starts the internal task in the event loop."
