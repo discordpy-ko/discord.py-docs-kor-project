@@ -27,7 +27,7 @@ msgid ""
 " collection of commands, listeners, and some state into one class. Cogs "
 "allow you to do just that."
 msgstr "봇의 개발 중 명령어들의 모음, 리스너, 그리고 몇몇 state들을 한 클래스에"
-" 조직화 하고 싶을 때가 옵니다. Cogs는 바로 그것을 가능할 수 있게 해줍니다."
+" 조직화하고 싶을 때가 옵니다. Cogs는 그것을 할 수 있게 해줍니다."
 
 #: ../../ext/commands/cogs.rst:10
 msgid "The gist:"
@@ -39,7 +39,7 @@ msgstr "각각의 cog는 :class:`.commands.Cog` 의 서브클래스인 Python �
 
 #: ../../ext/commands/cogs.rst:13
 msgid "Every command is marked with the :func:`.commands.command` decorator."
-msgstr "모든 커맨드들은 :func:`.commands.command` 데코레이터로 표시됩니다."
+msgstr "모든 명령어들은 :func:`.commands.command` 데코레이터로 표시됩니다."
 
 #: ../../ext/commands/cogs.rst:14
 msgid ""
@@ -76,27 +76,27 @@ msgstr "이 예제는 당신의 커맨드에 ``hello`` 라는 이름의 단일 "
 
 #: ../../ext/commands/cogs.rst:48
 msgid "A couple of technical notes to take into consideration:"
-msgstr "고려해야할 몇 가지 기술적 참고 사항:"
+msgstr "고려해야 할 몇 가지 기술적 참고 사항:"
 
 #: ../../ext/commands/cogs.rst:50
 msgid ""
 "All listeners must be explicitly marked via decorator, "
 ":meth:`~.commands.Cog.listener`."
 msgstr "모든 리스너들은 명시적으로 :meth:`~.commands.Cog.listener`"
-" 데코레이터를 동해 표시되어야만 합니다."
+" 데코레이터를 통해 표시되어야만 합니다."
 
 #: ../../ext/commands/cogs.rst:51
 msgid ""
 "The name of the cog is automatically derived from the class name but can "
 "be overridden. See :ref:`ext_commands_cogs_meta_options`."
-msgstr "Cog의 이름은 자동적으로 클래스 이름에서 얻어오지만, "
+msgstr "Cog의 이름은 자동적으로 클래스 이름에서 불러오지만, "
 "덮어씌워질 수 있습니다. :ref:`ext_commands_cogs_meta_options` 를 참고하세요."
 
 #: ../../ext/commands/cogs.rst:52
 msgid ""
 "All commands must now take a ``self`` parameter to allow usage of "
 "instance attributes that can be used to maintain state."
-msgstr "모든 커맨드들은 이제 상태를 유지하는데 사용될 수 있는 인스턴스 속성들을 "
+msgstr "모든 명령어들은 이제 상태를 유지하는데 사용될 수 있는 인스턴스 속성들을 "
 "사용할 수 있게 ``self`` 파라미터를 사용해야 합니디."
 
 #: ../../ext/commands/cogs.rst:55
@@ -109,7 +109,7 @@ msgid ""
 " cogs to be used. We do this via the :meth:`~.commands.Bot.add_cog` "
 "method."
 msgstr ""
-"일단 cogs를 정의했다면, 당신은 봇에게 사용될 cogs를 등록하라고 해야 합니다. "
+"일단 cogs를 정의했다면, 당신은 cogs를 사용하기 위해 봇에게 등록하라고 해야 합니다. "
 " 우리는 이것을 :meth:`~.commands.Bot.add_cog` 메소드를 통해 수행합니다."
 
 #: ../../ext/commands/cogs.rst:63
@@ -125,9 +125,9 @@ msgid ""
 ":ref:`ext_commands_cogs_meta_options`. So if we ever want to remove the "
 "cog eventually, we would have to do the following."
 msgstr ""
-"우리가 cog를 :ref:`ext_commands_cogs_meta_options` 로 덮어씌울 수 있는 "
-"이름으로 언급하는 것을 명심하세요. 그래서 만약 cog를 제거하고자 한다면 "
-"아래처럼 수행해야 합니다."
+"우리가 cog를 :ref:`ext_commands_cogs_meta_options` 를 통해 덮어씌울 수 있는 "
+"이름으로 참조한다는 것을 명심하세요. 따라서 만약 cog를 제거하고자 한다면 "
+"다음과 같이 해야 합니다."
 
 #: ../../ext/commands/cogs.rst:72
 msgid "Using Cogs"
@@ -139,7 +139,7 @@ msgid ""
 "as well. This allows us to use a cog as an inter-command communication "
 "protocol to share data. For example:"
 msgstr ""
-"방금 우리가 cog를 이름으로 제거했듯이, 또한 그것을 이름으로도 검색할 수 있습니다. "
+"방금 우리가 cog를 이름으로 제거했듯이, 우린 그것을 이름으로도 검색할 수 있습니다. "
 "이는 우리가 cog를 데이터를 공유하기 위한 명령어 내부의 프로토콜로 사용할 수 있게 합니다. "
 "예를 들어:"
 
@@ -151,8 +151,8 @@ msgstr "특별한 메소드들"
 msgid ""
 "As cogs get more complicated and have more commands, there comes a point "
 "where we want to customise the behaviour of the entire cog or bot."
-msgstr "Cogs가 더 복잡해지고 더 많은 명령어를 가지면서, cog 전체 또는 봇을 "
-"커스터마이즈 하고 싶은 때가 찾아옵니다."
+msgstr "Cogs가 점점 복잡해지고 많은 명령어를 가지면서, cog 또는 봇을 통째로 "
+"커스터마이즈 하고 싶을 때가 찾아옵니다."
 
 #: ../../ext/commands/cogs.rst:113
 msgid "They are as follows:"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: ../../ext/commands/cogs.rst:123
 msgid "You can visit the reference to get more detail."
-msgstr "더 자세한 정보를 위해 레퍼런스를 방문할 수 있습니다."
+msgstr "레퍼런스를 방문해 더 자세한 정보를 찾아볼 수 있습니다."
 
 #: ../../ext/commands/cogs.rst:128
 msgid "Meta Options"
