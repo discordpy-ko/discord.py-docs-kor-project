@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../migrating_to_async.rst:8
 msgid "Migrating to v0.10.0"
-msgstr ""
+msgstr "v0.10.0으로 이동"
 
 #: ../../migrating_to_async.rst:10
 msgid ""
 "v0.10.0 is one of the biggest breaking changes in the library due to "
 "massive fundamental changes in how the library operates."
-msgstr ""
+msgstr "" 
+"v0.10.0은 라이브러리가 작동하는 방식의 변화 때문에, "
+"라이브러리에 가장 큰 변화가 이루어진 버전입니다."
 
 #: ../../migrating_to_async.rst:13
 msgid ""
@@ -35,14 +37,18 @@ msgid ""
 "<50>`. To reiterate this, the implication is that **python version 2.7 "
 "and 3.3 are no longer supported**."
 msgstr ""
+"가장 큰 변화는 라이브러리가 Python 3.4.2 버전 밑의 버전들을 지원하지 않는다는"
+"것 입니다. 이것은 :mod:`asyncio`를 지원하기 위함인데, 더 자세하게 말하면, "
+":issue:`통신, 응답 관련 문제` 때문입니다. 다시 말하자면, 결론적으로, ** " 
+"Python 2.7과 3.3은 더이상 지원을 하지 않는다는 것 입니다."
 
 #: ../../migrating_to_async.rst:18
 msgid "Below are all the other major changes from v0.9.0 to v0.10.0."
-msgstr ""
+msgstr "아래에 있는 내용은 v0.9.0에서 v0.10.0 사이에 일어난 큰 변화들 입니다."
 
 #: ../../migrating_to_async.rst:21
 msgid "Event Registration"
-msgstr ""
+msgstr "이벤트 등록"
 
 #: ../../migrating_to_async.rst:23
 msgid ""
@@ -50,21 +56,23 @@ msgid ""
 "is still possible, the events must be decorated with "
 "``@asyncio.coroutine``."
 msgstr ""
+"이벤트들은 :meth:`Client.event`로 먼저 등록이 됩니다. 그 사이에 이것은 "
+"여전히 가능합니다 : 이벤트들은 ``@asyncio.coroutine`` 으로 데코레이팅 되야 합니다."
 
 #: ../../migrating_to_async.rst:26 ../../migrating_to_async.rst:71
 #: ../../migrating_to_async.rst:105 ../../migrating_to_async.rst:166
 msgid "Before:"
-msgstr ""
+msgstr "이전: "
 
 #: ../../migrating_to_async.rst:34 ../../migrating_to_async.rst:83
 #: ../../migrating_to_async.rst:111 ../../migrating_to_async.rst:174
 #: ../../migrating_to_async.rst:284
 msgid "After:"
-msgstr ""
+msgstr "이후:"
 
 #: ../../migrating_to_async.rst:43
 msgid "Or in Python 3.5+:"
-msgstr ""
+msgstr "또는 Python 3.5+ 에서:"
 
 #: ../../migrating_to_async.rst:51
 msgid ""
@@ -72,6 +80,9 @@ msgid ""
 "(:meth:`Client.async_event`) is provided for easier registration. For "
 "example:"
 msgstr ""
+"타이핑 해야할 것이 많이 때문에, 유틸리티 데코레이터인"
+"(:meth:`Client.async_event`)가 편하게 등록을 하기 위해서 제공됩니다."
+"예시 : "
 
 #: ../../migrating_to_async.rst:61
 msgid ""
@@ -79,10 +90,13 @@ msgid ""
 " that are coroutines must be decorated with ``@asyncio.coroutine`` or be "
 "``async def``."
 msgstr ""
+"하지만 조심하세요, 그것은 아직도 코루틴이고, 당신의 다른 코루틴 "
+"함수들은 반드시 ``@asyncio.coroutine``로 데코레이팅 되거나 "
+"``async def`` 형식이여야 합니다."
 
 #: ../../migrating_to_async.rst:65
 msgid "Event Changes"
-msgstr ""
+msgstr "이벤트 변화들"
 
 #: ../../migrating_to_async.rst:67
 msgid ""
