@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../api.rst:4
 msgid "API Reference"
-msgstr ""
+msgstr "API 레퍼런스"
 
 #: ../../api.rst:6
 msgid "The following section outlines the API of discord.py."
-msgstr ""
+msgstr "아래의 섹션은 discord.py API에 대해 설명하고 있습니다."
 
 #: ../../api.rst:10
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../api.rst:17
 msgid "Version Related Info"
-msgstr ""
+msgstr "버전과 관련된 정보"
 
 #: ../../api.rst:19
 msgid ""
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../api.rst:23
 msgid "A named tuple that is similar to :obj:`py:sys.version_info`."
-msgstr ""
+msgstr ":obj:`py:sys.version_info`\\와 비슷한 튜플의 이름입니다."
 
 #: ../../api.rst:25
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../api.rst:34
 msgid "Client"
-msgstr ""
+msgstr "클라이언트"
 
 #: discord.Client:1 of
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: discord.Client:4 of
 msgid "A number of options can be passed to the :class:`Client`."
-msgstr ""
+msgstr "여러 가지 옵션을 :class:`Client`\\에 전달할 수 있습니다."
 
 #: ../../api.rst discord.Asset.save discord.AsyncWebhookAdapter
 #: discord.AsyncWebhookAdapter.handle_execution_response
@@ -161,7 +161,7 @@ msgstr ""
 #: discord.utils.find discord.utils.get discord.utils.oauth_url
 #: discord.utils.resolve_invite discord.utils.sleep_until of
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: discord.Client:6 of
 msgid ""
@@ -179,7 +179,7 @@ msgstr ""
 
 #: discord.Client:9 of
 msgid "Allow disabling the message cache and change the default size to 1000."
-msgstr ""
+msgstr "메시지 캐시를 비활성화하고 기본 크기를 1000으로 변경하세요."
 
 #: discord.Client:12 of
 msgid ""
@@ -190,23 +190,23 @@ msgstr ""
 
 #: discord.Client:16 of
 msgid "The connector to use for connection pooling."
-msgstr ""
+msgstr "연결 풀링에 사용할 커넥터."
 
 #: discord.Client:18 of
 msgid "Proxy URL."
-msgstr ""
+msgstr "프록시 URL."
 
 #: discord.Client:20 of
 msgid "An object that represents proxy HTTP Basic Authorization."
-msgstr ""
+msgstr "프록시 HTTP Basic Authorization을 나타내는 오브젝트"
 
 #: discord.Client:22 of
 msgid "Integer starting at 0 and less than :attr:`.shard_count`."
-msgstr ""
+msgstr "0부터 시작하고 :attr:`.shard_count`\\보다 작은 정수."
 
 #: discord.Client:24 of
 msgid "The total number of shards."
-msgstr ""
+msgstr "샤드의 총 개수."
 
 #: discord.Client:26 of
 msgid ""
@@ -218,21 +218,23 @@ msgstr ""
 
 #: discord.Client:31 of
 msgid "A status to start your presence with upon logging on to Discord."
-msgstr ""
+msgstr "디스코드에 로그인할 때 나타나는 상태."
 
 #: discord.Client:33 of
 msgid "An activity to start your presence with upon logging on to Discord."
-msgstr ""
+msgstr "디스코드에 로그인할 때 나타나는 활동."
 
 #: discord.Client:35 of
 msgid ""
 "Control how the client handles mentions by default on every message sent."
 "  .. versionadded:: 1.4"
 msgstr ""
+"전송된 모든 멘션에 대해 클라이언트가 어떻게 다루는지 제어합니다."
+"  .. versionadded:: 1.4"
 
 #: discord.Client:35 of
 msgid "Control how the client handles mentions by default on every message sent."
-msgstr ""
+msgstr "전송된 모든 멘션에 대해 클라이언트가 어떻게 다루는지 제어합니다."
 
 #: discord.Client:39 of
 msgid ""
@@ -268,19 +270,19 @@ msgstr ""
 
 #: discord.Client:44 of
 msgid "Whether to dispatching of presence or typing events. Defaults to ``True``."
-msgstr ""
+msgstr "상태나 타이핑 이벤트의 처리 여부. 기본값은 ``True``\\입니다."
 
 #: discord.Client:50 of
 msgid "If this is set to ``False`` then the following features will be disabled:"
-msgstr ""
+msgstr "이것이 ``False``\\로 설정되어 있을 경우, 아래의 기능이 비활성화됩니다:"
 
 #: discord.Client:52 of
 msgid "No user related updates (:func:`on_user_update` will not dispatch)"
-msgstr ""
+msgstr "사용자 관련 이벤트 없음 (:func:`on_user_update`\\는 처리되지 않습니다)"
 
 #: discord.Client:56 of
 msgid "All member related events will be disabled."
-msgstr ""
+msgstr "모든 멤버 관련 이벤트가 비활성화됩니다."
 
 #: discord.Client:54 of
 msgid ":func:`on_member_update`"
@@ -296,7 +298,7 @@ msgstr ""
 
 #: discord.Client:58 of
 msgid "Typing events will be disabled (:func:`on_typing`)."
-msgstr ""
+msgstr "타이핑 이벤트가 비활성화됩니다 (:func:`on_typing`)."
 
 #: discord.Client:59 of
 msgid ""
@@ -307,7 +309,7 @@ msgstr ""
 
 #: discord.Client:62 of
 msgid "Computing permissions"
-msgstr ""
+msgstr "컴퓨팅 권한"
 
 #: discord.Client:63 of
 msgid ""
@@ -323,23 +325,23 @@ msgstr ""
 
 #: discord.Client:66 of
 msgid ":attr:`Guild.owner` will usually resolve to ``None``."
-msgstr ""
+msgstr ":attr:`Guild.owner`\\이 ``None``\\으로 반환됩니다."
 
 #: discord.Client:67 of
 msgid ":meth:`Guild.get_member` will usually be unavailable."
-msgstr ""
+msgstr ":meth:`Guild.get_member`\\의 사용이 불가능해집니다."
 
 #: discord.Client:68 of
 msgid "Anything that involves using :class:`Member`."
-msgstr ""
+msgstr ":class:`Member`\\를 사용한 모든 것."
 
 #: discord.Client:69 of
 msgid ":attr:`users` will not be as populated."
-msgstr ""
+msgstr ":attr:`users`\\의 값이 그렇게 많지 않을 것입니다."
 
 #: discord.Client:70 of
 msgid "etc."
-msgstr ""
+msgstr "등등."
 
 #: discord.Client:72 of
 msgid ""
@@ -371,13 +373,13 @@ msgstr ""
 msgid ""
 "The websocket gateway the client is currently connected to. Could be "
 "``None``."
-msgstr ""
+msgstr "클라이언트가 현재 연결되어있는 웹소켓 대역폭. ``None``\일수도 있습니다."
 
 #: discord.Client:90 of
 msgid ""
 "The event loop that the client uses for HTTP requests and websocket "
 "operations."
-msgstr ""
+msgstr "클라이언트가 HTTP 요청과 웹소켓 작업에 사용하는 루프 이벤트."
 
 #: discord.Activity discord.Activity.end discord.Activity.large_image_text
 #: discord.Activity.large_image_url discord.Activity.small_image_text
@@ -501,7 +503,7 @@ msgstr ""
 #: discord.abc.User.display_name discord.abc.User.mention
 #: discord.opus.OpusError of
 msgid "type"
-msgstr ""
+msgstr "타입"
 
 #: discord.Client:92 discord.VoiceClient:41 of
 msgid ":class:`asyncio.AbstractEventLoop`"
@@ -509,11 +511,11 @@ msgstr ""
 
 #: discord.AutoShardedClient.latency:1 discord.Client.latency:1 of
 msgid "Measures latency between a HEARTBEAT and a HEARTBEAT_ACK in seconds."
-msgstr ""
+msgstr "HEARTBEAT와 HEARTBEAT_ACK 사이의 지연 시간을 초 단위로 측정합니다."
 
 #: discord.Client.latency:3 of
 msgid "This could be referred to as the Discord WebSocket protocol latency."
-msgstr ""
+msgstr "Discord WebSocket 프로토콜 지연 시간이라고 불리기도 합니다."
 
 #: discord.AutoShardedClient.latency:7 discord.Client.latency:5
 #: discord.Guild.bitrate_limit:3 discord.VoiceClient.average_latency:3
@@ -523,7 +525,7 @@ msgstr ""
 
 #: discord.Client.user:1 of
 msgid "Represents the connected client. None if not logged in."
-msgstr ""
+msgstr "연결된 클라이언트에 해당합니다. 로그인되지 않았을 경우 None입니다."
 
 #: discord.Client.user:3 of
 msgid "Optional[:class:`.ClientUser`]"
@@ -531,7 +533,7 @@ msgstr ""
 
 #: discord.Client.guilds:1 of
 msgid "The guilds that the connected client is a member of."
-msgstr ""
+msgstr "연결된 클라이언트가 속한 길드."
 
 #: discord.Client.guilds:3 of
 msgid "List[:class:`.Guild`]"
@@ -539,7 +541,7 @@ msgstr ""
 
 #: discord.Client.emojis:1 of
 msgid "The emojis that the connected client has."
-msgstr ""
+msgstr "연결된 클라이언트가 보유중인 이모티콘."
 
 #: discord.Client.emojis:3 of
 msgid "List[:class:`.Emoji`]"
@@ -547,7 +549,7 @@ msgstr ""
 
 #: discord.Client.cached_messages:1 of
 msgid "Read-only list of messages the connected client has cached."
-msgstr ""
+msgstr "연결된 클라이언트에 캐싱된 읽기 전용 메시지의 목록."
 
 #: discord.Client.cached_messages:5 of
 msgid "Sequence[:class:`.Message`]"
@@ -555,13 +557,13 @@ msgstr ""
 
 #: discord.Client.private_channels:1 of
 msgid "The private channels that the connected client is participating on."
-msgstr ""
+msgstr "연결된 클라이언트가 참여중인 비공개 채널."
 
 #: discord.Client.private_channels:5 of
 msgid ""
 "This returns only up to 128 most recent private channels due to an "
 "internal working on how Discord deals with private channels."
-msgstr ""
+msgstr "디스코드 자체의 비공개 채널을 다루는 방식 때문에 최근 128개의 비공개 채널만 반환합니다."
 
 #: discord.Client.private_channels:8 of
 msgid "List[:class:`.abc.PrivateChannel`]"
@@ -569,7 +571,7 @@ msgstr ""
 
 #: discord.Client.voice_clients:1 of
 msgid "Represents a list of voice connections."
-msgstr ""
+msgstr "음성 연결 목록을 나타냅니다."
 
 #: discord.Client.voice_clients:3 of
 msgid "List[:class:`.VoiceClient`]"
@@ -577,7 +579,7 @@ msgstr ""
 
 #: discord.Client.is_ready:1 of
 msgid "Specifies if the client's internal cache is ready for use."
-msgstr ""
+msgstr "클라이언트의 내부 캐시를 사용할 준비가 되었는지의 여부를 지정합니다."
 
 #: ../../api.rst:1814 ../../api.rst:1822 ../../api.rst:1833 ../../api.rst:1853
 #: discord.Asset.read:1 discord.Asset.save:1 discord.Attachment.read:1
@@ -665,7 +667,7 @@ msgstr ""
 
 #: discord.Client.on_error:3 of
 msgid "The default error handler provided by the client."
-msgstr ""
+msgstr "클라이언트가 제공하는 기본적인 오류 처리기."
 
 #: discord.Client.on_error:5 of
 msgid ""
@@ -693,7 +695,7 @@ msgstr ""
 #: discord.AutoShardedClient.request_offline_members:13
 #: discord.Client.request_offline_members:13 of
 msgid "An argument list of guilds to request offline members for."
-msgstr ""
+msgstr "길드에 요청할 오프라인 멤버의 인자 목록."
 
 #: discord.Asset.read discord.Asset.save discord.Attachment.read
 #: discord.Attachment.save discord.Attachment.to_file
@@ -770,7 +772,7 @@ msgstr ""
 #: discord.abc.Messageable.fetch_message discord.abc.Messageable.history
 #: discord.abc.Messageable.pins discord.abc.Messageable.send of
 msgid "Raises"
-msgstr ""
+msgstr "예외"
 
 #: discord.AutoShardedClient.request_offline_members:16
 #: discord.Client.request_offline_members:16 of
@@ -779,11 +781,11 @@ msgstr ""
 
 #: discord.Client.login:3 of
 msgid "Logs in the client with the specified credentials."
-msgstr ""
+msgstr "지정된 인증서로 클라이언트에 로그인합니다."
 
 #: discord.Client.login:5 of
 msgid "This function can be used in two different ways."
-msgstr ""
+msgstr "이 함수는 두 가지의 다른 방법으로 사용될 수 있습니다."
 
 #: discord.Client.login:9 of
 msgid ""
@@ -792,6 +794,8 @@ msgid ""
 "doing so might potentially get your account banned. Use this at your own "
 "risk."
 msgstr ""
+"유저 토큰으로 로그인하는 것은 디스코드의 `이용약관 <https://support.discordapp.com/hc/en-us/articles/115002192352>`_"
+"\\에 위배됩니다. 이는 잠재적으로 당신의 계정이 차단될 수 있음을 뜻합니다. 위험을 감수하고 사용하세요."
 
 #: discord.Client.login:14 of
 msgid ""
@@ -6165,7 +6169,7 @@ msgstr ""
 
 #: discord.ClientUser:23 discord.User:23 discord.abc.User:13 of
 msgid "The user's username."
-msgstr ""
+msgstr "사용자의 사용자 이름"
 
 #: discord.abc.User:19 of
 msgid "The user's discriminator."
@@ -7007,25 +7011,29 @@ msgstr ""
 
 #: ../../api.rst:2274
 msgid "Discord Models"
-msgstr ""
+msgstr "디스코드 모델"
 
 #: ../../api.rst:2276
 msgid ""
 "Models are classes that are received from Discord and are not meant to be"
 " created by the user of the library."
 msgstr ""
+"모델은 디스코드에서 수신되는 클래스로."
+", 라이브러리 사용자에 의해 생성되지 않습니다"
 
 #: ../../api.rst:2281
 msgid ""
 "The classes listed below are **not intended to be created by users** and "
-"are also **read-only**."
-msgstr ""
+"are also **읽기 전용** 입니다."
+msgstr "아래에 나열된 클래스들는 **유저들에 의해 생성되도록 의도된 것**이 아니며 **읽기 전용** 입니다."
 
 #: ../../api.rst:2284
 msgid ""
 "For example, this means that you should not make your own :class:`User` "
 "instances nor should you modify the :class:`User` instance yourself."
 msgstr ""
+"예를 들어,  :class:`User` 인스턴스를 직접 만들거나  "
+":class:`User` 인스턴스를 직접 수정해서는 안됩니다."
 
 #: ../../api.rst:2287
 msgid ""
@@ -7034,129 +7042,136 @@ msgid ""
 ":func:`utils.find` function or attributes of model classes that you "
 "receive from the events specified in the :ref:`discord-api-events`."
 msgstr ""
+"이런 모델 클래스 인스턴스 중 하나를 얻기 위해서는 캐시를 거치는 것이며, 그 중 가장 일반적인 방법은 "
+" :ref:`discord-api-events`\\에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의 :func:`utils.find` 함수 또는 속성을 거치는 것입니다."
 
 #: ../../api.rst:2294 ../../api.rst:2559
 msgid ""
 "Nearly all classes here have :ref:`py:slots` defined which means that it "
 "is impossible to have dynamic attributes to the data classes."
 msgstr ""
+"여기의 거의 모든 클래스에는 :ref:`py:slots` 이 정의되어 있으므로 "
+"데이터 클래스에 동적 속성을 가질 수 없습니다."
+
 
 #: ../../api.rst:2299
 msgid "ClientUser"
-msgstr ""
+msgstr "클라이언트 사용자"
 
 #: discord.ClientUser:1 of
 msgid "Represents your Discord user."
-msgstr ""
+msgstr "디스코드 사용자를 나타냅니다."
 
 #: discord.ClientUser:7 discord.User:7 of
 msgid "Checks if two users are equal."
-msgstr ""
+msgstr "두 사용자가 같은지 확인합니다."
 
 #: discord.ClientUser:11 discord.User:11 of
 msgid "Checks if two users are not equal."
-msgstr ""
+msgstr "두 명의 사용자가 다른지 확인합니다."
 
 #: discord.ClientUser:15 discord.User:15 of
 msgid "Return the user's hash."
-msgstr ""
+msgstr "사용자의 해시를 리턴합니다."
 
 #: discord.ClientUser:19 discord.User:19 of
 msgid "Returns the user's name with discriminator."
-msgstr ""
+msgstr "태그와 함께 사용자 이름을 리턴합니다."
 
 #: discord.ClientUser:29 discord.User:29 of
 msgid "The user's unique ID."
-msgstr ""
+msgstr "사용자의 고유 ID"
 
 #: discord.ClientUser:35 discord.User:35 of
 msgid "The user's discriminator. This is given when the username has conflicts."
-msgstr ""
+msgstr "사용자의 태그. 사용자 이름이 충돌 할 때 쓰입니다."
 
 #: discord.ClientUser:41 discord.User:41 of
 msgid "The avatar hash the user has. Could be None."
-msgstr ""
+msgstr "사용자가 가지고 있는 아바타 해시. None 일 수 있습니다."
 
 #: discord.ClientUser:53 discord.User:53 of
 msgid ""
 "Specifies if the user is a system user (i.e. represents Discord "
 "officially)."
 msgstr ""
+"사용자가 시스템 사용자인지를 지정 (예 : 공식적으로 "
+"디스코드를 나타냄)"
 
 #: discord.ClientUser:61 of
 msgid "Specifies if the user is a verified account."
-msgstr ""
+msgstr "사용자가 확인 된 계정 인지를 지정"
 
 #: discord.ClientUser:67 of
 msgid "The email the user used when registering."
-msgstr ""
+msgstr "사용자가 등록 할 때 사용한 이메일"
 
 #: discord.ClientUser:73 of
 msgid "The IETF language tag used to identify the language the user is using."
-msgstr ""
+msgstr "사용자가 사용중인 언어를 식별하는 데 사용되는 IETF 언어태그"
 
 #: discord.ClientUser:79 of
 msgid "Specifies if the user has MFA turned on and working."
-msgstr ""
+msgstr "사용자가 MFA를 켜고 작동 중인지 여부를 지정"
 
 #: discord.ClientUser:85 of
 msgid "Specifies if the user is a premium user (e.g. has Discord Nitro)."
-msgstr ""
+msgstr "사용자가 프리미엄 사용자인지 여부를 지정(예 : Discord Nitro 사용)"
 
 #: discord.ClientUser:91 of
 msgid ""
 "Specifies the type of premium a user has (e.g. Nitro or Nitro Classic). "
 "Could be None if the user is not premium."
-msgstr ""
+msgstr "사용자가 가진 프리미엄 유형을 지정 (예 : Nitro 또는 Nitro Classic) 사용자가 프리미엄이 아닌 경우 None 일 수 있습니다."
 
 #: discord.ClientUser:93 of
 msgid "Optional[:class:`PremiumType`]"
-msgstr ""
+msgstr "선택 사항 [:class:`PremiumType`]"
 
 #: discord.ClientUser.get_relationship:1 of
 msgid "Retrieves the :class:`Relationship` if applicable."
-msgstr ""
+msgstr ":class:`Relationship` 이 적용 가능한 경우를 검색"
 
 #: discord.ClientUser.get_relationship:7 of
 msgid "The user ID to check if we have a relationship with them."
-msgstr ""
+msgstr "관련성이 있는지 확인할 사용자 ID"
 
 #: discord.ClientUser.get_relationship:10 of
 msgid "The relationship if available or ``None``."
-msgstr ""
+msgstr "가능한 경우 관련성 또는 ``None`` "
 
 #: discord.ClientUser.get_relationship:11 of
 msgid "Optional[:class:`Relationship`]"
-msgstr ""
+msgstr "선택 사항[:class:`Relationship`]"
 
 #: discord.ClientUser.relationships:1 of
 msgid "Returns all the relationships that the user has."
-msgstr ""
+msgstr "사용자가 가진 모든 관련성를 리턴"
 
 #: discord.CallMessage:16 discord.ClientUser.blocked:7
 #: discord.ClientUser.friends:7 discord.ClientUser.relationships:7
 #: discord.GroupCall:21 discord.GroupCall.connected:3 discord.GroupChannel:25
 #: discord.Member.mutual_friends:13 discord.User.mutual_friends:13 of
 msgid "List[:class:`User`]"
-msgstr ""
+msgstr "리스트 [:class:`User`]"
 
 #: discord.ClientUser.friends:1 of
 msgid "Returns all the users that the user is friends with."
-msgstr ""
+msgstr "사용자와 친구인 모든 사용자를 리턴"
 
 #: discord.ClientUser.blocked:1 of
 msgid "Returns all the users that the user has blocked."
-msgstr ""
+msgstr "사용자가 차단한 모든 사용자를 리턴"
 
 #: discord.ClientUser.edit:3 of
 msgid "Edits the current profile of the client."
-msgstr ""
+msgstr "클라이언트의 프로필을 편집"
 
 #: discord.ClientUser.edit:5 of
 msgid ""
 "If a bot account is used then a password field is optional, otherwise it "
 "is required."
-msgstr ""
+msgstr "봇 계정을 사용하는 경우 비밀번호 필드는 선택 사항이며 그렇지 않은 경우는 비밀번호 필드가 필요합니다."
 
 #: discord.ClientUser.edit:10 of
 msgid ""
@@ -7165,24 +7180,26 @@ msgid ""
 "then the file must be opened via ``open('some_filename', 'rb')`` and the "
 ":term:`py:bytes-like object` is given through the use of ``fp.read()``."
 msgstr ""
+"아바타를 업로드 하려면 :term:`py:bytes-like object` 형식의 이미지로 전달해야 합니다. "
+"``open('파일이름', 'rb')`` 로 파일을 열어야 하며, ``fp.read()`` 로 전달해야 합니다. "
 
 #: discord.ClientUser.edit:15 of
 msgid "The only image formats supported for uploading is JPEG and PNG."
-msgstr ""
+msgstr "업로드는 JPEG 또는 PNG형식으로만 해야합니다."
 
 #: discord.ClientUser.edit:17 of
 msgid ""
 "The current password for the client's account. Only applicable to user "
 "accounts."
-msgstr ""
+msgstr "클라이언트 계정의 현재 비밀번호 입니다. 유저 계정에만 적용됩니다."
 
 #: discord.ClientUser.edit:20 of
 msgid "The new password you wish to change to. Only applicable to user accounts."
-msgstr ""
+msgstr "변경하려는 새 비밀번호입니다. 유저 계정에만 적용됩니다."
 
 #: discord.ClientUser.edit:23 of
 msgid "The new email you wish to change to. Only applicable to user accounts."
-msgstr ""
+msgstr "변경하려는 새 이메일입니다. 유저 계정에만 적용됩니다."
 
 #: discord.ClientUser.edit:26 of
 msgid ""
@@ -7192,189 +7209,189 @@ msgstr ""
 
 #: discord.ClientUser.edit:30 of
 msgid "The new username you wish to change to."
-msgstr ""
+msgstr "변경하려는 새 사용자 이름입니다."
 
 #: discord.ClientUser.edit:32 of
 msgid ""
 "A :term:`py:bytes-like object` representing the image to upload. Could be"
 " ``None`` to denote no avatar."
-msgstr ""
+msgstr "업로드 할 이미지를 가진 :term:`py:bytes-like object` 입니다. ``None``\\로 아바타 없음을 표시 할 수 있습니다."
 
 #: discord.ClientUser.edit:36 of
 msgid "Editing your profile failed."
-msgstr ""
+msgstr "프로필 편집에 실패했습니다."
 
 #: discord.ClientUser.edit:37 of
 msgid "Wrong image format passed for ``avatar``."
-msgstr ""
+msgstr "``avatar`` 에 잘못된 이미지 형식이 전달되었습니다."
 
 #: discord.ClientUser.edit:38 of
 msgid ""
 "Password is required for non-bot accounts.     House field was not a "
 "HypeSquadHouse."
-msgstr ""
+msgstr "봇이 아닌 계정에는 암호가 필요합니다. house 필드는 HypeSquadHouse가 아닙니다."
 
 #: discord.ClientUser.create_group:3 of
 msgid ""
 "Creates a group direct message with the recipients provided. These "
 "recipients must be have a relationship of type "
 ":attr:`RelationshipType.friend`."
-msgstr ""
+msgstr "제공된 유저와 그룹 채팅을 합니다. 이런 유저는 :attr:`RelationshipType.friend` 유형이여야 합니다."
 
 #: discord.ClientUser.create_group:11 of
 msgid "An argument :class:`list` of :class:`User` to have in your group."
-msgstr ""
+msgstr "그룹의 :class:`User`\\가 담겨있는 :class:`list`\\입니다."
 
 #: discord.ClientUser.create_group:15 of
 msgid "Failed to create the group direct message."
-msgstr ""
+msgstr "그룹 채팅을 작성하지 못했습니다."
 
 #: discord.ClientUser.create_group:16 of
 msgid ""
 "Attempted to create a group with only one recipient.     This does not "
 "include yourself."
-msgstr ""
+msgstr "유저가 한 명인 그룹을 만드려고 했습니다. 여기에는 자신이 포함되지 않습니다. "
 
 #: discord.ClientUser.create_group:18 of
 msgid "The new group channel."
-msgstr ""
+msgstr "새로운 그룹 채팅"
 
 #: discord.ClientUser.create_group:19 of
 msgid ":class:`GroupChannel`"
-msgstr ""
+msgstr ":class:`GroupChannel`"
 
 #: discord.ClientUser.edit_settings:3 of
 msgid "Edits the client user's settings."
-msgstr ""
+msgstr "클라이언트의 설정을 편집합니다."
 
 #: discord.ClientUser.edit_settings:9 of
 msgid ""
 "How long (in seconds) the user needs to be AFK until Discord sends push "
 "notifications to your mobile device."
-msgstr ""
+msgstr "디스코드에서 모바일 기기로 푸시 알림을 보낼 때까지 사용자가 잠수 상태여야 하는 시간(초)입니다."
 
 #: discord.ClientUser.edit_settings:12 of
 msgid "Whether or not to animate emojis in the chat."
-msgstr ""
+msgstr "채팅에서 이모티콘을 자동으로 재생할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:14 of
 msgid ""
 "Whether or not to automatically convert emoticons into emojis. e.g. :-) "
 "-> 😃"
-msgstr ""
+msgstr "채팅 이모티콘을 이모티콘으로 자동 변환할지 여부입니다. 예) :-) -> 😃"
 
 #: discord.ClientUser.edit_settings:17 of
 msgid ""
 "Whether or not to automatically disable DMs between you and members of "
 "new guilds you join."
-msgstr ""
+msgstr "가입한 새로운 서버에서 클라이언트와 구성원 사이에서 DM을 자동으로 비활성화할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:20 of
 msgid ""
 "Whether or not to automatically detect accounts from services like Steam "
 "and Blizzard when you open the Discord client."
-msgstr ""
+msgstr "디스코드를 켤 때 스팀 및 블리자드와 같은 서비스에서 계정을 자동으로 감지할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:23 of
 msgid "Whether or not to enable developer mode."
-msgstr ""
+msgstr "개발자 모드를 사용할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:25 of
 msgid "Whether or not to disable the showing of the Games tab."
-msgstr ""
+msgstr "게임 탭 표시를 비활성화할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:27 of
 msgid "Whether or not to allow tts messages to be played/sent."
-msgstr ""
+msgstr "tts 메시지의 재생 / 전송 허용 여부입니다."
 
 #: discord.ClientUser.edit_settings:29 of
 msgid "The filter for explicit content in all messages."
-msgstr ""
+msgstr "모든 메시지의 내용에 대한 필터입니다."
 
 #: discord.ClientUser.edit_settings:31 of
 msgid "Who can add you as a friend."
-msgstr ""
+msgstr "친구로 나를 추가 할 수있는 사람입니다."
 
 #: discord.ClientUser.edit_settings:33 of
 msgid "Whether or not to automatically play gifs that are in the chat."
-msgstr ""
+msgstr "채팅중에 GIF를 자동으로 재생할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:35 of
 msgid ""
 "A list of guilds in order of the guild/guild icons that are on the left "
 "hand side of the UI."
-msgstr ""
+msgstr "UI 왼쪽에있는 길드 / 길드 아이콘 순서대로 길드 목록입니다."
 
 #: discord.ClientUser.edit_settings:38 of
 msgid "Whether or not to display attachments when they are uploaded in chat."
-msgstr ""
+msgstr "첨부 파일을 채팅에 업로드 할 때 첨부 파일을 표시할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:40 of
 msgid "Whether or not to display videos and images from links posted in chat."
-msgstr ""
+msgstr "채팅에 올라온 링크의 비디오 및 이미지를 표시할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:42 of
 msgid ""
 "The :rfc:`3066` language identifier of the locale to use for the language"
 " of the Discord client."
-msgstr ""
+msgstr "디스코드 언어에 사용할 로케일의 :rfc:`3066` 언어 ID입니다."
 
 #: discord.ClientUser.edit_settings:45 of
 msgid "Whether or not to use the compact Discord display mode."
-msgstr ""
+msgstr "메시지 컴팩트 모드 사용 여부입니다."
 
 #: discord.ClientUser.edit_settings:47 of
 msgid "Whether or not to render embeds that are sent in the chat."
-msgstr ""
+msgstr "채팅에서 전송된 임베드를 렌더링할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:49 of
 msgid "Whether or not to render reactions that are added to messages."
-msgstr ""
+msgstr "메시지에 추가된 반응을 렌더링할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:51 of
 msgid "A list of guilds that you will not receive DMs from."
-msgstr ""
+msgstr "DM을 받지 않을 길드 목록입니다."
 
 #: discord.ClientUser.edit_settings:53 of
 msgid "Whether or not to display the game that you are currently playing."
-msgstr ""
+msgstr "현재 플레이중인 게임을 표시할지 여부입니다."
 
 #: discord.ClientUser.edit_settings:55 of
 msgid "The clients status that is shown to others."
-msgstr ""
+msgstr "다른 사람에게 표시되는 상태입니다."
 
 #: discord.ClientUser.edit_settings:57 of
 msgid "The theme of the Discord UI."
-msgstr ""
+msgstr "디스코드 UI의 테마입니다."
 
 #: discord.ClientUser.edit_settings:59 of
 msgid "The timezone offset to use."
-msgstr ""
+msgstr "사용할 시간대 입니다."
 
 #: discord.ClientUser.edit_settings:62 of
 msgid "Editing the settings failed."
-msgstr ""
+msgstr "설정 편집에 실패했습니다."
 
 #: discord.ClientUser.edit_settings:63 of
 msgid "The client is a bot user and not a user account."
-msgstr ""
+msgstr "클라이언트는 봇 사용자이며 사용자 계정이 아닙니다."
 
 #: discord.ClientUser.edit_settings:65 of
 msgid "The client user's updated settings."
-msgstr ""
+msgstr "클라이언트 사용자의 업데이트 된 설정."
 
 #: discord.Activity:57 discord.Activity:69 discord.Activity:78
 #: discord.ClientUser.edit_settings:66 discord.RawMessageUpdateEvent:21
 #: discord.Streaming:61 of
 msgid ":class:`dict`"
-msgstr ""
+msgstr ":class:`dict`"
 
 #: discord.ClientUser.avatar_url:1 discord.ClientUser.avatar_url_as:1
 #: discord.Member.avatar_url_as:1 discord.User.avatar_url:1
 #: discord.User.avatar_url_as:1 discord.WidgetMember.avatar_url:1
 #: discord.WidgetMember.avatar_url_as:1 of
 msgid "Returns an :class:`Asset` for the avatar the user has."
-msgstr ""
+msgstr "사용자의 :class:`Asset`\\에서 아바타를 리턴합니다."
 
 #: discord.ClientUser.avatar_url:3 discord.ClientUser.avatar_url_as:3
 #: discord.Member.avatar_url_as:3 discord.User.avatar_url:3
@@ -7383,14 +7400,14 @@ msgstr ""
 msgid ""
 "If the user does not have a traditional avatar, an asset for the default "
 "avatar is returned instead."
-msgstr ""
+msgstr "만약 사용자에게 기존 아바타가 없는 경우 기본 아바타의 자산을 대신 리턴합니다."
 
 #: discord.ClientUser.avatar_url:6 discord.User.avatar_url:6
 #: discord.WidgetMember.avatar_url:6 of
 msgid ""
 "This is equivalent to calling :meth:`avatar_url_as` with the default "
 "parameters (i.e. webp/gif detection and a size of 1024)."
-msgstr ""
+msgstr "이는 :meth:`avatar_url_as`\\의 기본인 (webp / gif , 크기: 1024) 를 사용하여 호출 하는 것과 같습니다."
 
 #: discord.ClientUser.avatar_url_as:6 discord.Guild.icon_url_as:3
 #: discord.Member.avatar_url_as:6 discord.User.avatar_url_as:6
@@ -7399,7 +7416,7 @@ msgid ""
 "The format must be one of 'webp', 'jpeg', 'jpg', 'png' or 'gif', and "
 "'gif' is only valid for animated avatars. The size must be a power of 2 "
 "between 16 and 4096."
-msgstr ""
+msgstr "형식은 'webp', 'jpeg', 'jpg', 'png', 'gif' 중 하나여야 하며, 'gif' 은 애미메이션 아바타에만 유효합니다. 크기는 16에서 4096사이의 2의 거듭 제곱 이여야합니다."
 
 #: discord.ClientUser.avatar_url_as:10 discord.Member.avatar_url_as:10
 #: discord.User.avatar_url_as:10 discord.WidgetMember.avatar_url_as:10 of
@@ -7407,159 +7424,159 @@ msgid ""
 "The format to attempt to convert the avatar to. If the format is "
 "``None``, then it is automatically detected into either 'gif' or "
 "static_format depending on the avatar being animated or not."
-msgstr ""
+msgstr "아바타 변환을 시도 할 형식입니다. 형식이 ``None``일 경우 'gif' 또는 정적 포맷으로 자동 감지합니다."
 
 #: discord.ClientUser.avatar_url_as:15 discord.Member.avatar_url_as:15
 #: discord.User.avatar_url_as:15 discord.WidgetMember.avatar_url_as:15 of
 msgid ""
 "Format to attempt to convert only non-animated avatars to. Defaults to "
 "'webp'"
-msgstr ""
+msgstr "애니메이션이 없는 아바타만 변환하려고 하는 형식입니다. 기본값은 'webp' 입니다."
 
 #: discord.ClientUser.avatar_url_as:21 discord.Member.avatar_url_as:21
 #: discord.User.avatar_url_as:21 discord.WidgetMember.avatar_url_as:21 of
 msgid ""
 "Bad image format passed to ``format`` or ``static_format``, or     "
 "invalid ``size``."
-msgstr ""
+msgstr "잘못된 형식이  ``format`` 또는 ``static_format`` 에 전달되었거나, ``size`` 가 유효하지 않습니다."
 
 #: discord.ClientUser.color:1 discord.User.color:1 discord.WidgetMember.color:1
 #: of
 msgid ""
 "A property that returns a color denoting the rendered color for the user."
 " This always returns :meth:`Colour.default`."
-msgstr ""
+msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 리턴합니다."
 
 #: discord.ClientUser.color:4 discord.Member.color:5 discord.User.color:4
 #: discord.WidgetMember.color:4 of
 msgid "There is an alias for this named :meth:`colour`."
-msgstr ""
+msgstr ":meth:`colour` 이라는 별칭이 있습니다."
 
 #: discord.ClientUser.color:6 discord.ClientUser.colour:6
 #: discord.Member.color:7 discord.Member.colour:7 discord.Role.color:3
 #: discord.Role.colour:3 discord.User.color:6 discord.User.colour:6
 #: discord.WidgetMember.color:6 discord.WidgetMember.colour:6 of
 msgid ":class:`Colour`"
-msgstr ""
+msgstr ":class:`Colour`"
 
 #: discord.ClientUser.colour:1 discord.User.colour:1
 #: discord.WidgetMember.colour:1 of
 msgid ""
 "A property that returns a colour denoting the rendered colour for the "
 "user. This always returns :meth:`Colour.default`."
-msgstr ""
+msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 리턴합니다."
 
 #: discord.ClientUser.colour:4 discord.Member.colour:5 discord.User.colour:4
 #: discord.WidgetMember.colour:4 of
 msgid "There is an alias for this named :meth:`color`."
-msgstr ""
+msgstr ":meth:`color` 이라는 별칭이 있습니다."
 
 #: discord.ClientUser.created_at:1 discord.User.created_at:1
 #: discord.WidgetMember.created_at:1 of
 msgid "Returns the user's creation time in UTC."
-msgstr ""
+msgstr "사용자 계정의 생성시간을 UTC로 리턴합니다."
 
 #: discord.ClientUser.created_at:3 discord.User.created_at:3
 #: discord.WidgetMember.created_at:3 of
 msgid "This is when the user's Discord account was created."
-msgstr ""
+msgstr "사용자의 디스코드 계정이 생성 된 시점입니다."
 
 #: discord.ClientUser.default_avatar:1 discord.User.default_avatar:1
 #: discord.WidgetMember.default_avatar:1 of
 msgid ""
 "Returns the default avatar for a given user. This is calculated by the "
 "user's discriminator."
-msgstr ""
+msgstr "지정된 사용자의 기본 아바타를 리턴합니다. 이것은 사용자의 태그에 의해 계산됩니다."
 
 #: discord.ClientUser.default_avatar:3 discord.User.default_avatar:3
 #: discord.WidgetMember.default_avatar:3 of
 msgid ":class:`DefaultAvatar`"
-msgstr ""
+msgstr ":class:`DefaultAvatar`"
 
 #: discord.ClientUser.default_avatar_url:1 discord.User.default_avatar_url:1
 #: discord.WidgetMember.default_avatar_url:1 of
 msgid "Returns a URL for a user's default avatar."
-msgstr ""
+msgstr "사용자의 기본 아바타에 대한 URL을 리턴합니다."
 
 #: discord.ClientUser.display_name:3 discord.Member.display_name:3
 #: discord.User.display_name:3 of
 msgid ""
 "For regular users this is just their username, but if they have a guild "
 "specific nickname then that is returned instead."
-msgstr ""
+msgstr "일반 사용자의 경우에는 사용자 이름이지만 길드별 닉네임이 있는 경우 해당 닉네임을 리턴합니다."
 
 #: discord.ClientUser.is_avatar_animated:1 discord.Member.is_avatar_animated:1
 #: discord.User.is_avatar_animated:1 discord.WidgetMember.is_avatar_animated:1
 #: of
 msgid "Indicates if the user has an animated avatar."
-msgstr ""
+msgstr "사용자에게 애니메이션 아바타가 있는지 여부를 나타냅니다."
 
 #: discord.ClientUser.mentioned_in:1 discord.User.mentioned_in:1
 #: discord.WidgetMember.mentioned_in:1 of
 msgid "Checks if the user is mentioned in the specified message."
-msgstr ""
+msgstr "지정된 메시지에서 사용자가 언급되었는지 확인합니다."
 
 #: discord.ClientUser.mentioned_in:3 discord.Member.mentioned_in:3
 #: discord.User.mentioned_in:3 discord.WidgetMember.mentioned_in:3 of
 msgid "The message to check if you're mentioned in."
-msgstr ""
+msgstr "언급된 메시지 입니다."
 
 #: discord.ClientUser.permissions_in:1 discord.Member.permissions_in:1
 #: discord.User.permissions_in:1 discord.WidgetMember.permissions_in:1 of
 msgid "An alias for :meth:`abc.GuildChannel.permissions_for`."
-msgstr ""
+msgstr ":meth:`abc.GuildChannel.permissions_for` 의 별칭입니다."
 
 #: discord.ClientUser.permissions_in:3 discord.Member.permissions_in:3
 #: discord.User.permissions_in:3 discord.WidgetMember.permissions_in:3 of
 msgid "Basically equivalent to:"
-msgstr ""
+msgstr "기본적으로 다음과 같습니다."
 
 #: discord.ClientUser.permissions_in:9 discord.Member.permissions_in:9
 #: discord.User.permissions_in:9 discord.WidgetMember.permissions_in:9 of
 msgid "The channel to check your permissions for."
-msgstr ""
+msgstr "권한을 확인할 채널입니다."
 
 #: ../../api.rst:2306
 msgid "Relationship"
-msgstr ""
+msgstr "관련성"
 
 #: discord.Relationship:1 of
 msgid "Represents a relationship in Discord."
-msgstr ""
+msgstr "디스코드에서 관련성을 나타냄"
 
 #: discord.Relationship:3 of
 msgid ""
 "A relationship is like a friendship, a person who is blocked, etc. Only "
 "non-bot accounts can have relationships."
-msgstr ""
+msgstr "관련성은 친구, 차단 된 유저와 같습니다. 봇이 아닌 계정만 관련성이 있습니다."
 
 #: discord.Relationship:8 of
 msgid "The user you have the relationship with."
-msgstr ""
+msgstr "관련성이 있는 사용자"
 
 #: discord.Relationship:14 of
 msgid "The type of relationship you have."
-msgstr ""
+msgstr "관령성의 타입"
 
 #: discord.Relationship:16 of
 msgid ":class:`RelationshipType`"
-msgstr ""
+msgstr ":class:`RelationshipType`"
 
 #: discord.Relationship.delete:3 of
 msgid "Deletes the relationship."
-msgstr ""
+msgstr "관련성을 삭제"
 
 #: discord.Relationship.delete:5 of
 msgid "Deleting the relationship failed."
-msgstr ""
+msgstr "관련성 삭제에 실패했습니다."
 
 #: discord.Relationship.accept:3 of
 msgid "Accepts the relationship request. e.g. accepting a friend request."
-msgstr ""
+msgstr "친구 요청을 수락"
 
 #: discord.Relationship.accept:6 of
 msgid "Accepting the relationship failed."
-msgstr ""
+msgstr "친구 요청 수락에 실패했습니다."
 
 #: ../../api.rst:2312
 msgid "User"
@@ -13960,5 +13977,3673 @@ msgstr ""
 
 #: ../../api.rst:2699
 msgid ":exc:`NotFound`"
+
+msgstr ""
+8 of
+msgid "An error occurred while fetching the information."
 msgstr ""
 
+#: discord.CategoryChannel.invites:10 discord.Guild.invites:11
+#: discord.TextChannel.invites:10 discord.VoiceChannel.invites:10
+#: discord.abc.GuildChannel.invites:10 of
+msgid "The list of invites that are currently active."
+msgstr ""
+
+#: discord.CategoryChannel.invites:11 discord.TextChannel.invites:11
+#: discord.VoiceChannel.invites:11 discord.abc.GuildChannel.invites:11 of
+msgid "List[:class:`~discord.Invite`]"
+msgstr ""
+
+#: discord.abc.Messageable:1 of
+msgid ""
+"An ABC that details the common operations on a model that can send "
+"messages."
+msgstr ""
+
+#: discord.abc.Messageable:10 of
+msgid ":class:`~discord.ext.commands.Context`"
+msgstr ""
+
+#: discord.DMChannel.history:1 discord.GroupChannel.history:1
+#: discord.Member.history:1 discord.TextChannel.history:1
+#: discord.User.history:1 discord.abc.Messageable.history:1 of
+msgid ""
+"Returns an :class:`~discord.AsyncIterator` that enables receiving the "
+"destination's message history."
+msgstr ""
+
+#: discord.DMChannel.history:3 discord.GroupChannel.history:3
+#: discord.Member.history:3 discord.TextChannel.history:3
+#: discord.User.history:3 discord.abc.Messageable.history:3 of
+msgid ""
+"You must have :attr:`~Permissions.read_message_history` permissions to "
+"use this."
+msgstr ""
+
+#: discord.DMChannel.history:14 discord.GroupChannel.history:14
+#: discord.Member.history:14 discord.Reaction.users:14
+#: discord.TextChannel.history:14 discord.User.history:14
+#: discord.abc.Messageable.history:14 of
+msgid "Flattening into a list: ::"
+msgstr ""
+
+#: discord.DMChannel.history:21 discord.GroupChannel.history:21
+#: discord.Member.history:21 discord.TextChannel.history:21
+#: discord.User.history:21 discord.abc.Messageable.history:21 of
+msgid ""
+"The number of messages to retrieve. If ``None``, retrieves every message "
+"in the channel. Note, however, that this would make it a slow operation."
+msgstr ""
+
+#: discord.DMChannel.history:25 discord.GroupChannel.history:25
+#: discord.Member.history:25 discord.TextChannel.history:25
+#: discord.User.history:25 discord.abc.Messageable.history:25 of
+msgid ""
+"Retrieve messages before this date or message. If a date is provided it "
+"must be a timezone-naive datetime representing UTC time."
+msgstr ""
+
+#: discord.DMChannel.history:28 discord.GroupChannel.history:28
+#: discord.Member.history:28 discord.TextChannel.history:28
+#: discord.User.history:28 discord.abc.Messageable.history:28 of
+msgid ""
+"Retrieve messages after this date or message. If a date is provided it "
+"must be a timezone-naive datetime representing UTC time."
+msgstr ""
+
+#: discord.DMChannel.history:31 discord.GroupChannel.history:31
+#: discord.Member.history:31 discord.TextChannel.history:31
+#: discord.User.history:31 discord.abc.Messageable.history:31 of
+msgid ""
+"Retrieve messages around this date or message. If a date is provided it "
+"must be a timezone-naive datetime representing UTC time. When using this "
+"argument, the maximum limit is 101. Note that if the limit is an even "
+"number then this will return at most limit + 1 messages."
+msgstr ""
+
+#: discord.DMChannel.history:36 discord.GroupChannel.history:36
+#: discord.Member.history:36 discord.TextChannel.history:36
+#: discord.User.history:36 discord.abc.Messageable.history:36 of
+msgid ""
+"If set to ``True``, return messages in oldest->newest order. Defaults to "
+"``True`` if ``after`` is specified, otherwise ``False``."
+msgstr ""
+
+#: discord.DMChannel.history:40 discord.GroupChannel.history:40
+#: discord.Member.history:40 discord.TextChannel.history:40
+#: discord.User.history:40 discord.abc.Messageable.history:40 of
+msgid "You do not have permissions to get channel message history."
+msgstr ""
+
+#: discord.DMChannel.history:41 discord.GroupChannel.history:41
+#: discord.Member.history:41 discord.TextChannel.history:41
+#: discord.User.history:41 discord.abc.Messageable.history:41 of
+msgid "The request to get message history failed."
+msgstr ""
+
+#: discord.DMChannel.history:43 discord.GroupChannel.history:43
+#: discord.Member.history:43 discord.TextChannel.history:43
+#: discord.User.history:43 discord.abc.Messageable.history:43 of
+msgid ":class:`~discord.Message` -- The message with the message data parsed."
+msgstr ""
+
+#: discord.DMChannel.typing:1 discord.GroupChannel.typing:1
+#: discord.Member.typing:1 discord.TextChannel.typing:1 discord.User.typing:1
+#: discord.abc.Messageable.typing:1 of
+msgid ""
+"Returns a context manager that allows you to type for an indefinite "
+"period of time."
+msgstr ""
+
+#: discord.DMChannel.typing:3 discord.GroupChannel.typing:3
+#: discord.Member.typing:3 discord.TextChannel.typing:3 discord.User.typing:3
+#: discord.abc.Messageable.typing:3 of
+msgid "This is useful for denoting long computations in your bot."
+msgstr ""
+
+#: discord.DMChannel.typing:7 discord.GroupChannel.typing:7
+#: discord.Member.typing:7 discord.TextChannel.typing:7 discord.User.typing:7
+#: discord.abc.Messageable.typing:7 of
+msgid ""
+"This is both a regular context manager and an async context manager. This"
+" means that both ``with`` and ``async with`` work with this."
+msgstr ""
+
+#: discord.DMChannel.typing:10 discord.GroupChannel.typing:10
+#: discord.Member.typing:10 discord.TextChannel.typing:10
+#: discord.User.typing:10 discord.abc.Messageable.typing:10 of
+msgid "Example Usage: ::"
+msgstr ""
+
+#: discord.DMChannel.send:3 discord.GroupChannel.send:3 discord.Member.send:3
+#: discord.TextChannel.send:3 discord.User.send:3
+#: discord.abc.Messageable.send:3 of
+msgid "Sends a message to the destination with the content given."
+msgstr ""
+
+#: discord.DMChannel.send:5 discord.GroupChannel.send:5 discord.Member.send:5
+#: discord.TextChannel.send:5 discord.User.send:5
+#: discord.abc.Messageable.send:5 of
+msgid ""
+"The content must be a type that can convert to a string through "
+"``str(content)``. If the content is set to ``None`` (the default), then "
+"the ``embed`` parameter must be provided."
+msgstr ""
+
+#: discord.DMChannel.send:9 discord.GroupChannel.send:9 discord.Member.send:9
+#: discord.TextChannel.send:9 discord.User.send:9
+#: discord.abc.Messageable.send:9 of
+msgid ""
+"To upload a single file, the ``file`` parameter should be used with a "
+"single :class:`~discord.File` object. To upload multiple files, the "
+"``files`` parameter should be used with a :class:`list` of "
+":class:`~discord.File` objects. **Specifying both parameters will lead to"
+" an exception**."
+msgstr ""
+
+#: discord.DMChannel.send:14 discord.GroupChannel.send:14
+#: discord.Member.send:14 discord.TextChannel.send:14 discord.User.send:14
+#: discord.abc.Messageable.send:14 of
+msgid ""
+"If the ``embed`` parameter is provided, it must be of type "
+":class:`~discord.Embed` and it must be a rich embed type."
+msgstr ""
+
+#: discord.DMChannel.send:21 discord.GroupChannel.send:21
+#: discord.Member.send:21 discord.TextChannel.send:21 discord.User.send:21
+#: discord.abc.Messageable.send:21 of
+msgid "The rich embed for the content."
+msgstr ""
+
+#: discord.DMChannel.send:23 discord.GroupChannel.send:23
+#: discord.Member.send:23 discord.TextChannel.send:23 discord.User.send:23
+#: discord.abc.Messageable.send:23 of
+msgid "The file to upload."
+msgstr ""
+
+#: discord.DMChannel.send:25 discord.GroupChannel.send:25
+#: discord.Member.send:25 discord.TextChannel.send:25 discord.User.send:25
+#: discord.abc.Messageable.send:25 of
+msgid "A list of files to upload. Must be a maximum of 10."
+msgstr ""
+
+#: discord.DMChannel.send:27 discord.GroupChannel.send:27
+#: discord.Member.send:27 discord.TextChannel.send:27 discord.User.send:27
+#: discord.abc.Messageable.send:27 of
+msgid ""
+"The nonce to use for sending this message. If the message was "
+"successfully sent, then the message will have a nonce with this value."
+msgstr ""
+
+#: discord.DMChannel.send:30 discord.GroupChannel.send:30
+#: discord.Member.send:30 discord.TextChannel.send:30 discord.User.send:30
+#: discord.abc.Messageable.send:30 of
+msgid ""
+"If provided, the number of seconds to wait in the background before "
+"deleting the message we just sent. If the deletion fails, then it is "
+"silently ignored."
+msgstr ""
+
+#: discord.DMChannel.send:40 discord.GroupChannel.send:40
+#: discord.Member.send:40 discord.TextChannel.send:40 discord.User.send:40
+#: discord.abc.Messageable.send:40 of
+msgid "You do not have the proper permissions to send the message."
+msgstr ""
+
+#: discord.DMChannel.send:41 discord.GroupChannel.send:41
+#: discord.Member.send:41 discord.TextChannel.send:41 discord.User.send:41
+#: discord.abc.Messageable.send:41 of
+msgid ""
+"The ``files`` list is not of the appropriate size or     you specified "
+"both ``file`` and ``files``."
+msgstr ""
+
+#: discord.DMChannel.fetch_message:15 discord.DMChannel.send:44
+#: discord.GroupChannel.fetch_message:15 discord.GroupChannel.send:44
+#: discord.Member.fetch_message:15 discord.Member.send:44
+#: discord.TextChannel.fetch_message:15 discord.TextChannel.send:44
+#: discord.User.fetch_message:15 discord.User.send:44
+#: discord.abc.Messageable.fetch_message:15 discord.abc.Messageable.send:44 of
+msgid ":class:`~discord.Message`"
+msgstr ""
+
+#: discord.DMChannel.trigger_typing:3 discord.GroupChannel.trigger_typing:3
+#: discord.Member.trigger_typing:3 discord.TextChannel.trigger_typing:3
+#: discord.User.trigger_typing:3 discord.abc.Messageable.trigger_typing:3 of
+msgid "Triggers a *typing* indicator to the destination."
+msgstr ""
+
+#: discord.DMChannel.trigger_typing:5 discord.GroupChannel.trigger_typing:5
+#: discord.Member.trigger_typing:5 discord.TextChannel.trigger_typing:5
+#: discord.User.trigger_typing:5 discord.abc.Messageable.trigger_typing:5 of
+msgid ""
+"*Typing* indicator will go away after 10 seconds, or after a message is "
+"sent."
+msgstr ""
+
+#: discord.DMChannel.fetch_message:3 discord.GroupChannel.fetch_message:3
+#: discord.Member.fetch_message:3 discord.TextChannel.fetch_message:3
+#: discord.User.fetch_message:3 discord.abc.Messageable.fetch_message:3 of
+msgid "Retrieves a single :class:`~discord.Message` from the destination."
+msgstr ""
+
+#: discord.DMChannel.fetch_message:5 discord.GroupChannel.fetch_message:5
+#: discord.Member.fetch_message:5 discord.TextChannel.fetch_message:5
+#: discord.User.fetch_message:5 discord.abc.Messageable.fetch_message:5 of
+msgid "This can only be used by bot accounts."
+msgstr ""
+
+#: discord.DMChannel.fetch_message:7 discord.GroupChannel.fetch_message:7
+#: discord.Member.fetch_message:7 discord.TextChannel.fetch_message:7
+#: discord.User.fetch_message:7 discord.abc.Messageable.fetch_message:7 of
+msgid "The message ID to look for."
+msgstr ""
+
+#: discord.DMChannel.fetch_message:10 discord.GroupChannel.fetch_message:10
+#: discord.Member.fetch_message:10 discord.TextChannel.fetch_message:10
+#: discord.User.fetch_message:10 discord.abc.Messageable.fetch_message:10 of
+msgid "The specified message was not found."
+msgstr ""
+
+#: discord.DMChannel.fetch_message:11 discord.GroupChannel.fetch_message:11
+#: discord.Member.fetch_message:11 discord.TextChannel.fetch_message:11
+#: discord.User.fetch_message:11 discord.abc.Messageable.fetch_message:11 of
+msgid "You do not have the permissions required to get a message."
+msgstr ""
+
+#: discord.DMChannel.fetch_message:12 discord.GroupChannel.fetch_message:12
+#: discord.Member.fetch_message:12 discord.TextChannel.fetch_message:12
+#: discord.User.fetch_message:12 discord.abc.Messageable.fetch_message:12 of
+msgid "Retrieving the message failed."
+msgstr ""
+
+#: discord.DMChannel.fetch_message:14 discord.GroupChannel.fetch_message:14
+#: discord.Member.fetch_message:14 discord.TextChannel.fetch_message:14
+#: discord.User.fetch_message:14 discord.abc.Messageable.fetch_message:14 of
+msgid "The message asked for."
+msgstr ""
+
+#: discord.DMChannel.pins:3 discord.GroupChannel.pins:3 discord.Member.pins:3
+#: discord.TextChannel.pins:3 discord.User.pins:3
+#: discord.abc.Messageable.pins:3 of
+msgid "Retrieves all messages that are currently pinned in the channel."
+msgstr ""
+
+#: discord.DMChannel.pins:7 discord.GroupChannel.pins:7 discord.Member.pins:7
+#: discord.TextChannel.pins:7 discord.User.pins:7
+#: discord.abc.Messageable.pins:7 of
+msgid ""
+"Due to a limitation with the Discord API, the :class:`.Message` objects "
+"returned by this method do not contain complete "
+":attr:`.Message.reactions` data."
+msgstr ""
+
+#: discord.DMChannel.pins:11 discord.GroupChannel.pins:11
+#: discord.Member.pins:11 discord.TextChannel.pins:11 discord.User.pins:11
+#: discord.abc.Messageable.pins:11 of
+msgid "Retrieving the pinned messages failed."
+msgstr ""
+
+#: discord.DMChannel.pins:13 discord.GroupChannel.pins:13
+#: discord.Member.pins:13 discord.TextChannel.pins:13 discord.User.pins:13
+#: discord.abc.Messageable.pins:13 of
+msgid "The messages that are currently pinned."
+msgstr ""
+
+#: discord.DMChannel.pins:14 discord.GroupChannel.pins:14
+#: discord.Member.pins:14 discord.TextChannel.pins:14 discord.User.pins:14
+#: discord.abc.Messageable.pins:14 of
+msgid "List[:class:`~discord.Message`]"
+msgstr ""
+
+#: discord.abc.Connectable:1 of
+msgid ""
+"An ABC that details the common operations on a channel that can connect "
+"to a voice server."
+msgstr ""
+
+#: ../../api.rst:2274
+msgid "Discord Models"
+msgstr "디스코드 모델"
+
+#: ../../api.rst:2276
+msgid ""
+"Models are classes that are received from Discord and are not meant to be"
+" created by the user of the library."
+msgstr ""
+"모델은 디스코드에서 수신되는 클래스로."
+", 라이브러리 사용자에 의해 생성되지 않습니다"
+
+#: ../../api.rst:2281
+msgid ""
+"The classes listed below are **not intended to be created by users** and "
+"are also **읽기 전용** 입니다."
+msgstr "아래에 나열된 클래스들는 **유저들에 의해 생성되도록 의도된 것**이 아니며 **읽기 전용** 입니다."
+
+#: ../../api.rst:2284
+msgid ""
+"For example, this means that you should not make your own :class:`User` "
+"instances nor should you modify the :class:`User` instance yourself."
+msgstr ""
+"예를 들어,  :class:`User` 인스턴스를 직접 만들거나  "
+":class:`User` 인스턴스를 직접 수정해서는 안됩니다."
+
+#: ../../api.rst:2287
+msgid ""
+"If you want to get one of these model classes instances they'd have to be"
+" through the cache, and a common way of doing so is through the "
+":func:`utils.find` function or attributes of model classes that you "
+"receive from the events specified in the :ref:`discord-api-events`."
+msgstr ""
+"이런 모델 클래스 인스턴스 중 하나를 얻기 위해서는 캐시를 거치는 것이며, 그 중 가장 일반적인 방법은 "
+" :ref:`discord-api-events`\\에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의 :func:`utils.find` 함수 또는 속성을 거치는 것입니다."
+
+#: ../../api.rst:2294 ../../api.rst:2559
+msgid ""
+"Nearly all classes here have :ref:`py:slots` defined which means that it "
+"is impossible to have dynamic attributes to the data classes."
+msgstr ""
+"여기의 거의 모든 클래스에는 :ref:`py:slots` 이 정의되어 있으므로 "
+"데이터 클래스에 동적 속성을 가질 수 없습니다."
+
+
+#: ../../api.rst:2299
+msgid "ClientUser"
+msgstr "클라이언트 사용자"
+
+#: discord.ClientUser:1 of
+msgid "Represents your Discord user."
+msgstr "디스코드 사용자를 나타냅니다."
+
+#: discord.ClientUser:7 discord.User:7 of
+msgid "Checks if two users are equal."
+msgstr "두 사용자가 같은지 확인합니다."
+
+#: discord.ClientUser:11 discord.User:11 of
+msgid "Checks if two users are not equal."
+msgstr "두 명의 사용자가 다른지 확인합니다."
+
+#: discord.ClientUser:15 discord.User:15 of
+msgid "Return the user's hash."
+msgstr "사용자의 해시를 리턴합니다."
+
+#: discord.ClientUser:19 discord.User:19 of
+msgid "Returns the user's name with discriminator."
+msgstr "태그와 함께 사용자 이름을 리턴합니다."
+
+#: discord.ClientUser:29 discord.User:29 of
+msgid "The user's unique ID."
+msgstr "사용자의 고유 ID"
+
+#: discord.ClientUser:35 discord.User:35 of
+msgid "The user's discriminator. This is given when the username has conflicts."
+msgstr "사용자의 태그. 사용자 이름이 충돌 할 때 쓰입니다."
+
+#: discord.ClientUser:41 discord.User:41 of
+msgid "The avatar hash the user has. Could be None."
+msgstr "사용자가 가지고 있는 아바타 해시. None 일 수 있습니다."
+
+#: discord.ClientUser:53 discord.User:53 of
+msgid ""
+"Specifies if the user is a system user (i.e. represents Discord "
+"officially)."
+msgstr ""
+"사용자가 시스템 사용자인지를 지정 (예 : 공식적으로 "
+"디스코드를 나타냄)"
+
+#: discord.ClientUser:61 of
+msgid "Specifies if the user is a verified account."
+msgstr "사용자가 확인 된 계정 인지를 지정"
+
+#: discord.ClientUser:67 of
+msgid "The email the user used when registering."
+msgstr "사용자가 등록 할 때 사용한 이메일"
+
+#: discord.ClientUser:73 of
+msgid "The IETF language tag used to identify the language the user is using."
+msgstr "사용자가 사용중인 언어를 식별하는 데 사용되는 IETF 언어태그"
+
+#: discord.ClientUser:79 of
+msgid "Specifies if the user has MFA turned on and working."
+msgstr "사용자가 MFA를 켜고 작동 중인지 여부를 지정"
+
+#: discord.ClientUser:85 of
+msgid "Specifies if the user is a premium user (e.g. has Discord Nitro)."
+msgstr "사용자가 프리미엄 사용자인지 여부를 지정(예 : Discord Nitro 사용)"
+
+#: discord.ClientUser:91 of
+msgid ""
+"Specifies the type of premium a user has (e.g. Nitro or Nitro Classic). "
+"Could be None if the user is not premium."
+msgstr "사용자가 가진 프리미엄 유형을 지정 (예 : Nitro 또는 Nitro Classic) 사용자가 프리미엄이 아닌 경우 None 일 수 있습니다."
+
+#: discord.ClientUser:93 of
+msgid "Optional[:class:`PremiumType`]"
+msgstr "선택 사항 [:class:`PremiumType`]"
+
+#: discord.ClientUser.get_relationship:1 of
+msgid "Retrieves the :class:`Relationship` if applicable."
+msgstr ":class:`Relationship` 이 적용 가능한 경우를 검색"
+
+#: discord.ClientUser.get_relationship:7 of
+msgid "The user ID to check if we have a relationship with them."
+msgstr "관련성이 있는지 확인할 사용자 ID"
+
+#: discord.ClientUser.get_relationship:10 of
+msgid "The relationship if available or ``None``."
+msgstr "가능한 경우 관련성 또는 ``None`` "
+
+#: discord.ClientUser.get_relationship:11 of
+msgid "Optional[:class:`Relationship`]"
+msgstr "선택 사항[:class:`Relationship`]"
+
+#: discord.ClientUser.relationships:1 of
+msgid "Returns all the relationships that the user has."
+msgstr "사용자가 가진 모든 관련성를 리턴"
+
+#: discord.CallMessage:16 discord.ClientUser.blocked:7
+#: discord.ClientUser.friends:7 discord.ClientUser.relationships:7
+#: discord.GroupCall:21 discord.GroupCall.connected:3 discord.GroupChannel:25
+#: discord.Member.mutual_friends:13 discord.User.mutual_friends:13 of
+msgid "List[:class:`User`]"
+msgstr "리스트 [:class:`User`]"
+
+#: discord.ClientUser.friends:1 of
+msgid "Returns all the users that the user is friends with."
+msgstr "사용자와 친구인 모든 사용자를 리턴"
+
+#: discord.ClientUser.blocked:1 of
+msgid "Returns all the users that the user has blocked."
+msgstr "사용자가 차단한 모든 사용자를 리턴"
+
+#: discord.ClientUser.edit:3 of
+msgid "Edits the current profile of the client."
+msgstr "클라이언트의 프로필을 편집"
+
+#: discord.ClientUser.edit:5 of
+msgid ""
+"If a bot account is used then a password field is optional, otherwise it "
+"is required."
+msgstr "봇 계정을 사용하는 경우 비밀번호 필드는 선택 사항이며 그렇지 않은 경우는 비밀번호 필드가 필요합니다."
+
+#: discord.ClientUser.edit:10 of
+msgid ""
+"To upload an avatar, a :term:`py:bytes-like object` must be passed in "
+"that represents the image being uploaded. If this is done through a file "
+"then the file must be opened via ``open('some_filename', 'rb')`` and the "
+":term:`py:bytes-like object` is given through the use of ``fp.read()``."
+msgstr ""
+"아바타를 업로드 하려면 :term:`py:bytes-like object` 형식의 이미지로 전달해야 합니다. "
+"``open('파일이름', 'rb')`` 로 파일을 열어야 하며, ``fp.read()`` 로 전달해야 합니다. "
+
+#: discord.ClientUser.edit:15 of
+msgid "The only image formats supported for uploading is JPEG and PNG."
+msgstr "업로드는 JPEG 또는 PNG형식으로만 해야합니다."
+
+#: discord.ClientUser.edit:17 of
+msgid ""
+"The current password for the client's account. Only applicable to user "
+"accounts."
+msgstr "클라이언트 계정의 현재 비밀번호 입니다. 유저 계정에만 적용됩니다."
+
+#: discord.ClientUser.edit:20 of
+msgid "The new password you wish to change to. Only applicable to user accounts."
+msgstr "변경하려는 새 비밀번호입니다. 유저 계정에만 적용됩니다."
+
+#: discord.ClientUser.edit:23 of
+msgid "The new email you wish to change to. Only applicable to user accounts."
+msgstr "변경하려는 새 이메일입니다. 유저 계정에만 적용됩니다."
+
+#: discord.ClientUser.edit:26 of
+msgid ""
+"The hypesquad house you wish to change to. Could be ``None`` to leave the"
+" current house. Only applicable to user accounts."
+msgstr ""
+
+#: discord.ClientUser.edit:30 of
+msgid "The new username you wish to change to."
+msgstr "변경하려는 새 사용자 이름입니다."
+
+#: discord.ClientUser.edit:32 of
+msgid ""
+"A :term:`py:bytes-like object` representing the image to upload. Could be"
+" ``None`` to denote no avatar."
+msgstr "업로드 할 이미지를 가진 :term:`py:bytes-like object` 입니다. ``None``\\로 아바타 없음을 표시 할 수 있습니다."
+
+#: discord.ClientUser.edit:36 of
+msgid "Editing your profile failed."
+msgstr "프로필 편집에 실패했습니다."
+
+#: discord.ClientUser.edit:37 of
+msgid "Wrong image format passed for ``avatar``."
+msgstr "``avatar`` 에 잘못된 이미지 형식이 전달되었습니다."
+
+#: discord.ClientUser.edit:38 of
+msgid ""
+"Password is required for non-bot accounts.     House field was not a "
+"HypeSquadHouse."
+msgstr "봇이 아닌 계정에는 암호가 필요합니다. house 필드는 HypeSquadHouse가 아닙니다."
+
+#: discord.ClientUser.create_group:3 of
+msgid ""
+"Creates a group direct message with the recipients provided. These "
+"recipients must be have a relationship of type "
+":attr:`RelationshipType.friend`."
+msgstr "제공된 유저와 그룹 채팅을 합니다. 이런 유저는 :attr:`RelationshipType.friend` 유형이여야 합니다."
+
+#: discord.ClientUser.create_group:11 of
+msgid "An argument :class:`list` of :class:`User` to have in your group."
+msgstr "그룹의 :class:`User`\\가 담겨있는 :class:`list`\\입니다."
+
+#: discord.ClientUser.create_group:15 of
+msgid "Failed to create the group direct message."
+msgstr "그룹 채팅을 작성하지 못했습니다."
+
+#: discord.ClientUser.create_group:16 of
+msgid ""
+"Attempted to create a group with only one recipient.     This does not "
+"include yourself."
+msgstr "유저가 한 명인 그룹을 만드려고 했습니다. 여기에는 자신이 포함되지 않습니다. "
+
+#: discord.ClientUser.create_group:18 of
+msgid "The new group channel."
+msgstr "새로운 그룹 채팅"
+
+#: discord.ClientUser.create_group:19 of
+msgid ":class:`GroupChannel`"
+msgstr ":class:`GroupChannel`"
+
+#: discord.ClientUser.edit_settings:3 of
+msgid "Edits the client user's settings."
+msgstr "클라이언트의 설정을 편집합니다."
+
+#: discord.ClientUser.edit_settings:9 of
+msgid ""
+"How long (in seconds) the user needs to be AFK until Discord sends push "
+"notifications to your mobile device."
+msgstr "디스코드에서 모바일 기기로 푸시 알림을 보낼 때까지 사용자가 잠수 상태여야 하는 시간(초)입니다."
+
+#: discord.ClientUser.edit_settings:12 of
+msgid "Whether or not to animate emojis in the chat."
+msgstr "채팅에서 이모티콘을 자동으로 재생할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:14 of
+msgid ""
+"Whether or not to automatically convert emoticons into emojis. e.g. :-) "
+"-> 😃"
+msgstr "채팅 이모티콘을 이모티콘으로 자동 변환할지 여부입니다. 예) :-) -> 😃"
+
+#: discord.ClientUser.edit_settings:17 of
+msgid ""
+"Whether or not to automatically disable DMs between you and members of "
+"new guilds you join."
+msgstr "가입한 새로운 서버에서 클라이언트와 구성원 사이에서 DM을 자동으로 비활성화할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:20 of
+msgid ""
+"Whether or not to automatically detect accounts from services like Steam "
+"and Blizzard when you open the Discord client."
+msgstr "디스코드를 켤 때 스팀 및 블리자드와 같은 서비스에서 계정을 자동으로 감지할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:23 of
+msgid "Whether or not to enable developer mode."
+msgstr "개발자 모드를 사용할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:25 of
+msgid "Whether or not to disable the showing of the Games tab."
+msgstr "게임 탭 표시를 비활성화할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:27 of
+msgid "Whether or not to allow tts messages to be played/sent."
+msgstr "tts 메시지의 재생 / 전송 허용 여부입니다."
+
+#: discord.ClientUser.edit_settings:29 of
+msgid "The filter for explicit content in all messages."
+msgstr "모든 메시지의 내용에 대한 필터입니다."
+
+#: discord.ClientUser.edit_settings:31 of
+msgid "Who can add you as a friend."
+msgstr "친구로 나를 추가 할 수있는 사람입니다."
+
+#: discord.ClientUser.edit_settings:33 of
+msgid "Whether or not to automatically play gifs that are in the chat."
+msgstr "채팅중에 GIF를 자동으로 재생할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:35 of
+msgid ""
+"A list of guilds in order of the guild/guild icons that are on the left "
+"hand side of the UI."
+msgstr "UI 왼쪽에있는 길드 / 길드 아이콘 순서대로 길드 목록입니다."
+
+#: discord.ClientUser.edit_settings:38 of
+msgid "Whether or not to display attachments when they are uploaded in chat."
+msgstr "첨부 파일을 채팅에 업로드 할 때 첨부 파일을 표시할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:40 of
+msgid "Whether or not to display videos and images from links posted in chat."
+msgstr "채팅에 올라온 링크의 비디오 및 이미지를 표시할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:42 of
+msgid ""
+"The :rfc:`3066` language identifier of the locale to use for the language"
+" of the Discord client."
+msgstr "디스코드 언어에 사용할 로케일의 :rfc:`3066` 언어 ID입니다."
+
+#: discord.ClientUser.edit_settings:45 of
+msgid "Whether or not to use the compact Discord display mode."
+msgstr "메시지 컴팩트 모드 사용 여부입니다."
+
+#: discord.ClientUser.edit_settings:47 of
+msgid "Whether or not to render embeds that are sent in the chat."
+msgstr "채팅에서 전송된 임베드를 렌더링할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:49 of
+msgid "Whether or not to render reactions that are added to messages."
+msgstr "메시지에 추가된 반응을 렌더링할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:51 of
+msgid "A list of guilds that you will not receive DMs from."
+msgstr "DM을 받지 않을 길드 목록입니다."
+
+#: discord.ClientUser.edit_settings:53 of
+msgid "Whether or not to display the game that you are currently playing."
+msgstr "현재 플레이중인 게임을 표시할지 여부입니다."
+
+#: discord.ClientUser.edit_settings:55 of
+msgid "The clients status that is shown to others."
+msgstr "다른 사람에게 표시되는 상태입니다."
+
+#: discord.ClientUser.edit_settings:57 of
+msgid "The theme of the Discord UI."
+msgstr "디스코드 UI의 테마입니다."
+
+#: discord.ClientUser.edit_settings:59 of
+msgid "The timezone offset to use."
+msgstr "사용할 시간대 입니다."
+
+#: discord.ClientUser.edit_settings:62 of
+msgid "Editing the settings failed."
+msgstr "설정 편집에 실패했습니다."
+
+#: discord.ClientUser.edit_settings:63 of
+msgid "The client is a bot user and not a user account."
+msgstr "클라이언트는 봇 사용자이며 사용자 계정이 아닙니다."
+
+#: discord.ClientUser.edit_settings:65 of
+msgid "The client user's updated settings."
+msgstr "클라이언트 사용자의 업데이트 된 설정."
+
+#: discord.Activity:57 discord.Activity:69 discord.Activity:78
+#: discord.ClientUser.edit_settings:66 discord.RawMessageUpdateEvent:21
+#: discord.Streaming:61 of
+msgid ":class:`dict`"
+msgstr ":class:`dict`"
+
+#: discord.ClientUser.avatar_url:1 discord.ClientUser.avatar_url_as:1
+#: discord.Member.avatar_url_as:1 discord.User.avatar_url:1
+#: discord.User.avatar_url_as:1 discord.WidgetMember.avatar_url:1
+#: discord.WidgetMember.avatar_url_as:1 of
+msgid "Returns an :class:`Asset` for the avatar the user has."
+msgstr "사용자의 :class:`Asset`\\에서 아바타를 리턴합니다."
+
+#: discord.ClientUser.avatar_url:3 discord.ClientUser.avatar_url_as:3
+#: discord.Member.avatar_url_as:3 discord.User.avatar_url:3
+#: discord.User.avatar_url_as:3 discord.WidgetMember.avatar_url:3
+#: discord.WidgetMember.avatar_url_as:3 of
+msgid ""
+"If the user does not have a traditional avatar, an asset for the default "
+"avatar is returned instead."
+msgstr "만약 사용자에게 기존 아바타가 없는 경우 기본 아바타의 자산을 대신 리턴합니다."
+
+#: discord.ClientUser.avatar_url:6 discord.User.avatar_url:6
+#: discord.WidgetMember.avatar_url:6 of
+msgid ""
+"This is equivalent to calling :meth:`avatar_url_as` with the default "
+"parameters (i.e. webp/gif detection and a size of 1024)."
+msgstr "이는 :meth:`avatar_url_as`\\의 기본인 (webp / gif , 크기: 1024) 를 사용하여 호출 하는 것과 같습니다."
+
+#: discord.ClientUser.avatar_url_as:6 discord.Guild.icon_url_as:3
+#: discord.Member.avatar_url_as:6 discord.User.avatar_url_as:6
+#: discord.WidgetMember.avatar_url_as:6 of
+msgid ""
+"The format must be one of 'webp', 'jpeg', 'jpg', 'png' or 'gif', and "
+"'gif' is only valid for animated avatars. The size must be a power of 2 "
+"between 16 and 4096."
+msgstr "형식은 'webp', 'jpeg', 'jpg', 'png', 'gif' 중 하나여야 하며, 'gif' 은 애미메이션 아바타에만 유효합니다. 크기는 16에서 4096사이의 2의 거듭 제곱 이여야합니다."
+
+#: discord.ClientUser.avatar_url_as:10 discord.Member.avatar_url_as:10
+#: discord.User.avatar_url_as:10 discord.WidgetMember.avatar_url_as:10 of
+msgid ""
+"The format to attempt to convert the avatar to. If the format is "
+"``None``, then it is automatically detected into either 'gif' or "
+"static_format depending on the avatar being animated or not."
+msgstr "아바타 변환을 시도 할 형식입니다. 형식이 ``None``일 경우 'gif' 또는 정적 포맷으로 자동 감지합니다."
+
+#: discord.ClientUser.avatar_url_as:15 discord.Member.avatar_url_as:15
+#: discord.User.avatar_url_as:15 discord.WidgetMember.avatar_url_as:15 of
+msgid ""
+"Format to attempt to convert only non-animated avatars to. Defaults to "
+"'webp'"
+msgstr "애니메이션이 없는 아바타만 변환하려고 하는 형식입니다. 기본값은 'webp' 입니다."
+
+#: discord.ClientUser.avatar_url_as:21 discord.Member.avatar_url_as:21
+#: discord.User.avatar_url_as:21 discord.WidgetMember.avatar_url_as:21 of
+msgid ""
+"Bad image format passed to ``format`` or ``static_format``, or     "
+"invalid ``size``."
+msgstr "잘못된 형식이  ``format`` 또는 ``static_format`` 에 전달되었거나, ``size`` 가 유효하지 않습니다."
+
+#: discord.ClientUser.color:1 discord.User.color:1 discord.WidgetMember.color:1
+#: of
+msgid ""
+"A property that returns a color denoting the rendered color for the user."
+" This always returns :meth:`Colour.default`."
+msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 리턴합니다."
+
+#: discord.ClientUser.color:4 discord.Member.color:5 discord.User.color:4
+#: discord.WidgetMember.color:4 of
+msgid "There is an alias for this named :meth:`colour`."
+msgstr ":meth:`colour` 이라는 별칭이 있습니다."
+
+#: discord.ClientUser.color:6 discord.ClientUser.colour:6
+#: discord.Member.color:7 discord.Member.colour:7 discord.Role.color:3
+#: discord.Role.colour:3 discord.User.color:6 discord.User.colour:6
+#: discord.WidgetMember.color:6 discord.WidgetMember.colour:6 of
+msgid ":class:`Colour`"
+msgstr ":class:`Colour`"
+
+#: discord.ClientUser.colour:1 discord.User.colour:1
+#: discord.WidgetMember.colour:1 of
+msgid ""
+"A property that returns a colour denoting the rendered colour for the "
+"user. This always returns :meth:`Colour.default`."
+msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 리턴합니다."
+
+#: discord.ClientUser.colour:4 discord.Member.colour:5 discord.User.colour:4
+#: discord.WidgetMember.colour:4 of
+msgid "There is an alias for this named :meth:`color`."
+msgstr ":meth:`color` 이라는 별칭이 있습니다."
+
+#: discord.ClientUser.created_at:1 discord.User.created_at:1
+#: discord.WidgetMember.created_at:1 of
+msgid "Returns the user's creation time in UTC."
+msgstr "사용자 계정의 생성시간을 UTC로 리턴합니다."
+
+#: discord.ClientUser.created_at:3 discord.User.created_at:3
+#: discord.WidgetMember.created_at:3 of
+msgid "This is when the user's Discord account was created."
+msgstr "사용자의 디스코드 계정이 생성 된 시점입니다."
+
+#: discord.ClientUser.default_avatar:1 discord.User.default_avatar:1
+#: discord.WidgetMember.default_avatar:1 of
+msgid ""
+"Returns the default avatar for a given user. This is calculated by the "
+"user's discriminator."
+msgstr "지정된 사용자의 기본 아바타를 리턴합니다. 이것은 사용자의 태그에 의해 계산됩니다."
+
+#: discord.ClientUser.default_avatar:3 discord.User.default_avatar:3
+#: discord.WidgetMember.default_avatar:3 of
+msgid ":class:`DefaultAvatar`"
+msgstr ":class:`DefaultAvatar`"
+
+#: discord.ClientUser.default_avatar_url:1 discord.User.default_avatar_url:1
+#: discord.WidgetMember.default_avatar_url:1 of
+msgid "Returns a URL for a user's default avatar."
+msgstr "사용자의 기본 아바타에 대한 URL을 리턴합니다."
+
+#: discord.ClientUser.display_name:3 discord.Member.display_name:3
+#: discord.User.display_name:3 of
+msgid ""
+"For regular users this is just their username, but if they have a guild "
+"specific nickname then that is returned instead."
+msgstr "일반 사용자의 경우에는 사용자 이름이지만 길드별 닉네임이 있는 경우 해당 닉네임을 리턴합니다."
+
+#: discord.ClientUser.is_avatar_animated:1 discord.Member.is_avatar_animated:1
+#: discord.User.is_avatar_animated:1 discord.WidgetMember.is_avatar_animated:1
+#: of
+msgid "Indicates if the user has an animated avatar."
+msgstr "사용자에게 애니메이션 아바타가 있는지 여부를 나타냅니다."
+
+#: discord.ClientUser.mentioned_in:1 discord.User.mentioned_in:1
+#: discord.WidgetMember.mentioned_in:1 of
+msgid "Checks if the user is mentioned in the specified message."
+msgstr "지정된 메시지에서 사용자가 언급되었는지 확인합니다."
+
+#: discord.ClientUser.mentioned_in:3 discord.Member.mentioned_in:3
+#: discord.User.mentioned_in:3 discord.WidgetMember.mentioned_in:3 of
+msgid "The message to check if you're mentioned in."
+msgstr "언급된 메시지 입니다."
+
+#: discord.ClientUser.permissions_in:1 discord.Member.permissions_in:1
+#: discord.User.permissions_in:1 discord.WidgetMember.permissions_in:1 of
+msgid "An alias for :meth:`abc.GuildChannel.permissions_for`."
+msgstr ":meth:`abc.GuildChannel.permissions_for` 의 별칭입니다."
+
+#: discord.ClientUser.permissions_in:3 discord.Member.permissions_in:3
+#: discord.User.permissions_in:3 discord.WidgetMember.permissions_in:3 of
+msgid "Basically equivalent to:"
+msgstr "기본적으로 다음과 같습니다."
+
+#: discord.ClientUser.permissions_in:9 discord.Member.permissions_in:9
+#: discord.User.permissions_in:9 discord.WidgetMember.permissions_in:9 of
+msgid "The channel to check your permissions for."
+msgstr "권한을 확인할 채널입니다."
+
+#: ../../api.rst:2306
+msgid "Relationship"
+msgstr "관련성"
+
+#: discord.Relationship:1 of
+msgid "Represents a relationship in Discord."
+msgstr "디스코드에서 관련성을 나타냄"
+
+#: discord.Relationship:3 of
+msgid ""
+"A relationship is like a friendship, a person who is blocked, etc. Only "
+"non-bot accounts can have relationships."
+msgstr "관련성은 친구, 차단 된 유저와 같습니다. 봇이 아닌 계정만 관련성이 있습니다."
+
+#: discord.Relationship:8 of
+msgid "The user you have the relationship with."
+msgstr "관련성이 있는 사용자"
+
+#: discord.Relationship:14 of
+msgid "The type of relationship you have."
+msgstr "관령성의 타입"
+
+#: discord.Relationship:16 of
+msgid ":class:`RelationshipType`"
+msgstr ":class:`RelationshipType`"
+
+#: discord.Relationship.delete:3 of
+msgid "Deletes the relationship."
+msgstr "관련성을 삭제"
+
+#: discord.Relationship.delete:5 of
+msgid "Deleting the relationship failed."
+msgstr "관련성 삭제에 실패했습니다."
+
+#: discord.Relationship.accept:3 of
+msgid "Accepts the relationship request. e.g. accepting a friend request."
+msgstr "친구 요청을 수락"
+
+#: discord.Relationship.accept:6 of
+msgid "Accepting the relationship failed."
+msgstr "친구 요청 수락에 실패했습니다."
+
+#: ../../api.rst:2312
+msgid "User"
+msgstr ""
+
+#: discord.User:1 of
+msgid "Represents a Discord user."
+msgstr ""
+
+#: discord.User.dm_channel:1 of
+msgid "Returns the channel associated with this user if it exists."
+msgstr ""
+
+#: discord.User.dm_channel:3 of
+msgid ""
+"If this returns ``None``, you can create a DM channel by calling the "
+":meth:`create_dm` coroutine function."
+msgstr ""
+
+#: discord.User.dm_channel:6 of
+msgid "Optional[:class:`DMChannel`]"
+msgstr ""
+
+#: discord.Member.create_dm:1 discord.User.create_dm:1 of
+msgid "Creates a :class:`DMChannel` with this user."
+msgstr ""
+
+#: discord.Member.create_dm:3 discord.User.create_dm:3 of
+msgid ""
+"This should be rarely called, as this is done transparently for most "
+"people."
+msgstr ""
+
+#: discord.User.relationship:1 of
+msgid ""
+"Returns the :class:`Relationship` with this user if applicable, ``None`` "
+"otherwise."
+msgstr ""
+
+#: discord.Member.mutual_friends:3 discord.User.mutual_friends:3 of
+msgid "Gets all mutual friends of this user."
+msgstr ""
+
+#: discord.Member.mutual_friends:9 discord.User.mutual_friends:9 of
+msgid "Not allowed to get mutual friends of this user."
+msgstr ""
+
+#: discord.Member.mutual_friends:10 discord.User.mutual_friends:10 of
+msgid "Getting mutual friends failed."
+msgstr ""
+
+#: discord.Member.mutual_friends:12 discord.User.mutual_friends:12 of
+msgid "The users that are mutual friends."
+msgstr ""
+
+#: discord.Member.is_friend:1 discord.User.is_friend:1 of
+msgid "Checks if the user is your friend."
+msgstr ""
+
+#: discord.Member.is_blocked:1 discord.User.is_blocked:1 of
+msgid "Checks if the user is blocked."
+msgstr ""
+
+#: discord.Member.block:3 discord.User.block:3 of
+msgid "Blocks the user."
+msgstr ""
+
+#: discord.Member.block:9 discord.User.block:9 of
+msgid "Not allowed to block this user."
+msgstr ""
+
+#: discord.Member.block:10 discord.User.block:10 of
+msgid "Blocking the user failed."
+msgstr ""
+
+#: discord.Member.unblock:3 discord.User.unblock:3 of
+msgid "Unblocks the user."
+msgstr ""
+
+#: discord.Member.unblock:9 discord.User.unblock:9 of
+msgid "Not allowed to unblock this user."
+msgstr ""
+
+#: discord.Member.unblock:10 discord.User.unblock:10 of
+msgid "Unblocking the user failed."
+msgstr ""
+
+#: discord.Member.remove_friend:3 discord.User.remove_friend:3 of
+msgid "Removes the user as a friend."
+msgstr ""
+
+#: discord.Member.remove_friend:9 discord.User.remove_friend:9 of
+msgid "Not allowed to remove this user as a friend."
+msgstr ""
+
+#: discord.Member.remove_friend:10 discord.User.remove_friend:10 of
+msgid "Removing the user as a friend failed."
+msgstr ""
+
+#: discord.Member.send_friend_request:3 discord.User.send_friend_request:3 of
+msgid "Sends the user a friend request."
+msgstr ""
+
+#: discord.Member.send_friend_request:9 discord.User.send_friend_request:9 of
+msgid "Not allowed to send a friend request to the user."
+msgstr ""
+
+#: discord.Member.send_friend_request:10 discord.User.send_friend_request:10 of
+msgid "Sending the friend request failed."
+msgstr ""
+
+#: discord.Member.profile:3 discord.User.profile:3 of
+msgid "Gets the user's profile."
+msgstr ""
+
+#: discord.Member.profile:13 discord.User.profile:13 of
+msgid ":class:`Profile`"
+msgstr ""
+
+#: ../../api.rst:2326
+msgid "Attachment"
+msgstr ""
+
+#: discord.Attachment:1 of
+msgid "Represents an attachment from Discord."
+msgstr ""
+
+#: discord.Attachment:5 of
+msgid "The attachment ID."
+msgstr ""
+
+#: discord.Attachment:11 of
+msgid "The attachment size in bytes."
+msgstr ""
+
+#: discord.Attachment:17 of
+msgid "The attachment's height, in pixels. Only applicable to images and videos."
+msgstr ""
+
+#: discord.Attachment:23 of
+msgid "The attachment's width, in pixels. Only applicable to images and videos."
+msgstr ""
+
+#: discord.Attachment:29 of
+msgid "The attachment's filename."
+msgstr ""
+
+#: discord.Attachment:35 of
+msgid ""
+"The attachment URL. If the message this attachment was attached to is "
+"deleted, then this will 404."
+msgstr ""
+
+#: discord.Attachment:42 of
+msgid ""
+"The proxy URL. This is a cached version of the :attr:`~Attachment.url` in"
+" the case of images. When the message is deleted, this URL might be valid"
+" for a few minutes or not valid at all."
+msgstr ""
+
+#: discord.Attachment.is_spoiler:1 of
+msgid ":class:`bool`: Whether this attachment contains a spoiler."
+msgstr ""
+
+#: discord.Attachment.save:3 of
+msgid "Saves this attachment into a file-like object."
+msgstr ""
+
+#: discord.Attachment.save:5 of
+msgid ""
+"The file-like object to save this attachment to or the filename to use. "
+"If a filename is passed then a file is created with that filename and "
+"used instead."
+msgstr ""
+
+#: discord.Attachment.save:9 of
+msgid ""
+"Whether to seek to the beginning of the file after saving is successfully"
+" done."
+msgstr ""
+
+#: discord.Attachment.read:7 discord.Attachment.save:12
+#: discord.Attachment.to_file:8 of
+msgid ""
+"Whether to use :attr:`proxy_url` rather than :attr:`url` when downloading"
+" the attachment. This will allow attachments to be saved after deletion "
+"more often, compared to the regular URL which is generally deleted right "
+"after the message is deleted. Note that this can still fail to download "
+"deleted attachments if too much time has passed and it does not work on "
+"some types of attachments."
+msgstr ""
+
+#: discord.Attachment.save:20 of
+msgid "Saving the attachment failed."
+msgstr ""
+
+#: discord.Attachment.read:17 discord.Attachment.save:21
+#: discord.Attachment.to_file:18 of
+msgid "The attachment was deleted."
+msgstr ""
+
+#: discord.Asset.save:14 discord.Attachment.save:23 of
+msgid "The number of bytes written."
+msgstr ""
+
+#: discord.Attachment.read:3 of
+msgid "Retrieves the content of this attachment as a :class:`bytes` object."
+msgstr ""
+
+#: discord.Attachment.read:15 discord.Attachment.to_file:16 of
+msgid "Downloading the attachment failed."
+msgstr ""
+
+#: discord.Attachment.read:16 discord.Attachment.to_file:17 of
+msgid "You do not have permissions to access this attachment"
+msgstr ""
+
+#: discord.Attachment.read:19 of
+msgid "The contents of the attachment."
+msgstr ""
+
+#: discord.Attachment.to_file:3 of
+msgid ""
+"Converts the attachment into a :class:`File` suitable for sending via "
+":meth:`abc.Messageable.send`."
+msgstr ""
+
+#: discord.Attachment.to_file:20 of
+msgid "The attachment as a file suitable for sending."
+msgstr ""
+
+#: discord.Attachment.to_file:21 of
+msgid ":class:`File`"
+msgstr ""
+
+#: ../../api.rst:2332
+msgid "Asset"
+msgstr ""
+
+#: discord.Asset:1 of
+msgid "Represents a CDN asset on Discord."
+msgstr ""
+
+#: discord.Asset:7 of
+msgid "Returns the URL of the CDN asset."
+msgstr ""
+
+#: discord.Asset:11 of
+msgid "Returns the length of the CDN asset's URL."
+msgstr ""
+
+#: discord.Asset:15 of
+msgid "Checks if the Asset has a URL."
+msgstr ""
+
+#: discord.Asset:19 of
+msgid "Checks if the asset is equal to another asset."
+msgstr ""
+
+#: discord.Asset:23 of
+msgid "Checks if the asset is not equal to another asset."
+msgstr ""
+
+#: discord.Asset:27 of
+msgid "Returns the hash of the asset."
+msgstr ""
+
+#: discord.Asset.read:3 of
+msgid "Retrieves the content of this asset as a :class:`bytes` object."
+msgstr ""
+
+#: discord.Asset.read:7 of
+msgid ""
+":class:`PartialEmoji` won't have a connection state if user created, and "
+"a URL won't be present if a custom image isn't associated with the asset,"
+" e.g. a guild with no custom icon."
+msgstr ""
+
+#: discord.Asset.read:13 discord.Asset.save:10 of
+msgid "There was no valid URL or internal connection state."
+msgstr ""
+
+#: discord.Asset.read:14 discord.Asset.save:11 of
+msgid "Downloading the asset failed."
+msgstr ""
+
+#: discord.Asset.read:15 discord.Asset.save:12 of
+msgid "The asset was deleted."
+msgstr ""
+
+#: discord.Asset.read:17 of
+msgid "The content of the asset."
+msgstr ""
+
+#: discord.Asset.save:3 of
+msgid "Saves this asset into a file-like object."
+msgstr ""
+
+#: discord.Asset.save:5 discord.Asset.save:7 of
+msgid "Same as in :meth:`Attachment.save`."
+msgstr ""
+
+#: ../../api.rst:2338
+msgid "Message"
+msgstr ""
+
+#: discord.Message:1 of
+msgid "Represents a message from Discord."
+msgstr ""
+
+#: discord.Message:3 of
+msgid "There should be no need to create one of these manually."
+msgstr ""
+
+#: discord.Message:7 of
+msgid ""
+"Specifies if the message was done with text-to-speech. This can only be "
+"accurately received in :func:`on_message` due to a discord limitation."
+msgstr ""
+
+#: discord.Message:15 of
+msgid ""
+"The type of message. In most cases this should not be checked, but it is "
+"helpful in cases where it might be a system message for "
+":attr:`system_content`."
+msgstr ""
+
+#: discord.Message:18 of
+msgid ":class:`MessageType`"
+msgstr ""
+
+#: discord.Message:22 of
+msgid ""
+"A :class:`Member` that sent the message. If :attr:`channel` is a private "
+"channel or the user has the left the guild, then it is a :class:`User` "
+"instead."
+msgstr ""
+
+#: discord.Message:29 of
+msgid "The actual contents of the message."
+msgstr ""
+
+#: discord.Message:35 of
+msgid ""
+"The value used by the discord guild and the client to verify that the "
+"message is successfully sent. This is typically non-important."
+msgstr ""
+
+#: discord.Message:40 of
+msgid "A list of embeds the message has."
+msgstr ""
+
+#: discord.Message:42 of
+msgid "List[:class:`Embed`]"
+msgstr ""
+
+#: discord.Message:46 of
+msgid ""
+"The :class:`TextChannel` that the message was sent from. Could be a "
+":class:`DMChannel` or :class:`GroupChannel` if it's a private message."
+msgstr ""
+
+#: discord.Message:49 of
+msgid "Union[:class:`abc.Messageable`]"
+msgstr ""
+
+#: discord.Message:53 of
+msgid ""
+"The call that the message refers to. This is only applicable to messages "
+"of type :attr:`MessageType.call`."
+msgstr ""
+
+#: discord.Message:56 of
+msgid "Optional[:class:`CallMessage`]"
+msgstr ""
+
+#: discord.Message:60 of
+msgid "Specifies if the message mentions everyone."
+msgstr ""
+
+#: discord.Message:64 of
+msgid ""
+"This does not check if the ``@everyone`` or the ``@here`` text is in the "
+"message itself. Rather this boolean indicates if either the ``@everyone``"
+" or the ``@here`` text is in the message **and** it did end up "
+"mentioning."
+msgstr ""
+
+#: discord.Message:72 of
+msgid ""
+"A list of :class:`Member` that were mentioned. If the message is in a "
+"private message then the list will be of :class:`User` instead. For "
+"messages that are not of type :attr:`MessageType.default`\\, this array "
+"can be used to aid in system messages. For more information, see "
+":attr:`system_content`."
+msgstr ""
+
+#: discord.Message:79 of
+msgid ""
+"The order of the mentions list is not in any particular order so you "
+"should not rely on it. This is a discord limitation, not one with the "
+"library."
+msgstr ""
+
+#: discord.Message:82 of
+msgid "List[:class:`abc.User`]"
+msgstr ""
+
+#: discord.Message:86 of
+msgid ""
+"A list of :class:`abc.GuildChannel` that were mentioned. If the message "
+"is in a private message then the list is always empty."
+msgstr ""
+
+#: discord.CategoryChannel.channels:5 discord.Guild.channels:3
+#: discord.Guild.fetch_channels:15 discord.Message:89 of
+msgid "List[:class:`abc.GuildChannel`]"
+msgstr ""
+
+#: discord.Message:93 of
+msgid ""
+"A list of :class:`Role` that were mentioned. If the message is in a "
+"private message then the list is always empty."
+msgstr ""
+
+#: discord.Emoji.roles:5 discord.Guild.fetch_roles:14 discord.Member.roles:7
+#: discord.Message:96 of
+msgid "List[:class:`Role`]"
+msgstr ""
+
+#: discord.Message:100 of
+msgid "The message ID."
+msgstr ""
+
+#: discord.Message:106 of
+msgid ""
+"If this message was sent by a webhook, then this is the webhook ID's that"
+" sent this message."
+msgstr ""
+
+#: discord.Message:113 of
+msgid "A list of attachments given to a message."
+msgstr ""
+
+#: discord.Message:115 of
+msgid "List[:class:`Attachment`]"
+msgstr ""
+
+#: discord.Message:119 of
+msgid "Specifies if the message is currently pinned."
+msgstr ""
+
+#: discord.Message:125 of
+msgid "Extra features of the message."
+msgstr ""
+
+#: discord.Message:129 of
+msgid ":class:`MessageFlags`"
+msgstr ""
+
+#: discord.Message:133 of
+msgid ""
+"Reactions to a message. Reactions can be either custom emoji or standard "
+"unicode emoji."
+msgstr ""
+
+#: discord.Message:135 of
+msgid "List[:class:`Reaction`]"
+msgstr ""
+
+#: discord.Message:139 of
+msgid ""
+"The activity associated with this message. Sent with Rich-Presence "
+"related messages that for example, request joining, spectating, or "
+"listening to or with another member."
+msgstr ""
+
+#: discord.Message:142 of
+msgid "It is a dictionary with the following optional keys:"
+msgstr ""
+
+#: discord.Message:144 of
+msgid ""
+"``type``: An integer denoting the type of message activity being "
+"requested."
+msgstr ""
+
+#: discord.Message:145 of
+msgid "``party_id``: The party ID associated with the party."
+msgstr ""
+
+#: discord.Message:147 discord.Message:161 of
+msgid "Optional[:class:`dict`]"
+msgstr ""
+
+#: discord.Message:151 of
+msgid "The rich presence enabled application associated with this message."
+msgstr ""
+
+#: discord.Message:153 of
+msgid "It is a dictionary with the following keys:"
+msgstr ""
+
+#: discord.Message:155 of
+msgid "``id``: A string representing the application's ID."
+msgstr ""
+
+#: discord.Message:156 of
+msgid "``name``: A string representing the application's name."
+msgstr ""
+
+#: discord.Message:157 of
+msgid "``description``: A string representing the application's description."
+msgstr ""
+
+#: discord.Message:158 of
+msgid "``icon``: A string representing the icon ID of the application."
+msgstr ""
+
+#: discord.Message:159 of
+msgid "``cover_image``: A string representing the embed's image asset ID."
+msgstr ""
+
+#: discord.Message.guild:1 of
+msgid "The guild that the message belongs to, if applicable."
+msgstr ""
+
+#: discord.Message.raw_mentions:1 of
+msgid ""
+"A property that returns an array of user IDs matched with the syntax of "
+"``<@user_id>`` in the message content."
+msgstr ""
+
+#: discord.Message.raw_mentions:4 of
+msgid ""
+"This allows you to receive the user IDs of mentioned users even in a "
+"private message context."
+msgstr ""
+
+#: discord.Message.raw_channel_mentions:4 discord.Message.raw_mentions:7
+#: discord.Message.raw_role_mentions:4 of
+msgid "List[:class:`int`]"
+msgstr ""
+
+#: discord.Message.raw_channel_mentions:1 of
+msgid ""
+"A property that returns an array of channel IDs matched with the syntax "
+"of ``<#channel_id>`` in the message content."
+msgstr ""
+
+#: discord.Message.raw_role_mentions:1 of
+msgid ""
+"A property that returns an array of role IDs matched with the syntax of "
+"``<@&role_id>`` in the message content."
+msgstr ""
+
+#: discord.Message.clean_content:1 of
+msgid ""
+"A property that returns the content in a \"cleaned up\" manner. This "
+"basically means that mentions are transformed into the way the client "
+"shows it. e.g. ``<#id>`` will transform into ``#name``."
+msgstr ""
+
+#: discord.Message.clean_content:6 of
+msgid "This will also transform @everyone and @here mentions into non-mentions."
+msgstr ""
+
+#: discord.Message.clean_content:11 of
+msgid ""
+"This *does not* escape markdown. If you want to escape markdown then use "
+":func:`utils.escape_markdown` along with this function."
+msgstr ""
+
+#: discord.Message.created_at:1 of
+msgid "The message's creation time in UTC."
+msgstr ""
+
+#: discord.Message.edited_at:1 of
+msgid "A naive UTC datetime object containing the edited time of the message."
+msgstr ""
+
+#: discord.Activity.end:3 discord.Activity.start:3
+#: discord.BaseActivity.created_at:5 discord.CallMessage:10 discord.Game.end:3
+#: discord.Game.start:3 discord.Member:30 discord.Member:55
+#: discord.Message.edited_at:3 discord.Spotify.created_at:5 of
+msgid "Optional[:class:`datetime.datetime`]"
+msgstr ""
+
+#: discord.Message.jump_url:1 of
+msgid "Returns a URL that allows the client to jump to this message."
+msgstr ""
+
+#: discord.Message.is_system:1 of
+msgid ":class:`bool`: Whether the message is a system message."
+msgstr ""
+
+#: discord.Message.system_content:1 of
+msgid ""
+"A property that returns the content that is rendered regardless of the "
+":attr:`Message.type`."
+msgstr ""
+
+#: discord.Message.system_content:4 of
+msgid ""
+"In the case of :attr:`MessageType.default`\\, this just returns the "
+"regular :attr:`Message.content`. Otherwise this returns an English "
+"message denoting the contents of the system message."
+msgstr ""
+
+#: discord.Message.delete:3 of
+msgid "Deletes the message."
+msgstr ""
+
+#: discord.Message.delete:5 of
+msgid ""
+"Your own messages could be deleted without any proper permissions. "
+"However to delete other people's messages, you need the "
+":attr:`~Permissions.manage_messages` permission."
+msgstr ""
+
+#: discord.Message.delete:9 of
+msgid "Added the new ``delay`` keyword-only parameter."
+msgstr ""
+
+#: discord.Message.delete:12 of
+msgid ""
+"If provided, the number of seconds to wait in the background before "
+"deleting the message. If the deletion fails then it is silently ignored."
+msgstr ""
+
+#: discord.Message.delete:16 of
+msgid "You do not have proper permissions to delete the message."
+msgstr ""
+
+#: discord.Message.delete:17 of
+msgid "The message was deleted already"
+msgstr ""
+
+#: discord.Message.delete:18 of
+msgid "Deleting the message failed."
+msgstr ""
+
+#: discord.Message.edit:3 of
+msgid "Edits the message."
+msgstr ""
+
+#: discord.Message.edit:5 of
+msgid ""
+"The content must be able to be transformed into a string via "
+"``str(content)``."
+msgstr ""
+
+#: discord.Message.edit:7 of
+msgid "The ``suppress`` keyword-only parameter was added."
+msgstr ""
+
+#: discord.Message.edit:10 of
+msgid ""
+"The new content to replace the message with. Could be ``None`` to remove "
+"the content."
+msgstr ""
+
+#: discord.Message.edit:13 of
+msgid ""
+"The new embed to replace the original with. Could be ``None`` to remove "
+"the embed."
+msgstr ""
+
+#: discord.Message.edit:16 of
+msgid ""
+"Whether to suppress embeds for the message. This removes all the embeds "
+"if set to ``True``. If set to ``False`` this brings the embeds back if "
+"they were suppressed. Using this parameter requires "
+":attr:`~.Permissions.manage_messages`."
+msgstr ""
+
+#: discord.Message.edit:21 of
+msgid ""
+"If provided, the number of seconds to wait in the background before "
+"deleting the message we just edited. If the deletion fails, then it is "
+"silently ignored."
+msgstr ""
+
+#: discord.Message.edit:26 of
+msgid "Editing the message failed."
+msgstr ""
+
+#: discord.Message.edit:27 of
+msgid ""
+"Tried to suppress a message without permissions or     edited a message's"
+" content or embed that isn't yours."
+msgstr ""
+
+#: discord.Message.publish:3 of
+msgid "Publishes this message to your announcement channel."
+msgstr ""
+
+#: discord.Message.publish:5 of
+msgid ""
+"If the message is not your own then the "
+":attr:`~Permissions.manage_messages` permission is needed."
+msgstr ""
+
+#: discord.Message.publish:8 of
+msgid "You do not have the proper permissions to publish this message."
+msgstr ""
+
+#: discord.Message.publish:9 of
+msgid "Publishing the message failed."
+msgstr ""
+
+#: discord.Message.pin:3 of
+msgid "Pins the message."
+msgstr ""
+
+#: discord.Message.pin:5 discord.Message.unpin:5 of
+msgid ""
+"You must have the :attr:`~Permissions.manage_messages` permission to do "
+"this in a non-private channel context."
+msgstr ""
+
+#: discord.Message.pin:8 of
+msgid "You do not have permissions to pin the message."
+msgstr ""
+
+#: discord.Message.pin:9 discord.Message.unpin:9 of
+msgid "The message or channel was not found or deleted."
+msgstr ""
+
+#: discord.Message.pin:10 of
+msgid ""
+"Pinning the message failed, probably due to the channel     having more "
+"than 50 pinned messages."
+msgstr ""
+
+#: discord.Message.unpin:3 of
+msgid "Unpins the message."
+msgstr ""
+
+#: discord.Message.unpin:8 of
+msgid "You do not have permissions to unpin the message."
+msgstr ""
+
+#: discord.Message.unpin:10 of
+msgid "Unpinning the message failed."
+msgstr ""
+
+#: discord.Message.add_reaction:3 of
+msgid "Add a reaction to the message."
+msgstr ""
+
+#: discord.Message.add_reaction:5 discord.Message.clear_reaction:5
+#: discord.Message.remove_reaction:5 of
+msgid "The emoji may be a unicode emoji or a custom guild :class:`Emoji`."
+msgstr ""
+
+#: discord.Message.add_reaction:7 of
+msgid ""
+"You must have the :attr:`~Permissions.read_message_history` permission to"
+" use this. If nobody else has reacted to the message using this emoji, "
+"the :attr:`~Permissions.add_reactions` permission is required."
+msgstr ""
+
+#: discord.Message.add_reaction:11 of
+msgid "The emoji to react with."
+msgstr ""
+
+#: discord.Message.add_reaction:14 of
+msgid "Adding the reaction failed."
+msgstr ""
+
+#: discord.Message.add_reaction:15 of
+msgid "You do not have the proper permissions to react to the message."
+msgstr ""
+
+#: discord.Message.add_reaction:16 discord.Message.clear_reaction:16
+#: discord.Reaction.clear:11 of
+msgid "The emoji you specified was not found."
+msgstr ""
+
+#: discord.Message.add_reaction:17 discord.Message.clear_reaction:17
+#: discord.Message.remove_reaction:21 discord.Reaction.clear:12 of
+msgid "The emoji parameter is invalid."
+msgstr ""
+
+#: discord.Message.remove_reaction:3 of
+msgid "Remove a reaction by the member from the message."
+msgstr ""
+
+#: discord.Message.remove_reaction:7 of
+msgid ""
+"If the reaction is not your own (i.e. ``member`` parameter is not you) "
+"then the :attr:`~Permissions.manage_messages` permission is needed."
+msgstr ""
+
+#: discord.Message.remove_reaction:10 of
+msgid ""
+"The ``member`` parameter must represent a member and meet the "
+":class:`abc.Snowflake` abc."
+msgstr ""
+
+#: discord.Message.remove_reaction:13 of
+msgid "The emoji to remove."
+msgstr ""
+
+#: discord.Message.remove_reaction:15 of
+msgid "The member for which to remove the reaction."
+msgstr ""
+
+#: discord.Message.remove_reaction:18 discord.Reaction.remove:14 of
+msgid "Removing the reaction failed."
+msgstr ""
+
+#: discord.Message.remove_reaction:19 discord.Reaction.remove:15 of
+msgid "You do not have the proper permissions to remove the reaction."
+msgstr ""
+
+#: discord.Message.remove_reaction:20 of
+msgid "The member or emoji you specified was not found."
+msgstr ""
+
+#: discord.Message.clear_reaction:3 of
+msgid "Clears a specific reaction from the message."
+msgstr ""
+
+#: discord.Message.clear_reaction:7 discord.Message.clear_reactions:5
+#: discord.Reaction.clear:5 of
+msgid "You need the :attr:`~Permissions.manage_messages` permission to use this."
+msgstr ""
+
+#: discord.Message.clear_reaction:11 of
+msgid "The emoji to clear."
+msgstr ""
+
+#: discord.Message.clear_reaction:14 discord.Reaction.clear:9 of
+msgid "Clearing the reaction failed."
+msgstr ""
+
+#: discord.Message.clear_reaction:15 discord.Reaction.clear:10 of
+msgid "You do not have the proper permissions to clear the reaction."
+msgstr ""
+
+#: discord.Message.clear_reactions:3 of
+msgid "Removes all the reactions from the message."
+msgstr ""
+
+#: discord.Message.clear_reactions:7 of
+msgid "Removing the reactions failed."
+msgstr ""
+
+#: discord.Message.clear_reactions:8 of
+msgid "You do not have the proper permissions to remove all the reactions."
+msgstr ""
+
+#: discord.Message.ack:3 of
+msgid "Marks this message as read."
+msgstr ""
+
+#: discord.Guild.ack:5 discord.Message.ack:5 of
+msgid "The user must not be a bot user."
+msgstr ""
+
+#: discord.Guild.ack:7 discord.Message.ack:7 of
+msgid "Acking failed."
+msgstr ""
+
+#: discord.Guild.ack:8 discord.Message.ack:8 of
+msgid "You must not be a bot user."
+msgstr ""
+
+#: ../../api.rst:2344
+msgid "Reaction"
+msgstr ""
+
+#: discord.Reaction:1 of
+msgid "Represents a reaction to a message."
+msgstr ""
+
+#: discord.Emoji:3 discord.Invite:3 discord.Reaction:3 of
+msgid ""
+"Depending on the way this object was created, some of the attributes can "
+"have a value of ``None``."
+msgstr ""
+
+#: discord.Reaction:10 of
+msgid ""
+"Checks if two reactions are equal. This works by checking if the emoji is"
+" the same. So two messages with the same reaction will be considered "
+"\"equal\"."
+msgstr ""
+
+#: discord.Reaction:16 of
+msgid "Checks if two reactions are not equal."
+msgstr ""
+
+#: discord.Reaction:20 of
+msgid "Returns the reaction's hash."
+msgstr ""
+
+#: discord.Reaction:24 of
+msgid "Returns the string form of the reaction's emoji."
+msgstr ""
+
+#: discord.Reaction:28 of
+msgid "The reaction emoji. May be a custom emoji, or a unicode emoji."
+msgstr ""
+
+#: discord.Reaction:30 of
+msgid "Union[:class:`Emoji`, :class:`PartialEmoji`, :class:`str`]"
+msgstr ""
+
+#: discord.Reaction:34 of
+msgid "Number of times this reaction was made"
+msgstr ""
+
+#: discord.Reaction:40 of
+msgid "If the user sent this reaction."
+msgstr ""
+
+#: discord.Reaction:46 of
+msgid "Message this reaction is for."
+msgstr ""
+
+#: discord.CallMessage:22 discord.Reaction:48 of
+msgid ":class:`Message`"
+msgstr ""
+
+#: discord.Reaction.users:1 of
+msgid ""
+"Returns an :class:`AsyncIterator` representing the users that have "
+"reacted to the message."
+msgstr ""
+
+#: discord.Reaction.users:3 of
+msgid ""
+"The ``after`` parameter must represent a member and meet the "
+":class:`abc.Snowflake` abc."
+msgstr ""
+
+#: discord.Reaction.users:21 of
+msgid ""
+"The maximum number of results to return. If not provided, returns all the"
+" users who reacted to the message."
+msgstr ""
+
+#: discord.Reaction.users:25 of
+msgid "For pagination, reactions are sorted by member."
+msgstr ""
+
+#: discord.Reaction.users:28 of
+msgid "Getting the users for the reaction failed."
+msgstr ""
+
+#: discord.Reaction.users:30 of
+msgid ""
+"Union[:class:`User`, :class:`Member`] -- The member (if retrievable) or "
+"the user that has reacted to this message. The case where it can be a "
+":class:`Member` is in a guild message context. Sometimes it can be a "
+":class:`User` if the member has left the guild."
+msgstr ""
+
+#: discord.Reaction.custom_emoji:1 of
+msgid "If this is a custom emoji."
+msgstr ""
+
+#: discord.Reaction.remove:3 of
+msgid "Remove the reaction by the provided :class:`User` from the message."
+msgstr ""
+
+#: discord.Reaction.remove:5 of
+msgid ""
+"If the reaction is not your own (i.e. ``user`` parameter is not you) then"
+" the :attr:`~Permissions.manage_messages` permission is needed."
+msgstr ""
+
+#: discord.Reaction.remove:8 of
+msgid ""
+"The ``user`` parameter must represent a user or member and meet the "
+":class:`abc.Snowflake` abc."
+msgstr ""
+
+#: discord.Reaction.remove:11 of
+msgid "The user or member from which to remove the reaction."
+msgstr ""
+
+#: discord.Reaction.remove:16 of
+msgid "The user you specified, or the reaction's message was not found."
+msgstr ""
+
+#: discord.Reaction.clear:3 of
+msgid "Clears this reaction from the message."
+msgstr ""
+
+#: ../../api.rst:2354
+msgid "CallMessage"
+msgstr ""
+
+#: discord.CallMessage:1 of
+msgid "Represents a group call message from Discord."
+msgstr ""
+
+#: discord.CallMessage:3 of
+msgid ""
+"This is only received in cases where the message type is equivalent to "
+":attr:`MessageType.call`."
+msgstr ""
+
+#: discord.CallMessage:8 of
+msgid ""
+"A naive UTC datetime object that represents the time that the call has "
+"ended."
+msgstr ""
+
+#: discord.CallMessage:14 of
+msgid "The list of users that are participating in this call."
+msgstr ""
+
+#: discord.CallMessage:20 of
+msgid "The message associated with this call message."
+msgstr ""
+
+#: discord.CallMessage.call_ended:1 of
+msgid "Indicates if the call has ended."
+msgstr ""
+
+#: discord.CallMessage.channel:1 of
+msgid "The private channel associated with this message."
+msgstr ""
+
+#: discord.CallMessage.channel:3 discord.GroupCall.channel:3 of
+msgid ":class:`GroupChannel`\\"
+msgstr ""
+
+#: discord.CallMessage.duration:1 of
+msgid "Queries the duration of the call."
+msgstr ""
+
+#: discord.CallMessage.duration:3 of
+msgid "If the call has not ended then the current duration will be returned."
+msgstr ""
+
+#: discord.CallMessage.duration:6 of
+msgid "The timedelta object representing the duration."
+msgstr ""
+
+#: discord.CallMessage.duration:7 discord.Spotify.duration:3 of
+msgid ":class:`datetime.timedelta`"
+msgstr ""
+
+#: ../../api.rst:2360
+msgid "GroupCall"
+msgstr ""
+
+#: discord.GroupCall:1 of
+msgid "Represents the actual group call from Discord."
+msgstr ""
+
+#: discord.GroupCall:3 of
+msgid "This is accompanied with a :class:`CallMessage` denoting the information."
+msgstr ""
+
+#: discord.GroupCall:7 of
+msgid "The call message associated with this group call."
+msgstr ""
+
+#: discord.GroupCall:9 of
+msgid ":class:`CallMessage`"
+msgstr ""
+
+#: discord.GroupCall:13 of
+msgid "Denotes if this group call is unavailable."
+msgstr ""
+
+#: discord.GroupCall:19 of
+msgid "A list of users that are currently being rung to join the call."
+msgstr ""
+
+#: discord.GroupCall:25 of
+msgid "The guild region the group call is being hosted on."
+msgstr ""
+
+#: discord.GroupCall:27 discord.Guild:40 of
+msgid ":class:`VoiceRegion`"
+msgstr ""
+
+#: discord.GroupCall.connected:1 of
+msgid "A property that returns all users that are currently in this call."
+msgstr ""
+
+#: discord.GroupCall.channel:1 of
+msgid "Returns the channel the group call is in."
+msgstr ""
+
+#: discord.GroupCall.voice_state_for:1 of
+msgid "Retrieves the :class:`VoiceState` for a specified :class:`User`."
+msgstr ""
+
+#: discord.GroupCall.voice_state_for:3 of
+msgid ""
+"If the :class:`User` has no voice state then this function returns "
+"``None``."
+msgstr ""
+
+#: discord.GroupCall.voice_state_for:6 of
+msgid "The user to retrieve the voice state for."
+msgstr ""
+
+#: discord.GroupCall.voice_state_for:9 of
+msgid "The voice state associated with this user."
+msgstr ""
+
+#: discord.GroupCall.voice_state_for:10 discord.Member.voice:3 of
+msgid "Optional[:class:`VoiceState`]"
+msgstr ""
+
+#: ../../api.rst:2366
+msgid "Guild"
+msgstr ""
+
+#: discord.Guild:1 of
+msgid "Represents a Discord guild."
+msgstr ""
+
+#: discord.Guild:3 of
+msgid "This is referred to as a \"server\" in the official Discord UI."
+msgstr ""
+
+#: discord.Guild:9 of
+msgid "Checks if two guilds are equal."
+msgstr ""
+
+#: discord.Guild:13 of
+msgid "Checks if two guilds are not equal."
+msgstr ""
+
+#: discord.Guild:17 of
+msgid "Returns the guild's hash."
+msgstr ""
+
+#: discord.Guild:21 of
+msgid "Returns the guild's name."
+msgstr ""
+
+#: discord.Guild:25 of
+msgid "The guild name."
+msgstr ""
+
+#: discord.Guild:31 of
+msgid "All emojis that the guild owns."
+msgstr ""
+
+#: discord.Guild:33 of
+msgid "Tuple[:class:`Emoji`, ...]"
+msgstr ""
+
+#: discord.Guild:37 of
+msgid ""
+"The region the guild belongs on. There is a chance that the region will "
+"be a :class:`str` if the value is not recognised by the enumerator."
+msgstr ""
+
+#: discord.Guild:44 of
+msgid "The timeout to get sent to the AFK channel."
+msgstr ""
+
+#: discord.Guild:50 of
+msgid "The channel that denotes the AFK channel. None if it doesn't exist."
+msgstr ""
+
+#: discord.Guild:52 discord.VoiceState:52 discord.WidgetMember:91 of
+msgid "Optional[:class:`VoiceChannel`]"
+msgstr ""
+
+#: discord.Guild:56 of
+msgid "The guild's icon."
+msgstr ""
+
+#: discord.Guild:62 discord.Widget:19 of
+msgid "The guild's ID."
+msgstr ""
+
+#: discord.Guild:68 of
+msgid "The guild owner's ID. Use :attr:`Guild.owner` instead."
+msgstr ""
+
+#: discord.Guild:74 of
+msgid ""
+"Indicates if the guild is unavailable. If this is ``True`` then the "
+"reliability of other attributes outside of :meth:`Guild.id` is slim and "
+"they might all be None. It is best to not do anything with the guild if "
+"it is unavailable."
+msgstr ""
+
+#: discord.Guild:78 of
+msgid ""
+"Check the :func:`on_guild_unavailable` and :func:`on_guild_available` "
+"events."
+msgstr ""
+
+#: discord.Guild:84 of
+msgid "The maximum amount of presences for the guild."
+msgstr ""
+
+#: discord.Guild:90 of
+msgid "The maximum amount of members for the guild."
+msgstr ""
+
+#: discord.Guild:96 of
+msgid "The guild's banner."
+msgstr ""
+
+#: discord.Guild:102 of
+msgid "The guild's description."
+msgstr ""
+
+#: discord.Guild:108 of
+msgid ""
+"Indicates the guild's two factor authorisation level. If this value is 0 "
+"then the guild does not require 2FA for their administrative members. If "
+"the value is 1 then they do."
+msgstr ""
+
+#: discord.Guild:116 of
+msgid "The guild's verification level."
+msgstr ""
+
+#: discord.Guild:118 discord.PartialInviteGuild:40 of
+msgid ":class:`VerificationLevel`"
+msgstr ""
+
+#: discord.Guild:122 of
+msgid "The guild's explicit content filter."
+msgstr ""
+
+#: discord.Guild:124 of
+msgid ":class:`ContentFilter`"
+msgstr ""
+
+#: discord.Guild:128 of
+msgid "The guild's notification settings."
+msgstr ""
+
+#: discord.Guild:130 of
+msgid ":class:`NotificationLevel`"
+msgstr ""
+
+#: discord.Guild:134 of
+msgid "A list of features that the guild has. They are currently as follows:"
+msgstr ""
+
+#: discord.Guild:136 of
+msgid "``VIP_REGIONS``: Guild has VIP voice regions"
+msgstr ""
+
+#: discord.Guild:137 of
+msgid ""
+"``VANITY_URL``: Guild can have a vanity invite URL (e.g. discord.gg"
+"/discord-api)"
+msgstr ""
+
+#: discord.Guild:138 of
+msgid "``INVITE_SPLASH``: Guild's invite page can have a special splash."
+msgstr ""
+
+#: discord.Guild:139 of
+msgid "``VERIFIED``: Guild is a verified server."
+msgstr ""
+
+#: discord.Guild:140 of
+msgid "``PARTNERED``: Guild is a partnered server."
+msgstr ""
+
+#: discord.Guild:141 of
+msgid "``MORE_EMOJI``: Guild is allowed to have more than 50 custom emoji."
+msgstr ""
+
+#: discord.Guild:142 of
+msgid "``DISCOVERABLE``: Guild shows up in Server Discovery."
+msgstr ""
+
+#: discord.Guild:143 of
+msgid "``FEATURABLE``: Guild is able to be featured in Server Discovery."
+msgstr ""
+
+#: discord.Guild:144 of
+msgid "``COMMERCE``: Guild can sell things using store channels."
+msgstr ""
+
+#: discord.Guild:145 of
+msgid "``PUBLIC``: Guild is a public guild."
+msgstr ""
+
+#: discord.Guild:146 of
+msgid "``NEWS``: Guild can create news channels."
+msgstr ""
+
+#: discord.Guild:147 of
+msgid "``BANNER``: Guild can upload and use a banner (i.e. :meth:`banner_url`)."
+msgstr ""
+
+#: discord.Guild:148 of
+msgid "``ANIMATED_ICON``: Guild can upload an animated icon."
+msgstr ""
+
+#: discord.Guild:149 of
+msgid "``PUBLIC_DISABLED``: Guild cannot be public."
+msgstr ""
+
+#: discord.Guild:150 of
+msgid "``WELCOME_SCREEN_ENABLED``: Guild has enabled the welcome screen"
+msgstr ""
+
+#: discord.Guild:152 discord.PartialInviteGuild:46 discord.Spotify.artists:3 of
+msgid "List[:class:`str`]"
+msgstr ""
+
+#: discord.Guild:156 of
+msgid "The guild's invite splash."
+msgstr ""
+
+#: discord.Guild:162 of
+msgid ""
+"The premium tier for this guild. Corresponds to \"Nitro Server\" in the "
+"official UI. The number goes from 0 to 3 inclusive."
+msgstr ""
+
+#: discord.Guild:169 of
+msgid "How many users have currently \"boosted\" this guild."
+msgstr ""
+
+#: discord.Guild:175 of
+msgid ""
+"The preferred locale for the guild. Used when filtering Server Discovery "
+"results to a specific language."
+msgstr ""
+
+#: discord.Guild:182 of
+msgid "The guild's discovery splash."
+msgstr ""
+
+#: discord.Guild.audit_logs:1 of
+msgid ""
+"Returns an :class:`AsyncIterator` that enables receiving the guild's "
+"audit logs."
+msgstr ""
+
+#: discord.Guild.audit_logs:3 of
+msgid ""
+"You must have the :attr:`~Permissions.view_audit_log` permission to use "
+"this."
+msgstr ""
+
+#: discord.Guild.audit_logs:7 of
+msgid "Getting the first 100 entries: ::"
+msgstr ""
+
+#: discord.Guild.audit_logs:12 of
+msgid "Getting entries for a specific action: ::"
+msgstr ""
+
+#: discord.Guild.audit_logs:17 of
+msgid "Getting entries made by a specific user: ::"
+msgstr ""
+
+#: discord.Guild.audit_logs:22 of
+msgid "The number of entries to retrieve. If ``None`` retrieve all entries."
+msgstr ""
+
+#: discord.Guild.audit_logs:24 of
+msgid ""
+"Retrieve entries before this date or entry. If a date is provided it must"
+" be a timezone-naive datetime representing UTC time."
+msgstr ""
+
+#: discord.Guild.audit_logs:27 of
+msgid ""
+"Retrieve entries after this date or entry. If a date is provided it must "
+"be a timezone-naive datetime representing UTC time."
+msgstr ""
+
+#: discord.Guild.audit_logs:30 of
+msgid ""
+"If set to ``True``, return entries in oldest->newest order. Defaults to "
+"True if ``after`` is specified, otherwise ``False``."
+msgstr ""
+
+#: discord.Guild.audit_logs:33 of
+msgid "The moderator to filter entries from."
+msgstr ""
+
+#: discord.Guild.audit_logs:35 of
+msgid "The action to filter with."
+msgstr ""
+
+#: discord.Guild.audit_logs:38 of
+msgid "You are not allowed to fetch audit logs"
+msgstr ""
+
+#: discord.Guild.audit_logs:39 of
+msgid "An error occurred while fetching the audit logs."
+msgstr ""
+
+#: discord.Guild.audit_logs:41 of
+msgid ":class:`AuditLogEntry` -- The audit log entry."
+msgstr ""
+
+#: discord.Guild.channels:1 of
+msgid "A list of channels that belongs to this guild."
+msgstr ""
+
+#: discord.Guild.large:1 of
+msgid "Indicates if the guild is a 'large' guild."
+msgstr ""
+
+#: discord.Guild.large:3 of
+msgid ""
+"A large guild is defined as having more than ``large_threshold`` count "
+"members, which for this library is set to the maximum of 250."
+msgstr ""
+
+#: discord.Guild.voice_channels:1 of
+msgid "A list of voice channels that belongs to this guild."
+msgstr ""
+
+#: discord.Guild.categories:3 discord.Guild.text_channels:3
+#: discord.Guild.voice_channels:3 of
+msgid "This is sorted by the position and are in UI order from top to bottom."
+msgstr ""
+
+#: discord.CategoryChannel.voice_channels:3 discord.Guild.voice_channels:5 of
+msgid "List[:class:`VoiceChannel`]"
+msgstr ""
+
+#: discord.Guild.me:1 of
+msgid ""
+"Similar to :attr:`Client.user` except an instance of :class:`Member`. "
+"This is essentially used to get the member version of yourself."
+msgstr ""
+
+#: discord.Guild.voice_client:1 of
+msgid "Returns the :class:`VoiceClient` associated with this guild, if any."
+msgstr ""
+
+#: discord.Guild.text_channels:1 of
+msgid "A list of text channels that belongs to this guild."
+msgstr ""
+
+#: discord.CategoryChannel.text_channels:3 discord.Guild.text_channels:5 of
+msgid "List[:class:`TextChannel`]"
+msgstr ""
+
+#: discord.Guild.categories:1 of
+msgid "A list of categories that belongs to this guild."
+msgstr ""
+
+#: discord.Guild.categories:5 of
+msgid "List[:class:`CategoryChannel`]"
+msgstr ""
+
+#: discord.Guild.by_category:1 of
+msgid "Returns every :class:`CategoryChannel` and their associated channels."
+msgstr ""
+
+#: discord.Guild.by_category:3 of
+msgid "These channels and categories are sorted in the official Discord UI order."
+msgstr ""
+
+#: discord.Guild.by_category:5 of
+msgid ""
+"If the channels do not have a category, then the first element of the "
+"tuple is ``None``."
+msgstr ""
+
+#: discord.Guild.by_category:8 of
+msgid "The categories and their associated channels."
+msgstr ""
+
+#: discord.Guild.by_category:9 of
+msgid ""
+"List[Tuple[Optional[:class:`CategoryChannel`], "
+"List[:class:`abc.GuildChannel`]]]"
+msgstr ""
+
+#: discord.Guild.get_channel:7 of
+msgid "Optional[:class:`.abc.GuildChannel`]"
+msgstr ""
+
+#: discord.Guild.system_channel:1 of
+msgid "Returns the guild's channel used for system messages."
+msgstr ""
+
+#: discord.Guild.rules_channel:4 discord.Guild.system_channel:3 of
+msgid "If no channel is set, then this returns ``None``."
+msgstr ""
+
+#: discord.Guild.system_channel_flags:1 of
+msgid "Returns the guild's system channel settings."
+msgstr ""
+
+#: discord.Guild.system_channel_flags:3 of
+msgid ":class:`SystemChannelFlags`"
+msgstr ""
+
+#: discord.Guild.rules_channel:1 of
+msgid ""
+"Return's the guild's channel used for the rules. Must be a discoverable "
+"guild."
+msgstr ""
+
+#: discord.Guild.emoji_limit:1 of
+msgid "The maximum number of emoji slots this guild has."
+msgstr ""
+
+#: discord.Guild.bitrate_limit:1 of
+msgid "The maximum bitrate for voice channels this guild can have."
+msgstr ""
+
+#: discord.Guild.filesize_limit:1 of
+msgid "The maximum number of bytes files can have when uploaded to this guild."
+msgstr ""
+
+#: discord.Guild.members:1 of
+msgid "A list of members that belong to this guild."
+msgstr ""
+
+#: discord.Guild.members:3 discord.Guild.premium_subscribers:3
+#: discord.Guild.query_members:28 discord.Role.members:3
+#: discord.TextChannel.members:3 discord.VoiceChannel.members:3 of
+msgid "List[:class:`Member`]"
+msgstr ""
+
+#: discord.Guild.get_member:1 of
+msgid "Returns a member with the given ID."
+msgstr ""
+
+#: discord.Guild.get_member:6 of
+msgid "The member or ``None`` if not found."
+msgstr ""
+
+#: discord.Guild.get_member:7 discord.Guild.owner:3
+#: discord.RawReactionActionEvent:40 of
+msgid "Optional[:class:`Member`]"
+msgstr ""
+
+#: discord.Guild.premium_subscribers:1 of
+msgid "A list of members who have \"boosted\" this guild."
+msgstr ""
+
+#: discord.Guild.roles:1 of
+msgid "Returns a :class:`list` of the guild's roles in hierarchy order."
+msgstr ""
+
+#: discord.Guild.roles:3 of
+msgid "The first element of this list will be the lowest role in the hierarchy."
+msgstr ""
+
+#: discord.Guild.get_role:1 of
+msgid "Returns a role with the given ID."
+msgstr ""
+
+#: discord.Guild.get_role:6 of
+msgid "The role or ``None`` if not found."
+msgstr ""
+
+#: discord.Guild.get_role:7 of
+msgid "Optional[:class:`Role`]"
+msgstr ""
+
+#: discord.Guild.default_role:1 of
+msgid "Gets the @everyone role that all members have by default."
+msgstr ""
+
+#: discord.Guild.owner:1 of
+msgid "The member that owns the guild."
+msgstr ""
+
+#: discord.Guild.icon_url:1 discord.PartialInviteGuild.icon_url:1 of
+msgid "Returns the guild's icon asset."
+msgstr ""
+
+#: discord.Guild.is_icon_animated:1 of
+msgid ":class:`bool`: Returns True if the guild has an animated icon."
+msgstr ""
+
+#: discord.Guild.icon_url_as:1 of
+msgid "Returns an :class:`Asset` for the guild's icon."
+msgstr ""
+
+#: discord.Guild.icon_url_as:7 of
+msgid ""
+"The format to attempt to convert the icon to. If the format is ``None``, "
+"then it is automatically detected into either 'gif' or static_format "
+"depending on the icon being animated or not."
+msgstr ""
+
+#: discord.Guild.icon_url_as:12 of
+msgid "Format to attempt to convert only non-animated icons to."
+msgstr ""
+
+#: discord.Guild.banner_url:1 discord.PartialInviteGuild.banner_url:1 of
+msgid "Returns the guild's banner asset."
+msgstr ""
+
+#: discord.Guild.banner_url_as:1 of
+msgid "Returns an :class:`Asset` for the guild's banner."
+msgstr ""
+
+#: discord.Guild.banner_url_as:3 of
+msgid ""
+"The format must be one of 'webp', 'jpeg', or 'png'. The size must be a "
+"power of 2 between 16 and 4096."
+msgstr ""
+
+#: discord.Guild.banner_url_as:6 of
+msgid "The format to attempt to convert the banner to."
+msgstr ""
+
+#: discord.Guild.splash_url:1 discord.PartialInviteGuild.splash_url:1 of
+msgid "Returns the guild's invite splash asset."
+msgstr ""
+
+#: discord.Guild.splash_url_as:1 of
+msgid "Returns an :class:`Asset` for the guild's invite splash."
+msgstr ""
+
+#: discord.Guild.discovery_splash_url_as:3 discord.Guild.splash_url_as:3 of
+msgid ""
+"The format must be one of 'webp', 'jpeg', 'jpg', or 'png'. The size must "
+"be a power of 2 between 16 and 4096."
+msgstr ""
+
+#: discord.Guild.discovery_splash_url_as:8 discord.Guild.splash_url_as:6 of
+msgid "The format to attempt to convert the splash to."
+msgstr ""
+
+#: discord.Guild.discovery_splash_url:1 of
+msgid "Returns the guild's discovery splash asset."
+msgstr ""
+
+#: discord.Guild.discovery_splash_url_as:1 of
+msgid "Returns an :class:`Asset` for the guild's discovery splash."
+msgstr ""
+
+#: discord.Guild.member_count:1 of
+msgid "Returns the true member count regardless of it being loaded fully or not."
+msgstr ""
+
+#: discord.Guild.chunked:1 of
+msgid "Returns a boolean indicating if the guild is \"chunked\"."
+msgstr ""
+
+#: discord.Guild.chunked:3 of
+msgid ""
+"A chunked guild means that :attr:`member_count` is equal to the number of"
+" members stored in the internal :attr:`members` cache."
+msgstr ""
+
+#: discord.Guild.chunked:6 of
+msgid ""
+"If this value returns ``False``, then you should request for offline "
+"members."
+msgstr ""
+
+#: discord.Guild.shard_id:1 of
+msgid "Returns the shard ID for this guild if applicable."
+msgstr ""
+
+#: discord.Guild.created_at:1 discord.PartialInviteGuild.created_at:1 of
+msgid "Returns the guild's creation time in UTC."
+msgstr ""
+
+#: discord.Guild.get_member_named:1 of
+msgid "Returns the first member found that matches the name provided."
+msgstr ""
+
+#: discord.Guild.get_member_named:3 of
+msgid ""
+"The name can have an optional discriminator argument, e.g. \"Jake#0001\" "
+"or \"Jake\" will both do the lookup. However the former will give a more "
+"precise result. Note that the discriminator must have all 4 digits for "
+"this to work."
+msgstr ""
+
+#: discord.Guild.get_member_named:8 of
+msgid ""
+"If a nickname is passed, then it is looked up via the nickname. Note "
+"however, that a nickname + discriminator combo will not lookup the "
+"nickname but rather the username + discriminator combo due to nickname + "
+"discriminator not being unique."
+msgstr ""
+
+#: discord.Guild.get_member_named:13 of
+msgid "If no member is found, ``None`` is returned."
+msgstr ""
+
+#: discord.Guild.get_member_named:15 of
+msgid "The name of the member to lookup with an optional discriminator."
+msgstr ""
+
+#: discord.Guild.get_member_named:18 of
+msgid ""
+"The member in this guild with the associated name. If not found then "
+"``None`` is returned."
+msgstr ""
+
+#: discord.Guild.fetch_member:16 discord.Guild.get_member_named:20 of
+msgid ":class:`Member`"
+msgstr ""
+
+#: discord.Guild.create_text_channel:3 of
+msgid "Creates a :class:`TextChannel` for the guild."
+msgstr ""
+
+#: discord.Guild.create_text_channel:5 of
+msgid ""
+"Note that you need the :attr:`~Permissions.manage_channels` permission to"
+" create the channel."
+msgstr ""
+
+#: discord.Guild.create_text_channel:8 of
+msgid ""
+"The ``overwrites`` parameter can be used to create a 'secret' channel "
+"upon creation. This parameter expects a :class:`dict` of overwrites with "
+"the target (either a :class:`Member` or a :class:`Role`) as the key and a"
+" :class:`PermissionOverwrite` as the value."
+msgstr ""
+
+#: discord.Guild.create_text_channel:15 of
+msgid ""
+"Creating a channel of a specified position will not update the position "
+"of other channels to follow suit. A follow-up call to "
+":meth:`~TextChannel.edit` will be required to update the position of the "
+"channel in the channel list."
+msgstr ""
+
+#: discord.Guild.create_text_channel:21 of
+msgid "Creating a basic channel:"
+msgstr ""
+
+#: discord.Guild.create_text_channel:27 of
+msgid "Creating a \"secret\" channel:"
+msgstr ""
+
+#: discord.Guild.create_text_channel:38 discord.WidgetChannel:29 of
+msgid "The channel's name."
+msgstr ""
+
+#: discord.Guild.create_text_channel:40 of
+msgid ""
+"A :class:`dict` of target (either a role or a member) to "
+":class:`PermissionOverwrite` to apply upon creation of a channel. Useful "
+"for creating secret channels."
+msgstr ""
+
+#: discord.Guild.create_text_channel:43 of
+msgid ""
+"The category to place the newly created channel under. The permissions "
+"will be automatically synced to category if no overwrites are provided."
+msgstr ""
+
+#: discord.Guild.create_text_channel:50 discord.TextChannel.edit:13 of
+msgid "The new channel's topic."
+msgstr ""
+
+#: discord.Guild.create_text_channel:52 of
+msgid ""
+"Specifies the slowmode rate limit for user in this channel, in seconds. "
+"The maximum value possible is `21600`."
+msgstr ""
+
+#: discord.Guild.create_text_channel:55 discord.TextChannel.edit:17 of
+msgid "To mark the channel as NSFW or not."
+msgstr ""
+
+#: discord.Guild.create_text_channel:57 of
+msgid "The reason for creating this channel. Shows up on the audit log."
+msgstr ""
+
+#: discord.Guild.create_text_channel:62 of
+msgid "The permission overwrite information is not in proper form."
+msgstr ""
+
+#: discord.Guild.create_text_channel:64 of
+msgid "The channel that was just created."
+msgstr ""
+
+#: discord.Guild.create_text_channel:65 of
+msgid ":class:`TextChannel`"
+msgstr ""
+
+#: discord.Guild.create_voice_channel:3 of
+msgid ""
+"This is similar to :meth:`create_text_channel` except makes a "
+":class:`VoiceChannel` instead, in addition to having the following new "
+"parameters."
+msgstr ""
+
+#: discord.Guild.create_voice_channel:6 discord.VoiceChannel:54 of
+msgid "The channel's preferred audio bitrate in bits per second."
+msgstr ""
+
+#: discord.Guild.create_voice_channel:8 discord.VoiceChannel:60 of
+msgid "The channel's limit for number of members that can be in a voice channel."
+msgstr ""
+
+#: discord.Guild.create_category:3 discord.Guild.create_category_channel:3 of
+msgid ""
+"Same as :meth:`create_text_channel` except makes a "
+":class:`CategoryChannel` instead."
+msgstr ""
+
+#: discord.Guild.create_category:7 discord.Guild.create_category_channel:7 of
+msgid ""
+"The ``category`` parameter is not supported in this function since "
+"categories cannot have categories."
+msgstr ""
+
+#: discord.Guild.leave:3 of
+msgid "Leaves the guild."
+msgstr ""
+
+#: discord.Guild.leave:7 of
+msgid ""
+"You cannot leave the guild that you own, you must delete it instead via "
+":meth:`delete`."
+msgstr ""
+
+#: discord.Guild.leave:10 of
+msgid "Leaving the guild failed."
+msgstr ""
+
+#: discord.Guild.delete:3 of
+msgid "Deletes the guild. You must be the guild owner to delete the guild."
+msgstr ""
+
+#: discord.Guild.delete:6 of
+msgid "Deleting the guild failed."
+msgstr ""
+
+#: discord.Guild.delete:7 of
+msgid "You do not have permissions to delete the guild."
+msgstr ""
+
+#: discord.Guild.edit:3 of
+msgid "Edits the guild."
+msgstr ""
+
+#: discord.Guild.edit:5 of
+msgid ""
+"You must have the :attr:`~Permissions.manage_guild` permission to edit "
+"the guild."
+msgstr ""
+
+#: discord.Guild.edit:8 of
+msgid "The new name of the guild."
+msgstr ""
+
+#: discord.Guild.edit:10 of
+msgid ""
+"The new description of the guild. This is only available to guilds that "
+"contain `PUBLIC` in :attr:`Guild.features`."
+msgstr ""
+
+#: discord.Guild.edit:13 of
+msgid ""
+"A :term:`py:bytes-like object` representing the icon. Only PNG/JPEG "
+"supported and GIF for guilds with ``ANIMATED_ICON`` feature. Could be "
+"``None`` to denote removal of the icon."
+msgstr ""
+
+#: discord.Guild.edit:17 of
+msgid ""
+"A :term:`py:bytes-like object` representing the banner. Could be ``None``"
+" to denote removal of the banner."
+msgstr ""
+
+#: discord.Guild.edit:20 of
+msgid ""
+"A :term:`py:bytes-like object` representing the invite splash. Only "
+"PNG/JPEG supported. Could be ``None`` to denote removing the splash. Only"
+" available for partnered guilds with ``INVITE_SPLASH`` feature."
+msgstr ""
+
+#: discord.Guild.edit:25 of
+msgid "The new region for the guild's voice communication."
+msgstr ""
+
+#: discord.Guild.edit:27 of
+msgid ""
+"The new channel that is the AFK channel. Could be ``None`` for no AFK "
+"channel."
+msgstr ""
+
+#: discord.Guild.edit:29 of
+msgid "The number of seconds until someone is moved to the AFK channel."
+msgstr ""
+
+#: discord.Guild.edit:31 of
+msgid ""
+"The new owner of the guild to transfer ownership to. Note that you must "
+"be owner of the guild to do this."
+msgstr ""
+
+#: discord.Guild.edit:34 of
+msgid "The new verification level for the guild."
+msgstr ""
+
+#: discord.Guild.edit:36 of
+msgid "The new default notification level for the guild."
+msgstr ""
+
+#: discord.Guild.edit:38 of
+msgid "The new explicit content filter for the guild."
+msgstr ""
+
+#: discord.Guild.edit:40 of
+msgid "The new vanity code for the guild."
+msgstr ""
+
+#: discord.Guild.edit:42 of
+msgid ""
+"The new channel that is used for the system channel. Could be ``None`` "
+"for no system channel."
+msgstr ""
+
+#: discord.Guild.edit:44 of
+msgid "The new system channel settings to use with the new system channel."
+msgstr ""
+
+#: discord.Guild.edit:46 of
+msgid "The reason for editing this guild. Shows up on the audit log."
+msgstr ""
+
+#: discord.Guild.edit:49 of
+msgid "You do not have permissions to edit the guild."
+msgstr ""
+
+#: discord.Guild.edit:50 of
+msgid "Editing the guild failed."
+msgstr ""
+
+#: discord.Guild.edit:51 of
+msgid ""
+"The image format passed in to ``icon`` is invalid. It must be     PNG or "
+"JPG. This is also raised if you are not the owner of the     guild and "
+"request an ownership transfer."
+msgstr ""
+
+#: discord.Guild.fetch_channels:3 of
+msgid "Retrieves all :class:`abc.GuildChannel` that the guild has."
+msgstr ""
+
+#: discord.Guild.fetch_channels:7 of
+msgid ""
+"This method is an API call. For general usage, consider :attr:`channels` "
+"instead."
+msgstr ""
+
+#: discord.Guild.fetch_channels:12 of
+msgid "Retrieving the channels failed."
+msgstr ""
+
+#: discord.Guild.fetch_channels:14 of
+msgid "All channels in the guild."
+msgstr ""
+
+#: discord.Guild.fetch_members:3 of
+msgid ""
+"Retrieves an :class:`.AsyncIterator` that enables receiving the guild's "
+"members."
+msgstr ""
+
+#: discord.Guild.fetch_members:7 of
+msgid ""
+"This method is an API call. For general usage, consider :attr:`members` "
+"instead."
+msgstr ""
+
+#: discord.Guild.fetch_members:13 of
+msgid ""
+"The number of members to retrieve. Defaults to 1000. Pass ``None`` to "
+"fetch all members. Note that this is potentially slow."
+msgstr ""
+
+#: discord.Guild.fetch_members:16 of
+msgid ""
+"Retrieve members after this date or object. If a date is provided it must"
+" be a timezone-naive datetime representing UTC time."
+msgstr ""
+
+#: discord.Guild.fetch_members:20 of
+msgid "Getting the members failed."
+msgstr ""
+
+#: discord.Guild.fetch_members:22 of
+msgid ":class:`.Member` -- The member with the member data parsed."
+msgstr ""
+
+#: discord.Guild.fetch_member:3 of
+msgid "Retreives a :class:`Member` from a guild ID, and a member ID."
+msgstr ""
+
+#: discord.Guild.fetch_member:7 of
+msgid ""
+"This method is an API call. For general usage, consider "
+":meth:`get_member` instead."
+msgstr ""
+
+#: discord.Guild.fetch_member:9 of
+msgid "The member's ID to fetch from."
+msgstr ""
+
+#: discord.Guild.fetch_member:15 of
+msgid "The member from the member ID."
+msgstr ""
+
+#: discord.Guild.fetch_ban:3 of
+msgid ""
+"Retrieves the :class:`BanEntry` for a user, which is a namedtuple with a "
+"``user`` and ``reason`` field. See :meth:`bans` for more information."
+msgstr ""
+
+#: discord.Guild.bans:10 discord.Guild.fetch_ban:7 of
+msgid ""
+"You must have the :attr:`~Permissions.ban_members` permission to get this"
+" information."
+msgstr ""
+
+#: discord.Guild.fetch_ban:10 of
+msgid "The user to get ban information from."
+msgstr ""
+
+#: discord.Guild.fetch_ban:14 of
+msgid "This user is not banned."
+msgstr ""
+
+#: discord.Guild.fetch_ban:17 of
+msgid "The BanEntry object for the specified user."
+msgstr ""
+
+#: discord.Guild.bans:3 of
+msgid "Retrieves all the users that are banned from the guild."
+msgstr ""
+
+#: discord.Guild.bans:5 of
+msgid ""
+"This coroutine returns a :class:`list` of BanEntry objects, which is a "
+"namedtuple with a ``user`` field to denote the :class:`User` that got "
+"banned along with a ``reason`` field specifying why the user was banned "
+"that could be set to ``None``."
+msgstr ""
+
+#: discord.Guild.bans:16 of
+msgid "A list of BanEntry objects."
+msgstr ""
+
+#: discord.Guild.prune_members:3 of
+msgid "Prunes the guild from its inactive members."
+msgstr ""
+
+#: discord.Guild.prune_members:5 of
+msgid ""
+"The inactive members are denoted if they have not logged on in ``days`` "
+"number of days and they have no roles."
+msgstr ""
+
+#: discord.Guild.prune_members:8 of
+msgid ""
+"You must have the :attr:`~Permissions.kick_members` permission to use "
+"this."
+msgstr ""
+
+#: discord.Guild.prune_members:11 of
+msgid ""
+"To check how many members you would prune without actually pruning, see "
+"the :meth:`estimate_pruned_members` function."
+msgstr ""
+
+#: discord.Guild.estimate_pruned_members:7 discord.Guild.prune_members:14 of
+msgid "The number of days before counting as inactive."
+msgstr ""
+
+#: discord.Guild.prune_members:18 of
+msgid ""
+"Whether to compute the prune count. This defaults to ``True`` which makes"
+" it prone to timeouts in very large guilds. In order to prevent timeouts,"
+" you must set this to ``False``. If this is set to ``False``\\, then this"
+" function will always return ``None``."
+msgstr ""
+
+#: discord.Guild.estimate_pruned_members:10 discord.Guild.prune_members:24 of
+msgid "You do not have permissions to prune members."
+msgstr ""
+
+#: discord.Guild.prune_members:25 of
+msgid "An error occurred while pruning members."
+msgstr ""
+
+#: discord.Guild.estimate_pruned_members:12 discord.Guild.prune_members:26 of
+msgid "An integer was not passed for ``days``."
+msgstr ""
+
+#: discord.Guild.prune_members:28 of
+msgid ""
+"The number of members pruned. If ``compute_prune_count`` is ``False`` "
+"then this returns ``None``."
+msgstr ""
+
+#: discord.Guild.webhooks:3 of
+msgid "Gets the list of webhooks from this guild."
+msgstr ""
+
+#: discord.Guild.webhooks:5 discord.TextChannel.create_webhook:5
+#: discord.TextChannel.webhooks:5 of
+msgid "Requires :attr:`~.Permissions.manage_webhooks` permissions."
+msgstr ""
+
+#: discord.Guild.webhooks:7 discord.TextChannel.webhooks:7 of
+msgid "You don't have permissions to get the webhooks."
+msgstr ""
+
+#: discord.Guild.webhooks:9 of
+msgid "The webhooks for this guild."
+msgstr ""
+
+#: discord.Guild.webhooks:10 discord.TextChannel.webhooks:10 of
+msgid "List[:class:`Webhook`]"
+msgstr ""
+
+#: discord.Guild.estimate_pruned_members:3 of
+msgid ""
+"Similar to :meth:`prune_members` except instead of actually pruning "
+"members, it returns how many members it would prune from the guild had it"
+" been called."
+msgstr ""
+
+#: discord.Guild.estimate_pruned_members:11 of
+msgid "An error occurred while fetching the prune members estimate."
+msgstr ""
+
+#: discord.Guild.estimate_pruned_members:14 of
+msgid "The number of members estimated to be pruned."
+msgstr ""
+
+#: discord.Guild.invites:3 of
+msgid "Returns a list of all active instant invites from the guild."
+msgstr ""
+
+#: discord.Guild.invites:5 of
+msgid ""
+"You must have the :attr:`~Permissions.manage_guild` permission to get "
+"this information."
+msgstr ""
+
+#: discord.Guild.invites:12 of
+msgid "List[:class:`Invite`]"
+msgstr ""
+
+#: discord.Guild.fetch_emojis:3 of
+msgid "Retrieves all custom :class:`Emoji`\\s from the guild."
+msgstr ""
+
+#: discord.Guild.fetch_emojis:7 of
+msgid ""
+"This method is an API call. For general usage, consider :attr:`emojis` "
+"instead."
+msgstr ""
+
+#: discord.Guild.fetch_emojis:9 of
+msgid "An error occurred fetching the emojis."
+msgstr ""
+
+#: discord.Guild.fetch_emojis:11 of
+msgid "The retrieved emojis."
+msgstr ""
+
+#: discord.Guild.fetch_emojis:12 of
+msgid "List[:class:`Emoji`]"
+msgstr ""
+
+#: discord.Guild.fetch_emoji:3 of
+msgid "Retrieves a custom :class:`Emoji` from the guild."
+msgstr ""
+
+#: discord.Guild.fetch_emoji:7 of
+msgid ""
+"This method is an API call. For general usage, consider iterating over "
+":attr:`emojis` instead."
+msgstr ""
+
+#: discord.Emoji:37 discord.Guild.fetch_emoji:10 of
+msgid "The emoji's ID."
+msgstr ""
+
+#: discord.Guild.fetch_emoji:13 of
+msgid "The emoji requested could not be found."
+msgstr ""
+
+#: discord.Guild.fetch_emoji:14 of
+msgid "An error occurred fetching the emoji."
+msgstr ""
+
+#: discord.Guild.fetch_emoji:16 of
+msgid "The retrieved emoji."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:25 discord.Guild.fetch_emoji:17 of
+msgid ":class:`Emoji`"
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:3 of
+msgid "Creates a custom :class:`Emoji` for the guild."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:5 of
+msgid ""
+"There is currently a limit of 50 static and animated emojis respectively "
+"per guild, unless the guild has the ``MORE_EMOJI`` feature which extends "
+"the limit to 200."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:8 of
+msgid ""
+"You must have the :attr:`~Permissions.manage_emojis` permission to do "
+"this."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:11 of
+msgid "The emoji name. Must be at least 2 characters."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:13 of
+msgid ""
+"The :term:`py:bytes-like object` representing the image data to use. Only"
+" JPG, PNG and GIF images are supported."
+msgstr ""
+
+#: discord.Emoji.edit:10 discord.Guild.create_custom_emoji:16 of
+msgid ""
+"A :class:`list` of :class:`Role`\\s that can use this emoji. Leave empty "
+"to make it available to everyone."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:18 of
+msgid "The reason for creating this emoji. Shows up on the audit log."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:21 of
+msgid "You are not allowed to create emojis."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:22 of
+msgid "An error occurred creating an emoji."
+msgstr ""
+
+#: discord.Guild.create_custom_emoji:24 of
+msgid "The created emoji."
+msgstr ""
+
+#: discord.Guild.fetch_roles:3 of
+msgid "Retrieves all :class:`Role` that the guild has."
+msgstr ""
+
+#: discord.Guild.fetch_roles:7 of
+msgid ""
+"This method is an API call. For general usage, consider :attr:`roles` "
+"instead."
+msgstr ""
+
+#: discord.Guild.fetch_roles:11 of
+msgid "Retrieving the roles failed."
+msgstr ""
+
+#: discord.Guild.fetch_roles:13 of
+msgid "All roles in the guild."
+msgstr ""
+
+#: discord.Guild.create_role:3 of
+msgid "Creates a :class:`Role` for the guild."
+msgstr ""
+
+#: discord.Guild.create_role:5 discord.Role.edit:8 of
+msgid "All fields are optional."
+msgstr ""
+
+#: discord.Guild.create_role:7 of
+msgid "You must have the :attr:`~Permissions.manage_roles` permission to do this."
+msgstr ""
+
+#: discord.Guild.create_role:10 of
+msgid "The role name. Defaults to 'new role'."
+msgstr ""
+
+#: discord.Guild.create_role:12 of
+msgid "The permissions to have. Defaults to no permissions."
+msgstr ""
+
+#: discord.Guild.create_role:14 of
+msgid ""
+"The colour for the role. Defaults to :meth:`Colour.default`. This is "
+"aliased to ``color`` as well."
+msgstr ""
+
+#: discord.Guild.create_role:17 of
+msgid ""
+"Indicates if the role should be shown separately in the member list. "
+"Defaults to ``False``."
+msgstr ""
+
+#: discord.Guild.create_role:20 of
+msgid ""
+"Indicates if the role should be mentionable by others. Defaults to "
+"``False``."
+msgstr ""
+
+#: discord.Guild.create_role:23 of
+msgid "The reason for creating this role. Shows up on the audit log."
+msgstr ""
+
+#: discord.Guild.create_role:26 of
+msgid "You do not have permissions to create the role."
+msgstr ""
+
+#: discord.Guild.create_role:27 of
+msgid "Creating the role failed."
+msgstr ""
+
+#: discord.Guild.create_role:28 of
+msgid "An invalid keyword argument was given."
+msgstr ""
+
+#: discord.Guild.create_role:30 of
+msgid "The newly created role."
+msgstr ""
+
+#: discord.Guild.create_role:31 discord.Member.top_role:6 of
+msgid ":class:`Role`"
+msgstr ""
+
+#: discord.Guild.kick:3 of
+msgid "Kicks a user from the guild."
+msgstr ""
+
+#: discord.Guild.ban:5 discord.Guild.kick:5 discord.Guild.unban:5 of
+msgid "The user must meet the :class:`abc.Snowflake` abc."
+msgstr ""
+
+#: discord.Guild.kick:7 of
+msgid "You must have the :attr:`~Permissions.kick_members` permission to do this."
+msgstr ""
+
+#: discord.Guild.kick:10 of
+msgid "The user to kick from their guild."
+msgstr ""
+
+#: discord.Guild.kick:12 of
+msgid "The reason the user got kicked."
+msgstr ""
+
+#: discord.Guild.kick:15 of
+msgid "You do not have the proper permissions to kick."
+msgstr ""
+
+#: discord.Guild.kick:16 of
+msgid "Kicking failed."
+msgstr ""
+
+#: discord.Guild.ban:3 of
+msgid "Bans a user from the guild."
+msgstr ""
+
+#: discord.Guild.ban:7 discord.Guild.unban:7 of
+msgid "You must have the :attr:`~Permissions.ban_members` permission to do this."
+msgstr ""
+
+#: discord.Guild.ban:10 of
+msgid "The user to ban from their guild."
+msgstr ""
+
+#: discord.Guild.ban:12 of
+msgid ""
+"The number of days worth of messages to delete from the user in the "
+"guild. The minimum is 0 and the maximum is 7."
+msgstr ""
+
+#: discord.Guild.ban:15 of
+msgid "The reason the user got banned."
+msgstr ""
+
+#: discord.Guild.ban:18 of
+msgid "You do not have the proper permissions to ban."
+msgstr ""
+
+#: discord.Guild.ban:19 of
+msgid "Banning failed."
+msgstr ""
+
+#: discord.Guild.unban:3 of
+msgid "Unbans a user from the guild."
+msgstr ""
+
+#: discord.Guild.unban:10 of
+msgid "The user to unban."
+msgstr ""
+
+#: discord.Guild.unban:15 of
+msgid "You do not have the proper permissions to unban."
+msgstr ""
+
+#: discord.Guild.unban:16 of
+msgid "Unbanning failed."
+msgstr ""
+
+#: discord.Guild.vanity_invite:3 of
+msgid "Returns the guild's special vanity invite."
+msgstr ""
+
+#: discord.Guild.vanity_invite:5 of
+msgid "The guild must have 'VANITY_URL' in :attr:`~Guild.features`."
+msgstr ""
+
+#: discord.Guild.vanity_invite:7 of
+msgid ""
+"You must have the :attr:`~Permissions.manage_guild` permission to use "
+"this as well."
+msgstr ""
+
+#: discord.Guild.vanity_invite:10 of
+msgid "You do not have the proper permissions to get this."
+msgstr ""
+
+#: discord.Guild.vanity_invite:11 of
+msgid "Retrieving the vanity invite failed."
+msgstr ""
+
+#: discord.Guild.vanity_invite:13 of
+msgid "The special vanity invite."
+msgstr ""
+
+#: discord.Guild.vanity_invite:14 discord.Widget.fetch_invite:13 of
+msgid ":class:`Invite`"
+msgstr ""
+
+#: discord.Guild.ack:3 of
+msgid "Marks every message in this guild as read."
+msgstr ""
+
+#: discord.Guild.widget:3 of
+msgid "Returns the widget of the guild."
+msgstr ""
+
+#: discord.Guild.widget:13 of
+msgid ":class:`Widget`"
+msgstr ""
+
+#: discord.Guild.query_members:3 of
+msgid ""
+"Request members that belong to this guild whose username starts with the "
+"query given."
+msgstr ""
+
+#: discord.Guild.query_members:6 of
+msgid "This is a websocket operation and can be slow."
+msgstr ""
+
+#: discord.Guild.query_members:10 of
+msgid ""
+"Most bots do not need to use this. It's mainly a helper for bots who have"
+" disabled ``guild_subscriptions``."
+msgstr ""
+
+#: discord.Guild.query_members:15 of
+msgid ""
+"The string that the username's start with. An empty string requests all "
+"members."
+msgstr ""
+
+#: discord.Guild.query_members:18 of
+msgid ""
+"The maximum number of members to send back. This must be a number between"
+" 1 and 1000."
+msgstr ""
+
+#: discord.Guild.query_members:21 of
+msgid ""
+"Whether to cache the members internally. This makes operations such as "
+":meth:`get_member` work for those that matched."
+msgstr ""
+
+#: discord.Guild.query_members:25 of
+msgid "The query timed out waiting for the members."
+msgstr ""
+
+#: discord.Guild.query_members:27 of
+msgid "The list of members that have matched the query."
+msgstr ""
+
+#: ../../api.rst:2376
+msgid "Member"
+msgstr ""
+
+#: discord.Member:1 of
+msgid "Represents a Discord member to a :class:`Guild`."
+msgstr ""
+
+#: discord.Member:3 of
+msgid "This implements a lot of the functionality of :class:`User`."
+msgstr ""
+
+#: discord.Member:9 of
+msgid ""
+"Checks if two members are equal. Note that this works with :class:`User` "
+"instances too."
+msgstr ""
+
+#: discord.Member:14 of
+msgid ""
+"Checks if two members are not equal. Note that this works with "
+":class:`User` instances too."
+msgstr ""
+
+#: discord.Member:19 of
+msgid "Returns the member's hash."
+msgstr ""
+
+#: discord.Member:23 of
+msgid "Returns the member's name with the discriminator."
+msgstr ""
+
+#: discord.Member:27 of
+msgid ""
+"A datetime object that specifies the date and time in UTC that the member"
+" joined the guild for the first time. In certain cases, this can be "
+"``None``."
+msgstr ""
+
+#: discord.Member:34 of
+msgid "The activities that the user is currently doing."
+msgstr ""
+
+#: discord.Member:36 of
+msgid "Tuple[Union[:class:`BaseActivity`, :class:`Spotify`]]"
+msgstr ""
+
+#: discord.Member:40 of
+msgid "The guild that the member belongs to."
+msgstr ""
+
+#: discord.CategoryChannel:33 discord.Emoji.guild:3 discord.Member:42
+#: discord.Role:53 discord.TextChannel:31 discord.VoiceChannel:31 of
+msgid ":class:`Guild`"
+msgstr ""
+
+#: discord.Member:46 of
+msgid "The guild specific nickname of the user."
+msgstr ""
+
+#: discord.Member:52 of
+msgid ""
+"A datetime object that specifies the date and time in UTC when the member"
+" used their Nitro boost on the guild, if available. This could be "
+"``None``."
+msgstr ""
+
+#: discord.Member.status:1 of
+msgid ""
+"The member's overall status. If the value is unknown, then it will be a "
+":class:`str` instead."
+msgstr ""
+
+#: discord.Member.desktop_status:3 discord.Member.mobile_status:3
+#: discord.Member.status:3 discord.Member.web_status:3 discord.WidgetMember:49
+#: of
+msgid ":class:`Status`"
+msgstr ""
+
+#: discord.Member.mobile_status:1 of
+msgid "The member's status on a mobile device, if applicable."
+msgstr ""
+
+#: discord.Member.desktop_status:1 of
+msgid "The member's status on the desktop client, if applicable."
+msgstr ""
+
+#: discord.Member.web_status:1 of
+msgid "The member's status on the web client, if applicable."
+msgstr ""
+
+#: discord.Member.is_on_mobile:1 of
+msgid ""
+"A helper function that determines if a member is active on a mobile "
+"device."
+msgstr ""
+
+#: discord.Member.colour:1 of
+msgid ""
+"A property that returns a colour denoting the rendered colour for the "
+"member. If the default colour is the one rendered then an instance of "
+":meth:`Colour.default` is returned."
+msgstr ""
+
+#: discord.Member.color:1 of
+msgid ""
+"A property that returns a color denoting the rendered color for the "
+"member. If the default color is the one rendered then an instance of "
+":meth:`Colour.default` is returned."
+msgstr ""
+
+#: discord.Member.roles:1 of
+msgid ""
+"A :class:`list` of :class:`Role` that the member belongs to. Note that "
+"the first element of this list is always the default '@everyone' role."
+msgstr ""
+
+#: discord.Member.roles:5 of
+msgid "These roles are sorted by their position in the role hierarchy."
+msgstr ""
+
+#: discord.Member.mention:1 of
+msgid "Returns a string that allows you to mention the member."
+msgstr ""
+
+#: discord.Member.activity:1 of
+msgid ""
+"Returns the primary activity the user is currently doing. Could be None "
+"if no activity is being done."
+msgstr ""
+
+#: discord.Member.activity:6 of
+msgid ""
+"A user may have multiple activities, these can be accessed under "
+":attr:`activities`."
+msgstr ""
+
+#: discord.Member.activity:8 of
+msgid "Union[:class:`BaseActivity`, :class:`Spotify`]"
+msgstr ""
+
+#: discord.Member.mentioned_in:1 of
+msgid "Checks if the member is mentioned in the specified message."
+msgstr ""
+
+#: discord.Member.top_role:1 of
+msgid "Returns the member's highest role."
+msgstr ""
+
+#: discord.Member.top_role:3 of
+msgid ""
+"This is useful for figuring where a member stands in the role hierarchy "
+"chain."
+msgstr ""
+
+#: discord.Member.guild_permissions:1 of
+msgid "Returns the member's guild permissions."
+msgstr ""
+
+#: discord.Member.guild_permissions:3 of
+msgid ""
+"This only takes into consideration the guild permissions and not most of "
+"the implied permissions or any of the channel permission overwrites. For "
+"100% accurate permission calculation, please use either "
+":meth:`permissions_in` or :meth:`abc.GuildChannel.permissions_for`."
+msgstr ""
+
+#: discord.Member.guild_permissions:9 of
+msgid ""
+"This does take into consideration guild ownership and the administrator "
+"implication."
+msgstr ""
+
+#: discord.Member.voice:1 of
+msgid "Returns the member's current voice state."
+msgstr ""
+
+#: discord.Member.ban:3 of
+msgid "Bans this member. Equivalent to :meth:`Guild.ban`."
+msgstr ""
+
+#: discord.Member.unban:3 of
+msgid "Unbans this member. Equivalent to :meth:`Guild.unban`."
+msgstr ""
+
+#: discord.Member.kick:3 of
+msgid "Kicks this member. Equivalent to :meth:`Guild.kick`."
+msgstr ""
+
+#: discord.Member.edit:3 of
+msgid "Edits the member's data."
+msgstr ""
+
+#: discord.Member.edit:5 of
+msgid ""
+"Depending on the parameter passed, this requires different permissions "
+"listed below:"
+msgstr ""
+
+#: discord.Member.edit:8 of
+msgid "Parameter"
+msgstr ""
+
+#: discord.Member.edit:8 of
+msgid "Permission"
+msgstr ""
+
+#: discord.Member.edit:10 of
+msgid "nick"
+msgstr ""
+
+#: discord.Member.edit:10 of
+msgid ":attr:`Permissions.manage_nicknames`"
+msgstr ""
+
+#: discord.Member.edit:12 of
+msgid "mute"
+msgstr ""
+
+#: discord.Member.edit:12 of
+msgid ":attr:`Permissions.mute_members`"
+msgstr ""
+
+#: discord.Member.edit:14 of
+msgid "deafen"
+msgstr ""
+
+#: discord.Member.edit:14 of
+msgid ":attr:`Permissions.deafen_members`"
+msgstr ""
+
+#: discord.Member.edit:16 of
+msgid ":attr:`Permissions.manage_roles`"
+msgstr ""
+
+#: discord.Member.edit:18 of
+msgid "voice_channel"
+msgstr ""
+
+#: discord.Member.edit:18 of
+msgid ":attr:`Permissions.move_members`"
+msgstr ""
+
+#: discord.Member.edit:23 of
+msgid "Can now pass ``None`` to ``voice_channel`` to kick a member from voice."
+msgstr ""
+
+#: discord.Member.edit:26 of
+msgid "The member's new nickname. Use ``None`` to remove the nickname."
+msgstr ""
+
+#: discord.Member.edit:28 of
+msgid "Indicates if the member should be guild muted or un-muted."
+msgstr ""
+
+#: discord.Member.edit:30 of
+msgid "Indicates if the member should be guild deafened or un-deafened."
+msgstr ""
+
+#: discord.Member.edit:32 of
+msgid "The member's new list of roles. This *replaces* the roles."
+msgstr ""
+
+#: discord.Member.edit:34 of
+msgid ""
+"The voice channel to move the member to. Pass ``None`` to kick them from "
+"voice."
+msgstr ""
+
+#: discord.Member.edit:37 of
+msgid "The reason for editing this member. Shows up on the audit log."
+msgstr ""
+
+#: discord.Member.edit:40 of
+msgid "You do not have the proper permissions to the action requested."
+msgstr ""
+
+#: discord.Member.edit:41 of
+msgid "The operation failed."
+msgstr "

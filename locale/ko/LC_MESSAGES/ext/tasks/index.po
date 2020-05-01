@@ -86,27 +86,27 @@ msgstr "이것을 생성하는 주요 인터페이스는 :func:`loop` 를 통한
 
 #: discord.ext.tasks.Loop.current_loop:1 of
 msgid "The current iteration of the loop."
-msgstr ""
+msgstr "루프의 현재 반복중인 곳."
 
 #: discord.ext.tasks.Loop.current_loop discord.ext.tasks.Loop.next_iteration of
 msgid "type"
-msgstr ""
+msgstr "형식"
 
 #: discord.ext.tasks.Loop.current_loop:3 of
 msgid ":class:`int`"
-msgstr ""
+msgstr ":class:`int`"
 
 #: discord.ext.tasks.Loop.next_iteration:1 of
 msgid "When the next iteration of the loop will occur."
-msgstr ""
+msgstr "루프의 다음 반복이 일어날 때"
 
 #: discord.ext.tasks.Loop.next_iteration:5 of
 msgid "Optional[:class:`datetime.datetime`]"
-msgstr ""
+msgstr "옵션[:class:`datetime.datetime`]"
 
 #: discord.ext.tasks.Loop.start:1 of
 msgid "Starts the internal task in the event loop."
-msgstr ""
+msgstr "이벤트 루프에서 내부 태스크를 시작합니다."
 
 #: discord.ext.tasks.Loop.add_exception_type discord.ext.tasks.Loop.after_loop
 #: discord.ext.tasks.Loop.before_loop discord.ext.tasks.Loop.change_interval
@@ -114,259 +114,259 @@ msgstr ""
 #: discord.ext.tasks.Loop.restart discord.ext.tasks.Loop.start
 #: discord.ext.tasks.loop of
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: discord.ext.tasks.Loop.start:3 of
 msgid "The arguments to use."
-msgstr ""
+msgstr "사용할 전달인자."
 
 #: discord.ext.tasks.Loop.restart:9 discord.ext.tasks.Loop.start:4 of
 msgid "The keyword arguments to use."
-msgstr ""
+msgstr "사용할 키워드 전달인자."
 
 #: discord.ext.tasks.Loop.add_exception_type discord.ext.tasks.Loop.after_loop
 #: discord.ext.tasks.Loop.before_loop discord.ext.tasks.Loop.change_interval
 #: discord.ext.tasks.Loop.error discord.ext.tasks.Loop.start
 #: discord.ext.tasks.loop of
 msgid "Raises"
-msgstr ""
+msgstr "예외"
 
 #: discord.ext.tasks.Loop.start:6 of
 msgid "A task has already been launched and is running."
-msgstr ""
+msgstr "태스크가 이미 시작되었고 돌아가는 중입니다."
 
 #: discord.ext.tasks.Loop.remove_exception_type discord.ext.tasks.Loop.start of
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: discord.ext.tasks.Loop.start:8 of
 msgid "The task that has been created."
-msgstr ""
+msgstr "생성된 태스크."
 
 #: discord.ext.tasks.Loop.remove_exception_type discord.ext.tasks.Loop.start of
 msgid "Return type"
-msgstr ""
+msgstr "반환 형식"
 
 #: discord.ext.tasks.Loop.start:9 of
 msgid ":class:`asyncio.Task`"
-msgstr ""
+msgstr ":class:`asyncio.Task`"
 
 #: discord.ext.tasks.Loop.stop:1 of
 msgid "Gracefully stops the task from running."
-msgstr ""
+msgstr "돌아가는 태스크를 정지합니다."
 
 #: discord.ext.tasks.Loop.stop:3 of
 msgid ""
 "Unlike :meth:`cancel`\\, this allows the task to finish its current "
 "iteration before gracefully exiting."
-msgstr ""
+msgstr ":meth:`cancel`\\과는 달리, 태스크를 정지하기 전에 현재 반복중인 것을 완료하게 만듭니다."
 
 #: discord.ext.tasks.Loop.stop:8 of
 msgid ""
 "If the internal function raises an error that can be handled before "
 "finishing then it will retry until it succeeds."
-msgstr ""
+msgstr "만약 내부 함수가 끝내기 전에 처리할 수 있는 오류를 일으켰다면 성공할 때 까지 재시도할 것입니다."
 
 #: discord.ext.tasks.Loop.stop:12 of
 msgid ""
 "If this is undesirable, either remove the error handling before stopping "
 "via :meth:`clear_exception_types` or use :meth:`cancel` instead."
-msgstr ""
+msgstr "만약에 이것을 원하지 않는다면, :meth:`clear_exception_types`\\로 멈추기 전에 오류 처리를 제거하거나 :meth:`cancel`\\을 대신 사용해주세요."
 
 #: discord.ext.tasks.Loop.cancel:1 of
 msgid "Cancels the internal task, if it is running."
-msgstr ""
+msgstr 만약 내부 태스크가 돌아가고 있다면 취소함.""
 
 #: discord.ext.tasks.Loop.restart:1 of
 msgid "A convenience method to restart the internal task."
-msgstr ""
+msgstr "내부 태스크를 재시작하기 위한 편리한 방법."
 
 #: discord.ext.tasks.Loop.restart:5 of
 msgid ""
 "Due to the way this function works, the task is not returned like "
 ":meth:`start`."
-msgstr ""
+msgstr "이 함수가 작동하는 방식때문에, :meth:`start`\\처럼 태스크가 반환되지 않습니다."
 
 #: discord.ext.tasks.Loop.restart:8 of
 msgid "The arguments to to use."
-msgstr ""
+msgstr "사용할 전달인자."
 
 #: discord.ext.tasks.Loop.add_exception_type:1 of
 msgid "Adds exception types to be handled during the reconnect logic."
-msgstr ""
+msgstr "재연결 로직 도중 처리돼야 하는 예외 형식들을 추가합니다."
 
 #: discord.ext.tasks.Loop.add_exception_type:3 of
 msgid ""
 "By default the exception types handled are those handled by "
 ":meth:`discord.Client.connect`\\, which includes a lot of internet "
 "disconnection errors."
-msgstr ""
+msgstr "기본 상태에서는 처리되는 예외 형식들은 :meth:`discord.Client.connect`\\로 처리되는데, 많은 인터넷 연결 끊어짐 오류들을 포함하고 있습니다."
 
 #: discord.ext.tasks.Loop.add_exception_type:7 of
 msgid ""
 "This function is useful if you're interacting with a 3rd party library "
 "that raises its own set of exceptions."
-msgstr ""
+msgstr "만약에 자기만의 예외 집합을 일으키는 제 3자 라이브러리와 상호 작용하고 있다면 이 함수는 유용합니다."
 
 #: discord.ext.tasks.Loop.add_exception_type:10
 #: discord.ext.tasks.Loop.remove_exception_type:3 of
 msgid "An argument list of exception classes to handle."
-msgstr ""
+msgstr "처리해야 할 예외 클래스들의 전달인자 리스트."
 
 #: discord.ext.tasks.Loop.add_exception_type:13 of
 msgid ""
 "An exception passed is either not a class or not inherited from "
 ":class:`BaseException`."
-msgstr ""
+msgstr "지나간 예외는 클래스가 아니거나 :class:`BaseException`\\에서 상속되지 않았습니다."
 
 #: discord.ext.tasks.Loop.clear_exception_types:1 of
 msgid "Removes all exception types that are handled."
-msgstr ""
+msgstr "처리 가능한 모든 형식의 예외를 삭제합니다."
 
 #: discord.ext.tasks.Loop.clear_exception_types:5 of
 msgid "This operation obviously cannot be undone!"
-msgstr ""
+msgstr "이 작업은 당연히 되돌릴 수 없습니다!"
 
 #: discord.ext.tasks.Loop.remove_exception_type:1 of
 msgid "Removes exception types from being handled during the reconnect logic."
-msgstr ""
+msgstr "재연결 로직 도중 처리돼야 하는 예외 형식들을 삭제합니다."
 
 #: discord.ext.tasks.Loop.remove_exception_type:6 of
 msgid "Whether all exceptions were successfully removed."
-msgstr ""
+msgstr "모든 예외가 성공적으로 삭제되었는지의 여부."
 
 #: discord.ext.tasks.Loop.remove_exception_type:7 of
 msgid ":class:`bool`"
-msgstr ""
+msgstr ":class:`bool`"
 
 #: discord.ext.tasks.Loop.get_task:1 of
 msgid ""
 "Optional[:class:`asyncio.Task`]: Fetches the internal task or ``None`` if"
 " there isn't one running."
-msgstr ""
+msgstr "옵션[:class:`asyncio.Task`]: 내부 테스크를 가져오거나 아무것도 돌아가고 있지 않는다면 ``None``\\을 반환합니다."
 
 #: discord.ext.tasks.Loop.is_being_cancelled:1 of
 msgid "Whether the task is being cancelled."
-msgstr ""
+msgstr "태스크가 취소되고 있는지의 여부."
 
 #: discord.ext.tasks.Loop.failed:1 of
 msgid ":class:`bool`: Whether the internal task has failed."
-msgstr ""
+msgstr ":class:`bool`: 내부 테스크가 실패했는지의 여부."
 
 #: discord.ext.tasks.Loop.is_running:1 of
 msgid ":class:`bool`: Check if the task is currently running."
-msgstr ""
+msgstr ":class:`bool`: 태스크가 돌아가고 있는지 확인합니다."
 
 #: discord.ext.tasks.Loop.before_loop:1 of
 msgid ""
 "A decorator that registers a coroutine to be called before the loop "
 "starts running."
-msgstr ""
+msgstr "루프가 시작되기 전에 코루틴이 호출되도록 등록하는 데코레이터."
 
 #: discord.ext.tasks.Loop.before_loop:3 of
 msgid ""
 "This is useful if you want to wait for some bot state before the loop "
 "starts, such as :meth:`discord.Client.wait_until_ready`."
-msgstr ""
+msgstr "만약에 :meth:`discord.Client.wait_until_ready`\\처럼 루프가 시작되기 전에 몇가지 봇 상태가 기다리도록 만들고 싶다면 유용합니다."
 
 #: discord.ext.tasks.Loop.after_loop:3 discord.ext.tasks.Loop.before_loop:6 of
 msgid "The coroutine must take no arguments (except ``self`` in a class context)."
-msgstr ""
+msgstr "코루틴은 (클래스 컨택스트 내부에 있는 ``self``\\를 제외하고) 그 어떤 전달인자도 갖고 있으면 안됩니다."
 
 #: discord.ext.tasks.Loop.before_loop:8 of
 msgid "The coroutine to register before the loop runs."
-msgstr ""
+msgstr "루프가 시작되기 전에 등록할 코루틴."
 
 #: discord.ext.tasks.Loop.after_loop:14 discord.ext.tasks.Loop.before_loop:11
 #: discord.ext.tasks.Loop.error:13 discord.ext.tasks.loop:22 of
 msgid "The function was not a coroutine."
-msgstr ""
+msgstr "함수가 코루틴이 아닙니다."
 
 #: discord.ext.tasks.Loop.after_loop:1 of
 msgid ""
 "A decorator that register a coroutine to be called after the loop "
 "finished running."
-msgstr ""
+msgstr "루프가 끝난 이후 코루틴이 호출되도록 등록하는 데코레이터."
 
 #: discord.ext.tasks.Loop.after_loop:7 of
 msgid ""
 "This coroutine is called even during cancellation. If it is desirable to "
 "tell apart whether something was cancelled or not, check to see whether "
 ":meth:`is_being_cancelled` is ``True`` or not."
-msgstr ""
+msgstr "이 코루틴은 취소할때도 호출됩니다. 만약에 무언가가 취소되었는지 아닌지를 분리해야 한다면, :meth:`is_being_cancelled`\\가 ``True``\\인지 아닌지를 확인하세요."
 
 #: discord.ext.tasks.Loop.after_loop:11 of
 msgid "The coroutine to register after the loop finishes."
-msgstr ""
+msgstr "루프가 끝난 후 등록할 코루틴."
 
 #: discord.ext.tasks.Loop.error:1 of
 msgid ""
 "A decorator that registers a coroutine to be called if the task "
 "encounters an unhandled exception."
-msgstr ""
+msgstr "만약 테스크가 처리되지 않은 예외를 만났을 경우 호출될 코루틴을 등록하는 데코레이터."
 
 #: discord.ext.tasks.Loop.error:3 of
 msgid ""
 "The coroutine must take only one argument the exception raised (except "
 "``self`` in a class context)."
-msgstr ""
+msgstr "코루틴은 (클래스 컨택스트 내부에 있는 ``self``\\를 제외하고) 발생한 예외 전달인자 하나만을 가져야 합니다."
 
 #: discord.ext.tasks.Loop.error:5 of
 msgid ""
 "By default this prints to :data:`sys.stderr` however it could be "
 "overridden to have a different implementation."
-msgstr ""
+msgstr "기본 상태에서는 :data:`sys.stderr`\\로 출력하지만 다른 구현을 가지기 위해 무시될 수 있습니다."
 
 #: discord.ext.tasks.Loop.error:10 of
 msgid "The coroutine to register in the event of an unhandled exception."
-msgstr ""
+msgstr "처리되지 않은 예외 이벤트에서 등록할 코루틴."
 
 #: discord.ext.tasks.Loop.change_interval:1 of
 msgid "Changes the interval for the sleep time."
-msgstr ""
+msgstr "슬립 시간 간격을 변경합니다."
 
 #: discord.ext.tasks.Loop.change_interval:5 of
 msgid ""
 "This only applies on the next loop iteration. If it is desirable for the "
 "change of interval to be applied right away, cancel the task with "
 ":meth:`cancel`."
-msgstr ""
+msgstr "이것은 다음 루프 반복에서만 적용됩니다. 만약 간격 변경이 바로 적용되기를 원한다면, :meth:`cancel`\\로 태스크를 취소하세요."
 
 #: discord.ext.tasks.Loop.change_interval:10 discord.ext.tasks.loop:4 of
 msgid "The number of seconds between every iteration."
-msgstr ""
+msgstr "모든 반복 사이의 초."
 
 #: discord.ext.tasks.Loop.change_interval:12 discord.ext.tasks.loop:6 of
 msgid "The number of minutes between every iteration."
-msgstr ""
+msgstr "모든 반복 사이의 분."
 
 #: discord.ext.tasks.Loop.change_interval:14 discord.ext.tasks.loop:8 of
 msgid "The number of hours between every iteration."
-msgstr ""
+msgstr "모든 반복 사이의 시간."
 
 #: discord.ext.tasks.Loop.change_interval:17 discord.ext.tasks.loop:21 of
 msgid "An invalid value was given."
-msgstr ""
+msgstr "잘못된 값이 주어졌습니다."
 
 #: discord.ext.tasks.loop:1 of
 msgid ""
 "A decorator that schedules a task in the background for you with optional"
 " reconnect logic. The decorator returns a :class:`Loop`."
-msgstr ""
+msgstr "재연결 로직 옵션과 백그라운드에서 태스크를 예약하는 데코레이터. 데코레이터는 :class:`Loop`\\를 반환합니다."
 
 #: discord.ext.tasks.loop:10 of
 msgid "The number of loops to do, ``None`` if it should be an infinite loop."
-msgstr ""
+msgstr "루프의 반복 횟수, 만약에 무한 반복이어야 한다면 ``None``. "
 
 #: discord.ext.tasks.loop:13 of
 msgid ""
 "Whether to handle errors and restart the task using an exponential back-"
 "off algorithm similar to the one used in :meth:`discord.Client.connect`."
-msgstr ""
+msgstr ":meth:`discord.Client.connect`\\에 사용된 것 처럼 기하급수적인 백오프 알고리즘으로 오류를 처리하거나 태스크를 재시작할지의 여부"
 
 #: discord.ext.tasks.loop:17 of
 msgid ""
 "The loop to use to register the task, if not given defaults to "
 ":func:`asyncio.get_event_loop`."
-msgstr ""
+msgstr "태스크를 등록하기 위해 사용하는 루프, 만약에 주어지지 않았다면 기본으로 :func:`asyncio.get_event_loop`."
 
