@@ -145,7 +145,7 @@ msgstr ""
 
 #: ../../ext/commands/cogs.rst:109
 msgid "Special Methods"
-msgstr "특별한 메소드들"
+msgstr "특별한 메소드"
 
 #: ../../ext/commands/cogs.rst:111
 msgid ""
@@ -192,7 +192,7 @@ msgstr "레퍼런스를 방문해 더 자세한 정보를 찾아볼 수 있습�
 
 #: ../../ext/commands/cogs.rst:128
 msgid "Meta Options"
-msgstr ""
+msgstr "메타 옵션"
 
 #: ../../ext/commands/cogs.rst:130
 msgid ""
