@@ -19,30 +19,33 @@ msgstr ""
 
 #: ../../migrating.rst:6
 msgid "Migrating to v1.0"
-msgstr ""
+msgstr "1.0 버전으로 이전하기"
 
 #: ../../migrating.rst:8
 msgid ""
 "v1.0 is one of the biggest breaking changes in the library due to a "
 "complete redesign."
-msgstr ""
+msgstr "1.0 버전은 전체적인 재설계로 인해 구 버전과 크게 달라졌습니다."
 
 #: ../../migrating.rst:11
 msgid ""
 "The amount of changes are so massive and long that for all intents and "
 "purposes, it is a completely new library."
-msgstr ""
+msgstr "모든 의도들과 목적들을 위한 변경점들은 매우 방대하고 길기 때문에,"
+"이것은 완전히 새로운 라이브러리가 되었습니다."
 
 #: ../../migrating.rst:14
 msgid ""
 "Part of the redesign involves making things more easy to use and natural."
 " Things are done on the :ref:`models <discord_api_models>` instead of "
 "requiring a :class:`Client` instance to do any work."
-msgstr ""
+msgstr "재설계에는 여러가지 요소들을 더 쉽게, 그리고 더 자연스럽게 만드는 것이 포함됩니다."
+"이러한 작업들은 어떤 일을 하기 위해 :class:`Client`의 객체를 요구하는 대신에"
+":ref:`models <discord_api_models>`위에서 완료됩니다."
 
 #: ../../migrating.rst:18
 msgid "Python Version Change"
-msgstr ""
+msgstr "파이썬의 버전 변화"
 
 #: ../../migrating.rst:20
 msgid ""
@@ -51,28 +54,34 @@ msgid ""
 "to remove support for Python versions lower than 3.5.3, which essentially"
 " means that **support for Python 3.4 is dropped**."
 msgstr ""
+"개발을 더 쉽게 만들기 위해, 그리고 우리가 의존하는 라이브러리들이"
+"3.7 이상의 버전들을 지원하는것을 허락하기 위해 버전을 올리는 것을 허락하기 위해, discord.py는"
+"3.5.3 아래의 파이썬 버전들을 더 이상 지원하지 않기로 했습니다. 이것은 본질적으로"
+" **파이썬 3.4버전을 지원하는 일이 취소되었음** 을 의미합니다."
 
 #: ../../migrating.rst:25
 msgid "Major Model Changes"
-msgstr ""
+msgstr "주요 모델 변화"
 
 #: ../../migrating.rst:27
 msgid "Below are major model changes that have happened in v1.0"
-msgstr ""
+msgstr "아래에는 1.0 버전에서 발생한 주요 모델들의 변경점들을 기술합니다."
 
 #: ../../migrating.rst:30
 msgid "Snowflakes are int"
-msgstr ""
+msgstr "Snowflake는 정수형입니다."
 
 #: ../../migrating.rst:32
 msgid ""
 "Before v1.0, all snowflakes (the ``id`` attribute) were strings. This has"
 " been changed to :class:`int`."
 msgstr ""
+"1.0 이전 버전에서는, 모든 snowflake들(``id`` 특성)은 문자열이었습니다. 이것은"
+" :class:`int`로 변경되었습니다."
 
 #: ../../migrating.rst:34 ../../migrating.rst:254
 msgid "Quick example: ::"
-msgstr ""
+msgstr "간단한 예제입니다: ::"
 
 #: ../../migrating.rst:46
 msgid ""
@@ -81,10 +90,12 @@ msgid ""
 " for optimisation opportunities by allowing ETF to be used instead of "
 "JSON internally."
 msgstr ""
+"이 변경점은 ID를 따옴표로 감싸지 않게 만들어 공식 클라이언트에서 ID를 복사하는 기능을 사용했을 때 발생하는 오류의 수를 줄일 수 있게 합니다."
+"또한, 이 변경점은 내부적으로 JSON 대신 ETF가 사용될 수 있게 해 최적화 기회를 제공합니다."
 
 #: ../../migrating.rst:50
 msgid "Server is now Guild"
-msgstr ""
+msgstr "Server는 이제 Guild입니다."
 
 #: ../../migrating.rst:52
 msgid ""
@@ -93,18 +104,21 @@ msgid ""
 "necessary, the model has been renamed to :class:`Guild` and all instances"
 " referring to it has been changed as well."
 msgstr ""
+"공식 API 문서는 \"Server\"의 개념을 \"Guild\"라고 부릅니다."
+"필요할 때 API 문서와 더 일치시키기 위해서, 이 모델은 :class:`Guild`로 개명되었고"
+" 이를 참조하는 모든 객체들 또한 변경되었습니다."
 
 #: ../../migrating.rst:56
 msgid "A list of changes is as follows:"
-msgstr ""
+msgstr "아래는 변경된 항목들입니다."
 
 #: ../../migrating.rst:59 ../../migrating.rst:95 ../../migrating.rst:869
 msgid "Before"
-msgstr ""
+msgstr "이전"
 
 #: ../../migrating.rst:59 ../../migrating.rst:95 ../../migrating.rst:869
 msgid "After"
-msgstr ""
+msgstr "이후"
 
 #: ../../migrating.rst:61
 msgid "``Message.server``"
@@ -196,7 +210,7 @@ msgstr ""
 
 #: ../../migrating.rst:87
 msgid "Models are Stateful"
-msgstr ""
+msgstr "모델들은 "
 
 #: ../../migrating.rst:89
 msgid ""
@@ -204,10 +218,12 @@ msgid ""
 ":class:`Client` and put into their respective :ref:`model "
 "<discord_api_models>`."
 msgstr ""
+"이전에 언급했듯이, 많은 기능들이 :class:`Client`의 밖으로 이동해 각각의 :ref:`model "
+"<discord_api_models>`에 포함되었습니다."
 
 #: ../../migrating.rst:92
 msgid "A list of these changes is enumerated below."
-msgstr ""
+msgstr "변경된 항목들은 아래에 기재되어 있습니다."
 
 #: ../../migrating.rst:97
 msgid "``Client.add_reaction``"
@@ -231,7 +247,7 @@ msgstr ""
 
 #: ../../migrating.rst:101
 msgid ":meth:`Member.ban` or :meth:`Guild.ban`"
-msgstr ""
+msgstr ":meth:`Member.ban` 또는 :meth:`Guild.ban`"
 
 #: ../../migrating.rst:103
 msgid "``Client.change_nickname``"
@@ -256,7 +272,7 @@ msgstr ""
 
 #: ../../migrating.rst:107
 msgid ":meth:`Guild.create_text_channel` and :meth:`Guild.create_voice_channel`"
-msgstr ""
+msgstr ":meth:`Guild.create_text_channel` 과 :meth:`Guild.create_voice_channel`"
 
 #: ../../migrating.rst:109
 msgid "``Client.create_custom_emoji``"
@@ -298,7 +314,7 @@ msgstr ""
 msgid ""
 ":meth:`abc.GuildChannel.set_permissions` with ``overwrite`` set to "
 "``None``"
-msgstr ""
+msgstr "``overwrite``된 :meth:`abc.GuildChannel.set_permissions` 는 ``None`` 으로 설정되었습니다."
 
 #: ../../migrating.rst:119
 msgid "``Client.delete_custom_emoji``"
@@ -314,7 +330,7 @@ msgstr ""
 
 #: ../../migrating.rst:121
 msgid ":meth:`Invite.delete` or :meth:`Client.delete_invite`"
-msgstr ""
+msgstr ":meth:`Invite.delete` 또는 :meth:`Client.delete_invite`"
 
 #: ../../migrating.rst:123
 msgid "``Client.delete_message``"
@@ -354,7 +370,7 @@ msgstr ""
 
 #: ../../migrating.rst:131 ../../migrating.rst:169
 msgid ":meth:`TextChannel.edit` or :meth:`VoiceChannel.edit`"
-msgstr ""
+msgstr ":meth:`TextChannel.edit` 또는 :meth:`VoiceChannel.edit`"
 
 #: ../../migrating.rst:133
 msgid "``Client.edit_channel_permissions``"
@@ -386,7 +402,7 @@ msgstr ""
 
 #: ../../migrating.rst:139
 msgid ":meth:`ClientUser.edit` (you get this from :attr:`Client.user`)"
-msgstr ""
+msgstr ":meth:`ClientUser.edit` (:attr:`Client.user` 에서 얻을 수 있습니다.)"
 
 #: ../../migrating.rst:141
 msgid "``Client.edit_role``"
@@ -466,7 +482,7 @@ msgstr ""
 
 #: ../../migrating.rst:159
 msgid ":meth:`abc.GuildChannel.invites` or :meth:`Guild.invites`"
-msgstr ""
+msgstr ":meth:`abc.GuildChannel.invites` 또는 :meth:`Guild.invites`"
 
 #: ../../migrating.rst:161
 msgid "``Client.join_voice_channel``"
@@ -474,7 +490,7 @@ msgstr ""
 
 #: ../../migrating.rst:161
 msgid ":meth:`VoiceChannel.connect` (see :ref:`migrating_1_0_voice`)"
-msgstr ""
+msgstr ":meth:`VoiceChannel.connect` (:ref:`migrating_1_0_voice` 를 참고해주세요)"
 
 #: ../../migrating.rst:163
 msgid "``Client.kick``"
@@ -482,7 +498,7 @@ msgstr ""
 
 #: ../../migrating.rst:163
 msgid ":meth:`Guild.kick` or :meth:`Member.kick`"
-msgstr ""
+msgstr ":meth:`Guild.kick` 또는 :meth:`Member.kick`"
 
 #: ../../migrating.rst:165
 msgid "``Client.leave_server``"
@@ -498,7 +514,7 @@ msgstr ""
 
 #: ../../migrating.rst:167
 msgid ":meth:`abc.Messageable.history` (see :ref:`migrating_1_0_async_iter`)"
-msgstr ""
+msgstr ":meth:`abc.Messageable.history` (:ref:`migrating_1_0_async_iter` 를 참고해주세요)"
 
 #: ../../migrating.rst:169
 msgid "``Client.move_channel``"
@@ -570,7 +586,7 @@ msgstr ""
 
 #: ../../migrating.rst:189 ../../migrating.rst:191
 msgid ":meth:`abc.Messageable.send` (see :ref:`migrating_1_0_sending_messages`)"
-msgstr ""
+msgstr ":meth:`abc.Messageable.send` (:ref:`migrating_1_0_sending_messages` 를 참고해주세요)"
 
 #: ../../migrating.rst:191
 msgid "``Client.send_message``"
@@ -585,6 +601,8 @@ msgid ""
 ":meth:`abc.Messageable.trigger_typing` (use "
 ":meth:`abc.Messageable.typing`)"
 msgstr ""
+":meth:`abc.Messageable.trigger_typing`"
+"(:meth:`abc.Messageable.typing` 를 사용합니다)"
 
 #: ../../migrating.rst:195
 msgid "``Client.server_voice_state``"
@@ -604,7 +622,7 @@ msgstr ""
 
 #: ../../migrating.rst:199
 msgid ":meth:`Guild.unban` or :meth:`Member.unban`"
-msgstr ""
+msgstr ":meth:`Guild.unban` 또는 :meth:`Member.unban`"
 
 #: ../../migrating.rst:201
 msgid "``Client.unpin_message``"
@@ -620,7 +638,7 @@ msgstr ""
 
 #: ../../migrating.rst:203 ../../migrating.rst:205
 msgid ":meth:`Client.wait_for` (see :ref:`migrating_1_0_wait_for`)"
-msgstr ""
+msgstr ":meth:`Client.wait_for` (:ref:`migrating_1_0_wait_for` 를 참고해주세요)"
 
 #: ../../migrating.rst:205
 msgid "``Client.wait_for_reaction``"
@@ -632,7 +650,7 @@ msgstr ""
 
 #: ../../migrating.rst:207
 msgid "Removed"
-msgstr ""
+msgstr "제거됨"
 
 #: ../../migrating.rst:209
 msgid "``Client.wait_until_ready``"
@@ -640,23 +658,25 @@ msgstr ""
 
 #: ../../migrating.rst:209
 msgid "No change"
-msgstr ""
+msgstr "변화 없음"
 
 #: ../../migrating.rst:213
 msgid "Property Changes"
-msgstr ""
+msgstr "프로퍼티 변화"
 
 #: ../../migrating.rst:215
 msgid ""
 "In order to be a bit more consistent, certain things that were properties"
 " were changed to methods instead."
 msgstr ""
+"좀 더 일관되게 하기 위해서, 프로퍼티로 제공되던 특정 요소들은 메소드로 교체되었습니다."
 
 #: ../../migrating.rst:217
 msgid ""
 "The following are now methods instead of properties (requires "
 "parentheses):"
 msgstr ""
+"아래는 이제 프로퍼티가 아닌 메소드로 제공됩니다."
 
 #: ../../migrating.rst:219
 msgid ":meth:`Role.is_default`"
@@ -672,13 +692,15 @@ msgstr ""
 
 #: ../../migrating.rst:224
 msgid "Dict Value Change"
-msgstr ""
+msgstr "딕셔너리 값 변화"
 
 #: ../../migrating.rst:226
 msgid ""
 "Prior to v1.0 some aggregating properties that retrieved models would "
 "return \"dict view\" objects."
 msgstr ""
+"1.0 이전 버전에 모델들을 반환하던 총합 프로퍼티들은"
+"\"딕셔너리 뷰\" 객체를 반환하곤 했습니다."
 
 #: ../../migrating.rst:228
 msgid ""
@@ -686,6 +708,8 @@ msgid ""
 " over it, a RuntimeError would be raised and crash the task. To alleviate"
 " this, the \"dict view\" objects were changed into lists."
 msgstr ""
+"그 결과, 딕셔너리가 당신이 그것을 반복하는 동안 크기를 바꾸면, 런타임에러가 발생해 작업을 충돌시킵니다. 이것을"
+"완화시키기 위해, \"딕셔너리 뷰\" 객체들은 리스트로 변경되었습니다."
 
 #: ../../migrating.rst:231
 msgid "The following views were changed to a list:"
@@ -705,11 +729,11 @@ msgstr ""
 
 #: ../../migrating.rst:237
 msgid ":attr:`Guild.text_channels` (new in v1.0)"
-msgstr ""
+msgstr ":attr:`Guild.text_channels (1.0버전에 새로 추가됨)"
 
 #: ../../migrating.rst:238
 msgid ":attr:`Guild.voice_channels` (new in v1.0)"
-msgstr ""
+msgstr ":attr:`Guild.voice_channels` (1.0버전에 새로 추가됨)"
 
 #: ../../migrating.rst:239
 msgid ":attr:`Guild.emojis`"
@@ -728,12 +752,14 @@ msgid ""
 "Earlier, in v0.11.0 a :class:`VoiceState` class was added to refer to "
 "voice states along with a :attr:`Member.voice` attribute to refer to it."
 msgstr ""
+"이전에, 0.11.0버전에서 :class:`VoiceState` 클래스는 :attr:`Member.voice` 속성과 함께 음성 상태들을 참조하기 위해 추가되었습니다."
 
 #: ../../migrating.rst:248
 msgid ""
 "However, it was transparent to the user. In an effort to make the library"
 " save more memory, the voice state change is now more visible."
 msgstr ""
+"그러나, 이것은 사용자에게 잘 드러나지 않았습니다. 라이브러리가 메모리를 절약하도록 하기 위해, 음성 상태의 변화는 이제 더 가시적입니다."
 
 #: ../../migrating.rst:251
 msgid ""
