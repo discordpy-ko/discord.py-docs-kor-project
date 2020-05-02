@@ -19,35 +19,35 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:6
 msgid "Commands"
-msgstr ""
+msgstr "명령어"
 
 #: ../../ext/commands/commands.rst:8
 msgid ""
 "One of the most appealing aspect of the command extension is how easy it "
 "is to define commands and how you can arbitrarily nest groups and "
 "commands to have a rich sub-command system."
-msgstr ""
+msgstr "명령어 확장자에서 가장 매력적인 것은 명령어를 정의하는 것이 매우 쉽고 당신 마음대로 그룹과 명령어를 묶어서 풍부한 서브커맨드 시스템을 가질 수 있다는 것입니다."
 
 #: ../../ext/commands/commands.rst:11
 msgid ""
 "Commands are defined by attaching it to a regular Python function. The "
 "command is then invoked by the user using a similar signature to the "
 "Python function."
-msgstr ""
+msgstr "명령어는 기본적인 Python 함수에 붙여서 정의됩니다. 그다음에 유저가 Python 함수처럼 비슷한 서명을 사용해서 실행됩니다."
 
 #: ../../ext/commands/commands.rst:14
 msgid "For example, in the given command definition:"
-msgstr ""
+msgstr "예를 들면, 주어진 명령어 정의에서:"
 
 #: ../../ext/commands/commands.rst:22
 msgid "With the following prefix (``$``), it would be invoked by the user via:"
-msgstr ""
+msgstr "프리픽스로 (``$``) 를 갖고 있을 때, 이 명령어는 이렇게 유저에 의해 실행됩니다:"
 
 #: ../../ext/commands/commands.rst:28
 msgid ""
 "A command must always have at least one parameter, ``ctx``, which is the "
 ":class:`.Context` as the first one."
-msgstr ""
+msgstr "명령어는 항상 매개변수로 처음에 :class:`.Context`\\인 ``ctx`` 를 갖고 있어야 합니다."
 
 #: ../../ext/commands/commands.rst:30
 msgid ""
@@ -55,40 +55,41 @@ msgid ""
 ":meth:`.Bot.command` decorator, as seen in the example above. The second "
 "is using the :func:`~ext.commands.command` decorator followed by "
 ":meth:`.Bot.add_command` on the instance."
-msgstr ""
+msgstr "명령어를 등록하는 방법은 두가지가 있습니다. 첫번째는 위의 예시처럼 :meth:`.Bot.command` 데코레이터를 사용하는 것입니다. "
+"두번째는 인스턴스에서 :meth:`.Bot.add_command` 다음에 오는 :func:`~ext.commands.command` 데코레이터를 사용하는 것입니다."
 
 #: ../../ext/commands/commands.rst:34
 msgid "Essentially, these two are equivalent: ::"
-msgstr ""
+msgstr "기본적으로는, 이 둘은 같습니다: ::"
 
 #: ../../ext/commands/commands.rst:52
 msgid ""
 "Since the :meth:`.Bot.command` decorator is shorter and easier to "
 "comprehend, it will be the one used throughout the documentation here."
-msgstr ""
+msgstr ":meth:`.Bot.command` 데코레이터가 더 짧고 이해하기 더 쉽기 때문에 이 문서에서 사용될 것입니다."
 
 #: ../../ext/commands/commands.rst:55
 msgid ""
 "Any parameter that is accepted by the :class:`.Command` constructor can "
 "be passed into the decorator. For example, to change the name to "
 "something other than the function would be as simple as doing this:"
-msgstr ""
+msgstr ":class:`.Command` 생성자에 의해 받아들여진 매개변수는 데코레이터로 들어갈 수 있습니다. 예를 들어서, 함수 이외의 이름으로 변경하는 것은 이렇게 하는 것처럼 간단합니다:"
 
 #: ../../ext/commands/commands.rst:65
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../ext/commands/commands.rst:67
 msgid ""
 "Since we define commands by making Python functions, we also define the "
 "argument passing behaviour by the function parameters."
-msgstr ""
+msgstr "우리는 명령어를 Python 함수를 만드는 것으로 정의하고 있기 때문에, 우리는 지나가는 전달인자도 함수 매개변수로 정의합니다."
 
 #: ../../ext/commands/commands.rst:70
 msgid ""
 "Certain parameter types do different things in the user side and most "
 "forms of parameter types are supported."
-msgstr ""
+msgstr "특정 매개변수 종류는 유저쪽에서 다른 것을 하고 대부분의 매개변수 형태는 지원됩니다."
 
 #: ../../ext/commands/commands.rst:73
 msgid "Positional"
