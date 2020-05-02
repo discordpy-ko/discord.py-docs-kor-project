@@ -26,8 +26,8 @@ msgid ""
 "This is the documentation for discord.py, a library for Python to aid in "
 "creating applications that utilise the Discord API."
 msgstr ""
-"이 문서는 디스코드 API를 이용한 애플리케이션을 생성하는데 도움을 주는"
-" discord.py의 문서입니다."
+"이 문서는 디스코드 API를 이용한 애플리케이션을 생성하는 데 도움을 주는 "
+"discord.py의 문서입니다."
 
 #: ../../intro.rst:12
 msgid "Prerequisites"
@@ -89,7 +89,7 @@ msgstr "데비안 기반 시스템에서는 다음 명령어로 필요한 모듈
 
 #: ../../intro.rst:49
 msgid "Remember to check your permissions!"
-msgstr "시스템 권한을 가지고 있는지 확인하세요!"
+msgstr "시스템 권한을 가졌는지 확인하세요!"
 
 #: ../../intro.rst:52
 msgid "Virtual Environments"
@@ -103,7 +103,7 @@ msgid ""
 "wide. For this purpose, the standard library as of Python 3.3 comes with "
 "a concept called \"Virtual Environment\"s to help maintain these separate"
 " versions."
-msgstr "라이브러리를 난잡한 시스템으로부터 분리시키거나, "
+msgstr "라이브러리를 난잡한 시스템으로부터 분리하거나, "
 "시스템에 설치된 라이브러리와 다른 버전의 라이브러리를 사용하시거나 "
 "혹은 시스템 전체에 라이브러리를 설치할 권한이 없을 수도 있습니다."
 "이를 위해 Python 3.3버전 이상의 표준 라이브러리에는 "
@@ -154,4 +154,3 @@ msgstr "discord.py는 :ref:`events <discord-api-events>` 개념을 중심으로 
 #: ../../intro.rst:97
 msgid "A quick example to showcase how events work:"
 msgstr "이벤트의 작동 방법을 보여주는 예:"
-
