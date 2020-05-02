@@ -27,9 +27,8 @@ msgid ""
 "``discord.py`` and its extension modules. Feel free to suggest a new "
 "question or submit one via pull requests."
 msgstr ""
-"이 페이지는 ``discord.py`` 와 추가적인 모듈의 자주 묻는 질문의 목록이"
-" 나열되어 있습니다. 언제든지 pull request를 통해 새로운 질문을"
-" 제안하거나 제출하세요.
+"이 페이지에는 ``discord.py`` 와 추가적인 모듈과 관련된 자주 묻는 질문의 목록이 "
+"나열되어 있습니다. 얼마든지 pull requests를 통해 질문해주세요."
 
 #: ../../faq.rst:11
 msgid "Questions"
@@ -57,16 +56,16 @@ msgid ""
 "threads or complicated multiprocessing."
 msgstr ""
 "|coroutine_link|_ 함수는 반드시 ``await`` 또는 ``yield from`` 과 함께 적용"
-"되어야 합니다. Python은 ``await`` 과 맞닥뜨릴 경우 해당 함수의 실행을 중지하고"
-" 다른 작업을 끝내고 다시 그 지점으로 돌아옵니다. 이것은 당신의 프로그램이"
-" 쓰레드나 복잡한 멀티프로세싱 없이 여러 작업을 동시에 할 수 있게 만들어줍니다."
+"되어야 합니다. Python은 ``await`` 과 맞닥뜨리면 해당 함수의 실행을 중지하고 "
+"다른 작업을 끝내고 다시 그 지점으로 돌아옵니다. 이것은 당신의 프로그램이 "
+"쓰레드나 복잡한 멀티프로세싱 없이 여러 작업을 동시에 할 수 있게 만들어줍니다."
 
 #: ../../faq.rst:26
 msgid ""
 "**If you forget to await a coroutine then the coroutine will not run. "
 "Never forget to await a coroutine.**"
 msgstr ""
-"**만약 코루틴을 await 하는 것을 까먹었다면, 해당 코루틴은 실행되지 않습니다."
+"**만약 코루틴을 await 하지 않았다면, 해당 코루틴은 실행되지 않을 것입니다."
 " 절대 코루틴을 await 하는 것을 잊지 마세요.**"
 
 #: ../../faq.rst:29
@@ -94,20 +93,20 @@ msgid ""
 "since it has not stopped the function's execution at that point to do "
 "other things."
 msgstr ""
-"비동기 프로그래밍에서 호출 차단은 ``await`` 이 아닌 모든 함수의 본질적인"
-" 부분입니다. 그래도 걱정하지 마세요. 호출 차단은 항상 나쁜 것은 아니랍니다."
-" 호출 차단을 사용하는 것은 불가피하지만, 당신은 과도하게 함수의 호출을 차단하지"
-" 않도록 해야합니다. 기억하세요. 만약 너무 오랫동안 차단된다면 당신의 봇은 다른 일을"
-" 하기 위해 그 시점에서 함수의 실행을 중단하지 않았기 때문에 멈출 것입니다."
+"비동기 프로그래밍에서 호출 차단은 ``await`` 이 아닌 모든 함수의 본질적인 "
+"부분입니다. 그래도 걱정하지 마세요. 호출 차단은 항상 나쁜 것은 아니랍니다. "
+"호출 차단을 사용하는 것은 불가피하지만, 당신은 과도하게 함수의 호출을 차단하지 "
+"않도록 해야 합니다. 기억하세요. 만약 너무 오랫동안 차단된다면 당신의 봇은 다른 일을 "
+"하기 위해 그 시점에서 함수의 실행을 중단하지 않았기 때문에 멈출 것입니다."
 
 #: ../../faq.rst:41
 msgid ""
 "If logging is enabled, this library will attempt to warn you that "
-"blocking is occurring with the message: ``Heartbeat blocked for more than"
-" N seconds.`` See :ref:`logging_setup` for details on enabling logging."
+"blocking is occurring with the message: ``Heartbeat blocked for more than "
+"N seconds.`` See :ref:`logging_setup` for details on enabling logging."
 msgstr ""
-"로깅이 활성화되었다면, 이 라이브러리는 당신에게 메시지의 차단이 일어나고 있다고"
-" 경고를 할 것입니다: ``Heartbeat blocked for more than N seconds.`` "
+"로깅이 활성화되었다면, 이 라이브러리는 당신에게 메시지의 차단이 일어나고 있다고 "
+"경고할 것입니다: ``Heartbeat blocked for more than N seconds.`` "
 ":ref:`logging_setup` 을 참고하여 로깅을 활성화하는 방법에 대해 자세히 알아보세요."
 
 #: ../../faq.rst:45
@@ -117,7 +116,7 @@ msgid ""
 "Similar to this example: ::"
 msgstr ""
 "호출을 너무 오랫동안 차단하는 대표적인 원인은 :func:`time.sleep` 입니다."
-"쓰지 마세요. :func:`asyncio.sleep` 을 대신해서 쓰세요. 아래의 예시를 참고하세요:"
+":func:`asyncio.sleep` 을 대신 사용하세요. 아래의 예시를 참고하세요:"
 
 #: ../../faq.rst:54
 msgid ""
@@ -128,10 +127,10 @@ msgid ""
 "long. Instead, use the :doc:`aiohttp <aio:index>` library which is "
 "installed on the side with this library."
 msgstr ""
-"차단을 너무 오랫동안 하는 또 하나의 원인은 유명한 모듈인 :doc:`req:index` 의"
-" HTTP 요청을 사용하는 것입니다. :doc:`req:index` 는 동기 프로그래밍에서는"
-" 엄청난 모듈이지만, :mod:`asyncio` 에게는 그리 좋은 선택은 아닙니다. 그 이유는"
-" 특정 요청은 이벤트 루프를 너무 오랫동안 차단할 수 있기 때문이죠. 대신에, "
+"차단을 너무 오랫동안 하는 또 하나의 원인은 유명한 모듈인 :doc:`req:index` 의 "
+"HTTP 요청을 사용하는 것입니다. :doc:`req:index` 는 동기 프로그래밍에서는 "
+"엄청난 모듈이지만, :mod:`asyncio` 와 함께 쓸 때는 좋은 선택이 아닙니다. 그 이유는 "
+"특정 요청은 이벤트 루프를 너무 오랫동안 차단할 수 있기 때문이죠. 대신에, "
 "이 라이브러리와 함께 설치된 :doc:`aiohttp <aio:index>` 라이브러리를 사용하세요."
 
 #: ../../faq.rst:59
@@ -170,8 +169,8 @@ msgid ""
 "``activity`` keyword argument which takes in an :class:`Activity` object."
 msgstr ""
 ":class:`Client` 의 :meth:`Client.change_presence` 메소드가 존재합니다. "
-"이것과 관련된 측면은 :class:`Activity` 오브젝트를 사용하는 ``activity``"
-" 키워드 인자입니다."
+"이것과 관련된 측면은 :class:`Activity` 오브젝트를 사용하는 ``activity`` "
+"키워드 인자입니다."
 
 #: ../../faq.rst:91
 msgid ""
@@ -181,8 +180,8 @@ msgid ""
 msgstr ""
 ""
 ":class:`ActivityType` 을 사용하여 상태 타입(하는 중, 듣는 중, 방송 중, "
-"시청 중)이 설정될 수 있습니다. 메모리 최적화를 위하여, 몇몇 상태는 축소된"
-" 버전으로 제공됩니다.:"
+"시청 중)이 설정될 수 있습니다. 메모리 최적화를 위하여, 몇몇 상태는 축소된 "
+"버전으로 제공됩니다.:"
 
 #: ../../faq.rst:94
 msgid ":class:`Game`"
@@ -198,33 +197,33 @@ msgstr "이 두 가지를 모두 넣게 되면 다음과 같은 정보를 얻을
 
 #: ../../faq.rst:106
 msgid "How do I send a message to a specific channel?"
-msgstr "어떻게 특정한 채널에 미시지를 보낼 수 있나요?"
+msgstr "어떻게 특정 채널에 메시지를 보내나요?"
 
 #: ../../faq.rst:108
 msgid ""
-"You must fetch the channel directly and then call the appropriate method."
-" Example: ::"
-msgstr "채널의 정보(ID 등)을 바로 가져와 적절한 메서드를 호출해야 합니다."
+"You must fetch the channel directly and then call the appropriate method. "
+"Example: ::"
+msgstr "채널의 정보(ID 등)를 바로 가져와 적절한 메서드를 호출해야 합니다."
 
 #: ../../faq.rst:114
 msgid "How do I send a DM?"
-msgstr "어떻게 DM(개인 메시지)을 보낼 수 있나요?"
+msgstr "어떻게 DM(개인 메시지)을 보내나요?"
 
 #: ../../faq.rst:116
 msgid ""
 "Get the :class:`User` or :class:`Member` object and call "
 ":meth:`abc.Messageable.send`. For example: ::"
 msgstr ""
-":class:`User` 또는 :class:`Member` 오브젝트를 갖고 온 뒤"
-" :meth:`abc.Messageable.send` 를 호출하세요. 예를 들어: ::"
+":class:`User` 또는 :class:`Member` 오브젝트를 갖고 온 뒤 "
+":meth:`abc.Messageable.send` 를 호출하세요. 예를 들어: ::"
 
 #: ../../faq.rst:121
 msgid ""
 "If you are responding to an event, such as :func:`on_message`, you "
 "already have the :class:`User` object via :attr:`Message.author`: ::"
 msgstr ""
-":func:`on_message` 와 같은 이벤트에 반응할 때, :class:`User` 오브젝트를"
-" :attr:`Message.author` 를 통하여 이미 갖고 있는 경우 이렇게 하세요: ::"
+":func:`on_message` 와 같은 이벤트에 반응할 때, :class:`User` 오브젝트를 "
+":attr:`Message.author` 를 통하여 이미 갖고 있는 경우 이렇게 하세요: ::"
 
 #: ../../faq.rst:126
 msgid "How do I get the ID of a sent message?"
@@ -240,7 +239,7 @@ msgstr ""
 
 #: ../../faq.rst:135
 msgid "How do I upload an image?"
-msgstr "어떻게 이미지를 업로드할 수 있나요?"
+msgstr "어떻게 이미지를 올리나요?"
 
 #: ../../faq.rst:137
 msgid "To upload something to Discord you have to use the :class:`File` object."
@@ -267,8 +266,8 @@ msgid ""
 "To upload multiple files, you can use the ``files`` keyword argument "
 "instead of ``file``\\: ::"
 msgstr ""
-"여러 파일을 업로드하려면 당신은 ``file``\\ 대신 ``files`` 키워드 인자를"
-" 사용할 수 있습니다: ::"
+"여러 파일을 업로드하려면 당신은 ``file``\\ 대신 ``files`` 키워드 인자를 "
+"사용할 수 있습니다: ::"
 
 #: ../../faq.rst:159
 msgid ""
@@ -276,13 +275,13 @@ msgid ""
 "request using :doc:`aiohttp <aio:index>` and then pass an "
 ":class:`io.BytesIO` instance to :class:`File` like so:"
 msgstr ""
-"만약 URL을 통해 무언가를 업로드하고 싶다면, :doc:`aiohttp <aio:index>` 를 사용한"
-" HTTP 요청을 한 뒤, :class:`io.BytesIO` 인스턴스에서 :class:`File` 로 다음과 같이"
-" 변환하세요:"
+"만약 URL을 통해 무언가를 업로드하고 싶다면, :doc:`aiohttp <aio:index>` 를 사용한 "
+"HTTP 요청을 한 뒤, :class:`io.BytesIO` 인스턴스에서 :class:`File` 로 다음과 같이 "
+"변환하세요:"
 
 #: ../../faq.rst:176
 msgid "How can I add a reaction to a message?"
-msgstr "어떻게 하면 메시지에 반응을 추가할 수 있나요?"
+msgstr "어떻게 메시지에 반응을 추가하나요?"
 
 #: ../../faq.rst:178
 msgid "You use the :meth:`Message.add_reaction` method."
@@ -294,8 +293,8 @@ msgid ""
 "point in a string. In your code, you can write this in a few different "
 "ways:"
 msgstr ""
-"만약 유니코드로 된 이모티콘을 사용하고 싶다면, 문자열에 유효한 유니코드"
-" 코드 포인트를 전달해야 합니다. 다음과 같은 방법으로 작성할 수 있습니다:"
+"만약 유니코드로 된 이모티콘을 사용하고 싶다면, 문자열에 유효한 유니코드 "
+"코드 포인트를 전달해야 합니다. 다음과 같은 방법으로 작성할 수 있습니다:"
 
 #: ../../faq.rst:182
 msgid "``'👍'``"
@@ -320,9 +319,9 @@ msgid ""
 "their code points in the content without needing to do anything special. "
 "You **cannot** send ``':thumbsup:'`` style shorthands."
 msgstr ""
-"메시지에 있는 이모티콘을 사용하려는 경우, 이미 메시지의 내용에 코드 포인트가"
-" 있으므로 다른 것을 특별히 할 필요는 없습니다. ``':thumbsup:'`` 스타일로는"
-" 이모티콘을 **전송할 수 없**\\습니다."
+"메시지에 있는 이모티콘을 사용하려는 경우, 이미 메시지의 내용에 코드 포인트가 "
+"있으므로 다른 것을 특별히 할 필요는 없습니다. ``':thumbsup:'`` 스타일로는 "
+"이모티콘을 **전송할 수 없**\\습니다."
 
 #: ../../faq.rst:195
 msgid ""
@@ -332,11 +331,11 @@ msgid ""
 "use :func:`utils.find`/ :func:`utils.get` on :attr:`Client.emojis` or "
 ":attr:`Guild.emojis` collections."
 msgstr ""
-"서버 이모티콘의 경우, :class:`Emoji` 인스턴스를 전달해야 합니다. ``'<:name:id>'``"
-" 문자열로 전달하는 것도 가능하지만, 전송된 이모티콘을 사용하기 위해서는 이모티콘의"
-" ID 또는 :func:`utils.find`/ :attr:`Client.emojis` 의 :func:`utils.get` 또는"
-" :attr:`Guild.emojis` 컬렉션을 통하여 :meth:`Client.get_emoji` 를 사용하는 방법도"
-" 알아야 합니다.
+"서버 이모티콘의 경우, :class:`Emoji` 인스턴스를 전달해야 합니다. ``'<:name:id>'`` "
+"문자열로 전달하는 것도 가능하지만, 전송된 이모티콘을 사용하기 위해서는 이모티콘의 "
+"ID 또는 :func:`utils.find`/ :attr:`Client.emojis` 의 :func:`utils.get` 또는 "
+":attr:`Guild.emojis` 컬렉션을 통하여 :meth:`Client.get_emoji` 를 사용하는 방법도 "
+"알아야 합니다.
 
 #: ../../faq.rst:199
 msgid ""
@@ -345,14 +344,14 @@ msgid ""
 "message ``\\:python3:`` with the client will result in "
 "``<:python3:232720527448342530>``."
 msgstr ""
-"서버 이모티콘의 이름 또는 ID는 클라이언트가 역슬래시와 함께 ``:custom_emoji:``"
-" 접두사를 붙이는 것으로 찾을 수 있습니다. 예를 들어, 클라이언트에 "
-" ``\\:python3:`` 메시지를 전송하는 것은 ``<:python3:232720527448342530>`` 을"
-" 얻을 수 있습니다.
+"서버 이모티콘의 이름 또는 ID는 클라이언트가 역슬래시와 함께 ``:custom_emoji:`` "
+"접두사를 붙이는 것으로 찾을 수 있습니다. 예를 들어, 클라이언트에 "
+"``\\:python3:`` 메시지를 전송하는 것은 ``<:python3:232720527448342530>`` 을 "
+"얻을 수 있습니다.
 
 #: ../../faq.rst:219
 msgid "How do I pass a coroutine to the player's \"after\" function?"
-msgstr "코루틴을 플레이어의 \"after\" 함수에 어떻게 전달하나요?"
+msgstr "어떻게 코루틴을 플레이어의 \"after\" 함수에 전달하나요?"
 
 #: ../../faq.rst:221
 msgid ""
@@ -361,10 +360,10 @@ msgid ""
 "possible to call a coroutine in the ``after`` parameter. To do so you "
 "must pass a callable that wraps up a couple of aspects."
 msgstr ""
-"라이브러리의 뮤직 플레이어는 분리된 쓰레드를 전송하므로 그것은 코루틴의 안에서"
-" 실행되지 않습니다. 이는 ``after`` 매개변수에 코루틴을 호출할 수 없다는 뜻이"
-" 아닙니다. 이를 하기 위해서는 반드시 몇가지 측면을 정리하여 호출 가능하게끔"
-" 전달해야 합니다.
+"라이브러리의 뮤직 플레이어는 분리된 쓰레드를 전송하므로 그것은 코루틴의 안에서 "
+"실행되지 않습니다. 이는 ``after`` 매개변수에 코루틴을 호출할 수 없다는 뜻이 "
+"아닙니다. 이를 하기 위해서는 반드시 몇 가지 측면을 정리하여 호출할 수 있게끔 "
+"전달해야 합니다.
 
 #: ../../faq.rst:225
 msgid ""
@@ -375,10 +374,10 @@ msgid ""
 ":func:`asyncio.run_coroutine_threadsafe` function that allows us to call "
 "a coroutine from another thread."
 msgstr ""
-"첫 번째로 반드시 알아두어야 할 것은 코루틴을 호출하는 것은 쓰레드로부터 안전한"
-" 조작이 아닙니다. 기술적으로는 다른 쓰레드에 있으므로, 버그를 만들어내지 않기"
-" 위해서는 조심스럽게 쓰레드로부터 안전한 조작을 호출해야 합니다. 운이 좋게도,"
-" :mod:`asyncio` 는 다른 쓰레드에서 코루틴을 호출할 수 있는 "
+"첫 번째로 반드시 알아두어야 할 것은 코루틴을 호출하는 것은 쓰레드로부터 안전한 "
+"조작이 아닙니다. 기술적으로는 다른 쓰레드에 있으므로, 버그를 만들어내지 않기 " 
+"위해서는 조심스럽게 쓰레드에서 안전한 조작을 호출해야 합니다. 운이 좋게도, "
+":mod:`asyncio` 는 다른 쓰레드에서 코루틴을 호출할 수 있는 "
 ":func:`asyncio.run_coroutine_threadsafe` 함수와 수반합니다."
 
 #: ../../faq.rst:230
@@ -387,13 +386,13 @@ msgid ""
 "actually call it we have to fetch its result. Putting all of this "
 "together we can do the following: ::"
 msgstr ""
-"하지만, 이 함수는 :class:`concurrent.Future` 를 반환하고 이를 실질적으로"
-" 호출하기 위해서는 결과를 가져(fetch)와야 합니다. 이를 모두 하기 위해서는"
+"하지만, 이 함수는 :class:`concurrent.Future` 를 반환하고 이를 실질적으로 "
+"호출하기 위해서는 결과를 가져(fetch)와야 합니다. 이를 모두 하기 위해서는 "
 "다음을 따라야 합니다: ::"
 
 #: ../../faq.rst:245
 msgid "How do I run something in the background?"
-msgstr "어떻게 백그라운드에서 무언가를 돌릴 수 있나요?"
+msgstr "어떻게 백그라운드에서 무언가를 실행시키나요?"
 
 #: ../../faq.rst:247
 msgid ""
@@ -405,15 +404,15 @@ msgstr ""
 
 #: ../../faq.rst:250
 msgid "How do I get a specific model?"
-msgstr "특정한 모델은 어떻게 갖고오나요?"
+msgstr "어떻게 특정 모델을 갖고오나요?"
 
 #: ../../faq.rst:252
 msgid ""
 "There are multiple ways of doing this. If you have a specific model's ID "
 "then you can use one of the following functions:"
 msgstr ""
-"여러 방법을 통하여 갖고올 수 있습니다. 그 특정한 모델의 ID가 있는 경우, 아래의"
-" 함수 중 하나를 사용할 수 있습니다:"
+"여러 방법을 통해 갖고올 수 있습니다. 그 특정한 모델의 ID가 있는 경우, 아래의 "
+"함수 중 하나를 사용할 수 있습니다:"
 
 #: ../../faq.rst:255
 msgid ":meth:`Client.get_channel`"
@@ -480,12 +479,12 @@ msgid ""
 "If the functions above do not help you, then use of :func:`utils.find` or"
 " :func:`utils.get` would serve some use in finding specific models."
 msgstr ""
-"위에 있는 함수가 전혀 도움이 되지 않을 경우, :func:`utils.find` 또는"
-" :func:`utils.get` 이 구체적인 모델을 찾는데 사용될 것입니다.
+"위에 있는 함수가 전혀 도움이 되지 않을 경우, :func:`utils.find` 또는 "
+":func:`utils.get` 이 구체적인 모델을 찾는데 사용될 것입니다.
 
 #: ../../faq.rst:288
 msgid "How do I make a web request?"
-msgstr "웹 리퀘스트는 어떻게 만드나요?"
+msgstr "어떻게 웹 리퀘스트를 만드나요?"
 
 #: ../../faq.rst:290
 msgid ""
@@ -493,9 +492,9 @@ msgid ""
 "already uses and requires a 3rd party library for making requests, "
 "``aiohttp``."
 msgstr ""
-"리퀘스트를 만들기 위해서는 차단되지 않는 라이브러리를 사용해야 합니다."
-" 이 라이브러리는 이미 제3자 라이브러리인 ``aiohttp`` 를 사용하고 필요로"
-" 합니다.
+"리퀘스트를 만들기 위해서는 차단되지 않는 라이브러리를 사용해야 합니다. "
+"이 라이브러리는 이미 제3자 라이브러리인 ``aiohttp`` 를 사용하고 필요로 "
+"합니다.
 
 #: ../../faq.rst:300
 msgid ""
@@ -503,8 +502,8 @@ msgid ""
 "<http://aiohttp.readthedocs.io/en/stable/>`_ for more information."
 msgstr ""
 "자세한 내용은 "
-"`aiohttp의 문서 <http://aiohttp.readthedocs.io/en/stable/>`_"
-" 를 참고하세요."
+"`aiohttp의 문서 <http://aiohttp.readthedocs.io/en/stable/>`_ "
+"를 참고하세요."
 
 #: ../../faq.rst:303
 msgid "How do I use a local image file for an embed image?"
@@ -516,9 +515,9 @@ msgid ""
 "an embed so that it will not display separately, but instead in the "
 "embed's thumbnail, image, footer or author icon."
 msgstr ""
-"이미지를 업로드하고 임베드에 첨부하는 것은 디스코드의 특이 케이스로 구분되어"
-" 표시되지는 않지만, 대신 임베드의 썸네일, 이미지, 꼬리말 또는 작성자 아이콘에"
-" 사용하세요.
+"이미지를 업로드하고 임베드에 첨부하는 것은 디스코드의 특이 케이스로 구분되어 "
+"표시되지는 않지만, 대신 임베드의 썸네일, 이미지, 꼬리말 또는 작성자 아이콘에 "
+"사용하세요.
 
 #: ../../faq.rst:308
 msgid ""
@@ -526,9 +525,9 @@ msgid ""
 "and set the embed's image URL to ``attachment://image.png``, where "
 "``image.png`` is the filename of the image you will send."
 msgstr ""
-"그렇게 하기 위해서, 이미지를 :meth:`abc.Messageable.send` 로 업로드하고,"
-" 임베드 이미지의 URL을 ``attachment://image.png`` 로 설정하세요. 이 때,"
-" ``image.png`` 는 보낼 이미지의 파일 이름이 됩니다."
+"그렇게 하기 위해서, 이미지를 :meth:`abc.Messageable.send` 로 업로드하고, "
+"임베드 이미지의 URL을 ``attachment://image.png`` 로 설정하세요. 이 때, "
+"``image.png`` 는 보낼 이미지의 파일 이름이 됩니다."
 
 #: ../../faq.rst:322
 msgid "Due to a Discord limitation, filenames may not include underscores."
@@ -543,8 +542,8 @@ msgid ""
 "Since Discord does not dispatch this information in the gateway, the "
 "library cannot provide this information. This is currently a Discord "
 "limitation."
-msgstr "디스코드는 이 정보를 대역폭에 전송하지 않으므로, 해당 라이브러리는"
-" 이 정보를 제공할 수 없습니다. 이는 디스코드의 한계입니다."
+msgstr "디스코드는 이 정보를 대역폭에 전송하지 않으므로, 해당 라이브러리는 "
+"이 정보를 제공할 수 없습니다. 이는 디스코드의 한계입니다."
 
 #: ../../faq.rst:331
 msgid "Commands Extension"
@@ -556,7 +555,7 @@ msgstr "``discord.ext.commands`` 와 관련된 질문은 여기에 있습니다.
 
 #: ../../faq.rst:336
 msgid "Why does ``on_message`` make my commands stop working?"
-msgstr "왜 ``on_message`` 는 제 명령어를 멈추게 만들죠?"
+msgstr "왜 ``on_message`` 는 명령어를 멈추게 만들죠?"
 
 #: ../../faq.rst:338
 msgid ""
@@ -564,13 +563,13 @@ msgid ""
 " from running. To fix this, add a ``bot.process_commands(message)`` line "
 "at the end of your ``on_message``. For example: ::"
 msgstr ""
-"``on_message`` 에 제공된 기본값을 재정의하는 것은 추가 명령을"
-" 발생시키지 않습니다. 이를 해결하기 위해, ``bot.process_commands(message)``"
-" 라인을 ``on_message`` 함수의 가장 끝에 배치하세요. 예를 들어: ::"
+"``on_message`` 에 제공된 기본값을 재정의하는 것은 추가 명령을 "
+"발생시키지 않습니다. 이를 해결하기 위해, ``bot.process_commands(message)`` "
+"라인을 ``on_message`` 함수의 가장 끝에 배치하세요. 예를 들어: ::"
 
 #: ../../faq.rst:348
 msgid "Why do my arguments require quotes?"
-msgstr "왜 제 인자에 인용구(따옴표)가 필요하죠?"
+msgstr "왜 인자에 인용구(따옴표)가 필요하죠?"
 
 #: ../../faq.rst:350
 msgid "In a simple command defined as: ::"
@@ -583,9 +582,9 @@ msgid ""
 " b c\"`` or change the signature to have \"consume rest\" behaviour. "
 "Example: ::"
 msgstr ""
-"``?echo a b c`` 를 호출하는 것은 맨 처음의 인자만 불러오고 다른 인자는"
-" 전부 무시합니다. 이를 해결하기 위해, ``?echo \"a b c\"`` 를 사용하거나"
-" \"consume rest\" 행동을 갖도록 서명을 변경하세요. 예: ::"
+"``?echo a b c`` 를 호출하는 것은 맨 처음의 인자만 불러오고 다른 인자는 "
+"전부 무시합니다. 이를 해결하기 위해, ``?echo \"a b c\"`` 를 사용하거나 "
+"\"consume rest\" 행동을 갖도록 서명을 변경하세요. 예: ::"
 
 #: ../../faq.rst:363
 msgid "This will allow you to use ``?echo a b c`` without needing the quotes."
@@ -623,4 +622,3 @@ msgstr ""
 #: ../../faq.rst:394
 msgid "This could then be used as ``?git push origin master``."
 msgstr "그리고 이것은 ``?git push origin master`` 로 사용될 수도 있습니다."
-
