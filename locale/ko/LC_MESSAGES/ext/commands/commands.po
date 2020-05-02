@@ -689,7 +689,7 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:561
 msgid "Error Handling"
-msgstr ""
+msgstr "에러 다루기"
 
 #: ../../ext/commands/commands.rst:563
 msgid ""
@@ -724,7 +724,7 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:590
 msgid "Checks"
-msgstr ""
+msgstr "체크"
 
 #: ../../ext/commands/commands.rst:592
 msgid ""
@@ -819,7 +819,7 @@ msgid ""
 "Sometimes we want to apply a check to **every** command, not just certain"
 " commands. The library supports this as well using the global check "
 "concept."
-msgstr "가끔 우리는 특정 명령어 말고 **모든** 명령어에 체크를 적용하고 싶을때가 있습니다. 이 명령어는 글로벌 체크를 통해 이 기능을 지원합니다."
+msgstr "가끔 우리는 특정 명령어 말고 **모든** 명령어에 체크를 적용하고 싶을때가 있습니다. 이 라이브러리는 글로벌 체크를 통해 이 기능을 지원합니다."
 
 #: ../../ext/commands/commands.rst:716
 msgid ""
