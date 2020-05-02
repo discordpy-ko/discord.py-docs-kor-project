@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:105
 msgid "Variable"
-msgstr ""
+msgstr "변수"
 
 #: ../../ext/commands/commands.rst:107
 msgid ""
@@ -812,28 +812,28 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:711
 msgid "Global Checks"
-msgstr ""
+msgstr "글로벌 체크"
 
 #: ../../ext/commands/commands.rst:713
 msgid ""
 "Sometimes we want to apply a check to **every** command, not just certain"
 " commands. The library supports this as well using the global check "
 "concept."
-msgstr ""
+msgstr "가끔 우리는 특정 명령어 말고 **모든** 명령어에 체크를 적용하고 싶을때가 있습니다. 이 명령어는 글로벌 체크를 통해 이 기능을 지원합니다."
 
 #: ../../ext/commands/commands.rst:716
 msgid ""
 "Global checks work similarly to regular checks except they are registered"
 " with the :func:`.Bot.check` decorator."
-msgstr ""
+msgstr "글로벌 체크는 :func:`.Bot.check` 데코레이터와 함께 등록된다는 것을 제외하면 기본 체크들과 동일하게 작동합니다."
 
 #: ../../ext/commands/commands.rst:718
 msgid "For example, to block all DMs we could do the following:"
-msgstr ""
+msgstr "예를 들면, 모든 DM을 막기 위해 이렇게 할 수도 있습니다:"
 
 #: ../../ext/commands/commands.rst:728
 msgid ""
 "Be careful on how you write your global checks, as it could also lock you"
 " out of your own bot."
-msgstr ""
+msgstr "당신이 당신의 봇을 사용 못하도록 만들 수도 있기 때문에 글로벌 체크를 작성할 때는 조심하세요."
 
