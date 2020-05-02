@@ -56,7 +56,7 @@ msgstr ":class:`~discord.ext.commands.Cog` 에서의 간단한 백그라운드 �
 
 #: ../../ext/tasks/index.rst:38
 msgid "Adding an exception to handle during reconnect:"
-msgstr "재연결중 발생하는 예외를 처리하기 위해 예외 추가:"
+msgstr "재연결 중 발생하는 예외를 처리하기 위해 예외 추가:"
 
 #: ../../ext/tasks/index.rst:61
 msgid "Looping a certain amount of times before exiting:"
@@ -86,7 +86,7 @@ msgstr "이것을 생성하는 주요 인터페이스는 :func:`loop` 를 통한
 
 #: discord.ext.tasks.Loop.current_loop:1 of
 msgid "The current iteration of the loop."
-msgstr "루프의 현재 반복중인 곳."
+msgstr "루프의 현재 반복 중인 곳."
 
 #: discord.ext.tasks.Loop.current_loop discord.ext.tasks.Loop.next_iteration of
 msgid "type"
@@ -133,11 +133,11 @@ msgstr "예외"
 
 #: discord.ext.tasks.Loop.start:6 of
 msgid "A task has already been launched and is running."
-msgstr "태스크가 이미 시작되었고 돌아가는 중입니다."
+msgstr "태스크가 이미 시작되었고 실행되는 중입니다."
 
 #: discord.ext.tasks.Loop.remove_exception_type discord.ext.tasks.Loop.start of
 msgid "Returns"
-msgstr "반환값"
+msgstr "반환 값"
 
 #: discord.ext.tasks.Loop.start:8 of
 msgid "The task that has been created."
@@ -153,13 +153,13 @@ msgstr ":class:`asyncio.Task`"
 
 #: discord.ext.tasks.Loop.stop:1 of
 msgid "Gracefully stops the task from running."
-msgstr "돌아가는 태스크를 정지합니다."
+msgstr "돌아가는 태스크를 중지합니다."
 
 #: discord.ext.tasks.Loop.stop:3 of
 msgid ""
 "Unlike :meth:`cancel`\\, this allows the task to finish its current "
 "iteration before gracefully exiting."
-msgstr ":meth:`cancel`\\과는 달리, 태스크를 정지하기 전에 현재 반복중인 것을 완료하게 만듭니다."
+msgstr ":meth:`cancel`\\과는 달리, 태스크를 중지하기 전에 현재 반복 중인 것을 완료하게 만듭니다."
 
 #: discord.ext.tasks.Loop.stop:8 of
 msgid ""
@@ -185,7 +185,7 @@ msgstr "내부 태스크를 재시작하기 위한 편리한 방법."
 msgid ""
 "Due to the way this function works, the task is not returned like "
 ":meth:`start`."
-msgstr "이 함수가 작동하는 방식때문에, :meth:`start`\\처럼 태스크가 반환되지 않습니다."
+msgstr "이 함수가 작동하는 방식 때문에, :meth:`start`\\처럼 태스크가 반환되지 않습니다."
 
 #: discord.ext.tasks.Loop.restart:8 of
 msgid "The arguments to to use."
@@ -200,7 +200,7 @@ msgid ""
 "By default the exception types handled are those handled by "
 ":meth:`discord.Client.connect`\\, which includes a lot of internet "
 "disconnection errors."
-msgstr "기본 상태에서는 처리되는 예외 형식들은 :meth:`discord.Client.connect`\\로 처리되는데, 많은 인터넷 연결 끊어짐 오류들을 포함하고 있습니다."
+msgstr "기본 상태에서는 처리되는 예외 형식들은 :meth:`discord.Client.connect`\\로 처리되는데, 많은 인터넷 연결 끊어짐 오류를 포함하고 있습니다."
 
 #: discord.ext.tasks.Loop.add_exception_type:7 of
 msgid ""
@@ -362,11 +362,10 @@ msgstr "루프의 반복 횟수, 만약에 무한 반복이어야 한다면 ``No
 msgid ""
 "Whether to handle errors and restart the task using an exponential back-"
 "off algorithm similar to the one used in :meth:`discord.Client.connect`."
-msgstr ":meth:`discord.Client.connect`\\에 사용된 것 처럼 기하급수적인 백오프 알고리즘으로 오류를 처리하거나 태스크를 재시작할지의 여부"
+msgstr ":meth:`discord.Client.connect`\\에 사용된 것처럼 기하급수적인 백오프 알고리즘으로 오류를 처리하거나 태스크를 재시작할지의 여부"
 
 #: discord.ext.tasks.loop:17 of
 msgid ""
 "The loop to use to register the task, if not given defaults to "
 ":func:`asyncio.get_event_loop`."
 msgstr "태스크를 등록하기 위해 사용하는 루프, 만약에 주어지지 않았다면 기본으로 :func:`asyncio.get_event_loop`."
-
