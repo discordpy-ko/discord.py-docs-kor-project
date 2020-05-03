@@ -93,7 +93,7 @@ msgstr "특정 매개변수 종류는 유저쪽에서 다른 것을 하고 대�
 
 #: ../../ext/commands/commands.rst:73
 msgid "Positional"
-msgstr ""
+msgstr "위치"
 
 #: ../../ext/commands/commands.rst:75
 msgid ""
@@ -165,7 +165,7 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:136
 msgid "Keyword-Only Arguments"
-msgstr ""
+msgstr "키워드 전용 전달인자"
 
 #: ../../ext/commands/commands.rst:138
 msgid ""
@@ -732,40 +732,41 @@ msgid ""
 " have permissions to do so or maybe we blocked them from using our bot "
 "earlier. The commands extension comes with full support for these things "
 "in a concept called a :ref:`ext_commands_api_checks`."
-msgstr ""
+msgstr "우리가 유저들이 전용 명령어를 사용하지 못하게 막고 싶을 때가 있습니다. 그들에게 권한이 없거나 우리가 그들이 봇을 사용하지 못하도록 막았었을 수도 있습니다. "
+"명령어 확장자는 이것들을 위한 완전한 지원이 :ref:`ext_commands_api_checks`\\로 함께 옵니다."
 
 #: ../../ext/commands/commands.rst:596
 msgid ""
 "A check is a basic predicate that can take in a :class:`.Context` as its "
 "sole parameter. Within it, you have the following options:"
-msgstr ""
+msgstr "체크는 :class:`.Context`\\에서 단독 매개 변수로 자리잡는 기본적인 서술자입니다. 이 안에서, 당신에게는 이런 옵션들이 있습니다:"
 
 #: ../../ext/commands/commands.rst:599
 msgid "Return ``True`` to signal that the person can run the command."
-msgstr ""
+msgstr "이 사람이 명령어를 사용할 수 있다고 ``True``\\를 시그널에 반환."
 
 #: ../../ext/commands/commands.rst:600
 msgid "Return ``False`` to signal that the person cannot run the command."
-msgstr ""
+msgstr "이 사람이 명령어를 사용할 수 없다고 ``False``\\를 시그널에 반환."
 
 #: ../../ext/commands/commands.rst:601
 msgid ""
 "Raise a :exc:`~ext.commands.CommandError` derived exception to signal the"
 " person cannot run the command."
-msgstr ""
+msgstr "이 사람이 명령어를 사용할 수 없다고 :exc:`~ext.commands.CommandError` 예외를 일으키기."
 
 #: ../../ext/commands/commands.rst:603
 msgid ""
 "This allows you to have custom error messages for you to handle in the "
 ":ref:`error handlers <ext_commands_error_handler>`."
-msgstr ""
+msgstr "이는 당신이 :ref:`error handlers <ext_commands_error_handler>`\\를 다루기 위해 당신만을 위한 커스텀 오류 메시지를 만들 수 있게 합니다."
 
 #: ../../ext/commands/commands.rst:606
 msgid ""
 "To register a check for a command, we would have two ways of doing so. "
 "The first is using the :meth:`~ext.commands.check` decorator. For "
 "example:"
-msgstr ""
+msgstr "명령어에 체크를 등록하기 위해, 우리는 2가지 방법으로 할 수 있습니다. 첫번째 방법은 :meth:`~ext.commands.check` 데코레이터를 사용하는 것입니다. 예를 들어:"
 
 #: ../../ext/commands/commands.rst:620
 msgid ""
