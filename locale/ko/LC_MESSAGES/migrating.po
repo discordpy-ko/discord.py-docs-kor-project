@@ -40,7 +40,7 @@ msgid ""
 " Things are done on the :ref:`models <discord_api_models>` instead of "
 "requiring a :class:`Client` instance to do any work."
 msgstr "재설계에는 여러 가지 요소들을 더 쉽게, 그리고 더 자연스럽게 만드는 것이 포함됩니다."
-"이러한 작업은 어떤 일을 하기 위해 :class:`Client` 의 객체를 요구하는 대신에"
+"이러한 작업은 어떤 일을 하기 위해 :class:`Client` 의 객체를 요구하는 대신에 "
 ":ref:`models <discord_api_models>` 위에서 완료됩니다."
 
 #: ../../migrating.rst:18
@@ -218,7 +218,7 @@ msgid ""
 ":class:`Client` and put into their respective :ref:`model "
 "<discord_api_models>`."
 msgstr ""
-"이전에 언급했듯이, 많은 기능이 :class:`Client` 의 밖으로 이동해 각각의 :ref:`model <discord_api_models>`"
+"이전에 언급했듯이, 많은 기능이 :class:`Client` 의 밖으로 이동해 각각의 :ref:`model <discord_api_models>`\\"
 "에 포함되었습니다."
 
 #: ../../migrating.rst:92
@@ -601,7 +601,7 @@ msgid ""
 ":meth:`abc.Messageable.trigger_typing` (use "
 ":meth:`abc.Messageable.typing`)"
 msgstr ""
-":meth:`abc.Messageable.trigger_typing`"
+":meth:`abc.Messageable.trigger_typing` "
 "(:meth:`abc.Messageable.typing` 를 사용합니다)"
 
 #: ../../migrating.rst:195
