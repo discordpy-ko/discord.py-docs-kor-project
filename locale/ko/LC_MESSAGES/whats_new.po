@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../whats_new.rst:9
 msgid "Changelog"
-msgstr ""
+msgstr "바뀐것에 대한 기록"
 
 #: ../../whats_new.rst:11
 msgid ""
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../whats_new.rst:17
 msgid "v1.3.3"
-msgstr ""
+msgstr "v1.3.3"
 
 #: ../../whats_new.rst:20 ../../whats_new.rst:35 ../../whats_new.rst:53
 #: ../../whats_new.rst:138 ../../whats_new.rst:189 ../../whats_new.rst:199
