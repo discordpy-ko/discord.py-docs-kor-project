@@ -2832,17 +2832,17 @@ msgid ""
 "Which could either be :class:`TextChannel`, :class:`GroupChannel`, or "
 ":class:`DMChannel`."
 msgstr ""
-"``channel`` 의 매개변수는 :class:`abc.Messageable` 의 인스턴스입니다. "
-"이것이 :class:`TextChannel`, :class:`GroupChannel`, 혹은 "
-":class:`DMChannel`가 될수도 있습니다.."
+"``channel``\\의 매개변수는 :class:`abc.Messageable`\\의 인스턴스입니다. "
+"이것이 :class:`TextChannel`\\, :class:`GroupChannel`\\, 혹은 "
+":class:`DMChannel`\\가 될수도 있습니다.."
 
 #: ../../api.rst:221
 msgid ""
 "If the ``channel`` is a :class:`TextChannel` then the ``user`` parameter "
 "is a :class:`Member`, otherwise it is a :class:`User`."
 msgstr ""
-"만약에 ``channel`` 에 대한 :class:`TextChannel`유저라면 ``user`` 매게변수값이 "
-":class:`Member`로 반환되고, 아닐경우 :class:`User`로 반환됩니다.."
+"만약에 ``channel``\\에 대한 :class:`TextChannel` 유저라면 ``user`` 매게변수값이 "
+":class:`Member`\\로 반환되고, 아닐경우 :class:`User`\\로 반환됩니다."
 
 #: ../../api.rst:224
 msgid "The location where the typing originated from."
@@ -2871,7 +2871,7 @@ msgstr ""
 "봇의 메세지과 개인 이벤트는 이 이벤트를 통해 전송됩니다."
 "봇이 프로그래밍된 방식에 따라, <재귀> 현상이 발생할 수 있습니다."
 "따라서, 봇 자신에 응답하지 않게할려면, 사용자ID 확인을 해보시기 바랍니다."
-"이 현상은 :class:`~ext.commands.Bot`에서 발생하지는 않습니다."
+"이 현상은 :class:`~ext.commands.Bot`\\에서 발생하지는 않습니다."
 
 #: ../../api.rst:243
 msgid "The current message."
