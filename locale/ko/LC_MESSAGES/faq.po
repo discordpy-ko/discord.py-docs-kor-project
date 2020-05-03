@@ -115,8 +115,8 @@ msgid ""
 ":func:`time.sleep`. Don't do that. Use :func:`asyncio.sleep` instead. "
 "Similar to this example: ::"
 msgstr ""
-"호출을 너무 오랫동안 차단하는 대표적인 원인은 :func:`time.sleep` 입니다."
-":func:`asyncio.sleep` 을 대신 사용하세요. 아래의 예시를 참고하세요:"
+"호출을 너무 오랫동안 차단하는 대표적인 원인은 :func:`time.sleep` 입니다. "
+":func:`asyncio.sleep`\\을 대신 사용하세요. 아래의 예시를 참고하세요: ::"
 
 #: ../../faq.rst:54
 msgid ""
