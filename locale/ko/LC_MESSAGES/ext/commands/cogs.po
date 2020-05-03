@@ -241,7 +241,7 @@ msgid ""
 ":meth:`.Cog.walk_commands` generator. ::"
 msgstr ""
 "만약 서브커맨드들 또한 얻고 싶으면, :meth:`.Cog.walk_commands`"
-"제너레이터 사용이 가능합니다. ::"
+" 제너레이터 사용이 가능합니다. ::"
 
 #: ../../ext/commands/cogs.rst:155
 msgid ""

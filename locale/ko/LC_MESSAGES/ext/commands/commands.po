@@ -412,51 +412,51 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:374 ../../ext/commands/commands.rst:396
 msgid ":class:`Member`"
-msgstr ""
+msgstr ":class:`Member`"
 
 #: ../../ext/commands/commands.rst:375 ../../ext/commands/commands.rst:400
 msgid ":class:`User`"
-msgstr ""
+msgstr ":class:`User`"
 
 #: ../../ext/commands/commands.rst:376 ../../ext/commands/commands.rst:402
 msgid ":class:`TextChannel`"
-msgstr ""
+msgstr ":class:`TextChannel`"
 
 #: ../../ext/commands/commands.rst:377 ../../ext/commands/commands.rst:404
 msgid ":class:`VoiceChannel`"
-msgstr ""
+msgstr ":class:`VoiceChannel`"
 
 #: ../../ext/commands/commands.rst:378 ../../ext/commands/commands.rst:406
 msgid ":class:`CategoryChannel`"
-msgstr ""
+msgstr ":class:`CategoryChannel`"
 
 #: ../../ext/commands/commands.rst:379 ../../ext/commands/commands.rst:408
 msgid ":class:`Role`"
-msgstr ""
+msgstr ":class:`Role`"
 
 #: ../../ext/commands/commands.rst:380
 msgid ":class:`Message` (since v1.1)"
-msgstr ""
+msgstr ":class:`Message` (v1.1 부터)"
 
 #: ../../ext/commands/commands.rst:381 ../../ext/commands/commands.rst:410
 msgid ":class:`Invite`"
-msgstr ""
+msgstr ":class:`Invite`"
 
 #: ../../ext/commands/commands.rst:382 ../../ext/commands/commands.rst:412
 msgid ":class:`Game`"
-msgstr ""
+msgstr ":class:`Game`"
 
 #: ../../ext/commands/commands.rst:383 ../../ext/commands/commands.rst:414
 msgid ":class:`Emoji`"
-msgstr ""
+msgstr ":class:`Emoji`"
 
 #: ../../ext/commands/commands.rst:384 ../../ext/commands/commands.rst:416
 msgid ":class:`PartialEmoji`"
-msgstr ""
+msgstr ":class:`PartialEmoji`"
 
 #: ../../ext/commands/commands.rst:385 ../../ext/commands/commands.rst:418
 msgid ":class:`Colour`"
-msgstr ""
+msgstr ":class:`Colour`"
 
 #: ../../ext/commands/commands.rst:387
 msgid ""
@@ -473,63 +473,63 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:394
 msgid "Discord Class"
-msgstr ""
+msgstr "디스코드 클래스"
 
 #: ../../ext/commands/commands.rst:394
 msgid "Converter"
-msgstr ""
+msgstr "변환기"
 
 #: ../../ext/commands/commands.rst:396
 msgid ":class:`~ext.commands.MemberConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.MemberConverter`"
 
 #: ../../ext/commands/commands.rst:398
 msgid ":class:`Message`"
-msgstr ""
+msgstr ":class:`Message`"
 
 #: ../../ext/commands/commands.rst:398
 msgid ":class:`~ext.commands.MessageConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.MessageConverter`"
 
 #: ../../ext/commands/commands.rst:400
 msgid ":class:`~ext.commands.UserConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.UserConverter`"
 
 #: ../../ext/commands/commands.rst:402
 msgid ":class:`~ext.commands.TextChannelConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.TextChannelConverter`"
 
 #: ../../ext/commands/commands.rst:404
 msgid ":class:`~ext.commands.VoiceChannelConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.VoiceChannelConverter`"
 
 #: ../../ext/commands/commands.rst:406
 msgid ":class:`~ext.commands.CategoryChannelConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.CategoryChannelConverter`"
 
 #: ../../ext/commands/commands.rst:408
 msgid ":class:`~ext.commands.RoleConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.RoleConverter`"
 
 #: ../../ext/commands/commands.rst:410
 msgid ":class:`~ext.commands.InviteConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.InviteConverter`"
 
 #: ../../ext/commands/commands.rst:412
 msgid ":class:`~ext.commands.GameConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.GameConverter`"
 
 #: ../../ext/commands/commands.rst:414
 msgid ":class:`~ext.commands.EmojiConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.EmojiConverter`"
 
 #: ../../ext/commands/commands.rst:416
 msgid ":class:`~ext.commands.PartialEmojiConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.PartialEmojiConverter`"
 
 #: ../../ext/commands/commands.rst:418
 msgid ":class:`~ext.commands.ColourConverter`"
-msgstr ""
+msgstr ":class:`~ext.commands.ColourConverter`"
 
 #: ../../ext/commands/commands.rst:421
 msgid ""
@@ -539,7 +539,7 @@ msgstr ""
 
 #: ../../ext/commands/commands.rst:438
 msgid "Special Converters"
-msgstr ""
+msgstr "특별한 변환기"
 
 #: ../../ext/commands/commands.rst:440
 msgid ""
