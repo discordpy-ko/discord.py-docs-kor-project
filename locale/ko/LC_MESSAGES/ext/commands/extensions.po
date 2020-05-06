@@ -127,7 +127,7 @@ msgid ""
 "extension is unloaded."
 msgstr "가끔 확장을 정리하거나 언로드되었는지 확인해야 할 때가 있습니다. "
 "이런 경우를 위해 ``teardown`` 진입점이 존재합니다. 이는 "
-"``setup``과 비슷하지만 확장이 언로드될 때 호출됩니다."
+"``setup``\\과 비슷하지만 확장이 언로드될 때 호출됩니다."
 
 #: ../../ext/commands/extensions.rst:57
 msgid "basic_ext.py"
