@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../whats_new.rst:9
 msgid "Changelog"
-msgstr "바꿈 통나무"
+msgstr "바뀐 것에 대한 기록"
 
 #: ../../whats_new.rst:11
 msgid ""
