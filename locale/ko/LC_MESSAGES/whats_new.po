@@ -58,11 +58,11 @@ msgstr ""
 
 #: ../../whats_new.rst:30
 msgid "v1.3.2"
-msgstr ""
+msgstr "v1.3.2"
 
 #: ../../whats_new.rst:32
 msgid "Another minor bug fix release."
-msgstr ""
+msgstr "다른 버그 수정판도 배포되었습니다"
 
 #: ../../whats_new.rst:37
 msgid ""
@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../whats_new.rst:39
 msgid "Fix various Cloudflare handling errors (:issue:`2572`, :issue:`2544`)"
-msgstr ""
+msgstr "다양한 Cloudflare 오류도 수정하였습니다. (:issue:`2572`, :issue:`2544`)"
 
 #: ../../whats_new.rst:40
 msgid ""
