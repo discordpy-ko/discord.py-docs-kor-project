@@ -25,7 +25,7 @@ msgstr "바뀐 것에 대한 기록"
 msgid ""
 "This page keeps a detailed human friendly rendering of what's new and "
 "changed in specific versions."
-msgstr ""
+msgstr "이 페이지는 새로운 것과 새로운 것에 대해 히 서술하여줍니다."
 
 #: ../../whats_new.rst:17
 msgid "v1.3.3"
