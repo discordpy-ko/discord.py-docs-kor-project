@@ -50,11 +50,11 @@ msgstr "기본 WS를 1000대신 4000으로 바꿉니다"
 msgid ""
 "The previous close code caused sessions to be invalidated at a higher "
 "frequency than desired."
-msgstr ""
+msgstr "세션이 더 높은 곳으로 가 전에 있던 코드는 닫히게 되었습니다."
 
 #: ../../whats_new.rst:25
 msgid "Fix ``None`` appearing in ``Member.activities``. (:issue:`2619`)"
-msgstr ""
+msgstr "``Member.activities`` 의 ``None``를 . (:issue:`2619`)"
 
 #: ../../whats_new.rst:30
 msgid "v1.3.2"
