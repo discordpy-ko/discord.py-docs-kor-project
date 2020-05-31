@@ -10995,47 +10995,58 @@ msgstr ""
 #: ../../api.rst:2420
 msgid "TextChannel"
 msgstr ""
+"텍스트 채널"
 
 #: discord.TextChannel:1 of
 msgid "Represents a Discord guild text channel."
 msgstr ""
+"디스코드 길드 텍스트 채널을 나타냅니다."
 
 #: discord.CategoryChannel:9 discord.DMChannel:7 discord.GroupChannel:7
 #: discord.TextChannel:7 discord.VoiceChannel:7 of
 msgid "Checks if two channels are equal."
 msgstr ""
+"두 채널이 같은지 확인합니다."
 
 #: discord.CategoryChannel:13 discord.DMChannel:11 discord.GroupChannel:11
 #: discord.TextChannel:11 discord.VoiceChannel:11 of
 msgid "Checks if two channels are not equal."
 msgstr ""
+"두 채널이 같지 않은지 확인합니다."
 
 #: discord.DMChannel:15 discord.GroupChannel:15 discord.TextChannel:15
 #: discord.VoiceChannel:15 of
 msgid "Returns the channel's hash."
 msgstr ""
+"채널의 해시값을 리턴합니다."
 
 #: discord.TextChannel:19 discord.VoiceChannel:19 of
 msgid "Returns the channel's name."
 msgstr ""
+"채널의 이름을 리턴합니다."
 
 #: discord.TextChannel:35 discord.VoiceChannel:35 of
 msgid "The channel ID."
 msgstr ""
+"채널의 ID."
 
 #: discord.TextChannel:41 discord.VoiceChannel:41 of
 msgid "The category channel ID this channel belongs to, if applicable."
 msgstr ""
+"해당되는 경우, 이 채널이 속하는 카테고리 채널의 ID."
 
 #: discord.TextChannel:47 of
 msgid "The channel's topic. None if it doesn't exist."
 msgstr ""
+"채널의 주제. 없을 경우 None입니다."
 
 #: discord.TextChannel:60 of
 msgid ""
 "The last message ID of the message sent to this channel. It may *not* "
 "point to an existing or valid message."
 msgstr ""
+"이 채널로 전송된 마지막 메시지의 ID. 존재하지 *않는* 메시지나 "
+"유효하지 *않은* 메시지를 가리킬 수도 있습니다."
 
 #: discord.TextChannel:67 of
 msgid ""
@@ -11044,12 +11055,18 @@ msgid ""
 " :attr:`~Permissions.manage_channels` or "
 ":attr:`~Permissions.manage_messages` bypass slowmode."
 msgstr ""
+"멤버가 메시지를 보낼 때까지 기다려야 하는 시간(초) 입니다. "
+"`0` 일 경우 이것이 비활성화 되어 있음을 나타냅니다. "
+":attr:`~Permissions.manage_channels` 또는 "
+":attr:`~Permissions.manage_messages` 가 있는 봇 및 사용자는 슬로우 모드를 무시합니다."
+
 
 #: discord.CategoryChannel.type:1 discord.DMChannel.type:1
 #: discord.GroupChannel.type:1 discord.TextChannel.type:1
 #: discord.VoiceChannel.type:1 of
 msgid "The channel's Discord type."
 msgstr ""
+"채널의 디스코드 타입."
 
 #: discord.CategoryChannel.type:3 discord.DMChannel.type:3
 #: discord.GroupChannel.type:3 discord.PartialInviteChannel:40
@@ -11060,26 +11077,32 @@ msgstr ""
 #: discord.TextChannel.members:1 of
 msgid "Returns all members that can see this channel."
 msgstr ""
+"이 채널을 볼 수 있는 모든 멤버를 리턴합니다."
 
 #: discord.TextChannel.is_nsfw:1 of
 msgid "Checks if the channel is NSFW."
 msgstr ""
+"채널이 NSFW 인지 확인합니다."
 
 #: discord.TextChannel.is_news:1 of
 msgid "Checks if the channel is a news channel."
 msgstr ""
+"채널이 뉴스 채널인지 확인합니다."
 
 #: discord.TextChannel.last_message:1 of
 msgid "Fetches the last message from this channel in cache."
 msgstr ""
+"캐시에서 이 채널의 마지막 메시지를 가져옵니다."
 
 #: discord.TextChannel.last_message:3 of
 msgid "The message might not be valid or point to an existing message."
 msgstr ""
+"메시지는 유효하지 않거나 존재하지 않는 메시지를 가리킬 수도 있습니다."
 
 #: discord.TextChannel.last_message:5 of
 msgid "Reliable Fetching"
 msgstr ""
+"안정적으로 가져오기"
 
 #: discord.TextChannel.last_message:8 of
 msgid ""
@@ -11087,15 +11110,20 @@ msgid ""
 "consider using either :meth:`history` or :meth:`fetch_message` with the "
 ":attr:`last_message_id` attribute."
 msgstr ""
+"약간 더 안정적인 방법으로 마지막 메시지를 가져오려면, "
+":attr:`last_message_id` 속성과 함께 "
+":meth:`history` 또는 :meth:`fetch_message` 를 사용하는 것을 고려하십시오."
 
 #: discord.TextChannel.last_message:13 of
 msgid "The last message in this channel or ``None`` if not found."
 msgstr ""
+"이 채널의 마지막 메시지. 존재하지 않을 경우 ``None`` 입니다."
 
 #: discord.CategoryChannel.edit:3 discord.TextChannel.edit:3
 #: discord.VoiceChannel.edit:3 of
 msgid "Edits the channel."
 msgstr ""
+"채널을 편집합니다."
 
 #: discord.CategoryChannel.edit:5 discord.TextChannel.edit:5
 #: discord.VoiceChannel.edit:5 of
@@ -11103,39 +11131,49 @@ msgid ""
 "You must have the :attr:`~Permissions.manage_channels` permission to use "
 "this."
 msgstr ""
+"이것을 사용하려면 :attr:`~Permissions.manage_channels` 권한이 있어야 합니다."
 
 #: discord.CategoryChannel.edit:8 discord.TextChannel.edit:8
 #: discord.VoiceChannel.edit:8 of
 msgid "The ``overwrites`` keyword-only parameter was added."
 msgstr ""
+"``overwrites`` 키워드 전용 매개변수가 추가되었습니다."
 
 #: discord.TextChannel.edit:11 of
 msgid "The new channel name."
 msgstr ""
+"채널의 새 이름."
 
 #: discord.TextChannel.edit:15 discord.VoiceChannel.edit:17 of
 msgid "The new channel's position."
 msgstr ""
+"채널의 새 주제."
 
 #: discord.TextChannel.edit:19 discord.VoiceChannel.edit:19 of
 msgid ""
 "Whether to sync permissions with the channel's new or pre-existing "
 "category. Defaults to ``False``."
 msgstr ""
+"채널의 새 카테고리 또는 기존 카테고리와 권한을 동기화할지 여부입니다. "
+"기본값은 ``False`` 입니다."
 
 #: discord.TextChannel.edit:22 discord.VoiceChannel.edit:22 of
 msgid "The new category for this channel. Can be ``None`` to remove the category."
 msgstr ""
+"이 채널의 새 카테고리입니다. 카테고리를 제거하려면 ``None`` 을 쓸 수 있습니다."
 
 #: discord.TextChannel.edit:25 of
 msgid ""
 "Specifies the slowmode rate limit for user in this channel, in seconds. A"
 " value of `0` disables slowmode. The maximum value possible is `21600`."
 msgstr ""
+"이 채널의 사용자에 대한 슬로우 모드 속도 제한을 초 단위로 지정합니다. "
+"`0` 일 경우 슬로우 모드를 비활성화합니다. 가능한 최댓값은 `21600` 입니다."
 
 #: discord.TextChannel.edit:28 discord.VoiceChannel.edit:25 of
 msgid "The reason for editing this channel. Shows up on the audit log."
 msgstr ""
+"채널을 변경하는 사유입니다. 감사 로그에 뜨게 됩니다."
 
 #: discord.CategoryChannel.edit:19 discord.TextChannel.edit:30
 #: discord.VoiceChannel.edit:27 of
@@ -11143,26 +11181,34 @@ msgid ""
 "A :class:`dict` of target (either a role or a member) to "
 ":class:`PermissionOverwrite` to apply to the channel."
 msgstr ""
+"채널에 적용할 :class:`PermissionOverwrite` 에 대한 "
+"대상 (역할 또는 멤버) 의 :class:`dict` 입니다."
 
 #: discord.TextChannel.edit:34 of
 msgid ""
 "If position is less than 0 or greater than the number of channels, or if"
 "     the permission overwrite information is not in proper form."
 msgstr ""
+"채널 위치가 0보다 작거나 전체 채널 수보다 클 경우, 또는 "
+"권한 덮어쓰기 정보가 올바른 형식이 아닙니다."
 
 #: discord.TextChannel.edit:35 discord.VoiceChannel.edit:32 of
 msgid "You do not have permissions to edit the channel."
 msgstr ""
+"이 채널을 수정할 수 있는 권한이 없습니다."
 
 #: discord.TextChannel.edit:36 discord.VoiceChannel.edit:33 of
 msgid "Editing the channel failed."
 msgstr ""
+"채널 수정에 실패했습니다."
 
 #: discord.TextChannel.delete_messages:3 of
 msgid ""
 "Deletes a list of messages. This is similar to :meth:`Message.delete` "
 "except it bulk deletes multiple messages."
 msgstr ""
+"메시지 목록을 삭제합니다. 여러 메시지를 대량으로 삭제한다는 점을 "
+"제외하면 :meth:`Message.delete` 와 비슷합니다."
 
 #: discord.TextChannel.delete_messages:6 of
 msgid ""
@@ -11170,44 +11216,55 @@ msgid ""
 "If the number of messages is 1 then single message delete is done. If "
 "it's more than two, then bulk delete is used."
 msgstr ""
+"특별한 경우로, 메시지 수가 0이면 아무것도 수행되지 않습니다. "
+"메시지 수가 1이면 단일 메시지 삭제가 수행됩니다. "
+"둘 이상인 경우 대량 삭제가 사용됩니다."
 
 #: discord.TextChannel.delete_messages:10 of
 msgid ""
 "You cannot bulk delete more than 100 messages or messages that are older "
 "than 14 days old."
 msgstr ""
+"100개가 넘는 메시지 또는 14일이 지난 메시지는 대량으로 삭제할 수 없습니다."
 
 #: discord.TextChannel.delete_messages:13 of
 msgid ""
 "You must have the :attr:`~Permissions.manage_messages` permission to use "
 "this."
 msgstr ""
+"이것을 사용하려면 :attr:`~Permissions.manage_messages` 권한이 있어야 합니다."
 
 #: discord.TextChannel.delete_messages:16 of
 msgid "Usable only by bot accounts."
 msgstr ""
+"봇 계정에서만 사용할 수 있습니다."
 
 #: discord.TextChannel.delete_messages:18 of
 msgid "An iterable of messages denoting which ones to bulk delete."
 msgstr ""
+"대량 삭제할 메시지를 나타내는 이터레이터블."
 
 #: discord.TextChannel.delete_messages:21 of
 msgid "The number of messages to delete was more than 100."
 msgstr ""
+"삭제할 메시지 수가 100개를 넘습니다."
 
 #: discord.TextChannel.delete_messages:22 of
 msgid ""
 "You do not have proper permissions to delete the messages or     you're "
 "not using a bot account."
 msgstr ""
+"메시지를 삭제할 수 있는 권한이 없거나 봇 계정을 사용하고 있지 않습니다."
 
 #: discord.TextChannel.delete_messages:23 of
 msgid "If single delete, then the message was already deleted."
 msgstr ""
+"단일 삭제일 경우, 메시지가 이미 지워졌습니다."
 
 #: discord.TextChannel.delete_messages:24 of
 msgid "Deleting the messages failed."
 msgstr ""
+"메시지 삭제에 실패했습니다."
 
 #: discord.TextChannel.purge:3 of
 msgid ""
@@ -11215,6 +11272,8 @@ msgid ""
 "``check``. If a ``check`` is not provided then all messages are deleted "
 "without discrimination."
 msgstr ""
+"프리디케이트 ``check`` 에 의해 주어진 기준을 만족하는 메시지 목록을 제거합니다. "
+"``check`` 가 제공되지 않으면 모든 메시지가 차별없이 제거됩니다."
 
 #: discord.TextChannel.purge:7 of
 msgid ""
@@ -11223,6 +11282,10 @@ msgid ""
 "account). The :attr:`~Permissions.read_message_history` permission is "
 "also needed to retrieve message history."
 msgstr ""
+"자신이 쓴 경우에도 (사용자 계정이 아닌 경우) 메시지를 삭제하려면 "
+":attr:`~Permissions.manage_messages` 권한이 있어야 합니다."
+"메시지 히스토리를 검색하려면 :attr:`~Permissions.read_message_history` "
+"권한도 필요합니다."
 
 #: discord.TextChannel.purge:12 of
 msgid ""
@@ -11230,38 +11293,48 @@ msgid ""
 "the conditions met such as if a bulk delete is possible or if the account"
 " is a user bot or not."
 msgstr ""
+"내부적으로는, 대량 삭제가 가능한지 또는 계정이 사용자 봇인지 "
+"여부와 같은 조건에 따라 다른 수의 전략을 사용합니다."
 
 #: discord.TextChannel.purge:18 of
 msgid "Deleting bot's messages ::"
 msgstr ""
+"봇의 메시지 삭제하기"
 
 #: discord.TextChannel.purge:26 of
 msgid ""
 "The number of messages to search through. This is not the number of "
 "messages that will be deleted, though it can be."
 msgstr ""
+"검색할 메시지 수입니다. 삭제될 메시지 수는 아니지만, 그럴 수도 있습니다."
 
 #: discord.TextChannel.purge:29 of
 msgid ""
 "The function used to check if a message should be deleted. It must take a"
 " :class:`Message` as its sole parameter."
 msgstr ""
+"메시지가 삭제되어야 할지를 확인하는 데 사용되는 함수입니다. "
+"이 함수는 :class:`Message` 를 유일한 매개 변수로 사용해야 합니다."
 
 #: discord.TextChannel.purge:32 of
 msgid "Same as ``before`` in :meth:`history`."
 msgstr ""
+":meth:`history` 에서의 ``before`` 와 동일합니다."
 
 #: discord.TextChannel.purge:34 of
 msgid "Same as ``after`` in :meth:`history`."
 msgstr ""
+":meth:`history` 에서의 ``after`` 와 동일합니다."
 
 #: discord.TextChannel.purge:36 of
 msgid "Same as ``around`` in :meth:`history`."
 msgstr ""
+":meth:`history` 에서의 ``around`` 와 동일합니다."
 
 #: discord.TextChannel.purge:38 of
 msgid "Same as ``oldest_first`` in :meth:`history`."
 msgstr ""
+":meth:`history` 에서의 ``oldest_first`` 와 동일합니다."
 
 #: discord.TextChannel.purge:40 of
 msgid ""
@@ -11271,18 +11344,25 @@ msgid ""
 "single delete if current account is a user bot, or if messages are older "
 "than two weeks."
 msgstr ""
+"``True`` 일 경우, 대량 삭제를 사용합니다. ``False`` 로 설정하면 "
+":attr:`Permissions.manage_messages` 없이 봇 자신의 메시지를 대량 삭제하는 데 "
+"유용합니다. ``True`` 일 경우, 현재 계정이 사용자 봇이거나 메시지가 2주보다 오래된 경우 "
+"단일 삭제로 돌아갑니다."
 
 #: discord.TextChannel.purge:46 of
 msgid "You do not have proper permissions to do the actions required."
 msgstr ""
+"필요한 작업을 수행할 수 있는 적절한 권한이 없습니다."
 
 #: discord.TextChannel.purge:47 of
 msgid "Purging the messages failed."
 msgstr ""
+"메시지 제거에 실패했습니다."
 
 #: discord.TextChannel.purge:49 of
 msgid "The list of messages that were deleted."
 msgstr ""
+"삭제된 메시지들의 리스트."
 
 #: discord.TextChannel.purge:50 of
 msgid "List[:class:`.Message`]"
@@ -11291,70 +11371,88 @@ msgstr ""
 #: discord.TextChannel.webhooks:3 of
 msgid "Gets the list of webhooks from this channel."
 msgstr ""
+"이 채널의 웹후크 리스트를 가져옵니다."
 
 #: discord.TextChannel.webhooks:9 of
 msgid "The webhooks for this channel."
 msgstr ""
+"이 채널의 웹후크들."
 
 #: discord.TextChannel.create_webhook:3 of
 msgid "Creates a webhook for this channel."
 msgstr ""
+"이 채널의 웹후크을 생성합니다."
 
 #: discord.TextChannel.create_webhook:7 of
 msgid "Added the ``reason`` keyword-only parameter."
 msgstr ""
+"``reason`` 키워드 전용 매개변수를 추가했습니다."
 
 #: discord.TextChannel.create_webhook:10 of
 msgid "The webhook's name."
 msgstr ""
+"웹후크의 이름."
 
 #: discord.TextChannel.create_webhook:12 of
 msgid ""
 "A :term:`py:bytes-like object` representing the webhook's default avatar."
 " This operates similarly to :meth:`~ClientUser.edit`."
 msgstr ""
+"웹후크의 기본 아바타를 나타내는 :term:`py:bytes-like object` 입니다. "
+"이는 :meth:`~ClientUser.edit` 과 유사하게 작동합니다."
 
 #: discord.TextChannel.create_webhook:15 of
 msgid "The reason for creating this webhook. Shows up in the audit logs."
 msgstr ""
+"웹후크를 생성하는 사유입니다. 감사 로그에 뜨게 됩니다."
 
 #: discord.TextChannel.create_webhook:18 of
 msgid "Creating the webhook failed."
 msgstr ""
+"웹후크 생성에 실패했습니다."
 
 #: discord.TextChannel.create_webhook:19 of
 msgid "You do not have permissions to create a webhook."
 msgstr ""
+"웹후크를 생성할 권한이 없습니다."
 
 #: discord.TextChannel.create_webhook:21 discord.TextChannel.follow:18 of
 msgid "The created webhook."
 msgstr ""
+"생성된 웹후크."
 
 #: discord.TextChannel.follow:1 of
 msgid "Follows a channel using a webhook."
 msgstr ""
+"웹후크를 사용해 채널을 팔로우합니다."
 
 #: discord.TextChannel.follow:3 of
 msgid "Only news channels can be followed."
 msgstr ""
+"뉴스 채널만을 팔로우할 수 있습니다."
 
 #: discord.TextChannel.follow:7 of
 msgid ""
 "The webhook returned will not provide a token to do webhook actions, as "
 "Discord does not provide it."
 msgstr ""
+"리턴된 웹후크는 디스코드가 제공하지 않으므로, "
+"웹후크 작업을 수행하기 위한 토큰을 제공하지 않습니다."
 
 #: discord.TextChannel.follow:12 of
 msgid "The channel you would like to follow from."
 msgstr ""
+"팔로우하려는 채널입니다."
 
 #: discord.TextChannel.follow:15 of
 msgid "Following the channel failed."
 msgstr ""
+"채널 팔로우에 실패했습니다."
 
 #: discord.TextChannel.follow:16 of
 msgid "You do not have the permissions to create a webhook."
 msgstr ""
+"웹후크를 생성할 권한이 없습니다."
 
 #: ../../api.rst:2434
 msgid "VoiceChannel"
