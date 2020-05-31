@@ -25,7 +25,7 @@ msgstr "바뀐 것에 대한 기록"
 msgid ""
 "This page keeps a detailed human friendly rendering of what's new and "
 "changed in specific versions."
-msgstr "이 페이지는 새로운 것과 새로운 것에 대해 히 서술하여줍니다."
+msgstr "이 페이지는 새로운 것과 새로운 것에 대해 자세히 서술하여줍니다."
 
 #: ../../whats_new.rst:17
 msgid "v1.3.3"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../whats_new.rst:39
 msgid "Fix various Cloudflare handling errors (:issue:`2572`, :issue:`2544`)"
-msgstr "다양한 Cloudflare 오류도 수정하였습니다. (:issue:`2572`, :issue:`2544`)"
+msgstr "Cloudflare 오류도 수정하였습니다. (:issue:`2572`, :issue:`2544`)"
 
 #: ../../whats_new.rst:40
 msgid ""
@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../whats_new.rst:42
 msgid "Fix invalid format specifier in webhook state (:issue:`2570`)"
-msgstr ""
+msgstr "웹훅에서 유효하지 않은 형식 지정자를 수정하였습니다. (:issue:`2570`)"
 
 #: ../../whats_new.rst:43
 msgid ""
@@ -104,15 +104,15 @@ msgstr ""
 
 #: ../../whats_new.rst:48
 msgid "v1.3.1"
-msgstr ""
+msgstr "v1.3.1"
 
 #: ../../whats_new.rst:50
 msgid "Minor bug fix release."
-msgstr ""
+msgstr "사소한 버그들이 수정되었습니다."
 
 #: ../../whats_new.rst:55
 msgid "Fix fetching invites in guilds that the user is not in."
-msgstr ""
+msgstr "사용자가 없는 서버에서 초대를 가져오는 버그를 수정하였습니다."
 
 #: ../../whats_new.rst:56
 msgid ""
@@ -123,19 +123,19 @@ msgstr ""
 #: ../../whats_new.rst:59 ../../whats_new.rst:162 ../../whats_new.rst:282
 #: ../../whats_new.rst:309 ../../whats_new.rst:367
 msgid "Miscellaneous"
-msgstr ""
+msgstr "잡다한 것들"
 
 #: ../../whats_new.rst:61
 msgid "Fix compatibility warnings when using the Python 3.9 alpha."
-msgstr ""
+msgstr "Python 3.9 알파버전 사용시의 호환성 경고를 수정하였습니다."
 
 #: ../../whats_new.rst:62
 msgid "Change the unknown event logging from WARNING to DEBUG to reduce noise."
-msgstr ""
+msgstr "스트레스를 줄이려면 로길 이벤트를 WARNING에서 DEBUG로 바꾸십시오."
 
 #: ../../whats_new.rst:67
 msgid "v1.3.0"
-msgstr ""
+msgstr "v1.3.0"
 
 #: ../../whats_new.rst:69
 msgid ""
