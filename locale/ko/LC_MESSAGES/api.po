@@ -1285,6 +1285,7 @@ msgstr ""
 #: discord.abc.Messageable.history:7 of
 msgid "Usage ::"
 msgstr ""
+"사용법"
 
 #: discord.Client.fetch_guilds:21 discord.Guild.fetch_members:31 of
 msgid "Flattening into a list ::"
@@ -1297,6 +1298,7 @@ msgstr ""
 #: discord.abc.Messageable.history:19 of
 msgid "All parameters are optional."
 msgstr ""
+"모든 매개 변수는 선택 사항입니다."
 
 #: discord.Client.fetch_guilds:28 of
 msgid ""
@@ -3478,6 +3480,7 @@ msgstr ""
 #: discord.abc.GuildChannel.create_invite:26 of
 msgid "The invite that was created."
 msgstr ""
+"생성된 초대."
 
 #: ../../api.rst:666
 msgid ""
@@ -3494,6 +3497,7 @@ msgstr ""
 #: ../../api.rst:679
 msgid "The invite that was deleted."
 msgstr ""
+"삭제된 초대."
 
 #: ../../api.rst:685
 msgid "Called when someone joins or leaves a :class:`GroupChannel`."
@@ -5899,6 +5903,7 @@ msgstr ""
 #: discord.Webhook.send:17 discord.abc.Messageable.send:17 of
 msgid "The content of the message to send."
 msgstr ""
+"보낼 메시지의 내용(컨텐츠)."
 
 #: discord.Webhook.send:19 of
 msgid ""
@@ -5924,6 +5929,7 @@ msgstr ""
 #: discord.Webhook.send:29 discord.abc.Messageable.send:19 of
 msgid "Indicates if the message should be sent using text-to-speech."
 msgstr ""
+"텍스트 음성 변환을 사용하여 메시지를 보내야 하는지 여부를 나타냅니다."
 
 #: discord.Webhook.send:31 of
 msgid "The file to upload. This cannot be mixed with ``files`` parameter."
@@ -5954,18 +5960,21 @@ msgid ""
 "Controls the mentions being processed in this message.  .. versionadded::"
 " 1.4"
 msgstr ""
+"이 메시지에서 처리되는 멘션을 제어합니다."
 
 #: discord.DMChannel.send:34 discord.GroupChannel.send:34
 #: discord.Member.send:34 discord.TextChannel.send:34 discord.User.send:34
 #: discord.Webhook.send:42 discord.abc.Messageable.send:34 of
 msgid "Controls the mentions being processed in this message."
 msgstr ""
+"이 메시지에서 처리되는 멘션을 제어합니다."
 
 #: discord.DMChannel.send:39 discord.GroupChannel.send:39
 #: discord.Member.send:39 discord.TextChannel.send:39 discord.User.send:39
 #: discord.Webhook.send:47 discord.abc.Messageable.send:39 of
 msgid "Sending the message failed."
 msgstr ""
+"메시지 전송에 실패했습니다."
 
 #: discord.Webhook.send:48 of
 msgid "This webhook was not found."
@@ -5987,6 +5996,7 @@ msgstr ""
 #: discord.Webhook.send:52 discord.abc.Messageable.send:43 of
 msgid "The message that was sent."
 msgstr ""
+"전송한 메시지."
 
 #: discord.RawMessageDeleteEvent:25 discord.RawMessageUpdateEvent:27
 #: discord.TextChannel.last_message:14 discord.Webhook.send:53 of
@@ -9470,6 +9480,7 @@ msgstr ""
 #: discord.Guild.create_text_channel:50 discord.TextChannel.edit:13 of
 msgid "The new channel's topic."
 msgstr ""
+"채널의 새 주제."
 
 #: discord.Guild.create_text_channel:52 of
 msgid ""
@@ -9823,10 +9834,12 @@ msgstr ""
 #: discord.TextChannel.webhooks:5 of
 msgid "Requires :attr:`~.Permissions.manage_webhooks` permissions."
 msgstr ""
+":attr:`~.Permissions.manage_webhooks` 권한이 필요합니다."
 
 #: discord.Guild.webhooks:7 discord.TextChannel.webhooks:7 of
 msgid "You don't have permissions to get the webhooks."
 msgstr ""
+"웹후크를 가져올 권한이 없습니다."
 
 #: discord.Guild.webhooks:9 of
 msgid "The webhooks for this guild."
