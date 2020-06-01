@@ -7058,6 +7058,7 @@ msgstr ""
 #: discord.User.trigger_typing:3 discord.abc.Messageable.trigger_typing:3 of
 msgid "Triggers a *typing* indicator to the destination."
 msgstr ""
+"대상에 *입력 중* 표시기를 트리거합니다."
 
 #: discord.DMChannel.trigger_typing:5 discord.GroupChannel.trigger_typing:5
 #: discord.Member.trigger_typing:5 discord.TextChannel.trigger_typing:5
@@ -7066,54 +7067,63 @@ msgid ""
 "*Typing* indicator will go away after 10 seconds, or after a message is "
 "sent."
 msgstr ""
+"*입력 중* 표시기는 10초 후에 또는 메시지가 전송 된 후에 사라집니다."
 
 #: discord.DMChannel.fetch_message:3 discord.GroupChannel.fetch_message:3
 #: discord.Member.fetch_message:3 discord.TextChannel.fetch_message:3
 #: discord.User.fetch_message:3 discord.abc.Messageable.fetch_message:3 of
 msgid "Retrieves a single :class:`~discord.Message` from the destination."
 msgstr ""
+"대상에서 단일 :class:`~discord.Message` 를 검색합니다."
 
 #: discord.DMChannel.fetch_message:5 discord.GroupChannel.fetch_message:5
 #: discord.Member.fetch_message:5 discord.TextChannel.fetch_message:5
 #: discord.User.fetch_message:5 discord.abc.Messageable.fetch_message:5 of
 msgid "This can only be used by bot accounts."
 msgstr ""
+"오직 봇 계정에서만 사용할 수 있습니다."
 
 #: discord.DMChannel.fetch_message:7 discord.GroupChannel.fetch_message:7
 #: discord.Member.fetch_message:7 discord.TextChannel.fetch_message:7
 #: discord.User.fetch_message:7 discord.abc.Messageable.fetch_message:7 of
 msgid "The message ID to look for."
 msgstr ""
+"찾을 메시지 ID."
 
 #: discord.DMChannel.fetch_message:10 discord.GroupChannel.fetch_message:10
 #: discord.Member.fetch_message:10 discord.TextChannel.fetch_message:10
 #: discord.User.fetch_message:10 discord.abc.Messageable.fetch_message:10 of
 msgid "The specified message was not found."
 msgstr ""
+"지정된 메시지를 찾을 수 없습니다."
 
 #: discord.DMChannel.fetch_message:11 discord.GroupChannel.fetch_message:11
 #: discord.Member.fetch_message:11 discord.TextChannel.fetch_message:11
 #: discord.User.fetch_message:11 discord.abc.Messageable.fetch_message:11 of
 msgid "You do not have the permissions required to get a message."
 msgstr ""
+"메시지를 가져올 권한이 없습니다."
 
 #: discord.DMChannel.fetch_message:12 discord.GroupChannel.fetch_message:12
 #: discord.Member.fetch_message:12 discord.TextChannel.fetch_message:12
 #: discord.User.fetch_message:12 discord.abc.Messageable.fetch_message:12 of
 msgid "Retrieving the message failed."
 msgstr ""
+"메시지 가져오기에 실패했습니다."
 
 #: discord.DMChannel.fetch_message:14 discord.GroupChannel.fetch_message:14
 #: discord.Member.fetch_message:14 discord.TextChannel.fetch_message:14
 #: discord.User.fetch_message:14 discord.abc.Messageable.fetch_message:14 of
 msgid "The message asked for."
 msgstr ""
+"요청한 메시지."
 
 #: discord.DMChannel.pins:3 discord.GroupChannel.pins:3 discord.Member.pins:3
 #: discord.TextChannel.pins:3 discord.User.pins:3
 #: discord.abc.Messageable.pins:3 of
 msgid "Retrieves all messages that are currently pinned in the channel."
 msgstr ""
+"채널에 현재 고정되어 있는 모든 메시지를 검색합니다."
 
 #: discord.DMChannel.pins:7 discord.GroupChannel.pins:7 discord.Member.pins:7
 #: discord.TextChannel.pins:7 discord.User.pins:7
@@ -7123,18 +7133,22 @@ msgid ""
 "returned by this method do not contain complete "
 ":attr:`.Message.reactions` data."
 msgstr ""
+"Discord API 제한으로 인해 이 메소드가 리턴한 :class:`.Message` 객체는 완전한 "
+":attr:`.Message.reactions` 데이터를 포함하지 않습니다."
 
 #: discord.DMChannel.pins:11 discord.GroupChannel.pins:11
 #: discord.Member.pins:11 discord.TextChannel.pins:11 discord.User.pins:11
 #: discord.abc.Messageable.pins:11 of
 msgid "Retrieving the pinned messages failed."
 msgstr ""
+"고정된 메시지를 가져오는 데 실패했습니다."
 
 #: discord.DMChannel.pins:13 discord.GroupChannel.pins:13
 #: discord.Member.pins:13 discord.TextChannel.pins:13 discord.User.pins:13
 #: discord.abc.Messageable.pins:13 of
 msgid "The messages that are currently pinned."
 msgstr ""
+"현재 고정되어 있는 메시지들."
 
 #: discord.DMChannel.pins:14 discord.GroupChannel.pins:14
 #: discord.Member.pins:14 discord.TextChannel.pins:14 discord.User.pins:14
@@ -11509,7 +11523,7 @@ msgstr ""
 #: discord.TextChannel.create_webhook:3 of
 msgid "Creates a webhook for this channel."
 msgstr ""
-"이 채널의 웹후크을 생성합니다."
+"이 채널의 웹후크를 생성합니다."
 
 #: discord.TextChannel.create_webhook:7 of
 msgid "Added the ``reason`` keyword-only parameter."
