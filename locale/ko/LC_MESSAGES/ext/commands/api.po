@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 13:27+0900\n"
+"POT-Creation-Date: 2020-06-01 22:15+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1531,9 +1531,8 @@ msgstr ""
 #: discord.ext.commands.Bot.login:9 of
 msgid ""
 "Logging on with a user token is against the Discord `Terms of Service "
-"<https://support.discordapp.com/hc/en-us/articles/115002192352>`_ and "
-"doing so might potentially get your account banned. Use this at your own "
-"risk."
+"<https://support.discord.com/hc/en-us/articles/115002192352>`_ and doing "
+"so might potentially get your account banned. Use this at your own risk."
 msgstr ""
 
 #: discord.ext.commands.Bot.login:14 of
@@ -2127,10 +2126,8 @@ msgstr ""
 msgid "The list of aliases the command can be invoked under."
 msgstr ""
 
-#: discord.ext.commands.BotMissingPermissions:10
-#: discord.ext.commands.Command:41 discord.ext.commands.Context:27
-#: discord.ext.commands.MissingPermissions:10 of
-msgid ":class:`list`"
+#: discord.ext.commands.Command:41 of
+msgid "Union[:class:`list`, :class:`tuple`]"
 msgstr ""
 
 #: discord.ext.commands.Command:45 of
@@ -2617,8 +2614,10 @@ msgid ""
 "commands inside this cog."
 msgstr ""
 
+#: discord.ext.commands.Cog.cog_after_invoke:5
+#: discord.ext.commands.Cog.cog_before_invoke:5
 #: discord.ext.commands.Cog.cog_command_error:7 of
-msgid "This function **can** be a coroutine."
+msgid "This **must** be a coroutine."
 msgstr ""
 
 #: discord.ext.commands.Cog.cog_command_error:9 of
@@ -2635,11 +2634,6 @@ msgstr ""
 
 #: discord.ext.commands.Cog.cog_before_invoke:3 of
 msgid "This is similar to :meth:`.Command.before_invoke`."
-msgstr ""
-
-#: discord.ext.commands.Cog.cog_after_invoke:5
-#: discord.ext.commands.Cog.cog_before_invoke:5 of
-msgid "This **must** be a coroutine."
 msgstr ""
 
 #: discord.ext.commands.Cog.cog_after_invoke:1 of
@@ -3928,6 +3922,12 @@ msgid ""
 " could be incomplete."
 msgstr ""
 
+#: discord.ext.commands.BotMissingPermissions:10
+#: discord.ext.commands.Context:27 discord.ext.commands.MissingPermissions:10
+#: of
+msgid ":class:`list`"
+msgstr ""
+
 #: discord.ext.commands.Context:31 of
 msgid ""
 "A dictionary of transformed arguments that were passed into the command. "
@@ -5210,4 +5210,16 @@ msgstr ""
 #: ../../ext/commands/api.rst:420
 msgid ":exc:`~.commands.ExtensionNotFound`"
 msgstr ""
+
+#~ msgid ""
+#~ "Logging on with a user token is"
+#~ " against the Discord `Terms of "
+#~ "Service <https://support.discordapp.com/hc/en-"
+#~ "us/articles/115002192352>`_ and doing so might"
+#~ " potentially get your account banned. "
+#~ "Use this at your own risk."
+#~ msgstr ""
+
+#~ msgid "This function **can** be a coroutine."
+#~ msgstr ""
 

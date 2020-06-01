@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 13:27+0900\n"
+"POT-Creation-Date: 2020-06-01 22:15+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,9 +228,7 @@ msgstr "디스코드에 로그인할 때 나타나는 활동."
 msgid ""
 "Control how the client handles mentions by default on every message sent."
 "  .. versionadded:: 1.4"
-msgstr ""
-"전송된 모든 멘션에 대해 클라이언트가 어떻게 다루는지 제어합니다."
-"  .. versionadded:: 1.4"
+msgstr "전송된 모든 멘션에 대해 클라이언트가 어떻게 다루는지 제어합니다.  .. versionadded:: 1.4"
 
 #: discord.Client:35 of
 msgid "Control how the client handles mentions by default on every message sent."
@@ -373,7 +371,7 @@ msgstr ""
 msgid ""
 "The websocket gateway the client is currently connected to. Could be "
 "``None``."
-msgstr "클라이언트가 현재 연결되어있는 웹소켓 대역폭. ``None``\일수도 있습니다."
+msgstr "클라이언트가 현재 연결되어있는 웹소켓 대역폭. ``None``\\일수도 있습니다."
 
 #: discord.Client:90 of
 msgid ""
@@ -406,8 +404,9 @@ msgstr "클라이언트가 HTTP 요청과 웹소켓 작업에 사용하는 루�
 #: discord.ClientUser.colour discord.ClientUser.created_at
 #: discord.ClientUser.default_avatar discord.ClientUser.default_avatar_url
 #: discord.ClientUser.display_name discord.ClientUser.friends
-#: discord.ClientUser.mention discord.ClientUser.relationships discord.Colour
-#: discord.Colour.b discord.Colour.g discord.Colour.r discord.ConnectionClosed
+#: discord.ClientUser.mention discord.ClientUser.public_flags
+#: discord.ClientUser.relationships discord.Colour discord.Colour.b
+#: discord.Colour.g discord.Colour.r discord.ConnectionClosed
 #: discord.CustomActivity discord.DMChannel discord.DMChannel.type
 #: discord.Embed discord.Emoji discord.Emoji.created_at discord.Emoji.guild
 #: discord.Emoji.roles discord.Emoji.url discord.File discord.Game
@@ -420,12 +419,12 @@ msgstr "클라이언트가 HTTP 요청과 웹소켓 작업에 사용하는 루�
 #: discord.Guild.emoji_limit discord.Guild.filesize_limit
 #: discord.Guild.icon_url discord.Guild.large discord.Guild.members
 #: discord.Guild.owner discord.Guild.premium_subscribers
-#: discord.Guild.rules_channel discord.Guild.shard_id discord.Guild.splash_url
-#: discord.Guild.system_channel discord.Guild.system_channel_flags
-#: discord.Guild.text_channels discord.Guild.voice_channels
-#: discord.HTTPException discord.Invite discord.Invite.id discord.Invite.url
-#: discord.Member discord.Member.activity discord.Member.color
-#: discord.Member.colour discord.Member.desktop_status
+#: discord.Guild.public_updates_channel discord.Guild.rules_channel
+#: discord.Guild.shard_id discord.Guild.splash_url discord.Guild.system_channel
+#: discord.Guild.system_channel_flags discord.Guild.text_channels
+#: discord.Guild.voice_channels discord.HTTPException discord.Invite
+#: discord.Invite.id discord.Invite.url discord.Member discord.Member.activity
+#: discord.Member.color discord.Member.colour discord.Member.desktop_status
 #: discord.Member.display_name discord.Member.mention
 #: discord.Member.mobile_status discord.Member.roles discord.Member.status
 #: discord.Member.top_role discord.Member.voice discord.Member.web_status
@@ -480,7 +479,7 @@ msgstr "클라이언트가 HTTP 요청과 웹소켓 작업에 사용하는 루�
 #: discord.User.color discord.User.colour discord.User.created_at
 #: discord.User.default_avatar discord.User.default_avatar_url
 #: discord.User.display_name discord.User.dm_channel discord.User.mention
-#: discord.VoiceChannel discord.VoiceChannel.category
+#: discord.User.public_flags discord.VoiceChannel discord.VoiceChannel.category
 #: discord.VoiceChannel.changed_roles discord.VoiceChannel.created_at
 #: discord.VoiceChannel.members discord.VoiceChannel.mention
 #: discord.VoiceChannel.permissions_synced discord.VoiceChannel.type
@@ -495,11 +494,12 @@ msgstr "클라이언트가 HTTP 요청과 웹소켓 작업에 사용하는 루�
 #: discord.WidgetMember.color discord.WidgetMember.colour
 #: discord.WidgetMember.created_at discord.WidgetMember.default_avatar
 #: discord.WidgetMember.default_avatar_url discord.WidgetMember.display_name
-#: discord.WidgetMember.mention discord.abc.GuildChannel
-#: discord.abc.GuildChannel.category discord.abc.GuildChannel.changed_roles
-#: discord.abc.GuildChannel.created_at discord.abc.GuildChannel.mention
-#: discord.abc.GuildChannel.permissions_synced discord.abc.PrivateChannel
-#: discord.abc.Snowflake discord.abc.Snowflake.created_at discord.abc.User
+#: discord.WidgetMember.mention discord.WidgetMember.public_flags
+#: discord.abc.GuildChannel discord.abc.GuildChannel.category
+#: discord.abc.GuildChannel.changed_roles discord.abc.GuildChannel.created_at
+#: discord.abc.GuildChannel.mention discord.abc.GuildChannel.permissions_synced
+#: discord.abc.PrivateChannel discord.abc.Snowflake
+#: discord.abc.Snowflake.created_at discord.abc.User
 #: discord.abc.User.display_name discord.abc.User.mention
 #: discord.opus.OpusError of
 msgid "type"
@@ -788,14 +788,15 @@ msgid "This function can be used in two different ways."
 msgstr "이 함수는 두 가지의 다른 방법으로 사용될 수 있습니다."
 
 #: discord.Client.login:9 of
+#, fuzzy
 msgid ""
 "Logging on with a user token is against the Discord `Terms of Service "
-"<https://support.discordapp.com/hc/en-us/articles/115002192352>`_ and "
-"doing so might potentially get your account banned. Use this at your own "
-"risk."
+"<https://support.discord.com/hc/en-us/articles/115002192352>`_ and doing "
+"so might potentially get your account banned. Use this at your own risk."
 msgstr ""
-"유저 토큰으로 로그인하는 것은 디스코드의 `이용약관 <https://support.discordapp.com/hc/en-us/articles/115002192352>`_"
-"\\에 위배됩니다. 이는 잠재적으로 당신의 계정이 차단될 수 있음을 뜻합니다. 위험을 감수하고 사용하세요."
+"유저 토큰으로 로그인하는 것은 디스코드의 `이용약관 <https://support.discordapp.com/hc/en-"
+"us/articles/115002192352>`_\\에 위배됩니다. 이는 잠재적으로 당신의 계정이 차단될 수 있음을 뜻합니다. "
+"위험을 감수하고 사용하세요."
 
 #: discord.Client.login:14 of
 msgid ""
@@ -1284,8 +1285,7 @@ msgstr ""
 #: discord.TextChannel.history:7 discord.User.history:7
 #: discord.abc.Messageable.history:7 of
 msgid "Usage ::"
-msgstr ""
-"사용법"
+msgstr "사용법"
 
 #: discord.Client.fetch_guilds:21 discord.Guild.fetch_members:31 of
 msgid "Flattening into a list ::"
@@ -1297,8 +1297,7 @@ msgstr ""
 #: discord.TextChannel.history:19 discord.User.history:19
 #: discord.abc.Messageable.history:19 of
 msgid "All parameters are optional."
-msgstr ""
-"모든 매개 변수는 선택 사항입니다."
+msgstr "모든 매개 변수는 선택 사항입니다."
 
 #: discord.Client.fetch_guilds:28 of
 msgid ""
@@ -1360,7 +1359,7 @@ msgstr ""
 msgid "You do not have access to the guild."
 msgstr ""
 
-#: discord.Client.fetch_guild:18 discord.Guild.fetch_member:13 of
+#: discord.Client.fetch_guild:18 of
 msgid "Getting the guild failed."
 msgstr ""
 
@@ -1766,7 +1765,7 @@ msgstr ""
 #: discord.Colour.b:3 discord.Colour.g:3 discord.Colour.r:3
 #: discord.ConnectionClosed:8 discord.DMChannel:37 discord.Emoji:39
 #: discord.Emoji:63 discord.GroupChannel:37 discord.Guild:46 discord.Guild:64
-#: discord.Guild:70 discord.Guild:112 discord.Guild:165 discord.Guild:171
+#: discord.Guild:70 discord.Guild:120 discord.Guild:173 discord.Guild:179
 #: discord.Guild.emoji_limit:3 discord.Guild.estimate_pruned_members:15
 #: discord.Guild.filesize_limit:3 discord.Guild.shard_id:3
 #: discord.HTTPException:21 discord.HTTPException:27 discord.Invite:50
@@ -1801,7 +1800,7 @@ msgstr ""
 #: discord.ClientUser.display_name:7 discord.ClientUser.mention:3
 #: discord.ConnectionClosed:14 discord.Embed:24 discord.Embed:31
 #: discord.Embed:38 discord.Embed:45 discord.Emoji:33 discord.Game:34
-#: discord.Guild:27 discord.Guild:186 discord.HTTPException:15
+#: discord.Guild:27 discord.Guild:194 discord.HTTPException:15
 #: discord.Invite:56 discord.Invite.id:3 discord.Invite.url:3
 #: discord.Member.display_name:7 discord.Member.mention:3 discord.Message:31
 #: discord.Message.jump_url:3 discord.PartialInviteChannel:28
@@ -1853,15 +1852,15 @@ msgstr ""
 #: discord.AppInfo:113 discord.AuditLogEntry:35 discord.ClientUser:43
 #: discord.ClientUser:69 discord.ClientUser:75 discord.CustomActivity:27
 #: discord.File:25 discord.GroupChannel:49 discord.GroupChannel:55
-#: discord.Guild:58 discord.Guild:98 discord.Guild:104 discord.Guild:158
-#: discord.Guild:178 discord.Member:48 discord.PartialEmoji:32
+#: discord.Guild:58 discord.Guild:106 discord.Guild:112 discord.Guild:166
+#: discord.Guild:186 discord.Member:48 discord.PartialEmoji:32
 #: discord.PartialInviteGuild:52 discord.PartialInviteGuild:58
 #: discord.PartialInviteGuild:64 discord.PartialInviteGuild:70
 #: discord.Streaming:35 discord.Streaming:41 discord.Streaming:49
 #: discord.Streaming.twitch_name:6 discord.Team:19 discord.TeamMember:45
 #: discord.TextChannel:49 discord.User:43 discord.Webhook:60 discord.Webhook:85
-#: discord.Webhook:91 discord.WidgetMember:55 discord.WidgetMember:61
-#: discord.abc.User:27 of
+#: discord.Webhook:91 discord.Widget.invite_url:3 discord.WidgetMember:55
+#: discord.WidgetMember:61 discord.abc.User:27 of
 msgid "Optional[:class:`str`]"
 msgstr ""
 
@@ -1950,13 +1949,13 @@ msgstr ""
 
 #: discord.AppInfo:86 discord.AppInfo:95 discord.Attachment:19
 #: discord.Attachment:25 discord.ConnectionClosed:20 discord.Guild:86
-#: discord.Guild:92 discord.Guild.prune_members:30 discord.Invite:105
-#: discord.Invite:112 discord.Message:109 discord.PartialEmoji:44
-#: discord.RawBulkMessageDeleteEvent:19 discord.RawMessageDeleteEvent:13
-#: discord.RawReactionActionEvent:26 discord.RawReactionClearEmojiEvent:21
-#: discord.RawReactionClearEvent:19 discord.TextChannel:43
-#: discord.TextChannel:63 discord.VoiceChannel:43 discord.Webhook:66
-#: discord.Webhook:72 of
+#: discord.Guild:92 discord.Guild:100 discord.Guild.prune_members:38
+#: discord.Invite:105 discord.Invite:112 discord.Message:109
+#: discord.PartialEmoji:44 discord.RawBulkMessageDeleteEvent:19
+#: discord.RawMessageDeleteEvent:13 discord.RawReactionActionEvent:26
+#: discord.RawReactionClearEmojiEvent:21 discord.RawReactionClearEvent:19
+#: discord.TextChannel:43 discord.TextChannel:63 discord.VoiceChannel:43
+#: discord.Webhook:66 discord.Webhook:72 of
 msgid "Optional[:class:`int`]"
 msgstr ""
 
@@ -2834,9 +2833,9 @@ msgid ""
 "Which could either be :class:`TextChannel`, :class:`GroupChannel`, or "
 ":class:`DMChannel`."
 msgstr ""
-"``channel``\\의 매개변수는 :class:`abc.Messageable`\\의 인스턴스입니다. "
-"이것이 :class:`TextChannel`\\, :class:`GroupChannel`\\, 혹은 "
-":class:`DMChannel`\\가 될수도 있습니다.."
+"``channel``\\의 매개변수는 :class:`abc.Messageable`\\의 인스턴스입니다. 이것이 "
+":class:`TextChannel`\\, :class:`GroupChannel`\\, 혹은 :class:`DMChannel`\\가"
+" 될수도 있습니다.."
 
 #: ../../api.rst:221
 msgid ""
@@ -2870,10 +2869,9 @@ msgid ""
 " the user IDs. Note that :class:`~ext.commands.Bot` does not have this "
 "problem."
 msgstr ""
-"봇의 메세지과 개인 이벤트는 이 이벤트를 통해 전송됩니다."
-"봇이 프로그래밍된 방식에 따라, <재귀> 현상이 발생할 수 있습니다."
-"따라서, 봇 자신에 응답하지 않게할려면, 사용자ID 확인을 해보시기 바랍니다."
-"이 현상은 :class:`~ext.commands.Bot`\\에서 발생하지는 않습니다."
+"봇의 메세지과 개인 이벤트는 이 이벤트를 통해 전송됩니다.봇이 프로그래밍된 방식에 따라, <재귀> 현상이 발생할 수 "
+"있습니다.따라서, 봇 자신에 응답하지 않게할려면, 사용자ID 확인을 해보시기 바랍니다.이 현상은 "
+":class:`~ext.commands.Bot`\\에서 발생하지는 않습니다."
 
 #: ../../api.rst:243
 msgid "The current message."
@@ -2886,17 +2884,16 @@ msgid ""
 "might not be in cache if the message is too old or the client is "
 "participating in high traffic guilds."
 msgstr ""
-"메시지가 삭제 될 때 호출됩니다. "
-"내부 메시지 캐시에서 메시지를 찾을 수 없으면이 이벤트가 호출되지 않습니다."
-"메시지가 너무 오래되었거나 클라이언트가 트래픽 길드에 참여하는 경우 메시지가 캐시에 없을 수 있습니다."
+"메시지가 삭제 될 때 호출됩니다. 내부 메시지 캐시에서 메시지를 찾을 수 없으면이 이벤트가 호출되지 않습니다.메시지가 너무 "
+"오래되었거나 클라이언트가 트래픽 길드에 참여하는 경우 메시지가 캐시에 없을 수 있습니다."
 
 #: ../../api.rst:253
 msgid ""
 "If this occurs increase the :attr:`Client.max_messages` attribute or use "
 "the :func:`on_raw_message_delete` event instead."
 msgstr ""
-"이럴 경우, :attr:`Client.max_messages` 의 값을 늘리거나 "
-"해당 :func:`on_raw_message_delete` 이벤트 사용을 해보시기 바랍니다."
+"이럴 경우, :attr:`Client.max_messages` 의 값을 늘리거나 해당 "
+":func:`on_raw_message_delete` 이벤트 사용을 해보시기 바랍니다."
 
 #: ../../api.rst:256
 msgid "The deleted message."
@@ -3022,7 +3019,7 @@ msgstr ""
 msgid ""
 "Due to the inherently raw nature of this event, the data parameter "
 "coincides with the raw data given by the `gateway "
-"<https://discordapp.com/developers/docs/topics/gateway#message-update>`_."
+"<https://discord.com/developers/docs/topics/gateway#message-update>`_."
 msgstr ""
 
 #: ../../api.rst:333
@@ -3479,8 +3476,7 @@ msgstr ""
 #: discord.TextChannel.create_invite:26 discord.VoiceChannel.create_invite:26
 #: discord.abc.GuildChannel.create_invite:26 of
 msgid "The invite that was created."
-msgstr ""
-"생성된 초대."
+msgstr "생성된 초대."
 
 #: ../../api.rst:666
 msgid ""
@@ -3496,8 +3492,7 @@ msgstr ""
 
 #: ../../api.rst:679
 msgid "The invite that was deleted."
-msgstr ""
-"삭제된 초대."
+msgstr "삭제된 초대."
 
 #: ../../api.rst:685
 msgid "Called when someone joins or leaves a :class:`GroupChannel`."
@@ -3705,10 +3700,12 @@ msgid "If the time supplied is in the past this function will yield instantly."
 msgstr ""
 
 #: discord.utils.sleep_until:9 of
-msgid "The timestamp in which to sleep until."
+msgid ""
+"The timestamp in which to sleep until. If the datetime is naive then it "
+"is assumed to be in UTC."
 msgstr ""
 
-#: discord.utils.sleep_until:11 of
+#: discord.utils.sleep_until:12 of
 msgid "If provided is returned to the caller when the coroutine completes."
 msgstr ""
 
@@ -5751,8 +5748,8 @@ msgstr ""
 msgid "The text channel this webhook belongs to."
 msgstr ""
 
-#: discord.Guild.rules_channel:8 discord.Guild.system_channel:5
-#: discord.Webhook.channel:5 of
+#: discord.Guild.public_updates_channel:9 discord.Guild.rules_channel:8
+#: discord.Guild.system_channel:5 discord.Webhook.channel:5 of
 msgid "Optional[:class:`TextChannel`]"
 msgstr ""
 
@@ -5902,8 +5899,7 @@ msgstr ""
 #: discord.Member.send:17 discord.TextChannel.send:17 discord.User.send:17
 #: discord.Webhook.send:17 discord.abc.Messageable.send:17 of
 msgid "The content of the message to send."
-msgstr ""
-"보낼 메시지의 내용(컨텐츠)."
+msgstr "보낼 메시지의 내용(컨텐츠)."
 
 #: discord.Webhook.send:19 of
 msgid ""
@@ -5928,8 +5924,7 @@ msgstr ""
 #: discord.Member.send:19 discord.TextChannel.send:19 discord.User.send:19
 #: discord.Webhook.send:29 discord.abc.Messageable.send:19 of
 msgid "Indicates if the message should be sent using text-to-speech."
-msgstr ""
-"텍스트 음성 변환을 사용하여 메시지를 보내야 하는지 여부를 나타냅니다."
+msgstr "텍스트 음성 변환을 사용하여 메시지를 보내야 하는지 여부를 나타냅니다."
 
 #: discord.Webhook.send:31 of
 msgid "The file to upload. This cannot be mixed with ``files`` parameter."
@@ -5954,27 +5949,26 @@ msgid ""
 msgstr ""
 
 #: discord.DMChannel.send:34 discord.GroupChannel.send:34
-#: discord.Member.send:34 discord.TextChannel.send:34 discord.User.send:34
-#: discord.Webhook.send:42 discord.abc.Messageable.send:34 of
+#: discord.Member.send:34 discord.Message.edit:25 discord.TextChannel.send:34
+#: discord.User.send:34 discord.Webhook.send:42 discord.abc.Messageable.send:34
+#: of
 msgid ""
 "Controls the mentions being processed in this message.  .. versionadded::"
 " 1.4"
-msgstr ""
-"이 메시지에서 처리되는 멘션을 제어합니다."
+msgstr "이 메시지에서 처리되는 멘션을 제어합니다."
 
 #: discord.DMChannel.send:34 discord.GroupChannel.send:34
-#: discord.Member.send:34 discord.TextChannel.send:34 discord.User.send:34
-#: discord.Webhook.send:42 discord.abc.Messageable.send:34 of
+#: discord.Member.send:34 discord.Message.edit:25 discord.TextChannel.send:34
+#: discord.User.send:34 discord.Webhook.send:42 discord.abc.Messageable.send:34
+#: of
 msgid "Controls the mentions being processed in this message."
-msgstr ""
-"이 메시지에서 처리되는 멘션을 제어합니다."
+msgstr "이 메시지에서 처리되는 멘션을 제어합니다."
 
 #: discord.DMChannel.send:39 discord.GroupChannel.send:39
 #: discord.Member.send:39 discord.TextChannel.send:39 discord.User.send:39
 #: discord.Webhook.send:47 discord.abc.Messageable.send:39 of
 msgid "Sending the message failed."
-msgstr ""
-"메시지 전송에 실패했습니다."
+msgstr "메시지 전송에 실패했습니다."
 
 #: discord.Webhook.send:48 of
 msgid "This webhook was not found."
@@ -5995,8 +5989,7 @@ msgstr ""
 #: discord.Member.send:43 discord.TextChannel.send:43 discord.User.send:43
 #: discord.Webhook.send:52 discord.abc.Messageable.send:43 of
 msgid "The message that was sent."
-msgstr ""
-"전송한 메시지."
+msgstr "전송한 메시지."
 
 #: discord.RawMessageDeleteEvent:25 discord.RawMessageUpdateEvent:27
 #: discord.TextChannel.last_message:14 discord.Webhook.send:53 of
@@ -6253,14 +6246,12 @@ msgstr ""
 #: discord.TextChannel:23 discord.VoiceChannel:23 discord.abc.GuildChannel:13
 #: of
 msgid "The channel name."
-msgstr ""
-"채널의 이름."
+msgstr "채널의 이름."
 
 #: discord.TextChannel:29 discord.VoiceChannel:29 discord.abc.GuildChannel:19
 #: of
 msgid "The guild the channel belongs to."
-msgstr ""
-"채널이 속해 있는 길드."
+msgstr "채널이 속해 있는 길드."
 
 #: discord.abc.GuildChannel:21 of
 msgid ":class:`~discord.Guild`"
@@ -6271,9 +6262,7 @@ msgstr ""
 msgid ""
 "The position in the channel list. This is a number that starts at 0. e.g."
 " the top channel is position 0."
-msgstr ""
-"채널 목록에서의 위치. 이는 0부터 시작하는 숫자입니다. "
-"예를 들어, 맨 위의 채널의 위치는 0입니다."
+msgstr "채널 목록에서의 위치. 이는 0부터 시작하는 숫자입니다. 예를 들어, 맨 위의 채널의 위치는 0입니다."
 
 #: discord.CategoryChannel.changed_roles:1 discord.TextChannel.changed_roles:1
 #: discord.VoiceChannel.changed_roles:1
@@ -6281,8 +6270,7 @@ msgstr ""
 msgid ""
 "Returns a list of roles that have been overridden from their default "
 "values in the :attr:`~discord.Guild.roles` attribute."
-msgstr ""
-":attr:`~discord.Guild.roles` 속성의 기본값에서 재정의된 역할 목록을 반환합니다."
+msgstr ":attr:`~discord.Guild.roles` 속성의 기본값에서 재정의된 역할 목록을 반환합니다."
 
 #: discord.CategoryChannel.changed_roles:4 discord.TextChannel.changed_roles:4
 #: discord.VoiceChannel.changed_roles:4
@@ -6294,37 +6282,32 @@ msgstr ""
 #: discord.TextChannel.mention:1 discord.VoiceChannel.mention:1
 #: discord.WidgetChannel.mention:1 discord.abc.GuildChannel.mention:1 of
 msgid "The string that allows you to mention the channel."
-msgstr ""
-"이 채널을 멘션할 수 있는 문자열입니다."
+msgstr "이 채널을 멘션할 수 있는 문자열입니다."
 
 #: discord.CategoryChannel.created_at:1 discord.GroupChannel.created_at:1
 #: discord.PartialInviteChannel.created_at:1 discord.TextChannel.created_at:1
 #: discord.VoiceChannel.created_at:1 discord.WidgetChannel.created_at:1
 #: discord.abc.GuildChannel.created_at:1 of
 msgid "Returns the channel's creation time in UTC."
-msgstr ""
-"채널의 생성 시간을 UTC 시간으로 리턴합니다."
+msgstr "채널의 생성 시간을 UTC 시간으로 리턴합니다."
 
 #: discord.CategoryChannel.overwrites_for:1
 #: discord.TextChannel.overwrites_for:1 discord.VoiceChannel.overwrites_for:1
 #: discord.abc.GuildChannel.overwrites_for:1 of
 msgid "Returns the channel-specific overwrites for a member or a role."
-msgstr ""
-"멤버 또는 역할에 대한 채널별 덮어쓰기를 리턴합니다."
+msgstr "멤버 또는 역할에 대한 채널별 덮어쓰기를 리턴합니다."
 
 #: discord.CategoryChannel.overwrites_for:3
 #: discord.TextChannel.overwrites_for:3 discord.VoiceChannel.overwrites_for:3
 #: discord.abc.GuildChannel.overwrites_for:3 of
 msgid "The role or user denoting whose overwrite to get."
-msgstr ""
-"덮어쓸 대상을 나타내는 역할 또는 사용자."
+msgstr "덮어쓸 대상을 나타내는 역할 또는 사용자."
 
 #: discord.CategoryChannel.overwrites_for:7
 #: discord.TextChannel.overwrites_for:7 discord.VoiceChannel.overwrites_for:7
 #: discord.abc.GuildChannel.overwrites_for:7 of
 msgid "The permission overwrites for this object."
-msgstr ""
-"이 객체에 대한 권한 덮어쓰기."
+msgstr "이 객체에 대한 권한 덮어쓰기."
 
 #: discord.CategoryChannel.overwrites_for:8
 #: discord.TextChannel.overwrites_for:8 discord.VoiceChannel.overwrites_for:8
@@ -6335,8 +6318,7 @@ msgstr ""
 #: discord.CategoryChannel.overwrites:1 discord.TextChannel.overwrites:1
 #: discord.VoiceChannel.overwrites:1 discord.abc.GuildChannel.overwrites:1 of
 msgid "Returns all of the channel's overwrites."
-msgstr ""
-"채널의 모든 덮어쓰기를 리턴합니다."
+msgstr "채널의 모든 덮어쓰기를 리턴합니다."
 
 #: discord.CategoryChannel.overwrites:3 discord.TextChannel.overwrites:3
 #: discord.VoiceChannel.overwrites:3 discord.abc.GuildChannel.overwrites:3 of
@@ -6345,15 +6327,13 @@ msgid ""
 "can be either a :class:`~discord.Role` or a :class:`~discord.Member` and "
 "the value is the overwrite as a :class:`~discord.PermissionOverwrite`."
 msgstr ""
-"이것은 :class:`~discord.Role` 또는 :class:`~discord.Member` 가 "
-"될 수 있는 대상이 키에 포함되고, 값은 :class:`~discord.PermissionOverwrite` 인"
-"딕셔너리로 리턴됩니다."
+"이것은 :class:`~discord.Role` 또는 :class:`~discord.Member` 가 될 수 있는 대상이 키에 "
+"포함되고, 값은 :class:`~discord.PermissionOverwrite` 인딕셔너리로 리턴됩니다."
 
 #: discord.CategoryChannel.overwrites:7 discord.TextChannel.overwrites:7
 #: discord.VoiceChannel.overwrites:7 discord.abc.GuildChannel.overwrites:7 of
 msgid "The channel's permission overwrites."
-msgstr ""
-"채널의 권한 덮어쓰기."
+msgstr "채널의 권한 덮어쓰기."
 
 #: discord.CategoryChannel.overwrites:8 discord.TextChannel.overwrites:8
 #: discord.VoiceChannel.overwrites:8 discord.abc.GuildChannel.overwrites:8 of
@@ -6365,14 +6345,12 @@ msgstr ""
 #: discord.CategoryChannel.category:1 discord.TextChannel.category:1
 #: discord.VoiceChannel.category:1 discord.abc.GuildChannel.category:1 of
 msgid "The category this channel belongs to."
-msgstr ""
-"이 채널이 속해 있는 카테고리."
+msgstr "이 채널이 속해 있는 카테고리."
 
 #: discord.CategoryChannel.category:3 discord.TextChannel.category:3
 #: discord.VoiceChannel.category:3 discord.abc.GuildChannel.category:3 of
 msgid "If there is no category then this is ``None``."
-msgstr ""
-"없을 경우 ``None`` 입니다."
+msgstr "없을 경우 ``None`` 입니다."
 
 #: discord.CategoryChannel.category:5 discord.TextChannel.category:5
 #: discord.VoiceChannel.category:5 discord.abc.GuildChannel.category:5 of
@@ -6386,74 +6364,64 @@ msgstr ""
 msgid ""
 "Whether or not the permissions for this channel are synced with the "
 "category it belongs to."
-msgstr ""
-"이 채널의 권한이 이 채널에 속한 카테고리와 동기화되는지 여부입니다."
+msgstr "이 채널의 권한이 이 채널에 속한 카테고리와 동기화되는지 여부입니다."
 
 #: discord.CategoryChannel.permissions_synced:4
 #: discord.TextChannel.permissions_synced:4
 #: discord.VoiceChannel.permissions_synced:4
 #: discord.abc.GuildChannel.permissions_synced:4 of
 msgid "If there is no category then this is ``False``."
-msgstr ""
-"만약 카테고리가 없다면 ``False`` 입니다. "
+msgstr "만약 카테고리가 없다면 ``False`` 입니다. "
 
 #: discord.CategoryChannel.permissions_for:1
 #: discord.TextChannel.permissions_for:1 discord.VoiceChannel.permissions_for:1
 #: discord.abc.GuildChannel.permissions_for:1 of
 msgid "Handles permission resolution for the current :class:`~discord.Member`."
-msgstr ""
-"현재 멤버의 권한 확인을 처리합니다."
+msgstr "현재 멤버의 권한 확인을 처리합니다."
 
 #: discord.CategoryChannel.permissions_for:3
 #: discord.TextChannel.permissions_for:3 discord.VoiceChannel.permissions_for:3
 #: discord.abc.GuildChannel.permissions_for:3 of
 msgid "This function takes into consideration the following cases:"
-msgstr ""
-"이 기능은 다음과 같은 경우를 고려합니다:"
+msgstr "이 기능은 다음과 같은 경우를 고려합니다:"
 
 #: discord.CategoryChannel.permissions_for:5
 #: discord.TextChannel.permissions_for:5 discord.VoiceChannel.permissions_for:5
 #: discord.abc.GuildChannel.permissions_for:5 of
 msgid "Guild owner"
-msgstr ""
-"길드 소유자"
+msgstr "길드 소유자"
 
 #: discord.CategoryChannel.permissions_for:6
 #: discord.TextChannel.permissions_for:6 discord.VoiceChannel.permissions_for:6
 #: discord.abc.GuildChannel.permissions_for:6 of
 msgid "Guild roles"
-msgstr ""
-"길드 역할들"
+msgstr "길드 역할들"
 
 #: discord.CategoryChannel.permissions_for:7
 #: discord.TextChannel.permissions_for:7 discord.VoiceChannel.permissions_for:7
 #: discord.abc.GuildChannel.permissions_for:7 of
 msgid "Channel overrides"
-msgstr ""
-"채널 덮어쓰기"
+msgstr "채널 덮어쓰기"
 
 #: discord.CategoryChannel.permissions_for:8
 #: discord.TextChannel.permissions_for:8 discord.VoiceChannel.permissions_for:8
 #: discord.abc.GuildChannel.permissions_for:8 of
 msgid "Member overrides"
-msgstr ""
-"멤버 덮어쓰기"
+msgstr "멤버 덮어쓰기"
 
 #: discord.CategoryChannel.permissions_for:10
 #: discord.TextChannel.permissions_for:10
 #: discord.VoiceChannel.permissions_for:10
 #: discord.abc.GuildChannel.permissions_for:10 of
 msgid "The member to resolve permissions for."
-msgstr ""
-"권한을 확인할 멤버."
+msgstr "권한을 확인할 멤버."
 
 #: discord.CategoryChannel.permissions_for:13
 #: discord.TextChannel.permissions_for:13
 #: discord.VoiceChannel.permissions_for:13
 #: discord.abc.GuildChannel.permissions_for:13 of
 msgid "The resolved permissions for the member."
-msgstr ""
-"멤버에 대해 확인된 권한"
+msgstr "멤버에 대해 확인된 권한"
 
 #: discord.CategoryChannel.permissions_for:14
 #: discord.TextChannel.permissions_for:14
@@ -6465,38 +6433,32 @@ msgstr ""
 #: discord.CategoryChannel.delete:3 discord.TextChannel.delete:3
 #: discord.VoiceChannel.delete:3 discord.abc.GuildChannel.delete:3 of
 msgid "Deletes the channel."
-msgstr ""
-"채널을 삭제합니다."
+msgstr "채널을 삭제합니다."
 
 #: discord.CategoryChannel.delete:5 discord.TextChannel.delete:5
 #: discord.VoiceChannel.delete:5 discord.abc.GuildChannel.delete:5 of
 msgid "You must have :attr:`~Permissions.manage_channels` permission to use this."
-msgstr ""
-"이것을 사용하려면 :attr:`~Permissions.manage_channels` 권한이 있어야 합니다."
+msgstr "이것을 사용하려면 :attr:`~Permissions.manage_channels` 권한이 있어야 합니다."
 
 #: discord.CategoryChannel.delete:7 discord.TextChannel.delete:7
 #: discord.VoiceChannel.delete:7 discord.abc.GuildChannel.delete:7 of
 msgid "The reason for deleting this channel. Shows up on the audit log."
-msgstr ""
-"채널 삭제의 사유입니다. 감사 로그에 뜨게 됩니다."
+msgstr "채널 삭제의 사유입니다. 감사 로그에 뜨게 됩니다."
 
 #: discord.CategoryChannel.delete:11 discord.TextChannel.delete:11
 #: discord.VoiceChannel.delete:11 discord.abc.GuildChannel.delete:11 of
 msgid "You do not have proper permissions to delete the channel."
-msgstr ""
-"채널을 삭제할 권한이 없습니다."
+msgstr "채널을 삭제할 권한이 없습니다."
 
 #: discord.CategoryChannel.delete:12 discord.TextChannel.delete:12
 #: discord.VoiceChannel.delete:12 discord.abc.GuildChannel.delete:12 of
 msgid "The channel was not found or was already deleted."
-msgstr ""
-"채널을 찾을 수 없거나 이미 삭제되었습니다."
+msgstr "채널을 찾을 수 없거나 이미 삭제되었습니다."
 
 #: discord.CategoryChannel.delete:13 discord.TextChannel.delete:13
 #: discord.VoiceChannel.delete:13 discord.abc.GuildChannel.delete:13 of
 msgid "Deleting the channel failed."
-msgstr ""
-"채널 삭제에 실패했습니다."
+msgstr "채널 삭제에 실패했습니다."
 
 #: discord.CategoryChannel.set_permissions:3
 #: discord.TextChannel.set_permissions:3 discord.VoiceChannel.set_permissions:3
@@ -6504,8 +6466,7 @@ msgstr ""
 msgid ""
 "Sets the channel specific permission overwrites for a target in the "
 "channel."
-msgstr ""
-"채널에 대한 특정 권한 덮어쓰기를 설정합니다."
+msgstr "채널에 대한 특정 권한 덮어쓰기를 설정합니다."
 
 #: discord.CategoryChannel.set_permissions:6
 #: discord.TextChannel.set_permissions:6 discord.VoiceChannel.set_permissions:6
@@ -6514,8 +6475,8 @@ msgid ""
 "The ``target`` parameter should either be a :class:`~discord.Member` or a"
 " :class:`~discord.Role` that belongs to guild."
 msgstr ""
-"``target`` 매개 변수는 길드에 속한 :class:`~discord.Member` "
-"또는 :class:`~discord.Role` 이어야 합니다."
+"``target`` 매개 변수는 길드에 속한 :class:`~discord.Member` 또는 "
+":class:`~discord.Role` 이어야 합니다."
 
 #: discord.CategoryChannel.set_permissions:9
 #: discord.TextChannel.set_permissions:9 discord.VoiceChannel.set_permissions:9
@@ -6528,9 +6489,9 @@ msgid ""
 "``overwrite`` parameter."
 msgstr ""
 "``overwrite`` 매개 변수는, 제공된 경우 ``None`` 또는 "
-":class:`~discord.PermissionOverwrite` 이어야 합니다. "
-"편의를 위해 :class:`~discord.Permissions` 속성을 나타내는 키워드 인수를 전달할 수 "
-"있습니다. 이 작업을 수행하면 키워드 인수를 ``overwrite`` 매개 변수와 함께 쓸 수 없습니다."
+":class:`~discord.PermissionOverwrite` 이어야 합니다. 편의를 위해 "
+":class:`~discord.Permissions` 속성을 나타내는 키워드 인수를 전달할 수 있습니다. 이 작업을 수행하면 키워드"
+" 인수를 ``overwrite`` 매개 변수와 함께 쓸 수 없습니다."
 
 #: discord.CategoryChannel.set_permissions:15
 #: discord.TextChannel.set_permissions:15
@@ -6539,8 +6500,7 @@ msgstr ""
 msgid ""
 "If the ``overwrite`` parameter is ``None``, then the permission "
 "overwrites are deleted."
-msgstr ""
-"``overwrite`` 매개 변수가 ``None`` 이면, 권한 덮어쓰기가 삭제됩니다."
+msgstr "``overwrite`` 매개 변수가 ``None`` 이면, 권한 덮어쓰기가 삭제됩니다."
 
 #: discord.CategoryChannel.set_permissions:18 discord.Member.add_roles:5
 #: discord.Member.remove_roles:5 discord.Role.delete:5 discord.Role.edit:5
@@ -6550,40 +6510,35 @@ msgstr ""
 msgid ""
 "You must have the :attr:`~Permissions.manage_roles` permission to use "
 "this."
-msgstr ""
-"이것을 사용하려면 :attr:`~Permissions.manage_roles` 권한이 있어야 합니다."
+msgstr "이것을 사용하려면 :attr:`~Permissions.manage_roles` 권한이 있어야 합니다."
 
 #: discord.CategoryChannel.set_permissions:22
 #: discord.TextChannel.set_permissions:22
 #: discord.VoiceChannel.set_permissions:22
 #: discord.abc.GuildChannel.set_permissions:22 of
 msgid "Setting allow and deny: ::"
-msgstr ""
-"허용 및 거부 설정하기: ::"
+msgstr "허용 및 거부 설정하기: ::"
 
 #: discord.CategoryChannel.set_permissions:27
 #: discord.TextChannel.set_permissions:27
 #: discord.VoiceChannel.set_permissions:27
 #: discord.abc.GuildChannel.set_permissions:27 of
 msgid "Deleting overwrites ::"
-msgstr ""
-"덮어쓰기 삭제하기 ::"
+msgstr "덮어쓰기 삭제하기 ::"
 
 #: discord.CategoryChannel.set_permissions:31
 #: discord.TextChannel.set_permissions:31
 #: discord.VoiceChannel.set_permissions:31
 #: discord.abc.GuildChannel.set_permissions:31 of
 msgid "Using :class:`~discord.PermissionOverwrite` ::"
-msgstr ""
-":class:`~discord.PermissionOverwrite` 사용하기 ::"
+msgstr ":class:`~discord.PermissionOverwrite` 사용하기 ::"
 
 #: discord.CategoryChannel.set_permissions:38
 #: discord.TextChannel.set_permissions:38
 #: discord.VoiceChannel.set_permissions:38
 #: discord.abc.GuildChannel.set_permissions:38 of
 msgid "The member or role to overwrite permissions for."
-msgstr ""
-"권한을 덮어쓸 멤버 또는 역할."
+msgstr "권한을 덮어쓸 멤버 또는 역할."
 
 #: discord.CategoryChannel.set_permissions:40
 #: discord.TextChannel.set_permissions:40
@@ -6592,8 +6547,7 @@ msgstr ""
 msgid ""
 "The permissions to allow and deny to the target, or `None` to delete the "
 "overwrite."
-msgstr ""
-"대상에게 허용 및 거부할 권한들, 또는 `None` 으로 덮어쓰기 삭제."
+msgstr "대상에게 허용 및 거부할 권한들, 또는 `None` 으로 덮어쓰기 삭제."
 
 #: discord.CategoryChannel.set_permissions:43
 #: discord.TextChannel.set_permissions:43
@@ -6602,41 +6556,36 @@ msgstr ""
 msgid ""
 "A keyword argument list of permissions to set for ease of use. Cannot be "
 "mixed with ``overwrite``."
-msgstr ""
-"사용하기 쉽도록 설정하는 권한들의 키워드 인수. ``overwrite`` 와 함께 사용할 수 없습니다."
+msgstr "사용하기 쉽도록 설정하는 권한들의 키워드 인수. ``overwrite`` 와 함께 사용할 수 없습니다."
 
-#: discord.CategoryChannel.set_permissions:45 discord.Guild.prune_members:16
+#: discord.CategoryChannel.set_permissions:45 discord.Guild.prune_members:21
 #: discord.Guild.unban:12 discord.Member.move_to:16
 #: discord.TextChannel.set_permissions:45
 #: discord.VoiceChannel.set_permissions:45
 #: discord.abc.GuildChannel.set_permissions:45 of
 msgid "The reason for doing this action. Shows up on the audit log."
-msgstr ""
-"이 작업을 수행하는 사유. 감사 로그에 뜨게 됩니다."
+msgstr "이 작업을 수행하는 사유. 감사 로그에 뜨게 됩니다."
 
 #: discord.CategoryChannel.set_permissions:48
 #: discord.TextChannel.set_permissions:48
 #: discord.VoiceChannel.set_permissions:48
 #: discord.abc.GuildChannel.set_permissions:48 of
 msgid "You do not have permissions to edit channel specific permissions."
-msgstr ""
-"채널별 권한을 편집할 권한이 없습니다."
+msgstr "채널별 권한을 편집할 권한이 없습니다."
 
 #: discord.CategoryChannel.set_permissions:49
 #: discord.TextChannel.set_permissions:49
 #: discord.VoiceChannel.set_permissions:49
 #: discord.abc.GuildChannel.set_permissions:49 of
 msgid "Editing channel specific permissions failed."
-msgstr ""
-"채널별 권한을 편집하는 데 실패했습니다."
+msgstr "채널별 권한을 편집하는 데 실패했습니다."
 
 #: discord.CategoryChannel.set_permissions:50
 #: discord.TextChannel.set_permissions:50
 #: discord.VoiceChannel.set_permissions:50
 #: discord.abc.GuildChannel.set_permissions:50 of
 msgid "The role or member being edited is not part of the guild."
-msgstr ""
-"편집하려는 역할 또는 멤버가 이 길드에 속해 있지 않습니다."
+msgstr "편집하려는 역할 또는 멤버가 이 길드에 속해 있지 않습니다."
 
 #: discord.CategoryChannel.set_permissions:51
 #: discord.TextChannel.set_permissions:51
@@ -6654,43 +6603,37 @@ msgstr ""
 msgid ""
 "Clones this channel. This creates a channel with the same properties as "
 "this channel."
-msgstr ""
-"이 채널을 복제합니다. 이 채널과 동일한 속성을 가진 채널을 만듭니다."
+msgstr "이 채널을 복제합니다. 이 채널과 동일한 속성을 가진 채널을 만듭니다."
 
 #: discord.CategoryChannel.clone:8 discord.TextChannel.clone:8
 #: discord.VoiceChannel.clone:8 discord.abc.GuildChannel.clone:8 of
 msgid ""
 "The name of the new channel. If not provided, defaults to this channel "
 "name."
-msgstr ""
-"새 채널의 이름. 제공하지 않을 경우, 기본값으로 이 채널의 이름이 사용됩니다."
+msgstr "새 채널의 이름. 제공하지 않을 경우, 기본값으로 이 채널의 이름이 사용됩니다."
 
 #: discord.CategoryChannel.clone:11 discord.TextChannel.clone:11
 #: discord.VoiceChannel.clone:11 discord.abc.GuildChannel.clone:11 of
 msgid "The reason for cloning this channel. Shows up on the audit log."
-msgstr ""
-"이 채널을 복제하는 사유입니다. 감사 로그에 뜨게 됩니다."
+msgstr "이 채널을 복제하는 사유입니다. 감사 로그에 뜨게 됩니다."
 
 #: discord.CategoryChannel.clone:14 discord.Guild.create_text_channel:60
 #: discord.TextChannel.clone:14 discord.VoiceChannel.clone:14
 #: discord.abc.GuildChannel.clone:14 of
 msgid "You do not have the proper permissions to create this channel."
-msgstr ""
-"이 채널을 생성할 권한이 없습니다."
+msgstr "이 채널을 생성할 권한이 없습니다."
 
 #: discord.CategoryChannel.clone:15 discord.Guild.create_text_channel:61
 #: discord.TextChannel.clone:15 discord.VoiceChannel.clone:15
 #: discord.abc.GuildChannel.clone:15 of
 msgid "Creating the channel failed."
-msgstr ""
-"채널 생성에 실패했습니다."
+msgstr "채널 생성에 실패했습니다."
 
 #: discord.CategoryChannel.create_invite:3 discord.TextChannel.create_invite:3
 #: discord.VoiceChannel.create_invite:3
 #: discord.abc.GuildChannel.create_invite:3 of
 msgid "Creates an instant invite."
-msgstr ""
-"인스턴트 초대를 생성합니다."
+msgstr "인스턴트 초대를 생성합니다."
 
 #: discord.CategoryChannel.create_invite:5 discord.TextChannel.create_invite:5
 #: discord.VoiceChannel.create_invite:5
@@ -6698,17 +6641,16 @@ msgstr ""
 msgid ""
 "You must have the :attr:`~Permissions.create_instant_invite` permission "
 "to do this."
-msgstr ""
-"이것을 사용하려면 :attr:`~Permissions.create_instant_invite` 권한이 있어야 합니다."
+msgstr "이것을 사용하려면 :attr:`~Permissions.create_instant_invite` 권한이 있어야 합니다."
 
 #: discord.CategoryChannel.create_invite:8 discord.TextChannel.create_invite:8
 #: discord.VoiceChannel.create_invite:8
 #: discord.abc.GuildChannel.create_invite:8 of
+#, fuzzy
 msgid ""
-"How long the invite should last. If it's 0 then the invite doesn't "
-"expire. Defaults to 0."
-msgstr ""
-"초대의 지속 시간입니다. 0이면 초대가 만료되지 않습니다. 기본값은 0입니다."
+"How long the invite should last in seconds. If it's 0 then the invite "
+"doesn't expire. Defaults to 0."
+msgstr "초대의 지속 시간입니다. 0이면 초대가 만료되지 않습니다. 기본값은 0입니다."
 
 #: discord.CategoryChannel.create_invite:11
 #: discord.TextChannel.create_invite:11 discord.VoiceChannel.create_invite:11
@@ -6716,8 +6658,7 @@ msgstr ""
 msgid ""
 "How many uses the invite could be used for. If it's 0 then there are "
 "unlimited uses. Defaults to 0."
-msgstr ""
-"초대를 사용할 수 있는 횟수입니다. 0이면 무제한으로 사용할 수 있습니다. 기본값은 0입니다."
+msgstr "초대를 사용할 수 있는 횟수입니다. 0이면 무제한으로 사용할 수 있습니다. 기본값은 0입니다."
 
 #: discord.CategoryChannel.create_invite:14
 #: discord.TextChannel.create_invite:14 discord.VoiceChannel.create_invite:14
@@ -6725,9 +6666,7 @@ msgstr ""
 msgid ""
 "Denotes that the invite grants temporary membership (i.e. they get kicked"
 " after they disconnect). Defaults to ``False``."
-msgstr ""
-"초대에 임시 회원 자격이 부여되는지를 나타냅니다. (즉, 연결이 끊어지면 추방됨.)"
-"기본값은 ``False`` 입니다."
+msgstr "초대에 임시 회원 자격이 부여되는지를 나타냅니다. (즉, 연결이 끊어지면 추방됨.)기본값은 ``False`` 입니다."
 
 #: discord.CategoryChannel.create_invite:17
 #: discord.TextChannel.create_invite:17 discord.VoiceChannel.create_invite:17
@@ -6735,22 +6674,19 @@ msgstr ""
 msgid ""
 "Indicates if a unique invite URL should be created. Defaults to True. If "
 "this is set to ``False`` then it will return a previously created invite."
-msgstr ""
-"고유한 초대 URL을 생성해야 하는지 나타냅니다. 기본값은 ``True`` 입니다."
+msgstr "고유한 초대 URL을 생성해야 하는지 나타냅니다. 기본값은 ``True`` 입니다."
 
 #: discord.CategoryChannel.create_invite:21
 #: discord.TextChannel.create_invite:21 discord.VoiceChannel.create_invite:21
 #: discord.abc.GuildChannel.create_invite:21 of
 msgid "The reason for creating this invite. Shows up on the audit log."
-msgstr ""
-"이 초대 생성의 사유입니다. 감사 로그에 뜨게 됩니다."
+msgstr "이 초대 생성의 사유입니다. 감사 로그에 뜨게 됩니다."
 
 #: discord.CategoryChannel.create_invite:24
 #: discord.TextChannel.create_invite:24 discord.VoiceChannel.create_invite:24
 #: discord.abc.GuildChannel.create_invite:24 of
 msgid "Invite creation failed."
-msgstr ""
-"초대 생성에 실패했습니다."
+msgstr "초대 생성에 실패했습니다."
 
 #: discord.CategoryChannel.create_invite:27
 #: discord.TextChannel.create_invite:27 discord.VoiceChannel.create_invite:27
@@ -6761,37 +6697,32 @@ msgstr ""
 #: discord.CategoryChannel.invites:3 discord.TextChannel.invites:3
 #: discord.VoiceChannel.invites:3 discord.abc.GuildChannel.invites:3 of
 msgid "Returns a list of all active instant invites from this channel."
-msgstr ""
-"이 채널의 모든 활성 인스턴트 초대 목록을 리턴합니다."
+msgstr "이 채널의 모든 활성 인스턴트 초대 목록을 리턴합니다."
 
 #: discord.CategoryChannel.invites:5 discord.TextChannel.invites:5
 #: discord.VoiceChannel.invites:5 discord.abc.GuildChannel.invites:5 of
 msgid "You must have :attr:`~Permissions.manage_guild` to get this information."
-msgstr ""
-"이 정보를 얻으려면 :attr:`~Permissions.manage_guild` 권한이 있어야 합니다."
+msgstr "이 정보를 얻으려면 :attr:`~Permissions.manage_guild` 권한이 있어야 합니다."
 
 #: discord.CategoryChannel.invites:7 discord.Guild.bans:13
 #: discord.Guild.fetch_ban:13 discord.Guild.invites:8
 #: discord.TextChannel.invites:7 discord.VoiceChannel.invites:7
 #: discord.abc.GuildChannel.invites:7 of
 msgid "You do not have proper permissions to get the information."
-msgstr ""
-"이 정보를 얻기 위한 권한이 없습니다."
+msgstr "이 정보를 얻기 위한 권한이 없습니다."
 
 #: discord.CategoryChannel.invites:8 discord.Guild.bans:14
 #: discord.Guild.fetch_ban:15 discord.Guild.invites:9
 #: discord.TextChannel.invites:8 discord.VoiceChannel.invites:8
 #: discord.abc.GuildChannel.invites:8 of
 msgid "An error occurred while fetching the information."
-msgstr ""
-"이 정보를 가져오는 중에 오류가 발생했습니다."
+msgstr "이 정보를 가져오는 중에 오류가 발생했습니다."
 
 #: discord.CategoryChannel.invites:10 discord.Guild.invites:11
 #: discord.TextChannel.invites:10 discord.VoiceChannel.invites:10
 #: discord.abc.GuildChannel.invites:10 of
 msgid "The list of invites that are currently active."
-msgstr ""
-"현재 활성화된 초대 목록."
+msgstr "현재 활성화된 초대 목록."
 
 #: discord.CategoryChannel.invites:11 discord.TextChannel.invites:11
 #: discord.VoiceChannel.invites:11 discord.abc.GuildChannel.invites:11 of
@@ -6814,8 +6745,7 @@ msgstr ""
 msgid ""
 "Returns an :class:`~discord.AsyncIterator` that enables receiving the "
 "destination's message history."
-msgstr ""
-"대상의 메시지 기록을 받을 수 있는 :class:`~discord.AsyncIterator` 를 반환합니다."
+msgstr "대상의 메시지 기록을 받을 수 있는 :class:`~discord.AsyncIterator` 를 반환합니다."
 
 #: discord.DMChannel.history:3 discord.GroupChannel.history:3
 #: discord.Member.history:3 discord.TextChannel.history:3
@@ -6823,16 +6753,14 @@ msgstr ""
 msgid ""
 "You must have :attr:`~Permissions.read_message_history` permissions to "
 "use this."
-msgstr ""
-"이것을 사용하려면 :attr:`~Permissions.read_message_history` 권한이 있어야 합니다."
+msgstr "이것을 사용하려면 :attr:`~Permissions.read_message_history` 권한이 있어야 합니다."
 
 #: discord.DMChannel.history:14 discord.GroupChannel.history:14
 #: discord.Member.history:14 discord.Reaction.users:14
 #: discord.TextChannel.history:14 discord.User.history:14
 #: discord.abc.Messageable.history:14 of
 msgid "Flattening into a list: ::"
-msgstr ""
-"리스트로 병합하기: ::"
+msgstr "리스트로 병합하기: ::"
 
 #: discord.DMChannel.history:21 discord.GroupChannel.history:21
 #: discord.Member.history:21 discord.TextChannel.history:21
@@ -6841,8 +6769,8 @@ msgid ""
 "The number of messages to retrieve. If ``None``, retrieves every message "
 "in the channel. Note, however, that this would make it a slow operation."
 msgstr ""
-"받아올 메시지 수입니다. ``None`` 일 경우, 채널에 있는 모든 메시지를 받아옵니다. "
-"하지만 참고로, 이렇게 하면 작동이 느려질 수 있습니다."
+"받아올 메시지 수입니다. ``None`` 일 경우, 채널에 있는 모든 메시지를 받아옵니다. 하지만 참고로, 이렇게 하면 작동이 "
+"느려질 수 있습니다."
 
 #: discord.DMChannel.history:25 discord.GroupChannel.history:25
 #: discord.Member.history:25 discord.TextChannel.history:25
@@ -6850,9 +6778,7 @@ msgstr ""
 msgid ""
 "Retrieve messages before this date or message. If a date is provided it "
 "must be a timezone-naive datetime representing UTC time."
-msgstr ""
-"이 날짜 또는 이 메시지 이전의 메시지를 검색합니다. "
-"날짜가 제공되면 UTC 시간을 나타내는 시간대 없는 날짜, 시간이여야 합니다."
+msgstr "이 날짜 또는 이 메시지 이전의 메시지를 검색합니다. 날짜가 제공되면 UTC 시간을 나타내는 시간대 없는 날짜, 시간이여야 합니다."
 
 #: discord.DMChannel.history:28 discord.GroupChannel.history:28
 #: discord.Member.history:28 discord.TextChannel.history:28
@@ -6860,9 +6786,7 @@ msgstr ""
 msgid ""
 "Retrieve messages after this date or message. If a date is provided it "
 "must be a timezone-naive datetime representing UTC time."
-msgstr ""
-"이 날짜 또는 이 메시지 이후의 메시지를 검색합니다. "
-"날짜가 제공되면 UTC 시간을 나타내는 시간대 없는 날짜, 시간이여야 합니다."
+msgstr "이 날짜 또는 이 메시지 이후의 메시지를 검색합니다. 날짜가 제공되면 UTC 시간을 나타내는 시간대 없는 날짜, 시간이여야 합니다."
 
 #: discord.DMChannel.history:31 discord.GroupChannel.history:31
 #: discord.Member.history:31 discord.TextChannel.history:31
@@ -6873,10 +6797,8 @@ msgid ""
 "argument, the maximum limit is 101. Note that if the limit is an even "
 "number then this will return at most limit + 1 messages."
 msgstr ""
-"이 날짜 또는 이 메시지 주변의 메시지를 검색합니다. "
-"날짜가 제공되면 UTC 시간을 나타내는 시간대 없는 날짜, 시간이여야 합니다. "
-"이 매개변수를 사용할 때, 최대 제한은 101입니다. "
-"제한이 짝수이면 최대 + 1 메시지를 리턴합니다."
+"이 날짜 또는 이 메시지 주변의 메시지를 검색합니다. 날짜가 제공되면 UTC 시간을 나타내는 시간대 없는 날짜, 시간이여야 합니다."
+" 이 매개변수를 사용할 때, 최대 제한은 101입니다. 제한이 짝수이면 최대 + 1 메시지를 리턴합니다."
 
 #: discord.DMChannel.history:36 discord.GroupChannel.history:36
 #: discord.Member.history:36 discord.TextChannel.history:36
@@ -6885,29 +6807,26 @@ msgid ""
 "If set to ``True``, return messages in oldest->newest order. Defaults to "
 "``True`` if ``after`` is specified, otherwise ``False``."
 msgstr ""
-"``True`` 로 설정되면 메시지를 가장 오래된 순서부터 리턴합니다. "
-"``after`` 가 지정되면 기본값은 ``True`` 이고, 그렇지 않으면 ``False`` 입니다."
+"``True`` 로 설정되면 메시지를 가장 오래된 순서부터 리턴합니다. ``after`` 가 지정되면 기본값은 ``True`` "
+"이고, 그렇지 않으면 ``False`` 입니다."
 
 #: discord.DMChannel.history:40 discord.GroupChannel.history:40
 #: discord.Member.history:40 discord.TextChannel.history:40
 #: discord.User.history:40 discord.abc.Messageable.history:40 of
 msgid "You do not have permissions to get channel message history."
-msgstr ""
-"메시지 기록을 볼 권한이 없습니다."
+msgstr "메시지 기록을 볼 권한이 없습니다."
 
 #: discord.DMChannel.history:41 discord.GroupChannel.history:41
 #: discord.Member.history:41 discord.TextChannel.history:41
 #: discord.User.history:41 discord.abc.Messageable.history:41 of
 msgid "The request to get message history failed."
-msgstr ""
-"메시지 기록 가져오기에 실패했습니다."
+msgstr "메시지 기록 가져오기에 실패했습니다."
 
 #: discord.DMChannel.history:43 discord.GroupChannel.history:43
 #: discord.Member.history:43 discord.TextChannel.history:43
 #: discord.User.history:43 discord.abc.Messageable.history:43 of
 msgid ":class:`~discord.Message` -- The message with the message data parsed."
-msgstr ""
-":class:`~discord.Message` -- 매시지 데이터가 파싱된 메시지를 리턴합니다."
+msgstr ":class:`~discord.Message` -- 매시지 데이터가 파싱된 메시지를 리턴합니다."
 
 #: discord.DMChannel.typing:1 discord.GroupChannel.typing:1
 #: discord.Member.typing:1 discord.TextChannel.typing:1 discord.User.typing:1
@@ -6915,15 +6834,13 @@ msgstr ""
 msgid ""
 "Returns a context manager that allows you to type for an indefinite "
 "period of time."
-msgstr ""
-"무기한으로 타이핑할 수 있는 컨텍스트 관리자를 리턴합니다."
+msgstr "무기한으로 타이핑할 수 있는 컨텍스트 관리자를 리턴합니다."
 
 #: discord.DMChannel.typing:3 discord.GroupChannel.typing:3
 #: discord.Member.typing:3 discord.TextChannel.typing:3 discord.User.typing:3
 #: discord.abc.Messageable.typing:3 of
 msgid "This is useful for denoting long computations in your bot."
-msgstr ""
-"이는 봇에서 긴 계산을 하고 있음을 나타내는 데 유용합니다."
+msgstr "이는 봇에서 긴 계산을 하고 있음을 나타내는 데 유용합니다."
 
 #: discord.DMChannel.typing:7 discord.GroupChannel.typing:7
 #: discord.Member.typing:7 discord.TextChannel.typing:7 discord.User.typing:7
@@ -6932,22 +6849,20 @@ msgid ""
 "This is both a regular context manager and an async context manager. This"
 " means that both ``with`` and ``async with`` work with this."
 msgstr ""
-"이것은 일반적인 컨텍스트 관리자이면서도 비동기 컨텍스트 관리자입니다. "
-"이는 ``with`` 와 ``async with`` 둘 다 작동한다는 것을 의미합니다."
+"이것은 일반적인 컨텍스트 관리자이면서도 비동기 컨텍스트 관리자입니다. 이는 ``with`` 와 ``async with`` 둘 다 "
+"작동한다는 것을 의미합니다."
 
 #: discord.DMChannel.typing:10 discord.GroupChannel.typing:10
 #: discord.Member.typing:10 discord.TextChannel.typing:10
 #: discord.User.typing:10 discord.abc.Messageable.typing:10 of
 msgid "Example Usage: ::"
-msgstr ""
-"사용법 예제: ::"
+msgstr "사용법 예제: ::"
 
 #: discord.DMChannel.send:3 discord.GroupChannel.send:3 discord.Member.send:3
 #: discord.TextChannel.send:3 discord.User.send:3
 #: discord.abc.Messageable.send:3 of
 msgid "Sends a message to the destination with the content given."
-msgstr ""
-"주어진 내용(컨텐츠)으로 대상에 메시지를 보냅니다."
+msgstr "주어진 내용(컨텐츠)으로 대상에 메시지를 보냅니다."
 
 #: discord.DMChannel.send:5 discord.GroupChannel.send:5 discord.Member.send:5
 #: discord.TextChannel.send:5 discord.User.send:5
@@ -6957,8 +6872,8 @@ msgid ""
 "``str(content)``. If the content is set to ``None`` (the default), then "
 "the ``embed`` parameter must be provided."
 msgstr ""
-"컨텐츠는 ``str(content)`` 을 통해 문자열로 변환할 수 있는 타입이여야 합니다. "
-"내용이 ``None`` (기본값)으로 설정되면 ``embed`` 매개 변수를 제공해야 합니다."
+"컨텐츠는 ``str(content)`` 을 통해 문자열로 변환할 수 있는 타입이여야 합니다. 내용이 ``None`` (기본값)으로 "
+"설정되면 ``embed`` 매개 변수를 제공해야 합니다."
 
 #: discord.DMChannel.send:9 discord.GroupChannel.send:9 discord.Member.send:9
 #: discord.TextChannel.send:9 discord.User.send:9
@@ -6970,10 +6885,9 @@ msgid ""
 ":class:`~discord.File` objects. **Specifying both parameters will lead to"
 " an exception**."
 msgstr ""
-"단일 파일을 업로드하려면, ``file`` 매개 변수에 단일 :class:`~discord.File` 객체를 "
-"사용해야 합니다. 여러 파일을 업로드하려면 ``files`` 매개 변수에 "
-":class:`~discord.File` 객체가 담긴 :class:`list` 를 사용해야 합니다."
-"**두 매개 변수를 모두 지정하면 예외가 발생합니다**."
+"단일 파일을 업로드하려면, ``file`` 매개 변수에 단일 :class:`~discord.File` 객체를 사용해야 합니다. 여러"
+" 파일을 업로드하려면 ``files`` 매개 변수에 :class:`~discord.File` 객체가 담긴 :class:`list` "
+"를 사용해야 합니다.**두 매개 변수를 모두 지정하면 예외가 발생합니다**."
 
 #: discord.DMChannel.send:14 discord.GroupChannel.send:14
 #: discord.Member.send:14 discord.TextChannel.send:14 discord.User.send:14
@@ -6982,29 +6896,26 @@ msgid ""
 "If the ``embed`` parameter is provided, it must be of type "
 ":class:`~discord.Embed` and it must be a rich embed type."
 msgstr ""
-"``embed`` 매개 변수가 제공될 경우, :class:`~discord.Embed` 타입이여야 하며 이것은 "
-"rich embed 타입이여야 합니다."
+"``embed`` 매개 변수가 제공될 경우, :class:`~discord.Embed` 타입이여야 하며 이것은 rich embed "
+"타입이여야 합니다."
 
 #: discord.DMChannel.send:21 discord.GroupChannel.send:21
 #: discord.Member.send:21 discord.TextChannel.send:21 discord.User.send:21
 #: discord.abc.Messageable.send:21 of
 msgid "The rich embed for the content."
-msgstr ""
-"콘텐츠의 리치 임베드."
+msgstr "콘텐츠의 리치 임베드."
 
 #: discord.DMChannel.send:23 discord.GroupChannel.send:23
 #: discord.Member.send:23 discord.TextChannel.send:23 discord.User.send:23
 #: discord.abc.Messageable.send:23 of
 msgid "The file to upload."
-msgstr ""
-"업로드할 파일."
+msgstr "업로드할 파일."
 
 #: discord.DMChannel.send:25 discord.GroupChannel.send:25
 #: discord.Member.send:25 discord.TextChannel.send:25 discord.User.send:25
 #: discord.abc.Messageable.send:25 of
 msgid "A list of files to upload. Must be a maximum of 10."
-msgstr ""
-"업로드할 파일들의 리스트. 최대 10개여야 합니다."
+msgstr "업로드할 파일들의 리스트. 최대 10개여야 합니다."
 
 #: discord.DMChannel.send:27 discord.GroupChannel.send:27
 #: discord.Member.send:27 discord.TextChannel.send:27 discord.User.send:27
@@ -7012,10 +6923,7 @@ msgstr ""
 msgid ""
 "The nonce to use for sending this message. If the message was "
 "successfully sent, then the message will have a nonce with this value."
-msgstr ""
-""
-"이 메시지를 전송할 때 사용할 논스입니다. "
-"메시지가 성공적으로 보내졌다면, 그 메시지에 이 값을 가진 논스가 있습니다."
+msgstr "이 메시지를 전송할 때 사용할 논스입니다. 메시지가 성공적으로 보내졌다면, 그 메시지에 이 값을 가진 논스가 있습니다."
 
 #: discord.DMChannel.send:30 discord.GroupChannel.send:30
 #: discord.Member.send:30 discord.TextChannel.send:30 discord.User.send:30
@@ -7024,16 +6932,13 @@ msgid ""
 "If provided, the number of seconds to wait in the background before "
 "deleting the message we just sent. If the deletion fails, then it is "
 "silently ignored."
-msgstr ""
-"제공된 경우 방금 보낸 메시지를 삭제할 때 까지 백그라운드에서 대기하는 시간(초) 입니다. "
-"삭제가 실패하면 자동으로 무시됩니다."
+msgstr "제공된 경우 방금 보낸 메시지를 삭제할 때 까지 백그라운드에서 대기하는 시간(초) 입니다. 삭제가 실패하면 자동으로 무시됩니다."
 
 #: discord.DMChannel.send:40 discord.GroupChannel.send:40
 #: discord.Member.send:40 discord.TextChannel.send:40 discord.User.send:40
 #: discord.abc.Messageable.send:40 of
 msgid "You do not have the proper permissions to send the message."
-msgstr ""
-"메시지를 보낼 권한이 없습니다."
+msgstr "메시지를 보낼 권한이 없습니다."
 
 #: discord.DMChannel.send:41 discord.GroupChannel.send:41
 #: discord.Member.send:41 discord.TextChannel.send:41 discord.User.send:41
@@ -7041,8 +6946,7 @@ msgstr ""
 msgid ""
 "The ``files`` list is not of the appropriate size or     you specified "
 "both ``file`` and ``files``."
-msgstr ""
-"``files`` 리스트의 길이가 적당하지 않거나 ``file`` 과 ``files`` 를 모두 지정했습니다."
+msgstr "``files`` 리스트의 길이가 적당하지 않거나 ``file`` 과 ``files`` 를 모두 지정했습니다."
 
 #: discord.DMChannel.fetch_message:15 discord.DMChannel.send:44
 #: discord.GroupChannel.fetch_message:15 discord.GroupChannel.send:44
@@ -7057,8 +6961,7 @@ msgstr ""
 #: discord.Member.trigger_typing:3 discord.TextChannel.trigger_typing:3
 #: discord.User.trigger_typing:3 discord.abc.Messageable.trigger_typing:3 of
 msgid "Triggers a *typing* indicator to the destination."
-msgstr ""
-"대상에 *입력 중* 표시기를 트리거합니다."
+msgstr "대상에 *입력 중* 표시기를 트리거합니다."
 
 #: discord.DMChannel.trigger_typing:5 discord.GroupChannel.trigger_typing:5
 #: discord.Member.trigger_typing:5 discord.TextChannel.trigger_typing:5
@@ -7066,64 +6969,55 @@ msgstr ""
 msgid ""
 "*Typing* indicator will go away after 10 seconds, or after a message is "
 "sent."
-msgstr ""
-"*입력 중* 표시기는 10초 후에 또는 메시지가 전송 된 후에 사라집니다."
+msgstr "*입력 중* 표시기는 10초 후에 또는 메시지가 전송 된 후에 사라집니다."
 
 #: discord.DMChannel.fetch_message:3 discord.GroupChannel.fetch_message:3
 #: discord.Member.fetch_message:3 discord.TextChannel.fetch_message:3
 #: discord.User.fetch_message:3 discord.abc.Messageable.fetch_message:3 of
 msgid "Retrieves a single :class:`~discord.Message` from the destination."
-msgstr ""
-"대상에서 단일 :class:`~discord.Message` 를 검색합니다."
+msgstr "대상에서 단일 :class:`~discord.Message` 를 검색합니다."
 
 #: discord.DMChannel.fetch_message:5 discord.GroupChannel.fetch_message:5
 #: discord.Member.fetch_message:5 discord.TextChannel.fetch_message:5
 #: discord.User.fetch_message:5 discord.abc.Messageable.fetch_message:5 of
 msgid "This can only be used by bot accounts."
-msgstr ""
-"오직 봇 계정에서만 사용할 수 있습니다."
+msgstr "오직 봇 계정에서만 사용할 수 있습니다."
 
 #: discord.DMChannel.fetch_message:7 discord.GroupChannel.fetch_message:7
 #: discord.Member.fetch_message:7 discord.TextChannel.fetch_message:7
 #: discord.User.fetch_message:7 discord.abc.Messageable.fetch_message:7 of
 msgid "The message ID to look for."
-msgstr ""
-"찾을 메시지 ID."
+msgstr "찾을 메시지 ID."
 
 #: discord.DMChannel.fetch_message:10 discord.GroupChannel.fetch_message:10
 #: discord.Member.fetch_message:10 discord.TextChannel.fetch_message:10
 #: discord.User.fetch_message:10 discord.abc.Messageable.fetch_message:10 of
 msgid "The specified message was not found."
-msgstr ""
-"지정된 메시지를 찾을 수 없습니다."
+msgstr "지정된 메시지를 찾을 수 없습니다."
 
 #: discord.DMChannel.fetch_message:11 discord.GroupChannel.fetch_message:11
 #: discord.Member.fetch_message:11 discord.TextChannel.fetch_message:11
 #: discord.User.fetch_message:11 discord.abc.Messageable.fetch_message:11 of
 msgid "You do not have the permissions required to get a message."
-msgstr ""
-"메시지를 가져올 권한이 없습니다."
+msgstr "메시지를 가져올 권한이 없습니다."
 
 #: discord.DMChannel.fetch_message:12 discord.GroupChannel.fetch_message:12
 #: discord.Member.fetch_message:12 discord.TextChannel.fetch_message:12
 #: discord.User.fetch_message:12 discord.abc.Messageable.fetch_message:12 of
 msgid "Retrieving the message failed."
-msgstr ""
-"메시지 가져오기에 실패했습니다."
+msgstr "메시지 가져오기에 실패했습니다."
 
 #: discord.DMChannel.fetch_message:14 discord.GroupChannel.fetch_message:14
 #: discord.Member.fetch_message:14 discord.TextChannel.fetch_message:14
 #: discord.User.fetch_message:14 discord.abc.Messageable.fetch_message:14 of
 msgid "The message asked for."
-msgstr ""
-"요청한 메시지."
+msgstr "요청한 메시지."
 
 #: discord.DMChannel.pins:3 discord.GroupChannel.pins:3 discord.Member.pins:3
 #: discord.TextChannel.pins:3 discord.User.pins:3
 #: discord.abc.Messageable.pins:3 of
 msgid "Retrieves all messages that are currently pinned in the channel."
-msgstr ""
-"채널에 현재 고정되어 있는 모든 메시지를 검색합니다."
+msgstr "채널에 현재 고정되어 있는 모든 메시지를 검색합니다."
 
 #: discord.DMChannel.pins:7 discord.GroupChannel.pins:7 discord.Member.pins:7
 #: discord.TextChannel.pins:7 discord.User.pins:7
@@ -7140,15 +7034,13 @@ msgstr ""
 #: discord.Member.pins:11 discord.TextChannel.pins:11 discord.User.pins:11
 #: discord.abc.Messageable.pins:11 of
 msgid "Retrieving the pinned messages failed."
-msgstr ""
-"고정된 메시지를 가져오는 데 실패했습니다."
+msgstr "고정된 메시지를 가져오는 데 실패했습니다."
 
 #: discord.DMChannel.pins:13 discord.GroupChannel.pins:13
 #: discord.Member.pins:13 discord.TextChannel.pins:13 discord.User.pins:13
 #: discord.abc.Messageable.pins:13 of
 msgid "The messages that are currently pinned."
-msgstr ""
-"현재 고정되어 있는 메시지들."
+msgstr "현재 고정되어 있는 메시지들."
 
 #: discord.DMChannel.pins:14 discord.GroupChannel.pins:14
 #: discord.Member.pins:14 discord.TextChannel.pins:14 discord.User.pins:14
@@ -7170,23 +7062,20 @@ msgstr "디스코드 모델"
 msgid ""
 "Models are classes that are received from Discord and are not meant to be"
 " created by the user of the library."
-msgstr ""
-"모델은 디스코드에서 수신되는 클래스로."
-", 라이브러리 사용자에 의해 생성되지 않습니다"
+msgstr "모델은 디스코드에서 수신되는 클래스로., 라이브러리 사용자에 의해 생성되지 않습니다"
 
 #: ../../api.rst:2281
+#, fuzzy
 msgid ""
 "The classes listed below are **not intended to be created by users** and "
-"are also **읽기 전용** 입니다."
+"are also **read-only**."
 msgstr "아래에 나열된 클래스들는 **유저들에 의해 생성되도록 의도된 것**이 아니며 **읽기 전용** 입니다."
 
 #: ../../api.rst:2284
 msgid ""
 "For example, this means that you should not make your own :class:`User` "
 "instances nor should you modify the :class:`User` instance yourself."
-msgstr ""
-"예를 들어,  :class:`User` 인스턴스를 직접 만들거나  "
-":class:`User` 인스턴스를 직접 수정해서는 안됩니다."
+msgstr "예를 들어,  :class:`User` 인스턴스를 직접 만들거나  :class:`User` 인스턴스를 직접 수정해서는 안됩니다."
 
 #: ../../api.rst:2287
 msgid ""
@@ -7195,17 +7084,15 @@ msgid ""
 ":func:`utils.find` function or attributes of model classes that you "
 "receive from the events specified in the :ref:`discord-api-events`."
 msgstr ""
-"이런 모델 클래스 인스턴스 중 하나를 얻기 위해서는 캐시를 거치는 것이며, 그 중 가장 일반적인 방법은 "
-" :ref:`discord-api-events`\\에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의 :func:`utils.find` 함수 또는 속성을 거치는 것입니다."
+"이런 모델 클래스 인스턴스 중 하나를 얻기 위해서는 캐시를 거치는 것이며, 그 중 가장 일반적인 방법은  :ref:`discord-"
+"api-events`\\에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의 :func:`utils.find` 함수 또는 속성을 "
+"거치는 것입니다."
 
 #: ../../api.rst:2294 ../../api.rst:2559
 msgid ""
 "Nearly all classes here have :ref:`py:slots` defined which means that it "
 "is impossible to have dynamic attributes to the data classes."
-msgstr ""
-"여기의 거의 모든 클래스에는 :ref:`py:slots` 이 정의되어 있으므로 "
-"데이터 클래스에 동적 속성을 가질 수 없습니다."
-
+msgstr "여기의 거의 모든 클래스에는 :ref:`py:slots` 이 정의되어 있으므로 데이터 클래스에 동적 속성을 가질 수 없습니다."
 
 #: ../../api.rst:2299
 msgid "ClientUser"
@@ -7247,9 +7134,7 @@ msgstr "사용자가 가지고 있는 아바타 해시. None 일 수 있습니�
 msgid ""
 "Specifies if the user is a system user (i.e. represents Discord "
 "officially)."
-msgstr ""
-"사용자가 시스템 사용자인지를 지정 (예 : 공식적으로 "
-"디스코드를 나타냄)"
+msgstr "사용자가 시스템 사용자인지를 지정 (예 : 공식적으로 디스코드를 나타냄)"
 
 #: discord.ClientUser:61 of
 msgid "Specifies if the user is a verified account."
@@ -7275,7 +7160,9 @@ msgstr "사용자가 프리미엄 사용자인지 여부를 지정(예 : Discord
 msgid ""
 "Specifies the type of premium a user has (e.g. Nitro or Nitro Classic). "
 "Could be None if the user is not premium."
-msgstr "사용자가 가진 프리미엄 유형을 지정 (예 : Nitro 또는 Nitro Classic) 사용자가 프리미엄이 아닌 경우 None 일 수 있습니다."
+msgstr ""
+"사용자가 가진 프리미엄 유형을 지정 (예 : Nitro 또는 Nitro Classic) 사용자가 프리미엄이 아닌 경우 None 일 "
+"수 있습니다."
 
 #: discord.ClientUser:93 of
 msgid "Optional[:class:`PremiumType`]"
@@ -7368,7 +7255,9 @@ msgstr "변경하려는 새 사용자 이름입니다."
 msgid ""
 "A :term:`py:bytes-like object` representing the image to upload. Could be"
 " ``None`` to denote no avatar."
-msgstr "업로드 할 이미지를 가진 :term:`py:bytes-like object` 입니다. ``None``\\로 아바타 없음을 표시 할 수 있습니다."
+msgstr ""
+"업로드 할 이미지를 가진 :term:`py:bytes-like object` 입니다. ``None``\\로 아바타 없음을 표시 할 "
+"수 있습니다."
 
 #: discord.ClientUser.edit:36 of
 msgid "Editing your profile failed."
@@ -7560,7 +7449,9 @@ msgstr "만약 사용자에게 기존 아바타가 없는 경우 기본 아바�
 msgid ""
 "This is equivalent to calling :meth:`avatar_url_as` with the default "
 "parameters (i.e. webp/gif detection and a size of 1024)."
-msgstr "이는 :meth:`avatar_url_as`\\의 기본인 (webp / gif , 크기: 1024) 를 사용하여 호출 하는 것과 같습니다."
+msgstr ""
+"이는 :meth:`avatar_url_as`\\의 기본인 (webp / gif , 크기: 1024) 를 사용하여 호출 하는 것과 "
+"같습니다."
 
 #: discord.ClientUser.avatar_url_as:6 discord.Guild.icon_url_as:3
 #: discord.Member.avatar_url_as:6 discord.User.avatar_url_as:6
@@ -7569,7 +7460,9 @@ msgid ""
 "The format must be one of 'webp', 'jpeg', 'jpg', 'png' or 'gif', and "
 "'gif' is only valid for animated avatars. The size must be a power of 2 "
 "between 16 and 4096."
-msgstr "형식은 'webp', 'jpeg', 'jpg', 'png', 'gif' 중 하나여야 하며, 'gif' 은 애미메이션 아바타에만 유효합니다. 크기는 16에서 4096사이의 2의 거듭 제곱 이여야합니다."
+msgstr ""
+"형식은 'webp', 'jpeg', 'jpg', 'png', 'gif' 중 하나여야 하며, 'gif' 은 애미메이션 아바타에만 "
+"유효합니다. 크기는 16에서 4096사이의 2의 거듭 제곱 이여야합니다."
 
 #: discord.ClientUser.avatar_url_as:10 discord.Member.avatar_url_as:10
 #: discord.User.avatar_url_as:10 discord.WidgetMember.avatar_url_as:10 of
@@ -7598,11 +7491,14 @@ msgstr "잘못된 형식이  ``format`` 또는 ``static_format`` 에 전달되�
 msgid ""
 "A property that returns a color denoting the rendered color for the user."
 " This always returns :meth:`Colour.default`."
-msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 리턴합니다."
+msgstr ""
+"사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 "
+"리턴합니다."
 
 #: discord.ClientUser.color:4 discord.Member.color:5 discord.User.color:4
 #: discord.WidgetMember.color:4 of
-msgid "There is an alias for this named :meth:`colour`."
+#, fuzzy
+msgid "There is an alias for this named :attr:`colour`."
 msgstr ":meth:`colour` 이라는 별칭이 있습니다."
 
 #: discord.ClientUser.color:6 discord.ClientUser.colour:6
@@ -7617,11 +7513,14 @@ msgstr ":class:`Colour`"
 msgid ""
 "A property that returns a colour denoting the rendered colour for the "
 "user. This always returns :meth:`Colour.default`."
-msgstr "사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 리턴합니다."
+msgstr ""
+"사용자의 렌더링 된 색상을 나타내는 색상을 리턴하는 속성입니다. 이것은 항상 :meth:`Colour.default`\\를 "
+"리턴합니다."
 
 #: discord.ClientUser.colour:4 discord.Member.colour:5 discord.User.colour:4
 #: discord.WidgetMember.colour:4 of
-msgid "There is an alias for this named :meth:`color`."
+#, fuzzy
+msgid "There is an alias for this named :attr:`color`."
 msgstr ":meth:`color` 이라는 별칭이 있습니다."
 
 #: discord.ClientUser.created_at:1 discord.User.created_at:1
@@ -7688,6 +7587,17 @@ msgstr "기본적으로 다음과 같습니다."
 #: discord.User.permissions_in:9 discord.WidgetMember.permissions_in:9 of
 msgid "The channel to check your permissions for."
 msgstr "권한을 확인할 채널입니다."
+
+#: discord.ClientUser.public_flags:1 discord.User.public_flags:1
+#: discord.WidgetMember.public_flags:1 of
+msgid "The publicly available flags the user has."
+msgstr ""
+
+#: discord.ClientUser.public_flags:3 discord.User.public_flags:3
+#: discord.WidgetMember.public_flags:3 of
+#, fuzzy
+msgid ":class:`PublicFlags`"
+msgstr ":class:`dict`"
 
 #: ../../api.rst:2306
 msgid "Relationship"
@@ -7888,7 +7798,9 @@ msgid ""
 "The proxy URL. This is a cached version of the :attr:`~Attachment.url` in"
 " the case of images. When the message is deleted, this URL might be valid"
 " for a few minutes or not valid at all."
-msgstr "프록시 URL. 이미지의 캐시 된 :attr:`~Attachment.url` 입니다. 메시지가 삭제되면 이 URL은 몇 분동안 유효합니다."
+msgstr ""
+"프록시 URL. 이미지의 캐시 된 :attr:`~Attachment.url` 입니다. 메시지가 삭제되면 이 URL은 몇 분동안 "
+"유효합니다."
 
 #: discord.Attachment.is_spoiler:1 of
 msgid ":class:`bool`: Whether this attachment contains a spoiler."
@@ -7920,14 +7832,17 @@ msgid ""
 "after the message is deleted. Note that this can still fail to download "
 "deleted attachments if too much time has passed and it does not work on "
 "some types of attachments."
-msgstr "첨부 파일을 다운로드할 때 :attr:`url` 이 아닌 :attr:`proxy_url` 을 사용할지 여부입니다. 일반적으로 메시지가 삭제된 직후 삭제되는 일반 URL에 비해, 삭제 후 첨부 파일을 더 자주 저장할 수 있습니다. 시간이 너무 많이 경과하여 일부 첨부 파일 형식에서는 작동하지 않는 경우에도 삭제된 첨부 파일을 다운로드하지 못할 수 있습니다."
+msgstr ""
+"첨부 파일을 다운로드할 때 :attr:`url` 이 아닌 :attr:`proxy_url` 을 사용할지 여부입니다. 일반적으로 "
+"메시지가 삭제된 직후 삭제되는 일반 URL에 비해, 삭제 후 첨부 파일을 더 자주 저장할 수 있습니다. 시간이 너무 많이 경과하여 "
+"일부 첨부 파일 형식에서는 작동하지 않는 경우에도 삭제된 첨부 파일을 다운로드하지 못할 수 있습니다."
 
 #: discord.Attachment.save:20 of
 msgid "Saving the attachment failed."
 msgstr "첨부 파일을 저장하지 못했습니다."
 
 #: discord.Attachment.read:17 discord.Attachment.save:21
-#: discord.Attachment.to_file:18 of
+#: discord.Attachment.to_file:24 of
 msgid "The attachment was deleted."
 msgstr "첨부 파일이 삭제되었습니다."
 
@@ -7939,11 +7854,11 @@ msgstr "쓴 바이트의 수입니다."
 msgid "Retrieves the content of this attachment as a :class:`bytes` object."
 msgstr "첨부 파일의 내용을 :class:`bytes` 객체로 가져옵니다."
 
-#: discord.Attachment.read:15 discord.Attachment.to_file:16 of
+#: discord.Attachment.read:15 discord.Attachment.to_file:22 of
 msgid "Downloading the attachment failed."
 msgstr "첨부 파일를 다운로드 하지 못했습니다."
 
-#: discord.Attachment.read:16 discord.Attachment.to_file:17 of
+#: discord.Attachment.read:16 discord.Attachment.to_file:23 of
 msgid "You do not have permissions to access this attachment"
 msgstr "이 첨부 파일에 액세스 할 수있는 권한이 없습니다."
 
@@ -7957,11 +7872,33 @@ msgid ""
 ":meth:`abc.Messageable.send`."
 msgstr ":class:`File` 을 :meth:`abc.Messageable.send` 하기 적합한 파일로 변환합니다."
 
-#: discord.Attachment.to_file:20 of
+#: discord.Attachment.to_file:8 of
+#, fuzzy
+msgid ""
+"Whether to use :attr:`proxy_url` rather than :attr:`url` when downloading"
+" the attachment. This will allow attachments to be saved after deletion "
+"more often, compared to the regular URL which is generally deleted right "
+"after the message is deleted. Note that this can still fail to download "
+"deleted attachments if too much time has passed and it does not work on "
+"some types of attachments.  .. versionadded:: 1.4"
+msgstr ""
+"첨부 파일을 다운로드할 때 :attr:`url` 이 아닌 :attr:`proxy_url` 을 사용할지 여부입니다. 일반적으로 "
+"메시지가 삭제된 직후 삭제되는 일반 URL에 비해, 삭제 후 첨부 파일을 더 자주 저장할 수 있습니다. 시간이 너무 많이 경과하여 "
+"일부 첨부 파일 형식에서는 작동하지 않는 경우에도 삭제된 첨부 파일을 다운로드하지 못할 수 있습니다."
+
+#: discord.Attachment.to_file:17 of
+msgid "Whether the file is a spoiler.  .. versionadded:: 1.4"
+msgstr ""
+
+#: discord.Attachment.to_file:17 of
+msgid "Whether the file is a spoiler."
+msgstr ""
+
+#: discord.Attachment.to_file:26 of
 msgid "The attachment as a file suitable for sending."
 msgstr "파일을 보내기에 적합한 첨부파일입니다."
 
-#: discord.Attachment.to_file:21 of
+#: discord.Attachment.to_file:27 of
 msgid ":class:`File`"
 msgstr ":class:`File`"
 
@@ -8006,7 +7943,9 @@ msgid ""
 ":class:`PartialEmoji` won't have a connection state if user created, and "
 "a URL won't be present if a custom image isn't associated with the asset,"
 " e.g. a guild with no custom icon."
-msgstr "사용자가 만든 :class:`PartialEmoji` 는 연결 상태가 되지 않으며, 사용자 지정 이미지가 에셋과 연결되지 않은 경우 (예 : 사용자 지정 아이콘이 없는 길드) URL이 표시되지 않습니다."
+msgstr ""
+"사용자가 만든 :class:`PartialEmoji` 는 연결 상태가 되지 않으며, 사용자 지정 이미지가 에셋과 연결되지 않은 경우"
+" (예 : 사용자 지정 아이콘이 없는 길드) URL이 표시되지 않습니다."
 
 #: discord.Asset.read:13 discord.Asset.save:10 of
 msgid "There was no valid URL or internal connection state."
@@ -8048,7 +7987,9 @@ msgstr "이 중 하나도 수동으로 만들 필요가 없습니다."
 msgid ""
 "Specifies if the message was done with text-to-speech. This can only be "
 "accurately received in :func:`on_message` due to a discord limitation."
-msgstr "메시지가 tts로 왔는지 여부를 지정합니다. 이는 디스코드의 제한으로 인해 :func:`on_message` 에서만 정확하게 확인 할 수 있습니다."
+msgstr ""
+"메시지가 tts로 왔는지 여부를 지정합니다. 이는 디스코드의 제한으로 인해 :func:`on_message` 에서만 정확하게 확인 "
+"할 수 있습니다."
 
 #: discord.Message:15 of
 msgid ""
@@ -8066,7 +8007,9 @@ msgid ""
 "A :class:`Member` that sent the message. If :attr:`channel` is a private "
 "channel or the user has the left the guild, then it is a :class:`User` "
 "instead."
-msgstr "메시지를 보낸 :class:`Member` 입니다. 만약 :attr:`channel` 이 개인 메시지 이거나, 사용자가 서버에서 탈퇴한 경우 :class:`User` 로 대신합니다."
+msgstr ""
+"메시지를 보낸 :class:`Member` 입니다. 만약 :attr:`channel` 이 개인 메시지 이거나, 사용자가 서버에서 "
+"탈퇴한 경우 :class:`User` 로 대신합니다."
 
 #: discord.Message:29 of
 msgid "The actual contents of the message."
@@ -8090,7 +8033,9 @@ msgstr "리스트 [:class:`Embed`]"
 msgid ""
 "The :class:`TextChannel` that the message was sent from. Could be a "
 ":class:`DMChannel` or :class:`GroupChannel` if it's a private message."
-msgstr "메시지가 전송된 :class:`TextChannel` 입니다. 개인 메시지일 경우에는 :class:`DMChannel` 또는 :class:`GroupChannel` 일 수 있습니다."
+msgstr ""
+"메시지가 전송된 :class:`TextChannel` 입니다. 개인 메시지일 경우에는 :class:`DMChannel` 또는 "
+":class:`GroupChannel` 일 수 있습니다."
 
 #: discord.Message:49 of
 msgid "Union[:class:`abc.Messageable`]"
@@ -8116,7 +8061,9 @@ msgid ""
 "message itself. Rather this boolean indicates if either the ``@everyone``"
 " or the ``@here`` text is in the message **and** it did end up "
 "mentioning."
-msgstr "메시지 자체에 ``@everyone`` 또는 ``@here`` 텍스트가 있는지 확인하지 않습니다. 이 부울은 ``@everyone`` 또는 ``@here`` 텍스트 중 하나가 메시지에 **있고** 결국 언급한건지를 나타냅니다."
+msgstr ""
+"메시지 자체에 ``@everyone`` 또는 ``@here`` 텍스트가 있는지 확인하지 않습니다. 이 부울은 "
+"``@everyone`` 또는 ``@here`` 텍스트 중 하나가 메시지에 **있고** 결국 언급한건지를 나타냅니다."
 
 #: discord.Message:72 of
 msgid ""
@@ -8125,8 +8072,10 @@ msgid ""
 "messages that are not of type :attr:`MessageType.default`\\, this array "
 "can be used to aid in system messages. For more information, see "
 ":attr:`system_content`."
-msgstr "언급된 :class:`Member` 의 목록입니다. 메시지가 개인 메시지일 경우 리스트가 :class:`User` 가 됩니다. "
-":attr:`MessageType.default` 유형이 아닌 메시지의 경우 이 배열을 사용하여 시스템 메시지를 지원할 수 있습니다. 자세한 내용은 :attr:`system_content`\\를 참조하시기 바랍니다."
+msgstr ""
+"언급된 :class:`Member` 의 목록입니다. 메시지가 개인 메시지일 경우 리스트가 :class:`User` 가 됩니다. "
+":attr:`MessageType.default` 유형이 아닌 메시지의 경우 이 배열을 사용하여 시스템 메시지를 지원할 수 "
+"있습니다. 자세한 내용은 :attr:`system_content`\\를 참조하시기 바랍니다."
 
 #: discord.Message:79 of
 msgid ""
@@ -8206,7 +8155,9 @@ msgid ""
 "The activity associated with this message. Sent with Rich-Presence "
 "related messages that for example, request joining, spectating, or "
 "listening to or with another member."
-msgstr "이 메시지와 관련된 활동입니다. Rich-Presence 관련 메시지 입니다. (예 : 다른 회원의 참여, 관람 또는 청취(스포티파이) 요청)"
+msgstr ""
+"이 메시지와 관련된 활동입니다. Rich-Presence 관련 메시지 입니다. (예 : 다른 회원의 참여, 관람 또는 "
+"청취(스포티파이) 요청)"
 
 #: discord.Message:142 of
 msgid "It is a dictionary with the following optional keys:"
@@ -8292,7 +8243,9 @@ msgid ""
 "A property that returns the content in a \"cleaned up\" manner. This "
 "basically means that mentions are transformed into the way the client "
 "shows it. e.g. ``<#id>`` will transform into ``#name``."
-msgstr "\"정리\" 방식으로 내용을 반환하는 속성입니다. 이는 기본적으로 언급이 클라이언트가 표시하는 방식으로 변환됨을 의미합니다. 예를 들어, ``<#id>``\\는 ``#name``\\으로 변환됩니다."
+msgstr ""
+"\"정리\" 방식으로 내용을 반환하는 속성입니다. 이는 기본적으로 언급이 클라이언트가 표시하는 방식으로 변환됨을 의미합니다. 예를 "
+"들어, ``<#id>``\\는 ``#name``\\으로 변환됩니다."
 
 #: discord.Message.clean_content:6 of
 msgid "This will also transform @everyone and @here mentions into non-mentions."
@@ -8302,7 +8255,9 @@ msgstr "또한 @everyone 및 @here 언급을 멘션이 아닌것으로 변환합
 msgid ""
 "This *does not* escape markdown. If you want to escape markdown then use "
 ":func:`utils.escape_markdown` along with this function."
-msgstr "이것은 마크다운을 피하지 *않습니다.* 마크다운을 피하려면 :func:`utils.escape_markdown` 기능과 함께 사용하세요."
+msgstr ""
+"이것은 마크다운을 피하지 *않습니다.* 마크다운을 피하려면 :func:`utils.escape_markdown` 기능과 함께 "
+"사용하세요."
 
 #: discord.Message.created_at:1 of
 msgid "The message's creation time in UTC."
@@ -8338,7 +8293,9 @@ msgid ""
 "In the case of :attr:`MessageType.default`\\, this just returns the "
 "regular :attr:`Message.content`. Otherwise this returns an English "
 "message denoting the contents of the system message."
-msgstr "`:attr:MessageType.default`\\의 경우 일반 :attr:`Message.content`만 반환합니다. 그렇지 않으면 시스템 메시지의 내용을 나타내는 영어 메시지가 리턴됩니다."
+msgstr ""
+"`:attr:MessageType.default`\\의 경우 일반 :attr:`Message.content`만 반환합니다. 그렇지 "
+"않으면 시스템 메시지의 내용을 나타내는 영어 메시지가 리턴됩니다."
 
 #: discord.Message.delete:3 of
 msgid "Deletes the message."
@@ -8349,7 +8306,9 @@ msgid ""
 "Your own messages could be deleted without any proper permissions. "
 "However to delete other people's messages, you need the "
 ":attr:`~Permissions.manage_messages` permission."
-msgstr "권한없이 자신의 메시지를 삭제할 수 있습니다. 그러나 다른 사람의 메시지를 삭제하려면 :attr:`~Permissions.manage_messages` 권한 이 필요합니다 ."
+msgstr ""
+"권한없이 자신의 메시지를 삭제할 수 있습니다. 그러나 다른 사람의 메시지를 삭제하려면 "
+":attr:`~Permissions.manage_messages` 권한 이 필요합니다 ."
 
 #: discord.Message.delete:9 of
 msgid "Added the new ``delay`` keyword-only parameter."
@@ -8405,7 +8364,10 @@ msgid ""
 "if set to ``True``. If set to ``False`` this brings the embeds back if "
 "they were suppressed. Using this parameter requires "
 ":attr:`~.Permissions.manage_messages`."
-msgstr "메시지에 대한 임베드를 억제할지 여부입니다. ``True``\\로 설정하면 모든 임베드가 제거됩니다. ``False``\\으로 설정된 경우 억제된 경우 임베드를 다시 가져옵니다. 이 매개 변수를 사용하려면 :attr:`~.Permissions.manage_messages`\\가 필요합니다."
+msgstr ""
+"메시지에 대한 임베드를 억제할지 여부입니다. ``True``\\로 설정하면 모든 임베드가 제거됩니다. ``False``\\으로 "
+"설정된 경우 억제된 경우 임베드를 다시 가져옵니다. 이 매개 변수를 사용하려면 "
+":attr:`~.Permissions.manage_messages`\\가 필요합니다."
 
 #: discord.Message.edit:21 of
 msgid ""
@@ -8414,11 +8376,11 @@ msgid ""
 "silently ignored."
 msgstr "제공한 경우 방금 편집 한 메시지를 삭제하기 전에 백그라운드에서 대기하는 시간 (초)입니다. 삭제가 실패하면 자동으로 무시됩니다."
 
-#: discord.Message.edit:26 of
+#: discord.Message.edit:30 of
 msgid "Editing the message failed."
 msgstr "메시지 편집에 실패했습니다."
 
-#: discord.Message.edit:27 of
+#: discord.Message.edit:31 of
 msgid ""
 "Tried to suppress a message without permissions or     edited a message's"
 " content or embed that isn't yours."
@@ -8492,7 +8454,9 @@ msgid ""
 "You must have the :attr:`~Permissions.read_message_history` permission to"
 " use this. If nobody else has reacted to the message using this emoji, "
 "the :attr:`~Permissions.add_reactions` permission is required."
-msgstr "이 기능을 사용하려면 :attr:`~Permissions.read_message_history` 권한이 있어야 합니다. 이 이모지를 사용하여 메시지에 응답한 사람이 없는 경우 :attr:`~Permissions.add_reactions` 권한이 필요합니다."
+msgstr ""
+"이 기능을 사용하려면 :attr:`~Permissions.read_message_history` 권한이 있어야 합니다. 이 이모지를"
+" 사용하여 메시지에 응답한 사람이 없는 경우 :attr:`~Permissions.add_reactions` 권한이 필요합니다."
 
 #: discord.Message.add_reaction:11 of
 msgid "The emoji to react with."
@@ -8524,7 +8488,9 @@ msgstr "메시지에서 멤버의 반응 제거"
 msgid ""
 "If the reaction is not your own (i.e. ``member`` parameter is not you) "
 "then the :attr:`~Permissions.manage_messages` permission is needed."
-msgstr "반응이 사용자 자신의 것이 아닌 경우(즉, ``member`` 매개변수가 내가 아닌 경우) :attr:`~Permissions.manage_messages` 권한이 필요합니다."
+msgstr ""
+"반응이 사용자 자신의 것이 아닌 경우(즉, ``member`` 매개변수가 내가 아닌 경우) "
+":attr:`~Permissions.manage_messages` 권한이 필요합니다."
 
 #: discord.Message.remove_reaction:10 of
 msgid ""
@@ -8939,135 +8905,139 @@ msgid "The maximum amount of members for the guild."
 msgstr ""
 
 #: discord.Guild:96 of
+msgid "The maximum amount of users in a video channel."
+msgstr ""
+
+#: discord.Guild:104 of
 msgid "The guild's banner."
 msgstr ""
 
-#: discord.Guild:102 of
+#: discord.Guild:110 of
 msgid "The guild's description."
 msgstr ""
 
-#: discord.Guild:108 of
+#: discord.Guild:116 of
 msgid ""
 "Indicates the guild's two factor authorisation level. If this value is 0 "
 "then the guild does not require 2FA for their administrative members. If "
 "the value is 1 then they do."
 msgstr ""
 
-#: discord.Guild:116 of
+#: discord.Guild:124 of
 msgid "The guild's verification level."
 msgstr ""
 
-#: discord.Guild:118 discord.PartialInviteGuild:40 of
+#: discord.Guild:126 discord.PartialInviteGuild:40 of
 msgid ":class:`VerificationLevel`"
 msgstr ""
 
-#: discord.Guild:122 of
+#: discord.Guild:130 of
 msgid "The guild's explicit content filter."
 msgstr ""
 
-#: discord.Guild:124 of
+#: discord.Guild:132 of
 msgid ":class:`ContentFilter`"
 msgstr ""
 
-#: discord.Guild:128 of
+#: discord.Guild:136 of
 msgid "The guild's notification settings."
 msgstr ""
 
-#: discord.Guild:130 of
+#: discord.Guild:138 of
 msgid ":class:`NotificationLevel`"
 msgstr ""
 
-#: discord.Guild:134 of
+#: discord.Guild:142 of
 msgid "A list of features that the guild has. They are currently as follows:"
 msgstr ""
 
-#: discord.Guild:136 of
+#: discord.Guild:144 of
 msgid "``VIP_REGIONS``: Guild has VIP voice regions"
 msgstr ""
 
-#: discord.Guild:137 of
+#: discord.Guild:145 of
 msgid ""
 "``VANITY_URL``: Guild can have a vanity invite URL (e.g. discord.gg"
 "/discord-api)"
 msgstr ""
 
-#: discord.Guild:138 of
+#: discord.Guild:146 of
 msgid "``INVITE_SPLASH``: Guild's invite page can have a special splash."
 msgstr ""
 
-#: discord.Guild:139 of
+#: discord.Guild:147 of
 msgid "``VERIFIED``: Guild is a verified server."
 msgstr ""
 
-#: discord.Guild:140 of
+#: discord.Guild:148 of
 msgid "``PARTNERED``: Guild is a partnered server."
 msgstr ""
 
-#: discord.Guild:141 of
+#: discord.Guild:149 of
 msgid "``MORE_EMOJI``: Guild is allowed to have more than 50 custom emoji."
 msgstr ""
 
-#: discord.Guild:142 of
+#: discord.Guild:150 of
 msgid "``DISCOVERABLE``: Guild shows up in Server Discovery."
 msgstr ""
 
-#: discord.Guild:143 of
+#: discord.Guild:151 of
 msgid "``FEATURABLE``: Guild is able to be featured in Server Discovery."
 msgstr ""
 
-#: discord.Guild:144 of
+#: discord.Guild:152 of
 msgid "``COMMERCE``: Guild can sell things using store channels."
 msgstr ""
 
-#: discord.Guild:145 of
+#: discord.Guild:153 of
 msgid "``PUBLIC``: Guild is a public guild."
 msgstr ""
 
-#: discord.Guild:146 of
+#: discord.Guild:154 of
 msgid "``NEWS``: Guild can create news channels."
 msgstr ""
 
-#: discord.Guild:147 of
+#: discord.Guild:155 of
 msgid "``BANNER``: Guild can upload and use a banner (i.e. :meth:`banner_url`)."
 msgstr ""
 
-#: discord.Guild:148 of
+#: discord.Guild:156 of
 msgid "``ANIMATED_ICON``: Guild can upload an animated icon."
 msgstr ""
 
-#: discord.Guild:149 of
+#: discord.Guild:157 of
 msgid "``PUBLIC_DISABLED``: Guild cannot be public."
 msgstr ""
 
-#: discord.Guild:150 of
+#: discord.Guild:158 of
 msgid "``WELCOME_SCREEN_ENABLED``: Guild has enabled the welcome screen"
 msgstr ""
 
-#: discord.Guild:152 discord.PartialInviteGuild:46 discord.Spotify.artists:3 of
+#: discord.Guild:160 discord.PartialInviteGuild:46 discord.Spotify.artists:3 of
 msgid "List[:class:`str`]"
 msgstr ""
 
-#: discord.Guild:156 of
+#: discord.Guild:164 of
 msgid "The guild's invite splash."
 msgstr ""
 
-#: discord.Guild:162 of
+#: discord.Guild:170 of
 msgid ""
 "The premium tier for this guild. Corresponds to \"Nitro Server\" in the "
 "official UI. The number goes from 0 to 3 inclusive."
 msgstr ""
 
-#: discord.Guild:169 of
-msgid "How many users have currently \"boosted\" this guild."
+#: discord.Guild:177 of
+msgid "The number of \"boosts\" this guild currently has."
 msgstr ""
 
-#: discord.Guild:175 of
+#: discord.Guild:183 of
 msgid ""
 "The preferred locale for the guild. Used when filtering Server Discovery "
 "results to a specific language."
 msgstr ""
 
-#: discord.Guild:182 of
+#: discord.Guild:190 of
 msgid "The guild's discovery splash."
 msgstr ""
 
@@ -9222,7 +9192,8 @@ msgstr ""
 msgid "Returns the guild's channel used for system messages."
 msgstr ""
 
-#: discord.Guild.rules_channel:4 discord.Guild.system_channel:3 of
+#: discord.Guild.public_updates_channel:5 discord.Guild.rules_channel:4
+#: discord.Guild.system_channel:3 of
 msgid "If no channel is set, then this returns ``None``."
 msgstr ""
 
@@ -9238,6 +9209,13 @@ msgstr ""
 msgid ""
 "Return's the guild's channel used for the rules. Must be a discoverable "
 "guild."
+msgstr ""
+
+#: discord.Guild.public_updates_channel:1 of
+msgid ""
+"Return's the guild's channel where admins and moderators of the guilds "
+"receive notices from Discord. This is only available to guilds that "
+"contain ``PUBLIC`` in :attr:`Guild.features`."
 msgstr ""
 
 #: discord.Guild.emoji_limit:1 of
@@ -9257,7 +9235,7 @@ msgid "A list of members that belong to this guild."
 msgstr ""
 
 #: discord.Guild.members:3 discord.Guild.premium_subscribers:3
-#: discord.Guild.query_members:28 discord.Role.members:3
+#: discord.Guild.query_members:32 discord.Role.members:3
 #: discord.TextChannel.members:3 discord.VoiceChannel.members:3 of
 msgid "List[:class:`Member`]"
 msgstr ""
@@ -9491,10 +9469,9 @@ msgid ""
 "will be automatically synced to category if no overwrites are provided."
 msgstr ""
 
-#: discord.Guild.create_text_channel:50 discord.TextChannel.edit:13 of
+#: discord.Guild.create_text_channel:50 discord.TextChannel.edit:16 of
 msgid "The new channel's topic."
-msgstr ""
-"채널의 새 주제."
+msgstr "채널의 새 주제."
 
 #: discord.Guild.create_text_channel:52 of
 msgid ""
@@ -9502,7 +9479,7 @@ msgid ""
 "The maximum value possible is `21600`."
 msgstr ""
 
-#: discord.Guild.create_text_channel:55 discord.TextChannel.edit:17 of
+#: discord.Guild.create_text_channel:55 discord.TextChannel.edit:20 of
 msgid "To mark the channel as NSFW or not."
 msgstr ""
 
@@ -9586,94 +9563,117 @@ msgid ""
 msgstr ""
 
 #: discord.Guild.edit:8 of
-msgid "The new name of the guild."
-msgstr ""
-
-#: discord.Guild.edit:10 of
+#, fuzzy
 msgid ""
-"The new description of the guild. This is only available to guilds that "
-"contain `PUBLIC` in :attr:`Guild.features`."
+"The `rules_channel` and `public_updates_channel` keyword-only parameters "
+"were added."
+msgstr "새 ``suppress`` 키워드 전용 매개 변수를 추가했습니다."
+
+#: discord.Guild.edit:11 of
+msgid "The new name of the guild."
 msgstr ""
 
 #: discord.Guild.edit:13 of
 msgid ""
-"A :term:`py:bytes-like object` representing the icon. Only PNG/JPEG "
-"supported and GIF for guilds with ``ANIMATED_ICON`` feature. Could be "
-"``None`` to denote removal of the icon."
+"The new description of the guild. This is only available to guilds that "
+"contain ``PUBLIC`` in :attr:`Guild.features`."
 msgstr ""
 
-#: discord.Guild.edit:17 of
+#: discord.Guild.edit:16 of
+msgid ""
+"A :term:`py:bytes-like object` representing the icon. Only PNG/JPEG "
+"supported and GIF This is only available to guilds that contain "
+"``ANIMATED_ICON`` in :attr:`Guild.features`. Could be ``None`` to denote "
+"removal of the icon."
+msgstr ""
+
+#: discord.Guild.edit:20 of
 msgid ""
 "A :term:`py:bytes-like object` representing the banner. Could be ``None``"
 " to denote removal of the banner."
 msgstr ""
 
-#: discord.Guild.edit:20 of
+#: discord.Guild.edit:23 of
 msgid ""
 "A :term:`py:bytes-like object` representing the invite splash. Only "
-"PNG/JPEG supported. Could be ``None`` to denote removing the splash. Only"
-" available for partnered guilds with ``INVITE_SPLASH`` feature."
+"PNG/JPEG supported. Could be ``None`` to denote removing the splash. This"
+" is only available to guilds that contain ``INVITE_SPLASH`` in "
+":attr:`Guild.features`."
 msgstr ""
 
-#: discord.Guild.edit:25 of
+#: discord.Guild.edit:28 of
 msgid "The new region for the guild's voice communication."
 msgstr ""
 
-#: discord.Guild.edit:27 of
+#: discord.Guild.edit:30 of
 msgid ""
 "The new channel that is the AFK channel. Could be ``None`` for no AFK "
 "channel."
 msgstr ""
 
-#: discord.Guild.edit:29 of
+#: discord.Guild.edit:32 of
 msgid "The number of seconds until someone is moved to the AFK channel."
 msgstr ""
 
-#: discord.Guild.edit:31 of
+#: discord.Guild.edit:34 of
 msgid ""
 "The new owner of the guild to transfer ownership to. Note that you must "
 "be owner of the guild to do this."
 msgstr ""
 
-#: discord.Guild.edit:34 of
+#: discord.Guild.edit:37 of
 msgid "The new verification level for the guild."
 msgstr ""
 
-#: discord.Guild.edit:36 of
+#: discord.Guild.edit:39 of
 msgid "The new default notification level for the guild."
 msgstr ""
 
-#: discord.Guild.edit:38 of
+#: discord.Guild.edit:41 of
 msgid "The new explicit content filter for the guild."
 msgstr ""
 
-#: discord.Guild.edit:40 of
+#: discord.Guild.edit:43 of
 msgid "The new vanity code for the guild."
 msgstr ""
 
-#: discord.Guild.edit:42 of
+#: discord.Guild.edit:45 of
 msgid ""
 "The new channel that is used for the system channel. Could be ``None`` "
 "for no system channel."
 msgstr ""
 
-#: discord.Guild.edit:44 of
+#: discord.Guild.edit:47 of
 msgid "The new system channel settings to use with the new system channel."
 msgstr ""
 
-#: discord.Guild.edit:46 of
+#: discord.Guild.edit:49 of
+msgid ""
+"The new channel that is used for rules. This is only available to guilds "
+"that contain ``PUBLIC`` in :attr:`Guild.features`. Could be ``None`` for "
+"no rules channel."
+msgstr ""
+
+#: discord.Guild.edit:53 of
+msgid ""
+"The new channel that is used for public updates from Discord. This is "
+"only available to guilds that contain ``PUBLIC`` in "
+":attr:`Guild.features`. Could be ``None`` for no public updates channel."
+msgstr ""
+
+#: discord.Guild.edit:57 of
 msgid "The reason for editing this guild. Shows up on the audit log."
 msgstr ""
 
-#: discord.Guild.edit:49 of
+#: discord.Guild.edit:60 of
 msgid "You do not have permissions to edit the guild."
 msgstr ""
 
-#: discord.Guild.edit:50 of
+#: discord.Guild.edit:61 of
 msgid "Editing the guild failed."
 msgstr ""
 
-#: discord.Guild.edit:51 of
+#: discord.Guild.edit:62 of
 msgid ""
 "The image format passed in to ``icon`` is invalid. It must be     PNG or "
 "JPG. This is also raised if you are not the owner of the     guild and "
@@ -9744,6 +9744,11 @@ msgstr ""
 msgid "The member's ID to fetch from."
 msgstr ""
 
+#: discord.Guild.fetch_member:13 of
+#, fuzzy
+msgid "Fetching the member failed."
+msgstr "메시지 삭제에 실패했습니다."
+
 #: discord.Guild.fetch_member:15 of
 msgid "The member from the member ID."
 msgstr ""
@@ -9810,11 +9815,20 @@ msgid ""
 "the :meth:`estimate_pruned_members` function."
 msgstr ""
 
-#: discord.Guild.estimate_pruned_members:7 discord.Guild.prune_members:14 of
+#: discord.Guild.prune_members:14 of
+msgid "To prune members that have specific roles see the ``roles`` parameter."
+msgstr ""
+
+#: discord.Guild.prune_members:16 of
+#, fuzzy
+msgid "The ``roles`` keyword-only parameter was added."
+msgstr "새 ``suppress`` 키워드 전용 매개 변수를 추가했습니다."
+
+#: discord.Guild.estimate_pruned_members:7 discord.Guild.prune_members:19 of
 msgid "The number of days before counting as inactive."
 msgstr ""
 
-#: discord.Guild.prune_members:18 of
+#: discord.Guild.prune_members:23 of
 msgid ""
 "Whether to compute the prune count. This defaults to ``True`` which makes"
 " it prone to timeouts in very large guilds. In order to prevent timeouts,"
@@ -9822,19 +9836,26 @@ msgid ""
 " function will always return ``None``."
 msgstr ""
 
-#: discord.Guild.estimate_pruned_members:10 discord.Guild.prune_members:24 of
+#: discord.Guild.prune_members:28 of
+msgid ""
+"A list of :class:`abc.Snowflake` that represent roles to include in the "
+"pruning process. If a member has a role that is not specified, they'll be"
+" excluded."
+msgstr ""
+
+#: discord.Guild.estimate_pruned_members:10 discord.Guild.prune_members:32 of
 msgid "You do not have permissions to prune members."
 msgstr ""
 
-#: discord.Guild.prune_members:25 of
+#: discord.Guild.prune_members:33 of
 msgid "An error occurred while pruning members."
 msgstr ""
 
-#: discord.Guild.estimate_pruned_members:12 discord.Guild.prune_members:26 of
+#: discord.Guild.estimate_pruned_members:12 discord.Guild.prune_members:34 of
 msgid "An integer was not passed for ``days``."
 msgstr ""
 
-#: discord.Guild.prune_members:28 of
+#: discord.Guild.prune_members:36 of
 msgid ""
 "The number of members pruned. If ``compute_prune_count`` is ``False`` "
 "then this returns ``None``."
@@ -9847,13 +9868,11 @@ msgstr ""
 #: discord.Guild.webhooks:5 discord.TextChannel.create_webhook:5
 #: discord.TextChannel.webhooks:5 of
 msgid "Requires :attr:`~.Permissions.manage_webhooks` permissions."
-msgstr ""
-":attr:`~.Permissions.manage_webhooks` 권한이 필요합니다."
+msgstr ":attr:`~.Permissions.manage_webhooks` 권한이 필요합니다."
 
 #: discord.Guild.webhooks:7 discord.TextChannel.webhooks:7 of
 msgid "You don't have permissions to get the webhooks."
-msgstr ""
-"웹후크를 가져올 권한이 없습니다."
+msgstr "웹후크를 가져올 권한이 없습니다."
 
 #: discord.Guild.webhooks:9 of
 msgid "The webhooks for this guild."
@@ -10152,7 +10171,7 @@ msgid "Returns the guild's special vanity invite."
 msgstr ""
 
 #: discord.Guild.vanity_invite:5 of
-msgid "The guild must have 'VANITY_URL' in :attr:`~Guild.features`."
+msgid "The guild must have ``VANITY_URL`` in :attr:`~Guild.features`."
 msgstr ""
 
 #: discord.Guild.vanity_invite:7 of
@@ -10223,11 +10242,23 @@ msgid ""
 ":meth:`get_member` work for those that matched."
 msgstr ""
 
-#: discord.Guild.query_members:25 of
+#: discord.Guild.query_members:24 of
+msgid ""
+"List of user IDs to search for. If the user ID is not in the guild then "
+"it won't be returned.  .. versionadded:: 1.4"
+msgstr ""
+
+#: discord.Guild.query_members:24 of
+msgid ""
+"List of user IDs to search for. If the user ID is not in the guild then "
+"it won't be returned."
+msgstr ""
+
+#: discord.Guild.query_members:29 of
 msgid "The query timed out waiting for the members."
 msgstr ""
 
-#: discord.Guild.query_members:27 of
+#: discord.Guild.query_members:31 of
 msgid "The list of members that have matched the query."
 msgstr ""
 
@@ -10605,6 +10636,10 @@ msgstr ""
 msgid "Equivalent to :attr:`User.name`"
 msgstr ""
 
+#: discord.Member.public_flags:1 of
+msgid "Equivalent to :attr:`User.public_flags`"
+msgstr ""
+
 #: discord.Member.relationship:1 of
 msgid "Equivalent to :attr:`User.relationship`"
 msgstr ""
@@ -10688,12 +10723,14 @@ msgid "Returns the Spotify integration colour, as a :class:`Colour`."
 msgstr ""
 
 #: discord.Spotify.colour:3 of
-msgid "There is an alias for this named :meth:`color`"
-msgstr ""
+#, fuzzy
+msgid "There is an alias for this named :attr:`color`"
+msgstr ":meth:`color` 이라는 별칭이 있습니다."
 
 #: discord.Spotify.color:3 of
-msgid "There is an alias for this named :meth:`colour`"
-msgstr ""
+#, fuzzy
+msgid "There is an alias for this named :attr:`colour`"
+msgstr ":meth:`colour` 이라는 별칭이 있습니다."
 
 #: discord.Spotify.name:1 of
 msgid "The activity's name. This will always return \"Spotify\"."
@@ -11075,44 +11112,49 @@ msgid "Edits the role."
 msgstr ""
 
 #: discord.Role.edit:10 of
+#, fuzzy
+msgid "Can now pass ``int`` to ``colour`` keyword-only parameter."
+msgstr "새 ``delay`` 키워드 전용 매개 변수를 추가했습니다."
+
+#: discord.Role.edit:13 of
 msgid "The new role name to change to."
 msgstr ""
 
-#: discord.Role.edit:12 of
+#: discord.Role.edit:15 of
 msgid "The new permissions to change to."
 msgstr ""
 
-#: discord.Role.edit:14 of
+#: discord.Role.edit:17 of
 msgid "The new colour to change to. (aliased to color as well)"
 msgstr ""
 
-#: discord.Role.edit:16 of
+#: discord.Role.edit:19 of
 msgid "Indicates if the role should be shown separately in the member list."
 msgstr ""
 
-#: discord.Role.edit:18 of
+#: discord.Role.edit:21 of
 msgid "Indicates if the role should be mentionable by others."
 msgstr ""
 
-#: discord.Role.edit:20 of
+#: discord.Role.edit:23 of
 msgid ""
 "The new role's position. This must be below your top role's position or "
 "it will fail."
 msgstr ""
 
-#: discord.Role.edit:23 of
+#: discord.Role.edit:26 of
 msgid "The reason for editing this role. Shows up on the audit log."
 msgstr ""
 
-#: discord.Role.edit:26 of
+#: discord.Role.edit:29 of
 msgid "You do not have permissions to change the role."
 msgstr ""
 
-#: discord.Role.edit:27 of
+#: discord.Role.edit:30 of
 msgid "Editing the role failed."
 msgstr ""
 
-#: discord.Role.edit:28 of
+#: discord.Role.edit:31 of
 msgid ""
 "An invalid position was given or the default     role was asked to be "
 "moved."
@@ -11136,59 +11178,48 @@ msgstr ""
 
 #: ../../api.rst:2420
 msgid "TextChannel"
-msgstr ""
-"텍스트 채널"
+msgstr "텍스트 채널"
 
 #: discord.TextChannel:1 of
 msgid "Represents a Discord guild text channel."
-msgstr ""
-"디스코드 길드 텍스트 채널을 나타냅니다."
+msgstr "디스코드 길드 텍스트 채널을 나타냅니다."
 
 #: discord.CategoryChannel:9 discord.DMChannel:7 discord.GroupChannel:7
 #: discord.TextChannel:7 discord.VoiceChannel:7 of
 msgid "Checks if two channels are equal."
-msgstr ""
-"두 채널이 같은지 확인합니다."
+msgstr "두 채널이 같은지 확인합니다."
 
 #: discord.CategoryChannel:13 discord.DMChannel:11 discord.GroupChannel:11
 #: discord.TextChannel:11 discord.VoiceChannel:11 of
 msgid "Checks if two channels are not equal."
-msgstr ""
-"두 채널이 같지 않은지 확인합니다."
+msgstr "두 채널이 같지 않은지 확인합니다."
 
 #: discord.DMChannel:15 discord.GroupChannel:15 discord.TextChannel:15
 #: discord.VoiceChannel:15 of
 msgid "Returns the channel's hash."
-msgstr ""
-"채널의 해시값을 리턴합니다."
+msgstr "채널의 해시값을 리턴합니다."
 
 #: discord.TextChannel:19 discord.VoiceChannel:19 of
 msgid "Returns the channel's name."
-msgstr ""
-"채널의 이름을 리턴합니다."
+msgstr "채널의 이름을 리턴합니다."
 
 #: discord.TextChannel:35 discord.VoiceChannel:35 of
 msgid "The channel ID."
-msgstr ""
-"채널의 ID."
+msgstr "채널의 ID."
 
 #: discord.TextChannel:41 discord.VoiceChannel:41 of
 msgid "The category channel ID this channel belongs to, if applicable."
-msgstr ""
-"해당되는 경우, 이 채널이 속하는 카테고리 채널의 ID."
+msgstr "해당되는 경우, 이 채널이 속하는 카테고리 채널의 ID."
 
 #: discord.TextChannel:47 of
 msgid "The channel's topic. None if it doesn't exist."
-msgstr ""
-"채널의 주제. 없을 경우 None입니다."
+msgstr "채널의 주제. 없을 경우 None입니다."
 
 #: discord.TextChannel:60 of
 msgid ""
 "The last message ID of the message sent to this channel. It may *not* "
 "point to an existing or valid message."
-msgstr ""
-"이 채널로 전송된 마지막 메시지의 ID. 존재하지 *않는* 메시지나 "
-"유효하지 *않은* 메시지를 가리킬 수도 있습니다."
+msgstr "이 채널로 전송된 마지막 메시지의 ID. 존재하지 *않는* 메시지나 유효하지 *않은* 메시지를 가리킬 수도 있습니다."
 
 #: discord.TextChannel:67 of
 msgid ""
@@ -11197,18 +11228,15 @@ msgid ""
 " :attr:`~Permissions.manage_channels` or "
 ":attr:`~Permissions.manage_messages` bypass slowmode."
 msgstr ""
-"멤버가 메시지를 보낼 때까지 기다려야 하는 시간(초) 입니다. "
-"`0` 일 경우 이것이 비활성화 되어 있음을 나타냅니다. "
+"멤버가 메시지를 보낼 때까지 기다려야 하는 시간(초) 입니다. `0` 일 경우 이것이 비활성화 되어 있음을 나타냅니다. "
 ":attr:`~Permissions.manage_channels` 또는 "
 ":attr:`~Permissions.manage_messages` 가 있는 봇 및 사용자는 슬로우 모드를 무시합니다."
-
 
 #: discord.CategoryChannel.type:1 discord.DMChannel.type:1
 #: discord.GroupChannel.type:1 discord.TextChannel.type:1
 #: discord.VoiceChannel.type:1 of
 msgid "The channel's Discord type."
-msgstr ""
-"채널의 디스코드 타입."
+msgstr "채널의 디스코드 타입."
 
 #: discord.CategoryChannel.type:3 discord.DMChannel.type:3
 #: discord.GroupChannel.type:3 discord.PartialInviteChannel:40
@@ -11218,33 +11246,27 @@ msgstr ""
 
 #: discord.TextChannel.members:1 of
 msgid "Returns all members that can see this channel."
-msgstr ""
-"이 채널을 볼 수 있는 모든 멤버를 리턴합니다."
+msgstr "이 채널을 볼 수 있는 모든 멤버를 리턴합니다."
 
 #: discord.TextChannel.is_nsfw:1 of
 msgid "Checks if the channel is NSFW."
-msgstr ""
-"채널이 NSFW 인지 확인합니다."
+msgstr "채널이 NSFW 인지 확인합니다."
 
 #: discord.TextChannel.is_news:1 of
 msgid "Checks if the channel is a news channel."
-msgstr ""
-"채널이 뉴스 채널인지 확인합니다."
+msgstr "채널이 뉴스 채널인지 확인합니다."
 
 #: discord.TextChannel.last_message:1 of
 msgid "Fetches the last message from this channel in cache."
-msgstr ""
-"캐시에서 이 채널의 마지막 메시지를 가져옵니다."
+msgstr "캐시에서 이 채널의 마지막 메시지를 가져옵니다."
 
 #: discord.TextChannel.last_message:3 of
 msgid "The message might not be valid or point to an existing message."
-msgstr ""
-"메시지는 유효하지 않거나 존재하지 않는 메시지를 가리킬 수도 있습니다."
+msgstr "메시지는 유효하지 않거나 존재하지 않는 메시지를 가리킬 수도 있습니다."
 
 #: discord.TextChannel.last_message:5 of
 msgid "Reliable Fetching"
-msgstr ""
-"안정적으로 가져오기"
+msgstr "안정적으로 가져오기"
 
 #: discord.TextChannel.last_message:8 of
 msgid ""
@@ -11252,105 +11274,101 @@ msgid ""
 "consider using either :meth:`history` or :meth:`fetch_message` with the "
 ":attr:`last_message_id` attribute."
 msgstr ""
-"약간 더 안정적인 방법으로 마지막 메시지를 가져오려면, "
-":attr:`last_message_id` 속성과 함께 "
+"약간 더 안정적인 방법으로 마지막 메시지를 가져오려면, :attr:`last_message_id` 속성과 함께 "
 ":meth:`history` 또는 :meth:`fetch_message` 를 사용하는 것을 고려하십시오."
 
 #: discord.TextChannel.last_message:13 of
 msgid "The last message in this channel or ``None`` if not found."
-msgstr ""
-"이 채널의 마지막 메시지. 존재하지 않을 경우 ``None`` 입니다."
+msgstr "이 채널의 마지막 메시지. 존재하지 않을 경우 ``None`` 입니다."
 
 #: discord.CategoryChannel.edit:3 discord.TextChannel.edit:3
 #: discord.VoiceChannel.edit:3 of
 msgid "Edits the channel."
-msgstr ""
-"채널을 편집합니다."
+msgstr "채널을 편집합니다."
 
 #: discord.CategoryChannel.edit:5 discord.TextChannel.edit:5
 #: discord.VoiceChannel.edit:5 of
 msgid ""
 "You must have the :attr:`~Permissions.manage_channels` permission to use "
 "this."
-msgstr ""
-"이것을 사용하려면 :attr:`~Permissions.manage_channels` 권한이 있어야 합니다."
+msgstr "이것을 사용하려면 :attr:`~Permissions.manage_channels` 권한이 있어야 합니다."
 
 #: discord.CategoryChannel.edit:8 discord.TextChannel.edit:8
 #: discord.VoiceChannel.edit:8 of
 msgid "The ``overwrites`` keyword-only parameter was added."
-msgstr ""
-"``overwrites`` 키워드 전용 매개변수가 추가되었습니다."
+msgstr "``overwrites`` 키워드 전용 매개변수가 추가되었습니다."
 
 #: discord.TextChannel.edit:11 of
+#, fuzzy
+msgid "The ``type`` keyword-only parameter was added."
+msgstr "새 ``suppress`` 키워드 전용 매개 변수를 추가했습니다."
+
+#: discord.TextChannel.edit:14 of
 msgid "The new channel name."
-msgstr ""
-"채널의 새 이름."
+msgstr "채널의 새 이름."
 
-#: discord.TextChannel.edit:15 discord.VoiceChannel.edit:17 of
+#: discord.TextChannel.edit:18 discord.VoiceChannel.edit:17 of
 msgid "The new channel's position."
-msgstr ""
-"채널의 새 위치."
+msgstr "채널의 새 위치."
 
-#: discord.TextChannel.edit:19 discord.VoiceChannel.edit:19 of
+#: discord.TextChannel.edit:22 discord.VoiceChannel.edit:19 of
 msgid ""
 "Whether to sync permissions with the channel's new or pre-existing "
 "category. Defaults to ``False``."
-msgstr ""
-"채널의 새 카테고리 또는 기존 카테고리와 권한을 동기화할지 여부입니다. "
-"기본값은 ``False`` 입니다."
+msgstr "채널의 새 카테고리 또는 기존 카테고리와 권한을 동기화할지 여부입니다. 기본값은 ``False`` 입니다."
 
-#: discord.TextChannel.edit:22 discord.VoiceChannel.edit:22 of
+#: discord.TextChannel.edit:25 discord.VoiceChannel.edit:22 of
 msgid "The new category for this channel. Can be ``None`` to remove the category."
-msgstr ""
-"이 채널의 새 카테고리입니다. 카테고리를 제거하려면 ``None`` 을 쓸 수 있습니다."
+msgstr "이 채널의 새 카테고리입니다. 카테고리를 제거하려면 ``None`` 을 쓸 수 있습니다."
 
-#: discord.TextChannel.edit:25 of
+#: discord.TextChannel.edit:28 of
 msgid ""
 "Specifies the slowmode rate limit for user in this channel, in seconds. A"
 " value of `0` disables slowmode. The maximum value possible is `21600`."
 msgstr ""
-"이 채널의 사용자에 대한 슬로우 모드 속도 제한을 초 단위로 지정합니다. "
-"`0` 일 경우 슬로우 모드를 비활성화합니다. 가능한 최댓값은 `21600` 입니다."
+"이 채널의 사용자에 대한 슬로우 모드 속도 제한을 초 단위로 지정합니다. `0` 일 경우 슬로우 모드를 비활성화합니다. 가능한 "
+"최댓값은 `21600` 입니다."
 
-#: discord.TextChannel.edit:28 discord.VoiceChannel.edit:25 of
-msgid "The reason for editing this channel. Shows up on the audit log."
+#: discord.TextChannel.edit:31 of
+msgid ""
+"Change the type of this text channel. Currently, only conversion between "
+":attr:`ChannelType.text` and :attr:`ChannelType.news` is supported. This "
+"is only available to guilds that contain ``NEWS`` in "
+":attr:`Guild.features`."
 msgstr ""
-"채널을 변경하는 사유입니다. 감사 로그에 뜨게 됩니다."
 
-#: discord.CategoryChannel.edit:19 discord.TextChannel.edit:30
+#: discord.TextChannel.edit:35 discord.VoiceChannel.edit:25 of
+msgid "The reason for editing this channel. Shows up on the audit log."
+msgstr "채널을 변경하는 사유입니다. 감사 로그에 뜨게 됩니다."
+
+#: discord.CategoryChannel.edit:19 discord.TextChannel.edit:37
 #: discord.VoiceChannel.edit:27 of
 msgid ""
 "A :class:`dict` of target (either a role or a member) to "
 ":class:`PermissionOverwrite` to apply to the channel."
 msgstr ""
-"채널에 적용할 :class:`PermissionOverwrite` 에 대한 "
-"대상 (역할 또는 멤버) 의 :class:`dict` 입니다."
+"채널에 적용할 :class:`PermissionOverwrite` 에 대한 대상 (역할 또는 멤버) 의 :class:`dict` "
+"입니다."
 
-#: discord.TextChannel.edit:34 of
+#: discord.TextChannel.edit:41 of
 msgid ""
 "If position is less than 0 or greater than the number of channels, or if"
 "     the permission overwrite information is not in proper form."
-msgstr ""
-"채널 위치가 0보다 작거나 전체 채널 수보다 클 경우, 또는 "
-"권한 덮어쓰기 정보가 올바른 형식이 아닙니다."
+msgstr "채널 위치가 0보다 작거나 전체 채널 수보다 클 경우, 또는 권한 덮어쓰기 정보가 올바른 형식이 아닙니다."
 
-#: discord.TextChannel.edit:35 discord.VoiceChannel.edit:32 of
+#: discord.TextChannel.edit:42 discord.VoiceChannel.edit:32 of
 msgid "You do not have permissions to edit the channel."
-msgstr ""
-"이 채널을 수정할 수 있는 권한이 없습니다."
+msgstr "이 채널을 수정할 수 있는 권한이 없습니다."
 
-#: discord.TextChannel.edit:36 discord.VoiceChannel.edit:33 of
+#: discord.TextChannel.edit:43 discord.VoiceChannel.edit:33 of
 msgid "Editing the channel failed."
-msgstr ""
-"채널 수정에 실패했습니다."
+msgstr "채널 수정에 실패했습니다."
 
 #: discord.TextChannel.delete_messages:3 of
 msgid ""
 "Deletes a list of messages. This is similar to :meth:`Message.delete` "
 "except it bulk deletes multiple messages."
-msgstr ""
-"메시지 목록을 삭제합니다. 여러 메시지를 대량으로 삭제한다는 점을 "
-"제외하면 :meth:`Message.delete` 와 비슷합니다."
+msgstr "메시지 목록을 삭제합니다. 여러 메시지를 대량으로 삭제한다는 점을 제외하면 :meth:`Message.delete` 와 비슷합니다."
 
 #: discord.TextChannel.delete_messages:6 of
 msgid ""
@@ -11358,55 +11376,46 @@ msgid ""
 "If the number of messages is 1 then single message delete is done. If "
 "it's more than two, then bulk delete is used."
 msgstr ""
-"특별한 경우로, 메시지 수가 0이면 아무것도 수행되지 않습니다. "
-"메시지 수가 1이면 단일 메시지 삭제가 수행됩니다. "
-"둘 이상인 경우 대량 삭제가 사용됩니다."
+"특별한 경우로, 메시지 수가 0이면 아무것도 수행되지 않습니다. 메시지 수가 1이면 단일 메시지 삭제가 수행됩니다. 둘 이상인 경우"
+" 대량 삭제가 사용됩니다."
 
 #: discord.TextChannel.delete_messages:10 of
 msgid ""
 "You cannot bulk delete more than 100 messages or messages that are older "
 "than 14 days old."
-msgstr ""
-"100개가 넘는 메시지 또는 14일이 지난 메시지는 대량으로 삭제할 수 없습니다."
+msgstr "100개가 넘는 메시지 또는 14일이 지난 메시지는 대량으로 삭제할 수 없습니다."
 
 #: discord.TextChannel.delete_messages:13 of
 msgid ""
 "You must have the :attr:`~Permissions.manage_messages` permission to use "
 "this."
-msgstr ""
-"이것을 사용하려면 :attr:`~Permissions.manage_messages` 권한이 있어야 합니다."
+msgstr "이것을 사용하려면 :attr:`~Permissions.manage_messages` 권한이 있어야 합니다."
 
 #: discord.TextChannel.delete_messages:16 of
 msgid "Usable only by bot accounts."
-msgstr ""
-"봇 계정에서만 사용할 수 있습니다."
+msgstr "봇 계정에서만 사용할 수 있습니다."
 
 #: discord.TextChannel.delete_messages:18 of
 msgid "An iterable of messages denoting which ones to bulk delete."
-msgstr ""
-"대량 삭제할 메시지를 나타내는 이터레이터블."
+msgstr "대량 삭제할 메시지를 나타내는 이터레이터블."
 
 #: discord.TextChannel.delete_messages:21 of
 msgid "The number of messages to delete was more than 100."
-msgstr ""
-"삭제할 메시지 수가 100개를 넘습니다."
+msgstr "삭제할 메시지 수가 100개를 넘습니다."
 
 #: discord.TextChannel.delete_messages:22 of
 msgid ""
 "You do not have proper permissions to delete the messages or     you're "
 "not using a bot account."
-msgstr ""
-"메시지를 삭제할 수 있는 권한이 없거나 봇 계정을 사용하고 있지 않습니다."
+msgstr "메시지를 삭제할 수 있는 권한이 없거나 봇 계정을 사용하고 있지 않습니다."
 
 #: discord.TextChannel.delete_messages:23 of
 msgid "If single delete, then the message was already deleted."
-msgstr ""
-"단일 삭제일 경우, 메시지가 이미 지워졌습니다."
+msgstr "단일 삭제일 경우, 메시지가 이미 지워졌습니다."
 
 #: discord.TextChannel.delete_messages:24 of
 msgid "Deleting the messages failed."
-msgstr ""
-"메시지 삭제에 실패했습니다."
+msgstr "메시지 삭제에 실패했습니다."
 
 #: discord.TextChannel.purge:3 of
 msgid ""
@@ -11414,8 +11423,8 @@ msgid ""
 "``check``. If a ``check`` is not provided then all messages are deleted "
 "without discrimination."
 msgstr ""
-"프리디케이트 ``check`` 에 의해 주어진 기준을 만족하는 메시지 목록을 제거합니다. "
-"``check`` 가 제공되지 않으면 모든 메시지가 차별없이 제거됩니다."
+"프리디케이트 ``check`` 에 의해 주어진 기준을 만족하는 메시지 목록을 제거합니다. ``check`` 가 제공되지 않으면 모든"
+" 메시지가 차별없이 제거됩니다."
 
 #: discord.TextChannel.purge:7 of
 msgid ""
@@ -11425,58 +11434,49 @@ msgid ""
 "also needed to retrieve message history."
 msgstr ""
 "자신이 쓴 경우에도 (사용자 계정이 아닌 경우) 메시지를 삭제하려면 "
-":attr:`~Permissions.manage_messages` 권한이 있어야 합니다."
-"메시지 히스토리를 받아오려면 :attr:`~Permissions.read_message_history` "
-"권한도 필요합니다."
+":attr:`~Permissions.manage_messages` 권한이 있어야 합니다.메시지 히스토리를 받아오려면 "
+":attr:`~Permissions.read_message_history` 권한도 필요합니다."
 
 #: discord.TextChannel.purge:12 of
 msgid ""
 "Internally, this employs a different number of strategies depending on "
 "the conditions met such as if a bulk delete is possible or if the account"
 " is a user bot or not."
-msgstr ""
-"내부적으로는, 대량 삭제가 가능한지 또는 계정이 사용자 봇인지 "
-"여부와 같은 조건에 따라 다른 수의 전략을 사용합니다."
+msgstr "내부적으로는, 대량 삭제가 가능한지 또는 계정이 사용자 봇인지 여부와 같은 조건에 따라 다른 수의 전략을 사용합니다."
 
 #: discord.TextChannel.purge:18 of
 msgid "Deleting bot's messages ::"
-msgstr ""
-"봇의 메시지 삭제하기"
+msgstr "봇의 메시지 삭제하기"
 
 #: discord.TextChannel.purge:26 of
 msgid ""
 "The number of messages to search through. This is not the number of "
 "messages that will be deleted, though it can be."
-msgstr ""
-"검색할 메시지 수입니다. 삭제될 메시지 수는 아니지만, 그럴 수도 있습니다."
+msgstr "검색할 메시지 수입니다. 삭제될 메시지 수는 아니지만, 그럴 수도 있습니다."
 
 #: discord.TextChannel.purge:29 of
 msgid ""
 "The function used to check if a message should be deleted. It must take a"
 " :class:`Message` as its sole parameter."
 msgstr ""
-"메시지가 삭제되어야 할지를 확인하는 데 사용되는 함수입니다. "
-"이 함수는 :class:`Message` 를 유일한 매개 변수로 사용해야 합니다."
+"메시지가 삭제되어야 할지를 확인하는 데 사용되는 함수입니다. 이 함수는 :class:`Message` 를 유일한 매개 변수로 "
+"사용해야 합니다."
 
 #: discord.TextChannel.purge:32 of
 msgid "Same as ``before`` in :meth:`history`."
-msgstr ""
-":meth:`history` 에서의 ``before`` 와 동일합니다."
+msgstr ":meth:`history` 에서의 ``before`` 와 동일합니다."
 
 #: discord.TextChannel.purge:34 of
 msgid "Same as ``after`` in :meth:`history`."
-msgstr ""
-":meth:`history` 에서의 ``after`` 와 동일합니다."
+msgstr ":meth:`history` 에서의 ``after`` 와 동일합니다."
 
 #: discord.TextChannel.purge:36 of
 msgid "Same as ``around`` in :meth:`history`."
-msgstr ""
-":meth:`history` 에서의 ``around`` 와 동일합니다."
+msgstr ":meth:`history` 에서의 ``around`` 와 동일합니다."
 
 #: discord.TextChannel.purge:38 of
 msgid "Same as ``oldest_first`` in :meth:`history`."
-msgstr ""
-":meth:`history` 에서의 ``oldest_first`` 와 동일합니다."
+msgstr ":meth:`history` 에서의 ``oldest_first`` 와 동일합니다."
 
 #: discord.TextChannel.purge:40 of
 msgid ""
@@ -11487,24 +11487,20 @@ msgid ""
 "than two weeks."
 msgstr ""
 "``True`` 일 경우, 대량 삭제를 사용합니다. ``False`` 로 설정하면 "
-":attr:`Permissions.manage_messages` 없이 봇 자신의 메시지를 대량 삭제하는 데 "
-"유용합니다. ``True`` 일 경우, 현재 계정이 사용자 봇이거나 메시지가 2주보다 오래된 경우 "
-"단일 삭제로 돌아갑니다."
+":attr:`Permissions.manage_messages` 없이 봇 자신의 메시지를 대량 삭제하는 데 유용합니다. "
+"``True`` 일 경우, 현재 계정이 사용자 봇이거나 메시지가 2주보다 오래된 경우 단일 삭제로 돌아갑니다."
 
 #: discord.TextChannel.purge:46 of
 msgid "You do not have proper permissions to do the actions required."
-msgstr ""
-"필요한 작업을 수행할 수 있는 적절한 권한이 없습니다."
+msgstr "필요한 작업을 수행할 수 있는 적절한 권한이 없습니다."
 
 #: discord.TextChannel.purge:47 of
 msgid "Purging the messages failed."
-msgstr ""
-"메시지 제거에 실패했습니다."
+msgstr "메시지 제거에 실패했습니다."
 
 #: discord.TextChannel.purge:49 of
 msgid "The list of messages that were deleted."
-msgstr ""
-"삭제된 메시지들의 리스트."
+msgstr "삭제된 메시지들의 리스트."
 
 #: discord.TextChannel.purge:50 of
 msgid "List[:class:`.Message`]"
@@ -11512,89 +11508,73 @@ msgstr ""
 
 #: discord.TextChannel.webhooks:3 of
 msgid "Gets the list of webhooks from this channel."
-msgstr ""
-"이 채널의 웹후크 리스트를 가져옵니다."
+msgstr "이 채널의 웹후크 리스트를 가져옵니다."
 
 #: discord.TextChannel.webhooks:9 of
 msgid "The webhooks for this channel."
-msgstr ""
-"이 채널의 웹후크들."
+msgstr "이 채널의 웹후크들."
 
 #: discord.TextChannel.create_webhook:3 of
 msgid "Creates a webhook for this channel."
-msgstr ""
-"이 채널의 웹후크를 생성합니다."
+msgstr "이 채널의 웹후크를 생성합니다."
 
 #: discord.TextChannel.create_webhook:7 of
 msgid "Added the ``reason`` keyword-only parameter."
-msgstr ""
-"``reason`` 키워드 전용 매개변수를 추가했습니다."
+msgstr "``reason`` 키워드 전용 매개변수를 추가했습니다."
 
 #: discord.TextChannel.create_webhook:10 of
 msgid "The webhook's name."
-msgstr ""
-"웹후크의 이름."
+msgstr "웹후크의 이름."
 
 #: discord.TextChannel.create_webhook:12 of
 msgid ""
 "A :term:`py:bytes-like object` representing the webhook's default avatar."
 " This operates similarly to :meth:`~ClientUser.edit`."
 msgstr ""
-"웹후크의 기본 아바타를 나타내는 :term:`py:bytes-like object` 입니다. "
-"이는 :meth:`~ClientUser.edit` 과 유사하게 작동합니다."
+"웹후크의 기본 아바타를 나타내는 :term:`py:bytes-like object` 입니다. 이는 "
+":meth:`~ClientUser.edit` 과 유사하게 작동합니다."
 
 #: discord.TextChannel.create_webhook:15 of
 msgid "The reason for creating this webhook. Shows up in the audit logs."
-msgstr ""
-"웹후크를 생성하는 사유입니다. 감사 로그에 뜨게 됩니다."
+msgstr "웹후크를 생성하는 사유입니다. 감사 로그에 뜨게 됩니다."
 
 #: discord.TextChannel.create_webhook:18 of
 msgid "Creating the webhook failed."
-msgstr ""
-"웹후크 생성에 실패했습니다."
+msgstr "웹후크 생성에 실패했습니다."
 
 #: discord.TextChannel.create_webhook:19 of
 msgid "You do not have permissions to create a webhook."
-msgstr ""
-"웹후크를 생성할 권한이 없습니다."
+msgstr "웹후크를 생성할 권한이 없습니다."
 
 #: discord.TextChannel.create_webhook:21 discord.TextChannel.follow:18 of
 msgid "The created webhook."
-msgstr ""
-"생성된 웹후크."
+msgstr "생성된 웹후크."
 
 #: discord.TextChannel.follow:1 of
 msgid "Follows a channel using a webhook."
-msgstr ""
-"웹후크를 사용해 채널을 팔로우합니다."
+msgstr "웹후크를 사용해 채널을 팔로우합니다."
 
 #: discord.TextChannel.follow:3 of
 msgid "Only news channels can be followed."
-msgstr ""
-"뉴스 채널만을 팔로우할 수 있습니다."
+msgstr "뉴스 채널만을 팔로우할 수 있습니다."
 
 #: discord.TextChannel.follow:7 of
 msgid ""
 "The webhook returned will not provide a token to do webhook actions, as "
 "Discord does not provide it."
-msgstr ""
-"리턴된 웹후크는 디스코드가 제공하지 않으므로, "
-"웹후크 작업을 수행하기 위한 토큰을 제공하지 않습니다."
+msgstr "리턴된 웹후크는 디스코드가 제공하지 않으므로, 웹후크 작업을 수행하기 위한 토큰을 제공하지 않습니다."
 
 #: discord.TextChannel.follow:12 of
 msgid "The channel you would like to follow from."
-msgstr ""
-"팔로우하려는 채널입니다."
+msgstr "팔로우하려는 채널입니다."
 
 #: discord.TextChannel.follow:15 of
 msgid "Following the channel failed."
-msgstr ""
-"채널 팔로우에 실패했습니다."
+msgstr "채널 팔로우에 실패했습니다."
 
 #: discord.TextChannel.follow:16 of
 msgid "You do not have the permissions to create a webhook."
-msgstr ""
-"웹후크를 생성할 권한이 없습니다."
+msgstr "웹후크를 생성할 권한이 없습니다."
 
 #: ../../api.rst:2434
 msgid "VoiceChannel"
@@ -12398,10 +12378,6 @@ msgstr ""
 msgid "The invite URL for the guild, if available."
 msgstr ""
 
-#: discord.Widget.invite_url:3 of
-msgid "Optiona[:class:`str`]"
-msgstr ""
-
 #: discord.Widget.fetch_invite:3 of
 msgid ""
 "Retrieves an :class:`Invite` from a invite URL or ID. This is the same as"
@@ -12492,7 +12468,7 @@ msgstr ""
 #: discord.RawMessageUpdateEvent:19 of
 msgid ""
 "The raw data given by the `gateway "
-"<https://discordapp.com/developers/docs/topics/gateway#message-update>`_"
+"<https://discord.com/developers/docs/topics/gateway#message-update>`_"
 msgstr ""
 
 #: ../../api.rst:2531
@@ -12745,9 +12721,9 @@ msgid "Sets the footer for the embed content."
 msgstr ""
 
 #: discord.Embed.add_field:3 discord.Embed.insert_field_at:3
-#: discord.Embed.set_author:3 discord.Embed.set_field_at:5
-#: discord.Embed.set_footer:3 discord.Embed.set_image:3
-#: discord.Embed.set_thumbnail:3 of
+#: discord.Embed.remove_author:3 discord.Embed.set_author:3
+#: discord.Embed.set_field_at:5 discord.Embed.set_footer:3
+#: discord.Embed.set_image:3 discord.Embed.set_thumbnail:3 of
 msgid ""
 "This function returns the class instance to allow for fluent-style "
 "chaining."
@@ -12790,6 +12766,10 @@ msgid "Sets the image for the embed content."
 msgstr ""
 
 #: discord.Embed.set_image:6 of
+msgid "Passing :attr:`Empty` removes the image."
+msgstr ""
+
+#: discord.Embed.set_image:9 of
 msgid "The source URL for the image. Only HTTP(S) is supported."
 msgstr ""
 
@@ -12802,6 +12782,10 @@ msgid "Sets the thumbnail for the embed content."
 msgstr ""
 
 #: discord.Embed.set_thumbnail:6 of
+msgid "Passing :attr:`Empty` removes the thumbnail."
+msgstr ""
+
+#: discord.Embed.set_thumbnail:9 of
 msgid "The source URL for the thumbnail. Only HTTP(S) is supported."
 msgstr ""
 
@@ -12855,6 +12839,10 @@ msgstr ""
 
 #: discord.Embed.set_author:10 of
 msgid "The URL of the author icon. Only HTTP(S) is supported."
+msgstr ""
+
+#: discord.Embed.remove_author:1 of
+msgid "Clears embed's author information."
 msgstr ""
 
 #: discord.Embed.fields:1 of
@@ -14050,11 +14038,15 @@ msgstr ""
 msgid "An urgent message is one sent by Discord Trust and Safety."
 msgstr ""
 
-#: ../../api.rst:2652
+#: ../../api.rst:2651
+msgid "PublicUserFlags"
+msgstr ""
+
+#: ../../api.rst:2658
 msgid "Exceptions"
 msgstr ""
 
-#: ../../api.rst:2654
+#: ../../api.rst:2660
 msgid "The following exceptions are thrown by the library."
 msgstr ""
 
@@ -14182,55 +14174,112 @@ msgstr ""
 msgid "An exception that is thrown for when libopus is not loaded."
 msgstr ""
 
-#: ../../api.rst:2684
+#: ../../api.rst:2690
 msgid "Exception Hierarchy"
 msgstr ""
 
-#: ../../api.rst:2698
+#: ../../api.rst:2704
 msgid ":exc:`Exception`"
 msgstr ""
 
-#: ../../api.rst:2698
+#: ../../api.rst:2704
 msgid ":exc:`DiscordException`"
 msgstr ""
 
-#: ../../api.rst:2693
+#: ../../api.rst:2699
 msgid ":exc:`ClientException`"
 msgstr ""
 
-#: ../../api.rst:2691
+#: ../../api.rst:2697
 msgid ":exc:`InvalidData`"
 msgstr ""
 
-#: ../../api.rst:2692
+#: ../../api.rst:2698
 msgid ":exc:`InvalidArgument`"
 msgstr ""
 
-#: ../../api.rst:2693
+#: ../../api.rst:2699
 msgid ":exc:`LoginFailure`"
 msgstr ""
 
-#: ../../api.rst:2694
+#: ../../api.rst:2700
 msgid ":exc:`ConnectionClosed`"
 msgstr ""
 
-#: ../../api.rst:2695
+#: ../../api.rst:2701
 msgid ":exc:`NoMoreItems`"
 msgstr ""
 
-#: ../../api.rst:2696
+#: ../../api.rst:2702
 msgid ":exc:`GatewayNotFound`"
 msgstr ""
 
-#: ../../api.rst:2698
+#: ../../api.rst:2704
 msgid ":exc:`HTTPException`"
 msgstr ""
 
-#: ../../api.rst:2698
+#: ../../api.rst:2704
 msgid ":exc:`Forbidden`"
 msgstr ""
 
-#: ../../api.rst:2699
+#: ../../api.rst:2705
 msgid ":exc:`NotFound`"
-
 msgstr ""
+
+#~ msgid ""
+#~ "Due to the inherently raw nature "
+#~ "of this event, the data parameter "
+#~ "coincides with the raw data given "
+#~ "by the `gateway "
+#~ "<https://discordapp.com/developers/docs/topics/gateway#message-"
+#~ "update>`_."
+#~ msgstr ""
+
+#~ msgid "The timestamp in which to sleep until."
+#~ msgstr ""
+
+#~ msgid "How many users have currently \"boosted\" this guild."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The new description of the guild. "
+#~ "This is only available to guilds "
+#~ "that contain `PUBLIC` in "
+#~ ":attr:`Guild.features`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :term:`py:bytes-like object` representing"
+#~ " the icon. Only PNG/JPEG supported "
+#~ "and GIF for guilds with "
+#~ "``ANIMATED_ICON`` feature. Could be ``None``"
+#~ " to denote removal of the icon."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :term:`py:bytes-like object` representing"
+#~ " the invite splash. Only PNG/JPEG "
+#~ "supported. Could be ``None`` to denote"
+#~ " removing the splash. Only available "
+#~ "for partnered guilds with ``INVITE_SPLASH``"
+#~ " feature."
+#~ msgstr ""
+
+#~ msgid "The guild must have 'VANITY_URL' in :attr:`~Guild.features`."
+#~ msgstr ""
+
+#~ msgid "There is an alias for this named :meth:`color`"
+#~ msgstr ""
+
+#~ msgid "There is an alias for this named :meth:`colour`"
+#~ msgstr ""
+
+#~ msgid "Optiona[:class:`str`]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The raw data given by the `gateway"
+#~ " <https://discordapp.com/developers/docs/topics/gateway#message-"
+#~ "update>`_"
+#~ msgstr ""
+
