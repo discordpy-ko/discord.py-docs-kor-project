@@ -6226,7 +6226,7 @@ msgstr ""
 #: discord.DMChannel:29 discord.GroupChannel:29 discord.abc.PrivateChannel:12
 #: of
 msgid "The user presenting yourself."
-msgstr ""
+msgstr "자기 자신을 나타내는 사용자입니다."
 
 #: discord.abc.GuildChannel:1 of
 msgid "An ABC that details the common operations on a Discord guild channel."
