@@ -6595,7 +6595,7 @@ msgid ""
 "The overwrite parameter invalid or the target type was not     "
 ":class:`~discord.Role` or :class:`~discord.Member`."
 msgstr ""
-"overwrite 매개 변수가 유효하지 않거나 target 의 타입이 :class:`~discord.Role`또는 "
+"overwrite 매개 변수가 유효하지 않거나 target 의 타입이 :class:`~discord.Role` 또는 "
 ":class:`~discord.Member` 가 아닙니다."
 
 #: discord.CategoryChannel.clone:3 discord.TextChannel.clone:3
@@ -9482,6 +9482,7 @@ msgstr ""
 #: discord.Guild.create_text_channel:55 discord.TextChannel.edit:20 of
 msgid "To mark the channel as NSFW or not."
 msgstr ""
+"채널을 NSFW로 표시 여부"
 
 #: discord.Guild.create_text_channel:57 of
 msgid "The reason for creating this channel. Shows up on the audit log."
@@ -11336,6 +11337,8 @@ msgid ""
 "is only available to guilds that contain ``NEWS`` in "
 ":attr:`Guild.features`."
 msgstr ""
+"이 채널의 종류를 변경합니다. 현재 :attr:`ChannelType.text` 와 :attr:`ChannelType.news` 간의 변환만 지원됩니다."
+""
 
 #: discord.TextChannel.edit:35 discord.VoiceChannel.edit:25 of
 msgid "The reason for editing this channel. Shows up on the audit log."
