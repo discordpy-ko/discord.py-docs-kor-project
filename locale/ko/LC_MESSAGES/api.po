@@ -1463,15 +1463,15 @@ msgstr ""
 
 #: discord.Client.delete_invite:11 discord.Invite.delete:10 of
 msgid "You do not have permissions to revoke invites."
-msgstr ""
+msgstr "초대를 삭제할 권한이 없습니다."
 
 #: discord.Client.delete_invite:12 discord.Invite.delete:11 of
 msgid "The invite is invalid or expired."
-msgstr ""
+msgstr "초대가 유효하지 않거나 만료되었습니다."
 
 #: discord.Client.delete_invite:13 discord.Invite.delete:12 of
 msgid "Revoking the invite failed."
-msgstr ""
+msgstr "초대 삭제에 실패했습니다."
 
 #: discord.Client.fetch_widget:3 of
 msgid "Gets a :class:`.Widget` from a guild ID."
@@ -8580,7 +8580,7 @@ msgstr ""
 msgid ""
 "Depending on the way this object was created, some of the attributes can "
 "have a value of ``None``."
-msgstr ""
+msgstr "이 객체가 작성된 방식에 따라 일부 속성의 값은 ``None`` 일 수 있습니다."
 
 #: discord.Reaction:10 of
 msgid ""
@@ -12094,39 +12094,39 @@ msgstr ""
 
 #: ../../api.rst:2488
 msgid "Invite"
-msgstr ""
+msgstr "초대"
 
 #: discord.Invite:1 of
 msgid "Represents a Discord :class:`Guild` or :class:`abc.GuildChannel` invite."
-msgstr ""
+msgstr "디스코드 :class:`Guild` 또는 :class:`abc.GuildChannel` 의 초대를 나타냅니다."
 
 #: discord.Invite:10 of
 msgid "Checks if two invites are equal."
-msgstr ""
+msgstr "두 초대가 같은지 확인합니다."
 
 #: discord.Invite:14 of
 msgid "Checks if two invites are not equal."
-msgstr ""
+msgstr "두 초대가 다른지 확인합니다."
 
 #: discord.Invite:18 of
 msgid "Returns the invite hash."
-msgstr ""
+msgstr "초대의 해시를 리턴합니다."
 
 #: discord.Invite:22 of
 msgid "Returns the invite URL."
-msgstr ""
+msgstr "초대의 URL을 리턴합니다."
 
 #: discord.Invite:24 of
 msgid "The following table illustrates what methods will obtain the attributes:"
-msgstr ""
+msgstr "다음 표는 속성을 얻는 메소드를 보여줍니다:"
 
 #: discord.Invite:27 of
 msgid "Attribute"
-msgstr ""
+msgstr "속성"
 
 #: discord.Invite:27 of
 msgid "Method"
-msgstr ""
+msgstr "메소드"
 
 #: discord.Invite:29 of
 msgid ":attr:`max_age`"
@@ -12167,23 +12167,23 @@ msgstr ""
 
 #: discord.Invite:44 of
 msgid "If it's not in the table above then it is available by all methods."
-msgstr ""
+msgstr "위 표에 없으면 모든 메소드에서 사용할 수 있습니다."
 
 #: discord.Invite:48 of
 msgid ""
 "How long the before the invite expires in seconds. A value of 0 indicates"
 " that it doesn't expire."
-msgstr ""
+msgstr "초대가 만료되기까지의 시간(초). 값이 0이면 만료되지 않음을 나타냅니다."
 
 #: discord.Invite:54 of
 msgid "The URL fragment used for the invite."
-msgstr ""
+msgstr "초대에 사용된 URL 조각입니다."
 
 #: discord.Invite:60 of
 msgid ""
 "The guild the invite is for. Can be ``None`` if it's from a group direct "
 "message."
-msgstr ""
+msgstr "초대의 길드입니다. 그룹 개인 메시지일 경우 ``None`` 이 될 수 있습니다."
 
 #: discord.Invite:62 of
 msgid ""
@@ -12193,33 +12193,33 @@ msgstr ""
 
 #: discord.Invite:66 of
 msgid "Indicates if the invite has been revoked."
-msgstr ""
+msgstr "초대가 삭제되었는지 여부를 나타냅니다."
 
 #: discord.Invite:72 of
 msgid "A datetime object denoting the time the invite was created."
-msgstr ""
+msgstr "초대가 생성된 시간을 나타내는 datetime 객체입니다."
 
 #: discord.Invite:78 of
 msgid ""
 "Indicates that the invite grants temporary membership. If ``True``, "
 "members who joined via this invite will be kicked upon disconnect."
-msgstr ""
+msgstr "초대가 임시 멤버 자격을 부여하는지 여부입니다."
 
 #: discord.Invite:85 of
 msgid "How many times the invite has been used."
-msgstr ""
+msgstr "초대가 몇 번이나 사용되었는지 나타냅니다."
 
 #: discord.Invite:91 of
 msgid "How many times the invite can be used."
-msgstr ""
+msgstr "초대를 최대 몇 번이나 사용할 수 있는지 나타냅니다."
 
 #: discord.Invite:97 of
 msgid "The user who created the invite."
-msgstr ""
+msgstr "초대를 만든 사용자."
 
 #: discord.Invite:103 of
 msgid "The approximate number of members in the guild."
-msgstr ""
+msgstr "길드 멤버의 대략적인 수."
 
 #: discord.Invite:109 of
 msgid ""
@@ -12227,10 +12227,13 @@ msgid ""
 "includes idle, dnd, online, and invisible members. Offline members are "
 "excluded."
 msgstr ""
+"현재 길드에서 활동중인 회원의 대략적인 수. "
+"여기에는 자리 비움, 방해 금지, 온라인, 보이지 않는 멤버가 포함됩니다. "
+"오프라인 멤버는 제외됩니다."
 
 #: discord.Invite:116 of
 msgid "The channel the invite is for."
-msgstr ""
+msgstr "초대의 채널입니다."
 
 #: discord.Invite:118 of
 msgid ""
@@ -12240,25 +12243,25 @@ msgstr ""
 
 #: discord.Invite.id:1 of
 msgid "Returns the proper code portion of the invite."
-msgstr ""
+msgstr "초대의 적절한 코드 부분을 리턴합니다."
 
 #: discord.Invite.url:1 of
 msgid "A property that retrieves the invite URL."
-msgstr ""
+msgstr "초대 URL을 가져오는 프로퍼티."
 
 #: discord.Invite.delete:3 of
 msgid "Revokes the instant invite."
-msgstr ""
+msgstr "인스턴트 초대를 삭제합니다."
 
 #: discord.Invite.delete:5 of
 msgid ""
 "You must have the :attr:`~Permissions.manage_channels` permission to do "
 "this."
-msgstr ""
+msgstr "사용하려면 :attr:`~Permissions.manage_channels` 권한이 필요합니다."
 
 #: discord.Invite.delete:7 of
 msgid "The reason for deleting this invite. Shows up on the audit log."
-msgstr ""
+msgstr "이 초대를 삭제하는 사유입니다. 감사 로그에 뜨게 됩니다."
 
 #: ../../api.rst:2494
 msgid "WidgetChannel"
