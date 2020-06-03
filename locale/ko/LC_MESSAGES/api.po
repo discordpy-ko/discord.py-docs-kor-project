@@ -11866,59 +11866,59 @@ msgstr "확인된 권한."
 
 #: ../../api.rst:2462
 msgid "GroupChannel"
-msgstr ""
+msgstr "그룹 채널"
 
 #: discord.GroupChannel:1 of
 msgid "Represents a Discord group channel."
-msgstr ""
+msgstr "디스코드 그룹 채널을 나타냅니다."
 
 #: discord.GroupChannel:23 of
 msgid "The users you are participating with in the group channel."
-msgstr ""
+msgstr "그룹 채널에 참여한 사용자."
 
 #: discord.GroupChannel:35 of
 msgid "The group channel ID."
-msgstr ""
+msgstr "그룹 채널의 채널 ID."
 
 #: discord.GroupChannel:41 of
 msgid "The user that owns the group channel."
-msgstr ""
+msgstr "그룹 채널을 소유한 사용자."
 
 #: discord.GroupChannel:47 of
 msgid "The group channel's icon hash if provided."
-msgstr ""
+msgstr "제공될 경우, 그룹 채널의 아이콘 해시."
 
 #: discord.GroupChannel:53 of
 msgid "The group channel's name if provided."
-msgstr ""
+msgstr "제공될 경우, 그룹 채널의 이름."
 
 #: discord.GroupChannel.icon_url:1 of
 msgid "Returns the channel's icon asset if available."
-msgstr ""
+msgstr "가능한 경우 채널의 아이콘 에셋을 리턴합니다."
 
 #: discord.GroupChannel.permissions_for:9 of
 msgid "send_tts_messages: You cannot send TTS messages in a DM."
-msgstr ""
+msgstr "send_tts_messages: 개인 메시지에서는 TTS 메시지를 보낼 수 없습니다."
 
 #: discord.GroupChannel.permissions_for:10 of
 msgid "manage_messages: You cannot delete others messages in a DM."
-msgstr ""
+msgstr "manage_messages: 개인 메시지에서는 다른 메시지를 삭제할 수 없습니다."
 
 #: discord.GroupChannel.permissions_for:12 of
 msgid "This also checks the kick_members permission if the user is the owner."
-msgstr ""
+msgstr "사용자가 소유자인 경우 kick_members 권한도 확인합니다."
 
 #: discord.GroupChannel.permissions_for:14 of
 msgid "The user to check permissions for."
-msgstr ""
+msgstr "권한을 확인할 사용자."
 
 #: discord.GroupChannel.permissions_for:17 of
 msgid "The resolved permissions for the user."
-msgstr ""
+msgstr "유저에 대해 확인환 권한."
 
 #: discord.GroupChannel.add_recipients:3 of
 msgid "Adds recipients to this group."
-msgstr ""
+msgstr "이 그룹에 사용자를 추가합니다."
 
 #: discord.GroupChannel.add_recipients:5 of
 msgid ""
@@ -11926,56 +11926,59 @@ msgid ""
 "ends up in an exception. To add a recipient to the group, you must have a"
 " relationship with the user of type :attr:`RelationshipType.friend`."
 msgstr ""
+"한 그룹은 최대 10명의 멤버만 가질 수 있습니다. 더 추가하려고 하면 예외가 발생합니다."
+"사용자를 그룹에 추가하려면 :attr:`RelationshipType.friend` 유형의 사용자와 관련성을 가져야 합니다."
 
 #: discord.GroupChannel.add_recipients:10 of
 msgid "An argument list of users to add to this group."
-msgstr ""
+msgstr "이 그룹에 추가할 사용자의 인수 목록."
 
 #: discord.GroupChannel.add_recipients:13 of
 msgid "Adding a recipient to this group failed."
-msgstr ""
+msgstr "이 그룹에 사용자를 추가하는 데 실패했습니다."
 
 #: discord.GroupChannel.remove_recipients:3 of
 msgid "Removes recipients from this group."
-msgstr ""
+msgstr "이 그룹에서 사용자를 제거합니다."
 
 #: discord.GroupChannel.remove_recipients:5 of
 msgid "An argument list of users to remove from this group."
-msgstr ""
+msgstr "이 그룹에서 제거할 사용자의 인수 목록."
 
 #: discord.GroupChannel.remove_recipients:8 of
 msgid "Removing a recipient from this group failed."
-msgstr ""
+msgstr "이 그룹에서 사용자를 제거하는 데 실패했습니다."
 
 #: discord.GroupChannel.edit:3 of
 msgid "Edits the group."
-msgstr ""
+msgstr "그룹을 편집합니다."
 
 #: discord.GroupChannel.edit:5 of
 msgid "The new name to change the group to. Could be ``None`` to remove the name."
-msgstr ""
+msgstr "그룹을 변경할 새 이름. 이름을 제거하려면 ``None`` 을 사용할 수 있습니다."
 
 #: discord.GroupChannel.edit:8 of
 msgid ""
 "A :term:`py:bytes-like object` representing the new icon. Could be "
 "``None`` to remove the icon."
-msgstr ""
+msgstr "새 아이콘을 나타내는 :term:`바이트류 객체 <py:bytes-like object>`. "
+"아이콘을 제거하려면 ``None`` 을 사용할 수 있습니다."
 
 #: discord.GroupChannel.edit:12 of
 msgid "Editing the group failed."
-msgstr ""
+msgstr "그룹 편집에 실패했습니다."
 
 #: discord.GroupChannel.leave:3 of
 msgid "Leave the group."
-msgstr ""
+msgstr "그룹에서 나갑니다."
 
 #: discord.GroupChannel.leave:5 of
 msgid "If you are the only one in the group, this deletes it as well."
-msgstr ""
+msgstr "그룹에 혼자 남아 있는 경우, 그롭도 삭제됩니다."
 
 #: discord.GroupChannel.leave:7 of
 msgid "Leaving the group failed."
-msgstr ""
+msgstr "그룹에서 나가는 데 실패했습니다."
 
 #: ../../api.rst:2476
 msgid "PartialInviteGuild"
