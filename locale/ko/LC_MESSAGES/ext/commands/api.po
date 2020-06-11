@@ -3882,7 +3882,7 @@ msgstr ""
 
 #: ../../ext/commands/api.rst:191
 msgid "Context"
-msgstr ""
+msgstr "컨텍스트"
 
 #: discord.ext.commands.Context:1 of
 msgid "Represents the context in which a command is being invoked under."
@@ -3937,13 +3937,13 @@ msgstr ""
 
 #: discord.ext.commands.Context:39 of
 msgid "The prefix that was used to invoke the command."
-msgstr ""
+msgstr "명령어를 작동시키기 위해 사용된 프리픽스."
 
 #: discord.ext.commands.Context:45 of
 msgid ""
 "The command (i.e. :class:`.Command` or its subclasses) that is being "
 "invoked currently."
-msgstr ""
+msgstr "현재 작동중인 명령어(:class:`.Command`\\나 이것의 서브클래스 등)."
 
 #: discord.ext.commands.Context:50 of
 msgid ""

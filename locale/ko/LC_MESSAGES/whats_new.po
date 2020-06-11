@@ -131,7 +131,7 @@ msgstr "Python 3.9 알파버전 사용시의 호환성 경고를 수정하였습
 
 #: ../../whats_new.rst:62
 msgid "Change the unknown event logging from WARNING to DEBUG to reduce noise."
-msgstr "스트레스를 줄이려면 로길 이벤트를 WARNING에서 DEBUG로 바꾸십시오."
+msgstr "스트레스를 줄이려면 로깅 이벤트를 WARNING에서 DEBUG로 바꾸십시오."
 
 #: ../../whats_new.rst:67
 msgid "v1.3.0"
