@@ -3950,7 +3950,7 @@ msgstr "현재 작동중인 명령어(:class:`.Command`\\나 이것의 서브클
 msgid ""
 "The command name that triggered this invocation. Useful for finding out "
 "which alias called the command."
-msgstr ""
+msgstr "이것을 호출한 명령어의 이름. 어떤 에일리어스가 이 명령어를 호출했는지 확인할 때 유용합니다."
 
 #: discord.ext.commands.Context:57 of
 msgid ""
@@ -3965,7 +3965,8 @@ msgid ""
 " point to a valid registered subcommand and could just point to a "
 "nonsense string. If nothing was passed to attempt a call to a subcommand "
 "then this is set to ``None``."
-msgstr ""
+msgstr "서브커맨드 호출을 시도하기 위해 사용된 문자열. 이것은 항상 유효한 등록된 서브커맨드를 가리키지 않고 의미없는 문자열일 수 있습니다."
+" 만약에 서브커맨드 호출을 시도하기 위해 아무것도 사용되지 않았다면 이것은 ``None``\\입니다."
 
 #: discord.ext.commands.Context:68 of
 msgid "Optional[:class:`str`]"
@@ -3975,7 +3976,7 @@ msgstr ""
 msgid ""
 "A boolean that indicates if the command failed to be parsed, checked, or "
 "invoked."
-msgstr ""
+msgstr "명령어가 분석됐거나, 체크됐거나, 호출되는 것이 실패했는지 보여주는 불린."
 
 #: discord.ext.commands.Context.history:1 of
 msgid ""
