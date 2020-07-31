@@ -3886,22 +3886,23 @@ msgstr "컨텍스트"
 
 #: discord.ext.commands.Context:1 of
 msgid "Represents the context in which a command is being invoked under."
-msgstr ""
+msgstr "명령어가 실행되고 있는 컨텍스트를 나타냅니다."
 
 #: discord.ext.commands.Context:3 of
 msgid ""
 "This class contains a lot of meta data to help you understand more about "
 "the invocation context. This class is not created manually and is instead"
 " passed around to commands as the first parameter."
-msgstr ""
+msgstr "이 클래스는 호출 컨텍스트를 더 잘 이해하는 것을 도와주기 위해 여러가지 메타 데이터가 들어가있습니다."
+" 이 클래스는 수동으로 생성되지 않는 대신 명령어의 첫 매개변수로 전달됩니다."
 
 #: discord.ext.commands.Context:7 of
 msgid "This class implements the :class:`~discord.abc.Messageable` ABC."
-msgstr ""
+msgstr "이 클래스는 :class:`~discord.abc.Messageable` ABC를 구현합니다."
 
 #: discord.ext.commands.Context:11 of
 msgid "The message that triggered the command being executed."
-msgstr ""
+msgstr "명령어를 실행시킨 메시지."
 
 #: discord.ext.commands.Context:13 of
 msgid ":class:`.Message`"
@@ -3909,7 +3910,7 @@ msgstr ""
 
 #: discord.ext.commands.Context:17 of
 msgid "The bot that contains the command being executed."
-msgstr ""
+msgstr "실행되고 있는 명령어를 갖고 있는 봇."
 
 #: discord.ext.commands.Context:19 of
 msgid ":class:`.Bot`"
@@ -3920,7 +3921,7 @@ msgid ""
 "The list of transformed arguments that were passed into the command. If "
 "this is accessed during the :func:`on_command_error` event then this list"
 " could be incomplete."
-msgstr ""
+msgstr "명령어로 전달된 변환된 전달인자들의 리스트. 만약에 이것이 :func:`on_command_error` 이벤트 도중에 접근된 경우 이 리스트는 불완전할 수 있습니다."
 
 #: discord.ext.commands.BotMissingPermissions:10
 #: discord.ext.commands.Context:27 discord.ext.commands.MissingPermissions:10
@@ -3933,7 +3934,7 @@ msgid ""
 "A dictionary of transformed arguments that were passed into the command. "
 "Similar to :attr:`args`\\, if this is accessed in the "
 ":func:`on_command_error` event then this dict could be incomplete."
-msgstr ""
+msgstr "명령어로 전달된 변환된 전달인자들의 딕셔너리. :attr:`args`\\와 비슷하게, 만약에 이것이 :func:`on_command_error` 이벤트 도중에 접근된 경우 이 딕셔너리는 불완전할 수 있습니다."
 
 #: discord.ext.commands.Context:39 of
 msgid "The prefix that was used to invoke the command."
@@ -3956,7 +3957,7 @@ msgid ""
 "The subcommand (i.e. :class:`.Command` or its subclasses) that was "
 "invoked. If no valid subcommand was invoked then this is equal to "
 "``None``."
-msgstr ""
+msgstr "호출된 서브커맨드 (:class:`.Command`\\나 이것의 서브클래스 등). 만약에 서브커맨드가 호출되지 않았다면 이것은 ``None``\\과 동일합니다."
 
 #: discord.ext.commands.Context:63 of
 msgid ""
