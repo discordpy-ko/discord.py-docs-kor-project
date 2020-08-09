@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 13:27+0900\n"
+"POT-Creation-Date: 2020-08-09 10:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,9 @@ msgid ""
 "One of the most common operations when making a bot is having a loop run "
 "in the background at a specified interval. This pattern is very common "
 "but has a lot of things you need to look out for:"
-msgstr "봇을 만들 때 하는 가장 흔한 작업은 특정한 간격으로 백그라운드에서 돌아가는 루프를 갖는 것입니다. 이 패턴은 매우 흔하지만 당신이 조심해야할 많은 것들이 있습니다:"
+msgstr ""
+"봇을 만들 때 하는 가장 흔한 작업은 특정한 간격으로 백그라운드에서 돌아가는 루프를 갖는 것입니다. 이 패턴은 매우 흔하지만 당신이"
+" 조심해야할 많은 것들이 있습니다:"
 
 #: ../../ext/tasks/index.rst:10
 msgid "How do I handle :exc:`asyncio.CancelledError`?"
@@ -113,8 +115,8 @@ msgstr "이벤트 루프에서 내부 태스크를 시작합니다."
 #: discord.ext.tasks.Loop.error discord.ext.tasks.Loop.remove_exception_type
 #: discord.ext.tasks.Loop.restart discord.ext.tasks.Loop.start
 #: discord.ext.tasks.loop of
-msgid "Parameters"
-msgstr "매개변수"
+msgid "매개변수"
+msgstr ""
 
 #: discord.ext.tasks.Loop.start:3 of
 msgid "The arguments to use."
@@ -128,24 +130,24 @@ msgstr "사용할 키워드 전달인자."
 #: discord.ext.tasks.Loop.before_loop discord.ext.tasks.Loop.change_interval
 #: discord.ext.tasks.Loop.error discord.ext.tasks.Loop.start
 #: discord.ext.tasks.loop of
-msgid "Raises"
-msgstr "예외"
+msgid "예외"
+msgstr ""
 
 #: discord.ext.tasks.Loop.start:6 of
 msgid "A task has already been launched and is running."
 msgstr "태스크가 이미 시작되었고 실행되는 중입니다."
 
 #: discord.ext.tasks.Loop.remove_exception_type discord.ext.tasks.Loop.start of
-msgid "Returns"
-msgstr "반환 값"
+msgid "반환값"
+msgstr ""
 
 #: discord.ext.tasks.Loop.start:8 of
 msgid "The task that has been created."
 msgstr "생성된 태스크."
 
 #: discord.ext.tasks.Loop.remove_exception_type discord.ext.tasks.Loop.start of
-msgid "Return type"
-msgstr "반환 형식"
+msgid "반환 형식"
+msgstr ""
 
 #: discord.ext.tasks.Loop.start:9 of
 msgid ":class:`asyncio.Task`"
@@ -171,11 +173,13 @@ msgstr "만약 내부 함수가 끝내기 전에 처리할 수 있는 오류를 
 msgid ""
 "If this is undesirable, either remove the error handling before stopping "
 "via :meth:`clear_exception_types` or use :meth:`cancel` instead."
-msgstr "만약에 이것을 원하지 않는다면, :meth:`clear_exception_types`\\로 멈추기 전에 오류 처리를 제거하거나 :meth:`cancel`\\을 대신 사용해주세요."
+msgstr ""
+"만약에 이것을 원하지 않는다면, :meth:`clear_exception_types`\\로 멈추기 전에 오류 처리를 제거하거나 "
+":meth:`cancel`\\을 대신 사용해주세요."
 
 #: discord.ext.tasks.Loop.cancel:1 of
 msgid "Cancels the internal task, if it is running."
-msgstr 만약 내부 태스크가 돌아가고 있다면 취소함.""
+msgstr "약 내부 태스크가 돌아가고 있다면 취소함.\""
 
 #: discord.ext.tasks.Loop.restart:1 of
 msgid "A convenience method to restart the internal task."
@@ -200,7 +204,9 @@ msgid ""
 "By default the exception types handled are those handled by "
 ":meth:`discord.Client.connect`\\, which includes a lot of internet "
 "disconnection errors."
-msgstr "기본 상태에서는 처리되는 예외 형식들은 :meth:`discord.Client.connect`\\로 처리되는데, 많은 인터넷 연결 끊어짐 오류를 포함하고 있습니다."
+msgstr ""
+"기본 상태에서는 처리되는 예외 형식들은 :meth:`discord.Client.connect`\\로 처리되는데, 많은 인터넷 연결 "
+"끊어짐 오류를 포함하고 있습니다."
 
 #: discord.ext.tasks.Loop.add_exception_type:7 of
 msgid ""
@@ -243,7 +249,9 @@ msgstr ":class:`bool`"
 msgid ""
 "Optional[:class:`asyncio.Task`]: Fetches the internal task or ``None`` if"
 " there isn't one running."
-msgstr "옵션[:class:`asyncio.Task`]: 내부 테스크를 가져오거나 아무것도 돌아가고 있지 않는다면 ``None``\\을 반환합니다."
+msgstr ""
+"옵션[:class:`asyncio.Task`]: 내부 테스크를 가져오거나 아무것도 돌아가고 있지 않는다면 ``None``\\을 "
+"반환합니다."
 
 #: discord.ext.tasks.Loop.is_being_cancelled:1 of
 msgid "Whether the task is being cancelled."
@@ -267,7 +275,9 @@ msgstr "루프가 시작되기 전에 코루틴이 호출되도록 등록하는 
 msgid ""
 "This is useful if you want to wait for some bot state before the loop "
 "starts, such as :meth:`discord.Client.wait_until_ready`."
-msgstr "만약에 :meth:`discord.Client.wait_until_ready`\\처럼 루프가 시작되기 전에 몇가지 봇 상태가 기다리도록 만들고 싶다면 유용합니다."
+msgstr ""
+"만약에 :meth:`discord.Client.wait_until_ready`\\처럼 루프가 시작되기 전에 몇가지 봇 상태가 "
+"기다리도록 만들고 싶다면 유용합니다."
 
 #: discord.ext.tasks.Loop.after_loop:3 discord.ext.tasks.Loop.before_loop:6 of
 msgid "The coroutine must take no arguments (except ``self`` in a class context)."
@@ -293,7 +303,9 @@ msgid ""
 "This coroutine is called even during cancellation. If it is desirable to "
 "tell apart whether something was cancelled or not, check to see whether "
 ":meth:`is_being_cancelled` is ``True`` or not."
-msgstr "이 코루틴은 취소할때도 호출됩니다. 만약에 무언가가 취소되었는지 아닌지를 분리해야 한다면, :meth:`is_being_cancelled`\\가 ``True``\\인지 아닌지를 확인하세요."
+msgstr ""
+"이 코루틴은 취소할때도 호출됩니다. 만약에 무언가가 취소되었는지 아닌지를 분리해야 한다면, "
+":meth:`is_being_cancelled`\\가 ``True``\\인지 아닌지를 확인하세요."
 
 #: discord.ext.tasks.Loop.after_loop:11 of
 msgid "The coroutine to register after the loop finishes."
@@ -330,7 +342,9 @@ msgid ""
 "This only applies on the next loop iteration. If it is desirable for the "
 "change of interval to be applied right away, cancel the task with "
 ":meth:`cancel`."
-msgstr "이것은 다음 루프 반복에서만 적용됩니다. 만약 간격 변경이 바로 적용되기를 원한다면, :meth:`cancel`\\로 태스크를 취소하세요."
+msgstr ""
+"이것은 다음 루프 반복에서만 적용됩니다. 만약 간격 변경이 바로 적용되기를 원한다면, :meth:`cancel`\\로 태스크를 "
+"취소하세요."
 
 #: discord.ext.tasks.Loop.change_interval:10 discord.ext.tasks.loop:4 of
 msgid "The number of seconds between every iteration."
@@ -362,10 +376,25 @@ msgstr "루프의 반복 횟수, 만약에 무한 반복이어야 한다면 ``No
 msgid ""
 "Whether to handle errors and restart the task using an exponential back-"
 "off algorithm similar to the one used in :meth:`discord.Client.connect`."
-msgstr ":meth:`discord.Client.connect`\\에 사용된 것처럼 기하급수적인 백오프 알고리즘으로 오류를 처리하거나 태스크를 재시작할지의 여부"
+msgstr ""
+":meth:`discord.Client.connect`\\에 사용된 것처럼 기하급수적인 백오프 알고리즘으로 오류를 처리하거나 "
+"태스크를 재시작할지의 여부"
 
 #: discord.ext.tasks.loop:17 of
 msgid ""
 "The loop to use to register the task, if not given defaults to "
 ":func:`asyncio.get_event_loop`."
 msgstr "태스크를 등록하기 위해 사용하는 루프, 만약에 주어지지 않았다면 기본으로 :func:`asyncio.get_event_loop`."
+
+#~ msgid "Parameters"
+#~ msgstr "매개변수"
+
+#~ msgid "Raises"
+#~ msgstr "예외"
+
+#~ msgid "Returns"
+#~ msgstr "반환 값"
+
+#~ msgid "Return type"
+#~ msgstr "반환 형식"
+
