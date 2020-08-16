@@ -4120,7 +4120,7 @@ msgstr "명령어를 작동시키기 위해 사용된 프리픽스."
 #: discord.ext.commands.Context:45 of
 #, fuzzy
 msgid "The command that is being invoked currently."
-msgstr "현재 작동중인 명령어(:class:`.Command`\\나 이것의 서브클래스 등)."
+msgstr "현재 작동중인 명령어."
 
 #: discord.ext.commands.Context:51 of
 msgid ""
@@ -4134,7 +4134,7 @@ msgid ""
 "The subcommand that was invoked. If no valid subcommand was invoked then "
 "this is equal to ``None``."
 msgstr ""
-"호출된 서브커맨드 (:class:`.Command`\\나 이것의 서브클래스 등). 만약에 서브커맨드가 호출되지 않았다면 이것은 "
+"호출된 서브커맨드. 만약에 서브커맨드가 호출되지 않았다면 이것은 "
 "``None``\\과 동일합니다."
 
 #: discord.ext.commands.Context:65 of
@@ -4157,35 +4157,36 @@ msgstr "명령어가 분석됐거나, 체크됐거나, 호출되는 것이 실�
 msgid ""
 "Returns an :class:`~discord.AsyncIterator` that enables receiving the "
 "destination's message history."
-msgstr ""
+msgstr "목적지의 메시지 역사를 받을 수 있도록 활성화해주는 :class:`~discord.AsyncIterator`\\를 반환."
 
 #: discord.ext.commands.Context.history:3 of
 msgid ""
 "You must have :attr:`~Permissions.read_message_history` permissions to "
 "use this."
-msgstr ""
+msgstr "이것을 사용하기 위해서는 :attr:`~Permissions.read_message_history` 권한이 필요합니다."
 
 #: discord.ext.commands.Context.history:14 of
 msgid "Flattening into a list: ::"
-msgstr ""
+msgstr "리스트로 압축하기: ::"
 
 #: discord.ext.commands.Context.history:21 of
 msgid ""
 "The number of messages to retrieve. If ``None``, retrieves every message "
 "in the channel. Note, however, that this would make it a slow operation."
-msgstr ""
+msgstr "검색할 메시지의 개수. 만약에 ``None`` 이라면, 이 채널의 모든 메시지를 검색합니다."
+" 그러나, 참고로, 그렇게 한다면 느리게 작동할 수 있습니다."
 
 #: discord.ext.commands.Context.history:25 of
 msgid ""
 "Retrieve messages before this date or message. If a date is provided it "
 "must be a timezone-naive datetime representing UTC time."
-msgstr ""
+msgstr "이 시간이나 메시지 이전의 메시지들을 검색. 만약에 시간이라면 UTC 시간대인 timezone-naive datetime 이어야 합니다."
 
 #: discord.ext.commands.Context.history:28 of
 msgid ""
 "Retrieve messages after this date or message. If a date is provided it "
 "must be a timezone-naive datetime representing UTC time."
-msgstr ""
+msgstr "이 시간이나 메시지 이후의 메시지들을 검색. 만약에 시간이라면 UTC 시간대인 timezone-naive datetime 이어야 합니다."
 
 #: discord.ext.commands.Context.history:31 of
 msgid ""
@@ -4193,21 +4194,22 @@ msgid ""
 "must be a timezone-naive datetime representing UTC time. When using this "
 "argument, the maximum limit is 101. Note that if the limit is an even "
 "number then this will return at most limit + 1 messages."
-msgstr ""
+msgstr "이 시간이나 메시지 근처의 메시지들을 검색. 만약에 시간이라면 UTC 시간대인 timezone-naive datetime 이어야 합니다. "
+"이 전달인자를 사용할 때에는, 최대 제한이 101 입니다. 참고로 제한이 짝수라면 제한 + 1개 메시지들을 반환합니다."
 
 #: discord.ext.commands.Context.history:36 of
 msgid ""
 "If set to ``True``, return messages in oldest->newest order. Defaults to "
 "``True`` if ``after`` is specified, otherwise ``False``."
-msgstr ""
+msgstr "만약에 ``True``\\로 설정되었다면 메시지를 오래된->최신 순으로 반환합니다. 기본값은 ``after``\\가 설정되있다면 ``True``\\이고, 아니라면 ``False`` 입니다."
 
 #: discord.ext.commands.Context.history:40 of
 msgid "You do not have permissions to get channel message history."
-msgstr ""
+msgstr "채널 메시지 역사를 가져올 권한이 없습니다."
 
 #: discord.ext.commands.Context.history:41 of
 msgid "The request to get message history failed."
-msgstr ""
+msgstr "메시지 역사 요청이 실패했습니다."
 
 #: discord.ext.commands.Context.history:43 of
 msgid ":class:`~discord.Message` -- The message with the message data parsed."
