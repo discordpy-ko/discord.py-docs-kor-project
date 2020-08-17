@@ -4213,7 +4213,7 @@ msgstr "메시지 역사 요청이 실패했습니다."
 
 #: discord.ext.commands.Context.history:43 of
 msgid ":class:`~discord.Message` -- The message with the message data parsed."
-msgstr ""
+msgstr ":class:`~discord.Message` -- 메시지 데이터가 파싱된 메시지"
 
 #: discord.ext.commands.Context.typing:1 of
 msgid ""
