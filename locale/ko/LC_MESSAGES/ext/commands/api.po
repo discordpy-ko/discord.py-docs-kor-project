@@ -136,7 +136,7 @@ msgstr ""
 #: discord.ext.commands.UnexpectedQuoteError discord.ext.commands.clean_content
 #: of
 msgid "type"
-msgstr ""
+msgstr "타입"
 
 #: discord.ext.commands.Bot:47 discord.ext.commands.Bot:61
 #: discord.ext.commands.Bot.is_owner:17 discord.ext.commands.Command:49
@@ -347,8 +347,8 @@ msgstr ""
 #: discord.ext.commands.cooldown discord.ext.commands.has_any_role
 #: discord.ext.commands.has_permissions discord.ext.commands.has_role
 #: discord.ext.commands.max_concurrency of
-msgid "매개변수"
-msgstr ""
+msgid "Parameters"
+msgstr "매개변수"
 
 #: discord.ext.commands.Bot.add_check:6 of
 msgid "The function that was used as a global check."
@@ -416,16 +416,16 @@ msgstr ""
 #: discord.ext.commands.VoiceChannelConverter.convert
 #: discord.ext.commands.check_any discord.ext.commands.clean_content.convert
 #: discord.ext.commands.command of
-msgid "예외"
-msgstr ""
+msgid "Raises"
+msgstr "예외"
 
 #: discord.ext.commands.Bot.add_cog:8 of
 msgid "The cog does not inherit from :class:`.Cog`."
-msgstr ""
+msgstr "Cog가 :class:`.Cog`\\에서 상속되지 않았습니다."
 
 #: discord.ext.commands.Bot.add_cog:9 of
 msgid "An error happened during loading."
-msgstr ""
+msgstr "로드하는 중 오류가 발생했습니다."
 
 #: discord.ext.commands.Bot.add_command:1
 #: discord.ext.commands.Group.add_command:1
@@ -453,7 +453,7 @@ msgstr ""
 #: discord.ext.commands.Group.add_command:9
 #: discord.ext.commands.GroupMixin.add_command:9 of
 msgid "The command to add."
-msgstr ""
+msgstr "추가할 명령어."
 
 #: discord.ext.commands.Bot.add_command:12
 #: discord.ext.commands.Group.add_command:12
@@ -488,8 +488,8 @@ msgstr ""
 #: discord.ext.commands.check_any:20 discord.ext.commands.has_any_role:20
 #: discord.ext.commands.has_permissions:16
 #: discord.ext.commands.when_mentioned_or:6 of
-msgid "예제"
-msgstr ""
+msgid "Example"
+msgstr "예제"
 
 #: discord.ext.commands.Bot.after_invoke:1
 #: discord.ext.commands.Command.after_invoke:1
@@ -537,11 +537,11 @@ msgstr ""
 #: discord.ext.commands.Group.before_invoke:14
 #: discord.ext.commands.Group.error:10 of
 msgid "The coroutine passed is not actually a coroutine."
-msgstr ""
+msgstr "전달된 코루틴이 사실 코루틴이 아닙니다."
 
 #: discord.ext.commands.Bot.allowed_mentions:1 of
 msgid "The allowed mention configuration."
-msgstr ""
+msgstr "허용된 맨션 설정."
 
 #: discord.ext.commands.Bot.allowed_mentions:5 of
 msgid "Optional[:class:`~discord.AllowedMentions`]"
@@ -645,8 +645,8 @@ msgstr ""
 #: discord.ext.commands.HelpCommand.invoked_with
 #: discord.ext.commands.HelpCommand.subcommand_not_found
 #: discord.ext.commands.MinimalHelpCommand.get_command_signature of
-msgid "반환값"
-msgstr ""
+msgid "Returns"
+msgstr "반환값"
 
 #: discord.ext.commands.Bot.application_info:7 of
 msgid "The bot's application information."
@@ -685,8 +685,8 @@ msgstr ""
 #: discord.ext.commands.HelpCommand.invoked_with
 #: discord.ext.commands.HelpCommand.subcommand_not_found
 #: discord.ext.commands.MinimalHelpCommand.get_command_signature of
-msgid "반환 형식"
-msgstr ""
+msgid "Return type"
+msgstr "반환 형식"
 
 #: discord.ext.commands.Bot.application_info:8 of
 msgid ":class:`.AppInfo`"
