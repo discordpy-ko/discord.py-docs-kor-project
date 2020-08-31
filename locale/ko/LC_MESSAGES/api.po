@@ -749,7 +749,7 @@ msgstr ""
 #: discord.AutoShardedClient.request_offline_members:13
 #: discord.Client.request_offline_members:13 of
 msgid "An argument list of guilds to request offline members for."
-msgstr "길드에 요청할 오프라인 멤버의 인자 목록."
+msgstr "오프라인 멤버들의 정보를 요청할 길드의 목록."
 
 #: discord.Asset.read discord.Asset.save discord.Attachment.read
 #: discord.Attachment.save discord.Attachment.to_file
