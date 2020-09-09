@@ -4233,50 +4233,51 @@ msgstr ""
 
 #: discord.ext.commands.Context.typing:10 of
 msgid "Example Usage: ::"
-msgstr ""
+msgstr "예제: ::"
 
 #: discord.ext.commands.Context.invoke:3 of
 msgid "Calls a command with the arguments given."
-msgstr ""
+msgstr "주어진 인자들과 함께 명령어를 불러옵니다."
 
 #: discord.ext.commands.Context.invoke:5 of
 msgid ""
 "This is useful if you want to just call the callback that a "
 ":class:`.Command` holds internally."
-msgstr ""
+msgstr "이것은 내부에서 :class:`.Command`\\을 잡고 있는 콜백을 호출하고 싶다면 유용합니다."
 
 #: discord.ext.commands.Context.invoke:10 of
 msgid ""
 "This does not handle converters, checks, cooldowns, pre-invoke, or after-"
 "invoke hooks in any matter. It calls the internal callback directly as-if"
 " it was a regular function."
-msgstr ""
+msgstr "이것은 어떤 일이 일어나도 컨버터, 체크, 쿨다운, 프리-인보크, 또는 애프터-인보크 후크들을 핸들링하지 않습니다."
+"이것은 내부 콜백을 일반 함수처럼 직접 호출합니다."
 
 #: discord.ext.commands.Context.invoke:14 of
 msgid ""
 "You must take care in passing the proper arguments when using this "
 "function."
-msgstr ""
+msgstr "이 함수를 사용할 때에는 제대로 된 인자들을 전달할 때 조심해야 합니다."
 
 #: discord.ext.commands.Context.invoke:19 of
 msgid "The first parameter passed **must** be the command being invoked."
-msgstr ""
+msgstr "첫번째로 전달된 인자는 **무조건** 실행된 명령어 이어야 합니다."
 
 #: discord.ext.commands.Context.invoke:21 of
 msgid "The command that is going to be called."
-msgstr ""
+msgstr "호출될 명령어."
 
 #: discord.ext.commands.Context.invoke:23 of
 msgid "The arguments to to use."
-msgstr ""
+msgstr "사용할 인자들"
 
 #: discord.ext.commands.Context.invoke:24 of
 msgid "The keyword arguments to use."
-msgstr ""
+msgstr "사용할 키워드 인자들"
 
 #: discord.ext.commands.Context.invoke:26 of
 msgid "The command argument to invoke is missing."
-msgstr ""
+msgstr "실행될 명령어 인자가 없습니다."
 
 #: discord.ext.commands.Context.reinvoke:3 of
 msgid "Calls the command again."
