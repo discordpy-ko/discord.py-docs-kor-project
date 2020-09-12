@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-09 10:37+0900\n"
+"POT-Creation-Date: 2020-09-12 11:04+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,8 +98,9 @@ msgstr "여러 가지 옵션을 :class:`Client`\\에 전달할 수 있습니다.
 #: discord.ClientUser.edit discord.ClientUser.edit_settings
 #: discord.ClientUser.get_relationship discord.ClientUser.mentioned_in
 #: discord.ClientUser.permissions_in discord.DMChannel.fetch_message
-#: discord.DMChannel.history discord.DMChannel.permissions_for
-#: discord.DMChannel.send discord.Embed.add_field discord.Embed.from_dict
+#: discord.DMChannel.fetch_message_fast discord.DMChannel.history
+#: discord.DMChannel.permissions_for discord.DMChannel.send
+#: discord.Embed.add_field discord.Embed.from_dict
 #: discord.Embed.insert_field_at discord.Embed.remove_field
 #: discord.Embed.set_author discord.Embed.set_field_at discord.Embed.set_footer
 #: discord.Embed.set_image discord.Embed.set_thumbnail discord.Emoji.delete
@@ -107,23 +108,24 @@ msgstr "여러 가지 옵션을 :class:`Client`\\에 전달할 수 있습니다.
 #: discord.FFmpegOpusAudio.from_probe discord.FFmpegOpusAudio.probe
 #: discord.FFmpegPCMAudio discord.Game discord.GroupCall.voice_state_for
 #: discord.GroupChannel.add_recipients discord.GroupChannel.edit
-#: discord.GroupChannel.fetch_message discord.GroupChannel.history
-#: discord.GroupChannel.permissions_for discord.GroupChannel.remove_recipients
-#: discord.GroupChannel.send discord.Guild.audit_logs discord.Guild.ban
-#: discord.Guild.banner_url_as discord.Guild.change_voice_state
-#: discord.Guild.create_custom_emoji discord.Guild.create_integration
-#: discord.Guild.create_role discord.Guild.create_text_channel
-#: discord.Guild.create_voice_channel discord.Guild.discovery_splash_url_as
-#: discord.Guild.edit discord.Guild.edit_role_positions
-#: discord.Guild.estimate_pruned_members discord.Guild.fetch_ban
-#: discord.Guild.fetch_emoji discord.Guild.fetch_member
+#: discord.GroupChannel.fetch_message discord.GroupChannel.fetch_message_fast
+#: discord.GroupChannel.history discord.GroupChannel.permissions_for
+#: discord.GroupChannel.remove_recipients discord.GroupChannel.send
+#: discord.Guild.audit_logs discord.Guild.ban discord.Guild.banner_url_as
+#: discord.Guild.change_voice_state discord.Guild.create_custom_emoji
+#: discord.Guild.create_integration discord.Guild.create_role
+#: discord.Guild.create_text_channel discord.Guild.create_voice_channel
+#: discord.Guild.discovery_splash_url_as discord.Guild.edit
+#: discord.Guild.edit_role_positions discord.Guild.estimate_pruned_members
+#: discord.Guild.fetch_ban discord.Guild.fetch_emoji discord.Guild.fetch_member
 #: discord.Guild.fetch_members discord.Guild.get_channel
 #: discord.Guild.get_member discord.Guild.get_member_named
 #: discord.Guild.get_role discord.Guild.icon_url_as discord.Guild.kick
 #: discord.Guild.prune_members discord.Guild.query_members
 #: discord.Guild.splash_url_as discord.Guild.unban discord.Integration.edit
 #: discord.Invite.delete discord.Member.add_roles discord.Member.avatar_url_as
-#: discord.Member.edit discord.Member.fetch_message discord.Member.history
+#: discord.Member.edit discord.Member.fetch_message
+#: discord.Member.fetch_message_fast discord.Member.history
 #: discord.Member.mentioned_in discord.Member.move_to
 #: discord.Member.permissions_in discord.Member.remove_roles
 #: discord.Member.send discord.Message.add_reaction
@@ -139,19 +141,21 @@ msgstr "여러 가지 옵션을 :class:`Client`\\에 전달할 수 있습니다.
 #: discord.TextChannel.create_invite discord.TextChannel.create_webhook
 #: discord.TextChannel.delete discord.TextChannel.delete_messages
 #: discord.TextChannel.edit discord.TextChannel.fetch_message
-#: discord.TextChannel.follow discord.TextChannel.history
-#: discord.TextChannel.overwrites_for discord.TextChannel.permissions_for
-#: discord.TextChannel.purge discord.TextChannel.send
-#: discord.TextChannel.set_permissions discord.User.avatar_url_as
-#: discord.User.fetch_message discord.User.history discord.User.mentioned_in
-#: discord.User.permissions_in discord.User.send discord.VoiceChannel.clone
-#: discord.VoiceChannel.connect discord.VoiceChannel.create_invite
-#: discord.VoiceChannel.delete discord.VoiceChannel.edit
-#: discord.VoiceChannel.overwrites_for discord.VoiceChannel.permissions_for
-#: discord.VoiceChannel.set_permissions discord.VoiceClient.move_to
-#: discord.VoiceClient.play discord.VoiceClient.send_audio_packet
-#: discord.Webhook.avatar_url_as discord.Webhook.delete discord.Webhook.edit
-#: discord.Webhook.from_url discord.Webhook.partial discord.Webhook.send
+#: discord.TextChannel.fetch_message_fast discord.TextChannel.follow
+#: discord.TextChannel.history discord.TextChannel.overwrites_for
+#: discord.TextChannel.permissions_for discord.TextChannel.purge
+#: discord.TextChannel.send discord.TextChannel.set_permissions
+#: discord.User.avatar_url_as discord.User.fetch_message
+#: discord.User.fetch_message_fast discord.User.history
+#: discord.User.mentioned_in discord.User.permissions_in discord.User.send
+#: discord.VoiceChannel.clone discord.VoiceChannel.connect
+#: discord.VoiceChannel.create_invite discord.VoiceChannel.delete
+#: discord.VoiceChannel.edit discord.VoiceChannel.overwrites_for
+#: discord.VoiceChannel.permissions_for discord.VoiceChannel.set_permissions
+#: discord.VoiceClient.move_to discord.VoiceClient.play
+#: discord.VoiceClient.send_audio_packet discord.Webhook.avatar_url_as
+#: discord.Webhook.delete discord.Webhook.edit discord.Webhook.from_url
+#: discord.Webhook.partial discord.Webhook.send
 #: discord.WebhookAdapter.handle_execution_response
 #: discord.WebhookAdapter.request discord.Widget.fetch_invite
 #: discord.WidgetMember.avatar_url_as discord.WidgetMember.mentioned_in
@@ -160,7 +164,8 @@ msgstr "여러 가지 옵션을 :class:`Client`\\에 전달할 수 있습니다.
 #: discord.abc.GuildChannel.overwrites_for
 #: discord.abc.GuildChannel.permissions_for
 #: discord.abc.GuildChannel.set_permissions
-#: discord.abc.Messageable.fetch_message discord.abc.Messageable.history
+#: discord.abc.Messageable.fetch_message
+#: discord.abc.Messageable.fetch_message_fast discord.abc.Messageable.history
 #: discord.abc.Messageable.send discord.opus.load_opus
 #: discord.utils.escape_markdown discord.utils.escape_mentions
 #: discord.utils.find discord.utils.get discord.utils.oauth_url
@@ -629,7 +634,7 @@ msgstr ""
 msgid "Specifies if the client's internal cache is ready for use."
 msgstr "클라이언트의 내부 캐시를 사용할 준비가 되었는지의 여부를 지정합니다."
 
-#: ../../api.rst:1921 ../../api.rst:1929 ../../api.rst:1940 ../../api.rst:1960
+#: ../../api.rst:1941 ../../api.rst:1949 ../../api.rst:1960 ../../api.rst:1980
 #: discord.Asset.read:1 discord.Asset.save:1 discord.Attachment.read:1
 #: discord.Attachment.save:1 discord.Attachment.to_file:1
 #: discord.AutoShardedClient.change_presence:1
@@ -653,38 +658,40 @@ msgstr "클라이언트의 내부 캐시를 사용할 준비가 되었는지의 
 #: discord.Client.wait_for:1 discord.Client.wait_until_ready:1
 #: discord.ClientUser.create_group:1 discord.ClientUser.edit:1
 #: discord.ClientUser.edit_settings:1 discord.DMChannel.fetch_message:1
-#: discord.DMChannel.pins:1 discord.DMChannel.send:1
-#: discord.DMChannel.trigger_typing:1 discord.Emoji.delete:1
-#: discord.Emoji.edit:1 discord.FFmpegOpusAudio.from_probe:1
-#: discord.FFmpegOpusAudio.probe:1 discord.GroupChannel.add_recipients:1
-#: discord.GroupChannel.edit:1 discord.GroupChannel.fetch_message:1
-#: discord.GroupChannel.leave:1 discord.GroupChannel.pins:1
-#: discord.GroupChannel.remove_recipients:1 discord.GroupChannel.send:1
-#: discord.GroupChannel.trigger_typing:1 discord.Guild.ack:1
-#: discord.Guild.ban:1 discord.Guild.bans:1 discord.Guild.change_voice_state:1
-#: discord.Guild.create_category:1 discord.Guild.create_category_channel:1
-#: discord.Guild.create_custom_emoji:1 discord.Guild.create_integration:1
-#: discord.Guild.create_role:1 discord.Guild.create_text_channel:1
-#: discord.Guild.create_voice_channel:1 discord.Guild.delete:1
-#: discord.Guild.edit:1 discord.Guild.edit_role_positions:1
-#: discord.Guild.estimate_pruned_members:1 discord.Guild.fetch_ban:1
-#: discord.Guild.fetch_channels:1 discord.Guild.fetch_emoji:1
-#: discord.Guild.fetch_emojis:1 discord.Guild.fetch_member:1
-#: discord.Guild.fetch_members:1 discord.Guild.fetch_roles:1
-#: discord.Guild.integrations:1 discord.Guild.invites:1 discord.Guild.kick:1
-#: discord.Guild.leave:1 discord.Guild.prune_members:1
-#: discord.Guild.query_members:1 discord.Guild.unban:1
-#: discord.Guild.vanity_invite:1 discord.Guild.webhooks:1
+#: discord.DMChannel.fetch_message_fast:1 discord.DMChannel.pins:1
+#: discord.DMChannel.send:1 discord.DMChannel.trigger_typing:1
+#: discord.Emoji.delete:1 discord.Emoji.edit:1
+#: discord.FFmpegOpusAudio.from_probe:1 discord.FFmpegOpusAudio.probe:1
+#: discord.GroupChannel.add_recipients:1 discord.GroupChannel.edit:1
+#: discord.GroupChannel.fetch_message:1
+#: discord.GroupChannel.fetch_message_fast:1 discord.GroupChannel.leave:1
+#: discord.GroupChannel.pins:1 discord.GroupChannel.remove_recipients:1
+#: discord.GroupChannel.send:1 discord.GroupChannel.trigger_typing:1
+#: discord.Guild.ack:1 discord.Guild.ban:1 discord.Guild.bans:1
+#: discord.Guild.change_voice_state:1 discord.Guild.create_category:1
+#: discord.Guild.create_category_channel:1 discord.Guild.create_custom_emoji:1
+#: discord.Guild.create_integration:1 discord.Guild.create_role:1
+#: discord.Guild.create_text_channel:1 discord.Guild.create_voice_channel:1
+#: discord.Guild.delete:1 discord.Guild.edit:1
+#: discord.Guild.edit_role_positions:1 discord.Guild.estimate_pruned_members:1
+#: discord.Guild.fetch_ban:1 discord.Guild.fetch_channels:1
+#: discord.Guild.fetch_emoji:1 discord.Guild.fetch_emojis:1
+#: discord.Guild.fetch_member:1 discord.Guild.fetch_members:1
+#: discord.Guild.fetch_roles:1 discord.Guild.integrations:1
+#: discord.Guild.invites:1 discord.Guild.kick:1 discord.Guild.leave:1
+#: discord.Guild.prune_members:1 discord.Guild.query_members:1
+#: discord.Guild.unban:1 discord.Guild.vanity_invite:1 discord.Guild.webhooks:1
 #: discord.Guild.widget:1 discord.Integration.delete:1
 #: discord.Integration.edit:1 discord.Integration.sync:1
 #: discord.Invite.delete:1 discord.Member.add_roles:1 discord.Member.ban:1
 #: discord.Member.block:1 discord.Member.edit:1 discord.Member.fetch_message:1
-#: discord.Member.kick:1 discord.Member.move_to:1
-#: discord.Member.mutual_friends:1 discord.Member.pins:1
-#: discord.Member.profile:1 discord.Member.remove_friend:1
-#: discord.Member.remove_roles:1 discord.Member.send:1
-#: discord.Member.send_friend_request:1 discord.Member.trigger_typing:1
-#: discord.Member.unban:1 discord.Member.unblock:1 discord.Message.ack:1
+#: discord.Member.fetch_message_fast:1 discord.Member.kick:1
+#: discord.Member.move_to:1 discord.Member.mutual_friends:1
+#: discord.Member.pins:1 discord.Member.profile:1
+#: discord.Member.remove_friend:1 discord.Member.remove_roles:1
+#: discord.Member.send:1 discord.Member.send_friend_request:1
+#: discord.Member.trigger_typing:1 discord.Member.unban:1
+#: discord.Member.unblock:1 discord.Message.ack:1
 #: discord.Message.add_reaction:1 discord.Message.clear_reaction:1
 #: discord.Message.clear_reactions:1 discord.Message.delete:1
 #: discord.Message.edit:1 discord.Message.pin:1 discord.Message.publish:1
@@ -697,11 +704,12 @@ msgstr "클라이언트의 내부 캐시를 사용할 준비가 되었는지의 
 #: discord.TextChannel.create_invite:1 discord.TextChannel.create_webhook:1
 #: discord.TextChannel.delete:1 discord.TextChannel.delete_messages:1
 #: discord.TextChannel.edit:1 discord.TextChannel.fetch_message:1
-#: discord.TextChannel.invites:1 discord.TextChannel.pins:1
-#: discord.TextChannel.purge:1 discord.TextChannel.send:1
-#: discord.TextChannel.set_permissions:1 discord.TextChannel.trigger_typing:1
-#: discord.TextChannel.webhooks:1 discord.User.block:1
-#: discord.User.fetch_message:1 discord.User.mutual_friends:1
+#: discord.TextChannel.fetch_message_fast:1 discord.TextChannel.invites:1
+#: discord.TextChannel.pins:1 discord.TextChannel.purge:1
+#: discord.TextChannel.send:1 discord.TextChannel.set_permissions:1
+#: discord.TextChannel.trigger_typing:1 discord.TextChannel.webhooks:1
+#: discord.User.block:1 discord.User.fetch_message:1
+#: discord.User.fetch_message_fast:1 discord.User.mutual_friends:1
 #: discord.User.pins:1 discord.User.profile:1 discord.User.remove_friend:1
 #: discord.User.send:1 discord.User.send_friend_request:1
 #: discord.User.trigger_typing:1 discord.User.unblock:1
@@ -713,7 +721,8 @@ msgstr "클라이언트의 내부 캐시를 사용할 준비가 되었는지의 
 #: discord.abc.GuildChannel.clone:1 discord.abc.GuildChannel.create_invite:1
 #: discord.abc.GuildChannel.delete:1 discord.abc.GuildChannel.invites:1
 #: discord.abc.GuildChannel.set_permissions:1
-#: discord.abc.Messageable.fetch_message:1 discord.abc.Messageable.pins:1
+#: discord.abc.Messageable.fetch_message:1
+#: discord.abc.Messageable.fetch_message_fast:1 discord.abc.Messageable.pins:1
 #: discord.abc.Messageable.send:1 discord.abc.Messageable.trigger_typing:1
 #: discord.utils.sleep_until:1 of
 msgid "|coro|"
@@ -770,12 +779,13 @@ msgstr "오프라인 멤버들의 정보를 요청할 길드의 목록."
 #: discord.Client.wait_for discord.ClientUser.avatar_url_as
 #: discord.ClientUser.create_group discord.ClientUser.edit
 #: discord.ClientUser.edit_settings discord.DMChannel.fetch_message
-#: discord.DMChannel.history discord.DMChannel.pins discord.DMChannel.send
-#: discord.Embed.set_field_at discord.Emoji.delete discord.Emoji.edit
-#: discord.FFmpegOpusAudio discord.FFmpegOpusAudio.from_probe
-#: discord.FFmpegOpusAudio.probe discord.FFmpegPCMAudio
-#: discord.GroupChannel.add_recipients discord.GroupChannel.edit
-#: discord.GroupChannel.fetch_message discord.GroupChannel.history
+#: discord.DMChannel.fetch_message_fast discord.DMChannel.history
+#: discord.DMChannel.pins discord.DMChannel.send discord.Embed.set_field_at
+#: discord.Emoji.delete discord.Emoji.edit discord.FFmpegOpusAudio
+#: discord.FFmpegOpusAudio.from_probe discord.FFmpegOpusAudio.probe
+#: discord.FFmpegPCMAudio discord.GroupChannel.add_recipients
+#: discord.GroupChannel.edit discord.GroupChannel.fetch_message
+#: discord.GroupChannel.fetch_message_fast discord.GroupChannel.history
 #: discord.GroupChannel.leave discord.GroupChannel.pins
 #: discord.GroupChannel.remove_recipients discord.GroupChannel.send
 #: discord.Guild.ack discord.Guild.audit_logs discord.Guild.ban
@@ -796,9 +806,9 @@ msgstr "오프라인 멤버들의 정보를 요청할 길드의 목록."
 #: discord.Integration.delete discord.Integration.edit discord.Integration.sync
 #: discord.Invite.delete discord.Member.add_roles discord.Member.avatar_url_as
 #: discord.Member.block discord.Member.edit discord.Member.fetch_message
-#: discord.Member.history discord.Member.mutual_friends discord.Member.pins
-#: discord.Member.profile discord.Member.remove_friend
-#: discord.Member.remove_roles discord.Member.send
+#: discord.Member.fetch_message_fast discord.Member.history
+#: discord.Member.mutual_friends discord.Member.pins discord.Member.profile
+#: discord.Member.remove_friend discord.Member.remove_roles discord.Member.send
 #: discord.Member.send_friend_request discord.Member.unblock
 #: discord.Message.ack discord.Message.add_reaction
 #: discord.Message.clear_reaction discord.Message.clear_reactions
@@ -811,13 +821,14 @@ msgstr "오프라인 멤버들의 정보를 요청할 길드의 목록."
 #: discord.TextChannel.create_invite discord.TextChannel.create_webhook
 #: discord.TextChannel.delete discord.TextChannel.delete_messages
 #: discord.TextChannel.edit discord.TextChannel.fetch_message
-#: discord.TextChannel.follow discord.TextChannel.history
-#: discord.TextChannel.invites discord.TextChannel.pins
-#: discord.TextChannel.purge discord.TextChannel.send
+#: discord.TextChannel.fetch_message_fast discord.TextChannel.follow
+#: discord.TextChannel.history discord.TextChannel.invites
+#: discord.TextChannel.pins discord.TextChannel.purge discord.TextChannel.send
 #: discord.TextChannel.set_permissions discord.TextChannel.webhooks
 #: discord.User.avatar_url_as discord.User.block discord.User.fetch_message
-#: discord.User.history discord.User.mutual_friends discord.User.pins
-#: discord.User.profile discord.User.remove_friend discord.User.send
+#: discord.User.fetch_message_fast discord.User.history
+#: discord.User.mutual_friends discord.User.pins discord.User.profile
+#: discord.User.remove_friend discord.User.send
 #: discord.User.send_friend_request discord.User.unblock
 #: discord.VoiceChannel.clone discord.VoiceChannel.connect
 #: discord.VoiceChannel.create_invite discord.VoiceChannel.delete
@@ -829,7 +840,8 @@ msgstr "오프라인 멤버들의 정보를 요청할 길드의 목록."
 #: discord.abc.GuildChannel.clone discord.abc.GuildChannel.create_invite
 #: discord.abc.GuildChannel.delete discord.abc.GuildChannel.invites
 #: discord.abc.GuildChannel.set_permissions
-#: discord.abc.Messageable.fetch_message discord.abc.Messageable.history
+#: discord.abc.Messageable.fetch_message
+#: discord.abc.Messageable.fetch_message_fast discord.abc.Messageable.history
 #: discord.abc.Messageable.pins discord.abc.Messageable.send of
 msgid "예외"
 msgstr ""
@@ -1039,11 +1051,12 @@ msgstr ""
 #: discord.Client.wait_for discord.ClientUser.avatar_url_as
 #: discord.ClientUser.create_group discord.ClientUser.edit_settings
 #: discord.ClientUser.get_relationship discord.DMChannel.fetch_message
-#: discord.DMChannel.permissions_for discord.DMChannel.pins
-#: discord.DMChannel.send discord.FFmpegOpusAudio.from_probe
-#: discord.FFmpegOpusAudio.probe discord.FFmpegOpusAudio.read
-#: discord.FFmpegPCMAudio.read discord.GroupCall.voice_state_for
-#: discord.GroupChannel.fetch_message discord.GroupChannel.permissions_for
+#: discord.DMChannel.fetch_message_fast discord.DMChannel.permissions_for
+#: discord.DMChannel.pins discord.DMChannel.send
+#: discord.FFmpegOpusAudio.from_probe discord.FFmpegOpusAudio.probe
+#: discord.FFmpegOpusAudio.read discord.FFmpegPCMAudio.read
+#: discord.GroupCall.voice_state_for discord.GroupChannel.fetch_message
+#: discord.GroupChannel.fetch_message_fast discord.GroupChannel.permissions_for
 #: discord.GroupChannel.pins discord.GroupChannel.send
 #: discord.Guild.banner_url_as discord.Guild.bans discord.Guild.by_category
 #: discord.Guild.create_category discord.Guild.create_category_channel
@@ -1059,21 +1072,23 @@ msgstr ""
 #: discord.Guild.prune_members discord.Guild.query_members
 #: discord.Guild.splash_url_as discord.Guild.vanity_invite
 #: discord.Guild.webhooks discord.Guild.widget discord.Member.avatar_url_as
-#: discord.Member.fetch_message discord.Member.mutual_friends
-#: discord.Member.permissions_in discord.Member.pins discord.Member.profile
-#: discord.Member.send discord.PCMAudio.read discord.PCMVolumeTransformer.read
+#: discord.Member.fetch_message discord.Member.fetch_message_fast
+#: discord.Member.mutual_friends discord.Member.permissions_in
+#: discord.Member.pins discord.Member.profile discord.Member.send
+#: discord.PCMAudio.read discord.PCMVolumeTransformer.read
 #: discord.PartialInviteGuild.banner_url_as
 #: discord.PartialInviteGuild.icon_url_as
 #: discord.PartialInviteGuild.splash_url_as discord.Template.create_guild
 #: discord.TextChannel.create_invite discord.TextChannel.create_webhook
-#: discord.TextChannel.fetch_message discord.TextChannel.follow
-#: discord.TextChannel.invites discord.TextChannel.last_message
-#: discord.TextChannel.overwrites discord.TextChannel.overwrites_for
-#: discord.TextChannel.permissions_for discord.TextChannel.pins
-#: discord.TextChannel.purge discord.TextChannel.send
+#: discord.TextChannel.fetch_message discord.TextChannel.fetch_message_fast
+#: discord.TextChannel.follow discord.TextChannel.invites
+#: discord.TextChannel.last_message discord.TextChannel.overwrites
+#: discord.TextChannel.overwrites_for discord.TextChannel.permissions_for
+#: discord.TextChannel.pins discord.TextChannel.purge discord.TextChannel.send
 #: discord.TextChannel.webhooks discord.User.avatar_url_as
-#: discord.User.fetch_message discord.User.mutual_friends discord.User.pins
-#: discord.User.profile discord.User.send discord.VoiceChannel.connect
+#: discord.User.fetch_message discord.User.fetch_message_fast
+#: discord.User.mutual_friends discord.User.pins discord.User.profile
+#: discord.User.send discord.VoiceChannel.connect
 #: discord.VoiceChannel.create_invite discord.VoiceChannel.invites
 #: discord.VoiceChannel.overwrites discord.VoiceChannel.overwrites_for
 #: discord.VoiceChannel.permissions_for discord.VoiceChannel.voice_states
@@ -1083,7 +1098,8 @@ msgstr ""
 #: discord.abc.GuildChannel.invites discord.abc.GuildChannel.overwrites
 #: discord.abc.GuildChannel.overwrites_for
 #: discord.abc.GuildChannel.permissions_for
-#: discord.abc.Messageable.fetch_message discord.abc.Messageable.pins
+#: discord.abc.Messageable.fetch_message
+#: discord.abc.Messageable.fetch_message_fast discord.abc.Messageable.pins
 #: discord.abc.Messageable.send discord.opus.is_loaded
 #: discord.utils.escape_markdown discord.utils.escape_mentions
 #: discord.utils.oauth_url discord.utils.resolve_invite
@@ -1111,11 +1127,12 @@ msgstr ""
 #: discord.Client.wait_for discord.ClientUser.avatar_url_as
 #: discord.ClientUser.create_group discord.ClientUser.edit_settings
 #: discord.ClientUser.get_relationship discord.DMChannel.fetch_message
-#: discord.DMChannel.permissions_for discord.DMChannel.pins
-#: discord.DMChannel.send discord.FFmpegOpusAudio.from_probe
-#: discord.FFmpegOpusAudio.probe discord.FFmpegOpusAudio.read
-#: discord.FFmpegPCMAudio.read discord.GroupCall.voice_state_for
-#: discord.GroupChannel.fetch_message discord.GroupChannel.permissions_for
+#: discord.DMChannel.fetch_message_fast discord.DMChannel.permissions_for
+#: discord.DMChannel.pins discord.DMChannel.send
+#: discord.FFmpegOpusAudio.from_probe discord.FFmpegOpusAudio.probe
+#: discord.FFmpegOpusAudio.read discord.FFmpegPCMAudio.read
+#: discord.GroupCall.voice_state_for discord.GroupChannel.fetch_message
+#: discord.GroupChannel.fetch_message_fast discord.GroupChannel.permissions_for
 #: discord.GroupChannel.pins discord.GroupChannel.send
 #: discord.Guild.banner_url_as discord.Guild.bans discord.Guild.by_category
 #: discord.Guild.create_category discord.Guild.create_category_channel
@@ -1131,21 +1148,23 @@ msgstr ""
 #: discord.Guild.prune_members discord.Guild.query_members
 #: discord.Guild.splash_url_as discord.Guild.vanity_invite
 #: discord.Guild.webhooks discord.Guild.widget discord.Member.avatar_url_as
-#: discord.Member.fetch_message discord.Member.mutual_friends
-#: discord.Member.permissions_in discord.Member.pins discord.Member.profile
-#: discord.Member.send discord.PCMAudio.read discord.PCMVolumeTransformer.read
+#: discord.Member.fetch_message discord.Member.fetch_message_fast
+#: discord.Member.mutual_friends discord.Member.permissions_in
+#: discord.Member.pins discord.Member.profile discord.Member.send
+#: discord.PCMAudio.read discord.PCMVolumeTransformer.read
 #: discord.PartialInviteGuild.banner_url_as
 #: discord.PartialInviteGuild.icon_url_as
 #: discord.PartialInviteGuild.splash_url_as discord.Template.create_guild
 #: discord.TextChannel.create_invite discord.TextChannel.create_webhook
-#: discord.TextChannel.fetch_message discord.TextChannel.follow
-#: discord.TextChannel.invites discord.TextChannel.last_message
-#: discord.TextChannel.overwrites discord.TextChannel.overwrites_for
-#: discord.TextChannel.permissions_for discord.TextChannel.pins
-#: discord.TextChannel.purge discord.TextChannel.send
+#: discord.TextChannel.fetch_message discord.TextChannel.fetch_message_fast
+#: discord.TextChannel.follow discord.TextChannel.invites
+#: discord.TextChannel.last_message discord.TextChannel.overwrites
+#: discord.TextChannel.overwrites_for discord.TextChannel.permissions_for
+#: discord.TextChannel.pins discord.TextChannel.purge discord.TextChannel.send
 #: discord.TextChannel.webhooks discord.User.avatar_url_as
-#: discord.User.fetch_message discord.User.mutual_friends discord.User.pins
-#: discord.User.profile discord.User.send discord.VoiceChannel.connect
+#: discord.User.fetch_message discord.User.fetch_message_fast
+#: discord.User.mutual_friends discord.User.pins discord.User.profile
+#: discord.User.send discord.VoiceChannel.connect
 #: discord.VoiceChannel.create_invite discord.VoiceChannel.invites
 #: discord.VoiceChannel.overwrites discord.VoiceChannel.overwrites_for
 #: discord.VoiceChannel.permissions_for discord.VoiceChannel.voice_states
@@ -1155,7 +1174,8 @@ msgstr ""
 #: discord.abc.GuildChannel.invites discord.abc.GuildChannel.overwrites
 #: discord.abc.GuildChannel.overwrites_for
 #: discord.abc.GuildChannel.permissions_for
-#: discord.abc.Messageable.fetch_message discord.abc.Messageable.pins
+#: discord.abc.Messageable.fetch_message
+#: discord.abc.Messageable.fetch_message_fast discord.abc.Messageable.pins
 #: discord.abc.Messageable.send discord.opus.is_loaded
 #: discord.utils.escape_markdown discord.utils.escape_mentions
 #: discord.utils.oauth_url discord.utils.resolve_invite
@@ -1550,7 +1570,7 @@ msgstr ""
 msgid ""
 "If the invite is for a guild you have not joined, the guild and channel "
 "attributes of the returned :class:`.Invite` will be "
-":class:`.PartialInviteGuild` and :class:`PartialInviteChannel` "
+":class:`.PartialInviteGuild` and :class:`.PartialInviteChannel` "
 "respectively."
 msgstr ""
 
@@ -1907,16 +1927,16 @@ msgstr ""
 msgid "The application ID."
 msgstr ""
 
-#: ../../api.rst:2134 ../../api.rst:2140 ../../api.rst:2185 ../../api.rst:2199
-#: ../../api.rst:2227 ../../api.rst:2339 ../../api.rst:2347 ../../api.rst:2355
-#: ../../api.rst:2376 ../../api.rst:2393 discord.Activity:16 discord.AppInfo:8
+#: ../../api.rst:2154 ../../api.rst:2160 ../../api.rst:2205 ../../api.rst:2219
+#: ../../api.rst:2247 ../../api.rst:2359 ../../api.rst:2367 ../../api.rst:2375
+#: ../../api.rst:2396 ../../api.rst:2413 discord.Activity:16 discord.AppInfo:8
 #: discord.Asset.save:15 discord.Attachment:7 discord.Attachment:13
 #: discord.Attachment.save:24 discord.AuditLogEntry:22
 #: discord.CategoryChannel:39 discord.CategoryChannel:46 discord.ClientUser:31
 #: discord.Colour:28 discord.Colour.b:3 discord.Colour.g:3 discord.Colour.r:3
 #: discord.ConnectionClosed:8 discord.DMChannel:37 discord.Emoji:39
 #: discord.Emoji:63 discord.GroupChannel:37 discord.Guild:46 discord.Guild:64
-#: discord.Guild:70 discord.Guild:124 discord.Guild:177 discord.Guild:183
+#: discord.Guild:70 discord.Guild:124 discord.Guild:178 discord.Guild:184
 #: discord.Guild.emoji_limit:3 discord.Guild.estimate_pruned_members:15
 #: discord.Guild.filesize_limit:3 discord.Guild.member_count:3
 #: discord.Guild.shard_id:3 discord.HTTPException:21 discord.HTTPException:27
@@ -1946,8 +1966,8 @@ msgstr ""
 msgid "The application name."
 msgstr ""
 
-#: ../../api.rst:2082 ../../api.rst:2088 ../../api.rst:2094 ../../api.rst:2193
-#: ../../api.rst:2219 ../../api.rst:2314 ../../api.rst:2384 discord.Activity:22
+#: ../../api.rst:2102 ../../api.rst:2108 ../../api.rst:2114 ../../api.rst:2213
+#: ../../api.rst:2239 ../../api.rst:2334 ../../api.rst:2404 discord.Activity:22
 #: discord.Activity:28 discord.Activity:40 discord.Activity:46
 #: discord.AppInfo:14 discord.AppInfo:69 discord.AppInfo:77
 #: discord.Attachment:31 discord.Attachment:38 discord.Attachment:46
@@ -1956,7 +1976,7 @@ msgstr ""
 #: discord.ClientUser.display_name:7 discord.ClientUser.mention:3
 #: discord.ConnectionClosed:14 discord.Embed:24 discord.Embed:31
 #: discord.Embed:38 discord.Embed:45 discord.Emoji:33 discord.Game:34
-#: discord.Guild:27 discord.Guild:198 discord.HTTPException:15
+#: discord.Guild:27 discord.Guild:199 discord.HTTPException:15
 #: discord.Integration:15 discord.Integration:27 discord.IntegrationAccount:15
 #: discord.Invite:56 discord.Invite.id:3 discord.Invite.url:3
 #: discord.Member.display_name:7 discord.Member.mention:3 discord.Message:31
@@ -1989,7 +2009,7 @@ msgstr ""
 msgid "The application owner."
 msgstr ""
 
-#: ../../api.rst:777 ../../api.rst:2331 discord.AppInfo:20 discord.DMChannel:25
+#: ../../api.rst:785 ../../api.rst:2351 discord.AppInfo:20 discord.DMChannel:25
 #: discord.GroupChannel:43 discord.Integration:69 discord.Invite:99
 #: discord.Relationship:10 discord.Template:33 of
 msgid ":class:`User`"
@@ -2007,14 +2027,14 @@ msgstr ""
 msgid "The icon hash, if it exists."
 msgstr ""
 
-#: ../../api.rst:2257 discord.Activity.large_image_text:3
+#: ../../api.rst:2277 discord.Activity.large_image_text:3
 #: discord.Activity.large_image_url:3 discord.Activity.small_image_text:3
 #: discord.Activity.small_image_url:3 discord.AppInfo:34 discord.AppInfo:40
 #: discord.AppInfo:104 discord.AppInfo:113 discord.AuditLogEntry:35
 #: discord.ClientUser:43 discord.ClientUser:69 discord.ClientUser:75
 #: discord.CustomActivity:27 discord.File:30 discord.GroupChannel:49
 #: discord.GroupChannel:55 discord.Guild:58 discord.Guild:110 discord.Guild:116
-#: discord.Guild:170 discord.Guild:190 discord.Member:48
+#: discord.Guild:171 discord.Guild:191 discord.Member:48
 #: discord.PartialEmoji:32 discord.PartialInviteGuild:52
 #: discord.PartialInviteGuild:58 discord.PartialInviteGuild:64
 #: discord.PartialInviteGuild:70 discord.Streaming:35 discord.Streaming:41
@@ -2036,10 +2056,10 @@ msgid ""
 "application owner."
 msgstr ""
 
-#: ../../api.rst:782 ../../api.rst:796 ../../api.rst:801 ../../api.rst:806
-#: ../../api.rst:811 ../../api.rst:816 ../../api.rst:828 ../../api.rst:836
-#: ../../api.rst:2146 ../../api.rst:2265 ../../api.rst:2273 ../../api.rst:2298
-#: ../../api.rst:2306 ../../api.rst:2363 discord.AllowedMentions:11
+#: ../../api.rst:790 ../../api.rst:804 ../../api.rst:809 ../../api.rst:814
+#: ../../api.rst:819 ../../api.rst:824 ../../api.rst:836 ../../api.rst:844
+#: ../../api.rst:2166 ../../api.rst:2285 ../../api.rst:2293 ../../api.rst:2318
+#: ../../api.rst:2326 ../../api.rst:2383 discord.AllowedMentions:11
 #: discord.AppInfo:47 discord.AppInfo:54 discord.CallMessage.call_ended:3
 #: discord.CategoryChannel.permissions_synced:8 discord.ClientUser:49
 #: discord.ClientUser:57 discord.ClientUser:63 discord.ClientUser:81
@@ -2983,68 +3003,79 @@ msgid ""
 "in any way by :class:`Client`."
 msgstr ""
 
-#: ../../api.rst:198
+#: ../../api.rst:200
+msgid "``on_error`` will only be dispatched to :meth:`Client.event`."
+msgstr ""
+
+#: ../../api.rst:202
+msgid ""
+"It will not be received by :meth:`Client.wait_for`, or, if used, "
+":ref:`ext_commands_api_bot` listeners such as "
+":meth:`~ext.commands.Bot.listen` or :meth:`~ext.commands.Cog.listener`."
+msgstr ""
+
+#: ../../api.rst:206
 msgid "The name of the event that raised the exception."
 msgstr ""
 
-#: ../../api.rst:201
+#: ../../api.rst:209
 msgid "The positional arguments for the event that raised the exception."
 msgstr ""
 
-#: ../../api.rst:203
+#: ../../api.rst:211
 msgid "The keyword arguments for the event that raised the exception."
 msgstr ""
 
-#: ../../api.rst:208
+#: ../../api.rst:216
 msgid ""
 "Called whenever a message is received from the WebSocket, before it's "
 "processed. This event is always dispatched when a message is received and"
 " the passed data is not processed in any way."
 msgstr ""
 
-#: ../../api.rst:212 ../../api.rst:231
+#: ../../api.rst:220 ../../api.rst:239
 msgid ""
 "This is only really useful for grabbing the WebSocket stream and "
 "debugging purposes."
 msgstr ""
 
-#: ../../api.rst:217
+#: ../../api.rst:225
 msgid ""
 "This is only for the messages received from the client WebSocket. The "
 "voice WebSocket will not trigger this event."
 msgstr ""
 
-#: ../../api.rst:220
+#: ../../api.rst:228
 msgid ""
 "The message passed in from the WebSocket library. Could be :class:`bytes`"
 " for a binary message or :class:`str` for a regular message."
 msgstr ""
 
-#: ../../api.rst:227
+#: ../../api.rst:235
 msgid ""
 "Called whenever a send operation is done on the WebSocket before the "
 "message is sent. The passed parameter is the message that is being sent "
 "to the WebSocket."
 msgstr ""
 
-#: ../../api.rst:236
+#: ../../api.rst:244
 msgid ""
 "This is only for the messages sent from the client WebSocket. The voice "
 "WebSocket will not trigger this event."
 msgstr ""
 
-#: ../../api.rst:239
+#: ../../api.rst:247
 msgid ""
 "The message that is about to be passed on to the WebSocket library. It "
 "can be :class:`bytes` to denote a binary message or :class:`str` to "
 "denote a regular text message."
 msgstr ""
 
-#: ../../api.rst:245
+#: ../../api.rst:253
 msgid "Called when someone begins typing a message."
 msgstr "유저가 메세지 작성을 시작하면 작동합니다."
 
-#: ../../api.rst:247
+#: ../../api.rst:255
 msgid ""
 "The ``channel`` parameter can be a :class:`abc.Messageable` instance. "
 "Which could either be :class:`TextChannel`, :class:`GroupChannel`, or "
@@ -3054,7 +3085,7 @@ msgstr ""
 ":class:`TextChannel`\\, :class:`GroupChannel`\\, 혹은 :class:`DMChannel`\\가"
 " 될수도 있습니다.."
 
-#: ../../api.rst:251
+#: ../../api.rst:259
 msgid ""
 "If the ``channel`` is a :class:`TextChannel` then the ``user`` parameter "
 "is a :class:`Member`, otherwise it is a :class:`User`."
@@ -3062,23 +3093,23 @@ msgstr ""
 "만약에 ``channel``\\에 대한 :class:`TextChannel` 유저라면 ``user`` 매게변수값이 "
 ":class:`Member`\\로 반환되고, 아닐경우 :class:`User`\\로 반환됩니다."
 
-#: ../../api.rst:254
+#: ../../api.rst:262
 msgid "The location where the typing originated from."
 msgstr "유저가 작성한 채널의 값을 불러옵니다."
 
-#: ../../api.rst:256
+#: ../../api.rst:264
 msgid "The user that started typing."
 msgstr "작성 중인 유저의 값을 불러옵니다."
 
-#: ../../api.rst:258
+#: ../../api.rst:266
 msgid "When the typing started as a naive datetime in UTC."
 msgstr "datetime형태로 작성을 시작한 시간을 UTC 기준으로 값을 불러옵니다."
 
-#: ../../api.rst:263
+#: ../../api.rst:271
 msgid "Called when a :class:`Message` is created and sent."
 msgstr ":class:`Message` 가 보내졌을때, 작동합니다."
 
-#: ../../api.rst:267
+#: ../../api.rst:275
 msgid ""
 "Your bot's own messages and private messages are sent through this event."
 " This can lead cases of 'recursion' depending on how your bot was "
@@ -3090,11 +3121,11 @@ msgstr ""
 "있습니다.따라서, 봇 자신에 응답하지 않게할려면, 사용자ID 확인을 해보시기 바랍니다.이 현상은 "
 ":class:`~ext.commands.Bot`\\에서 발생하지는 않습니다."
 
-#: ../../api.rst:273
+#: ../../api.rst:281
 msgid "The current message."
 msgstr "현재의 메세지"
 
-#: ../../api.rst:278
+#: ../../api.rst:286
 msgid ""
 "Called when a message is deleted. If the message is not found in the "
 "internal message cache, then this event will not be called. Messages "
@@ -3104,7 +3135,7 @@ msgstr ""
 "메시지가 삭제 될 때 호출됩니다. 내부 메시지 캐시에서 메시지를 찾을 수 없으면이 이벤트가 호출되지 않습니다.메시지가 너무 "
 "오래되었거나 클라이언트가 트래픽 길드에 참여하는 경우 메시지가 캐시에 없을 수 있습니다."
 
-#: ../../api.rst:283
+#: ../../api.rst:291
 msgid ""
 "If this occurs increase the :attr:`Client.max_messages` attribute or use "
 "the :func:`on_raw_message_delete` event instead."
@@ -3112,11 +3143,11 @@ msgstr ""
 "이럴 경우, :attr:`Client.max_messages` 의 값을 늘리거나 해당 "
 ":func:`on_raw_message_delete` 이벤트 사용을 해보시기 바랍니다."
 
-#: ../../api.rst:286
+#: ../../api.rst:294
 msgid "The deleted message."
 msgstr "삭제된 메세지"
 
-#: ../../api.rst:291
+#: ../../api.rst:299
 msgid ""
 "Called when messages are bulk deleted. If none of the messages deleted "
 "are found in the internal message cache, then this event will not be "
@@ -3127,48 +3158,48 @@ msgid ""
 "guilds."
 msgstr ""
 
-#: ../../api.rst:298
+#: ../../api.rst:306
 msgid ""
 "If this occurs increase the :attr:`Client.max_messages` attribute or use "
 "the :func:`on_raw_bulk_message_delete` event instead."
 msgstr ""
 
-#: ../../api.rst:301
+#: ../../api.rst:309
 msgid "The messages that have been deleted."
 msgstr ""
 
-#: ../../api.rst:306
+#: ../../api.rst:314
 msgid ""
 "Called when a message is deleted. Unlike :func:`on_message_delete`, this "
 "is called regardless of the message being in the internal message cache "
 "or not."
 msgstr ""
 
-#: ../../api.rst:309
+#: ../../api.rst:317
 msgid ""
 "If the message is found in the message cache, it can be accessed via "
 ":attr:`RawMessageDeleteEvent.cached_message`"
 msgstr ""
 
-#: ../../api.rst:312 ../../api.rst:323 ../../api.rst:368 ../../api.rst:391
-#: ../../api.rst:414 ../../api.rst:433 ../../api.rst:454
+#: ../../api.rst:320 ../../api.rst:331 ../../api.rst:376 ../../api.rst:399
+#: ../../api.rst:422 ../../api.rst:441 ../../api.rst:462
 msgid "The raw event payload data."
 msgstr ""
 
-#: ../../api.rst:317
+#: ../../api.rst:325
 msgid ""
 "Called when a bulk delete is triggered. Unlike "
 ":func:`on_bulk_message_delete`, this is called regardless of the messages"
 " being in the internal message cache or not."
 msgstr ""
 
-#: ../../api.rst:320
+#: ../../api.rst:328
 msgid ""
 "If the messages are found in the message cache, they can be accessed via "
 ":attr:`RawBulkMessageDeleteEvent.cached_messages`"
 msgstr ""
 
-#: ../../api.rst:328
+#: ../../api.rst:336
 msgid ""
 "Called when a :class:`Message` receives an update event. If the message "
 "is not found in the internal message cache, then these events will not be"
@@ -3176,70 +3207,70 @@ msgid ""
 "client is participating in high traffic guilds."
 msgstr ""
 
-#: ../../api.rst:333
+#: ../../api.rst:341
 msgid ""
 "If this occurs increase the :attr:`Client.max_messages` attribute or use "
 "the :func:`on_raw_message_edit` event instead."
 msgstr ""
 
-#: ../../api.rst:336
+#: ../../api.rst:344
 msgid "The following non-exhaustive cases trigger this event:"
 msgstr ""
 
-#: ../../api.rst:338
+#: ../../api.rst:346
 msgid "A message has been pinned or unpinned."
 msgstr ""
 
-#: ../../api.rst:339
+#: ../../api.rst:347
 msgid "The message content has been changed."
 msgstr ""
 
-#: ../../api.rst:340
+#: ../../api.rst:348
 msgid "The message has received an embed."
 msgstr ""
 
-#: ../../api.rst:342
+#: ../../api.rst:350
 msgid ""
 "For performance reasons, the embed server does not do this in a "
 "\"consistent\" manner."
 msgstr ""
 
-#: ../../api.rst:344
+#: ../../api.rst:352
 msgid "The message's embeds were suppressed or unsuppressed."
 msgstr ""
 
-#: ../../api.rst:345
+#: ../../api.rst:353
 msgid "A call message has received an update to its participants or ending time."
 msgstr ""
 
-#: ../../api.rst:347
+#: ../../api.rst:355
 msgid "The previous version of the message."
 msgstr ""
 
-#: ../../api.rst:349
+#: ../../api.rst:357
 msgid "The current version of the message."
 msgstr ""
 
-#: ../../api.rst:354
+#: ../../api.rst:362
 msgid ""
 "Called when a message is edited. Unlike :func:`on_message_edit`, this is "
 "called regardless of the state of the internal message cache."
 msgstr ""
 
-#: ../../api.rst:357
+#: ../../api.rst:365
 msgid ""
 "If the message is found in the message cache, it can be accessed via "
 ":attr:`RawMessageUpdateEvent.cached_message`"
 msgstr ""
 
-#: ../../api.rst:360
+#: ../../api.rst:368
 msgid ""
 "Due to the inherently raw nature of this event, the data parameter "
 "coincides with the raw data given by the `gateway "
 "<https://discord.com/developers/docs/topics/gateway#message-update>`_."
 msgstr ""
 
-#: ../../api.rst:363
+#: ../../api.rst:371
 msgid ""
 "Since the data payload can be partial, care must be taken when accessing "
 "stuff in the dictionary. One example of a common case of partial data is "
@@ -3248,7 +3279,7 @@ msgid ""
 "Discord embed server."
 msgstr ""
 
-#: ../../api.rst:373
+#: ../../api.rst:381
 msgid ""
 "Called when a message has a reaction added to it. Similar to "
 ":func:`on_message_edit`, if the message is not found in the internal "
@@ -3256,46 +3287,46 @@ msgid ""
 ":func:`on_raw_reaction_add` instead."
 msgstr ""
 
-#: ../../api.rst:379
+#: ../../api.rst:387
 msgid ""
 "To get the :class:`Message` being reacted, access it via "
 ":attr:`Reaction.message`."
 msgstr ""
 
-#: ../../api.rst:381 ../../api.rst:404
+#: ../../api.rst:389 ../../api.rst:412
 msgid "The current state of the reaction."
 msgstr ""
 
-#: ../../api.rst:383 ../../api.rst:406
+#: ../../api.rst:391 ../../api.rst:414
 msgid "The user who added the reaction."
 msgstr ""
 
-#: ../../api.rst:388
+#: ../../api.rst:396
 msgid ""
 "Called when a message has a reaction added. Unlike "
 ":func:`on_reaction_add`, this is called regardless of the state of the "
 "internal message cache."
 msgstr ""
 
-#: ../../api.rst:396
+#: ../../api.rst:404
 msgid ""
 "Called when a message has a reaction removed from it. Similar to "
 "on_message_edit, if the message is not found in the internal message "
 "cache, then this event will not be called."
 msgstr ""
 
-#: ../../api.rst:402
+#: ../../api.rst:410
 msgid "To get the message being reacted, access it via :attr:`Reaction.message`."
 msgstr ""
 
-#: ../../api.rst:411
+#: ../../api.rst:419
 msgid ""
 "Called when a message has a reaction removed. Unlike "
 ":func:`on_reaction_remove`, this is called regardless of the state of the"
 " internal message cache."
 msgstr ""
 
-#: ../../api.rst:419
+#: ../../api.rst:427
 msgid ""
 "Called when a message has all its reactions removed from it. Similar to "
 ":func:`on_message_edit`, if the message is not found in the internal "
@@ -3303,22 +3334,22 @@ msgid ""
 ":func:`on_raw_reaction_clear` instead."
 msgstr ""
 
-#: ../../api.rst:423
+#: ../../api.rst:431
 msgid "The message that had its reactions cleared."
 msgstr ""
 
-#: ../../api.rst:425
+#: ../../api.rst:433
 msgid "The reactions that were removed."
 msgstr ""
 
-#: ../../api.rst:430
+#: ../../api.rst:438
 msgid ""
 "Called when a message has all its reactions removed. Unlike "
 ":func:`on_reaction_clear`, this is called regardless of the state of the "
 "internal message cache."
 msgstr ""
 
-#: ../../api.rst:438
+#: ../../api.rst:446
 msgid ""
 "Called when a message has a specific reaction removed from it. Similar to"
 " :func:`on_message_edit`, if the message is not found in the internal "
@@ -3326,428 +3357,428 @@ msgid ""
 ":func:`on_raw_reaction_clear_emoji` instead."
 msgstr ""
 
-#: ../../api.rst:444
+#: ../../api.rst:452
 msgid "The reaction that got cleared."
 msgstr ""
 
-#: ../../api.rst:449
+#: ../../api.rst:457
 msgid ""
 "Called when a message has a specific reaction removed from it. Unlike "
 ":func:`on_reaction_clear_emoji` this is called regardless of the state of"
 " the internal message cache."
 msgstr ""
 
-#: ../../api.rst:460
+#: ../../api.rst:468
 msgid "Called whenever a private channel is deleted or created."
 msgstr ""
 
-#: ../../api.rst:462
+#: ../../api.rst:470
 msgid "The private channel that got created or deleted."
 msgstr ""
 
-#: ../../api.rst:467
+#: ../../api.rst:475
 msgid "Called whenever a private group DM is updated. e.g. changed name or topic."
 msgstr ""
 
-#: ../../api.rst:469
+#: ../../api.rst:477
 msgid "The updated group channel's old info."
 msgstr ""
 
-#: ../../api.rst:471
+#: ../../api.rst:479
 msgid "The updated group channel's new info."
 msgstr ""
 
-#: ../../api.rst:476
+#: ../../api.rst:484
 msgid "Called whenever a message is pinned or unpinned from a private channel."
 msgstr ""
 
-#: ../../api.rst:478
+#: ../../api.rst:486
 msgid "The private channel that had its pins updated."
 msgstr ""
 
-#: ../../api.rst:480 ../../api.rst:508
+#: ../../api.rst:488 ../../api.rst:516
 msgid ""
 "The latest message that was pinned as a naive datetime in UTC. Could be "
 "``None``."
 msgstr ""
 
-#: ../../api.rst:486
+#: ../../api.rst:494
 msgid "Called whenever a guild channel is deleted or created."
 msgstr ""
 
-#: ../../api.rst:488
+#: ../../api.rst:496
 msgid "Note that you can get the guild from :attr:`~abc.GuildChannel.guild`."
 msgstr ""
 
-#: ../../api.rst:490
+#: ../../api.rst:498
 msgid "The guild channel that got created or deleted."
 msgstr ""
 
-#: ../../api.rst:495
+#: ../../api.rst:503
 msgid ""
 "Called whenever a guild channel is updated. e.g. changed name, topic, "
 "permissions."
 msgstr ""
 
-#: ../../api.rst:497
+#: ../../api.rst:505
 msgid "The updated guild channel's old info."
 msgstr ""
 
-#: ../../api.rst:499
+#: ../../api.rst:507
 msgid "The updated guild channel's new info."
 msgstr ""
 
-#: ../../api.rst:504
+#: ../../api.rst:512
 msgid "Called whenever a message is pinned or unpinned from a guild channel."
 msgstr ""
 
-#: ../../api.rst:506
+#: ../../api.rst:514
 msgid "The guild channel that had its pins updated."
 msgstr ""
 
-#: ../../api.rst:515
+#: ../../api.rst:523
 msgid ""
 "Called whenever an integration is created, modified, or removed from a "
 "guild."
 msgstr ""
 
-#: ../../api.rst:517
+#: ../../api.rst:525
 msgid "The guild that had its integrations updated."
 msgstr ""
 
-#: ../../api.rst:522
+#: ../../api.rst:530
 msgid ""
 "Called whenever a webhook is created, modified, or removed from a guild "
 "channel."
 msgstr ""
 
-#: ../../api.rst:524
+#: ../../api.rst:532
 msgid "The channel that had its webhooks updated."
 msgstr ""
 
-#: ../../api.rst:530
+#: ../../api.rst:538
 msgid "Called when a :class:`Member` leaves or joins a :class:`Guild`."
 msgstr ""
 
-#: ../../api.rst:532
+#: ../../api.rst:540
 msgid "The member who joined or left."
 msgstr ""
 
-#: ../../api.rst:537
+#: ../../api.rst:545
 msgid "Called when a :class:`Member` updates their profile."
 msgstr ""
 
-#: ../../api.rst:539 ../../api.rst:555
+#: ../../api.rst:547 ../../api.rst:563
 msgid "This is called when one or more of the following things change:"
 msgstr ""
 
-#: ../../api.rst:541
+#: ../../api.rst:549
 msgid "status"
 msgstr ""
 
-#: ../../api.rst:542
+#: ../../api.rst:550
 msgid "activity"
 msgstr ""
 
-#: ../../api.rst:543
+#: ../../api.rst:551
 msgid "nickname"
 msgstr ""
 
-#: ../../api.rst:544 discord.Member.edit:16 of
+#: ../../api.rst:552 discord.Member.edit:16 of
 msgid "roles"
 msgstr ""
 
-#: ../../api.rst:546
+#: ../../api.rst:554
 msgid "The updated member's old info."
 msgstr ""
 
-#: ../../api.rst:548
+#: ../../api.rst:556
 msgid "The updated member's updated info."
 msgstr ""
 
-#: ../../api.rst:553
+#: ../../api.rst:561
 msgid "Called when a :class:`User` updates their profile."
 msgstr ""
 
-#: ../../api.rst:557
+#: ../../api.rst:565
 msgid "avatar"
 msgstr ""
 
-#: ../../api.rst:558
+#: ../../api.rst:566
 msgid "username"
 msgstr ""
 
-#: ../../api.rst:559
+#: ../../api.rst:567
 msgid "discriminator"
 msgstr ""
 
-#: ../../api.rst:561
+#: ../../api.rst:569
 msgid "The updated user's old info."
 msgstr ""
 
-#: ../../api.rst:563
+#: ../../api.rst:571
 msgid "The updated user's updated info."
 msgstr ""
 
-#: ../../api.rst:568
+#: ../../api.rst:576
 msgid ""
 "Called when a :class:`Guild` is either created by the :class:`Client` or "
 "when the :class:`Client` joins a guild."
 msgstr ""
 
-#: ../../api.rst:571
+#: ../../api.rst:579
 msgid "The guild that was joined."
 msgstr ""
 
-#: ../../api.rst:576
+#: ../../api.rst:584
 msgid "Called when a :class:`Guild` is removed from the :class:`Client`."
 msgstr ""
 
-#: ../../api.rst:578
+#: ../../api.rst:586
 msgid "This happens through, but not limited to, these circumstances:"
 msgstr ""
 
-#: ../../api.rst:580
+#: ../../api.rst:588
 msgid "The client got banned."
 msgstr ""
 
-#: ../../api.rst:581
+#: ../../api.rst:589
 msgid "The client got kicked."
 msgstr ""
 
-#: ../../api.rst:582
+#: ../../api.rst:590
 msgid "The client left the guild."
 msgstr ""
 
-#: ../../api.rst:583
+#: ../../api.rst:591
 msgid "The client or the guild owner deleted the guild."
 msgstr ""
 
-#: ../../api.rst:585
+#: ../../api.rst:593
 msgid ""
 "In order for this event to be invoked then the :class:`Client` must have "
 "been part of the guild to begin with. (i.e. it is part of "
 ":attr:`Client.guilds`)"
 msgstr ""
 
-#: ../../api.rst:588
+#: ../../api.rst:596
 msgid "The guild that got removed."
 msgstr ""
 
-#: ../../api.rst:593
+#: ../../api.rst:601
 msgid "Called when a :class:`Guild` updates, for example:"
 msgstr ""
 
-#: ../../api.rst:595
+#: ../../api.rst:603
 msgid "Changed name"
 msgstr ""
 
-#: ../../api.rst:596
+#: ../../api.rst:604
 msgid "Changed AFK channel"
 msgstr ""
 
-#: ../../api.rst:597
+#: ../../api.rst:605
 msgid "Changed AFK timeout"
 msgstr ""
 
-#: ../../api.rst:598
+#: ../../api.rst:606
 msgid "etc"
 msgstr ""
 
-#: ../../api.rst:600
+#: ../../api.rst:608
 msgid "The guild prior to being updated."
 msgstr ""
 
-#: ../../api.rst:602
+#: ../../api.rst:610
 msgid "The guild after being updated."
 msgstr ""
 
-#: ../../api.rst:608
+#: ../../api.rst:616
 msgid "Called when a :class:`Guild` creates or deletes a new :class:`Role`."
 msgstr ""
 
-#: ../../api.rst:610
+#: ../../api.rst:618
 msgid "To get the guild it belongs to, use :attr:`Role.guild`."
 msgstr ""
 
-#: ../../api.rst:612
+#: ../../api.rst:620
 msgid "The role that was created or deleted."
 msgstr ""
 
-#: ../../api.rst:617
+#: ../../api.rst:625
 msgid "Called when a :class:`Role` is changed guild-wide."
 msgstr ""
 
-#: ../../api.rst:619
+#: ../../api.rst:627
 msgid "The updated role's old info."
 msgstr ""
 
-#: ../../api.rst:621
+#: ../../api.rst:629
 msgid "The updated role's updated info."
 msgstr ""
 
-#: ../../api.rst:626
+#: ../../api.rst:634
 msgid "Called when a :class:`Guild` adds or removes :class:`Emoji`."
 msgstr ""
 
-#: ../../api.rst:628
+#: ../../api.rst:636
 msgid "The guild who got their emojis updated."
 msgstr ""
 
-#: ../../api.rst:630
+#: ../../api.rst:638
 msgid "A list of emojis before the update."
 msgstr ""
 
-#: ../../api.rst:632
+#: ../../api.rst:640
 msgid "A list of emojis after the update."
 msgstr ""
 
-#: ../../api.rst:638
+#: ../../api.rst:646
 msgid ""
 "Called when a guild becomes available or unavailable. The guild must have"
 " existed in the :attr:`Client.guilds` cache."
 msgstr ""
 
-#: ../../api.rst:641
+#: ../../api.rst:649
 msgid "The :class:`Guild` that has changed availability."
 msgstr ""
 
-#: ../../api.rst:645
+#: ../../api.rst:653
 msgid "Called when a :class:`Member` changes their :class:`VoiceState`."
 msgstr ""
 
-#: ../../api.rst:647
+#: ../../api.rst:655
 msgid ""
 "The following, but not limited to, examples illustrate when this event is"
 " called:"
 msgstr ""
 
-#: ../../api.rst:649
+#: ../../api.rst:657
 msgid "A member joins a voice channel."
 msgstr ""
 
-#: ../../api.rst:650
+#: ../../api.rst:658
 msgid "A member leaves a voice channel."
 msgstr ""
 
-#: ../../api.rst:651
+#: ../../api.rst:659
 msgid "A member is muted or deafened by their own accord."
 msgstr ""
 
-#: ../../api.rst:652
+#: ../../api.rst:660
 msgid "A member is muted or deafened by a guild administrator."
 msgstr ""
 
-#: ../../api.rst:654
+#: ../../api.rst:662
 msgid "The member whose voice states changed."
 msgstr ""
 
-#: ../../api.rst:656
+#: ../../api.rst:664
 msgid "The voice state prior to the changes."
 msgstr ""
 
-#: ../../api.rst:658
+#: ../../api.rst:666
 msgid "The voice state after to the changes."
 msgstr ""
 
-#: ../../api.rst:663
+#: ../../api.rst:671
 msgid "Called when user gets banned from a :class:`Guild`."
 msgstr ""
 
-#: ../../api.rst:665
+#: ../../api.rst:673
 msgid "The guild the user got banned from."
 msgstr ""
 
-#: ../../api.rst:667
+#: ../../api.rst:675
 msgid ""
 "The user that got banned. Can be either :class:`User` or :class:`Member` "
 "depending if the user was in the guild or not at the time of removal."
 msgstr ""
 
-#: ../../api.rst:674
+#: ../../api.rst:682
 msgid "Called when a :class:`User` gets unbanned from a :class:`Guild`."
 msgstr ""
 
-#: ../../api.rst:676
+#: ../../api.rst:684
 msgid "The guild the user got unbanned from."
 msgstr ""
 
-#: ../../api.rst:678
+#: ../../api.rst:686
 msgid "The user that got unbanned."
 msgstr ""
 
-#: ../../api.rst:683
+#: ../../api.rst:691
 msgid ""
 "Called when an :class:`Invite` is created. You must have the "
 ":attr:`~Permissions.manage_channels` permission to receive this."
 msgstr ""
 
-#: ../../api.rst:690 ../../api.rst:705
+#: ../../api.rst:698 ../../api.rst:713
 msgid ""
 "There is a rare possibility that the :attr:`Invite.guild` and "
 ":attr:`Invite.channel` attributes will be of :class:`Object` rather than "
 "the respective models."
 msgstr ""
 
-#: ../../api.rst:693 discord.CategoryChannel.create_invite:26
+#: ../../api.rst:701 discord.CategoryChannel.create_invite:26
 #: discord.TextChannel.create_invite:26 discord.VoiceChannel.create_invite:26
 #: discord.abc.GuildChannel.create_invite:26 of
 msgid "The invite that was created."
 msgstr "생성된 초대."
 
-#: ../../api.rst:698
+#: ../../api.rst:706
 msgid ""
 "Called when an :class:`Invite` is deleted. You must have the "
 ":attr:`~Permissions.manage_channels` permission to receive this."
 msgstr ""
 
-#: ../../api.rst:708
+#: ../../api.rst:716
 msgid ""
 "Outside of those two attributes, the only other attribute guaranteed to "
 "be filled by the Discord gateway for this event is :attr:`Invite.code`."
 msgstr ""
 
-#: ../../api.rst:711
+#: ../../api.rst:719
 msgid "The invite that was deleted."
 msgstr "삭제된 초대."
 
-#: ../../api.rst:717
+#: ../../api.rst:725
 msgid "Called when someone joins or leaves a :class:`GroupChannel`."
 msgstr ""
 
-#: ../../api.rst:719
+#: ../../api.rst:727
 msgid "The group that the user joined or left."
 msgstr ""
 
-#: ../../api.rst:721
+#: ../../api.rst:729
 msgid "The user that joined or left."
 msgstr ""
 
-#: ../../api.rst:727
+#: ../../api.rst:735
 msgid ""
 "Called when a :class:`Relationship` is added or removed from the "
 ":class:`ClientUser`."
 msgstr ""
 
-#: ../../api.rst:730
+#: ../../api.rst:738
 msgid "The relationship that was added or removed."
 msgstr ""
 
-#: ../../api.rst:735
+#: ../../api.rst:743
 msgid ""
 "Called when a :class:`Relationship` is updated, e.g. when you block a "
 "friend or a friendship is accepted."
 msgstr ""
 
-#: ../../api.rst:738
+#: ../../api.rst:746
 msgid "The previous relationship status."
 msgstr ""
 
-#: ../../api.rst:740
+#: ../../api.rst:748
 msgid "The updated relationship status."
 msgstr ""
 
-#: ../../api.rst:746
+#: ../../api.rst:754
 msgid "Utility Functions"
 msgstr ""
 
@@ -3831,7 +3862,7 @@ msgstr ""
 msgid "The creation date in UTC of a Discord snowflake ID."
 msgstr ""
 
-#: ../../api.rst:791 discord.AuditLogEntry.created_at:3
+#: ../../api.rst:799 discord.AuditLogEntry.created_at:3
 #: discord.CategoryChannel.created_at:3 discord.ClientUser.created_at:5
 #: discord.DMChannel.created_at:3 discord.Embed:51 discord.Emoji.created_at:3
 #: discord.GroupChannel.created_at:3 discord.Guild.created_at:3
@@ -3963,686 +3994,700 @@ msgstr ""
 msgid "If provided is returned to the caller when the coroutine completes."
 msgstr ""
 
-#: ../../api.rst:767
+#: ../../api.rst:775
 msgid "Profile"
 msgstr ""
 
-#: ../../api.rst:771
+#: ../../api.rst:779
 msgid "A namedtuple representing a user's Discord public profile."
 msgstr ""
 
-#: ../../api.rst:775
+#: ../../api.rst:783
 msgid "The :class:`User` the profile belongs to."
 msgstr ""
 
-#: ../../api.rst:780
+#: ../../api.rst:788
 msgid "A boolean indicating if the user has premium (i.e. Discord Nitro)."
 msgstr ""
 
-#: ../../api.rst:785
+#: ../../api.rst:793
 msgid "An alias for :attr:`premium`."
 msgstr ""
 
-#: ../../api.rst:788
+#: ../../api.rst:796
 msgid ""
 "A naive UTC datetime indicating how long the user has been premium since."
 " This could be ``None`` if not applicable."
 msgstr ""
 
-#: ../../api.rst:794
+#: ../../api.rst:802
 msgid "A boolean indicating if the user is Discord Staff."
 msgstr ""
 
-#: ../../api.rst:799
+#: ../../api.rst:807
 msgid "A boolean indicating if the user is a Discord Partner."
 msgstr ""
 
-#: ../../api.rst:804
+#: ../../api.rst:812
 msgid "A boolean indicating if the user is a Bug Hunter."
 msgstr ""
 
-#: ../../api.rst:809
+#: ../../api.rst:817
 msgid "A boolean indicating if the user has had premium before 10 October, 2018."
 msgstr ""
 
-#: ../../api.rst:814
+#: ../../api.rst:822
 msgid "A boolean indicating if the user is in Discord HypeSquad."
 msgstr ""
 
-#: ../../api.rst:819
+#: ../../api.rst:827
 msgid "A list of :class:`HypeSquadHouse` that the user is in."
 msgstr ""
 
-#: ../../api.rst:821
+#: ../../api.rst:829
 #, fuzzy
 msgid "List[:class:`HypeSquadHouse`]"
 msgstr "리스트 [:class:`User`]"
 
-#: ../../api.rst:824
+#: ../../api.rst:832
 msgid "A boolean indicating if the user is in part of a team."
 msgstr ""
 
-#: ../../api.rst:832
+#: ../../api.rst:840
 msgid ""
 "A boolean indicating if the user is officially part of the Discord urgent"
 " message system."
 msgstr ""
 
-#: ../../api.rst:840
+#: ../../api.rst:848
 msgid ""
 "A list of :class:`Guild` that the :class:`ClientUser` shares with this "
 "user."
 msgstr ""
 
-#: ../../api.rst:843
+#: ../../api.rst:851
 #, fuzzy
 msgid "List[:class:`Guild`]"
 msgstr "List[:class:`int`]"
 
-#: ../../api.rst:847
+#: ../../api.rst:855
 msgid "A list of dict objects indicating the accounts the user has connected."
 msgstr ""
 
-#: ../../api.rst:849
+#: ../../api.rst:857
 msgid "An example entry can be seen below: ::"
 msgstr ""
 
-#: ../../api.rst:853
+#: ../../api.rst:861
 msgid "List[Dict[:class:`str`, :class:`str`]]"
 msgstr ""
 
-#: ../../api.rst:858
+#: ../../api.rst:866
 msgid "Enumerations"
 msgstr ""
 
-#: ../../api.rst:860
+#: ../../api.rst:868
 msgid ""
 "The API provides some enumerations for certain types of strings to avoid "
 "the API from being stringly typed in case the strings change in the "
 "future."
 msgstr ""
 
-#: ../../api.rst:863
+#: ../../api.rst:871
 msgid ""
 "All enumerations are subclasses of an internal class which mimics the "
 "behaviour of :class:`enum.Enum`."
 msgstr ""
 
-#: ../../api.rst:868
+#: ../../api.rst:876
 msgid "Specifies the type of channel."
 msgstr ""
 
-#: ../../api.rst:872
+#: ../../api.rst:880
 msgid "A text channel."
 msgstr ""
 
-#: ../../api.rst:875
+#: ../../api.rst:883
 msgid "A voice channel."
 msgstr ""
 
-#: ../../api.rst:878
+#: ../../api.rst:886
 msgid "A private text channel. Also called a direct message."
 msgstr ""
 
-#: ../../api.rst:881
+#: ../../api.rst:889
 msgid "A private group text channel."
 msgstr ""
 
-#: ../../api.rst:884
+#: ../../api.rst:892
 msgid "A category channel."
 msgstr ""
 
-#: ../../api.rst:887
+#: ../../api.rst:895
 msgid "A guild news channel."
 msgstr ""
 
-#: ../../api.rst:891
+#: ../../api.rst:899
 msgid "A guild store channel."
 msgstr ""
 
-#: ../../api.rst:895
+#: ../../api.rst:903
 msgid ""
 "Specifies the type of :class:`Message`. This is used to denote if a "
 "message is to be interpreted as a system message or a regular message."
 msgstr ""
 
-#: ../../api.rst:900
+#: ../../api.rst:910
+#, fuzzy
+msgid "Checks if two messages are equal."
+msgstr "두 사용자가 같은지 확인합니다."
+
+#: ../../api.rst:913
+#, fuzzy
+msgid "Checks if two messages are not equal."
+msgstr "두 명의 사용자가 다른지 확인합니다."
+
+#: ../../api.rst:917
 msgid "The default message type. This is the same as regular messages."
 msgstr ""
 
-#: ../../api.rst:903
+#: ../../api.rst:920
 msgid ""
 "The system message when a recipient is added to a group private message, "
 "i.e. a private channel of type :attr:`ChannelType.group`."
 msgstr ""
 
-#: ../../api.rst:907
+#: ../../api.rst:924
 msgid ""
 "The system message when a recipient is removed from a group private "
 "message, i.e. a private channel of type :attr:`ChannelType.group`."
 msgstr ""
 
-#: ../../api.rst:911
+#: ../../api.rst:928
 msgid ""
 "The system message denoting call state, e.g. missed call, started call, "
 "etc."
 msgstr ""
 
-#: ../../api.rst:915
+#: ../../api.rst:932
 msgid "The system message denoting that a channel's name has been changed."
 msgstr ""
 
-#: ../../api.rst:918
+#: ../../api.rst:935
 msgid "The system message denoting that a channel's icon has been changed."
 msgstr ""
 
-#: ../../api.rst:921
+#: ../../api.rst:938
 msgid ""
 "The system message denoting that a pinned message has been added to a "
 "channel."
 msgstr ""
 
-#: ../../api.rst:924
+#: ../../api.rst:941
 msgid "The system message denoting that a new member has joined a Guild."
 msgstr ""
 
-#: ../../api.rst:928
+#: ../../api.rst:945
 msgid "The system message denoting that a member has \"nitro boosted\" a guild."
 msgstr ""
 
-#: ../../api.rst:931
+#: ../../api.rst:948
 msgid ""
 "The system message denoting that a member has \"nitro boosted\" a guild "
 "and it achieved level 1."
 msgstr ""
 
-#: ../../api.rst:935
+#: ../../api.rst:952
 msgid ""
 "The system message denoting that a member has \"nitro boosted\" a guild "
 "and it achieved level 2."
 msgstr ""
 
-#: ../../api.rst:939
+#: ../../api.rst:956
 msgid ""
 "The system message denoting that a member has \"nitro boosted\" a guild "
 "and it achieved level 3."
 msgstr ""
 
-#: ../../api.rst:943
+#: ../../api.rst:960
 msgid ""
 "The system message denoting that an announcement channel has been "
 "followed."
 msgstr ""
 
-#: ../../api.rst:949
+#: ../../api.rst:966
 msgid ""
 "Specifies the type of :class:`Activity`. This is used to check how to "
 "interpret the activity itself."
 msgstr ""
 
-#: ../../api.rst:954
+#: ../../api.rst:971
 msgid "An unknown activity type. This should generally not happen."
 msgstr ""
 
-#: ../../api.rst:957
+#: ../../api.rst:974
 msgid "A \"Playing\" activity type."
 msgstr ""
 
-#: ../../api.rst:960
+#: ../../api.rst:977
 msgid "A \"Streaming\" activity type."
 msgstr ""
 
-#: ../../api.rst:963
+#: ../../api.rst:980
 msgid "A \"Listening\" activity type."
 msgstr ""
 
-#: ../../api.rst:966
+#: ../../api.rst:983
 msgid "A \"Watching\" activity type."
 msgstr ""
 
-#: ../../api.rst:969
+#: ../../api.rst:986
 msgid "A custom activity type."
 msgstr ""
 
-#: ../../api.rst:973
+#: ../../api.rst:990
 msgid "Specifies the HypeSquad house a user belongs to."
 msgstr ""
 
-#: ../../api.rst:977
+#: ../../api.rst:994
 msgid "The \"Bravery\" house."
 msgstr ""
 
-#: ../../api.rst:980
+#: ../../api.rst:997
 msgid "The \"Brilliance\" house."
 msgstr ""
 
-#: ../../api.rst:983
+#: ../../api.rst:1000
 msgid "The \"Balance\" house."
 msgstr ""
 
-#: ../../api.rst:987
+#: ../../api.rst:1004
 msgid "Specifies the region a voice server belongs to."
 msgstr ""
 
-#: ../../api.rst:991
+#: ../../api.rst:1008
 msgid "The Amsterdam region."
 msgstr ""
 
-#: ../../api.rst:994
+#: ../../api.rst:1011
 msgid "The Brazil region."
 msgstr ""
 
-#: ../../api.rst:997
+#: ../../api.rst:1014
 msgid "The Dubai region."
 msgstr ""
 
-#: ../../api.rst:1003
+#: ../../api.rst:1020
 msgid "The EU Central region."
 msgstr ""
 
-#: ../../api.rst:1006
+#: ../../api.rst:1023
 msgid "The EU West region."
 msgstr ""
 
-#: ../../api.rst:1009
+#: ../../api.rst:1026
 msgid "The Europe region."
 msgstr ""
 
-#: ../../api.rst:1015
+#: ../../api.rst:1032
 msgid "The Frankfurt region."
 msgstr ""
 
-#: ../../api.rst:1018
+#: ../../api.rst:1035
 msgid "The Hong Kong region."
 msgstr ""
 
-#: ../../api.rst:1021
+#: ../../api.rst:1038
 msgid "The India region."
 msgstr ""
 
-#: ../../api.rst:1027
+#: ../../api.rst:1044
 msgid "The Japan region."
 msgstr ""
 
-#: ../../api.rst:1030
+#: ../../api.rst:1047
 msgid "The London region."
 msgstr ""
 
-#: ../../api.rst:1033
+#: ../../api.rst:1050
 msgid "The Russia region."
 msgstr ""
 
-#: ../../api.rst:1036
+#: ../../api.rst:1053
 msgid "The Singapore region."
 msgstr ""
 
-#: ../../api.rst:1039
+#: ../../api.rst:1056
 msgid "The South Africa region."
 msgstr ""
 
-#: ../../api.rst:1042
+#: ../../api.rst:1059
+msgid "The South Korea region."
+msgstr ""
+
+#: ../../api.rst:1062
 msgid "The Sydney region."
 msgstr ""
 
-#: ../../api.rst:1045
+#: ../../api.rst:1065
 msgid "The US Central region."
 msgstr ""
 
-#: ../../api.rst:1048
+#: ../../api.rst:1068
 msgid "The US East region."
 msgstr ""
 
-#: ../../api.rst:1051
+#: ../../api.rst:1071
 msgid "The US South region."
 msgstr ""
 
-#: ../../api.rst:1054
+#: ../../api.rst:1074
 msgid "The US West region."
 msgstr ""
 
-#: ../../api.rst:1057
+#: ../../api.rst:1077
 msgid "The Amsterdam region for VIP guilds."
 msgstr ""
 
-#: ../../api.rst:1060
+#: ../../api.rst:1080
 msgid "The US East region for VIP guilds."
 msgstr ""
 
-#: ../../api.rst:1063
+#: ../../api.rst:1083
 msgid "The US West region for VIP guilds."
 msgstr ""
 
-#: ../../api.rst:1067
+#: ../../api.rst:1087
 msgid ""
 "Specifies a :class:`Guild`\\'s verification level, which is the criteria "
 "in which a member must meet before being able to send messages to the "
 "guild."
 msgstr ""
 
-#: ../../api.rst:1074
+#: ../../api.rst:1094
 msgid "Checks if two verification levels are equal."
 msgstr ""
 
-#: ../../api.rst:1077
+#: ../../api.rst:1097
 msgid "Checks if two verification levels are not equal."
 msgstr ""
 
-#: ../../api.rst:1080
+#: ../../api.rst:1100
 msgid "Checks if a verification level is higher than another."
 msgstr ""
 
-#: ../../api.rst:1083
+#: ../../api.rst:1103
 msgid "Checks if a verification level is lower than another."
 msgstr ""
 
-#: ../../api.rst:1086
+#: ../../api.rst:1106
 msgid "Checks if a verification level is higher or equal to another."
 msgstr ""
 
-#: ../../api.rst:1089
+#: ../../api.rst:1109
 msgid "Checks if a verification level is lower or equal to another."
 msgstr ""
 
-#: ../../api.rst:1093
+#: ../../api.rst:1113
 msgid "No criteria set."
 msgstr ""
 
-#: ../../api.rst:1096
+#: ../../api.rst:1116
 msgid "Member must have a verified email on their Discord account."
 msgstr ""
 
-#: ../../api.rst:1099
+#: ../../api.rst:1119
 msgid ""
 "Member must have a verified email and be registered on Discord for more "
 "than five minutes."
 msgstr ""
 
-#: ../../api.rst:1103
+#: ../../api.rst:1123
 msgid ""
 "Member must have a verified email, be registered on Discord for more than"
 " five minutes, and be a member of the guild itself for more than ten "
 "minutes."
 msgstr ""
 
-#: ../../api.rst:1108
+#: ../../api.rst:1128
 msgid "An alias for :attr:`high`."
 msgstr ""
 
-#: ../../api.rst:1111
+#: ../../api.rst:1131
 msgid "Member must have a verified phone on their Discord account."
 msgstr ""
 
-#: ../../api.rst:1115 ../../api.rst:1119
+#: ../../api.rst:1135 ../../api.rst:1139
 msgid "An alias for :attr:`extreme`."
 msgstr ""
 
-#: ../../api.rst:1125
+#: ../../api.rst:1145
 msgid ""
 "Specifies whether a :class:`Guild` has notifications on for all messages "
 "or mentions only by default."
 msgstr ""
 
-#: ../../api.rst:1129
+#: ../../api.rst:1149
 msgid ""
 "Members receive notifications for every message regardless of them being "
 "mentioned."
 msgstr ""
 
-#: ../../api.rst:1132
+#: ../../api.rst:1152
 msgid "Members receive notifications for messages they are mentioned in."
 msgstr ""
 
-#: ../../api.rst:1136
+#: ../../api.rst:1156
 msgid ""
 "Specifies a :class:`Guild`\\'s explicit content filter, which is the "
 "machine learning algorithms that Discord uses to detect if an image "
 "contains pornography or otherwise explicit content."
 msgstr ""
 
-#: ../../api.rst:1144
+#: ../../api.rst:1164
 msgid "Checks if two content filter levels are equal."
 msgstr ""
 
-#: ../../api.rst:1147
+#: ../../api.rst:1167
 msgid "Checks if two content filter levels are not equal."
 msgstr ""
 
-#: ../../api.rst:1150
+#: ../../api.rst:1170
 msgid "Checks if a content filter level is higher than another."
 msgstr ""
 
-#: ../../api.rst:1153
+#: ../../api.rst:1173
 msgid "Checks if a content filter level is lower than another."
 msgstr ""
 
-#: ../../api.rst:1156
+#: ../../api.rst:1176
 msgid "Checks if a content filter level is higher or equal to another."
 msgstr ""
 
-#: ../../api.rst:1159
+#: ../../api.rst:1179
 msgid "Checks if a content filter level is lower or equal to another."
 msgstr ""
 
-#: ../../api.rst:1163
+#: ../../api.rst:1183
 msgid "The guild does not have the content filter enabled."
 msgstr ""
 
-#: ../../api.rst:1166
+#: ../../api.rst:1186
 msgid "The guild has the content filter enabled for members without a role."
 msgstr ""
 
-#: ../../api.rst:1169
+#: ../../api.rst:1189
 msgid "The guild has the content filter enabled for every member."
 msgstr ""
 
-#: ../../api.rst:1173
+#: ../../api.rst:1193
 msgid "Specifies a :class:`Member` 's status."
 msgstr ""
 
-#: ../../api.rst:1177
+#: ../../api.rst:1197
 msgid "The member is online."
 msgstr ""
 
-#: ../../api.rst:1180
+#: ../../api.rst:1200
 msgid "The member is offline."
 msgstr ""
 
-#: ../../api.rst:1183
+#: ../../api.rst:1203
 msgid "The member is idle."
 msgstr ""
 
-#: ../../api.rst:1186
+#: ../../api.rst:1206
 msgid "The member is \"Do Not Disturb\"."
 msgstr ""
 
-#: ../../api.rst:1189
+#: ../../api.rst:1209
 msgid "An alias for :attr:`dnd`."
 msgstr ""
 
-#: ../../api.rst:1192
+#: ../../api.rst:1212
 msgid ""
 "The member is \"invisible\". In reality, this is only used in sending a "
 "presence a la :meth:`Client.change_presence`. When you receive a user's "
 "presence this will be :attr:`offline` instead."
 msgstr ""
 
-#: ../../api.rst:1199
+#: ../../api.rst:1219
 msgid ""
 "Represents the type of action being done for a :class:`AuditLogEntry`\\, "
 "which is retrievable via :meth:`Guild.audit_logs`."
 msgstr ""
 
-#: ../../api.rst:1204
+#: ../../api.rst:1224
 msgid "The guild has updated. Things that trigger this include:"
 msgstr ""
 
-#: ../../api.rst:1206
+#: ../../api.rst:1226
 msgid "Changing the guild vanity URL"
 msgstr ""
 
-#: ../../api.rst:1207
+#: ../../api.rst:1227
 msgid "Changing the guild invite splash"
 msgstr ""
 
-#: ../../api.rst:1208
+#: ../../api.rst:1228
 msgid "Changing the guild AFK channel or timeout"
 msgstr ""
 
-#: ../../api.rst:1209
+#: ../../api.rst:1229
 msgid "Changing the guild voice server region"
 msgstr ""
 
-#: ../../api.rst:1210
+#: ../../api.rst:1230
 msgid "Changing the guild icon"
 msgstr ""
 
-#: ../../api.rst:1211
+#: ../../api.rst:1231
 msgid "Changing the guild moderation settings"
 msgstr ""
 
-#: ../../api.rst:1212
+#: ../../api.rst:1232
 msgid "Changing things related to the guild widget"
 msgstr ""
 
-#: ../../api.rst:1214
+#: ../../api.rst:1234
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Guild`."
 msgstr ""
 
-#: ../../api.rst:1217 ../../api.rst:1240 ../../api.rst:1259 ../../api.rst:1278
-#: ../../api.rst:1297 ../../api.rst:1313 ../../api.rst:1328 ../../api.rst:1387
-#: ../../api.rst:1401 ../../api.rst:1446 ../../api.rst:1466 ../../api.rst:1481
-#: ../../api.rst:1496 ../../api.rst:1520 ../../api.rst:1537 ../../api.rst:1553
-#: ../../api.rst:1565 ../../api.rst:1578 ../../api.rst:1589 ../../api.rst:1600
+#: ../../api.rst:1237 ../../api.rst:1260 ../../api.rst:1279 ../../api.rst:1298
+#: ../../api.rst:1317 ../../api.rst:1333 ../../api.rst:1348 ../../api.rst:1407
+#: ../../api.rst:1421 ../../api.rst:1466 ../../api.rst:1486 ../../api.rst:1501
+#: ../../api.rst:1516 ../../api.rst:1540 ../../api.rst:1557 ../../api.rst:1573
+#: ../../api.rst:1585 ../../api.rst:1598 ../../api.rst:1609 ../../api.rst:1620
 msgid "Possible attributes for :class:`AuditLogDiff`:"
 msgstr ""
 
-#: ../../api.rst:1219
+#: ../../api.rst:1239
 msgid ":attr:`~AuditLogDiff.afk_channel`"
 msgstr ""
 
-#: ../../api.rst:1220
+#: ../../api.rst:1240
 msgid ":attr:`~AuditLogDiff.system_channel`"
 msgstr ""
 
-#: ../../api.rst:1221
+#: ../../api.rst:1241
 msgid ":attr:`~AuditLogDiff.afk_timeout`"
 msgstr ""
 
-#: ../../api.rst:1222
+#: ../../api.rst:1242
 msgid ":attr:`~AuditLogDiff.default_message_notifications`"
 msgstr ""
 
-#: ../../api.rst:1223
+#: ../../api.rst:1243
 msgid ":attr:`~AuditLogDiff.explicit_content_filter`"
 msgstr ""
 
-#: ../../api.rst:1224
+#: ../../api.rst:1244
 msgid ":attr:`~AuditLogDiff.mfa_level`"
 msgstr ""
 
-#: ../../api.rst:1225 ../../api.rst:1242 ../../api.rst:1261 ../../api.rst:1280
-#: ../../api.rst:1451 ../../api.rst:1471 ../../api.rst:1486 ../../api.rst:1540
-#: ../../api.rst:1556 ../../api.rst:1568 ../../api.rst:1580 ../../api.rst:1591
-#: ../../api.rst:1602
+#: ../../api.rst:1245 ../../api.rst:1262 ../../api.rst:1281 ../../api.rst:1300
+#: ../../api.rst:1471 ../../api.rst:1491 ../../api.rst:1506 ../../api.rst:1560
+#: ../../api.rst:1576 ../../api.rst:1588 ../../api.rst:1600 ../../api.rst:1611
+#: ../../api.rst:1622
 msgid ":attr:`~AuditLogDiff.name`"
 msgstr ""
 
-#: ../../api.rst:1226
+#: ../../api.rst:1246
 msgid ":attr:`~AuditLogDiff.owner`"
 msgstr ""
 
-#: ../../api.rst:1227
+#: ../../api.rst:1247
 msgid ":attr:`~AuditLogDiff.splash`"
 msgstr ""
 
-#: ../../api.rst:1228
+#: ../../api.rst:1248
 msgid ":attr:`~AuditLogDiff.vanity_url_code`"
 msgstr ""
 
-#: ../../api.rst:1232
+#: ../../api.rst:1252
 msgid "A new channel was created."
 msgstr ""
 
-#: ../../api.rst:1234
+#: ../../api.rst:1254
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is "
 "either a :class:`abc.GuildChannel` or :class:`Object` with an ID."
 msgstr ""
 
-#: ../../api.rst:1237
+#: ../../api.rst:1257
 msgid ""
 "A more filled out object in the :class:`Object` case can be found by "
 "using :attr:`~AuditLogEntry.after`."
 msgstr ""
 
-#: ../../api.rst:1243 ../../api.rst:1262 ../../api.rst:1281 ../../api.rst:1302
-#: ../../api.rst:1318 ../../api.rst:1333
+#: ../../api.rst:1263 ../../api.rst:1282 ../../api.rst:1301 ../../api.rst:1322
+#: ../../api.rst:1338 ../../api.rst:1353
 msgid ":attr:`~AuditLogDiff.type`"
 msgstr ""
 
-#: ../../api.rst:1244 ../../api.rst:1264 ../../api.rst:1282
+#: ../../api.rst:1264 ../../api.rst:1284 ../../api.rst:1302
 msgid ":attr:`~AuditLogDiff.overwrites`"
 msgstr ""
 
-#: ../../api.rst:1248
+#: ../../api.rst:1268
 msgid "A channel was updated. Things that trigger this include:"
 msgstr ""
 
-#: ../../api.rst:1250
+#: ../../api.rst:1270
 msgid "The channel name or topic was changed"
 msgstr ""
 
-#: ../../api.rst:1251
+#: ../../api.rst:1271
 msgid "The channel bitrate was changed"
 msgstr ""
 
-#: ../../api.rst:1253 ../../api.rst:1288
+#: ../../api.rst:1273 ../../api.rst:1308
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`abc.GuildChannel` or :class:`Object` with an ID."
 msgstr ""
 
-#: ../../api.rst:1256
+#: ../../api.rst:1276
 msgid ""
 "A more filled out object in the :class:`Object` case can be found by "
 "using :attr:`~AuditLogEntry.after` or :attr:`~AuditLogEntry.before`."
 msgstr ""
 
-#: ../../api.rst:1263
+#: ../../api.rst:1283
 msgid ":attr:`~AuditLogDiff.position`"
 msgstr ""
 
-#: ../../api.rst:1265
+#: ../../api.rst:1285
 msgid ":attr:`~AuditLogDiff.topic`"
 msgstr ""
 
-#: ../../api.rst:1266
+#: ../../api.rst:1286
 msgid ":attr:`~AuditLogDiff.bitrate`"
 msgstr ""
 
-#: ../../api.rst:1270
+#: ../../api.rst:1290
 msgid "A channel was deleted."
 msgstr ""
 
-#: ../../api.rst:1272
+#: ../../api.rst:1292
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is an "
 ":class:`Object` with an ID."
 msgstr ""
 
-#: ../../api.rst:1275
+#: ../../api.rst:1295
 msgid ""
 "A more filled out object can be found by using the "
 ":attr:`~AuditLogEntry.before` object."
 msgstr ""
 
-#: ../../api.rst:1286
+#: ../../api.rst:1306
 msgid "A channel permission overwrite was created."
 msgstr ""
 
-#: ../../api.rst:1291
+#: ../../api.rst:1311
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.extra` is "
 "either a :class:`Role` or :class:`Member`. If the object is not found "
@@ -4651,728 +4696,728 @@ msgid ""
 "dictate what type of ID it is."
 msgstr ""
 
-#: ../../api.rst:1299 ../../api.rst:1315 ../../api.rst:1330
+#: ../../api.rst:1319 ../../api.rst:1335 ../../api.rst:1350
 msgid ":attr:`~AuditLogDiff.deny`"
 msgstr ""
 
-#: ../../api.rst:1300 ../../api.rst:1316 ../../api.rst:1331
+#: ../../api.rst:1320 ../../api.rst:1336 ../../api.rst:1351
 msgid ":attr:`~AuditLogDiff.allow`"
 msgstr ""
 
-#: ../../api.rst:1301 ../../api.rst:1317 ../../api.rst:1332
+#: ../../api.rst:1321 ../../api.rst:1337 ../../api.rst:1352
 msgid ":attr:`~AuditLogDiff.id`"
 msgstr ""
 
-#: ../../api.rst:1306
+#: ../../api.rst:1326
 msgid ""
 "A channel permission overwrite was changed, this is typically when the "
 "permission values change."
 msgstr ""
 
-#: ../../api.rst:1309 ../../api.rst:1324
+#: ../../api.rst:1329 ../../api.rst:1344
 msgid ""
 "See :attr:`overwrite_create` for more information on how the "
 ":attr:`~AuditLogEntry.target` and :attr:`~AuditLogEntry.extra` fields are"
 " set."
 msgstr ""
 
-#: ../../api.rst:1322
+#: ../../api.rst:1342
 msgid "A channel permission overwrite was deleted."
 msgstr ""
 
-#: ../../api.rst:1337
+#: ../../api.rst:1357
 msgid "A member was kicked."
 msgstr ""
 
-#: ../../api.rst:1339
+#: ../../api.rst:1359
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`User` who got kicked."
 msgstr ""
 
-#: ../../api.rst:1342 ../../api.rst:1357 ../../api.rst:1366 ../../api.rst:1375
+#: ../../api.rst:1362 ../../api.rst:1377 ../../api.rst:1386 ../../api.rst:1395
 msgid "When this is the action, :attr:`~AuditLogEntry.changes` is empty."
 msgstr ""
 
-#: ../../api.rst:1346
+#: ../../api.rst:1366
 msgid "A member prune was triggered."
 msgstr ""
 
-#: ../../api.rst:1348
+#: ../../api.rst:1368
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is set"
 " to ``None``."
 msgstr ""
 
-#: ../../api.rst:1351 ../../api.rst:1410 ../../api.rst:1612 ../../api.rst:1639
-#: ../../api.rst:1654
+#: ../../api.rst:1371 ../../api.rst:1430 ../../api.rst:1632 ../../api.rst:1659
+#: ../../api.rst:1674
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.extra` is set "
 "to an unspecified proxy object with two attributes:"
 msgstr ""
 
-#: ../../api.rst:1354
+#: ../../api.rst:1374
 msgid "``delete_members_days``: An integer specifying how far the prune was."
 msgstr ""
 
-#: ../../api.rst:1355
+#: ../../api.rst:1375
 msgid "``members_removed``: An integer specifying how many members were removed."
 msgstr ""
 
-#: ../../api.rst:1361
+#: ../../api.rst:1381
 msgid "A member was banned."
 msgstr ""
 
-#: ../../api.rst:1363
+#: ../../api.rst:1383
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`User` who got banned."
 msgstr ""
 
-#: ../../api.rst:1370
+#: ../../api.rst:1390
 msgid "A member was unbanned."
 msgstr ""
 
-#: ../../api.rst:1372
+#: ../../api.rst:1392
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`User` who got unbanned."
 msgstr ""
 
-#: ../../api.rst:1379
+#: ../../api.rst:1399
 msgid "A member has updated. This triggers in the following situations:"
 msgstr ""
 
-#: ../../api.rst:1381
+#: ../../api.rst:1401
 msgid "A nickname was changed"
 msgstr ""
 
-#: ../../api.rst:1382
+#: ../../api.rst:1402
 msgid "They were server muted or deafened (or it was undo'd)"
 msgstr ""
 
-#: ../../api.rst:1384
+#: ../../api.rst:1404
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Member` or :class:`User` who got updated."
 msgstr ""
 
-#: ../../api.rst:1389
+#: ../../api.rst:1409
 msgid ":attr:`~AuditLogDiff.nick`"
 msgstr ""
 
-#: ../../api.rst:1390
+#: ../../api.rst:1410
 msgid ":attr:`~AuditLogDiff.mute`"
 msgstr ""
 
-#: ../../api.rst:1391
+#: ../../api.rst:1411
 msgid ":attr:`~AuditLogDiff.deaf`"
 msgstr ""
 
-#: ../../api.rst:1395
+#: ../../api.rst:1415
 msgid ""
 "A member's role has been updated. This triggers when a member either "
 "gains a role or losses a role."
 msgstr ""
 
-#: ../../api.rst:1398
+#: ../../api.rst:1418
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Member` or :class:`User` who got the role."
 msgstr ""
 
-#: ../../api.rst:1403
+#: ../../api.rst:1423
 msgid ":attr:`~AuditLogDiff.roles`"
 msgstr ""
 
-#: ../../api.rst:1407
+#: ../../api.rst:1427
 msgid ""
 "A member's voice channel has been updated. This triggers when a member is"
 " moved to a different voice channel."
 msgstr ""
 
-#: ../../api.rst:1413
+#: ../../api.rst:1433
 msgid ""
 "``channel``: A :class:`TextChannel` or :class:`Object` with the channel "
 "ID where the members were moved."
 msgstr ""
 
-#: ../../api.rst:1414
+#: ../../api.rst:1434
 msgid "``count``: An integer specifying how many members were moved."
 msgstr ""
 
-#: ../../api.rst:1420
+#: ../../api.rst:1440
 msgid ""
 "A member's voice state has changed. This triggers when a member is force "
 "disconnected from voice."
 msgstr ""
 
-#: ../../api.rst:1423 ../../api.rst:1625
+#: ../../api.rst:1443 ../../api.rst:1645
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.extra` is set "
 "to an unspecified proxy object with one attribute:"
 msgstr ""
 
-#: ../../api.rst:1426
+#: ../../api.rst:1446
 msgid "``count``: An integer specifying how many members were disconnected."
 msgstr ""
 
-#: ../../api.rst:1432
+#: ../../api.rst:1452
 msgid "A bot was added to the guild."
 msgstr ""
 
-#: ../../api.rst:1434
+#: ../../api.rst:1454
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Member` or :class:`User` which was added to the guild."
 msgstr ""
 
-#: ../../api.rst:1441
+#: ../../api.rst:1461
 msgid "A new role was created."
 msgstr ""
 
-#: ../../api.rst:1443 ../../api.rst:1463 ../../api.rst:1478
+#: ../../api.rst:1463 ../../api.rst:1483 ../../api.rst:1498
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Role` or a :class:`Object` with the ID."
 msgstr ""
 
-#: ../../api.rst:1448 ../../api.rst:1468 ../../api.rst:1483
+#: ../../api.rst:1468 ../../api.rst:1488 ../../api.rst:1503
 msgid ":attr:`~AuditLogDiff.colour`"
 msgstr ""
 
-#: ../../api.rst:1449 ../../api.rst:1469 ../../api.rst:1484
+#: ../../api.rst:1469 ../../api.rst:1489 ../../api.rst:1504
 msgid ":attr:`~AuditLogDiff.mentionable`"
 msgstr ""
 
-#: ../../api.rst:1450 ../../api.rst:1470 ../../api.rst:1485
+#: ../../api.rst:1470 ../../api.rst:1490 ../../api.rst:1505
 msgid ":attr:`~AuditLogDiff.hoist`"
 msgstr ""
 
-#: ../../api.rst:1452 ../../api.rst:1472 ../../api.rst:1487
+#: ../../api.rst:1472 ../../api.rst:1492 ../../api.rst:1507
 msgid ":attr:`~AuditLogDiff.permissions`"
 msgstr ""
 
-#: ../../api.rst:1456
+#: ../../api.rst:1476
 msgid "A role was updated. This triggers in the following situations:"
 msgstr ""
 
-#: ../../api.rst:1458
+#: ../../api.rst:1478
 msgid "The name has changed"
 msgstr ""
 
-#: ../../api.rst:1459
+#: ../../api.rst:1479
 msgid "The permissions have changed"
 msgstr ""
 
-#: ../../api.rst:1460
+#: ../../api.rst:1480
 msgid "The colour has changed"
 msgstr ""
 
-#: ../../api.rst:1461
+#: ../../api.rst:1481
 msgid "Its hoist/mentionable state has changed"
 msgstr ""
 
-#: ../../api.rst:1476
+#: ../../api.rst:1496
 msgid "A role was deleted."
 msgstr ""
 
-#: ../../api.rst:1491
+#: ../../api.rst:1511
 msgid "An invite was created."
 msgstr ""
 
-#: ../../api.rst:1493
+#: ../../api.rst:1513
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Invite` that was created."
 msgstr ""
 
-#: ../../api.rst:1498 ../../api.rst:1522
+#: ../../api.rst:1518 ../../api.rst:1542
 msgid ":attr:`~AuditLogDiff.max_age`"
 msgstr ""
 
-#: ../../api.rst:1499 ../../api.rst:1523
+#: ../../api.rst:1519 ../../api.rst:1543
 msgid ":attr:`~AuditLogDiff.code`"
 msgstr ""
 
-#: ../../api.rst:1500 ../../api.rst:1524
+#: ../../api.rst:1520 ../../api.rst:1544
 msgid ":attr:`~AuditLogDiff.temporary`"
 msgstr ""
 
-#: ../../api.rst:1501 ../../api.rst:1525
+#: ../../api.rst:1521 ../../api.rst:1545
 msgid ":attr:`~AuditLogDiff.inviter`"
 msgstr ""
 
-#: ../../api.rst:1502 ../../api.rst:1526 ../../api.rst:1539 ../../api.rst:1555
-#: ../../api.rst:1567
+#: ../../api.rst:1522 ../../api.rst:1546 ../../api.rst:1559 ../../api.rst:1575
+#: ../../api.rst:1587
 msgid ":attr:`~AuditLogDiff.channel`"
 msgstr ""
 
-#: ../../api.rst:1503 ../../api.rst:1527
+#: ../../api.rst:1523 ../../api.rst:1547
 msgid ":attr:`~AuditLogDiff.uses`"
 msgstr ""
 
-#: ../../api.rst:1504 ../../api.rst:1528
+#: ../../api.rst:1524 ../../api.rst:1548
 msgid ":attr:`~AuditLogDiff.max_uses`"
 msgstr ""
 
-#: ../../api.rst:1508
+#: ../../api.rst:1528
 msgid "An invite was updated."
 msgstr ""
 
-#: ../../api.rst:1510
+#: ../../api.rst:1530
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Invite` that was updated."
 msgstr ""
 
-#: ../../api.rst:1515
+#: ../../api.rst:1535
 msgid "An invite was deleted."
 msgstr ""
 
-#: ../../api.rst:1517
+#: ../../api.rst:1537
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Invite` that was deleted."
 msgstr ""
 
-#: ../../api.rst:1532
+#: ../../api.rst:1552
 msgid "A webhook was created."
 msgstr ""
 
-#: ../../api.rst:1534 ../../api.rst:1550 ../../api.rst:1562
+#: ../../api.rst:1554 ../../api.rst:1570 ../../api.rst:1582
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Object` with the webhook ID."
 msgstr ""
 
-#: ../../api.rst:1541 ../../api.rst:1569
+#: ../../api.rst:1561 ../../api.rst:1589
 msgid ":attr:`~AuditLogDiff.type` (always set to ``1`` if so)"
 msgstr ""
 
-#: ../../api.rst:1545
+#: ../../api.rst:1565
 msgid "A webhook was updated. This trigger in the following situations:"
 msgstr ""
 
-#: ../../api.rst:1547
+#: ../../api.rst:1567
 msgid "The webhook name changed"
 msgstr ""
 
-#: ../../api.rst:1548
+#: ../../api.rst:1568
 msgid "The webhook channel changed"
 msgstr ""
 
-#: ../../api.rst:1560
+#: ../../api.rst:1580
 msgid "A webhook was deleted."
 msgstr ""
 
-#: ../../api.rst:1573
+#: ../../api.rst:1593
 msgid "An emoji was created."
 msgstr ""
 
-#: ../../api.rst:1575 ../../api.rst:1586
+#: ../../api.rst:1595 ../../api.rst:1606
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Emoji` or :class:`Object` with the emoji ID."
 msgstr ""
 
-#: ../../api.rst:1584
+#: ../../api.rst:1604
 msgid "An emoji was updated. This triggers when the name has changed."
 msgstr ""
 
-#: ../../api.rst:1595
+#: ../../api.rst:1615
 msgid "An emoji was deleted."
 msgstr ""
 
-#: ../../api.rst:1597
+#: ../../api.rst:1617
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Object` with the emoji ID."
 msgstr ""
 
-#: ../../api.rst:1606
+#: ../../api.rst:1626
 msgid ""
 "A message was deleted by a moderator. Note that this only triggers if the"
 " message was deleted by someone other than the author."
 msgstr ""
 
-#: ../../api.rst:1609
+#: ../../api.rst:1629
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Member` or :class:`User` who had their message deleted."
 msgstr ""
 
-#: ../../api.rst:1615 ../../api.rst:1628
+#: ../../api.rst:1635 ../../api.rst:1648
 msgid "``count``: An integer specifying how many messages were deleted."
 msgstr ""
 
-#: ../../api.rst:1616
+#: ../../api.rst:1636
 msgid ""
 "``channel``: A :class:`TextChannel` or :class:`Object` with the channel "
 "ID where the message got deleted."
 msgstr ""
 
-#: ../../api.rst:1620
+#: ../../api.rst:1640
 msgid "Messages were bulk deleted by a moderator."
 msgstr ""
 
-#: ../../api.rst:1622
+#: ../../api.rst:1642
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`TextChannel` or :class:`Object` with the ID of the channel that "
 "was purged."
 msgstr ""
 
-#: ../../api.rst:1634
+#: ../../api.rst:1654
 msgid "A message was pinned in a channel."
 msgstr ""
 
-#: ../../api.rst:1636
+#: ../../api.rst:1656
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Member` or :class:`User` who had their message pinned."
 msgstr ""
 
-#: ../../api.rst:1642
+#: ../../api.rst:1662
 msgid ""
 "``channel``: A :class:`TextChannel` or :class:`Object` with the channel "
 "ID where the message was pinned."
 msgstr ""
 
-#: ../../api.rst:1643
+#: ../../api.rst:1663
 msgid "``message_id``: the ID of the message which was pinned."
 msgstr ""
 
-#: ../../api.rst:1649
+#: ../../api.rst:1669
 msgid "A message was unpinned in a channel."
 msgstr ""
 
-#: ../../api.rst:1651
+#: ../../api.rst:1671
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Member` or :class:`User` who had their message unpinned."
 msgstr ""
 
-#: ../../api.rst:1657
+#: ../../api.rst:1677
 msgid ""
 "``channel``: A :class:`TextChannel` or :class:`Object` with the channel "
 "ID where the message was unpinned."
 msgstr ""
 
-#: ../../api.rst:1658
+#: ../../api.rst:1678
 msgid "``message_id``: the ID of the message which was unpinned."
 msgstr ""
 
-#: ../../api.rst:1664
+#: ../../api.rst:1684
 msgid "A guild integration was created."
 msgstr ""
 
-#: ../../api.rst:1666
+#: ../../api.rst:1686
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Object` with the integration ID of the integration which was "
 "created."
 msgstr ""
 
-#: ../../api.rst:1673
+#: ../../api.rst:1693
 msgid "A guild integration was updated."
 msgstr ""
 
-#: ../../api.rst:1675
+#: ../../api.rst:1695
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Object` with the integration ID of the integration which was "
 "updated."
 msgstr ""
 
-#: ../../api.rst:1682
+#: ../../api.rst:1702
 msgid "A guild integration was deleted."
 msgstr ""
 
-#: ../../api.rst:1684
+#: ../../api.rst:1704
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.target` is the"
 " :class:`Object` with the integration ID of the integration which was "
 "deleted."
 msgstr ""
 
-#: ../../api.rst:1691
+#: ../../api.rst:1711
 msgid "Represents the category that the :class:`AuditLogAction` belongs to."
 msgstr ""
 
-#: ../../api.rst:1693
+#: ../../api.rst:1713
 msgid "This can be retrieved via :attr:`AuditLogEntry.category`."
 msgstr ""
 
-#: ../../api.rst:1697
+#: ../../api.rst:1717
 msgid "The action is the creation of something."
 msgstr ""
 
-#: ../../api.rst:1701
+#: ../../api.rst:1721
 msgid "The action is the deletion of something."
 msgstr ""
 
-#: ../../api.rst:1705
+#: ../../api.rst:1725
 msgid "The action is the update of something."
 msgstr ""
 
-#: ../../api.rst:1709
+#: ../../api.rst:1729
 msgid "Specifies the type of :class:`Relationship`."
 msgstr ""
 
-#: ../../api.rst:1713 ../../api.rst:1739 ../../api.rst:1761 ../../api.rst:1790
-#: ../../api.rst:1807
+#: ../../api.rst:1733 ../../api.rst:1759 ../../api.rst:1781 ../../api.rst:1810
+#: ../../api.rst:1827
 msgid "This only applies to users, *not* bots."
 msgstr ""
 
-#: ../../api.rst:1717
+#: ../../api.rst:1737
 msgid "You are friends with this user."
 msgstr ""
 
-#: ../../api.rst:1721
+#: ../../api.rst:1741
 msgid "You have blocked this user."
 msgstr ""
 
-#: ../../api.rst:1725
+#: ../../api.rst:1745
 msgid "The user has sent you a friend request."
 msgstr ""
 
-#: ../../api.rst:1729
+#: ../../api.rst:1749
 msgid "You have sent a friend request to this user."
 msgstr ""
 
-#: ../../api.rst:1734
+#: ../../api.rst:1754
 msgid ""
 "Represents the options found in ``Settings > Privacy & Safety > Safe "
 "Direct Messaging`` in the Discord client."
 msgstr ""
 
-#: ../../api.rst:1743
+#: ../../api.rst:1763
 msgid "Scan all direct messages from everyone."
 msgstr ""
 
-#: ../../api.rst:1747
+#: ../../api.rst:1767
 msgid "Scan all direct messages that aren't from friends."
 msgstr ""
 
-#: ../../api.rst:1751
+#: ../../api.rst:1771
 msgid "Don't scan any direct messages."
 msgstr ""
 
-#: ../../api.rst:1756
+#: ../../api.rst:1776
 msgid ""
 "Represents the options found in ``Settings > Privacy & Safety > Who Can "
 "Add You As A Friend`` in the Discord client."
 msgstr ""
 
-#: ../../api.rst:1765
+#: ../../api.rst:1785
 msgid "This allows no-one to add you as a friend."
 msgstr ""
 
-#: ../../api.rst:1769
+#: ../../api.rst:1789
 msgid "This allows guild members to add you as a friend."
 msgstr ""
 
-#: ../../api.rst:1773
+#: ../../api.rst:1793
 msgid "This allows friends of friends to add you as a friend."
 msgstr ""
 
-#: ../../api.rst:1777
+#: ../../api.rst:1797
 msgid "This is a superset of :attr:`mutual_guilds` and :attr:`mutual_friends`."
 msgstr ""
 
-#: ../../api.rst:1781
+#: ../../api.rst:1801
 msgid "This allows everyone to add you as a friend."
 msgstr ""
 
-#: ../../api.rst:1786
+#: ../../api.rst:1806
 msgid "Represents the user's Discord Nitro subscription type."
 msgstr ""
 
-#: ../../api.rst:1794
+#: ../../api.rst:1814
 msgid "Represents the Discord Nitro with Nitro-exclusive games."
 msgstr ""
 
-#: ../../api.rst:1798
+#: ../../api.rst:1818
 msgid "Represents the Discord Nitro with no Nitro-exclusive games."
 msgstr ""
 
-#: ../../api.rst:1803
+#: ../../api.rst:1823
 msgid "Represents the theme synced across all Discord clients."
 msgstr ""
 
-#: ../../api.rst:1811
+#: ../../api.rst:1831
 msgid "Represents the Light theme on Discord."
 msgstr ""
 
-#: ../../api.rst:1815
+#: ../../api.rst:1835
 msgid "Represents the Dark theme on Discord."
 msgstr ""
 
-#: ../../api.rst:1820
+#: ../../api.rst:1840
 msgid ""
 "Represents the membership state of a team member retrieved through "
 ":func:`Bot.application_info`."
 msgstr ""
 
-#: ../../api.rst:1826
+#: ../../api.rst:1846
 msgid "Represents an invited member."
 msgstr ""
 
-#: ../../api.rst:1830
+#: ../../api.rst:1850
 msgid "Represents a member currently in the team."
 msgstr ""
 
-#: ../../api.rst:1834
+#: ../../api.rst:1854
 msgid "Represents the type of webhook that can be received."
 msgstr ""
 
-#: ../../api.rst:1840
+#: ../../api.rst:1860
 msgid "Represents a webhook that can post messages to channels with a token."
 msgstr ""
 
-#: ../../api.rst:1844
+#: ../../api.rst:1864
 msgid ""
 "Represents a webhook that is internally managed by Discord, used for "
 "following channels."
 msgstr ""
 
-#: ../../api.rst:1848
+#: ../../api.rst:1868
 msgid ""
 "Represents the behaviour the :class:`Integration` should perform when a "
 "user's subscription has finished."
 msgstr ""
 
-#: ../../api.rst:1851
+#: ../../api.rst:1871
 #, fuzzy
 msgid "There is an alias for this called ``ExpireBehavior``."
 msgstr ":meth:`color` 이라는 별칭이 있습니다."
 
-#: ../../api.rst:1857
+#: ../../api.rst:1877
 msgid ""
 "This will remove the :attr:`Integration.role` from the user when their "
 "subscription is finished."
 msgstr ""
 
-#: ../../api.rst:1862
+#: ../../api.rst:1882
 msgid "This will kick the user when their subscription is finished."
 msgstr ""
 
-#: ../../api.rst:1866
+#: ../../api.rst:1886
 msgid "Represents the default avatar of a Discord :class:`User`"
 msgstr ""
 
-#: ../../api.rst:1870
+#: ../../api.rst:1890
 msgid ""
 "Represents the default avatar with the color blurple. See also "
 ":attr:`Colour.blurple`"
 msgstr ""
 
-#: ../../api.rst:1874
+#: ../../api.rst:1894
 msgid ""
 "Represents the default avatar with the color grey. See also "
 ":attr:`Colour.greyple`"
 msgstr ""
 
-#: ../../api.rst:1878
+#: ../../api.rst:1898
 #, fuzzy
 msgid "An alias for :attr:`grey`."
 msgstr ":meth:`color` 이라는 별칭이 있습니다."
 
-#: ../../api.rst:1881
+#: ../../api.rst:1901
 msgid ""
 "Represents the default avatar with the color green. See also "
 ":attr:`Colour.green`"
 msgstr ""
 
-#: ../../api.rst:1885
+#: ../../api.rst:1905
 msgid ""
 "Represents the default avatar with the color orange. See also "
 ":attr:`Colour.orange`"
 msgstr ""
 
-#: ../../api.rst:1889
+#: ../../api.rst:1909
 msgid ""
 "Represents the default avatar with the color red. See also "
 ":attr:`Colour.red`"
 msgstr ""
 
-#: ../../api.rst:1894
+#: ../../api.rst:1914
 msgid "Async Iterator"
 msgstr ""
 
-#: ../../api.rst:1896
+#: ../../api.rst:1916
 msgid ""
 "Some API functions return an \"async iterator\". An async iterator is "
 "something that is capable of being used in an :ref:`async for statement "
 "<py:async for>`."
 msgstr ""
 
-#: ../../api.rst:1899
+#: ../../api.rst:1919
 msgid "These async iterators can be used as follows: ::"
 msgstr ""
 
-#: ../../api.rst:1904
+#: ../../api.rst:1924
 msgid ""
 "Certain utilities make working with async iterators easier, detailed "
 "below."
 msgstr ""
 
-#: ../../api.rst:1908
+#: ../../api.rst:1928
 msgid ""
 "Represents the \"AsyncIterator\" concept. Note that no such class exists,"
 " it is purely abstract."
 msgstr ""
 
-#: ../../api.rst:1915
+#: ../../api.rst:1935
 msgid "Iterates over the contents of the async iterator."
 msgstr ""
 
-#: ../../api.rst:1923
+#: ../../api.rst:1943
 msgid ""
 "Advances the iterator by one, if possible. If no more items are found "
 "then this raises :exc:`NoMoreItems`."
 msgstr ""
 
-#: ../../api.rst:1931
+#: ../../api.rst:1951
 msgid "Similar to :func:`utils.get` except run over the async iterator."
 msgstr ""
 
-#: ../../api.rst:1933
+#: ../../api.rst:1953
 msgid "Getting the last message by a user named 'Dave' or ``None``: ::"
 msgstr ""
 
-#: ../../api.rst:1942
+#: ../../api.rst:1962
 msgid "Similar to :func:`utils.find` except run over the async iterator."
 msgstr ""
 
-#: ../../api.rst:1944
+#: ../../api.rst:1964
 msgid ""
 "Unlike :func:`utils.find`\\, the predicate provided can be a "
 "|coroutine_link|_."
 msgstr ""
 
-#: ../../api.rst:1947
+#: ../../api.rst:1967
 msgid "Getting the last audit log with a reason or ``None``: ::"
 msgstr ""
 
-#: ../../api.rst:1954
+#: ../../api.rst:1974
 msgid "The predicate to use. Could be a |coroutine_link|_."
 msgstr ""
 
-#: ../../api.rst:1955
+#: ../../api.rst:1975
 msgid "The first element that returns ``True`` for the predicate or ``None``."
 msgstr ""
 
-#: ../../api.rst:1962
+#: ../../api.rst:1982
 msgid "Flattens the async iterator into a :class:`list` with all the elements."
 msgstr ""
 
-#: ../../api.rst:1964
+#: ../../api.rst:1984
 msgid "A list of every element in the async iterator."
 msgstr ""
 
-#: ../../api.rst:1969
+#: ../../api.rst:1989
 msgid ""
 "This is similar to the built-in :func:`map <py:map>` function. Another "
 ":class:`AsyncIterator` is returned that executes the function on every "
@@ -5380,20 +5425,20 @@ msgid ""
 "function or a |coroutine_link|_."
 msgstr ""
 
-#: ../../api.rst:1974
+#: ../../api.rst:1994
 msgid "Creating a content iterator: ::"
 msgstr ""
 
-#: ../../api.rst:1982
+#: ../../api.rst:2002
 msgid "The function to call on every element. Could be a |coroutine_link|_."
 msgstr ""
 
-#: ../../api.rst:1983 ../../api.rst:2000
+#: ../../api.rst:2003 ../../api.rst:2020
 #, fuzzy
 msgid ":class:`AsyncIterator`"
 msgstr ":class:`dict`"
 
-#: ../../api.rst:1987
+#: ../../api.rst:2007
 msgid ""
 "This is similar to the built-in :func:`filter <py:filter>` function. "
 "Another :class:`AsyncIterator` is returned that filters over the original"
@@ -5401,19 +5446,19 @@ msgid ""
 "|coroutine_link|_."
 msgstr ""
 
-#: ../../api.rst:1991
+#: ../../api.rst:2011
 msgid "Getting messages by non-bot accounts: ::"
 msgstr ""
 
-#: ../../api.rst:1999
+#: ../../api.rst:2019
 msgid "The predicate to call on every element. Could be a |coroutine_link|_."
 msgstr ""
 
-#: ../../api.rst:2005
+#: ../../api.rst:2025
 msgid "Audit Log Data"
 msgstr ""
 
-#: ../../api.rst:2007
+#: ../../api.rst:2027
 msgid ""
 "Working with :meth:`Guild.audit_logs` is a complicated process with a lot"
 " of machinery involved. The library attempts to make it easy to use and "
@@ -5505,91 +5550,91 @@ msgstr ""
 msgid "The target's subsequent state."
 msgstr ""
 
-#: ../../api.rst:2016
+#: ../../api.rst:2036
 msgid "An audit log change set."
 msgstr ""
 
-#: ../../api.rst:2020
+#: ../../api.rst:2040
 msgid "The old value. The attribute has the type of :class:`AuditLogDiff`."
 msgstr ""
 
-#: ../../api.rst:2022 ../../api.rst:2042
+#: ../../api.rst:2042 ../../api.rst:2062
 msgid ""
 "Depending on the :class:`AuditLogActionCategory` retrieved by "
 ":attr:`~AuditLogEntry.category`\\, the data retrieved by this attribute "
 "differs:"
 msgstr ""
 
-#: ../../api.rst:2027 ../../api.rst:2047
+#: ../../api.rst:2047 ../../api.rst:2067
 msgid "Category"
 msgstr ""
 
-#: ../../api.rst:2027 ../../api.rst:2047
+#: ../../api.rst:2047 ../../api.rst:2067
 msgid "Description"
 msgstr ""
 
-#: ../../api.rst:2029 ../../api.rst:2049
+#: ../../api.rst:2049 ../../api.rst:2069
 msgid ":attr:`~AuditLogActionCategory.create`"
 msgstr ""
 
-#: ../../api.rst:2029
+#: ../../api.rst:2049
 msgid "All attributes are set to ``None``."
 msgstr ""
 
-#: ../../api.rst:2031 ../../api.rst:2051
+#: ../../api.rst:2051 ../../api.rst:2071
 msgid ":attr:`~AuditLogActionCategory.delete`"
 msgstr ""
 
-#: ../../api.rst:2031
+#: ../../api.rst:2051
 msgid "All attributes are set the value before deletion."
 msgstr ""
 
-#: ../../api.rst:2033 ../../api.rst:2053
+#: ../../api.rst:2053 ../../api.rst:2073
 msgid ":attr:`~AuditLogActionCategory.update`"
 msgstr ""
 
-#: ../../api.rst:2033
+#: ../../api.rst:2053
 msgid "All attributes are set the value before updating."
 msgstr ""
 
-#: ../../api.rst:2035 ../../api.rst:2055
+#: ../../api.rst:2055 ../../api.rst:2075
 msgid "``None``"
 msgstr ""
 
-#: ../../api.rst:2035 ../../api.rst:2055
+#: ../../api.rst:2055 ../../api.rst:2075
 msgid "No attributes are set."
 msgstr ""
 
-#: ../../api.rst:2040
+#: ../../api.rst:2060
 msgid "The new value. The attribute has the type of :class:`AuditLogDiff`."
 msgstr ""
 
-#: ../../api.rst:2049
+#: ../../api.rst:2069
 msgid "All attributes are set to the created value"
 msgstr ""
 
-#: ../../api.rst:2051
+#: ../../api.rst:2071
 msgid "All attributes are set to ``None``"
 msgstr ""
 
-#: ../../api.rst:2053
+#: ../../api.rst:2073
 msgid "All attributes are set the value after updating."
 msgstr ""
 
-#: ../../api.rst:2060
+#: ../../api.rst:2080
 msgid ""
 "Represents an audit log \"change\" object. A change object has dynamic "
 "attributes that depend on the type of action being done. Certain actions "
 "map to certain attributes being set."
 msgstr ""
 
-#: ../../api.rst:2064
+#: ../../api.rst:2084
 msgid ""
 "Note that accessing an attribute that does not match the specified action"
 " will lead to an attribute error."
 msgstr ""
 
-#: ../../api.rst:2067
+#: ../../api.rst:2087
 msgid ""
 "To get a list of attributes that have been set, you can iterate over "
 "them. To see a list of all possible attributes that could be set based on"
@@ -5598,191 +5643,191 @@ msgid ""
 "attributes that are possible."
 msgstr ""
 
-#: ../../api.rst:2076
+#: ../../api.rst:2096
 msgid "Returns an iterator over (attribute, value) tuple of this diff."
 msgstr ""
 
-#: ../../api.rst:2080
+#: ../../api.rst:2100
 msgid "A name of something."
 msgstr ""
 
-#: ../../api.rst:2086
+#: ../../api.rst:2106
 msgid "A guild's icon hash. See also :attr:`Guild.icon`."
 msgstr ""
 
-#: ../../api.rst:2092
+#: ../../api.rst:2112
 msgid "The guild's invite splash hash. See also :attr:`Guild.splash`."
 msgstr ""
 
-#: ../../api.rst:2098
+#: ../../api.rst:2118
 msgid "The guild's owner. See also :attr:`Guild.owner`"
 msgstr ""
 
-#: ../../api.rst:2100
+#: ../../api.rst:2120
 msgid "Union[:class:`Member`, :class:`User`]"
 msgstr ""
 
-#: ../../api.rst:2104
+#: ../../api.rst:2124
 msgid "The guild's voice region. See also :attr:`Guild.region`."
 msgstr ""
 
-#: ../../api.rst:2106 discord.GroupCall:27 discord.Guild:40 of
+#: ../../api.rst:2126 discord.GroupCall:27 discord.Guild:40 of
 msgid ":class:`VoiceRegion`"
 msgstr ""
 
-#: ../../api.rst:2110
+#: ../../api.rst:2130
 #, fuzzy
 msgid "The guild's AFK channel."
 msgstr "채널이 속해 있는 길드."
 
-#: ../../api.rst:2112 ../../api.rst:2123
+#: ../../api.rst:2132 ../../api.rst:2143
 msgid ""
 "If this could not be found, then it falls back to a :class:`Object` with "
 "the ID being set."
 msgstr ""
 
-#: ../../api.rst:2115
+#: ../../api.rst:2135
 msgid "See :attr:`Guild.afk_channel`."
 msgstr ""
 
-#: ../../api.rst:2117
+#: ../../api.rst:2137
 msgid "Union[:class:`VoiceChannel`, :class:`Object`]"
 msgstr ""
 
-#: ../../api.rst:2121
+#: ../../api.rst:2141
 #, fuzzy
 msgid "The guild's system channel."
 msgstr "채널이 속해 있는 길드."
 
-#: ../../api.rst:2126
+#: ../../api.rst:2146
 msgid "See :attr:`Guild.system_channel`."
 msgstr ""
 
-#: ../../api.rst:2128 ../../api.rst:2155
+#: ../../api.rst:2148 ../../api.rst:2175
 msgid "Union[:class:`TextChannel`, :class:`Object`]"
 msgstr ""
 
-#: ../../api.rst:2132
+#: ../../api.rst:2152
 msgid "The guild's AFK timeout. See :attr:`Guild.afk_timeout`."
 msgstr ""
 
-#: ../../api.rst:2138
+#: ../../api.rst:2158
 msgid "The guild's MFA level. See :attr:`Guild.mfa_level`."
 msgstr ""
 
-#: ../../api.rst:2144
+#: ../../api.rst:2164
 msgid "The guild's widget has been enabled or disabled."
 msgstr ""
 
-#: ../../api.rst:2150
+#: ../../api.rst:2170
 #, fuzzy
 msgid "The widget's channel."
 msgstr "이 채널의 웹후크들."
 
-#: ../../api.rst:2152
+#: ../../api.rst:2172
 msgid ""
 "If this could not be found then it falls back to a :class:`Object` with "
 "the ID being set."
 msgstr ""
 
-#: ../../api.rst:2159 discord.Guild:128 of
+#: ../../api.rst:2179 discord.Guild:128 of
 msgid "The guild's verification level."
 msgstr ""
 
-#: ../../api.rst:2161
+#: ../../api.rst:2181
 msgid "See also :attr:`Guild.verification_level`."
 msgstr ""
 
-#: ../../api.rst:2163 discord.Guild:130 discord.PartialInviteGuild:40 of
+#: ../../api.rst:2183 discord.Guild:130 discord.PartialInviteGuild:40 of
 msgid ":class:`VerificationLevel`"
 msgstr ""
 
-#: ../../api.rst:2167
+#: ../../api.rst:2187
 msgid "The guild's default notification level."
 msgstr ""
 
-#: ../../api.rst:2169
+#: ../../api.rst:2189
 msgid "See also :attr:`Guild.default_notifications`."
 msgstr ""
 
-#: ../../api.rst:2171 discord.Guild:142 of
+#: ../../api.rst:2191 discord.Guild:142 of
 msgid ":class:`NotificationLevel`"
 msgstr ""
 
-#: ../../api.rst:2175
+#: ../../api.rst:2195
 msgid "The guild's content filter."
 msgstr ""
 
-#: ../../api.rst:2177
+#: ../../api.rst:2197
 msgid "See also :attr:`Guild.explicit_content_filter`."
 msgstr ""
 
-#: ../../api.rst:2179 discord.Guild:136 of
+#: ../../api.rst:2199 discord.Guild:136 of
 msgid ":class:`ContentFilter`"
 msgstr ""
 
-#: ../../api.rst:2183
+#: ../../api.rst:2203
 msgid "The guild's default message notification setting."
 msgstr ""
 
-#: ../../api.rst:2189
+#: ../../api.rst:2209
 msgid "The guild's vanity URL."
 msgstr ""
 
-#: ../../api.rst:2191
+#: ../../api.rst:2211
 msgid "See also :meth:`Guild.vanity_invite` and :meth:`Guild.edit`."
 msgstr ""
 
-#: ../../api.rst:2197
+#: ../../api.rst:2217
 #, fuzzy
 msgid "The position of a :class:`Role` or :class:`abc.GuildChannel`."
 msgstr "디스코드 :class:`Guild` 또는 :class:`abc.GuildChannel` 의 초대를 나타냅니다."
 
-#: ../../api.rst:2203
+#: ../../api.rst:2223
 #, fuzzy
 msgid "The type of channel or channel permission overwrite."
 msgstr "채널의 권한 덮어쓰기."
 
-#: ../../api.rst:2205
+#: ../../api.rst:2225
 msgid ""
 "If the type is an :class:`int`, then it is a type of channel which can be"
 " either ``0`` to indicate a text channel or ``1`` to indicate a voice "
 "channel."
 msgstr ""
 
-#: ../../api.rst:2208
+#: ../../api.rst:2228
 msgid ""
 "If the type is a :class:`str`, then it is a type of permission overwrite "
 "which can be either ``'role'`` or ``'member'``."
 msgstr ""
 
-#: ../../api.rst:2211
+#: ../../api.rst:2231
 msgid "Union[:class:`int`, :class:`str`]"
 msgstr ""
 
-#: ../../api.rst:2215
+#: ../../api.rst:2235
 msgid "The topic of a :class:`TextChannel`."
 msgstr ""
 
-#: ../../api.rst:2217
+#: ../../api.rst:2237
 msgid "See also :attr:`TextChannel.topic`."
 msgstr ""
 
-#: ../../api.rst:2223
+#: ../../api.rst:2243
 msgid "The bitrate of a :class:`VoiceChannel`."
 msgstr ""
 
-#: ../../api.rst:2225
+#: ../../api.rst:2245
 msgid "See also :attr:`VoiceChannel.bitrate`."
 msgstr ""
 
-#: ../../api.rst:2231
+#: ../../api.rst:2251
 msgid ""
 "A list of permission overwrite tuples that represents a target and a "
 ":class:`PermissionOverwrite` for said target."
 msgstr ""
 
-#: ../../api.rst:2234
+#: ../../api.rst:2254
 msgid ""
 "The first element is the object being targeted, which can either be a "
 ":class:`Member` or :class:`User` or :class:`Role`. If this object is not "
@@ -5791,73 +5836,73 @@ msgid ""
 "type of ID it is."
 msgstr ""
 
-#: ../../api.rst:2240
+#: ../../api.rst:2260
 #, fuzzy
 msgid "List[Tuple[target, :class:`PermissionOverwrite`]]"
 msgstr ":class:`~discord.PermissionOverwrite` 사용하기 ::"
 
-#: ../../api.rst:2244
+#: ../../api.rst:2264
 msgid "A list of roles being added or removed from a member."
 msgstr ""
 
-#: ../../api.rst:2246
+#: ../../api.rst:2266
 msgid ""
 "If a role is not found then it is a :class:`Object` with the ID and name "
 "being filled in."
 msgstr ""
 
-#: ../../api.rst:2249
+#: ../../api.rst:2269
 msgid "List[Union[:class:`Role`, :class:`Object`]]"
 msgstr ""
 
-#: ../../api.rst:2253
+#: ../../api.rst:2273
 msgid "The nickname of a member."
 msgstr ""
 
-#: ../../api.rst:2255
+#: ../../api.rst:2275
 msgid "See also :attr:`Member.nick`"
 msgstr ""
 
-#: ../../api.rst:2261
+#: ../../api.rst:2281
 msgid "Whether the member is being server deafened."
 msgstr ""
 
-#: ../../api.rst:2263
+#: ../../api.rst:2283
 msgid "See also :attr:`VoiceState.deaf`."
 msgstr ""
 
-#: ../../api.rst:2269
+#: ../../api.rst:2289
 msgid "Whether the member is being server muted."
 msgstr ""
 
-#: ../../api.rst:2271
+#: ../../api.rst:2291
 msgid "See also :attr:`VoiceState.mute`."
 msgstr ""
 
-#: ../../api.rst:2277
+#: ../../api.rst:2297
 #, fuzzy
 msgid "The permissions of a role."
 msgstr "권한을 확인할 사용자."
 
-#: ../../api.rst:2279
+#: ../../api.rst:2299
 msgid "See also :attr:`Role.permissions`."
 msgstr ""
 
-#: ../../api.rst:2281 ../../api.rst:2370 discord.DMChannel.permissions_for:17
+#: ../../api.rst:2301 ../../api.rst:2390 discord.DMChannel.permissions_for:17
 #: discord.GroupChannel.permissions_for:18 discord.Member.guild_permissions:12
 #: discord.Member.permissions_in:13 discord.Role.permissions:3 of
 msgid ":class:`Permissions`"
 msgstr ""
 
-#: ../../api.rst:2286
+#: ../../api.rst:2306
 msgid "The colour of a role."
 msgstr ""
 
-#: ../../api.rst:2288
+#: ../../api.rst:2308
 msgid "See also :attr:`Role.colour`"
 msgstr ""
 
-#: ../../api.rst:2290 discord.ClientUser.color:6 discord.ClientUser.colour:6
+#: ../../api.rst:2310 discord.ClientUser.color:6 discord.ClientUser.colour:6
 #: discord.Member.color:7 discord.Member.colour:7 discord.Role.color:3
 #: discord.Role.colour:3 discord.Spotify.color:5 discord.Spotify.colour:5
 #: discord.User.color:6 discord.User.colour:6 discord.WidgetMember.color:6
@@ -5865,120 +5910,120 @@ msgstr ""
 msgid ":class:`Colour`"
 msgstr ":class:`Colour`"
 
-#: ../../api.rst:2294
+#: ../../api.rst:2314
 msgid "Whether the role is being hoisted or not."
 msgstr ""
 
-#: ../../api.rst:2296
+#: ../../api.rst:2316
 msgid "See also :attr:`Role.hoist`"
 msgstr ""
 
-#: ../../api.rst:2302
+#: ../../api.rst:2322
 msgid "Whether the role is mentionable or not."
 msgstr ""
 
-#: ../../api.rst:2304
+#: ../../api.rst:2324
 msgid "See also :attr:`Role.mentionable`"
 msgstr ""
 
-#: ../../api.rst:2310
+#: ../../api.rst:2330
 #, fuzzy
 msgid "The invite's code."
 msgstr "삭제된 초대."
 
-#: ../../api.rst:2312
+#: ../../api.rst:2332
 msgid "See also :attr:`Invite.code`"
 msgstr ""
 
-#: ../../api.rst:2318
+#: ../../api.rst:2338
 #, fuzzy
 msgid "A guild channel."
 msgstr "그룹 채널의 채널 ID."
 
-#: ../../api.rst:2320
+#: ../../api.rst:2340
 msgid ""
 "If the channel is not found then it is a :class:`Object` with the ID "
 "being set. In some cases the channel name is also set."
 msgstr ""
 
-#: ../../api.rst:2323
+#: ../../api.rst:2343
 #, fuzzy
 msgid "Union[:class:`abc.GuildChannel`, :class:`Object`]"
 msgstr "List[:class:`abc.GuildChannel`]"
 
-#: ../../api.rst:2327 discord.Invite:97 of
+#: ../../api.rst:2347 discord.Invite:97 of
 msgid "The user who created the invite."
 msgstr "초대를 만든 사용자."
 
-#: ../../api.rst:2329
+#: ../../api.rst:2349
 msgid "See also :attr:`Invite.inviter`."
 msgstr ""
 
-#: ../../api.rst:2335
+#: ../../api.rst:2355
 #, fuzzy
 msgid "The invite's max uses."
 msgstr "초대의 해시를 리턴합니다."
 
-#: ../../api.rst:2337
+#: ../../api.rst:2357
 msgid "See also :attr:`Invite.max_uses`."
 msgstr ""
 
-#: ../../api.rst:2343
+#: ../../api.rst:2363
 #, fuzzy
 msgid "The invite's current uses."
 msgstr "생성된 초대."
 
-#: ../../api.rst:2345
+#: ../../api.rst:2365
 msgid "See also :attr:`Invite.uses`."
 msgstr ""
 
-#: ../../api.rst:2351
+#: ../../api.rst:2371
 msgid "The invite's max age in seconds."
 msgstr ""
 
-#: ../../api.rst:2353
+#: ../../api.rst:2373
 msgid "See also :attr:`Invite.max_age`."
 msgstr ""
 
-#: ../../api.rst:2359
+#: ../../api.rst:2379
 msgid "If the invite is a temporary invite."
 msgstr ""
 
-#: ../../api.rst:2361
+#: ../../api.rst:2381
 msgid "See also :attr:`Invite.temporary`."
 msgstr ""
 
-#: ../../api.rst:2368
+#: ../../api.rst:2388
 msgid "The permissions being allowed or denied."
 msgstr ""
 
-#: ../../api.rst:2374
+#: ../../api.rst:2394
 msgid "The ID of the object being changed."
 msgstr ""
 
-#: ../../api.rst:2380
+#: ../../api.rst:2400
 msgid "The avatar hash of a member."
 msgstr ""
 
-#: ../../api.rst:2382
+#: ../../api.rst:2402
 msgid "See also :attr:`User.avatar`."
 msgstr ""
 
-#: ../../api.rst:2388
+#: ../../api.rst:2408
 msgid ""
 "The number of seconds members have to wait before sending another message"
 " in the channel."
 msgstr ""
 
-#: ../../api.rst:2391
+#: ../../api.rst:2411
 msgid "See also :attr:`TextChannel.slowmode_delay`."
 msgstr ""
 
-#: ../../api.rst:2399
+#: ../../api.rst:2419
 msgid "Webhook Support"
 msgstr ""
 
-#: ../../api.rst:2401
+#: ../../api.rst:2421
 msgid ""
 "discord.py offers support for creating, editing, and executing webhooks "
 "through the :class:`Webhook` class."
@@ -6376,25 +6421,19 @@ msgid ""
 "mixed with the ``embed`` parameter."
 msgstr ""
 
-#: discord.DMChannel.send:34 discord.GroupChannel.send:34
-#: discord.Member.send:34 discord.Message.edit:25 discord.TextChannel.send:34
-#: discord.User.send:34 discord.Webhook.send:42 discord.abc.Messageable.send:34
-#: of
+#: discord.Message.edit:25 discord.Webhook.send:42 of
 msgid ""
 "Controls the mentions being processed in this message.  .. versionadded::"
 " 1.4"
 msgstr "이 메시지에서 처리되는 멘션을 제어합니다."
 
-#: discord.DMChannel.send:34 discord.GroupChannel.send:34
-#: discord.Member.send:34 discord.Message.edit:25 discord.TextChannel.send:34
-#: discord.User.send:34 discord.Webhook.send:42 discord.abc.Messageable.send:34
-#: of
+#: discord.Message.edit:25 discord.Webhook.send:42 of
 msgid "Controls the mentions being processed in this message."
 msgstr "이 메시지에서 처리되는 멘션을 제어합니다."
 
-#: discord.DMChannel.send:39 discord.GroupChannel.send:39
-#: discord.Member.send:39 discord.TextChannel.send:39 discord.User.send:39
-#: discord.Webhook.send:47 discord.abc.Messageable.send:39 of
+#: discord.DMChannel.send:44 discord.GroupChannel.send:44
+#: discord.Member.send:44 discord.TextChannel.send:44 discord.User.send:44
+#: discord.Webhook.send:47 discord.abc.Messageable.send:44 of
 msgid "Sending the message failed."
 msgstr "메시지 전송에 실패했습니다."
 
@@ -6413,9 +6452,9 @@ msgid ""
 "webhook."
 msgstr ""
 
-#: discord.DMChannel.send:43 discord.GroupChannel.send:43
-#: discord.Member.send:43 discord.TextChannel.send:43 discord.User.send:43
-#: discord.Webhook.send:52 discord.abc.Messageable.send:43 of
+#: discord.DMChannel.send:48 discord.GroupChannel.send:48
+#: discord.Member.send:48 discord.TextChannel.send:48 discord.User.send:48
+#: discord.Webhook.send:52 discord.abc.Messageable.send:48 of
 msgid "The message that was sent."
 msgstr "전송한 메시지."
 
@@ -6428,11 +6467,11 @@ msgstr ""
 msgid "An alias for :meth:`~.Webhook.send`."
 msgstr ""
 
-#: ../../api.rst:2407
+#: ../../api.rst:2427
 msgid "Adapters"
 msgstr ""
 
-#: ../../api.rst:2409
+#: ../../api.rst:2429
 msgid ""
 "Adapters allow you to change how the request should be handled. They all "
 "build on a single interface, :meth:`WebhookAdapter.request`."
@@ -6540,11 +6579,11 @@ msgid ""
 "then this will raise an :exc:`HTTPException` instead."
 msgstr ""
 
-#: ../../api.rst:2424
+#: ../../api.rst:2444
 msgid "Abstract Base Classes"
 msgstr ""
 
-#: ../../api.rst:2426
+#: ../../api.rst:2446
 msgid ""
 "An :term:`py:abstract base class` (also known as an ``abc``) is a class "
 "that models can inherit to get their behaviour. The Python implementation"
@@ -6554,7 +6593,7 @@ msgid ""
 ":func:`py:isinstance` and :func:`py:issubclass`\\."
 msgstr ""
 
-#: ../../api.rst:2431
+#: ../../api.rst:2451
 msgid ""
 "This library has a module related to abstract base classes, some of which"
 " are actually from the :doc:`abc <py:library/abc>` standard module, "
@@ -7029,31 +7068,39 @@ msgid ""
 "this channel."
 msgstr "이 채널을 복제합니다. 이 채널과 동일한 속성을 가진 채널을 만듭니다."
 
-#: discord.CategoryChannel.clone:8 discord.TextChannel.clone:8
-#: discord.VoiceChannel.clone:8 discord.abc.GuildChannel.clone:8 of
+#: discord.CategoryChannel.clone:6 discord.TextChannel.clone:6
+#: discord.VoiceChannel.clone:6 discord.abc.GuildChannel.clone:6 of
+#, fuzzy
+msgid ""
+"You must have the :attr:`~discord.Permissions.manage_channels` permission"
+" to do this."
+msgstr "사용하려면 :attr:`~Permissions.manage_channels` 권한이 필요합니다."
+
+#: discord.CategoryChannel.clone:11 discord.TextChannel.clone:11
+#: discord.VoiceChannel.clone:11 discord.abc.GuildChannel.clone:11 of
 msgid ""
 "The name of the new channel. If not provided, defaults to this channel "
 "name."
 msgstr "새 채널의 이름. 제공하지 않을 경우, 기본값으로 이 채널의 이름이 사용됩니다."
 
-#: discord.CategoryChannel.clone:11 discord.TextChannel.clone:11
-#: discord.VoiceChannel.clone:11 discord.abc.GuildChannel.clone:11 of
+#: discord.CategoryChannel.clone:14 discord.TextChannel.clone:14
+#: discord.VoiceChannel.clone:14 discord.abc.GuildChannel.clone:14 of
 msgid "The reason for cloning this channel. Shows up on the audit log."
 msgstr "이 채널을 복제하는 사유입니다. 감사 로그에 뜨게 됩니다."
 
-#: discord.CategoryChannel.clone:14 discord.Guild.create_category:10
+#: discord.CategoryChannel.clone:17 discord.Guild.create_category:10
 #: discord.Guild.create_category_channel:10
 #: discord.Guild.create_text_channel:60 discord.Guild.create_voice_channel:11
-#: discord.TextChannel.clone:14 discord.VoiceChannel.clone:14
-#: discord.abc.GuildChannel.clone:14 of
+#: discord.TextChannel.clone:17 discord.VoiceChannel.clone:17
+#: discord.abc.GuildChannel.clone:17 of
 msgid "You do not have the proper permissions to create this channel."
 msgstr "이 채널을 생성할 권한이 없습니다."
 
-#: discord.CategoryChannel.clone:15 discord.Guild.create_category:11
+#: discord.CategoryChannel.clone:18 discord.Guild.create_category:11
 #: discord.Guild.create_category_channel:11
 #: discord.Guild.create_text_channel:61 discord.Guild.create_voice_channel:12
-#: discord.TextChannel.clone:15 discord.VoiceChannel.clone:15
-#: discord.abc.GuildChannel.clone:15 of
+#: discord.TextChannel.clone:18 discord.VoiceChannel.clone:18
+#: discord.abc.GuildChannel.clone:18 of
 msgid "Creating the channel failed."
 msgstr "채널 생성에 실패했습니다."
 
@@ -7239,15 +7286,23 @@ msgstr ""
 "``True`` 로 설정되면 메시지를 가장 오래된 순서부터 리턴합니다. ``after`` 가 지정되면 기본값은 ``True`` "
 "이고, 그렇지 않으면 ``False`` 입니다."
 
-#: discord.DMChannel.history:40 discord.GroupChannel.history:40
-#: discord.Member.history:40 discord.TextChannel.history:40
-#: discord.User.history:40 discord.abc.Messageable.history:40 of
+#: discord.DMChannel.fetch_message_fast:12 discord.DMChannel.history:40
+#: discord.GroupChannel.fetch_message_fast:12 discord.GroupChannel.history:40
+#: discord.Member.fetch_message_fast:12 discord.Member.history:40
+#: discord.TextChannel.fetch_message_fast:12 discord.TextChannel.history:40
+#: discord.User.fetch_message_fast:12 discord.User.history:40
+#: discord.abc.Messageable.fetch_message_fast:12
+#: discord.abc.Messageable.history:40 of
 msgid "You do not have permissions to get channel message history."
 msgstr "메시지 기록을 볼 권한이 없습니다."
 
-#: discord.DMChannel.history:41 discord.GroupChannel.history:41
-#: discord.Member.history:41 discord.TextChannel.history:41
-#: discord.User.history:41 discord.abc.Messageable.history:41 of
+#: discord.DMChannel.fetch_message_fast:13 discord.DMChannel.history:41
+#: discord.GroupChannel.fetch_message_fast:13 discord.GroupChannel.history:41
+#: discord.Member.fetch_message_fast:13 discord.Member.history:41
+#: discord.TextChannel.fetch_message_fast:13 discord.TextChannel.history:41
+#: discord.User.fetch_message_fast:13 discord.User.history:41
+#: discord.abc.Messageable.fetch_message_fast:13
+#: discord.abc.Messageable.history:41 of
 msgid "The request to get message history failed."
 msgstr "메시지 기록 가져오기에 실패했습니다."
 
@@ -7363,26 +7418,52 @@ msgid ""
 "silently ignored."
 msgstr "제공된 경우 방금 보낸 메시지를 삭제할 때 까지 백그라운드에서 대기하는 시간(초) 입니다. 삭제가 실패하면 자동으로 무시됩니다."
 
-#: discord.DMChannel.send:40 discord.GroupChannel.send:40
-#: discord.Member.send:40 discord.TextChannel.send:40 discord.User.send:40
-#: discord.abc.Messageable.send:40 of
+#: discord.DMChannel.send:34 discord.GroupChannel.send:34
+#: discord.Member.send:34 discord.TextChannel.send:34 discord.User.send:34
+#: discord.abc.Messageable.send:34 of
+msgid ""
+"Controls the mentions being processed in this message. If this is passed,"
+" then the object is merged with :attr:`~discord.Client.allowed_mentions`."
+" The merging behaviour only overrides attributes that have been "
+"explicitly passed to the object, otherwise it uses the attributes set in "
+":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
+"then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
+"used instead.  .. versionadded:: 1.4"
+msgstr ""
+
+#: discord.DMChannel.send:34 discord.GroupChannel.send:34
+#: discord.Member.send:34 discord.TextChannel.send:34 discord.User.send:34
+#: discord.abc.Messageable.send:34 of
+msgid ""
+"Controls the mentions being processed in this message. If this is passed,"
+" then the object is merged with :attr:`~discord.Client.allowed_mentions`."
+" The merging behaviour only overrides attributes that have been "
+"explicitly passed to the object, otherwise it uses the attributes set in "
+":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
+"then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
+"used instead."
+msgstr ""
+
+#: discord.DMChannel.send:45 discord.GroupChannel.send:45
+#: discord.Member.send:45 discord.TextChannel.send:45 discord.User.send:45
+#: discord.abc.Messageable.send:45 of
 msgid "You do not have the proper permissions to send the message."
 msgstr "메시지를 보낼 권한이 없습니다."
 
-#: discord.DMChannel.send:41 discord.GroupChannel.send:41
-#: discord.Member.send:41 discord.TextChannel.send:41 discord.User.send:41
-#: discord.abc.Messageable.send:41 of
+#: discord.DMChannel.send:46 discord.GroupChannel.send:46
+#: discord.Member.send:46 discord.TextChannel.send:46 discord.User.send:46
+#: discord.abc.Messageable.send:46 of
 msgid ""
 "The ``files`` list is not of the appropriate size or     you specified "
 "both ``file`` and ``files``."
 msgstr "``files`` 리스트의 길이가 적당하지 않거나 ``file`` 과 ``files`` 를 모두 지정했습니다."
 
-#: discord.DMChannel.fetch_message:15 discord.DMChannel.send:44
-#: discord.GroupChannel.fetch_message:15 discord.GroupChannel.send:44
-#: discord.Member.fetch_message:15 discord.Member.send:44
-#: discord.TextChannel.fetch_message:15 discord.TextChannel.send:44
-#: discord.User.fetch_message:15 discord.User.send:44
-#: discord.abc.Messageable.fetch_message:15 discord.abc.Messageable.send:44 of
+#: discord.DMChannel.fetch_message:17 discord.DMChannel.send:49
+#: discord.GroupChannel.fetch_message:17 discord.GroupChannel.send:49
+#: discord.Member.fetch_message:17 discord.Member.send:49
+#: discord.TextChannel.fetch_message:17 discord.TextChannel.send:49
+#: discord.User.fetch_message:17 discord.User.send:49
+#: discord.abc.Messageable.fetch_message:17 discord.abc.Messageable.send:49 of
 msgid ":class:`~discord.Message`"
 msgstr ""
 
@@ -7415,32 +7496,80 @@ msgstr "오직 봇 계정에서만 사용할 수 있습니다."
 #: discord.DMChannel.fetch_message:7 discord.GroupChannel.fetch_message:7
 #: discord.Member.fetch_message:7 discord.TextChannel.fetch_message:7
 #: discord.User.fetch_message:7 discord.abc.Messageable.fetch_message:7 of
+#, fuzzy
+msgid "Prefer using :meth:`fetch_message_fast`."
+msgstr ":meth:`Attachment.save` 와 동일합니다,"
+
+#: discord.DMChannel.fetch_message:9 discord.DMChannel.fetch_message_fast:8
+#: discord.GroupChannel.fetch_message:9
+#: discord.GroupChannel.fetch_message_fast:8 discord.Member.fetch_message:9
+#: discord.Member.fetch_message_fast:8 discord.TextChannel.fetch_message:9
+#: discord.TextChannel.fetch_message_fast:8 discord.User.fetch_message:9
+#: discord.User.fetch_message_fast:8 discord.abc.Messageable.fetch_message:9
+#: discord.abc.Messageable.fetch_message_fast:8 of
 msgid "The message ID to look for."
 msgstr "찾을 메시지 ID."
-
-#: discord.DMChannel.fetch_message:10 discord.GroupChannel.fetch_message:10
-#: discord.Member.fetch_message:10 discord.TextChannel.fetch_message:10
-#: discord.User.fetch_message:10 discord.abc.Messageable.fetch_message:10 of
-msgid "The specified message was not found."
-msgstr "지정된 메시지를 찾을 수 없습니다."
-
-#: discord.DMChannel.fetch_message:11 discord.GroupChannel.fetch_message:11
-#: discord.Member.fetch_message:11 discord.TextChannel.fetch_message:11
-#: discord.User.fetch_message:11 discord.abc.Messageable.fetch_message:11 of
-msgid "You do not have the permissions required to get a message."
-msgstr "메시지를 가져올 권한이 없습니다."
 
 #: discord.DMChannel.fetch_message:12 discord.GroupChannel.fetch_message:12
 #: discord.Member.fetch_message:12 discord.TextChannel.fetch_message:12
 #: discord.User.fetch_message:12 discord.abc.Messageable.fetch_message:12 of
-msgid "Retrieving the message failed."
-msgstr "메시지 가져오기에 실패했습니다."
+msgid "The specified message was not found."
+msgstr "지정된 메시지를 찾을 수 없습니다."
+
+#: discord.DMChannel.fetch_message:13 discord.GroupChannel.fetch_message:13
+#: discord.Member.fetch_message:13 discord.TextChannel.fetch_message:13
+#: discord.User.fetch_message:13 discord.abc.Messageable.fetch_message:13 of
+msgid "You do not have the permissions required to get a message."
+msgstr "메시지를 가져올 권한이 없습니다."
 
 #: discord.DMChannel.fetch_message:14 discord.GroupChannel.fetch_message:14
 #: discord.Member.fetch_message:14 discord.TextChannel.fetch_message:14
 #: discord.User.fetch_message:14 discord.abc.Messageable.fetch_message:14 of
+msgid "Retrieving the message failed."
+msgstr "메시지 가져오기에 실패했습니다."
+
+#: discord.DMChannel.fetch_message:16 discord.GroupChannel.fetch_message:16
+#: discord.Member.fetch_message:16 discord.TextChannel.fetch_message:16
+#: discord.User.fetch_message:16 discord.abc.Messageable.fetch_message:16 of
 msgid "The message asked for."
 msgstr "요청한 메시지."
+
+#: discord.DMChannel.fetch_message_fast:3
+#: discord.GroupChannel.fetch_message_fast:3
+#: discord.Member.fetch_message_fast:3 discord.TextChannel.fetch_message_fast:3
+#: discord.User.fetch_message_fast:3
+#: discord.abc.Messageable.fetch_message_fast:3 of
+#, fuzzy
+msgid ""
+"Retrieves a single :class:`~discord.Message` from the destination, using "
+"the history endpoint."
+msgstr "대상에서 단일 :class:`~discord.Message` 를 검색합니다."
+
+#: discord.DMChannel.fetch_message_fast:11
+#: discord.GroupChannel.fetch_message_fast:11
+#: discord.Member.fetch_message_fast:11
+#: discord.TextChannel.fetch_message_fast:11 discord.User.fetch_message_fast:11
+#: discord.abc.Messageable.fetch_message_fast:11 of
+#, fuzzy
+msgid "The specified channel was not found."
+msgstr "지정된 메시지를 찾을 수 없습니다."
+
+#: discord.DMChannel.fetch_message_fast:15
+#: discord.GroupChannel.fetch_message_fast:15
+#: discord.Member.fetch_message_fast:15
+#: discord.TextChannel.fetch_message_fast:15 discord.User.fetch_message_fast:15
+#: discord.abc.Messageable.fetch_message_fast:15 of
+msgid "The message asked for, or None if there is no match."
+msgstr ""
+
+#: discord.DMChannel.fetch_message_fast:16
+#: discord.GroupChannel.fetch_message_fast:16
+#: discord.Member.fetch_message_fast:16
+#: discord.TextChannel.fetch_message_fast:16 discord.User.fetch_message_fast:16
+#: discord.abc.Messageable.fetch_message_fast:16 of
+#, fuzzy
+msgid "Optional[:class:`~discord.Message`]"
+msgstr "Optional[:class:`dict`]"
 
 #: discord.DMChannel.pins:3 discord.GroupChannel.pins:3 discord.Member.pins:3
 #: discord.TextChannel.pins:3 discord.User.pins:3
@@ -7483,30 +7612,30 @@ msgid ""
 "to a voice server."
 msgstr ""
 
-#: ../../api.rst:2461
+#: ../../api.rst:2481
 msgid "Discord Models"
 msgstr "디스코드 모델"
 
-#: ../../api.rst:2463
+#: ../../api.rst:2483
 msgid ""
 "Models are classes that are received from Discord and are not meant to be"
 " created by the user of the library."
 msgstr "모델은 디스코드에서 수신되는 클래스로., 라이브러리 사용자에 의해 생성되지 않습니다"
 
-#: ../../api.rst:2468
+#: ../../api.rst:2488
 #, fuzzy
 msgid ""
 "The classes listed below are **not intended to be created by users** and "
 "are also **read-only**."
 msgstr "아래에 나열된 클래스들는 **유저들에 의해 생성되도록 의도된 것**이 아니며 **읽기 전용** 입니다."
 
-#: ../../api.rst:2471
+#: ../../api.rst:2491
 msgid ""
 "For example, this means that you should not make your own :class:`User` "
 "instances nor should you modify the :class:`User` instance yourself."
 msgstr "예를 들어,  :class:`User` 인스턴스를 직접 만들거나  :class:`User` 인스턴스를 직접 수정해서는 안됩니다."
 
-#: ../../api.rst:2474
+#: ../../api.rst:2494
 msgid ""
 "If you want to get one of these model classes instances they'd have to be"
 " through the cache, and a common way of doing so is through the "
@@ -7517,13 +7646,13 @@ msgstr ""
 "api-events`\\에 명시되어 있는 이벤트로부터 얻게 되는 모델 클래스의 :func:`utils.find` 함수 또는 속성을 "
 "거치는 것입니다."
 
-#: ../../api.rst:2481 ../../api.rst:2761
+#: ../../api.rst:2501 ../../api.rst:2781
 msgid ""
 "Nearly all classes here have :ref:`py:slots` defined which means that it "
 "is impossible to have dynamic attributes to the data classes."
 msgstr "여기의 거의 모든 클래스에는 :ref:`py:slots` 이 정의되어 있으므로 데이터 클래스에 동적 속성을 가질 수 없습니다."
 
-#: ../../api.rst:2486
+#: ../../api.rst:2506
 msgid "ClientUser"
 msgstr "클라이언트 사용자"
 
@@ -8022,7 +8151,7 @@ msgstr ""
 msgid ":class:`PublicUserFlags`"
 msgstr ":class:`dict`"
 
-#: ../../api.rst:2493
+#: ../../api.rst:2513
 msgid "Relationship"
 msgstr "관련성"
 
@@ -8064,7 +8193,7 @@ msgstr "친구 요청을 수락"
 msgid "Accepting the relationship failed."
 msgstr "친구 요청 수락에 실패했습니다."
 
-#: ../../api.rst:2499
+#: ../../api.rst:2519
 msgid "User"
 msgstr "유저"
 
@@ -8186,7 +8315,7 @@ msgstr "사용자의 프로필을 가져옵니다."
 msgid ":class:`Profile`"
 msgstr ":class:`Profile`"
 
-#: ../../api.rst:2513
+#: ../../api.rst:2533
 msgid "Attachment"
 msgstr "첨부 파일"
 
@@ -8329,7 +8458,7 @@ msgstr "파일을 보내기에 적합한 첨부파일입니다."
 msgid ":class:`File`"
 msgstr ":class:`File`"
 
-#: ../../api.rst:2519
+#: ../../api.rst:2539
 msgid "Asset"
 msgstr "에셋"
 
@@ -8398,7 +8527,7 @@ msgstr "에셋을 파일 객체에 저장합니다."
 msgid "Same as in :meth:`Attachment.save`."
 msgstr ":meth:`Attachment.save` 와 동일합니다,"
 
-#: ../../api.rst:2525
+#: ../../api.rst:2545
 msgid "Message"
 msgstr "메시지"
 
@@ -9019,7 +9148,7 @@ msgstr "Ack에 실패했습니다."
 msgid "You must not be a bot user."
 msgstr "봇이 아니어야합니다."
 
-#: ../../api.rst:2531
+#: ../../api.rst:2551
 msgid "Reaction"
 msgstr ""
 
@@ -9142,7 +9271,7 @@ msgstr ""
 msgid "Clears this reaction from the message."
 msgstr ""
 
-#: ../../api.rst:2541
+#: ../../api.rst:2561
 msgid "CallMessage"
 msgstr ""
 
@@ -9198,7 +9327,7 @@ msgstr ""
 msgid ":class:`datetime.timedelta`"
 msgstr ""
 
-#: ../../api.rst:2547
+#: ../../api.rst:2567
 msgid "GroupCall"
 msgstr ""
 
@@ -9260,7 +9389,7 @@ msgstr ""
 msgid "Optional[:class:`VoiceState`]"
 msgstr ""
 
-#: ../../api.rst:2553
+#: ../../api.rst:2573
 msgid "Guild"
 msgstr ""
 
@@ -9423,58 +9552,62 @@ msgid "``FEATURABLE``: Guild is able to be featured in Server Discovery."
 msgstr ""
 
 #: discord.Guild:156 of
-msgid "``COMMERCE``: Guild can sell things using store channels."
+msgid "``COMMUNITY``: Guild is a community server."
 msgstr ""
 
 #: discord.Guild:157 of
-msgid "``PUBLIC``: Guild is a public guild."
+msgid "``COMMERCE``: Guild can sell things using store channels."
 msgstr ""
 
 #: discord.Guild:158 of
-msgid "``NEWS``: Guild can create news channels."
+msgid "``PUBLIC``: Guild is a public guild."
 msgstr ""
 
 #: discord.Guild:159 of
-msgid "``BANNER``: Guild can upload and use a banner (i.e. :meth:`banner_url`)."
+msgid "``NEWS``: Guild can create news channels."
 msgstr ""
 
 #: discord.Guild:160 of
-msgid "``ANIMATED_ICON``: Guild can upload an animated icon."
+msgid "``BANNER``: Guild can upload and use a banner (i.e. :meth:`banner_url`)."
 msgstr ""
 
 #: discord.Guild:161 of
-msgid "``PUBLIC_DISABLED``: Guild cannot be public."
+msgid "``ANIMATED_ICON``: Guild can upload an animated icon."
 msgstr ""
 
 #: discord.Guild:162 of
+msgid "``PUBLIC_DISABLED``: Guild cannot be public."
+msgstr ""
+
+#: discord.Guild:163 of
 msgid "``WELCOME_SCREEN_ENABLED``: Guild has enabled the welcome screen"
 msgstr ""
 
-#: discord.Guild:164 discord.PartialInviteGuild:46 discord.Spotify.artists:3 of
+#: discord.Guild:165 discord.PartialInviteGuild:46 discord.Spotify.artists:3 of
 msgid "List[:class:`str`]"
 msgstr ""
 
-#: discord.Guild:168 of
+#: discord.Guild:169 of
 msgid "The guild's invite splash."
 msgstr ""
 
-#: discord.Guild:174 of
+#: discord.Guild:175 of
 msgid ""
 "The premium tier for this guild. Corresponds to \"Nitro Server\" in the "
 "official UI. The number goes from 0 to 3 inclusive."
 msgstr ""
 
-#: discord.Guild:181 of
+#: discord.Guild:182 of
 msgid "The number of \"boosts\" this guild currently has."
 msgstr ""
 
-#: discord.Guild:187 of
+#: discord.Guild:188 of
 msgid ""
 "The preferred locale for the guild. Used when filtering Server Discovery "
 "results to a specific language."
 msgstr ""
 
-#: discord.Guild:194 of
+#: discord.Guild:195 of
 msgid "The guild's discovery splash."
 msgstr ""
 
@@ -10825,7 +10958,7 @@ msgstr "초대가 삭제되었는지 여부를 나타냅니다."
 msgid "Indicates if the client should be self-deafened."
 msgstr "초대가 삭제되었는지 여부를 나타냅니다."
 
-#: ../../api.rst:2563
+#: ../../api.rst:2583
 msgid "Integration"
 msgstr ""
 
@@ -10986,7 +11119,7 @@ msgstr ""
 msgid "The account name."
 msgstr "채널의 이름."
 
-#: ../../api.rst:2572
+#: ../../api.rst:2592
 msgid "Member"
 msgstr ""
 
@@ -11021,8 +11154,8 @@ msgstr ""
 #: discord.Member:27 of
 msgid ""
 "A datetime object that specifies the date and time in UTC that the member"
-" joined the guild for the first time. In certain cases, this can be "
-"``None``."
+" joined the guild. If the member left and rejoined the guild, this will "
+"be the latest date. In certain cases, this can be ``None``."
 msgstr ""
 
 #: discord.Member:34 of
@@ -11396,7 +11529,7 @@ msgstr ""
 msgid "Equivalent to :attr:`User.system`"
 msgstr ""
 
-#: ../../api.rst:2586
+#: ../../api.rst:2606
 msgid "Spotify"
 msgstr ""
 
@@ -11506,7 +11639,7 @@ msgstr ""
 msgid "The party ID of the listening party."
 msgstr ""
 
-#: ../../api.rst:2592
+#: ../../api.rst:2612
 msgid "VoiceState"
 msgstr ""
 
@@ -11548,7 +11681,7 @@ msgid ""
 "the user is not currently in a voice channel."
 msgstr ""
 
-#: ../../api.rst:2598
+#: ../../api.rst:2618
 msgid "Emoji"
 msgstr ""
 
@@ -11679,7 +11812,7 @@ msgstr ""
 msgid "An error occurred editing the emoji."
 msgstr ""
 
-#: ../../api.rst:2604
+#: ../../api.rst:2624
 msgid "PartialEmoji"
 msgstr ""
 
@@ -11726,7 +11859,7 @@ msgstr ""
 msgid "Returns an asset of the emoji, if it is custom."
 msgstr ""
 
-#: ../../api.rst:2610
+#: ../../api.rst:2630
 msgid "Role"
 msgstr ""
 
@@ -11895,7 +12028,7 @@ msgstr ""
 msgid "Deleting the role failed."
 msgstr ""
 
-#: ../../api.rst:2616
+#: ../../api.rst:2636
 msgid "TextChannel"
 msgstr "텍스트 채널"
 
@@ -12312,7 +12445,7 @@ msgstr "채널 팔로우에 실패했습니다."
 msgid "You do not have the permissions to create a webhook."
 msgstr "웹후크를 생성할 권한이 없습니다."
 
-#: ../../api.rst:2630
+#: ../../api.rst:2650
 msgid "VoiceChannel"
 msgstr "음성 채널"
 
@@ -12394,7 +12527,7 @@ msgstr "음성 서버에 완전히 연결된 음성 클라이언트."
 msgid ":class:`~discord.VoiceClient`"
 msgstr ""
 
-#: ../../api.rst:2637
+#: ../../api.rst:2657
 msgid "CategoryChannel"
 msgstr "카테고리 채널"
 
@@ -12498,7 +12631,7 @@ msgstr ""
 "카테고리에서 :class:`VoiceChannel` 을 만들기 위한 :meth:`Guild.create_voice_channel` "
 "의 바로가기 메소드입니다."
 
-#: ../../api.rst:2644
+#: ../../api.rst:2664
 msgid "DMChannel"
 msgstr "DM 채널"
 
@@ -12564,7 +12697,7 @@ msgstr "권한을 확인할 사용자입니다. 이 매개 변수는 무시되�
 msgid "The resolved permissions."
 msgstr "확인된 권한."
 
-#: ../../api.rst:2658
+#: ../../api.rst:2678
 msgid "GroupChannel"
 msgstr "그룹 채널"
 
@@ -12681,7 +12814,7 @@ msgstr "그룹에 혼자 남아 있는 경우, 그롭도 삭제됩니다."
 msgid "Leaving the group failed."
 msgstr "그룹에서 나가는 데 실패했습니다."
 
-#: ../../api.rst:2672
+#: ../../api.rst:2692
 msgid "PartialInviteGuild"
 msgstr ""
 
@@ -12761,7 +12894,7 @@ msgstr ""
 msgid "The same operation as :meth:`Guild.splash_url_as`."
 msgstr ""
 
-#: ../../api.rst:2678
+#: ../../api.rst:2698
 msgid "PartialInviteChannel"
 msgstr ""
 
@@ -12797,7 +12930,7 @@ msgstr ""
 msgid "The partial channel's type."
 msgstr ""
 
-#: ../../api.rst:2684
+#: ../../api.rst:2704
 msgid "Invite"
 msgstr "초대"
 
@@ -12963,7 +13096,7 @@ msgstr "사용하려면 :attr:`~Permissions.manage_channels` 권한이 필요합
 msgid "The reason for deleting this invite. Shows up on the audit log."
 msgstr "이 초대를 삭제하는 사유입니다. 감사 로그에 뜨게 됩니다."
 
-#: ../../api.rst:2690
+#: ../../api.rst:2710
 msgid "Template"
 msgstr ""
 
@@ -13011,7 +13144,7 @@ msgstr ""
 msgid "Creates a :class:`.Guild` using the template."
 msgstr "사용자와의 :class:`DMChannel` 을 만듭니다."
 
-#: ../../api.rst:2696
+#: ../../api.rst:2716
 msgid "WidgetChannel"
 msgstr ""
 
@@ -13027,7 +13160,7 @@ msgstr ""
 msgid "The channel's position"
 msgstr ""
 
-#: ../../api.rst:2702
+#: ../../api.rst:2722
 msgid "WidgetMember"
 msgstr ""
 
@@ -13107,7 +13240,7 @@ msgstr ""
 msgid "Returns the member's display name."
 msgstr ""
 
-#: ../../api.rst:2709
+#: ../../api.rst:2729
 msgid "Widget"
 msgstr ""
 
@@ -13181,7 +13314,7 @@ msgid ""
 ":attr:`Invite.approximate_presence_count` fields."
 msgstr ""
 
-#: ../../api.rst:2715
+#: ../../api.rst:2735
 msgid "RawMessageDeleteEvent"
 msgstr ""
 
@@ -13205,7 +13338,7 @@ msgstr ""
 msgid "The cached message, if found in the internal message cache."
 msgstr ""
 
-#: ../../api.rst:2721
+#: ../../api.rst:2741
 msgid "RawBulkMessageDeleteEvent"
 msgstr ""
 
@@ -13239,7 +13372,7 @@ msgstr ""
 msgid "List[:class:`Message`]"
 msgstr ""
 
-#: ../../api.rst:2727
+#: ../../api.rst:2747
 msgid "RawMessageUpdateEvent"
 msgstr ""
 
@@ -13261,7 +13394,7 @@ msgid ""
 "<https://discord.com/developers/docs/topics/gateway#message-update>`_"
 msgstr ""
 
-#: ../../api.rst:2733
+#: ../../api.rst:2753
 msgid "RawReactionActionEvent"
 msgstr ""
 
@@ -13298,7 +13431,7 @@ msgstr ""
 #: discord.RawReactionActionEvent:36 of
 msgid ""
 "The member who added the reaction. Only available if `event_type` is "
-"`REACTION_ADD`."
+"`REACTION_ADD` and the reaction is inside a guild."
 msgstr ""
 
 #: discord.RawReactionActionEvent:44 of
@@ -13307,7 +13440,7 @@ msgid ""
 "reaction addition or ``REACTION_REMOVE`` for reaction removal."
 msgstr ""
 
-#: ../../api.rst:2739
+#: ../../api.rst:2759
 msgid "RawReactionClearEvent"
 msgstr ""
 
@@ -13327,7 +13460,7 @@ msgstr ""
 msgid "The guild ID where the reactions got cleared."
 msgstr ""
 
-#: ../../api.rst:2745
+#: ../../api.rst:2765
 msgid "RawReactionClearEmojiEvent"
 msgstr ""
 
@@ -13339,27 +13472,27 @@ msgstr ""
 msgid "The custom or unicode emoji being removed."
 msgstr ""
 
-#: ../../api.rst:2754
+#: ../../api.rst:2774
 msgid "Data Classes"
 msgstr ""
 
-#: ../../api.rst:2756
+#: ../../api.rst:2776
 msgid "Some classes are just there to be data containers, this lists them."
 msgstr ""
 
-#: ../../api.rst:2758
+#: ../../api.rst:2778
 msgid ""
 "Unlike :ref:`models <discord_api_models>` you are allowed to create most "
 "of these yourself, even if they can also be used to hold attributes."
 msgstr ""
 
-#: ../../api.rst:2764
+#: ../../api.rst:2784
 msgid ""
 "The only exception to this rule is :class:`abc.Snowflake`, which is made "
 "with dynamic attributes in mind."
 msgstr ""
 
-#: ../../api.rst:2769
+#: ../../api.rst:2789
 msgid "Object"
 msgstr ""
 
@@ -13404,7 +13537,7 @@ msgstr ""
 msgid "Returns the snowflake's creation time in UTC."
 msgstr ""
 
-#: ../../api.rst:2775
+#: ../../api.rst:2795
 msgid "Embed"
 msgstr ""
 
@@ -13724,7 +13857,7 @@ msgstr ""
 msgid "Converts this embed object into a dict."
 msgstr ""
 
-#: ../../api.rst:2781
+#: ../../api.rst:2801
 msgid "AllowedMentions"
 msgstr ""
 
@@ -13734,7 +13867,7 @@ msgstr ""
 
 #: discord.AllowedMentions:3 of
 msgid ""
-"This class can be set during :class:`Client` initialization to apply to "
+"This class can be set during :class:`Client` initialisation to apply to "
 "every message sent. It can also be applied on a per message basis via "
 ":meth:`abc.Messageable.send` for more fine-grained control."
 msgstr ""
@@ -13765,7 +13898,19 @@ msgid ""
 "the message content."
 msgstr ""
 
-#: ../../api.rst:2787
+#: discord.AllowedMentions.all:1 of
+msgid ""
+"A factory method that returns a :class:`AllowedMentions` with all fields "
+"explicitly set to ``True``"
+msgstr ""
+
+#: discord.AllowedMentions.none:1 of
+msgid ""
+"A factory method that returns a :class:`AllowedMentions` with all fields "
+"set to ``False``"
+msgstr ""
+
+#: ../../api.rst:2807
 msgid "File"
 msgstr ""
 
@@ -13812,7 +13957,7 @@ msgstr ""
 msgid "Whether the attachment is a spoiler."
 msgstr ""
 
-#: ../../api.rst:2793
+#: ../../api.rst:2813
 msgid "Colour"
 msgstr ""
 
@@ -14008,7 +14153,14 @@ msgid ""
 "``0x99aab5``."
 msgstr ""
 
-#: ../../api.rst:2799
+#: discord.Colour.dark_theme:1 of
+msgid ""
+"A factory method that returns a :class:'Colour' with a value of "
+"``0x36393F``. Will appear transparent on Discord's dark theme and be the "
+"text colour on Discord's light theme."
+msgstr ""
+
+#: ../../api.rst:2819
 msgid "BaseActivity"
 msgstr ""
 
@@ -14052,7 +14204,7 @@ msgstr ""
 msgid "When the user started doing this activity in UTC."
 msgstr ""
 
-#: ../../api.rst:2805
+#: ../../api.rst:2825
 msgid "Activity"
 msgstr ""
 
@@ -14190,7 +14342,7 @@ msgstr ""
 msgid "Returns the small image asset hover text of this activity if applicable."
 msgstr ""
 
-#: ../../api.rst:2811
+#: ../../api.rst:2831
 msgid "Game"
 msgstr ""
 
@@ -14254,7 +14406,7 @@ msgstr ""
 msgid "When the user will stop playing this game in UTC, if applicable."
 msgstr ""
 
-#: ../../api.rst:2817
+#: ../../api.rst:2837
 msgid "Streaming"
 msgstr ""
 
@@ -14327,7 +14479,7 @@ msgid ""
 "Typically set by the Discord client."
 msgstr ""
 
-#: ../../api.rst:2823
+#: ../../api.rst:2843
 msgid "CustomActivity"
 msgstr ""
 
@@ -14351,7 +14503,7 @@ msgstr ""
 msgid "It always returns :attr:`ActivityType.custom`."
 msgstr ""
 
-#: ../../api.rst:2829
+#: ../../api.rst:2849
 msgid "Permissions"
 msgstr ""
 
@@ -14680,7 +14832,7 @@ msgstr ""
 msgid "Returns ``True`` if a user can create, edit, or delete emojis."
 msgstr ""
 
-#: ../../api.rst:2835
+#: ../../api.rst:2855
 msgid "PermissionOverwrite"
 msgstr ""
 
@@ -14744,7 +14896,7 @@ msgstr ""
 msgid "A list of key/value pairs to bulk update with."
 msgstr ""
 
-#: ../../api.rst:2841
+#: ../../api.rst:2861
 msgid "ShardInfo"
 msgstr ""
 
@@ -14798,7 +14950,7 @@ msgid ""
 "this shard."
 msgstr "HEARTBEAT와 HEARTBEAT_ACK 사이의 지연 시간을 초 단위로 측정합니다."
 
-#: ../../api.rst:2847
+#: ../../api.rst:2867
 msgid "SystemChannelFlags"
 msgstr ""
 
@@ -14857,7 +15009,7 @@ msgid ""
 "notifications."
 msgstr ""
 
-#: ../../api.rst:2853
+#: ../../api.rst:2873
 msgid "MessageFlags"
 msgstr ""
 
@@ -14895,7 +15047,7 @@ msgstr ""
 msgid "An urgent message is one sent by Discord Trust and Safety."
 msgstr ""
 
-#: ../../api.rst:2859
+#: ../../api.rst:2879
 msgid "PublicUserFlags"
 msgstr ""
 
@@ -14974,11 +15126,11 @@ msgstr "사용자가 확인 된 계정 인지를 지정"
 msgid "List[:class:`UserFlags`]: Returns all public flags the user has."
 msgstr ""
 
-#: ../../api.rst:2866
+#: ../../api.rst:2886
 msgid "Exceptions"
 msgstr ""
 
-#: ../../api.rst:2868
+#: ../../api.rst:2888
 msgid "The following exceptions are thrown by the library."
 msgstr ""
 
@@ -15051,6 +15203,14 @@ msgstr ""
 msgid "Exception that's thrown for when status code 404 occurs."
 msgstr ""
 
+#: discord.DiscordServerError:1 of
+msgid "Exception that's thrown for when a 500 range status code occurs."
+msgstr ""
+
+#: discord.DiscordServerError:3 of
+msgid "Subclass of :exc:`HTTPException`."
+msgstr ""
+
 #: discord.InvalidData:1 of
 msgid ""
 "Exception that's raised when the library encounters unknown or invalid "
@@ -15106,56 +15266,60 @@ msgstr ""
 msgid "An exception that is thrown for when libopus is not loaded."
 msgstr ""
 
-#: ../../api.rst:2898
+#: ../../api.rst:2920
 msgid "Exception Hierarchy"
 msgstr ""
 
-#: ../../api.rst:2912
+#: ../../api.rst:2935
 msgid ":exc:`Exception`"
 msgstr ""
 
-#: ../../api.rst:2912
+#: ../../api.rst:2935
 msgid ":exc:`DiscordException`"
 msgstr ""
 
-#: ../../api.rst:2907
+#: ../../api.rst:2929
 msgid ":exc:`ClientException`"
 msgstr ""
 
-#: ../../api.rst:2905
+#: ../../api.rst:2927
 msgid ":exc:`InvalidData`"
 msgstr ""
 
-#: ../../api.rst:2906
+#: ../../api.rst:2928
 msgid ":exc:`InvalidArgument`"
 msgstr ""
 
-#: ../../api.rst:2907
+#: ../../api.rst:2929
 msgid ":exc:`LoginFailure`"
 msgstr ""
 
-#: ../../api.rst:2908
+#: ../../api.rst:2930
 msgid ":exc:`ConnectionClosed`"
 msgstr ""
 
-#: ../../api.rst:2909
+#: ../../api.rst:2931
 msgid ":exc:`NoMoreItems`"
 msgstr ""
 
-#: ../../api.rst:2910
+#: ../../api.rst:2932
 msgid ":exc:`GatewayNotFound`"
 msgstr ""
 
-#: ../../api.rst:2912
+#: ../../api.rst:2935
 msgid ":exc:`HTTPException`"
 msgstr ""
 
-#: ../../api.rst:2912
+#: ../../api.rst:2934
 msgid ":exc:`Forbidden`"
 msgstr ""
 
-#: ../../api.rst:2913
+#: ../../api.rst:2935
 msgid ":exc:`NotFound`"
+msgstr ""
+
+#: ../../api.rst:2936
+msgid ":exc:`DiscordServerError`"
 msgstr ""
 
 #~ msgid ""
@@ -15540,5 +15704,37 @@ msgstr ""
 #~ "A factory method that creates a "
 #~ ":class:`Permissions` with all permissions set"
 #~ " to True."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the invite is for a guild "
+#~ "you have not joined, the guild and"
+#~ " channel attributes of the returned "
+#~ ":class:`.Invite` will be "
+#~ ":class:`.PartialInviteGuild` and "
+#~ ":class:`PartialInviteChannel` respectively."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A datetime object that specifies the "
+#~ "date and time in UTC that the "
+#~ "member joined the guild for the "
+#~ "first time. In certain cases, this "
+#~ "can be ``None``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The member who added the reaction. "
+#~ "Only available if `event_type` is "
+#~ "`REACTION_ADD`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This class can be set during "
+#~ ":class:`Client` initialization to apply to "
+#~ "every message sent. It can also be"
+#~ " applied on a per message basis "
+#~ "via :meth:`abc.Messageable.send` for more "
+#~ "fine-grained control."
 #~ msgstr ""
 
