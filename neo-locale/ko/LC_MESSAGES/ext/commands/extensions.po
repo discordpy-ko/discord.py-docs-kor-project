@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py 1.4.0a\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-27 13:27+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../ext/commands/extensions.rst:6
+msgid "Extensions"
+msgstr "확장"
+
+#: ../../ext/commands/extensions.rst:8
+msgid ""
+"There comes a time in the bot development when you want to extend the bot"
+" functionality at run-time and quickly unload and reload code (also "
+"called hot-reloading). The command framework comes with this ability "
+"built-in, with a concept called **extensions**."
+msgstr ""
+"봇의 개발 단계에서는 런타임에 봇 기능을 확장하고 코드를 신속하게 언로드/리로드"
+"(핫 리로딩이라고도 불림) 하고 싶을 때가 옵니다. 커맨드 프레임워크에는 **확장**"
+"\\이라는 기능이 내장되어 있습니다."
+
+#: ../../ext/commands/extensions.rst:11
+msgid "Primer"
+msgstr "기초"
+
+#: ../../ext/commands/extensions.rst:13
+msgid ""
+"An extension at its core is a python file with an entry point called "
+"``setup``. This setup must be a plain Python function (not a coroutine). "
+"It takes a single parameter -- the :class:`~.commands.Bot` that loads the"
+" extension."
+msgstr ""
+"확장의 중심부인 파이썬 파일에는 ``setup``\\이라고 불리우는 진입점이 있습니다."
+" 이 셋업은 반드시 기본적인 Python 함수여야 합니다 (코루틴이 아닙니다). 이 함수는"
+" 하나의 매개변수를 가집니다 -- 확장자를 로드하는 :class:`~.commands.Bot`\\입니다."
+
+#: ../../ext/commands/extensions.rst:15
+msgid "An example extension looks like this:"
+msgstr "확장의 예제는 다음과 같이 생겼습니다:"
+
+#: ../../ext/commands/extensions.rst:17
+msgid "hello.py"
+msgstr ""
+
+#: ../../ext/commands/extensions.rst:30
+msgid ""
+"In this example we define a simple command, and when the extension is "
+"loaded this command is added to the bot. Now the final step to this is "
+"loading the extension, which we do by calling "
+":meth:`.commands.Bot.load_extension`. To load this extension we call "
+"``bot.load_extension('hello')``."
+msgstr ""
+"이 예시에서 우리는 간단한 명령어를 정의하였고, 확장이 로드될 때 이 명령어는"
+" 봇에 추가됩니다. 이제 마지막 단계는 :meth:`.commands.Bot.load_extension`\\"
+"을 호출하는 것입니다. 이 확장을 로드하기 위해서는 ``bot.load_extension('hello')``"
+"\\을 호출합니다.
+#: ../../ext/commands/extensions.rst:32
+msgid "Cogs"
+msgstr ""
+
+#: ../../ext/commands/extensions.rst:35
+msgid ""
+"Extensions are usually used in conjunction with cogs. To read more about "
+"them, check out the documentation, :ref:`ext_commands_cogs`."
+msgstr ""
+"확장자는 보통 cogs와 함께 사용됩니다. 더 자세한 정보는 :ref:`ext_commands_cogs`"
+" 문서를 확인하세요."
+
+#: ../../ext/commands/extensions.rst:39
+msgid ""
+"Extension paths are ultimately similar to the import mechanism. What this"
+" means is that if there is a folder, then it must be dot-qualified. For "
+"example to load an extension in ``plugins/hello.py`` then we use the "
+"string ``plugins.hello``."
+msgstr ""
+"확장자의 경로는 궁극적으로는 import 메커니즘과 비슷합니다. 이 뜻은 만약"
+" 폴더가 존재할 경우, 반드시 마침표로 구분되어야 합니다. 예를 들어,"
+" ``plugins/hello.py``\\에 있는 확장을 로드하는 경우, ``plugins.hello``\\"
+"로 사용합니다."
+
+#: ../../ext/commands/extensions.rst:42
+msgid "Reloading"
+msgstr "리로딩"
+
+#: ../../ext/commands/extensions.rst:44
+msgid ""
+"When you make a change to the extension and want to reload the "
+"references, the library comes with a function to do this for you, "
+":meth:`Bot.reload_extension`."
+msgstr ""
+"확장자에 변화를 주고 레퍼런스를 리로드하고 싶은 경우, :meth:`Bot.reload_extension`"
+"\\ 함수와 라이브러리가 도움을 줄 것입니다."
+
+#: ../../ext/commands/extensions.rst:50
+msgid ""
+"Once the extension reloads, any changes that we did will be applied. This"
+" is useful if we want to add or remove functionality without restarting "
+"our bot. If an error occurred during the reloading process, the bot will "
+"pretend as if the reload never happened."
+msgstr "확장이 리로드되면 확장에 포함된 모든 변경사항이 적용됩니다. 이는"
+" 봇을 재시작하지 않고 기능을 추가하거나 제거할 때"
+"유용합니다. 만약 리로딩 과정에 오류가 발생하면 봇에"
+"변경 사항이 적용되지 않습니다."
+
+#: ../../ext/commands/extensions.rst:53
+msgid "Cleaning Up"
+msgstr "확장 정리하기"
+
+#: ../../ext/commands/extensions.rst:55
+msgid ""
+"Although rare, sometimes an extension needs to clean-up or know when it's"
+" being unloaded. For cases like these, there is another entry point named"
+" ``teardown`` which is similar to ``setup`` except called when the "
+"extension is unloaded."
+msgstr "가끔 확장을 정리하거나 언로드되었는지 확인해야 할 때가 있습니다. "
+"이런 경우를 위해 ``teardown`` 진입점이 존재합니다. 이는 "
+"``setup``\\과 비슷하지만 확장이 언로드될 때 호출됩니다."
+
+#: ../../ext/commands/extensions.rst:57
+msgid "basic_ext.py"
+msgstr "basic_ext.py"

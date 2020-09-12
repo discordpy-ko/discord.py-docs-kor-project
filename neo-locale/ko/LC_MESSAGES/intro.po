@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py 1.4.0a\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-27 13:27+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../intro.rst:6
+msgid "Introduction"
+msgstr "소개"
+
+#: ../../intro.rst:8
+msgid ""
+"This is the documentation for discord.py, a library for Python to aid in "
+"creating applications that utilise the Discord API."
+msgstr ""
+"이 문서는 디스코드 API를 이용한 애플리케이션을 생성하는 데 도움을 주는 "
+"discord.py의 문서입니다."
+
+#: ../../intro.rst:12
+msgid "Prerequisites"
+msgstr "요구 조건"
+
+#: ../../intro.rst:14
+msgid ""
+"discord.py works with Python 3.5.3 or higher. Support for earlier "
+"versions of Python is not provided. Python 2.7 or lower is not supported."
+" Python 3.4 or lower is not supported due to one of the dependencies "
+"(:doc:`aiohttp <aio:index>`) not supporting Python 3.4."
+msgstr ""
+"discord.py는 Python 3.5.3 버전 이상에서 동작합니다. "
+"그 이하 혹은 Python 2.7 이하에서는 지원되지 않습니다. "
+"Python 3.4 이하에서는 discord.py에 필요한 (:doc:`aiohttp <aio:index>`)가 지원되지 않습니다."
+
+#: ../../intro.rst:22
+msgid "Installing"
+msgstr "설치"
+
+#: ../../intro.rst:24
+msgid "You can get the library directly from PyPI: ::"
+msgstr "PyPI에서 이 라이브러리를 바로 가져올 수 있습니다: ::"
+
+#: ../../intro.rst:28
+msgid "If you are using Windows, then the following should be used instead: ::"
+msgstr "만약 윈도우를 사용하신다면, 다음의 코드를 사용하셔야 합니다: ::"
+
+#: ../../intro.rst:33
+msgid ""
+"To get voice support, you should use ``discord.py[voice]`` instead of "
+"``discord.py``, e.g. ::"
+msgstr "음성 기능을 사용하기 위해서는 ``discord.py`` 대신 "
+" ``discord.py[voice]`` 를 사용하셔야 합니다. 예를 들어: ::"
+
+#: ../../intro.rst:37
+msgid ""
+"On Linux environments, installing voice requires getting the following "
+"dependencies:"
+msgstr "리눅스 환경에서 음성 기능을 사용하기 위해서는 아래의 모듈들이 필요합니다: "
+
+#: ../../intro.rst:39
+msgid "`libffi <https://github.com/libffi/libffi>`_"
+msgstr ""
+
+#: ../../intro.rst:40
+msgid "`libnacl <https://github.com/saltstack/libnacl>`_"
+msgstr ""
+
+#: ../../intro.rst:41
+msgid "`python3-dev <https://packages.debian.org/python3-dev>`_"
+msgstr ""
+
+#: ../../intro.rst:43
+msgid ""
+"For a Debian-based system, the following command will get these "
+"dependencies:"
+msgstr "데비안 기반 시스템에서는 다음 명령어로 필요한 모듈들을 설치할 수 있습니다: "
+
+#: ../../intro.rst:49
+msgid "Remember to check your permissions!"
+msgstr "시스템 권한을 가졌는지 확인하세요!"
+
+#: ../../intro.rst:52
+msgid "Virtual Environments"
+msgstr "가상 환경"
+
+#: ../../intro.rst:54
+msgid ""
+"Sometimes you want to keep libraries from polluting system installs or "
+"use a different version of libraries than the ones installed on the "
+"system. You might also not have permissions to install libaries system-"
+"wide. For this purpose, the standard library as of Python 3.3 comes with "
+"a concept called \"Virtual Environment\"s to help maintain these separate"
+" versions."
+msgstr "라이브러리를 난잡한 시스템으로부터 분리하거나, "
+"시스템에 설치된 라이브러리와 다른 버전의 라이브러리를 사용하시거나 "
+"혹은 시스템 전체에 라이브러리를 설치할 권한이 없을 수도 있습니다."
+"이를 위해 Python 3.3버전 이상의 표준 라이브러리에는 "
+"이러한 가상 버전을 유지하는 데 도움이 되는 \"가상 환경\"이라는 개념이 있습니다."
+
+#: ../../intro.rst:59
+msgid "A more in-depth tutorial is found on :doc:`py:tutorial/venv`."
+msgstr ":doc:`py:tutorial/venv` 에서 더 많은 정보를 확인하세요."
+
+#: ../../intro.rst:61
+msgid "However, for the quick and dirty:"
+msgstr "다만 빠르게 진행하고 싶다면:"
+
+#: ../../intro.rst:63
+msgid "Go to your project's working directory:"
+msgstr "당신의 프로젝트 폴더로 가세요:"
+
+#: ../../intro.rst:70
+msgid "Activate the virtual environment:"
+msgstr "가상 환경을 활성화하세요:"
+
+#: ../../intro.rst:76
+msgid "On Windows you activate it with:"
+msgstr "윈도우에서 활성화하시려면:"
+
+#: ../../intro.rst:82
+msgid "Use pip like usual:"
+msgstr "평소와 같이 pip를 이용하세요:"
+
+#: ../../intro.rst:88
+msgid "Congratulations. You now have a virtual environment all set up."
+msgstr "축하합니다. 이제 가상 환경 설정을 모두 끝냈습니다."
+
+#: ../../intro.rst:91
+msgid "Basic Concepts"
+msgstr "기본 개념"
+
+#: ../../intro.rst:93
+msgid ""
+"discord.py revolves around the concept of :ref:`events <discord-api-"
+"events>`. An event is something you listen to and then respond to. For "
+"example, when a message happens, you will receive an event about it that "
+"you can respond to."
+msgstr "discord.py는 :ref:`events <discord-api-events>` 개념을 중심으로 진행됩니다. "
+"이벤트는 봇이 감지하고 응답하는 것입니다. "
+"예를 들어, 메시지가 발생하면 이벤트가 수신됩니다."
+
+#: ../../intro.rst:97
+msgid "A quick example to showcase how events work:"
+msgstr "이벤트의 작동 방법을 보여주는 예:"

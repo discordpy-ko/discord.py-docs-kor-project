@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py 1.4.0a\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-27 13:27+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../logging.rst:5
+msgid "Setting Up Logging"
+msgstr "로깅 설정"
+
+#: ../../logging.rst:7
+msgid ""
+"*discord.py* logs errors and debug information via the :mod:`logging` "
+"python module. It is strongly recommended that the logging module is "
+"configured, as no errors or warnings will be output if it is not set up. "
+"Configuration of the ``logging`` module can be as simple as::"
+msgstr ""
+"*discord.py* 는 :mod:`logging` 파이썬 모듈을 사용하여 에러를 기록하고 정보를"
+" 디버깅합니다. 로깅 모듈이 설정되지 않은 경우 에러나 경고가 출력되지 않기 때문에"
+" 로깅 모듈을 구성하는 것을 강력히 추천합니다. ``logging`` 모듈은 다음과 같이"
+" 간단하게 구성될 수 있습니다."
+
+#: ../../logging.rst:16
+msgid ""
+"Placed at the start of the application. This will output the logs from "
+"discord as well as other libraries that uses the ``logging`` module "
+"directly to the console."
+msgstr ""
+"애플리케이션의 시작 부분에 배치하세요. 이는 디스코드 뿐만 아니라 ``logging``"
+" 모듈을 사용하는 다른 라이브러리의 로그를 콘솔에 출력할 것입니다."
+
+#: ../../logging.rst:20
+msgid ""
+"The optional ``level`` argument specifies what level of events to log out"
+" and can any of ``CRITICAL``, ``ERROR``, ``WARNING``, ``INFO``, and "
+"``DEBUG`` and if not specified defaults to ``WARNING``."
+msgstr ""
+"선택적 ``level`` 인수는 ``CRITICAL``, ``ERROR``, ``WARNING``, ``INFO``,"
+" ``DEBUG`` 레벨에서 기록할 이벤트의 수준을 지정합니다. 만약 지정되지 않은"
+" 경우 ``WARNING`` 을 기본값으로 지정합니다."
+
+#: ../../logging.rst:24
+msgid ""
+"More advance setups are possible with the :mod:`logging` module.  To for "
+"example write the logs to a file called ``discord.log`` instead of "
+"outputting them to to the console the following snippet can be used::"
+msgstr ""
+":mod:`logging` 모듈을 사용하면 더욱 많은 고급 설정이 가능합니다. 예를 들어,"
+" 콘솔에 모든 로그를 출력하는 것 대신 ``discord.log`` 파일에 로그를 작성하기"
+" 위해서는 다음과 같은 코드가 쓰일 수 있습니다:: "
+
+#: ../../logging.rst:37
+msgid ""
+"This is recommended, especially at verbose levels such as ``INFO``, and "
+"``DEBUG`` as there are a lot of events logged and it would clog the "
+"stdout of your program."
+msgstr ""
+"``INFO``, ``DEBUG`` 등과 같은 상세한 수준에서 많은 이벤트가 기록되고"
+"당신의 표준 스트림을 망가뜨릴 것이기 때문에 이 방법이 권장됩니다."
+
+#: ../../logging.rst:43
+msgid ""
+"For more information, check the documentation and tutorial of the "
+":mod:`logging` module."
+msgstr ""
+":mod:`logging` 모듈의 문서와 튜토리얼을 확인하여 더 자세한 정보를"
+" 확인하세요."
+

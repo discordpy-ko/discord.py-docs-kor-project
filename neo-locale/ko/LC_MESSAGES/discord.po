@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py 1.4.0a\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-01 22:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../discord.rst:4
+msgid "Creating a Bot Account"
+msgstr "봇 계정 생성"
+
+#: ../../discord.rst:6
+msgid ""
+"In order to work with the library and the Discord API in general, we must"
+" first create a Discord Bot account."
+msgstr "라이브러리와 디스코드 API를 사용하여 작업하기 위해서 우리는 먼저 디스코드 봇 계정을 생성해야 합니다."
+
+#: ../../discord.rst:8
+msgid "Creating a Bot account is a pretty straightforward process."
+msgstr "봇의 계정을 만드는 과정은 꽤 간단합니다."
+
+#: ../../discord.rst:10 ../../discord.rst:64
+#, fuzzy
+msgid ""
+"Make sure you're logged on to the `Discord website "
+"<https://discord.com>`_."
+msgstr "`디스코드 웹사이트 <https://discordapp.com>`_\\에 로그인했는지 확인하세요."
+
+#: ../../discord.rst:11 ../../discord.rst:65
+#, fuzzy
+msgid ""
+"Navigate to the `application page "
+"<https://discord.com/developers/applications>`_"
+msgstr "`애플리케이션 페이지 <https://discordapp.com/developers/applications>`_\\로 이동합시다."
+
+#: ../../discord.rst:12
+msgid "Click on the \"New Application\" button."
+msgstr "\"New Application\" 버튼을 클릭합니다."
+
+#: ../../discord.rst:17
+msgid "Give the application a name and click \"Create\"."
+msgstr "애플리케이션의 이름을 짓고 \"Create\"\\를 클릭합니다."
+
+#: ../../discord.rst:22
+msgid ""
+"Create a Bot User by navigating to the \"Bot\" tab and clicking \"Add "
+"Bot\"."
+msgstr "\"Bot\" 탭으로 이동해 \"Add Bot\"\\을 클릭하여 봇을 생성합니다."
+
+#: ../../discord.rst:24
+msgid "Click \"Yes, do it!\" to continue."
+msgstr "계속하기 위해서 \"Yes, do it!\"\\을 클릭합니다."
+
+#: ../../discord.rst:28
+msgid ""
+"Make sure that **Public Bot** is ticked if you want others to invite your"
+" bot."
+msgstr "다른 사람들이 당신의 봇을 초대하길 원한다면 **Public Bot**\\이 활성화되어 있는지 확인하세요."
+
+#: ../../discord.rst:30
+msgid ""
+"You should also make sure that **Require OAuth2 Code Grant** is unchecked"
+" unless you are developing a service that needs it. If you're unsure, "
+"then **leave it unchecked**."
+msgstr ""
+"또한 **Require OAuth2 Code Grant**\\가 필요하지 않다면 비활성화되어 있는지 확인해야 합니다. 잘 모르겠다면 "
+"그냥 비활성화 상태로 놔두세요."
+
+#: ../../discord.rst:36
+msgid "Copy the token using the \"Copy\" button."
+msgstr "\"Copy\" 버튼을 클릭하여 토큰을 복사합니다."
+
+#: ../../discord.rst:38
+msgid "**This is not the Client Secret at the General Information page**"
+msgstr "**이것은 General Information 페이지의 CLIENT SECRET 이 아닙니다.**"
+
+#: ../../discord.rst:42
+msgid ""
+"It should be worth noting that this token is essentially your bot's "
+"password. You should **never** share this to someone else. In doing so, "
+"someone can log in to your bot and do malicious things, such as leaving "
+"servers, ban all members inside a server, or pinging everyone "
+"maliciously."
+msgstr ""
+"토큰은 당신의 봇의 암호라고 해도 과언이 아닙니다. 당신은 **절대로** 이것을 다른 사람과 공유해서는 안 됩니다. 만약 하게 "
+"된다면, 누군가가 당신의 봇에 로그인하여 악의적인 짓을 할 수 있습니다. 악의적인 행동에는 서버를 나가거나, 서버에 있는 모든 "
+"사용자를 차단하거나, 악의적으로 모든 사람을 멘션 하는 것 등이 있습니다."
+
+#: ../../discord.rst:47
+msgid "The possibilities are endless, so **do not share this token.**"
+msgstr "상상 이상의 많은 것들이 가능하므로, **이 토큰을 공유하지 마세요.**"
+
+#: ../../discord.rst:49
+msgid ""
+"If you accidentally leaked your token, click the \"Regenerate\" button as"
+" soon as possible. This revokes your old token and re-generates a new "
+"one. Now you need to use the new token to login."
+msgstr ""
+"만약 당신이 실수로 토큰을 유출하였다면, 최대한 빨리 \"Regenerate\" 버튼을 클릭하세요. 이것은 기존 토큰을 삭제하고 "
+"새로운 토큰을 생성합니다. 그리고 당신은 새로운 토큰을 사용해서 로그인해야 합니다."
+
+#: ../../discord.rst:53
+msgid ""
+"And that's it. You now have a bot account and you can login with that "
+"token."
+msgstr "이게 끝입니다. 이제 봇 계정을 만들었고, 봇에 로그인할 수 있습니다."
+
+#: ../../discord.rst:58
+msgid "Inviting Your Bot"
+msgstr "봇 초대"
+
+#: ../../discord.rst:60
+msgid "So you've made a Bot User but it's not actually in any server."
+msgstr "봇은 만들었지만, 아무런 서버에도 접속하지 않았습니다."
+
+#: ../../discord.rst:62
+msgid "If you want to invite your bot you must create an invite URL for it."
+msgstr "당신이 봇을 초대하고 싶다면 반드시 초대 URL을 생성해야 합니다."
+
+#: ../../discord.rst:66
+msgid "Click on your bot's page."
+msgstr "봇 페이지를 클릭합니다."
+
+#: ../../discord.rst:67
+msgid "Go to the \"OAuth2\" tab."
+msgstr "\"OAuth2\" 탭으로 이동합니다."
+
+#: ../../discord.rst:72
+msgid "Tick the \"bot\" checkbox under \"scopes\"."
+msgstr "\"scopes\"\\에서 \"bot\"\\을 활성화합니다."
+
+#: ../../discord.rst:77
+msgid ""
+"Tick the permissions required for your bot to function under \"Bot "
+"Permissions\"."
+msgstr "\"Bot Permissions\"\\에서 봇이 필요한 권한을 활성화합니다."
+
+#: ../../discord.rst:79
+msgid ""
+"Please be aware of the consequences of requiring your bot to have the "
+"\"Administrator\" permission."
+msgstr "당신의 봇이 \"관리자\" 권한을 갖는 것에 대해 유의하십시오."
+
+#: ../../discord.rst:81
+#, fuzzy
+msgid ""
+"Bot owners must have 2FA enabled for certain actions and permissions when"
+" added in servers that have Server-Wide 2FA enabled. Check the `2FA "
+"support page <https://support.discord.com/hc/en-us/articles/219576828"
+"-Setting-up-Two-Factor-Authentication>`_ for more information."
+msgstr ""
+"봇의 소유자는 2FA가 활성화된 서버에 봇이 추가될 때 특정 작업 및 권한에 대해 2FA를 사용하도록 설정해야 합니다. `2FA "
+"지원 페이지 "
+"<https://support.discordapp.com/hc/ko/articles/219576828-2단계-인증-설정하기>`_\\"
+"에서 자세한 정보를 확인하세요."
+
+#: ../../discord.rst:86
+msgid ""
+"Now the resulting URL can be used to add your bot to a server. Copy and "
+"paste the URL into your browser, choose a server to invite the bot to, "
+"and click \"Authorize\"."
+msgstr ""
+"이제 생성된 URL을 사용하여 봇을 서버에 초대할 수 있습니다. 브라우저에 URL을 복사 및 붙여넣기 하여 봇이 접속할 서버를 "
+"선택하고 \"Authorize\"\\를 클릭하세요."
+
+#: ../../discord.rst:91
+msgid "The person adding the bot needs \"Manage Server\" permissions to do so."
+msgstr "봇을 추가하기 위해선 \"서버 관리\" 권한을 갖고 있어야 합니다."
+
+#: ../../discord.rst:93
+msgid ""
+"If you want to generate this URL dynamically at run-time inside your bot "
+"and using the :class:`discord.Permissions` interface, you can use "
+":func:`discord.utils.oauth_url`."
+msgstr ""
+"만약 :class:`discord.Permissions`\\를 사용하여 봇의 런타임에서 동적 URL을 생성하고 싶다면 "
+":func:`discord.utils.oauth_url`\\을 사용하세요."
+
