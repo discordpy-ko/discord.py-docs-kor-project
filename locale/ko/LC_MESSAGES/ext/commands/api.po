@@ -618,7 +618,7 @@ msgstr ""
 #: discord.ext.commands.VoiceChannelConverter.convert:1
 #: discord.ext.commands.clean_content.convert:1 of
 msgid "|coro|"
-msgstr "이 함수는 :ref:`코루틴 <coroutine>` 입니다."
+msgstr "이 함수는 |coroutine_link|_ 입니다."
 
 #: discord.ext.commands.Bot.application_info:3 of
 msgid "Retrieves the bot's application information."
