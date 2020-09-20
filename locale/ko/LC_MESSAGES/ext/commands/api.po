@@ -4261,23 +4261,24 @@ msgstr "메시지 역사 요청이 실패했습니다."
 
 #: discord.ext.commands.Context.history:43 of
 msgid ":class:`~discord.Message` -- The message with the message data parsed."
-msgstr ":class:`~discord.Message` -- 메시지 데이터가 파싱된 메시지"
+msgstr ":class:`~discord.Message` -- 파싱된 메시지 데이터가 들어있는 메시지 객체"
 
 #: discord.ext.commands.Context.typing:1 of
 msgid ""
 "Returns a context manager that allows you to type for an indefinite "
 "period of time."
-msgstr ""
+msgstr "제한되지 않은 시간동안 입력할 수 있도록 하는 컨텍스트 매니저를 반환."
 
 #: discord.ext.commands.Context.typing:3 of
 msgid "This is useful for denoting long computations in your bot."
-msgstr ""
+msgstr "이것은 봇이 오랫동안 계산 등을 할 때 유용합니다."
 
 #: discord.ext.commands.Context.typing:7 of
 msgid ""
 "This is both a regular context manager and an async context manager. This"
 " means that both ``with`` and ``async with`` work with this."
-msgstr ""
+msgstr "이것은 평범한 컨텍스트 매니저이기도 하고 비동기 컨텍스트 매니저이기도 합니다. "
+"이 말은 ``with``\\와 ``async with`` 둘다 가능하다는 뜻입니다."
 
 #: discord.ext.commands.Context.typing:10 of
 msgid "Example Usage: ::"
@@ -4330,13 +4331,14 @@ msgstr "실행될 명령어 인자가 없습니다."
 
 #: discord.ext.commands.Context.reinvoke:3 of
 msgid "Calls the command again."
-msgstr ""
+msgstr "명령어를 다시 호출합니다."
 
 #: discord.ext.commands.Context.reinvoke:5 of
 msgid ""
 "This is similar to :meth:`~.Context.invoke` except that it bypasses "
 "checks, cooldowns, and error handlers."
-msgstr ""
+msgstr "이것은 체크, 쿨다운, 그리고 에러 핸들러들을 무시한다는 점을 뺀다면 "
+":meth:`~.Context.invoke`\\와 비슷합니다."
 
 #: discord.ext.commands.Context.reinvoke:10 of
 msgid ""
@@ -4344,11 +4346,14 @@ msgid ""
 "recommended to use the regular :meth:`~.Context.invoke` as it will work "
 "more naturally. After all, this will end up using the old arguments the "
 "user has used and will thus just fail again."
-msgstr ""
+msgstr "만약에 :exc:`.UserInputError`\\에서 파생된 예외를 무시하고 싶다면, 기본적인 "
+":meth:`~.Context.invoke`\\를 사용하는 것을 추천하는데 더 자연스럽게 작동하기 때문입니다. "
+"어쨌든, 이 함수는 유저가 기존에 사용했던 오래된 인자들을 재사용하게 될 것이고 "
+"결국 명령어 실행이 다시 실패할 것입니다."
 
 #: discord.ext.commands.Context.reinvoke:16 of
 msgid "Whether to call the before and after invoke hooks."
-msgstr ""
+msgstr "명령어 실행 이전 또는 이후의 후크를 호출할 것인지의 여부."
 
 #: discord.ext.commands.Context.reinvoke:18 of
 msgid ""
