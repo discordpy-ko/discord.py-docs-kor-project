@@ -25,7 +25,7 @@ msgstr "discord.py에 오신 것을 환영합니다"
 msgid ""
 "discord.py is a modern, easy to use, feature-rich, and async ready API "
 "wrapper for Discord."
-msgstr "discord.py는 현대적이고, 사용하기 쉽고, 많은 기능을 담고 있고, 비동기(async)가 준비된 디스코드를 위한 API 래퍼입니다."
+msgstr "discord.py는 현대적이고, 사용하기 쉽고, 많은 기능을 담고 있고, 비동기가 준비된 디스코드를 위한 API 래퍼입니다."
 
 #: ../../index.rst:14
 msgid "**Features:**"
