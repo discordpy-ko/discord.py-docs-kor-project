@@ -4360,21 +4360,22 @@ msgid ""
 "Whether to start the call chain from the very beginning or where we left "
 "off (i.e. the command that caused the error). The default is to start "
 "where we left off."
-msgstr ""
+msgstr "콜 체인을 완전 처음부터 또는 멈춘 시점부터(예를 들면 오류를 일으킨 명령어) "
+"시작할 것인지의 여부. 기본값은 멈춘 시점부터 입니다."
 
 #: discord.ext.commands.Context.reinvoke:23 of
 msgid "The context to reinvoke is not valid."
-msgstr ""
+msgstr "재실행할 컨텍스트가 잘못되었습니다."
 
 #: discord.ext.commands.Context.valid:1 of
 msgid "Checks if the invocation context is valid to be invoked with."
-msgstr ""
+msgstr "실행 컨텍스트가 실행될 수 있는지 확인."
 
 #: discord.ext.commands.Context.cog:1 of
 msgid ""
 "Returns the cog associated with this context's command. None if it does "
 "not exist."
-msgstr ""
+msgstr "이 컨텍스트의 명령어와 연관된 Cog를 반환. 존재하지 않는다면 None 입니다."
 
 #: discord.ext.commands.Context.cog:3 of
 msgid ":class:`.Cog`"
@@ -4384,35 +4385,39 @@ msgstr ""
 msgid ""
 "Returns the guild associated with this context's command. None if not "
 "available."
-msgstr ""
+msgstr "이 컨텍스트의 명령어와 연관된 길드를 반환. 사용할 수 없다면 None 입니다."
 
 #: discord.ext.commands.Context.channel:1 of
 msgid ""
 ":class:`.TextChannel`: Returns the channel associated with this context's"
 " command. Shorthand for :attr:`.Message.channel`."
-msgstr ""
+msgstr ":class:`.TextChannel`: 이 컨텍스트의 명령어와 연관된 채널을 반환."
+" :attr:`.Message.channel`\\을 단축한 것입니다."
 
 #: discord.ext.commands.Context.author:1 of
 msgid ""
 "Union[:class:`~discord.User`, :class:`.Member`]: Returns the author "
 "associated with this context's command. Shorthand for "
 ":attr:`.Message.author`"
-msgstr ""
+msgstr "Union[:class:`~discord.User`, :class:`.Member`]: 이 컨텍스트의 명령어와 연관된 메시지 작성자를 반환."
+" :attr:`.Message.author`\\를 단축한 것입니다."
 
 #: discord.ext.commands.Context.me:1 of
 msgid ""
 "Union[:class:`.Member`, :class:`.ClientUser`]: Similar to "
 ":attr:`.Guild.me` except it may return the :class:`.ClientUser` in "
 "private message contexts."
-msgstr ""
+msgstr "Union[:class:`.Member`, :class:`.ClientUser`]: "
+"개인 메시지 컨텍스트일 경우 :class:`.ClientUser`\\를 반환할 수 있다는 점만 제외한다면 "
+":attr:`.Guild.me`\\와 비슷합니다."
 
 #: discord.ext.commands.Context.voice_client:1 of
 msgid "A shortcut to :attr:`.Guild.voice_client`\\, if applicable."
-msgstr ""
+msgstr "사용할 수 있다면 :attr:`.Guild.voice_client`\\의 단축입니다."
 
 #: discord.ext.commands.Context.voice_client:3 of
 msgid "Optional[:class:`.VoiceClient`]"
-msgstr ""
+msgstr "Optional[:class:`.VoiceClient`]"
 
 #: discord.ext.commands.Context.send_help:3 of
 msgid ""
