@@ -790,7 +790,7 @@ msgstr "클라이언트의 내부 캐시를 사용할 준비가 되었는지의 
 #: discord.abc.Messageable.send:1 discord.abc.Messageable.trigger_typing:1
 #: discord.utils.sleep_until:1 of
 msgid "|coro|"
-msgstr "이 함수는 |coroutine_link|_ 입니다."
+msgstr ""
 
 #: discord.Client.on_error:3 of
 msgid "The default error handler provided by the client."
