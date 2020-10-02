@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-12 11:04+0900\n"
+"POT-Creation-Date: 2020-10-02 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../ext/commands/api.rst:4
-msgid "API 레퍼런스"
+msgid "API Reference"
 msgstr ""
 
 #: ../../ext/commands/api.rst:6
@@ -41,16 +41,14 @@ msgid ""
 "anything that you can do with a :class:`discord.Client` you can do with "
 "this bot."
 msgstr ""
-"이 클래스는 :class:`discord.Client` 의 서브클래스이며 "
-"결과적으로 :class:`discord.Client` 로 할 수 있는 모든 작업을 이 봇으로 할 수 있습니다."
+"이 클래스는 :class:`discord.Client` 의 서브클래스이며 결과적으로 :class:`discord.Client` 로 "
+"할 수 있는 모든 작업을 이 봇으로 할 수 있습니다."
 
 #: discord.ext.commands.Bot:7 of
 msgid ""
 "This class also subclasses :class:`.GroupMixin` to provide the "
 "functionality to manage commands."
-msgstr ""
-"또한 이 클래스는 커맨드를 관리하는 기능을 제공하기 위해 :class:`.GroupMixin` "
-"를 서브클래스로 갖습니다."
+msgstr "또한 이 클래스는 커맨드를 관리하는 기능을 제공하기 위해 :class:`.GroupMixin` 를 서브클래스로 갖습니다."
 
 #: discord.ext.commands.Bot:12 of
 msgid ""
@@ -61,11 +59,9 @@ msgid ""
 "returns the prefix. This is to facilitate \"dynamic\" command prefixes. "
 "This callable can be either a regular function or a coroutine."
 msgstr ""
-"명령어 접두어는 커맨드를 실행하기 위해 메시지의 첫부분에 있어야 하는 내용입니다."
-"이는 접두어를 나타내는 문자열이거나, 봇을 첫 매개변수로 가지고 두 번째 매개변수를 "
-":class:`discord.Message` 로 가지는 콜러블이여야 합니다. "
-"이는 명령어 접두사를 \"동적\"으로 설정할 수 있게 합니다. "
-"이 콜러블은 일반 함수이거나 코루틴일 수 있습니다."
+"명령어 접두어는 커맨드를 실행하기 위해 메시지의 첫부분에 있어야 하는 내용입니다.이는 접두어를 나타내는 문자열이거나, 봇을 첫 "
+"매개변수로 가지고 두 번째 매개변수를 :class:`discord.Message` 로 가지는 콜러블이여야 합니다. 이는 명령어 "
+"접두사를 \"동적\"으로 설정할 수 있게 합니다. 이 콜러블은 일반 함수이거나 코루틴일 수 있습니다."
 
 #: discord.ext.commands.Bot:20 of
 msgid ""
@@ -74,9 +70,8 @@ msgid ""
 "in servers, as it's likely to cause performance issues and unintended "
 "command invocations."
 msgstr ""
-"접두어가 항상 일치하는 빈 문자열은 접두어 없는 명령 호출을 가능하게 합니다. "
-"DM에서는 유용할 수 있지만 성능 문제와 의도하지 않은 명령어의 호출이 "
-"발생할 수 있으므로 서버에서는 피해야 합니다."
+"접두어가 항상 일치하는 빈 문자열은 접두어 없는 명령 호출을 가능하게 합니다. DM에서는 유용할 수 있지만 성능 문제와 의도하지 "
+"않은 명령어의 호출이 발생할 수 있으므로 서버에서는 피해야 합니다."
 
 #: discord.ext.commands.Bot:25 of
 msgid ""
@@ -86,11 +81,9 @@ msgid ""
 ":attr:`.Context.prefix`. To avoid confusion empty iterables are not "
 "allowed."
 msgstr ""
-"명령어 접두어는 또한 접두사에 대한 여러 검사를 사용해야 할 경우 "
-"처음으로 일치하는 항목이 호출 접두사임을 나타내는, "
-"문자열들의 반복 가능 객체일 수 있습니다. "
-"이때 접두사는 :attr:`.Context.prefix` 를 통해 얻을 수 있습니다. "
-"혼동을 피하기 위해 빈 반복 가능 객체는 허용되지 않습니다."
+"명령어 접두어는 또한 접두사에 대한 여러 검사를 사용해야 할 경우 처음으로 일치하는 항목이 호출 접두사임을 나타내는, 문자열들의 "
+"반복 가능 객체일 수 있습니다. 이때 접두사는 :attr:`.Context.prefix` 를 통해 얻을 수 있습니다. 혼동을 피하기"
+" 위해 빈 반복 가능 객체는 허용되지 않습니다."
 
 #: discord.ext.commands.Bot:33 of
 msgid ""
@@ -115,9 +108,9 @@ msgstr ""
 #: discord.ext.commands.Bot.cached_messages discord.ext.commands.Bot.cogs
 #: discord.ext.commands.Bot.commands discord.ext.commands.Bot.emojis
 #: discord.ext.commands.Bot.extensions discord.ext.commands.Bot.guilds
-#: discord.ext.commands.Bot.latency discord.ext.commands.Bot.private_channels
-#: discord.ext.commands.Bot.user discord.ext.commands.Bot.users
-#: discord.ext.commands.Bot.voice_clients
+#: discord.ext.commands.Bot.intents discord.ext.commands.Bot.latency
+#: discord.ext.commands.Bot.private_channels discord.ext.commands.Bot.user
+#: discord.ext.commands.Bot.users discord.ext.commands.Bot.voice_clients
 #: discord.ext.commands.BotMissingAnyRole
 #: discord.ext.commands.BotMissingPermissions
 #: discord.ext.commands.BotMissingRole discord.ext.commands.ChannelNotFound
@@ -131,6 +124,7 @@ msgstr ""
 #: discord.ext.commands.Command.root_parent
 #: discord.ext.commands.Command.short_doc
 #: discord.ext.commands.Command.signature
+#: discord.ext.commands.CommandInvokeError
 #: discord.ext.commands.CommandOnCooldown
 #: discord.ext.commands.CommandRegistrationError discord.ext.commands.Context
 #: discord.ext.commands.Context.cog discord.ext.commands.Context.guild
@@ -146,6 +140,7 @@ msgstr ""
 #: discord.ext.commands.Group.root_parent discord.ext.commands.Group.short_doc
 #: discord.ext.commands.Group.signature discord.ext.commands.GroupMixin
 #: discord.ext.commands.GroupMixin.commands discord.ext.commands.HelpCommand
+#: discord.ext.commands.HelpCommand.clean_prefix
 #: discord.ext.commands.InvalidEndOfQuotedStringError
 #: discord.ext.commands.MaxConcurrencyReached
 #: discord.ext.commands.MemberNotFound discord.ext.commands.MessageNotFound
@@ -205,9 +200,11 @@ msgstr ""
 #: discord.ext.commands.Group.qualified_name:7
 #: discord.ext.commands.Group.short_doc:7
 #: discord.ext.commands.Group.signature:3
+#: discord.ext.commands.HelpCommand.clean_prefix:3
 #: discord.ext.commands.HelpCommand.command_not_found:13
 #: discord.ext.commands.HelpCommand.get_command_signature:7
 #: discord.ext.commands.HelpCommand.invoked_with:10
+#: discord.ext.commands.HelpCommand.remove_mentions:6
 #: discord.ext.commands.HelpCommand.subcommand_not_found:20
 #: discord.ext.commands.InvalidEndOfQuotedStringError:10
 #: discord.ext.commands.MemberNotFound:12
@@ -216,6 +213,8 @@ msgstr ""
 #: discord.ext.commands.MinimalHelpCommand:23
 #: discord.ext.commands.MinimalHelpCommand:48
 #: discord.ext.commands.MinimalHelpCommand.get_command_signature:7
+#: discord.ext.commands.MinimalHelpCommand.get_ending_note:6
+#: discord.ext.commands.MinimalHelpCommand.get_opening_note:9
 #: discord.ext.commands.Paginator:13 discord.ext.commands.Paginator:19
 #: discord.ext.commands.PartialEmojiConversionFailure:12
 #: discord.ext.commands.RoleNotFound:11
@@ -323,7 +322,6 @@ msgstr ""
 #: discord.ext.commands.Command.remove_check
 #: discord.ext.commands.Command.reset_cooldown
 #: discord.ext.commands.Context.fetch_message
-#: discord.ext.commands.Context.fetch_message_fast
 #: discord.ext.commands.Context.history discord.ext.commands.Context.invoke
 #: discord.ext.commands.Context.reinvoke discord.ext.commands.Context.send
 #: discord.ext.commands.Context.send_help
@@ -427,7 +425,6 @@ msgstr ""
 #: discord.ext.commands.Command.before_invoke
 #: discord.ext.commands.Command.can_run discord.ext.commands.Command.error
 #: discord.ext.commands.Context.fetch_message
-#: discord.ext.commands.Context.fetch_message_fast
 #: discord.ext.commands.Context.history discord.ext.commands.Context.invoke
 #: discord.ext.commands.Context.pins discord.ext.commands.Context.reinvoke
 #: discord.ext.commands.Context.send discord.ext.commands.Converter.convert
@@ -607,7 +604,6 @@ msgstr ""
 #: discord.ext.commands.Command.__call__:1
 #: discord.ext.commands.Command.can_run:1
 #: discord.ext.commands.Context.fetch_message:1
-#: discord.ext.commands.Context.fetch_message_fast:1
 #: discord.ext.commands.Context.invoke:1 discord.ext.commands.Context.pins:1
 #: discord.ext.commands.Context.reinvoke:1 discord.ext.commands.Context.send:1
 #: discord.ext.commands.Context.send_help:1
@@ -655,32 +651,37 @@ msgstr ""
 #: discord.ext.commands.Bot.get_command discord.ext.commands.Bot.get_context
 #: discord.ext.commands.Bot.get_emoji discord.ext.commands.Bot.get_guild
 #: discord.ext.commands.Bot.get_prefix discord.ext.commands.Bot.get_user
-#: discord.ext.commands.Bot.is_owner discord.ext.commands.Bot.remove_command
-#: discord.ext.commands.Bot.wait_for discord.ext.commands.Cog.get_commands
-#: discord.ext.commands.Cog.get_listeners discord.ext.commands.Command.can_run
-#: discord.ext.commands.Command.copy
+#: discord.ext.commands.Bot.group discord.ext.commands.Bot.is_owner
+#: discord.ext.commands.Bot.remove_command discord.ext.commands.Bot.wait_for
+#: discord.ext.commands.Cog.get_commands discord.ext.commands.Cog.get_listeners
+#: discord.ext.commands.Command.can_run discord.ext.commands.Command.copy
 #: discord.ext.commands.Command.get_cooldown_retry_after
 #: discord.ext.commands.Command.is_on_cooldown
-#: discord.ext.commands.Context.fetch_message
-#: discord.ext.commands.Context.fetch_message_fast
-#: discord.ext.commands.Context.pins discord.ext.commands.Context.send
-#: discord.ext.commands.Context.send_help discord.ext.commands.Group.can_run
-#: discord.ext.commands.Group.command discord.ext.commands.Group.copy
-#: discord.ext.commands.Group.get_command
+#: discord.ext.commands.Context.fetch_message discord.ext.commands.Context.pins
+#: discord.ext.commands.Context.send discord.ext.commands.Context.send_help
+#: discord.ext.commands.DefaultHelpCommand.get_destination
+#: discord.ext.commands.Group.can_run discord.ext.commands.Group.command
+#: discord.ext.commands.Group.copy discord.ext.commands.Group.get_command
 #: discord.ext.commands.Group.get_cooldown_retry_after
-#: discord.ext.commands.Group.is_on_cooldown
+#: discord.ext.commands.Group.group discord.ext.commands.Group.is_on_cooldown
 #: discord.ext.commands.Group.remove_command
 #: discord.ext.commands.GroupMixin.command
 #: discord.ext.commands.GroupMixin.get_command
+#: discord.ext.commands.GroupMixin.group
 #: discord.ext.commands.GroupMixin.remove_command
 #: discord.ext.commands.HelpCommand.cog
 #: discord.ext.commands.HelpCommand.command_not_found
 #: discord.ext.commands.HelpCommand.filter_commands
 #: discord.ext.commands.HelpCommand.get_command_signature
+#: discord.ext.commands.HelpCommand.get_destination
 #: discord.ext.commands.HelpCommand.get_max_size
 #: discord.ext.commands.HelpCommand.invoked_with
+#: discord.ext.commands.HelpCommand.remove_mentions
 #: discord.ext.commands.HelpCommand.subcommand_not_found
-#: discord.ext.commands.MinimalHelpCommand.get_command_signature of
+#: discord.ext.commands.MinimalHelpCommand.get_command_signature
+#: discord.ext.commands.MinimalHelpCommand.get_destination
+#: discord.ext.commands.MinimalHelpCommand.get_ending_note
+#: discord.ext.commands.MinimalHelpCommand.get_opening_note of
 msgid "반환값"
 msgstr ""
 
@@ -698,32 +699,37 @@ msgstr ""
 #: discord.ext.commands.Bot.get_command discord.ext.commands.Bot.get_context
 #: discord.ext.commands.Bot.get_emoji discord.ext.commands.Bot.get_guild
 #: discord.ext.commands.Bot.get_prefix discord.ext.commands.Bot.get_user
-#: discord.ext.commands.Bot.is_owner discord.ext.commands.Bot.remove_command
-#: discord.ext.commands.Bot.wait_for discord.ext.commands.Cog.get_commands
-#: discord.ext.commands.Cog.get_listeners discord.ext.commands.Command.can_run
-#: discord.ext.commands.Command.copy
+#: discord.ext.commands.Bot.group discord.ext.commands.Bot.is_owner
+#: discord.ext.commands.Bot.remove_command discord.ext.commands.Bot.wait_for
+#: discord.ext.commands.Cog.get_commands discord.ext.commands.Cog.get_listeners
+#: discord.ext.commands.Command.can_run discord.ext.commands.Command.copy
 #: discord.ext.commands.Command.get_cooldown_retry_after
 #: discord.ext.commands.Command.is_on_cooldown
-#: discord.ext.commands.Context.fetch_message
-#: discord.ext.commands.Context.fetch_message_fast
-#: discord.ext.commands.Context.pins discord.ext.commands.Context.send
-#: discord.ext.commands.Context.send_help discord.ext.commands.Group.can_run
-#: discord.ext.commands.Group.command discord.ext.commands.Group.copy
-#: discord.ext.commands.Group.get_command
+#: discord.ext.commands.Context.fetch_message discord.ext.commands.Context.pins
+#: discord.ext.commands.Context.send discord.ext.commands.Context.send_help
+#: discord.ext.commands.DefaultHelpCommand.get_destination
+#: discord.ext.commands.Group.can_run discord.ext.commands.Group.command
+#: discord.ext.commands.Group.copy discord.ext.commands.Group.get_command
 #: discord.ext.commands.Group.get_cooldown_retry_after
-#: discord.ext.commands.Group.is_on_cooldown
+#: discord.ext.commands.Group.group discord.ext.commands.Group.is_on_cooldown
 #: discord.ext.commands.Group.remove_command
 #: discord.ext.commands.GroupMixin.command
 #: discord.ext.commands.GroupMixin.get_command
+#: discord.ext.commands.GroupMixin.group
 #: discord.ext.commands.GroupMixin.remove_command
 #: discord.ext.commands.HelpCommand.cog
 #: discord.ext.commands.HelpCommand.command_not_found
 #: discord.ext.commands.HelpCommand.filter_commands
 #: discord.ext.commands.HelpCommand.get_command_signature
+#: discord.ext.commands.HelpCommand.get_destination
 #: discord.ext.commands.HelpCommand.get_max_size
 #: discord.ext.commands.HelpCommand.invoked_with
+#: discord.ext.commands.HelpCommand.remove_mentions
 #: discord.ext.commands.HelpCommand.subcommand_not_found
-#: discord.ext.commands.MinimalHelpCommand.get_command_signature of
+#: discord.ext.commands.MinimalHelpCommand.get_command_signature
+#: discord.ext.commands.MinimalHelpCommand.get_destination
+#: discord.ext.commands.MinimalHelpCommand.get_ending_note
+#: discord.ext.commands.MinimalHelpCommand.get_opening_note of
 msgid "반환 형식"
 msgstr ""
 
@@ -895,7 +901,7 @@ msgstr ""
 #: discord.ext.commands.GroupMixin.command:4 of
 msgid ""
 "A decorator that converts the provided method into a Command, adds it to "
-"the bot, then returns it"
+"the bot, then returns it."
 msgstr ""
 
 #: discord.ext.commands.Bot.command:5 discord.ext.commands.Group.command:5
@@ -1169,8 +1175,13 @@ msgstr ""
 msgid "Getting the guilds failed."
 msgstr ""
 
-#: discord.ext.commands.Bot.fetch_guilds discord.ext.commands.Context.history
-#: of
+#: discord.ext.commands.Bot.fetch_guilds
+#: discord.ext.commands.Bot.get_all_channels
+#: discord.ext.commands.Bot.get_all_members
+#: discord.ext.commands.Bot.walk_commands
+#: discord.ext.commands.Cog.walk_commands discord.ext.commands.Context.history
+#: discord.ext.commands.Group.walk_commands
+#: discord.ext.commands.GroupMixin.walk_commands of
 msgid "Yields"
 msgstr ""
 
@@ -1372,8 +1383,16 @@ msgid ""
 ":meth:`.abc.GuildChannel.permissions_for` should be used for that."
 msgstr ""
 
+#: discord.ext.commands.Bot.get_all_channels:15 of
+msgid ":class:`.abc.GuildChannel` -- A channel the client can 'access'."
+msgstr ""
+
 #: discord.ext.commands.Bot.get_all_members:1 of
 msgid "Returns a generator with every :class:`.Member` the client can see."
+msgstr ""
+
+#: discord.ext.commands.Bot.get_all_members:9 of
+msgid ":class:`.Member` -- A member the client can see."
 msgstr ""
 
 #: discord.ext.commands.Bot.get_channel:1 of
@@ -1558,12 +1577,32 @@ msgid ""
 "internal command list via :meth:`~.GroupMixin.add_command`."
 msgstr ""
 
+#: discord.ext.commands.Bot.group:4 discord.ext.commands.Group.group:4
+#: discord.ext.commands.GroupMixin.group:4 of
+msgid ""
+"A decorator that converts the provided method into a Group, adds it to "
+"the bot, then returns it."
+msgstr ""
+
+#: discord.ext.commands.Bot.group:5 discord.ext.commands.Group.group:5
+#: discord.ext.commands.GroupMixin.group:5 of
+msgid "Callable[..., :class:`Group`]"
+msgstr ""
+
 #: discord.ext.commands.Bot.guilds:1 of
 msgid "The guilds that the connected client is a member of."
 msgstr ""
 
 #: discord.ext.commands.Bot.guilds:3 of
 msgid "List[:class:`.Guild`]"
+msgstr ""
+
+#: discord.ext.commands.Bot.intents:1 of
+msgid "The intents configured for this connection."
+msgstr ""
+
+#: discord.ext.commands.Bot.intents:5 of
+msgid ":class:`Intents`"
 msgstr ""
 
 #: discord.ext.commands.Bot.invoke:3 of
@@ -1577,7 +1616,7 @@ msgid "The invocation context to invoke."
 msgstr ""
 
 #: discord.ext.commands.Bot.is_closed:1 of
-msgid "Indicates if the websocket connection is closed."
+msgid ":class:`bool`: Indicates if the websocket connection is closed."
 msgstr ""
 
 #: discord.ext.commands.Bot.is_owner:3 of
@@ -1607,7 +1646,7 @@ msgid "Whether the user is the owner."
 msgstr ""
 
 #: discord.ext.commands.Bot.is_ready:1 of
-msgid "Specifies if the client's internal cache is ready for use."
+msgid ":class:`bool`: Specifies if the client's internal cache is ready for use."
 msgstr ""
 
 #: discord.ext.commands.Bot.latency:1 of
@@ -1930,12 +1969,16 @@ msgid ""
 ":attr:`.Guild.large` is ``True``."
 msgstr ""
 
-#: discord.ext.commands.Bot.request_offline_members:13 of
+#: discord.ext.commands.Bot.request_offline_members:15 of
+msgid "This method is deprecated. Use :meth:`Guild.chunk` instead."
+msgstr ""
+
+#: discord.ext.commands.Bot.request_offline_members:17 of
 msgid "An argument list of guilds to request offline members for."
 msgstr ""
 
-#: discord.ext.commands.Bot.request_offline_members:16 of
-msgid "If any guild is unavailable or not large in the collection."
+#: discord.ext.commands.Bot.request_offline_members:20 of
+msgid "If any guild is unavailable in the collection."
 msgstr ""
 
 #: discord.ext.commands.Bot.run:1 of
@@ -2016,8 +2059,13 @@ msgid "Represents a list of voice connections."
 msgstr ""
 
 #: discord.ext.commands.Bot.voice_clients:3 of
-msgid "List[:class:`.VoiceClient`]"
+msgid "These are usually :class:`.VoiceClient` instances."
 msgstr ""
+
+#: discord.ext.commands.Bot.voice_clients:5 of
+#, fuzzy
+msgid "List[:class:`.VoiceProtocol`]"
+msgstr "Optional[:class:`.VoiceClient`]"
 
 #: discord.ext.commands.Bot.wait_for:3 of
 msgid "Waits for a WebSocket event to be dispatched."
@@ -2100,6 +2148,14 @@ msgstr ""
 #: discord.ext.commands.Group.walk_commands:3
 #: discord.ext.commands.GroupMixin.walk_commands:3 of
 msgid "Duplicates due to aliases are no longer returned"
+msgstr ""
+
+#: discord.ext.commands.Bot.walk_commands:6
+#: discord.ext.commands.Group.walk_commands:6
+#: discord.ext.commands.GroupMixin.walk_commands:6 of
+msgid ""
+"Union[:class:`.Command`, :class:`.Group`] -- A command or group from the "
+"internal list of commands."
 msgstr ""
 
 #: discord.ext.commands.AutoShardedBot:1 of
@@ -2747,6 +2803,12 @@ msgid ""
 "subcommands."
 msgstr ""
 
+#: discord.ext.commands.Cog.walk_commands:3 of
+msgid ""
+"Union[:class:`.Command`, :class:`.Group`] -- A command or group from the "
+"cog."
+msgstr ""
+
 #: discord.ext.commands.Cog.get_listeners:1 of
 msgid ""
 "Returns a :class:`list` of (name, function) listener pairs that are "
@@ -3006,6 +3068,10 @@ msgstr ""
 msgid "This includes ``@everyone``, ``@here``, member mentions and role mentions."
 msgstr ""
 
+#: discord.ext.commands.HelpCommand.remove_mentions:5 of
+msgid "The string with mentions removed."
+msgstr ""
+
 #: discord.ext.commands.HelpCommand.cog:1 of
 msgid "A property for retrieving or setting the cog for the help command."
 msgstr ""
@@ -3164,6 +3230,18 @@ msgstr ""
 #: discord.ext.commands.HelpCommand.get_destination:5
 #: discord.ext.commands.MinimalHelpCommand.get_destination:5 of
 msgid "By default this returns the context's channel."
+msgstr ""
+
+#: discord.ext.commands.DefaultHelpCommand.get_destination:7
+#: discord.ext.commands.HelpCommand.get_destination:7
+#: discord.ext.commands.MinimalHelpCommand.get_destination:7 of
+msgid "The destination where the help command will be output."
+msgstr ""
+
+#: discord.ext.commands.DefaultHelpCommand.get_destination:8
+#: discord.ext.commands.HelpCommand.get_destination:8
+#: discord.ext.commands.MinimalHelpCommand.get_destination:8 of
+msgid ":class:`.abc.Messageable`"
 msgstr ""
 
 #: discord.ext.commands.HelpCommand.send_error_message:3 of
@@ -3471,13 +3549,13 @@ msgid ":class:`Paginator`"
 msgstr ""
 
 #: discord.ext.commands.DefaultHelpCommand.shorten_text:1 of
-msgid "Shortens text to fit into the :attr:`width`."
+msgid ":class:`str`: Shortens text to fit into the :attr:`width`."
 msgstr ""
 
 #: discord.ext.commands.DefaultHelpCommand.get_ending_note:1 of
 msgid ""
-"Returns help command's ending note. This is mainly useful to override for"
-" i18n purposes."
+":class:`str`: Returns help command's ending note. This is mainly useful "
+"to override for i18n purposes."
 msgstr ""
 
 #: discord.ext.commands.DefaultHelpCommand.add_indented_commands:1 of
@@ -3556,10 +3634,18 @@ msgstr ""
 msgid "The default implementation returns ::"
 msgstr ""
 
+#: discord.ext.commands.MinimalHelpCommand.get_opening_note:8 of
+msgid "The help command opening note."
+msgstr ""
+
 #: discord.ext.commands.MinimalHelpCommand.get_ending_note:1 of
 msgid ""
 "Return the help command's ending note. This is mainly useful to override "
 "for i18n purposes."
+msgstr ""
+
+#: discord.ext.commands.MinimalHelpCommand.get_ending_note:5 of
+msgid "The help command ending note."
 msgstr ""
 
 #: discord.ext.commands.MinimalHelpCommand.add_bot_commands_formatting:1 of
@@ -3676,11 +3762,7 @@ msgid "Returns the rendered list of pages."
 msgstr ""
 
 #: discord.ext.commands.Paginator.pages:3 of
-msgid "class"
-msgstr ""
-
-#: discord.ext.commands.Paginator.pages:5 of
-msgid "`list`"
+msgid "List[:class:`str`]"
 msgstr ""
 
 #: ../../ext/commands/api.rst:116
@@ -4266,12 +4348,10 @@ msgstr ""
 "만약에 ``True``\\로 설정되었다면 메시지를 오래된->최신 순으로 반환합니다. 기본값은 ``after``\\가 설정되있다면 "
 "``True``\\이고, 아니라면 ``False`` 입니다."
 
-#: discord.ext.commands.Context.fetch_message_fast:12
 #: discord.ext.commands.Context.history:40 of
 msgid "You do not have permissions to get channel message history."
 msgstr "채널 메시지 역사를 가져올 권한이 없습니다."
 
-#: discord.ext.commands.Context.fetch_message_fast:13
 #: discord.ext.commands.Context.history:41 of
 msgid "The request to get message history failed."
 msgstr "메시지 역사 요청이 실패했습니다."
@@ -4294,8 +4374,9 @@ msgstr "이것은 봇이 오랫동안 계산 등을 할 때 유용합니다."
 msgid ""
 "This is both a regular context manager and an async context manager. This"
 " means that both ``with`` and ``async with`` work with this."
-msgstr "이것은 평범한 컨텍스트 매니저이기도 하고 비동기 컨텍스트 매니저이기도 합니다. "
-"이 말은 ``with``\\와 ``async with`` 둘다 가능하다는 뜻입니다."
+msgstr ""
+"이것은 평범한 컨텍스트 매니저이기도 하고 비동기 컨텍스트 매니저이기도 합니다. 이 말은 ``with``\\와 ``async "
+"with`` 둘다 가능하다는 뜻입니다."
 
 #: discord.ext.commands.Context.typing:10 of
 msgid "Example Usage: ::"
@@ -4354,8 +4435,7 @@ msgstr "명령어를 다시 호출합니다."
 msgid ""
 "This is similar to :meth:`~.Context.invoke` except that it bypasses "
 "checks, cooldowns, and error handlers."
-msgstr "이것은 체크, 쿨다운, 그리고 에러 핸들러들을 무시한다는 점을 뺀다면 "
-":meth:`~.Context.invoke`\\와 비슷합니다."
+msgstr "이것은 체크, 쿨다운, 그리고 에러 핸들러들을 무시한다는 점을 뺀다면 :meth:`~.Context.invoke`\\와 비슷합니다."
 
 #: discord.ext.commands.Context.reinvoke:10 of
 msgid ""
@@ -4363,10 +4443,10 @@ msgid ""
 "recommended to use the regular :meth:`~.Context.invoke` as it will work "
 "more naturally. After all, this will end up using the old arguments the "
 "user has used and will thus just fail again."
-msgstr "만약에 :exc:`.UserInputError`\\에서 파생된 예외를 무시하고 싶다면, 기본적인 "
-":meth:`~.Context.invoke`\\를 사용하는 것을 추천하는데 더 자연스럽게 작동하기 때문입니다. "
-"어쨌든, 이 함수는 유저가 기존에 사용했던 오래된 인자들을 재사용하게 될 것이고 "
-"결국 명령어 실행이 다시 실패할 것입니다."
+msgstr ""
+"만약에 :exc:`.UserInputError`\\에서 파생된 예외를 무시하고 싶다면, 기본적인 "
+":meth:`~.Context.invoke`\\를 사용하는 것을 추천하는데 더 자연스럽게 작동하기 때문입니다. 어쨌든, 이 함수는 "
+"유저가 기존에 사용했던 오래된 인자들을 재사용하게 될 것이고 결국 명령어 실행이 다시 실패할 것입니다."
 
 #: discord.ext.commands.Context.reinvoke:16 of
 msgid "Whether to call the before and after invoke hooks."
@@ -4377,8 +4457,7 @@ msgid ""
 "Whether to start the call chain from the very beginning or where we left "
 "off (i.e. the command that caused the error). The default is to start "
 "where we left off."
-msgstr "콜 체인을 완전 처음부터 또는 멈춘 시점부터(예를 들면 오류를 일으킨 명령어) "
-"시작할 것인지의 여부. 기본값은 멈춘 시점부터 입니다."
+msgstr "콜 체인을 완전 처음부터 또는 멈춘 시점부터(예를 들면 오류를 일으킨 명령어) 시작할 것인지의 여부. 기본값은 멈춘 시점부터 입니다."
 
 #: discord.ext.commands.Context.reinvoke:23 of
 msgid "The context to reinvoke is not valid."
@@ -4408,32 +4487,35 @@ msgstr "이 컨텍스트의 명령어와 연관된 길드를 반환. 사용할 �
 msgid ""
 ":class:`.TextChannel`: Returns the channel associated with this context's"
 " command. Shorthand for :attr:`.Message.channel`."
-msgstr ":class:`.TextChannel`: 이 컨텍스트의 명령어와 연관된 채널을 반환."
-" :attr:`.Message.channel`\\을 단축한 것입니다."
+msgstr ""
+":class:`.TextChannel`: 이 컨텍스트의 명령어와 연관된 채널을 반환. "
+":attr:`.Message.channel`\\을 단축한 것입니다."
 
 #: discord.ext.commands.Context.author:1 of
 msgid ""
 "Union[:class:`~discord.User`, :class:`.Member`]: Returns the author "
 "associated with this context's command. Shorthand for "
 ":attr:`.Message.author`"
-msgstr "Union[:class:`~discord.User`, :class:`.Member`]: 이 컨텍스트의 명령어와 연관된 메시지 작성자를 반환."
-" :attr:`.Message.author`\\를 단축한 것입니다."
+msgstr ""
+"Union[:class:`~discord.User`, :class:`.Member`]: 이 컨텍스트의 명령어와 연관된 메시지 "
+"작성자를 반환. :attr:`.Message.author`\\를 단축한 것입니다."
 
 #: discord.ext.commands.Context.me:1 of
 msgid ""
 "Union[:class:`.Member`, :class:`.ClientUser`]: Similar to "
 ":attr:`.Guild.me` except it may return the :class:`.ClientUser` in "
 "private message contexts."
-msgstr "Union[:class:`.Member`, :class:`.ClientUser`]: "
-"개인 메시지 컨텍스트일 경우 :class:`.ClientUser`\\를 반환할 수 있다는 점만 제외한다면 "
-":attr:`.Guild.me`\\와 비슷합니다."
+msgstr ""
+"Union[:class:`.Member`, :class:`.ClientUser`]: 개인 메시지 컨텍스트일 경우 "
+":class:`.ClientUser`\\를 반환할 수 있다는 점만 제외한다면 :attr:`.Guild.me`\\와 비슷합니다."
 
 #: discord.ext.commands.Context.voice_client:1 of
 msgid "A shortcut to :attr:`.Guild.voice_client`\\, if applicable."
 msgstr "사용할 수 있다면 :attr:`.Guild.voice_client`\\의 단축입니다."
 
 #: discord.ext.commands.Context.voice_client:3 of
-msgid "Optional[:class:`.VoiceClient`]"
+#, fuzzy
+msgid "Optional[:class:`.VoiceProtocol`]"
 msgstr "Optional[:class:`.VoiceClient`]"
 
 #: discord.ext.commands.Context.send_help:3 of
@@ -4476,51 +4558,28 @@ msgid "This can only be used by bot accounts."
 msgstr ""
 
 #: discord.ext.commands.Context.fetch_message:7 of
-msgid "Prefer using :meth:`fetch_message_fast`."
-msgstr ""
-
-#: discord.ext.commands.Context.fetch_message:9
-#: discord.ext.commands.Context.fetch_message_fast:8 of
 msgid "The message ID to look for."
 msgstr ""
 
-#: discord.ext.commands.Context.fetch_message:12 of
+#: discord.ext.commands.Context.fetch_message:10 of
 msgid "The specified message was not found."
 msgstr ""
 
-#: discord.ext.commands.Context.fetch_message:13 of
+#: discord.ext.commands.Context.fetch_message:11 of
 msgid "You do not have the permissions required to get a message."
 msgstr ""
 
-#: discord.ext.commands.Context.fetch_message:14 of
+#: discord.ext.commands.Context.fetch_message:12 of
 msgid "Retrieving the message failed."
 msgstr ""
 
-#: discord.ext.commands.Context.fetch_message:16 of
+#: discord.ext.commands.Context.fetch_message:14 of
 msgid "The message asked for."
 msgstr ""
 
-#: discord.ext.commands.Context.fetch_message:17
+#: discord.ext.commands.Context.fetch_message:15
 #: discord.ext.commands.Context.send:49 of
 msgid ":class:`~discord.Message`"
-msgstr ""
-
-#: discord.ext.commands.Context.fetch_message_fast:3 of
-msgid ""
-"Retrieves a single :class:`~discord.Message` from the destination, using "
-"the history endpoint."
-msgstr ""
-
-#: discord.ext.commands.Context.fetch_message_fast:11 of
-msgid "The specified channel was not found."
-msgstr ""
-
-#: discord.ext.commands.Context.fetch_message_fast:15 of
-msgid "The message asked for, or None if there is no match."
-msgstr ""
-
-#: discord.ext.commands.Context.fetch_message_fast:16 of
-msgid "Optional[:class:`~discord.Message`]"
 msgstr ""
 
 #: discord.ext.commands.Context.pins:3 of
@@ -4924,38 +4983,38 @@ msgid "Converts to :class:`~discord.Game`."
 msgstr ""
 
 #: discord.ext.commands.ColourConverter:1 of
-msgid "Converts to a :class:`~discord.Colour`. .. versionchanged:: 1.5"
+msgid "Converts to a :class:`~discord.Colour`."
 msgstr ""
 
 #: discord.ext.commands.ColourConverter:3 of
 msgid "Add an alias named ColorConverter"
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:5 of
+#: discord.ext.commands.ColourConverter:6 of
 msgid "The following formats are accepted:"
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:7 of
+#: discord.ext.commands.ColourConverter:8 of
 msgid "``0x<hex>``"
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:8 of
+#: discord.ext.commands.ColourConverter:9 of
 msgid "``#<hex>``"
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:9 of
+#: discord.ext.commands.ColourConverter:10 of
 msgid "``0x#<hex>``"
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:10 of
+#: discord.ext.commands.ColourConverter:11 of
 msgid "Any of the ``classmethod`` in :class:`Colour`"
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:12 of
+#: discord.ext.commands.ColourConverter:13 of
 msgid "The ``_`` in the name can be optionally replaced with spaces."
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:14 of
+#: discord.ext.commands.ColourConverter:15 of
 msgid "Raise :exc:`.BadColourArgument` instead of generic :exc:`.BadArgument`"
 msgstr ""
 
@@ -5084,6 +5143,7 @@ msgid ""
 "``__cause__`` attribute."
 msgstr ""
 
+#: discord.ext.commands.CommandInvokeError:10
 #: discord.ext.commands.ConversionError:16
 #: discord.ext.commands.ExtensionFailed:16 of
 msgid ":exc:`Exception`"
@@ -5314,7 +5374,7 @@ msgid "The bucket type passed to the :func:`.max_concurrency` decorator."
 msgstr ""
 
 #: discord.ext.commands.MaxConcurrencyReached:15 of
-msgid ":class:`BucketType`"
+msgid ":class:`.BucketType`"
 msgstr ""
 
 #: discord.ext.commands.NotOwner:1 of
@@ -5376,7 +5436,7 @@ msgid "The channel supplied by the caller that was not readable"
 msgstr ""
 
 #: discord.ext.commands.ChannelNotReadable:12 of
-msgid ":class:`Channel`"
+msgid ":class:`.abc.GuildChannel`"
 msgstr ""
 
 #: discord.ext.commands.RoleNotFound:1 of
@@ -5952,5 +6012,68 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Converts to a :class:`~discord.Colour`."
+#~ msgstr ""
+
+#~ msgid "API 레퍼런스"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A decorator that converts the provided"
+#~ " method into a Command, adds it "
+#~ "to the bot, then returns it"
+#~ msgstr ""
+
+#~ msgid "Indicates if the websocket connection is closed."
+#~ msgstr ""
+
+#~ msgid "Specifies if the client's internal cache is ready for use."
+#~ msgstr ""
+
+#~ msgid "If any guild is unavailable or not large in the collection."
+#~ msgstr ""
+
+#~ msgid "List[:class:`.VoiceClient`]"
+#~ msgstr ""
+
+#~ msgid "Shortens text to fit into the :attr:`width`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Returns help command's ending note. This"
+#~ " is mainly useful to override for "
+#~ "i18n purposes."
+#~ msgstr ""
+
+#~ msgid "class"
+#~ msgstr ""
+
+#~ msgid "`list`"
+#~ msgstr ""
+
+#~ msgid "Prefer using :meth:`fetch_message_fast`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Retrieves a single :class:`~discord.Message` "
+#~ "from the destination, using the history"
+#~ " endpoint."
+#~ msgstr ""
+
+#~ msgid "The specified channel was not found."
+#~ msgstr ""
+
+#~ msgid "The message asked for, or None if there is no match."
+#~ msgstr ""
+
+#~ msgid "Optional[:class:`~discord.Message`]"
+#~ msgstr ""
+
+#~ msgid "Converts to a :class:`~discord.Colour`. .. versionchanged:: 1.5"
+#~ msgstr ""
+
+#~ msgid ":class:`BucketType`"
+#~ msgstr ""
+
+#~ msgid ":class:`Channel`"
 #~ msgstr ""
 
