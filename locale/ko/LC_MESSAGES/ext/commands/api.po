@@ -18,22 +18,22 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../ext/commands/api.rst:4
-msgid "API Reference"
+msgid "API 레퍼런스"
 msgstr ""
 
 #: ../../ext/commands/api.rst:6
 msgid ""
 "The following section outlines the API of discord.py's command extension "
 "module."
-msgstr ""
+msgstr "이 섹션에서는 discord.py의 명령어 확장 모듈에 대해 설명합니다."
 
 #: ../../ext/commands/api.rst:11
 msgid "Bot"
-msgstr ""
+msgstr "봇"
 
 #: discord.ext.commands.Bot:1 of
 msgid "Represents a discord bot."
-msgstr ""
+msgstr "디스코드 봇을 나타냅니다."
 
 #: discord.ext.commands.Bot:3 of
 msgid ""
@@ -41,12 +41,16 @@ msgid ""
 "anything that you can do with a :class:`discord.Client` you can do with "
 "this bot."
 msgstr ""
+"이 클래스는 :class:`discord.Client` 의 서브클래스이며 "
+"결과적으로 :class:`discord.Client` 로 할 수 있는 모든 작업을 이 봇으로 할 수 있습니다."
 
 #: discord.ext.commands.Bot:7 of
 msgid ""
 "This class also subclasses :class:`.GroupMixin` to provide the "
 "functionality to manage commands."
 msgstr ""
+"또한 이 클래스는 커맨드를 관리하는 기능을 제공하기 위해 :class:`.GroupMixin` "
+"를 서브클래스로 갖습니다."
 
 #: discord.ext.commands.Bot:12 of
 msgid ""
@@ -57,6 +61,11 @@ msgid ""
 "returns the prefix. This is to facilitate \"dynamic\" command prefixes. "
 "This callable can be either a regular function or a coroutine."
 msgstr ""
+"명령어 접두어는 커맨드를 실행하기 위해 메시지의 첫부분에 있어야 하는 내용입니다."
+"이는 접두어를 나타내는 문자열이거나, 봇을 첫 매개변수로 가지고 두 번째 매개변수를 "
+":class:`discord.Message` 로 가지는 콜러블이여야 합니다. "
+"이는 명령어 접두사를 \"동적\"으로 설정할 수 있게 합니다. "
+"이 콜러블은 일반 함수이거나 코루틴일 수 있습니다."
 
 #: discord.ext.commands.Bot:20 of
 msgid ""
@@ -65,6 +74,9 @@ msgid ""
 "in servers, as it's likely to cause performance issues and unintended "
 "command invocations."
 msgstr ""
+"접두어가 항상 일치하는 빈 문자열은 접두어 없는 명령 호출을 가능하게 합니다. "
+"DM에서는 유용할 수 있지만 성능 문제와 의도하지 않은 명령어의 호출이 "
+"발생할 수 있으므로 서버에서는 피해야 합니다."
 
 #: discord.ext.commands.Bot:25 of
 msgid ""
@@ -74,6 +86,11 @@ msgid ""
 ":attr:`.Context.prefix`. To avoid confusion empty iterables are not "
 "allowed."
 msgstr ""
+"명령어 접두어는 또한 접두사에 대한 여러 검사를 사용해야 할 경우 "
+"처음으로 일치하는 항목이 호출 접두사임을 나타내는, "
+"문자열들의 반복 가능 객체일 수 있습니다. "
+"이때 접두사는 :attr:`.Context.prefix` 를 통해 얻을 수 있습니다. "
+"혼동을 피하기 위해 빈 반복 가능 객체는 허용되지 않습니다."
 
 #: discord.ext.commands.Bot:33 of
 msgid ""
