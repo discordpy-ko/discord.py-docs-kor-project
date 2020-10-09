@@ -4522,60 +4522,62 @@ msgstr "Optional[:class:`.VoiceClient`]"
 msgid ""
 "Shows the help command for the specified entity if given. The entity can "
 "be a command or a cog."
-msgstr ""
+msgstr "만약에 주어졌다면 특정한 개체에 대한 도움말 명령어를 보여줍니다. "
+"개체는 명령어나 cog일 수 있습니다."
 
 #: discord.ext.commands.Context.send_help:6 of
 msgid "If no entity is given, then it'll show help for the entire bot."
-msgstr ""
+msgstr "만약에 개체가 주어지지 않았다면, 봇 전체에 대한 도움말을 보여줍니다."
 
 #: discord.ext.commands.Context.send_help:9 of
 msgid ""
 "If the entity is a string, then it looks up whether it's a :class:`Cog` "
 "or a :class:`Command`."
-msgstr ""
+msgstr "만약에 개체가 문자열이라면, :class:`Cog`\\인지 :class:`Command`\\인지 확인합니다."
 
 #: discord.ext.commands.Context.send_help:14 of
 msgid ""
 "Due to the way this function works, instead of returning something "
 "similar to :meth:`~.commands.HelpCommand.command_not_found` this returns "
 ":class:`None` on bad input or no help command."
-msgstr ""
+msgstr "이 함수가 작동되는 방식 때문에 :meth:`~.commands.HelpCommand.command_not_found`\\와 "
+"같은 것을 반환하는 대신 입력이 잘못됬다거나 도움말 명령어가 없는 경우 :class:`None`\\을 반환합니다."
 
 #: discord.ext.commands.Context.send_help:18 of
 msgid "The entity to show help for."
-msgstr ""
+msgstr "도움말을 보여줘야 할 개체."
 
 #: discord.ext.commands.Context.send_help:21 of
 msgid "The result of the help command, if any."
-msgstr ""
+msgstr "만약에 있다면 도움말 명령어의 결과."
 
 #: discord.ext.commands.Context.fetch_message:3 of
 msgid "Retrieves a single :class:`~discord.Message` from the destination."
-msgstr ""
+msgstr "목적지에서 단일 :class:`~discord.Message`\\를 갖고옵니다."
 
 #: discord.ext.commands.Context.fetch_message:5 of
 msgid "This can only be used by bot accounts."
-msgstr ""
+msgstr "이것은 봇 계정으로만 사용할 수 있습니다."
 
 #: discord.ext.commands.Context.fetch_message:7 of
 msgid "The message ID to look for."
-msgstr ""
+msgstr "찾아야 하는 메시지 ID."
 
 #: discord.ext.commands.Context.fetch_message:10 of
 msgid "The specified message was not found."
-msgstr ""
+msgstr "특정 메시지를 찾을 수 없습니다."
 
 #: discord.ext.commands.Context.fetch_message:11 of
 msgid "You do not have the permissions required to get a message."
-msgstr ""
+msgstr "메시지를 갖고오기 위해 필요한 권한이 없습니다."
 
 #: discord.ext.commands.Context.fetch_message:12 of
 msgid "Retrieving the message failed."
-msgstr ""
+msgstr "메시지 검색에 실패했습니다."
 
 #: discord.ext.commands.Context.fetch_message:14 of
 msgid "The message asked for."
-msgstr ""
+msgstr "찾으라고 한 메시지."
 
 #: discord.ext.commands.Context.fetch_message:15
 #: discord.ext.commands.Context.send:49 of
