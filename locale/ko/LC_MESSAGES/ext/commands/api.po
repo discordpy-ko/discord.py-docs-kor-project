@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 23:02+0900\n"
+"POT-Creation-Date: 2020-10-20 21:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4522,8 +4522,7 @@ msgstr "Optional[:class:`.VoiceClient`]"
 msgid ""
 "Shows the help command for the specified entity if given. The entity can "
 "be a command or a cog."
-msgstr "만약에 주어졌다면 특정한 개체에 대한 도움말 명령어를 보여줍니다. "
-"개체는 명령어나 cog일 수 있습니다."
+msgstr "만약에 주어졌다면 특정한 개체에 대한 도움말 명령어를 보여줍니다. 개체는 명령어나 cog일 수 있습니다."
 
 #: discord.ext.commands.Context.send_help:6 of
 msgid "If no entity is given, then it'll show help for the entire bot."
@@ -4540,8 +4539,9 @@ msgid ""
 "Due to the way this function works, instead of returning something "
 "similar to :meth:`~.commands.HelpCommand.command_not_found` this returns "
 ":class:`None` on bad input or no help command."
-msgstr "이 함수가 작동되는 방식 때문에 :meth:`~.commands.HelpCommand.command_not_found`\\와 "
-"같은 것을 반환하는 대신 입력이 잘못됬다거나 도움말 명령어가 없는 경우 :class:`None`\\을 반환합니다."
+msgstr ""
+"이 함수가 작동되는 방식 때문에 :meth:`~.commands.HelpCommand.command_not_found`\\와 같은 "
+"것을 반환하는 대신 입력이 잘못됬다거나 도움말 명령어가 없는 경우 :class:`None`\\을 반환합니다."
 
 #: discord.ext.commands.Context.send_help:18 of
 msgid "The entity to show help for."
@@ -4904,6 +4904,13 @@ msgstr ""
 
 #: discord.ext.commands.MemberConverter:14 of
 msgid "Raise :exc:`.MemberNotFound` instead of generic :exc:`.BadArgument`"
+msgstr ""
+
+#: discord.ext.commands.MemberConverter:17 of
+msgid ""
+"This converter now lazily fetches members from the gateway and HTTP APIs,"
+" optionally caching the result if :attr:`.MemberCacheFlags.joined` is "
+"enabled."
 msgstr ""
 
 #: discord.ext.commands.UserConverter:1 of
