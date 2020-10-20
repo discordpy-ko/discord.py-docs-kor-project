@@ -4586,22 +4586,23 @@ msgstr ""
 
 #: discord.ext.commands.Context.pins:3 of
 msgid "Retrieves all messages that are currently pinned in the channel."
-msgstr ""
+msgstr "채널에 고정되어있는 모든 메시지들을 검색합니다."
 
 #: discord.ext.commands.Context.pins:7 of
 msgid ""
 "Due to a limitation with the Discord API, the :class:`.Message` objects "
 "returned by this method do not contain complete "
 ":attr:`.Message.reactions` data."
-msgstr ""
+msgstr "디스코드 API의 한계때문에, 이 함수로 반환된 :class:`.Message` 객체들은 "
+":attr:`.Message.reactions` 데이터가 불완전하게 들어가있습니다."
 
 #: discord.ext.commands.Context.pins:11 of
 msgid "Retrieving the pinned messages failed."
-msgstr ""
+msgstr "고정된 메시지 검색에 실패했습니다."
 
 #: discord.ext.commands.Context.pins:13 of
 msgid "The messages that are currently pinned."
-msgstr ""
+msgstr "현재 고정되어있는 메시지들."
 
 #: discord.ext.commands.Context.pins:14 of
 msgid "List[:class:`~discord.Message`]"
@@ -4609,14 +4610,15 @@ msgstr ""
 
 #: discord.ext.commands.Context.send:3 of
 msgid "Sends a message to the destination with the content given."
-msgstr ""
+msgstr "주어진 내용과 함께 목적지로 메시지를 보냅니다."
 
 #: discord.ext.commands.Context.send:5 of
 msgid ""
 "The content must be a type that can convert to a string through "
 "``str(content)``. If the content is set to ``None`` (the default), then "
 "the ``embed`` parameter must be provided."
-msgstr ""
+msgstr "내용은 ``str(content)``\\를 통해 문자열로 전환될 수 있는 타입이어야 합니다. "
+"만약에 내용이 ``None`` (기본값)으로 설정되어있다면, ``embed`` 매개 변수가 주어져야 합니다."
 
 #: discord.ext.commands.Context.send:9 of
 msgid ""
@@ -4625,46 +4627,50 @@ msgid ""
 "``files`` parameter should be used with a :class:`list` of "
 ":class:`~discord.File` objects. **Specifying both parameters will lead to"
 " an exception**."
-msgstr ""
-
+msgstr "단일 파일을 업로드하기 위해서는, ``file`` 매개변수가 단일 :class:`~discord.File` 객체와 함께 "
+"사용되어야 합니다. 여러 파일들을 업로드하기 위해서는, ``files`` 매개변수가 :class:`~discord.File` 객체들이 들어있는 "
+":class:`list`\\와 함께 사용되어야 합니다. **두 매개변수를 동시에 사용하는 경우에는 예외가 발생하게 됩니다**."
 #: discord.ext.commands.Context.send:14 of
 msgid ""
 "If the ``embed`` parameter is provided, it must be of type "
 ":class:`~discord.Embed` and it must be a rich embed type."
-msgstr ""
+msgstr "만약 ``embed`` 매개변수가 주어졌다면 :class:`~discord.Embed` 타입이어야 하고 "
+"rich 임베드 타입이어야 합니다."
 
 #: discord.ext.commands.Context.send:17 of
 msgid "The content of the message to send."
-msgstr ""
+msgstr "전송할 메시지의 내용."
 
 #: discord.ext.commands.Context.send:19 of
 msgid "Indicates if the message should be sent using text-to-speech."
-msgstr ""
+msgstr "메시지가 TTS를 이용해서 보내야 할지의 여부."
 
 #: discord.ext.commands.Context.send:21 of
 msgid "The rich embed for the content."
-msgstr ""
+msgstr "내용의 rich 임베드."
 
 #: discord.ext.commands.Context.send:23 of
 msgid "The file to upload."
-msgstr ""
+msgstr "업로드 할 파일."
 
 #: discord.ext.commands.Context.send:25 of
 msgid "A list of files to upload. Must be a maximum of 10."
-msgstr ""
+msgstr "업로드 할 파일들의 리스트. 최대 개수는 10 입니다."
 
 #: discord.ext.commands.Context.send:27 of
 msgid ""
 "The nonce to use for sending this message. If the message was "
 "successfully sent, then the message will have a nonce with this value."
-msgstr ""
+msgstr "이 메시지를 전송할 때 사용할 임시값. 만약에 메시지가 성공적으로 전송되었다면, "
+"그 메시지는 이 값의 임시값을 가질 것입니다."
 
 #: discord.ext.commands.Context.send:30 of
 msgid ""
 "If provided, the number of seconds to wait in the background before "
 "deleting the message we just sent. If the deletion fails, then it is "
 "silently ignored."
-msgstr ""
+msgstr "만약에 주어졌다면, 방금 전송한 메시지를 삭제하기 전 까지 백그라운드에서 기다려야 하는 초. "
+"삭제가 실패되었다면, 조용히 무시됩니다."
 
 #: discord.ext.commands.Context.send:34 of
 msgid ""
@@ -4675,7 +4681,11 @@ msgid ""
 ":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
 "then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
 "used instead.  .. versionadded:: 1.4"
-msgstr ""
+msgstr "이 메시지에서 처리되는 맨션을 조정. 만약에 주어졌다면, 객체는 :attr:`~discord.Client.allowed_mentions`\\와 "
+"합체됩니다. 합체되는 방식은 객체에 명시적으로 설정된 속성들만 오버라이드 하고, 명시되있지 않았다면 "
+":attr:`~discord.Client.allowed_mentions`\\에 설정된 속성들을 사용합니다. "
+"만약 그 어떤 객체들도 전달되지 않았다면 :attr:`~discord.Client.allowed_mentions`\\에 있는 "
+"기본값들을 사용합니다.  .. versionadded:: 1.4"
 
 #: discord.ext.commands.Context.send:34 of
 msgid ""
@@ -4686,35 +4696,39 @@ msgid ""
 ":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
 "then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
 "used instead."
-msgstr ""
+msgstr "이 메시지에서 처리되는 맨션을 조정. 만약에 주어졌다면, 객체는 :attr:`~discord.Client.allowed_mentions`\\와 "
+"합체됩니다. 합체되는 방식은 객체에 명시적으로 설정된 속성들만 오버라이드 하고, 명시되있지 않았다면 "
+":attr:`~discord.Client.allowed_mentions`\\에 설정된 속성들을 사용합니다. "
+"만약 그 어떤 객체들도 전달되지 않았다면 :attr:`~discord.Client.allowed_mentions`\\에 있는 "
+"기본값들을 사용합니다."
 
 #: discord.ext.commands.Context.send:44 of
 msgid "Sending the message failed."
-msgstr ""
+msgstr "메시지 전송에 실패했습니다."
 
 #: discord.ext.commands.Context.send:45 of
 msgid "You do not have the proper permissions to send the message."
-msgstr ""
+msgstr "메시지를 전송하기 위해 필요한 권한들이 없습니다."
 
 #: discord.ext.commands.Context.send:46 of
 msgid ""
 "The ``files`` list is not of the appropriate size or     you specified "
 "both ``file`` and ``files``."
-msgstr ""
+msgstr "``files`` 리스트가 적절한 크기가 아니거나 ``file``\\과 ``files`` 둘 다 사용되었습니다."
 
 #: discord.ext.commands.Context.send:48 of
 msgid "The message that was sent."
-msgstr ""
+msgstr "보내진 메시지."
 
 #: discord.ext.commands.Context.trigger_typing:3 of
 msgid "Triggers a *typing* indicator to the destination."
-msgstr ""
+msgstr "*입력중* 표시를 목적지에 트리거합니다."
 
 #: discord.ext.commands.Context.trigger_typing:5 of
 msgid ""
 "*Typing* indicator will go away after 10 seconds, or after a message is "
 "sent."
-msgstr ""
+msgstr "*입력중* 표시는 10초 이후 또는 메시지를 보낸 이후 사라집니다."
 
 #: ../../ext/commands/api.rst:207
 msgid "Converters"
