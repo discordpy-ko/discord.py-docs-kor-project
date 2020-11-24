@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../intents.rst:6
 msgid "A Primer to Gateway Intents"
-msgstr ""
+msgstr "게이트웨이 인텐트의 시작"
 
 #: ../../intents.rst:8
 msgid ""
@@ -28,25 +28,30 @@ msgid ""
 "to subscribe into specific buckets of events. The events that correspond "
 "to each intent is documented in the individual attribute of the "
 ":class:`Intents` documentation."
-msgstr ""
+msgstr "버전 1.5에서 :class:`Intents`\\가 소개되었습니다. 이것은 봇을 작성하는 것에서의 급진적인 변화입니다. "
+"인텐트는 기본적으로 봇이 특정 버킷이나 이벤트를 받도록 해줍니다. 각각의 인텐트에 해당하는 이벤트들은 "
+":class:`Intents` 문서의 개인 속성에 문서화되어있습니다."
 
 #: ../../intents.rst:10
 msgid ""
 "These intents are passed to the constructor of :class:`Client` or its "
 "subclasses (:class:`AutoShardedClient`, :class:`~.AutoShardedBot`, "
 ":class:`~.Bot`) with the ``intents`` argument."
-msgstr ""
+msgstr "이 인텐트들은 :class:`Client`\\나 이것의 서브클래스(:class:`AutoShardedClient`, "
+:class:`~.AutoShardedBot`, ":class:`~.Bot`)의 컨스트럭터에 ``intents`` 전달인자로 전달됩니다."
 
 #: ../../intents.rst:12
 msgid ""
 "If intents are not passed, then the library defaults to every intent "
 "being enabled except the privileged intents, currently "
 ":attr:`Intents.members` and :attr:`Intents.presences`."
-msgstr ""
+msgstr "만약에 인텐트가 전달되지 않았다면, 이 라이브러리는 기본으로 "
+"현재 제한된 인텐트인 :attr:`Intents.members`\\와 :attr:`Intents.presences`\\를 "
+"제외한 모든 인텐트를 켭니다."
 
 #: ../../intents.rst:15
 msgid "What intents are needed?"
-msgstr ""
+msgstr "어떤 인텐트가 필요한가요?"
 
 #: ../../intents.rst:17
 msgid ""
@@ -54,29 +59,32 @@ msgid ""
 "yourself. Each attribute in the :class:`Intents` class documents what "
 ":ref:`events <discord-api-events>` it corresponds to and what kind of "
 "cache it enables."
-msgstr ""
+msgstr "당신의 봇에 필요한 인텐트는 당신만이 알 수 있습니다. :class:`Intents` 클래스의 "
+"각각의 속성들은 어떤 :ref:`events <discord-api-events>`\\와 일치하는지와 "
+"어떤 캐시를 활성화하는지 문서화합니다."
 
 #: ../../intents.rst:19
 msgid ""
 "For example, if you want a bot that functions without spammy events like "
 "presences or typing then we could do the following:"
-msgstr ""
+msgstr "예를 들면, 만약에 presences와 typing과 같은 대량의 이벤트 없이 작동하는 봇을 원한다면 "
+"이렇게 할 수 있습니다:"
 
 #: ../../intents.rst:34
 msgid ""
 "Note that this doesn't enable :attr:`Intents.members` since it's a "
 "privileged intent."
-msgstr ""
+msgstr "참고로 :attr:`Intents.members`\\는 제한된 인텐트이므로 켜지지 않습니다."
 
 #: ../../intents.rst:36
 msgid ""
 "Another example showing a bot that only deals with messages and guild "
 "information:"
-msgstr ""
+msgstr "또다른 예시로 메시지와 길드 정보만 처리하는 봇은 다음과 같습니다:"
 
 #: ../../intents.rst:54
 msgid "Privileged Intents"
-msgstr ""
+msgstr "제한된 인텐트"
 
 #: ../../intents.rst:56
 msgid ""
