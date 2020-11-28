@@ -38,7 +38,7 @@ msgid ""
 "subclasses (:class:`AutoShardedClient`, :class:`~.AutoShardedBot`, "
 ":class:`~.Bot`) with the ``intents`` argument."
 msgstr "이 인텐트들은 :class:`Client`\\나 이것의 서브클래스(:class:`AutoShardedClient`, "
-:class:`~.AutoShardedBot`, ":class:`~.Bot`)의 컨스트럭터에 ``intents`` 전달인자로 전달됩니다."
+":class:`~.AutoShardedBot`, :class:`~.Bot`)의 컨스트럭터에 ``intents`` 전달인자로 전달됩니다."
 
 #: ../../intents.rst:12
 msgid ""
