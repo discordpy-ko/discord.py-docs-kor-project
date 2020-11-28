@@ -25,7 +25,8 @@ msgstr "빠른 시작"
 msgid ""
 "This page gives a brief introduction to the library. It assumes you have "
 "the library installed, if you don't check the :ref:`installing` portion."
-msgstr "이 페이지는 라이브러리에 대한 간결한 소개를 합니다. 라이브러리가 설치되있다고 가정하므로, 만약에 그렇지 않다면 :ref:`installing` 항목을 확인해주세요."
+msgstr "이 페이지는 라이브러리에 대한 간단한 소개를 합니다. 라이브러리가 설치되있다고 가정하므로, "
+"만약에 그렇지 않다면 :ref:`installing` 항목을 확인해주세요."
 
 #: ../../quickstart.rst:12
 msgid "A Minimal Bot"
@@ -39,37 +40,40 @@ msgstr "한번 특정 메시지에 답변하는 봇을 만들고 어떻게 작�
 
 #: ../../quickstart.rst:16
 msgid "It looks something like this:"
-msgstr "그것은 이렇게 생겼습니다:"
+msgstr "대충 이렇게 생겼습니다:"
 
 #: ../../quickstart.rst:38
 msgid ""
 "Let's name this file ``example_bot.py``. Make sure not to name it "
 "``discord.py`` as that'll conflict with the library."
-msgstr "이제 이 파일의 이름을 ``example_bot.py`` 로 합시다. 이름을 ``discord.py`` 로 하면 라이브러리와 충돌하므로 주의하세요."
+msgstr "이제 이 파일의 이름을 ``example_bot.py``\\로 합시다. 이름을 ``discord.py``\\로 "
+"하면 라이브러리와 충돌하므로 주의하세요."
 
 #: ../../quickstart.rst:41
 msgid "There's a lot going on here, so let's walk you through it step by step."
-msgstr "여기에서 많은 것들이 진행되므로, 단계별로 진행해봅시다."
+msgstr "많은 것들이 진행되므로, 차근차근 진행해봅시다."
 
 #: ../../quickstart.rst:43
 msgid ""
 "The first line just imports the library, if this raises a "
 "`ModuleNotFoundError` or `ImportError` then head on over to "
 ":ref:`installing` section to properly install."
-msgstr "첫번째 줄은 그저 라이브러리를 불러오는데, 만약에 `ModuleNotFoundError` 나 `ImportError` 를 일으킨다면 :ref:`installing` 항목으로 가서 제대로 설치하세요."
+msgstr "첫번째 줄은 단순히 라이브러리를 불러오는데, 만약에 `ModuleNotFoundError`\\나 "
+"`ImportError`\\를 일으킨다면 :ref:`installing` 항목으로 가서 제대로 설치하세요."
 
 #: ../../quickstart.rst:45
 msgid ""
 "Next, we create an instance of a :class:`Client`. This client is our "
 "connection to Discord."
-msgstr "이제 우리는 :class:`Client` 의 인스턴스를 만듭니다. 이 클라이언트는 우리의 디스코드로의 연결입니다."
+msgstr "다음으로, :class:`Client`\\의 인스턴스를 만듭니다. 이 클라이언트는 디스코드로의 연결입니다."
 
 #: ../../quickstart.rst:46
 msgid ""
 "We then use the :meth:`Client.event` decorator to register an event. This"
 " library has many events. Since this library is asynchronous, we do "
 "things in a \"callback\" style manner."
-msgstr "우리는 그러고 :meth:`Client.event` 데코레이터를 사용해서 이벤트를 등록합니다. 이 라이브러리는 많은 이벤트를 갖고 있습니다. 또, 이 라이브러리는 비동기이기 때문에, 우리는 \"callback\" 스타일로 합니다."
+msgstr "그러고 :meth:`Client.event` 데코레이터를 사용해서 이벤트를 등록합니다. 이 라이브러리에는 "
+"많은 이벤트들이 있습니다. 이 라이브러리는 비동기이기 때문에, 우리는 \"callback\" 스타일로 합니다."
 
 #: ../../quickstart.rst:49
 msgid ""
@@ -77,7 +81,8 @@ msgid ""
 "happens. In our case, the :func:`on_ready` event is called when the bot "
 "has finished logging in and setting things up and the :func:`on_message` "
 "event is called when the bot has received a message."
-msgstr "콜백은 기본적으로는 무엇인가 일어났을때 호출되는 기능입니다. 우리의 상황에서는, :func:`on_ready` 이벤트가 봇이 로깅을 끝내고 여러가지를 준비한 뒤 호출되고 :func:`on_message` 는 봇이 메시지를 받았을 때 호출됩니다."
+msgstr "콜백은 기본적으로는 무엇인가 일어났을때 호출되는 기능입니다. 현재 상황에서는, :func:`on_ready` "
+"이벤트가 봇이 로깅을 끝내고 여러가지를 준비한 뒤 호출되고 :func:`on_message`\\는 봇이 메시지를 받았을 때 호출됩니다."
 
 #: ../../quickstart.rst:52
 msgid ""
@@ -85,26 +90,30 @@ msgid ""
 " we have to make sure that we ignore messages from ourselves. We do this "
 "by checking if the :attr:`Message.author` is the same as the "
 ":attr:`Client.user`."
-msgstr ":func:`on_message` 이벤트는 말 그대로 *모든* 메시지를 받았을 때 실행되므로, 봇이 보낸 메시지는 무시하도록 확실히 해야합니다. :attr:`Message.author` 가 :attr:`Client.user` 인지 확인하면 됩니다."
+msgstr ":func:`on_message` 이벤트는 말 그대로 *모든* 메시지를 받았을 때 실행되므로, "
+"봇이 보낸 메시지는 무시하도록 해야합니다. :attr:`Message.author`\\가 :attr:`Client.user`\\인지 확인하면 됩니다."
 
 #: ../../quickstart.rst:55
 msgid ""
 "Afterwards, we check if the :class:`Message.content` starts with "
 "``'$hello'``. If it is, then we reply in the channel it was used in with "
 "``'Hello!'``."
-msgstr "이후, :class:`Message.content` 가 ``'$hello'`` 로 시작하는지 확인합니다. 만약에 그렇다면, 우리는 그 메시지가 작성된 채널에 ``'Hello!'`` 라고 답변합니다."
+msgstr "이후, :class:`Message.content` 가 ``'$hello'``\\로 시작하는지 확인합니다. "
+"만약에 그렇다면, 그 메시지가 작성된 채널에 ``'Hello!'`` 라고 답변합니다."
 
 #: ../../quickstart.rst:57
 msgid ""
 "Finally, we run the bot with our login token. If you need help getting "
 "your token or creating a bot, look in the :ref:`discord-intro` section."
-msgstr "마지막으로, 봇을 로그인 토큰으로 돌립니다. 만약 토큰을 얻거나 봇을 생성하는 것에 도움이 필요하다면, :ref:`discord-intro` 항목을 보세요."
+msgstr "마지막으로, 봇을 로그인 토큰으로 돌립니다. 만약 토큰을 얻거나 봇을 생성하는 것에 도움이 필요하다면, "
+":ref:`discord-intro` 항목을 보세요."
 
 #: ../../quickstart.rst:61
 msgid ""
 "Now that we've made a bot, we have to *run* the bot. Luckily, this is "
 "simple since this is just a Python script, we can run it directly."
-msgstr "이제 우리가 봇을 만들었으므로, 우리는 봇을 *실행* 해야합니다. 운좋게도, 이건 그저 파이썬 스크립트이기 때문에 바로 실행하면 되므로 간단합니다."
+msgstr "이제 우리가 봇을 만들었으므로, 우리는 봇을 *실행*\\해야합니다. 다행히, 이건 그저 파이썬 "
+"스크립트이기 때문에 바로 실행하면 되므로 간단합니다."
 
 #: ../../quickstart.rst:64
 msgid "On Windows:"
