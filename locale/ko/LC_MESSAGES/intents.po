@@ -46,7 +46,7 @@ msgid ""
 "being enabled except the privileged intents, currently "
 ":attr:`Intents.members` and :attr:`Intents.presences`."
 msgstr "만약에 인텐트가 전달되지 않았다면, 이 라이브러리는 기본으로 "
-"현재 제한된 인텐트인 :attr:`Intents.members`\\와 :attr:`Intents.presences`\\를 "
+"현재 Privileged Intent(제한된 인텐트)인 :attr:`Intents.members`\\와 :attr:`Intents.presences`\\를 "
 "제외한 모든 인텐트를 켭니다."
 
 #: ../../intents.rst:15
@@ -74,7 +74,7 @@ msgstr "예를 들면, 만약에 presences와 typing과 같은 대량의 이벤�
 msgid ""
 "Note that this doesn't enable :attr:`Intents.members` since it's a "
 "privileged intent."
-msgstr "참고로 :attr:`Intents.members`\\는 제한된 인텐트이므로 켜지지 않습니다."
+msgstr "참고로 :attr:`Intents.members`\\는 Privileged Intent(제한된 인텐트) 이므로 켜지지 않습니다."
 
 #: ../../intents.rst:36
 msgid ""
@@ -84,47 +84,50 @@ msgstr "또다른 예시로 메시지와 길드 정보만 처리하는 봇은 �
 
 #: ../../intents.rst:54
 msgid "Privileged Intents"
-msgstr "제한된 인텐트"
+msgstr "Privileged Intent(제한된 인텐트)"
 
 #: ../../intents.rst:56
 msgid ""
 "With the API change requiring bot authors to specify intents, some "
 "intents were restricted further and require more manual steps. These "
 "intents are called **privileged intents**."
-msgstr ""
+msgstr "봇 소유자가 인텐트를 특정시켜야 하는 API 변경과 함께, "
+"일부 인텐트는 더 추가 제한이 있고 추가적인 절차가 필요합니다. "
+"이런 인텐트들을 **Privileged Intent(제한된 인텐트)**\\라고 합니다."
 
 #: ../../intents.rst:58
 msgid ""
 "A privileged intent is one that requires you to go to the developer "
 "portal and manually enable it. To enable privileged intents do the "
 "following:"
-msgstr ""
+msgstr "Privileged Intent(제한된 인텐트)는 Developer Portal에서 수동으로 활성화를 "
+"해주어야 합니다. 활성화를 위해서는 다음과 같이 해야 합니다:"
 
 #: ../../intents.rst:60
 msgid ""
 "Make sure you're logged on to the `Discord website "
 "<https://discord.com>`_."
-msgstr ""
+msgstr "`디스코드 웹사이트 <https://discord.com>`_ 에 로그인했는지 확인하세요."
 
 #: ../../intents.rst:61
 msgid ""
 "Navigate to the `application page "
 "<https://discord.com/developers/applications>`_"
-msgstr ""
+msgstr "`애플리케이션 페이지 <https://discord.com/developers/applications>`_ 로 이동합니다."
 
 #: ../../intents.rst:62
 msgid "Click on the bot you want to enable privileged intents for."
-msgstr ""
+msgstr "Privileged Intent(제한된 인텐트)를 활성화 할 봇을 클릭하세요."
 
 #: ../../intents.rst:63
 msgid "Navigate to the bot tab on the left side of the screen."
-msgstr ""
+msgstr "화면 왼쪽의 Bot 탭으로 이동합니다."
 
 #: ../../intents.rst:68
 msgid ""
 "Scroll down to the \"Privileged Gateway Intents\" section and enable the "
 "ones you want."
-msgstr ""
+msgstr "\"Privileged Gateway Intents\" 부분으로 스크롤하고 원하는 인텐트를 활성화하세요."
 
 #: ../../intents.rst:75
 msgid ""
@@ -133,39 +136,44 @@ msgid ""
 "us/articles/360040720412>`_. If your bot is already verified and you "
 "would like to enable a privileged intent you must go through `discord "
 "support <https://dis.gd/contact>`_ and talk to them about it."
-msgstr ""
+msgstr "봇의 길드수가 100을 넘었을 때 Privileged Intent(제한된 인텐트)를 활성화하기 위해서는 "
+"`봇 인증 <https://support.discord.com/hc/en-us/articles/360040720412>`_ "
+"과정을 거쳐야 합니다. 만약에 봇이 이미 인증되었고 Privileged Intent(제한된 인텐트)를 "
+"활성화하고 싶다면 `디스코드 문의 <https://dis.gd/contact>`_ 에 문의해서 "
+"인텐트 활성화에 대해 말해야 합니다."
 
 #: ../../intents.rst:79
 msgid ""
 "Even if you enable intents through the developer portal, you still have "
 "to enable the intents through code as well."
-msgstr ""
+msgstr "Developer Portal에서 인텐트를 활성화하더라도, 봇 코드에서도 이 인텐트들을 활성화 해야합니다."
 
 #: ../../intents.rst:83
 msgid "Do I need privileged intents?"
-msgstr ""
+msgstr "Privileged Intent(제한된 인텐트)가 꼭 필요한가요?"
 
 #: ../../intents.rst:85
 msgid "This is a quick checklist to see if you need specific privileged intents."
-msgstr ""
+msgstr "다음은 특정한 Privileged Intent(제한된 인텐트)가 필요한지 볼 수 있는 간단한 체크리스트입니다."
 
 #: ../../intents.rst:90
 msgid "Presence Intent"
-msgstr ""
+msgstr "Presence 인텐트"
 
 #: ../../intents.rst:92
 msgid "Whether you use :attr:`Member.status` at all to track member statuses."
-msgstr ""
+msgstr "맴버의 상태를 추척하기 위해 :attr:`Member.status`\\를 사용하나요?"
 
 #: ../../intents.rst:93
 msgid ""
 "Whether you use :attr:`Member.activity` or :attr:`Member.activities` to "
 "check member's activities."
-msgstr ""
+msgstr "맴버의 활동을 확인하기 위해 :attr:`Member.activity` 또는 :attr:`Member.activities`\\를 "
+"사용하나요?"
 
 #: ../../intents.rst:98
 msgid "Member Intent"
-msgstr ""
+msgstr "Member 인텐트"
 
 #: ../../intents.rst:100
 msgid ""
