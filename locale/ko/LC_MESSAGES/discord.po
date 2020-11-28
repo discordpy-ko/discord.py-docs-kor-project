@@ -36,14 +36,14 @@ msgstr "봇의 계정을 만드는 과정은 꽤 간단합니다."
 msgid ""
 "Make sure you're logged on to the `Discord website "
 "<https://discord.com>`_."
-msgstr "`디스코드 웹사이트 <https://discordapp.com>`_\\에 로그인했는지 확인하세요."
+msgstr "`디스코드 웹사이트 <https://discord.com>`_ 에 로그인했는지 확인하세요."
 
 #: ../../discord.rst:11 ../../discord.rst:65
 #, fuzzy
 msgid ""
 "Navigate to the `application page "
 "<https://discord.com/developers/applications>`_"
-msgstr "`애플리케이션 페이지 <https://discordapp.com/developers/applications>`_\\로 이동합시다."
+msgstr "`애플리케이션 페이지 <https://discord.com/developers/applications>`_ 로 이동합니다."
 
 #: ../../discord.rst:12
 msgid "Click on the \"New Application\" button."
@@ -163,7 +163,7 @@ msgid ""
 msgstr ""
 "봇의 소유자는 2FA가 활성화된 서버에 봇이 추가될 때 특정 작업 및 권한에 대해 2FA를 사용하도록 설정해야 합니다. `2FA "
 "지원 페이지 "
-"<https://support.discordapp.com/hc/ko/articles/219576828-2단계-인증-설정하기>`_\\"
+"<https://support.discordapp.com/hc/ko/articles/219576828-2단계-인증-설정하기>`_ "
 "에서 자세한 정보를 확인하세요."
 
 #: ../../discord.rst:86
