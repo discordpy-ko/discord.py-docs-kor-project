@@ -56,7 +56,7 @@ msgid "Fix :class:`Message` not being hashable (:issue:`5901`, :issue:`5866`)"
 msgstr ""
 
 #: ../../whats_new.rst:24
-msgid "채널이 채널 목록 마지막으로 이동되는 것을 해결했습니다. (:issue:`5923`)"
+msgid "Fix moving channels to the end of the channel list (:issue:`5923`)"
 msgstr ""
 
 #: ../../whats_new.rst:25
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../whats_new.rst:27
 msgid ""
-"다른 채널로 이동할 때 봇이 채널을 떠나는 것을 수정했습니다. "
+"Fix the bot disconnecting from voice when moving them to another channel "
 "(:issue:`5904`)"
 msgstr ""
 
