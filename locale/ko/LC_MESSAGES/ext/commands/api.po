@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-20 21:38+0900\n"
+"POT-Creation-Date: 2020-12-19 16:11+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,10 @@ msgid ""
 msgstr "이 섹션에서는 discord.py의 명령어 확장 모듈에 대해 설명합니다."
 
 #: ../../ext/commands/api.rst:11
+msgid "Bots"
+msgstr ""
+
+#: ../../ext/commands/api.rst:14
 msgid "Bot"
 msgstr "봇"
 
@@ -182,8 +186,9 @@ msgstr ""
 #: discord.ext.commands.ChannelNotFound:11
 #: discord.ext.commands.Cog.description:3
 #: discord.ext.commands.Cog.qualified_name:3 discord.ext.commands.CogMeta:37
-#: discord.ext.commands.Command:10 discord.ext.commands.Command:22
-#: discord.ext.commands.Command:34 discord.ext.commands.Command:79
+#: discord.ext.commands.CogMeta:45 discord.ext.commands.Command:10
+#: discord.ext.commands.Command:22 discord.ext.commands.Command:34
+#: discord.ext.commands.Command:79
 #: discord.ext.commands.Command.full_parent_name:6
 #: discord.ext.commands.Command.qualified_name:7
 #: discord.ext.commands.Command.short_doc:7
@@ -427,7 +432,8 @@ msgstr ""
 #: discord.ext.commands.Context.fetch_message
 #: discord.ext.commands.Context.history discord.ext.commands.Context.invoke
 #: discord.ext.commands.Context.pins discord.ext.commands.Context.reinvoke
-#: discord.ext.commands.Context.send discord.ext.commands.Converter.convert
+#: discord.ext.commands.Context.reply discord.ext.commands.Context.send
+#: discord.ext.commands.Converter.convert
 #: discord.ext.commands.EmojiConverter.convert
 #: discord.ext.commands.GameConverter.convert
 #: discord.ext.commands.Group.add_command
@@ -605,8 +611,8 @@ msgstr ""
 #: discord.ext.commands.Command.can_run:1
 #: discord.ext.commands.Context.fetch_message:1
 #: discord.ext.commands.Context.invoke:1 discord.ext.commands.Context.pins:1
-#: discord.ext.commands.Context.reinvoke:1 discord.ext.commands.Context.send:1
-#: discord.ext.commands.Context.send_help:1
+#: discord.ext.commands.Context.reinvoke:1 discord.ext.commands.Context.reply:1
+#: discord.ext.commands.Context.send:1 discord.ext.commands.Context.send_help:1
 #: discord.ext.commands.Context.trigger_typing:1
 #: discord.ext.commands.Converter.convert:1
 #: discord.ext.commands.EmojiConverter.convert:1
@@ -658,7 +664,8 @@ msgstr ""
 #: discord.ext.commands.Command.get_cooldown_retry_after
 #: discord.ext.commands.Command.is_on_cooldown
 #: discord.ext.commands.Context.fetch_message discord.ext.commands.Context.pins
-#: discord.ext.commands.Context.send discord.ext.commands.Context.send_help
+#: discord.ext.commands.Context.reply discord.ext.commands.Context.send
+#: discord.ext.commands.Context.send_help
 #: discord.ext.commands.DefaultHelpCommand.get_destination
 #: discord.ext.commands.Group.can_run discord.ext.commands.Group.command
 #: discord.ext.commands.Group.copy discord.ext.commands.Group.get_command
@@ -706,7 +713,8 @@ msgstr ""
 #: discord.ext.commands.Command.get_cooldown_retry_after
 #: discord.ext.commands.Command.is_on_cooldown
 #: discord.ext.commands.Context.fetch_message discord.ext.commands.Context.pins
-#: discord.ext.commands.Context.send discord.ext.commands.Context.send_help
+#: discord.ext.commands.Context.reply discord.ext.commands.Context.send
+#: discord.ext.commands.Context.send_help
 #: discord.ext.commands.DefaultHelpCommand.get_destination
 #: discord.ext.commands.Group.can_run discord.ext.commands.Group.command
 #: discord.ext.commands.Group.copy discord.ext.commands.Group.get_command
@@ -1649,6 +1657,16 @@ msgstr ""
 msgid ":class:`bool`: Specifies if the client's internal cache is ready for use."
 msgstr ""
 
+#: discord.ext.commands.Bot.is_ws_ratelimited:1 of
+msgid ":class:`bool`: Whether the websocket is currently rate limited."
+msgstr ""
+
+#: discord.ext.commands.Bot.is_ws_ratelimited:3 of
+msgid ""
+"This can be useful to know when deciding whether you should query members"
+" using HTTP or via the gateway."
+msgstr ""
+
 #: discord.ext.commands.Bot.latency:1 of
 msgid "Measures latency between a HEARTBEAT and a HEARTBEAT_ACK in seconds."
 msgstr ""
@@ -2158,10 +2176,18 @@ msgid ""
 "internal list of commands."
 msgstr ""
 
+#: ../../ext/commands/api.rst:23
+msgid "AutoShardedBot"
+msgstr ""
+
 #: discord.ext.commands.AutoShardedBot:1 of
 msgid ""
 "This is similar to :class:`.Bot` except that it is inherited from "
 ":class:`discord.AutoShardedClient` instead."
+msgstr ""
+
+#: ../../ext/commands/api.rst:31
+msgid "Prefix Helpers"
 msgstr ""
 
 #: discord.ext.commands.when_mentioned:1 of
@@ -2189,64 +2215,68 @@ msgstr ""
 msgid ":func:`.when_mentioned`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:27
+#: ../../ext/commands/api.rst:40
 msgid "Event Reference"
 msgstr ""
 
-#: ../../ext/commands/api.rst:29
+#: ../../ext/commands/api.rst:42
 msgid ""
 "These events function similar to :ref:`the regular events <discord-api-"
 "events>`, except they are custom to the command extension module."
 msgstr ""
 
-#: ../../ext/commands/api.rst:34
+#: ../../ext/commands/api.rst:47
 msgid ""
 "An error handler that is called when an error is raised inside a command "
 "either through user input error, check failure, or an error in your own "
 "code."
 msgstr ""
 
-#: ../../ext/commands/api.rst:38
+#: ../../ext/commands/api.rst:51
 msgid "A default one is provided (:meth:`.Bot.on_command_error`)."
 msgstr ""
 
-#: ../../ext/commands/api.rst:40 ../../ext/commands/api.rst:52
-#: ../../ext/commands/api.rst:62 discord.ext.commands.Cog.cog_after_invoke:7
+#: ../../ext/commands/api.rst:53 ../../ext/commands/api.rst:65
+#: ../../ext/commands/api.rst:75 discord.ext.commands.Cog.cog_after_invoke:7
 #: discord.ext.commands.Cog.cog_before_invoke:7
 #: discord.ext.commands.HelpCommand.on_help_command_error:11
 #: discord.ext.commands.HelpCommand.prepare_help_command:15 of
 msgid "The invocation context."
 msgstr ""
 
-#: ../../ext/commands/api.rst:42
+#: ../../ext/commands/api.rst:55
 #: discord.ext.commands.HelpCommand.on_help_command_error:13 of
 msgid "The error that was raised."
 msgstr ""
 
-#: ../../ext/commands/api.rst:47
+#: ../../ext/commands/api.rst:60
 msgid ""
 "An event that is called when a command is found and is about to be "
 "invoked."
 msgstr ""
 
-#: ../../ext/commands/api.rst:49
+#: ../../ext/commands/api.rst:62
 msgid ""
 "This event is called regardless of whether the command itself succeeds "
 "via error or completes."
 msgstr ""
 
-#: ../../ext/commands/api.rst:57
+#: ../../ext/commands/api.rst:70
 msgid "An event that is called when a command has completed its invocation."
 msgstr ""
 
-#: ../../ext/commands/api.rst:59
+#: ../../ext/commands/api.rst:72
 msgid ""
 "This event is called only if the command succeeded, i.e. all checks have "
 "passed and the user input it correctly."
 msgstr ""
 
-#: ../../ext/commands/api.rst:68
-msgid "Command"
+#: ../../ext/commands/api.rst:81
+msgid "Commands"
+msgstr ""
+
+#: ../../ext/commands/api.rst:84
+msgid "Decorators"
 msgstr ""
 
 #: discord.ext.commands.command:1 of
@@ -2304,6 +2334,10 @@ msgstr ""
 
 #: discord.ext.commands.group:6 of
 msgid "The ``cls`` parameter can now be passed."
+msgstr ""
+
+#: ../../ext/commands/api.rst:91
+msgid "Command"
 msgstr ""
 
 #: discord.ext.commands.Command:1 of
@@ -2690,6 +2724,10 @@ msgstr ""
 msgid "A boolean indicating if the command can be invoked."
 msgstr ""
 
+#: ../../ext/commands/api.rst:100
+msgid "Group"
+msgstr ""
+
 #: discord.ext.commands.Group:1 of
 msgid ""
 "A class that implements a grouping protocol for commands to be executed "
@@ -2731,6 +2769,10 @@ msgstr ""
 msgid ":class:`Group`"
 msgstr ""
 
+#: ../../ext/commands/api.rst:109
+msgid "GroupMixin"
+msgstr ""
+
 #: discord.ext.commands.GroupMixin:1 of
 msgid ""
 "A mixin that implements common functionality for classes that behave "
@@ -2741,7 +2783,7 @@ msgstr ""
 msgid "A mapping of command name to :class:`.Command` objects."
 msgstr ""
 
-#: discord.ext.commands.CogMeta:57 discord.ext.commands.Context:35
+#: discord.ext.commands.CogMeta:65 discord.ext.commands.Context:35
 #: discord.ext.commands.GroupMixin:9 discord.ext.commands.HelpCommand:40 of
 msgid ":class:`dict`"
 msgstr ""
@@ -2750,8 +2792,12 @@ msgstr ""
 msgid "Whether the commands should be case insensitive. Defaults to ``False``."
 msgstr ""
 
-#: ../../ext/commands/api.rst:88
+#: ../../ext/commands/api.rst:119
 msgid "Cogs"
+msgstr ""
+
+#: ../../ext/commands/api.rst:122
+msgid "Cog"
 msgstr ""
 
 #: discord.ext.commands.Cog:1 of
@@ -2919,6 +2965,10 @@ msgstr ""
 msgid "This is similar to :meth:`.Command.after_invoke`."
 msgstr ""
 
+#: ../../ext/commands/api.rst:130
+msgid "CogMeta"
+msgstr ""
+
 #: discord.ext.commands.CogMeta:1 of
 msgid "A metaclass for defining a cog."
 msgstr ""
@@ -2951,6 +3001,10 @@ msgid ""
 msgstr ""
 
 #: discord.ext.commands.CogMeta:41 of
+msgid "The cog description. By default, it is the cleaned docstring of the class."
+msgstr ""
+
+#: discord.ext.commands.CogMeta:49 of
 msgid ""
 "A list of attributes to apply to every command inside this cog. The "
 "dictionary is passed into the :class:`Command` options at ``__init__``. "
@@ -2958,9 +3012,14 @@ msgid ""
 "will override the one specified inside this attribute. For example:"
 msgstr ""
 
-#: ../../ext/commands/api.rst:99
+#: ../../ext/commands/api.rst:140
 msgid "Help Commands"
 msgstr ""
+
+#: ../../ext/commands/api.rst:143
+#, fuzzy
+msgid "HelpCommand"
+msgstr "추가할 명령어."
 
 #: discord.ext.commands.HelpCommand:1 of
 msgid "The base implementation for help command formatting."
@@ -3474,6 +3533,10 @@ msgstr ""
 msgid ":meth:`prepare_help_command`"
 msgstr ""
 
+#: ../../ext/commands/api.rst:151
+msgid "DefaultHelpCommand"
+msgstr ""
+
 #: discord.ext.commands.DefaultHelpCommand:1 of
 msgid "The implementation of the default help command."
 msgstr ""
@@ -3608,6 +3671,10 @@ msgstr ""
 msgid "The command to format."
 msgstr ""
 
+#: ../../ext/commands/api.rst:160
+msgid "MinimalHelpCommand"
+msgstr ""
+
 #: discord.ext.commands.MinimalHelpCommand:1 of
 msgid "An implementation of a help command with minimal output."
 msgstr ""
@@ -3709,6 +3776,10 @@ msgstr ""
 msgid "A utility function to format commands and groups."
 msgstr ""
 
+#: ../../ext/commands/api.rst:169
+msgid "Paginator"
+msgstr ""
+
 #: discord.ext.commands.Paginator:1 of
 msgid "A class that aids in paginating code blocks for Discord messages."
 msgstr ""
@@ -3765,43 +3836,43 @@ msgstr ""
 msgid "List[:class:`str`]"
 msgstr ""
 
-#: ../../ext/commands/api.rst:116
+#: ../../ext/commands/api.rst:177
 msgid "Enums"
 msgstr ""
 
-#: ../../ext/commands/api.rst:120
+#: ../../ext/commands/api.rst:181
 msgid "Specifies a type of bucket for, e.g. a cooldown."
 msgstr ""
 
-#: ../../ext/commands/api.rst:124
+#: ../../ext/commands/api.rst:185
 msgid "The default bucket operates on a global basis."
 msgstr ""
 
-#: ../../ext/commands/api.rst:127
+#: ../../ext/commands/api.rst:188
 msgid "The user bucket operates on a per-user basis."
 msgstr ""
 
-#: ../../ext/commands/api.rst:130
+#: ../../ext/commands/api.rst:191
 msgid "The guild bucket operates on a per-guild basis."
 msgstr ""
 
-#: ../../ext/commands/api.rst:133
+#: ../../ext/commands/api.rst:194
 msgid "The channel bucket operates on a per-channel basis."
 msgstr ""
 
-#: ../../ext/commands/api.rst:136
+#: ../../ext/commands/api.rst:197
 msgid "The member bucket operates on a per-member basis."
 msgstr ""
 
-#: ../../ext/commands/api.rst:139
+#: ../../ext/commands/api.rst:200
 msgid "The category bucket operates on a per-category basis."
 msgstr ""
 
-#: ../../ext/commands/api.rst:142
+#: ../../ext/commands/api.rst:203
 msgid "The role bucket operates on a per-role basis."
 msgstr ""
 
-#: ../../ext/commands/api.rst:150
+#: ../../ext/commands/api.rst:211
 msgid "Checks"
 msgstr ""
 
@@ -4191,7 +4262,7 @@ msgid ""
 ":exc:`.CheckFailure`. DM channels will also now pass this check."
 msgstr ""
 
-#: ../../ext/commands/api.rst:191
+#: ../../ext/commands/api.rst:252
 msgid "Context"
 msgstr "컨텍스트"
 
@@ -4551,6 +4622,35 @@ msgstr "도움말을 보여줘야 할 개체."
 msgid "The result of the help command, if any."
 msgstr "만약에 있다면 도움말 명령어의 결과."
 
+#: discord.ext.commands.Context.reply:3 of
+msgid ""
+"A shortcut method to :meth:`abc.Messageable.send` to reply to the "
+":class:`Message`."
+msgstr ""
+
+#: discord.ext.commands.Context.reply:8 discord.ext.commands.Context.send:55 of
+msgid "Sending the message failed."
+msgstr "메시지 전송에 실패했습니다."
+
+#: discord.ext.commands.Context.reply:9 discord.ext.commands.Context.send:56 of
+msgid "You do not have the proper permissions to send the message."
+msgstr "메시지를 전송하기 위해 필요한 권한들이 없습니다."
+
+#: discord.ext.commands.Context.reply:10 of
+msgid ""
+"The ``files`` list is not of the appropriate size or     you specified "
+"both ``file`` and ``files``."
+msgstr "``files`` 리스트가 적절한 크기가 아니거나 ``file``\\과 ``files`` 둘 다 사용되었습니다."
+
+#: discord.ext.commands.Context.reply:12 discord.ext.commands.Context.send:59
+#: of
+msgid "The message that was sent."
+msgstr "보내진 메시지."
+
+#: discord.ext.commands.Context.reply:13 of
+msgid ":class:`Message`"
+msgstr ""
+
 #: discord.ext.commands.Context.fetch_message:3 of
 msgid "Retrieves a single :class:`~discord.Message` from the destination."
 msgstr "목적지에서 단일 :class:`~discord.Message`\\를 갖고옵니다."
@@ -4580,7 +4680,7 @@ msgid "The message asked for."
 msgstr "찾으라고 한 메시지."
 
 #: discord.ext.commands.Context.fetch_message:15
-#: discord.ext.commands.Context.send:49 of
+#: discord.ext.commands.Context.send:60 of
 msgid ":class:`~discord.Message`"
 msgstr ""
 
@@ -4593,7 +4693,8 @@ msgid ""
 "Due to a limitation with the Discord API, the :class:`.Message` objects "
 "returned by this method do not contain complete "
 ":attr:`.Message.reactions` data."
-msgstr "디스코드 API의 한계때문에, 이 함수로 반환된 :class:`.Message` 객체들은 "
+msgstr ""
+"디스코드 API의 한계때문에, 이 함수로 반환된 :class:`.Message` 객체들은 "
 ":attr:`.Message.reactions` 데이터가 불완전하게 들어가있습니다."
 
 #: discord.ext.commands.Context.pins:11 of
@@ -4617,8 +4718,9 @@ msgid ""
 "The content must be a type that can convert to a string through "
 "``str(content)``. If the content is set to ``None`` (the default), then "
 "the ``embed`` parameter must be provided."
-msgstr "내용은 ``str(content)``\\를 통해 문자열로 전환될 수 있는 타입이어야 합니다. "
-"만약에 내용이 ``None`` (기본값)으로 설정되어있다면, ``embed`` 매개 변수가 주어져야 합니다."
+msgstr ""
+"내용은 ``str(content)``\\를 통해 문자열로 전환될 수 있는 타입이어야 합니다. 만약에 내용이 ``None`` "
+"(기본값)으로 설정되어있다면, ``embed`` 매개 변수가 주어져야 합니다."
 
 #: discord.ext.commands.Context.send:9 of
 msgid ""
@@ -4627,15 +4729,18 @@ msgid ""
 "``files`` parameter should be used with a :class:`list` of "
 ":class:`~discord.File` objects. **Specifying both parameters will lead to"
 " an exception**."
-msgstr "단일 파일을 업로드하기 위해서는, ``file`` 매개변수가 단일 :class:`~discord.File` 객체와 함께 "
-"사용되어야 합니다. 여러 파일들을 업로드하기 위해서는, ``files`` 매개변수가 :class:`~discord.File` 객체들이 들어있는 "
-":class:`list`\\와 함께 사용되어야 합니다. **두 매개변수를 동시에 사용하는 경우에는 예외가 발생하게 됩니다**."
+msgstr ""
+"단일 파일을 업로드하기 위해서는, ``file`` 매개변수가 단일 :class:`~discord.File` 객체와 함께 사용되어야 "
+"합니다. 여러 파일들을 업로드하기 위해서는, ``files`` 매개변수가 :class:`~discord.File` 객체들이 들어있는"
+" :class:`list`\\와 함께 사용되어야 합니다. **두 매개변수를 동시에 사용하는 경우에는 예외가 발생하게 됩니다**."
+
 #: discord.ext.commands.Context.send:14 of
 msgid ""
 "If the ``embed`` parameter is provided, it must be of type "
 ":class:`~discord.Embed` and it must be a rich embed type."
-msgstr "만약 ``embed`` 매개변수가 주어졌다면 :class:`~discord.Embed` 타입이어야 하고 "
-"rich 임베드 타입이어야 합니다."
+msgstr ""
+"만약 ``embed`` 매개변수가 주어졌다면 :class:`~discord.Embed` 타입이어야 하고 rich 임베드 타입이어야 "
+"합니다."
 
 #: discord.ext.commands.Context.send:17 of
 msgid "The content of the message to send."
@@ -4661,16 +4766,14 @@ msgstr "업로드 할 파일들의 리스트. 최대 개수는 10 입니다."
 msgid ""
 "The nonce to use for sending this message. If the message was "
 "successfully sent, then the message will have a nonce with this value."
-msgstr "이 메시지를 전송할 때 사용할 임시값. 만약에 메시지가 성공적으로 전송되었다면, "
-"그 메시지는 이 값의 임시값을 가질 것입니다."
+msgstr "이 메시지를 전송할 때 사용할 임시값. 만약에 메시지가 성공적으로 전송되었다면, 그 메시지는 이 값의 임시값을 가질 것입니다."
 
 #: discord.ext.commands.Context.send:30 of
 msgid ""
 "If provided, the number of seconds to wait in the background before "
 "deleting the message we just sent. If the deletion fails, then it is "
 "silently ignored."
-msgstr "만약에 주어졌다면, 방금 전송한 메시지를 삭제하기 전 까지 백그라운드에서 기다려야 하는 초. "
-"삭제가 실패되었다면, 조용히 무시됩니다."
+msgstr "만약에 주어졌다면, 방금 전송한 메시지를 삭제하기 전 까지 백그라운드에서 기다려야 하는 초. 삭제가 실패되었다면, 조용히 무시됩니다."
 
 #: discord.ext.commands.Context.send:34 of
 msgid ""
@@ -4681,44 +4784,54 @@ msgid ""
 ":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
 "then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
 "used instead.  .. versionadded:: 1.4"
-msgstr "이 메시지에서 처리되는 맨션을 조정. 만약에 주어졌다면, 객체는 :attr:`~discord.Client.allowed_mentions`\\와 "
-"합체됩니다. 합체되는 방식은 객체에 명시적으로 설정된 속성들만 오버라이드 하고, 명시되있지 않았다면 "
-":attr:`~discord.Client.allowed_mentions`\\에 설정된 속성들을 사용합니다. "
-"만약 그 어떤 객체들도 전달되지 않았다면 :attr:`~discord.Client.allowed_mentions`\\에 있는 "
-"기본값들을 사용합니다.  .. versionadded:: 1.4"
+msgstr ""
+"이 메시지에서 처리되는 맨션을 조정. 만약에 주어졌다면, 객체는 "
+":attr:`~discord.Client.allowed_mentions`\\와 합체됩니다. 합체되는 방식은 객체에 명시적으로 설정된"
+" 속성들만 오버라이드 하고, 명시되있지 않았다면 :attr:`~discord.Client.allowed_mentions`\\에 "
+"설정된 속성들을 사용합니다. 만약 그 어떤 객체들도 전달되지 않았다면 "
+":attr:`~discord.Client.allowed_mentions`\\에 있는 기본값들을 사용합니다.  .. "
+"versionadded:: 1.4"
 
-#: discord.ext.commands.Context.send:34 of
+#: discord.ext.commands.Context.send:43 of
 msgid ""
-"Controls the mentions being processed in this message. If this is passed,"
-" then the object is merged with :attr:`~discord.Client.allowed_mentions`."
-" The merging behaviour only overrides attributes that have been "
-"explicitly passed to the object, otherwise it uses the attributes set in "
-":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
-"then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
-"used instead."
-msgstr "이 메시지에서 처리되는 맨션을 조정. 만약에 주어졌다면, 객체는 :attr:`~discord.Client.allowed_mentions`\\와 "
-"합체됩니다. 합체되는 방식은 객체에 명시적으로 설정된 속성들만 오버라이드 하고, 명시되있지 않았다면 "
-":attr:`~discord.Client.allowed_mentions`\\에 설정된 속성들을 사용합니다. "
-"만약 그 어떤 객체들도 전달되지 않았다면 :attr:`~discord.Client.allowed_mentions`\\에 있는 "
-"기본값들을 사용합니다."
+"A reference to the :class:`~discord.Message` to which you are replying, "
+"this can be created using :meth:`~discord.Message.to_reference` or passed"
+" directly as a :class:`~discord.Message`. You can control whether this "
+"mentions the author of the referenced message using the "
+":attr:`~discord.AllowedMentions.replied_user` attribute of "
+"``allowed_mentions`` or by setting ``mention_author``.  .. versionadded::"
+" 1.6"
+msgstr ""
 
-#: discord.ext.commands.Context.send:44 of
-msgid "Sending the message failed."
-msgstr "메시지 전송에 실패했습니다."
-
-#: discord.ext.commands.Context.send:45 of
-msgid "You do not have the proper permissions to send the message."
-msgstr "메시지를 전송하기 위해 필요한 권한들이 없습니다."
-
-#: discord.ext.commands.Context.send:46 of
+#: discord.ext.commands.Context.send:43 of
 msgid ""
-"The ``files`` list is not of the appropriate size or     you specified "
-"both ``file`` and ``files``."
+"A reference to the :class:`~discord.Message` to which you are replying, "
+"this can be created using :meth:`~discord.Message.to_reference` or passed"
+" directly as a :class:`~discord.Message`. You can control whether this "
+"mentions the author of the referenced message using the "
+":attr:`~discord.AllowedMentions.replied_user` attribute of "
+"``allowed_mentions`` or by setting ``mention_author``."
+msgstr ""
+
+#: discord.ext.commands.Context.send:50 of
+msgid ""
+"If set, overrides the :attr:`~discord.AllowedMentions.replied_user` "
+"attribute of ``allowed_mentions``.  .. versionadded:: 1.6"
+msgstr ""
+
+#: discord.ext.commands.Context.send:50 of
+msgid ""
+"If set, overrides the :attr:`~discord.AllowedMentions.replied_user` "
+"attribute of ``allowed_mentions``."
+msgstr ""
+
+#: discord.ext.commands.Context.send:57 of
+#, fuzzy
+msgid ""
+"The ``files`` list is not of the appropriate size,     you specified both"
+" ``file`` and ``files``,     or the ``reference`` object is not a "
+":class:`~discord.Message`     or :class:`~discord.MessageReference`."
 msgstr "``files`` 리스트가 적절한 크기가 아니거나 ``file``\\과 ``files`` 둘 다 사용되었습니다."
-
-#: discord.ext.commands.Context.send:48 of
-msgid "The message that was sent."
-msgstr "보내진 메시지."
 
 #: discord.ext.commands.Context.trigger_typing:3 of
 msgid "Triggers a *typing* indicator to the destination."
@@ -4730,7 +4843,7 @@ msgid ""
 "sent."
 msgstr "*입력중* 표시는 10초 이후 또는 메시지를 보낸 이후 사라집니다."
 
-#: ../../ext/commands/api.rst:207
+#: ../../ext/commands/api.rst:270
 msgid "Converters"
 msgstr ""
 
@@ -4939,6 +5052,12 @@ msgstr ""
 msgid "Raise :exc:`.UserNotFound` instead of generic :exc:`.BadArgument`"
 msgstr ""
 
+#: discord.ext.commands.UserConverter:15 of
+msgid ""
+"This converter now lazily fetches users from the HTTP APIs if an ID is "
+"passed and it's not available in cache."
+msgstr ""
+
 #: discord.ext.commands.MessageConverter:1 of
 msgid "Converts to a :class:`discord.Message`."
 msgstr ""
@@ -4959,8 +5078,8 @@ msgstr ""
 
 #: discord.ext.commands.MessageConverter:11 of
 msgid ""
-"Raise :exc:`.ChannelNotFound`, `MessageNotFound` or `ChannelNotReadable` "
-"instead of generic :exc:`.BadArgument`"
+"Raise :exc:`.ChannelNotFound`, :exc:`.MessageNotFound` or "
+":exc:`.ChannelNotReadable` instead of generic :exc:`.BadArgument`"
 msgstr ""
 
 #: discord.ext.commands.TextChannelConverter:1 of
@@ -5093,34 +5212,34 @@ msgstr ""
 msgid "Whether to also escape special markdown characters."
 msgstr ""
 
-#: ../../ext/commands/api.rst:253
+#: ../../ext/commands/api.rst:316
 msgid ""
 "A special converter that greedily consumes arguments until it can't. As a"
 " consequence of this behaviour, most input errors are silently discarded,"
 " since it is used as an indicator of when to stop parsing."
 msgstr ""
 
-#: ../../ext/commands/api.rst:257
+#: ../../ext/commands/api.rst:320
 msgid ""
 "When a parser error is met the greedy converter stops converting, undoes "
 "the internal string parsing routine, and continues parsing regularly."
 msgstr ""
 
-#: ../../ext/commands/api.rst:260
+#: ../../ext/commands/api.rst:323
 msgid "For example, in the following code:"
 msgstr ""
 
-#: ../../ext/commands/api.rst:268
+#: ../../ext/commands/api.rst:331
 msgid ""
 "An invocation of ``[p]test 1 2 3 4 5 6 hello`` would pass ``numbers`` "
 "with ``[1, 2, 3, 4, 5, 6]`` and ``reason`` with ``hello``\\."
 msgstr ""
 
-#: ../../ext/commands/api.rst:271
+#: ../../ext/commands/api.rst:334
 msgid "For more information, check :ref:`ext_commands_special_converters`."
 msgstr ""
 
-#: ../../ext/commands/api.rst:276
+#: ../../ext/commands/api.rst:339
 msgid "Exceptions"
 msgstr ""
 
@@ -5648,199 +5767,195 @@ msgstr ""
 msgid "Whether the name that conflicts is an alias of the command we try to add."
 msgstr ""
 
-#: ../../ext/commands/api.rst:412
-msgid "Exception Hierarchy"
-msgstr ""
-
-#: ../../ext/commands/api.rst:460
+#: ../../ext/commands/api.rst:523
 msgid ":exc:`~.DiscordException`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:454
+#: ../../ext/commands/api.rst:517
 msgid ":exc:`~.commands.CommandError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:418
+#: ../../ext/commands/api.rst:481
 msgid ":exc:`~.commands.ConversionError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:437
+#: ../../ext/commands/api.rst:500
 msgid ":exc:`~.commands.UserInputError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:420
+#: ../../ext/commands/api.rst:483
 msgid ":exc:`~.commands.MissingRequiredArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:421
+#: ../../ext/commands/api.rst:484
 msgid ":exc:`~.commands.TooManyArguments`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:432
+#: ../../ext/commands/api.rst:495
 msgid ":exc:`~.commands.BadArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:423
+#: ../../ext/commands/api.rst:486
 msgid ":exc:`~.commands.MessageNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:424
+#: ../../ext/commands/api.rst:487
 msgid ":exc:`~.commands.MemberNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:425
+#: ../../ext/commands/api.rst:488
 msgid ":exc:`~.commands.UserNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:426
+#: ../../ext/commands/api.rst:489
 msgid ":exc:`~.commands.ChannelNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:427
+#: ../../ext/commands/api.rst:490
 msgid ":exc:`~.commands.ChannelNotReadable`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:428
+#: ../../ext/commands/api.rst:491
 msgid ":exc:`~.commands.BadColourArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:429
+#: ../../ext/commands/api.rst:492
 msgid ":exc:`~.commands.RoleNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:430
+#: ../../ext/commands/api.rst:493
 msgid ":exc:`~.commands.BadInviteArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:431
+#: ../../ext/commands/api.rst:494
 msgid ":exc:`~.commands.EmojiNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:432
+#: ../../ext/commands/api.rst:495
 msgid ":exc:`~.commands.PartialEmojiConversionFailure`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:433
+#: ../../ext/commands/api.rst:496
 msgid ":exc:`~.commands.BadBoolArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:434
+#: ../../ext/commands/api.rst:497
 msgid ":exc:`~.commands.BadUnionArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:437
+#: ../../ext/commands/api.rst:500
 msgid ":exc:`~.commands.ArgumentParsingError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:436
+#: ../../ext/commands/api.rst:499
 msgid ":exc:`~.commands.UnexpectedQuoteError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:437
+#: ../../ext/commands/api.rst:500
 msgid ":exc:`~.commands.InvalidEndOfQuotedStringError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:438
+#: ../../ext/commands/api.rst:501
 msgid ":exc:`~.commands.ExpectedClosingQuoteError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:439
+#: ../../ext/commands/api.rst:502
 msgid ":exc:`~.commands.CommandNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:450
+#: ../../ext/commands/api.rst:513
 msgid ":exc:`~.commands.CheckFailure`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:441
+#: ../../ext/commands/api.rst:504
 msgid ":exc:`~.commands.CheckAnyFailure`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:442
+#: ../../ext/commands/api.rst:505
 msgid ":exc:`~.commands.PrivateMessageOnly`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:443
+#: ../../ext/commands/api.rst:506
 msgid ":exc:`~.commands.NoPrivateMessage`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:444
+#: ../../ext/commands/api.rst:507
 msgid ":exc:`~.commands.NotOwner`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:445
+#: ../../ext/commands/api.rst:508
 msgid ":exc:`~.commands.MissingPermissions`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:446
+#: ../../ext/commands/api.rst:509
 msgid ":exc:`~.commands.BotMissingPermissions`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:447
+#: ../../ext/commands/api.rst:510
 msgid ":exc:`~.commands.MissingRole`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:448
+#: ../../ext/commands/api.rst:511
 msgid ":exc:`~.commands.BotMissingRole`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:449
+#: ../../ext/commands/api.rst:512
 msgid ":exc:`~.commands.MissingAnyRole`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:450
+#: ../../ext/commands/api.rst:513
 msgid ":exc:`~.commands.BotMissingAnyRole`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:451
+#: ../../ext/commands/api.rst:514
 msgid ":exc:`~.commands.NSFWChannelRequired`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:452
+#: ../../ext/commands/api.rst:515
 msgid ":exc:`~.commands.DisabledCommand`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:453
+#: ../../ext/commands/api.rst:516
 msgid ":exc:`~.commands.CommandInvokeError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:454
+#: ../../ext/commands/api.rst:517
 msgid ":exc:`~.commands.CommandOnCooldown`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:455
+#: ../../ext/commands/api.rst:518
 msgid ":exc:`~.commands.MaxConcurrencyReached`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:460
+#: ../../ext/commands/api.rst:523
 msgid ":exc:`~.commands.ExtensionError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:457
+#: ../../ext/commands/api.rst:520
 msgid ":exc:`~.commands.ExtensionAlreadyLoaded`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:458
+#: ../../ext/commands/api.rst:521
 msgid ":exc:`~.commands.ExtensionNotLoaded`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:459
+#: ../../ext/commands/api.rst:522
 msgid ":exc:`~.commands.NoEntryPointError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:460
+#: ../../ext/commands/api.rst:523
 msgid ":exc:`~.commands.ExtensionFailed`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:461
+#: ../../ext/commands/api.rst:524
 msgid ":exc:`~.commands.ExtensionNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:462
+#: ../../ext/commands/api.rst:525
 msgid ":exc:`~.ClientException`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:463
+#: ../../ext/commands/api.rst:526
 msgid ":exc:`~.commands.CommandRegistrationError`"
 msgstr ""
 
@@ -6098,5 +6213,37 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":class:`Channel`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Controls the mentions being processed in"
+#~ " this message. If this is passed, "
+#~ "then the object is merged with "
+#~ ":attr:`~discord.Client.allowed_mentions`. The merging "
+#~ "behaviour only overrides attributes that "
+#~ "have been explicitly passed to the "
+#~ "object, otherwise it uses the attributes"
+#~ " set in :attr:`~discord.Client.allowed_mentions`. "
+#~ "If no object is passed at all "
+#~ "then the defaults given by "
+#~ ":attr:`~discord.Client.allowed_mentions` are used "
+#~ "instead."
+#~ msgstr ""
+#~ "이 메시지에서 처리되는 맨션을 조정. 만약에 주어졌다면,"
+#~ " 객체는 :attr:`~discord.Client.allowed_mentions`\\와 합체됩니다."
+#~ " 합체되는 방식은 객체에 명시적으로 설정된 속성들만 "
+#~ "오버라이드 하고, 명시되있지 않았다면 "
+#~ ":attr:`~discord.Client.allowed_mentions`\\에 설정된 속성들을 "
+#~ "사용합니다. 만약 그 어떤 객체들도 전달되지 않았다면 "
+#~ ":attr:`~discord.Client.allowed_mentions`\\에 있는 기본값들을 "
+#~ "사용합니다."
+
+#~ msgid ""
+#~ "Raise :exc:`.ChannelNotFound`, `MessageNotFound` or"
+#~ " `ChannelNotReadable` instead of generic "
+#~ ":exc:`.BadArgument`"
+#~ msgstr ""
+
+#~ msgid "Exception Hierarchy"
 #~ msgstr ""
 
