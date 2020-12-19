@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../index.rst:60
 msgid "discord.ext.commands API Reference"
-msgstr ""
+msgstr "discord.ext.commands API 레퍼런스"
 
 #: ../../index.rst:60
 msgid "discord.ext.tasks API Reference"
-msgstr ""
+msgstr "discord.ext.tasks API 레퍼런스"
 
 #: ../../index.rst:7
 msgid "Welcome to discord.py"
@@ -65,57 +65,59 @@ msgstr "속도와 메모리에 전부 최적화 됨"
 
 #: ../../index.rst:25
 msgid "Getting started"
-msgstr ""
+msgstr "시작하기"
 
 #: ../../index.rst:27
 msgid ""
 "Is this your first time using the library? This is the place to get "
 "started!"
 msgstr ""
+"이 라이브러리 사용이 처음이신가요? 여기서 시작해보세요!"
 
 #: ../../index.rst:29
 msgid "**First steps:** :doc:`intro` | :doc:`quickstart` | :doc:`logging`"
-msgstr ""
+msgstr "**첫번째 단계들:** :doc:`intro` | :doc:`quickstart` | :doc:`logging`" 
 
 #: ../../index.rst:30
 msgid "**Working with Discord:** :doc:`discord` | :doc:`intents`"
-msgstr ""
+msgstr "**디스코드에 작업하기:** :doc:`discord` | :doc:`intents`"
 
 #: ../../index.rst:31
 msgid ""
 "**Examples:** Many examples are available in the :resource:`repository "
 "<examples>`."
-msgstr ""
+msgstr "**예시들:** 많은 예시들이 :resource:`repository <examples>`\\에 준비되어있습니다."
 
 #: ../../index.rst:34
 msgid "Getting help"
-msgstr ""
+msgstr "도움 얻기"
 
 #: ../../index.rst:36
 msgid "If you're having trouble with something, these resources might help."
-msgstr ""
+msgstr "만약에 무언가에 문제가 생겼다면, 이것들이 도움이 될 수 있습니다."
 
 #: ../../index.rst:38
 msgid "Try the :doc:`faq` first, it's got answers to all common questions."
-msgstr ""
+msgstr "모든 기본적인 질문들에 대한 답이 있는 :doc:`faq`\\를 먼저 살펴보세요."
 
 #: ../../index.rst:39
 msgid "Ask us and hang out with us in our :resource:`Discord <discord>` server."
-msgstr ""
+msgstr ":resource:`Discord <discord>` 서버에서 질문을 하거나 같이 놀아보세요. (영어)"
 
 #: ../../index.rst:40
 msgid ""
 "If you're looking for something specific, try the :ref:`index <genindex>`"
 " or :ref:`searching <search>`."
-msgstr ""
+msgstr "만약에 특정한 무언가를 찾고 있으시다면, :ref:`index <genindex>`\\나 "
+":ref:`searching <search>`\\로 가보세요."
 
 #: ../../index.rst:41
 msgid "Report bugs in the :resource:`issue tracker <issues>`."
-msgstr ""
+msgstr ":resource:`issue tracker <issues>`\\에 버그를 알려주세요."
 
 #: ../../index.rst:42
 msgid "Ask in our :resource:`GitHub discussions page <discussions>`."
-msgstr ""
+msgstr ":resource:`GitHub discussions page <discussions>`\\에서 질문하세요."
 
 #: ../../index.rst:45
 msgid "Extensions"
@@ -125,23 +127,23 @@ msgstr "확장"
 msgid ""
 "These extensions help you during development when it comes to common "
 "tasks."
-msgstr ""
+msgstr "이 확장들은 반복되는 작업들에 대해 개발 중에 도움을 줍니다."
 
 #: ../../index.rst:56
 msgid "Manuals"
-msgstr ""
+msgstr "매뉴얼"
 
 #: ../../index.rst:58
 msgid "These pages go into great detail about everything the API can do."
-msgstr ""
+msgstr "이 페이지들은 API가 할 수 있는 모든 것들에 대해 자세하게 설명되어있습니다."
 
 #: ../../index.rst:68
 msgid "Meta"
-msgstr ""
+msgstr "메타"
 
 #: ../../index.rst:70
 msgid "If you're looking for something related to the project itself, it's here."
-msgstr ""
+msgstr "만약에 프로젝트 자체와 관련된 무언가를 찾고 있으시다면, 여기에 있습니다."
 
 #~ msgid "Documentation Contents"
 #~ msgstr "문서 내용"
