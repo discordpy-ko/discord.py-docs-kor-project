@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-19 16:11+0900\n"
+"POT-Creation-Date: 2021-02-28 20:04+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,9 +106,9 @@ msgid ""
 "group if you require group commands to be case insensitive as well."
 msgstr ""
 
-#: discord.ext.commands.BadBoolArgument discord.ext.commands.BadUnionArgument
-#: discord.ext.commands.Bot discord.ext.commands.Bot.activity
-#: discord.ext.commands.Bot.allowed_mentions
+#: discord.ext.commands.BadBoolArgument discord.ext.commands.BadColourArgument
+#: discord.ext.commands.BadUnionArgument discord.ext.commands.Bot
+#: discord.ext.commands.Bot.activity discord.ext.commands.Bot.allowed_mentions
 #: discord.ext.commands.Bot.cached_messages discord.ext.commands.Bot.cogs
 #: discord.ext.commands.Bot.commands discord.ext.commands.Bot.emojis
 #: discord.ext.commands.Bot.extensions discord.ext.commands.Bot.guilds
@@ -143,7 +143,8 @@ msgstr ""
 #: discord.ext.commands.Group.parents discord.ext.commands.Group.qualified_name
 #: discord.ext.commands.Group.root_parent discord.ext.commands.Group.short_doc
 #: discord.ext.commands.Group.signature discord.ext.commands.GroupMixin
-#: discord.ext.commands.GroupMixin.commands discord.ext.commands.HelpCommand
+#: discord.ext.commands.GroupMixin.commands discord.ext.commands.GuildNotFound
+#: discord.ext.commands.HelpCommand
 #: discord.ext.commands.HelpCommand.clean_prefix
 #: discord.ext.commands.InvalidEndOfQuotedStringError
 #: discord.ext.commands.MaxConcurrencyReached
@@ -166,12 +167,11 @@ msgstr "타입"
 #: discord.ext.commands.Command:129 discord.ext.commands.Command.can_run:16
 #: discord.ext.commands.Command.is_on_cooldown:7
 #: discord.ext.commands.CommandRegistrationError:18
-#: discord.ext.commands.Context:77 discord.ext.commands.Context.valid:3
+#: discord.ext.commands.Context:88 discord.ext.commands.Context.valid:3
 #: discord.ext.commands.DefaultHelpCommand:18 discord.ext.commands.Group:18
 #: discord.ext.commands.Group:25 discord.ext.commands.Group.can_run:16
 #: discord.ext.commands.Group.is_on_cooldown:7
 #: discord.ext.commands.GroupMixin:15 discord.ext.commands.HelpCommand:24
-#: discord.ext.commands.HelpCommand:31
 #: discord.ext.commands.MinimalHelpCommand:9
 #: discord.ext.commands.clean_content:10 discord.ext.commands.clean_content:16
 #: discord.ext.commands.clean_content:22 of
@@ -182,13 +182,13 @@ msgstr ""
 msgid "The content prefixed into the default help message."
 msgstr ""
 
-#: discord.ext.commands.BadBoolArgument:11 discord.ext.commands.Bot:53
+#: discord.ext.commands.BadBoolArgument:11
+#: discord.ext.commands.BadColourArgument:11 discord.ext.commands.Bot:53
 #: discord.ext.commands.ChannelNotFound:11
 #: discord.ext.commands.Cog.description:3
 #: discord.ext.commands.Cog.qualified_name:3 discord.ext.commands.CogMeta:37
 #: discord.ext.commands.CogMeta:45 discord.ext.commands.Command:10
-#: discord.ext.commands.Command:22 discord.ext.commands.Command:34
-#: discord.ext.commands.Command:79
+#: discord.ext.commands.Command:22 discord.ext.commands.Command:79
 #: discord.ext.commands.Command.full_parent_name:6
 #: discord.ext.commands.Command.qualified_name:7
 #: discord.ext.commands.Command.short_doc:7
@@ -204,7 +204,7 @@ msgstr ""
 #: discord.ext.commands.Group.full_parent_name:6
 #: discord.ext.commands.Group.qualified_name:7
 #: discord.ext.commands.Group.short_doc:7
-#: discord.ext.commands.Group.signature:3
+#: discord.ext.commands.Group.signature:3 discord.ext.commands.GuildNotFound:11
 #: discord.ext.commands.HelpCommand.clean_prefix:3
 #: discord.ext.commands.HelpCommand.command_not_found:13
 #: discord.ext.commands.HelpCommand.get_command_signature:7
@@ -221,6 +221,7 @@ msgstr ""
 #: discord.ext.commands.MinimalHelpCommand.get_ending_note:6
 #: discord.ext.commands.MinimalHelpCommand.get_opening_note:9
 #: discord.ext.commands.Paginator:13 discord.ext.commands.Paginator:19
+#: discord.ext.commands.Paginator:34
 #: discord.ext.commands.PartialEmojiConversionFailure:12
 #: discord.ext.commands.RoleNotFound:11
 #: discord.ext.commands.UnexpectedQuoteError:9
@@ -347,6 +348,7 @@ msgstr ""
 #: discord.ext.commands.GroupMixin.add_command
 #: discord.ext.commands.GroupMixin.get_command
 #: discord.ext.commands.GroupMixin.remove_command
+#: discord.ext.commands.GuildConverter.convert
 #: discord.ext.commands.HelpCommand.add_check
 #: discord.ext.commands.HelpCommand.command_not_found
 #: discord.ext.commands.HelpCommand.filter_commands
@@ -372,6 +374,7 @@ msgstr ""
 #: discord.ext.commands.NSFWChannelRequired
 #: discord.ext.commands.Paginator.add_line
 #: discord.ext.commands.PartialEmojiConverter.convert
+#: discord.ext.commands.PartialMessageConverter.convert
 #: discord.ext.commands.RoleConverter.convert
 #: discord.ext.commands.TextChannelConverter.convert
 #: discord.ext.commands.UserConverter.convert
@@ -440,11 +443,13 @@ msgstr ""
 #: discord.ext.commands.Group.after_invoke
 #: discord.ext.commands.Group.before_invoke discord.ext.commands.Group.can_run
 #: discord.ext.commands.Group.error discord.ext.commands.GroupMixin.add_command
+#: discord.ext.commands.GuildConverter.convert
 #: discord.ext.commands.InviteConverter.convert
 #: discord.ext.commands.MemberConverter.convert
 #: discord.ext.commands.MessageConverter.convert
 #: discord.ext.commands.Paginator.add_line
 #: discord.ext.commands.PartialEmojiConverter.convert
+#: discord.ext.commands.PartialMessageConverter.convert
 #: discord.ext.commands.RoleConverter.convert
 #: discord.ext.commands.TextChannelConverter.convert
 #: discord.ext.commands.UserConverter.convert
@@ -618,6 +623,7 @@ msgstr ""
 #: discord.ext.commands.EmojiConverter.convert:1
 #: discord.ext.commands.GameConverter.convert:1
 #: discord.ext.commands.Group.can_run:1
+#: discord.ext.commands.GuildConverter.convert:1
 #: discord.ext.commands.HelpCommand.command_callback:1
 #: discord.ext.commands.HelpCommand.filter_commands:1
 #: discord.ext.commands.HelpCommand.on_help_command_error:1
@@ -631,6 +637,7 @@ msgstr ""
 #: discord.ext.commands.MemberConverter.convert:1
 #: discord.ext.commands.MessageConverter.convert:1
 #: discord.ext.commands.PartialEmojiConverter.convert:1
+#: discord.ext.commands.PartialMessageConverter.convert:1
 #: discord.ext.commands.RoleConverter.convert:1
 #: discord.ext.commands.TextChannelConverter.convert:1
 #: discord.ext.commands.UserConverter.convert:1
@@ -1297,27 +1304,27 @@ msgstr ""
 msgid "Gets an arbitrary user's profile."
 msgstr ""
 
-#: discord.ext.commands.Bot.fetch_user_profile:7 of
+#: discord.ext.commands.Bot.fetch_user_profile:9 of
 msgid "This can only be used by non-bot accounts."
 msgstr ""
 
-#: discord.ext.commands.Bot.fetch_user_profile:9 of
+#: discord.ext.commands.Bot.fetch_user_profile:11 of
 msgid "The ID of the user to fetch their profile for."
 msgstr ""
 
-#: discord.ext.commands.Bot.fetch_user_profile:12 of
+#: discord.ext.commands.Bot.fetch_user_profile:14 of
 msgid "Not allowed to fetch profiles."
 msgstr ""
 
-#: discord.ext.commands.Bot.fetch_user_profile:13 of
+#: discord.ext.commands.Bot.fetch_user_profile:15 of
 msgid "Fetching the profile failed."
 msgstr ""
 
-#: discord.ext.commands.Bot.fetch_user_profile:15 of
+#: discord.ext.commands.Bot.fetch_user_profile:17 of
 msgid "The profile of the user."
 msgstr ""
 
-#: discord.ext.commands.Bot.fetch_user_profile:16 of
+#: discord.ext.commands.Bot.fetch_user_profile:18 of
 msgid ":class:`.Profile`"
 msgstr ""
 
@@ -1725,21 +1732,38 @@ msgid ""
 "import ``foo/test.py``."
 msgstr ""
 
-#: discord.ext.commands.Bot.load_extension:15
-#: discord.ext.commands.Bot.reload_extension:14 of
-msgid "The extension could not be imported."
+#: discord.ext.commands.Bot.load_extension:14 of
+msgid ""
+"The package name to resolve relative imports with. This is required when "
+"loading an extension using a relative path, e.g ``.foo.test``. Defaults "
+"to ``None``.  .. versionadded:: 1.7"
 msgstr ""
 
-#: discord.ext.commands.Bot.load_extension:16 of
+#: discord.ext.commands.Bot.load_extension:14 of
+msgid ""
+"The package name to resolve relative imports with. This is required when "
+"loading an extension using a relative path, e.g ``.foo.test``. Defaults "
+"to ``None``."
+msgstr ""
+
+#: discord.ext.commands.Bot.load_extension:21
+#: discord.ext.commands.Bot.reload_extension:20 of
+msgid ""
+"The extension could not be imported.     This is also raised if the name "
+"of the extension could not     be resolved using the provided ``package``"
+" parameter."
+msgstr ""
+
+#: discord.ext.commands.Bot.load_extension:22 of
 msgid "The extension is already loaded."
 msgstr ""
 
-#: discord.ext.commands.Bot.load_extension:17
-#: discord.ext.commands.Bot.reload_extension:15 of
+#: discord.ext.commands.Bot.load_extension:23
+#: discord.ext.commands.Bot.reload_extension:21 of
 msgid "The extension does not have a setup function."
 msgstr ""
 
-#: discord.ext.commands.Bot.load_extension:18 of
+#: discord.ext.commands.Bot.load_extension:24 of
 msgid "The extension or its setup function had an execution error."
 msgstr ""
 
@@ -1767,14 +1791,20 @@ msgstr ""
 #: discord.ext.commands.Bot.login:17 of
 msgid ""
 "Keyword argument that specifies if the account logging on is a bot token "
+"or not.  .. deprecated:: 1.7"
+msgstr ""
+
+#: discord.ext.commands.Bot.login:17 of
+msgid ""
+"Keyword argument that specifies if the account logging on is a bot token "
 "or not."
 msgstr ""
 
-#: discord.ext.commands.Bot.login:21 of
+#: discord.ext.commands.Bot.login:23 of
 msgid "The wrong credentials are passed."
 msgstr ""
 
-#: discord.ext.commands.Bot.login:22 of
+#: discord.ext.commands.Bot.login:24 of
 msgid ""
 "An unknown HTTP related error occurred,     usually when it isn't 200 or "
 "the known incorrect credentials     passing status code."
@@ -1880,12 +1910,26 @@ msgid ""
 "to import ``foo/test.py``."
 msgstr ""
 
-#: discord.ext.commands.Bot.reload_extension:13
-#: discord.ext.commands.Bot.unload_extension:16 of
+#: discord.ext.commands.Bot.reload_extension:12 of
+msgid ""
+"The package name to resolve relative imports with. This is required when "
+"reloading an extension using a relative path, e.g ``.foo.test``. Defaults"
+" to ``None``.  .. versionadded:: 1.7"
+msgstr ""
+
+#: discord.ext.commands.Bot.reload_extension:12 of
+msgid ""
+"The package name to resolve relative imports with. This is required when "
+"reloading an extension using a relative path, e.g ``.foo.test``. Defaults"
+" to ``None``."
+msgstr ""
+
+#: discord.ext.commands.Bot.reload_extension:19
+#: discord.ext.commands.Bot.unload_extension:23 of
 msgid "The extension was not loaded."
 msgstr ""
 
-#: discord.ext.commands.Bot.reload_extension:16 of
+#: discord.ext.commands.Bot.reload_extension:22 of
 msgid "The extension setup function had an execution error."
 msgstr ""
 
@@ -2054,6 +2098,26 @@ msgid ""
 "The extension name to unload. It must be dot separated like regular "
 "Python imports if accessing a sub-module. e.g. ``foo.test`` if you want "
 "to import ``foo/test.py``."
+msgstr ""
+
+#: discord.ext.commands.Bot.unload_extension:15 of
+msgid ""
+"The package name to resolve relative imports with. This is required when "
+"unloading an extension using a relative path, e.g ``.foo.test``. Defaults"
+" to ``None``.  .. versionadded:: 1.7"
+msgstr ""
+
+#: discord.ext.commands.Bot.unload_extension:15 of
+msgid ""
+"The package name to resolve relative imports with. This is required when "
+"unloading an extension using a relative path, e.g ``.foo.test``. Defaults"
+" to ``None``."
+msgstr ""
+
+#: discord.ext.commands.Bot.unload_extension:22 of
+msgid ""
+"The name of the extension could not     be resolved using the provided "
+"``package`` parameter."
 msgstr ""
 
 #: discord.ext.commands.Bot.user:1 of
@@ -2370,8 +2434,9 @@ msgstr ""
 msgid "The short help text for the command."
 msgstr ""
 
-#: discord.ext.commands.Command:28 discord.ext.commands.Command.cog_name:3
-#: discord.ext.commands.Context:70 discord.ext.commands.Group.cog_name:3 of
+#: discord.ext.commands.Command:28 discord.ext.commands.Command:34
+#: discord.ext.commands.Command.cog_name:3 discord.ext.commands.Context:81
+#: discord.ext.commands.Group.cog_name:3 of
 msgid "Optional[:class:`str`]"
 msgstr ""
 
@@ -2529,7 +2594,7 @@ msgid "A new instance of this command."
 msgstr ""
 
 #: discord.ext.commands.Command.copy:4 discord.ext.commands.Context:47
-#: discord.ext.commands.Context:61 of
+#: discord.ext.commands.Context:72 of
 msgid ":class:`Command`"
 msgstr ""
 
@@ -2661,6 +2726,11 @@ msgstr ""
 msgid "The coroutine to register as the local error handler."
 msgstr ""
 
+#: discord.ext.commands.Command.has_error_handler:1
+#: discord.ext.commands.Group.has_error_handler:1 of
+msgid ":class:`bool`: Checks whether the command has an error handler registered."
+msgstr ""
+
 #: discord.ext.commands.Command.before_invoke:9
 #: discord.ext.commands.Group.before_invoke:9 of
 msgid "See :meth:`.Bot.before_invoke` for more info."
@@ -2784,7 +2854,7 @@ msgid "A mapping of command name to :class:`.Command` objects."
 msgstr ""
 
 #: discord.ext.commands.CogMeta:65 discord.ext.commands.Context:35
-#: discord.ext.commands.GroupMixin:9 discord.ext.commands.HelpCommand:40 of
+#: discord.ext.commands.GroupMixin:9 discord.ext.commands.HelpCommand:44 of
 msgid ":class:`dict`"
 msgstr ""
 
@@ -2887,6 +2957,10 @@ msgstr ""
 msgid ""
 "The function is not a coroutine function or a string was not passed as"
 "     the name."
+msgstr ""
+
+#: discord.ext.commands.Cog.has_error_handler:1 of
+msgid ":class:`bool`: Checks whether the cog has an error handler."
 msgstr ""
 
 #: discord.ext.commands.Cog.cog_unload:1 of
@@ -3057,10 +3131,22 @@ msgstr ""
 #: discord.ext.commands.HelpCommand:28 of
 msgid ""
 "Specifies if commands should have their :attr:`.Command.checks` called "
-"and verified. Defaults to ``True``."
+"and verified. If ``True``, always calls :attr:`.Commands.checks`. If "
+"``None``, only calls :attr:`.Commands.checks` in a guild setting. If "
+"``False``, never calls :attr:`.Commands.checks`. Defaults to ``True``."
 msgstr ""
 
-#: discord.ext.commands.HelpCommand:35 of
+#: discord.ext.commands.HelpCommand:33 of
+msgid "..versionchanged:: 1.7"
+msgstr ""
+
+#: discord.ext.commands.DefaultHelpCommand:29
+#: discord.ext.commands.HelpCommand:35
+#: discord.ext.commands.MinimalHelpCommand:34 of
+msgid "Optional[:class:`bool`]"
+msgstr ""
+
+#: discord.ext.commands.HelpCommand:39 of
 msgid ""
 "A dictionary of options to pass in for the construction of the help "
 "command. This allows you to change the command behaviour without actually"
@@ -3572,11 +3658,6 @@ msgid ""
 " characters). Defaults to ``False``."
 msgstr ""
 
-#: discord.ext.commands.DefaultHelpCommand:29
-#: discord.ext.commands.MinimalHelpCommand:34 of
-msgid "Optional[:class:`bool`]"
-msgstr ""
-
 #: discord.ext.commands.DefaultHelpCommand:33
 #: discord.ext.commands.MinimalHelpCommand:38 of
 msgid ""
@@ -3800,6 +3881,10 @@ msgstr ""
 msgid "The maximum amount of codepoints allowed in a page."
 msgstr ""
 
+#: discord.ext.commands.Paginator:32 of
+msgid "The character string inserted between lines. e.g. a newline character."
+msgstr ""
+
 #: discord.ext.commands.Paginator.clear:1 of
 msgid "Clears the paginator to have no pages."
 msgstr ""
@@ -3832,7 +3917,7 @@ msgstr ""
 msgid "Returns the rendered list of pages."
 msgstr ""
 
-#: discord.ext.commands.Paginator.pages:3 of
+#: discord.ext.commands.Context:65 discord.ext.commands.Paginator.pages:3 of
 msgid "List[:class:`str`]"
 msgstr ""
 
@@ -4341,11 +4426,24 @@ msgstr "이것을 호출한 명령어의 이름. 어떤 에일리어스가 이 �
 #: discord.ext.commands.Context:58 of
 #, fuzzy
 msgid ""
+"The command names of the parents that triggered this invocation. Useful "
+"for finding out which aliases called the command."
+msgstr "이것을 호출한 명령어의 이름. 어떤 에일리어스가 이 명령어를 호출했는지 확인할 때 유용합니다."
+
+#: discord.ext.commands.Context:61 of
+msgid ""
+"For example in commands ``?a b c test``, the invoked parents are ``['a', "
+"'b', 'c']``."
+msgstr ""
+
+#: discord.ext.commands.Context:69 of
+#, fuzzy
+msgid ""
 "The subcommand that was invoked. If no valid subcommand was invoked then "
 "this is equal to ``None``."
 msgstr "호출된 서브커맨드. 만약에 서브커맨드가 호출되지 않았다면 이것은 ``None``\\과 동일합니다."
 
-#: discord.ext.commands.Context:65 of
+#: discord.ext.commands.Context:76 of
 msgid ""
 "The string that was attempted to call a subcommand. This does not have to"
 " point to a valid registered subcommand and could just point to a "
@@ -4355,7 +4453,7 @@ msgstr ""
 "서브커맨드 호출을 시도하기 위해 사용된 문자열. 이것은 항상 유효한 등록된 서브커맨드를 가리키지 않고 의미없는 문자열일 수 "
 "있습니다. 만약에 서브커맨드 호출을 시도하기 위해 아무것도 사용되지 않았다면 이것은 ``None``\\입니다."
 
-#: discord.ext.commands.Context:74 of
+#: discord.ext.commands.Context:85 of
 msgid ""
 "A boolean that indicates if the command failed to be parsed, checked, or "
 "invoked."
@@ -4545,8 +4643,9 @@ msgid ""
 msgstr "이 컨텍스트의 명령어와 연관된 Cog를 반환. 존재하지 않는다면 None 입니다."
 
 #: discord.ext.commands.Context.cog:3 of
-msgid ":class:`.Cog`"
-msgstr ""
+#, fuzzy
+msgid "Optional[:class:`.Cog`]"
+msgstr "Optional[:class:`.VoiceClient`]"
 
 #: discord.ext.commands.Context.guild:1 of
 msgid ""
@@ -4871,10 +4970,12 @@ msgstr ""
 #: discord.ext.commands.Converter.convert:3
 #: discord.ext.commands.EmojiConverter.convert:3
 #: discord.ext.commands.GameConverter.convert:3
+#: discord.ext.commands.GuildConverter.convert:3
 #: discord.ext.commands.InviteConverter.convert:3
 #: discord.ext.commands.MemberConverter.convert:3
 #: discord.ext.commands.MessageConverter.convert:3
 #: discord.ext.commands.PartialEmojiConverter.convert:3
+#: discord.ext.commands.PartialMessageConverter.convert:3
 #: discord.ext.commands.RoleConverter.convert:3
 #: discord.ext.commands.TextChannelConverter.convert:3
 #: discord.ext.commands.UserConverter.convert:3
@@ -4888,10 +4989,12 @@ msgstr ""
 #: discord.ext.commands.Converter.convert:5
 #: discord.ext.commands.EmojiConverter.convert:5
 #: discord.ext.commands.GameConverter.convert:5
+#: discord.ext.commands.GuildConverter.convert:5
 #: discord.ext.commands.InviteConverter.convert:5
 #: discord.ext.commands.MemberConverter.convert:5
 #: discord.ext.commands.MessageConverter.convert:5
 #: discord.ext.commands.PartialEmojiConverter.convert:5
+#: discord.ext.commands.PartialMessageConverter.convert:5
 #: discord.ext.commands.RoleConverter.convert:5
 #: discord.ext.commands.TextChannelConverter.convert:5
 #: discord.ext.commands.UserConverter.convert:5
@@ -4908,10 +5011,12 @@ msgstr ""
 #: discord.ext.commands.Converter.convert:9
 #: discord.ext.commands.EmojiConverter.convert:9
 #: discord.ext.commands.GameConverter.convert:9
+#: discord.ext.commands.GuildConverter.convert:9
 #: discord.ext.commands.InviteConverter.convert:9
 #: discord.ext.commands.MemberConverter.convert:9
 #: discord.ext.commands.MessageConverter.convert:9
 #: discord.ext.commands.PartialEmojiConverter.convert:9
+#: discord.ext.commands.PartialMessageConverter.convert:9
 #: discord.ext.commands.RoleConverter.convert:9
 #: discord.ext.commands.TextChannelConverter.convert:9
 #: discord.ext.commands.UserConverter.convert:9
@@ -4925,10 +5030,12 @@ msgstr ""
 #: discord.ext.commands.Converter.convert:11
 #: discord.ext.commands.EmojiConverter.convert:11
 #: discord.ext.commands.GameConverter.convert:11
+#: discord.ext.commands.GuildConverter.convert:11
 #: discord.ext.commands.InviteConverter.convert:11
 #: discord.ext.commands.MemberConverter.convert:11
 #: discord.ext.commands.MessageConverter.convert:11
 #: discord.ext.commands.PartialEmojiConverter.convert:11
+#: discord.ext.commands.PartialMessageConverter.convert:11
 #: discord.ext.commands.RoleConverter.convert:11
 #: discord.ext.commands.TextChannelConverter.convert:11
 #: discord.ext.commands.UserConverter.convert:11
@@ -4942,10 +5049,12 @@ msgstr ""
 #: discord.ext.commands.Converter.convert:14
 #: discord.ext.commands.EmojiConverter.convert:14
 #: discord.ext.commands.GameConverter.convert:14
+#: discord.ext.commands.GuildConverter.convert:14
 #: discord.ext.commands.InviteConverter.convert:14
 #: discord.ext.commands.MemberConverter.convert:14
 #: discord.ext.commands.MessageConverter.convert:14
 #: discord.ext.commands.PartialEmojiConverter.convert:14
+#: discord.ext.commands.PartialMessageConverter.convert:14
 #: discord.ext.commands.RoleConverter.convert:14
 #: discord.ext.commands.TextChannelConverter.convert:14
 #: discord.ext.commands.UserConverter.convert:14
@@ -4959,10 +5068,12 @@ msgstr ""
 #: discord.ext.commands.Converter.convert:15
 #: discord.ext.commands.EmojiConverter.convert:15
 #: discord.ext.commands.GameConverter.convert:15
+#: discord.ext.commands.GuildConverter.convert:15
 #: discord.ext.commands.InviteConverter.convert:15
 #: discord.ext.commands.MemberConverter.convert:15
 #: discord.ext.commands.MessageConverter.convert:15
 #: discord.ext.commands.PartialEmojiConverter.convert:15
+#: discord.ext.commands.PartialMessageConverter.convert:15
 #: discord.ext.commands.RoleConverter.convert:15
 #: discord.ext.commands.TextChannelConverter.convert:15
 #: discord.ext.commands.UserConverter.convert:15
@@ -4985,7 +5096,8 @@ msgid ""
 msgstr ""
 
 #: discord.ext.commands.CategoryChannelConverter:6
-#: discord.ext.commands.EmojiConverter:6 discord.ext.commands.MemberConverter:6
+#: discord.ext.commands.EmojiConverter:6 discord.ext.commands.GuildConverter:3
+#: discord.ext.commands.MemberConverter:6
 #: discord.ext.commands.MessageConverter:5 discord.ext.commands.RoleConverter:6
 #: discord.ext.commands.TextChannelConverter:6
 #: discord.ext.commands.UserConverter:5
@@ -4994,8 +5106,8 @@ msgid "The lookup strategy is as follows (in order):"
 msgstr ""
 
 #: discord.ext.commands.CategoryChannelConverter:8
-#: discord.ext.commands.EmojiConverter:8 discord.ext.commands.MemberConverter:8
-#: discord.ext.commands.RoleConverter:8
+#: discord.ext.commands.EmojiConverter:8 discord.ext.commands.GuildConverter:5
+#: discord.ext.commands.MemberConverter:8 discord.ext.commands.RoleConverter:8
 #: discord.ext.commands.TextChannelConverter:8
 #: discord.ext.commands.UserConverter:7
 #: discord.ext.commands.VoiceChannelConverter:8 of
@@ -5082,6 +5194,28 @@ msgid ""
 ":exc:`.ChannelNotReadable` instead of generic :exc:`.BadArgument`"
 msgstr ""
 
+#: discord.ext.commands.PartialMessageConverter:1 of
+msgid "Converts to a :class:`discord.PartialMessage`."
+msgstr ""
+
+#: discord.ext.commands.PartialMessageConverter:5 of
+msgid "The creation strategy is as follows (in order):"
+msgstr ""
+
+#: discord.ext.commands.PartialMessageConverter:7 of
+msgid ""
+"By \"{channel ID}-{message ID}\" (retrieved by shift-clicking on \"Copy "
+"ID\")"
+msgstr ""
+
+#: discord.ext.commands.PartialMessageConverter:8 of
+msgid "By message ID (The message is assumed to be in the context channel.)"
+msgstr ""
+
+#: discord.ext.commands.PartialMessageConverter:9 of
+msgid "By message URL"
+msgstr ""
+
 #: discord.ext.commands.TextChannelConverter:1 of
 msgid "Converts to a :class:`~discord.TextChannel`."
 msgstr ""
@@ -5110,6 +5244,16 @@ msgstr ""
 
 #: discord.ext.commands.InviteConverter:5 of
 msgid "Raise :exc:`.BadInviteArgument` instead of generic :exc:`.BadArgument`"
+msgstr ""
+
+#: discord.ext.commands.GuildConverter:1 of
+msgid "Converts to a :class:`~discord.Guild`."
+msgstr ""
+
+#: discord.ext.commands.GuildConverter:6 of
+msgid ""
+"Lookup by name. (There is no disambiguation for Guilds with multiple "
+"matching names)."
 msgstr ""
 
 #: discord.ext.commands.RoleConverter:1 of
@@ -5149,15 +5293,29 @@ msgid "``0x#<hex>``"
 msgstr ""
 
 #: discord.ext.commands.ColourConverter:11 of
+msgid "``rgb(<number>, <number>, <number>)``"
+msgstr ""
+
+#: discord.ext.commands.ColourConverter:12 of
 msgid "Any of the ``classmethod`` in :class:`Colour`"
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:13 of
+#: discord.ext.commands.ColourConverter:14 of
 msgid "The ``_`` in the name can be optionally replaced with spaces."
 msgstr ""
 
-#: discord.ext.commands.ColourConverter:15 of
+#: discord.ext.commands.ColourConverter:16 of
+msgid ""
+"Like CSS, ``<number>`` can be either 0-255 or 0-100% and ``<hex>`` can be"
+" either a 6 digit hex number or a 3 digit hex shortcut (e.g. #fff)."
+msgstr ""
+
+#: discord.ext.commands.ColourConverter:19 of
 msgid "Raise :exc:`.BadColourArgument` instead of generic :exc:`.BadArgument`"
+msgstr ""
+
+#: discord.ext.commands.ColourConverter:22 of
+msgid "Added support for ``rgb`` function and 3-digit hex shortcuts"
 msgstr ""
 
 #: discord.ext.commands.EmojiConverter:1 of
@@ -5212,34 +5370,34 @@ msgstr ""
 msgid "Whether to also escape special markdown characters."
 msgstr ""
 
-#: ../../ext/commands/api.rst:316
+#: ../../ext/commands/api.rst:322
 msgid ""
 "A special converter that greedily consumes arguments until it can't. As a"
 " consequence of this behaviour, most input errors are silently discarded,"
 " since it is used as an indicator of when to stop parsing."
 msgstr ""
 
-#: ../../ext/commands/api.rst:320
+#: ../../ext/commands/api.rst:326
 msgid ""
 "When a parser error is met the greedy converter stops converting, undoes "
 "the internal string parsing routine, and continues parsing regularly."
 msgstr ""
 
-#: ../../ext/commands/api.rst:323
+#: ../../ext/commands/api.rst:329
 msgid "For example, in the following code:"
 msgstr ""
 
-#: ../../ext/commands/api.rst:331
+#: ../../ext/commands/api.rst:337
 msgid ""
 "An invocation of ``[p]test 1 2 3 4 5 6 hello`` would pass ``numbers`` "
 "with ``[1, 2, 3, 4, 5, 6]`` and ``reason`` with ``hello``\\."
 msgstr ""
 
-#: ../../ext/commands/api.rst:334
+#: ../../ext/commands/api.rst:340
 msgid "For more information, check :ref:`ext_commands_special_converters`."
 msgstr ""
 
-#: ../../ext/commands/api.rst:339
+#: ../../ext/commands/api.rst:345
 msgid "Exceptions"
 msgstr ""
 
@@ -5528,10 +5686,12 @@ msgid "Exception raised when the message provided was not found in the channel."
 msgstr ""
 
 #: discord.ext.commands.BadBoolArgument:3
+#: discord.ext.commands.BadColourArgument:3
+#: discord.ext.commands.BadInviteArgument:3
 #: discord.ext.commands.ChannelNotFound:3
 #: discord.ext.commands.ChannelNotReadable:4
-#: discord.ext.commands.EmojiNotFound:3 discord.ext.commands.MemberNotFound:4
-#: discord.ext.commands.MessageNotFound:3
+#: discord.ext.commands.EmojiNotFound:3 discord.ext.commands.GuildNotFound:3
+#: discord.ext.commands.MemberNotFound:4 discord.ext.commands.MessageNotFound:3
 #: discord.ext.commands.PartialEmojiConversionFailure:4
 #: discord.ext.commands.RoleNotFound:3 discord.ext.commands.UserNotFound:4 of
 msgid "This inherits from :exc:`BadArgument`"
@@ -5549,6 +5709,14 @@ msgstr ""
 
 #: discord.ext.commands.MemberNotFound:10 of
 msgid "The member supplied by the caller that was not found"
+msgstr ""
+
+#: discord.ext.commands.GuildNotFound:1 of
+msgid "Exception raised when the guild provided was not found in the bot's cache."
+msgstr ""
+
+#: discord.ext.commands.GuildNotFound:9 of
+msgid "The guild supplied by the called that was not found"
 msgstr ""
 
 #: discord.ext.commands.UserNotFound:1 of
@@ -5581,12 +5749,24 @@ msgstr ""
 msgid ":class:`.abc.GuildChannel`"
 msgstr ""
 
+#: discord.ext.commands.BadColourArgument:1 of
+msgid "Exception raised when the colour is not valid."
+msgstr ""
+
+#: discord.ext.commands.BadColourArgument:9 of
+msgid "The colour supplied by the caller that was not valid"
+msgstr ""
+
 #: discord.ext.commands.RoleNotFound:1 of
 msgid "Exception raised when the bot can not find the role."
 msgstr ""
 
 #: discord.ext.commands.RoleNotFound:9 of
 msgid "The role supplied by the caller that was not found"
+msgstr ""
+
+#: discord.ext.commands.BadInviteArgument:1 of
+msgid "Exception raised when the invite is invalid or expired."
 msgstr ""
 
 #: discord.ext.commands.EmojiNotFound:1 of
@@ -5767,195 +5947,199 @@ msgstr ""
 msgid "Whether the name that conflicts is an alias of the command we try to add."
 msgstr ""
 
-#: ../../ext/commands/api.rst:523
+#: ../../ext/commands/api.rst:490
+msgid "Exception Hierarchy"
+msgstr ""
+
+#: ../../ext/commands/api.rst:538
 msgid ":exc:`~.DiscordException`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:517
+#: ../../ext/commands/api.rst:532
 msgid ":exc:`~.commands.CommandError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:481
+#: ../../ext/commands/api.rst:496
 msgid ":exc:`~.commands.ConversionError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:500
+#: ../../ext/commands/api.rst:515
 msgid ":exc:`~.commands.UserInputError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:483
+#: ../../ext/commands/api.rst:498
 msgid ":exc:`~.commands.MissingRequiredArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:484
+#: ../../ext/commands/api.rst:499
 msgid ":exc:`~.commands.TooManyArguments`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:495
+#: ../../ext/commands/api.rst:510
 msgid ":exc:`~.commands.BadArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:486
+#: ../../ext/commands/api.rst:501
 msgid ":exc:`~.commands.MessageNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:487
+#: ../../ext/commands/api.rst:502
 msgid ":exc:`~.commands.MemberNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:488
+#: ../../ext/commands/api.rst:503
 msgid ":exc:`~.commands.UserNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:489
+#: ../../ext/commands/api.rst:504
 msgid ":exc:`~.commands.ChannelNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:490
+#: ../../ext/commands/api.rst:505
 msgid ":exc:`~.commands.ChannelNotReadable`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:491
+#: ../../ext/commands/api.rst:506
 msgid ":exc:`~.commands.BadColourArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:492
+#: ../../ext/commands/api.rst:507
 msgid ":exc:`~.commands.RoleNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:493
+#: ../../ext/commands/api.rst:508
 msgid ":exc:`~.commands.BadInviteArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:494
+#: ../../ext/commands/api.rst:509
 msgid ":exc:`~.commands.EmojiNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:495
+#: ../../ext/commands/api.rst:510
 msgid ":exc:`~.commands.PartialEmojiConversionFailure`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:496
+#: ../../ext/commands/api.rst:511
 msgid ":exc:`~.commands.BadBoolArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:497
+#: ../../ext/commands/api.rst:512
 msgid ":exc:`~.commands.BadUnionArgument`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:500
+#: ../../ext/commands/api.rst:515
 msgid ":exc:`~.commands.ArgumentParsingError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:499
+#: ../../ext/commands/api.rst:514
 msgid ":exc:`~.commands.UnexpectedQuoteError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:500
+#: ../../ext/commands/api.rst:515
 msgid ":exc:`~.commands.InvalidEndOfQuotedStringError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:501
+#: ../../ext/commands/api.rst:516
 msgid ":exc:`~.commands.ExpectedClosingQuoteError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:502
+#: ../../ext/commands/api.rst:517
 msgid ":exc:`~.commands.CommandNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:513
+#: ../../ext/commands/api.rst:528
 msgid ":exc:`~.commands.CheckFailure`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:504
+#: ../../ext/commands/api.rst:519
 msgid ":exc:`~.commands.CheckAnyFailure`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:505
+#: ../../ext/commands/api.rst:520
 msgid ":exc:`~.commands.PrivateMessageOnly`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:506
+#: ../../ext/commands/api.rst:521
 msgid ":exc:`~.commands.NoPrivateMessage`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:507
+#: ../../ext/commands/api.rst:522
 msgid ":exc:`~.commands.NotOwner`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:508
+#: ../../ext/commands/api.rst:523
 msgid ":exc:`~.commands.MissingPermissions`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:509
+#: ../../ext/commands/api.rst:524
 msgid ":exc:`~.commands.BotMissingPermissions`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:510
+#: ../../ext/commands/api.rst:525
 msgid ":exc:`~.commands.MissingRole`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:511
+#: ../../ext/commands/api.rst:526
 msgid ":exc:`~.commands.BotMissingRole`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:512
+#: ../../ext/commands/api.rst:527
 msgid ":exc:`~.commands.MissingAnyRole`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:513
+#: ../../ext/commands/api.rst:528
 msgid ":exc:`~.commands.BotMissingAnyRole`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:514
+#: ../../ext/commands/api.rst:529
 msgid ":exc:`~.commands.NSFWChannelRequired`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:515
+#: ../../ext/commands/api.rst:530
 msgid ":exc:`~.commands.DisabledCommand`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:516
+#: ../../ext/commands/api.rst:531
 msgid ":exc:`~.commands.CommandInvokeError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:517
+#: ../../ext/commands/api.rst:532
 msgid ":exc:`~.commands.CommandOnCooldown`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:518
+#: ../../ext/commands/api.rst:533
 msgid ":exc:`~.commands.MaxConcurrencyReached`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:523
+#: ../../ext/commands/api.rst:538
 msgid ":exc:`~.commands.ExtensionError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:520
+#: ../../ext/commands/api.rst:535
 msgid ":exc:`~.commands.ExtensionAlreadyLoaded`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:521
+#: ../../ext/commands/api.rst:536
 msgid ":exc:`~.commands.ExtensionNotLoaded`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:522
+#: ../../ext/commands/api.rst:537
 msgid ":exc:`~.commands.NoEntryPointError`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:523
+#: ../../ext/commands/api.rst:538
 msgid ":exc:`~.commands.ExtensionFailed`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:524
+#: ../../ext/commands/api.rst:539
 msgid ":exc:`~.commands.ExtensionNotFound`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:525
+#: ../../ext/commands/api.rst:540
 msgid ":exc:`~.ClientException`"
 msgstr ""
 
-#: ../../ext/commands/api.rst:526
+#: ../../ext/commands/api.rst:541
 msgid ":exc:`~.commands.CommandRegistrationError`"
 msgstr ""
 
@@ -6245,5 +6429,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Exception Hierarchy"
+#~ msgstr ""
+
+#~ msgid "The extension could not be imported."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specifies if commands should have their"
+#~ " :attr:`.Command.checks` called and verified. "
+#~ "Defaults to ``True``."
+#~ msgstr ""
+
+#~ msgid ":class:`.Cog`"
 #~ msgstr ""
 

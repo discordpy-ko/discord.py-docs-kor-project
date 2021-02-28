@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-01 22:15+0900\n"
+"POT-Creation-Date: 2021-02-28 20:04+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,15 +75,16 @@ msgid ""
 " unless you are developing a service that needs it. If you're unsure, "
 "then **leave it unchecked**."
 msgstr ""
-"또한 **Require OAuth2 Code Grant**\\가 필요하지 않다면 비활성화되어 있는지 확인해야 합니다. 잘 모르겠다면 "
-"그냥 비활성화 상태로 놔두세요."
+"또한 **Require OAuth2 Code Grant**\\가 필요하지 않다면 비활성화되어 있는지 확인해야 합니다. 잘 모르겠다면"
+" 그냥 비활성화 상태로 놔두세요."
 
 #: ../../discord.rst:36
 msgid "Copy the token using the \"Copy\" button."
 msgstr "\"Copy\" 버튼을 클릭하여 토큰을 복사합니다."
 
 #: ../../discord.rst:38
-msgid "**This is not the Client Secret at the General Information page**"
+#, fuzzy
+msgid "**This is not the Client Secret at the General Information page.**"
 msgstr "**이것은 General Information 페이지의 CLIENT SECRET 이 아닙니다.**"
 
 #: ../../discord.rst:42

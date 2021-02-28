@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py 1.4.0a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-09 10:33+0900\n"
+"POT-Creation-Date: 2021-02-28 20:04+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -416,27 +416,27 @@ msgstr ""
 msgid "A lot of discord models work out of the gate as a parameter:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:374 ../../ext/commands/commands.rst:396
+#: ../../ext/commands/commands.rst:374 ../../ext/commands/commands.rst:397
 msgid ":class:`Member`"
 msgstr ":class:`Member`"
 
-#: ../../ext/commands/commands.rst:375 ../../ext/commands/commands.rst:400
+#: ../../ext/commands/commands.rst:375 ../../ext/commands/commands.rst:403
 msgid ":class:`User`"
 msgstr ":class:`User`"
 
-#: ../../ext/commands/commands.rst:376 ../../ext/commands/commands.rst:402
+#: ../../ext/commands/commands.rst:376 ../../ext/commands/commands.rst:405
 msgid ":class:`TextChannel`"
 msgstr ":class:`TextChannel`"
 
-#: ../../ext/commands/commands.rst:377 ../../ext/commands/commands.rst:404
+#: ../../ext/commands/commands.rst:377 ../../ext/commands/commands.rst:407
 msgid ":class:`VoiceChannel`"
 msgstr ":class:`VoiceChannel`"
 
-#: ../../ext/commands/commands.rst:378 ../../ext/commands/commands.rst:406
+#: ../../ext/commands/commands.rst:378 ../../ext/commands/commands.rst:409
 msgid ":class:`CategoryChannel`"
 msgstr ":class:`CategoryChannel`"
 
-#: ../../ext/commands/commands.rst:379 ../../ext/commands/commands.rst:408
+#: ../../ext/commands/commands.rst:379 ../../ext/commands/commands.rst:411
 msgid ":class:`Role`"
 msgstr ":class:`Role`"
 
@@ -444,110 +444,125 @@ msgstr ":class:`Role`"
 msgid ":class:`Message` (since v1.1)"
 msgstr ":class:`Message` (v1.1 부터)"
 
-#: ../../ext/commands/commands.rst:381 ../../ext/commands/commands.rst:410
+#: ../../ext/commands/commands.rst:381
+#, fuzzy
+msgid ":class:`PartialMessage` (since v1.7)"
+msgstr ":class:`Message` (v1.1 부터)"
+
+#: ../../ext/commands/commands.rst:382 ../../ext/commands/commands.rst:413
 msgid ":class:`Invite`"
 msgstr ":class:`Invite`"
 
-#: ../../ext/commands/commands.rst:382 ../../ext/commands/commands.rst:412
+#: ../../ext/commands/commands.rst:383 ../../ext/commands/commands.rst:415
 msgid ":class:`Game`"
 msgstr ":class:`Game`"
 
-#: ../../ext/commands/commands.rst:383 ../../ext/commands/commands.rst:414
+#: ../../ext/commands/commands.rst:384 ../../ext/commands/commands.rst:417
 msgid ":class:`Emoji`"
 msgstr ":class:`Emoji`"
 
-#: ../../ext/commands/commands.rst:384 ../../ext/commands/commands.rst:416
+#: ../../ext/commands/commands.rst:385 ../../ext/commands/commands.rst:419
 msgid ":class:`PartialEmoji`"
 msgstr ":class:`PartialEmoji`"
 
-#: ../../ext/commands/commands.rst:385 ../../ext/commands/commands.rst:418
+#: ../../ext/commands/commands.rst:386 ../../ext/commands/commands.rst:421
 msgid ":class:`Colour`"
 msgstr ":class:`Colour`"
 
-#: ../../ext/commands/commands.rst:387
+#: ../../ext/commands/commands.rst:388
 msgid ""
 "Having any of these set as the converter will intelligently convert the "
 "argument to the appropriate target type you specify."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:390
+#: ../../ext/commands/commands.rst:391
 msgid ""
 "Under the hood, these are implemented by the "
 ":ref:`ext_commands_adv_converters` interface. A table of the equivalent "
 "converter is given below:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:394
+#: ../../ext/commands/commands.rst:395
 msgid "Discord Class"
 msgstr "디스코드 클래스"
 
-#: ../../ext/commands/commands.rst:394
+#: ../../ext/commands/commands.rst:395
 msgid "Converter"
 msgstr "변환기"
 
-#: ../../ext/commands/commands.rst:396
+#: ../../ext/commands/commands.rst:397
 msgid ":class:`~ext.commands.MemberConverter`"
 msgstr ":class:`~ext.commands.MemberConverter`"
 
-#: ../../ext/commands/commands.rst:398
+#: ../../ext/commands/commands.rst:399
 msgid ":class:`Message`"
 msgstr ":class:`Message`"
 
-#: ../../ext/commands/commands.rst:398
+#: ../../ext/commands/commands.rst:399
 msgid ":class:`~ext.commands.MessageConverter`"
 msgstr ":class:`~ext.commands.MessageConverter`"
 
-#: ../../ext/commands/commands.rst:400
+#: ../../ext/commands/commands.rst:401
+#, fuzzy
+msgid ":class:`PartialMessage`"
+msgstr ":class:`Message`"
+
+#: ../../ext/commands/commands.rst:401
+#, fuzzy
+msgid ":class:`~ext.commands.PartialMessageConveter`"
+msgstr ":class:`~ext.commands.MessageConverter`"
+
+#: ../../ext/commands/commands.rst:403
 msgid ":class:`~ext.commands.UserConverter`"
 msgstr ":class:`~ext.commands.UserConverter`"
 
-#: ../../ext/commands/commands.rst:402
+#: ../../ext/commands/commands.rst:405
 msgid ":class:`~ext.commands.TextChannelConverter`"
 msgstr ":class:`~ext.commands.TextChannelConverter`"
 
-#: ../../ext/commands/commands.rst:404
+#: ../../ext/commands/commands.rst:407
 msgid ":class:`~ext.commands.VoiceChannelConverter`"
 msgstr ":class:`~ext.commands.VoiceChannelConverter`"
 
-#: ../../ext/commands/commands.rst:406
+#: ../../ext/commands/commands.rst:409
 msgid ":class:`~ext.commands.CategoryChannelConverter`"
 msgstr ":class:`~ext.commands.CategoryChannelConverter`"
 
-#: ../../ext/commands/commands.rst:408
+#: ../../ext/commands/commands.rst:411
 msgid ":class:`~ext.commands.RoleConverter`"
 msgstr ":class:`~ext.commands.RoleConverter`"
 
-#: ../../ext/commands/commands.rst:410
+#: ../../ext/commands/commands.rst:413
 msgid ":class:`~ext.commands.InviteConverter`"
 msgstr ":class:`~ext.commands.InviteConverter`"
 
-#: ../../ext/commands/commands.rst:412
+#: ../../ext/commands/commands.rst:415
 msgid ":class:`~ext.commands.GameConverter`"
 msgstr ":class:`~ext.commands.GameConverter`"
 
-#: ../../ext/commands/commands.rst:414
+#: ../../ext/commands/commands.rst:417
 msgid ":class:`~ext.commands.EmojiConverter`"
 msgstr ":class:`~ext.commands.EmojiConverter`"
 
-#: ../../ext/commands/commands.rst:416
+#: ../../ext/commands/commands.rst:419
 msgid ":class:`~ext.commands.PartialEmojiConverter`"
 msgstr ":class:`~ext.commands.PartialEmojiConverter`"
 
-#: ../../ext/commands/commands.rst:418
+#: ../../ext/commands/commands.rst:421
 msgid ":class:`~ext.commands.ColourConverter`"
 msgstr ":class:`~ext.commands.ColourConverter`"
 
-#: ../../ext/commands/commands.rst:421
+#: ../../ext/commands/commands.rst:424
 msgid ""
 "By providing the converter it allows us to use them as building blocks "
 "for another converter:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:438
+#: ../../ext/commands/commands.rst:441
 msgid "Special Converters"
 msgstr "특별한 변환기"
 
-#: ../../ext/commands/commands.rst:440
+#: ../../ext/commands/commands.rst:443
 msgid ""
 "The command extension also has support for certain converters to allow "
 "for more advanced and intricate use cases that go beyond the generic "
@@ -555,18 +570,18 @@ msgid ""
 " and dynamic grammar to your commands in an easy to use manner."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:445
+#: ../../ext/commands/commands.rst:448
 msgid "typing.Union"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:447
+#: ../../ext/commands/commands.rst:450
 msgid ""
 "A :data:`typing.Union` is a special type hint that allows for the command"
 " to take in any of the specific types instead of a singular type. For "
 "example, given the following:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:459
+#: ../../ext/commands/commands.rst:462
 msgid ""
 "The ``what`` parameter would either take a :class:`discord.TextChannel` "
 "converter or a :class:`discord.Member` converter. The way this works is "
@@ -576,17 +591,17 @@ msgid ""
 "is raised, :exc:`~ext.commands.BadUnionArgument`."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:464
+#: ../../ext/commands/commands.rst:467
 msgid ""
 "Note that any valid converter discussed above can be passed in to the "
 "argument list of a :data:`typing.Union`."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:467
+#: ../../ext/commands/commands.rst:470
 msgid "typing.Optional"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:469
+#: ../../ext/commands/commands.rst:472
 msgid ""
 "A :data:`typing.Optional` is a special type hint that allows for \"back-"
 "referencing\" behaviour. If the converter fails to parse into the "
@@ -596,28 +611,28 @@ msgid ""
 "converters, if any."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:473 ../../ext/commands/commands.rst:500
+#: ../../ext/commands/commands.rst:476 ../../ext/commands/commands.rst:503
 msgid "Consider the following example:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:486
+#: ../../ext/commands/commands.rst:489
 msgid ""
 "In this example, since the argument could not be converted into an "
 "``int``, the default of ``99`` is passed and the parser resumes handling,"
 " which in this case would be to pass it into the ``liquid`` parameter."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:491
+#: ../../ext/commands/commands.rst:494
 msgid ""
 "This converter only works in regular positional parameters, not variable "
 "parameters or keyword-only parameters."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:494
+#: ../../ext/commands/commands.rst:497
 msgid "Greedy"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:496
+#: ../../ext/commands/commands.rst:499
 msgid ""
 "The :data:`~ext.commands.Greedy` converter is a generalisation of the "
 ":data:`typing.Optional` converter, except applied to a list of arguments."
@@ -625,56 +640,56 @@ msgid ""
 "until it can't convert any further."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:509
+#: ../../ext/commands/commands.rst:512
 msgid "When invoked, it allows for any number of members to be passed in:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:513
+#: ../../ext/commands/commands.rst:516
 msgid ""
 "The type passed when using this converter depends on the parameter type "
 "that it is being attached to:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:515
+#: ../../ext/commands/commands.rst:518
 msgid ""
 "Positional parameter types will receive either the default parameter or a"
 " :class:`list` of the converted values."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:516
+#: ../../ext/commands/commands.rst:519
 msgid "Variable parameter types will be a :class:`tuple` as usual."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:517
+#: ../../ext/commands/commands.rst:520
 msgid ""
 "Keyword-only parameter types will be the same as if "
 ":data:`~ext.commands.Greedy` was not passed at all."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:519
+#: ../../ext/commands/commands.rst:522
 msgid ""
 ":data:`~ext.commands.Greedy` parameters can also be made optional by "
 "specifying an optional value."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:521
+#: ../../ext/commands/commands.rst:524
 msgid ""
 "When mixed with the :data:`typing.Optional` converter you can provide "
 "simple and expressive command invocation syntaxes:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:536
+#: ../../ext/commands/commands.rst:539
 msgid "This command can be invoked any of the following ways:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:546
+#: ../../ext/commands/commands.rst:549
 msgid ""
 "The usage of :data:`~ext.commands.Greedy` and :data:`typing.Optional` are"
 " powerful and useful, however as a price, they open you up to some "
 "parsing ambiguities that might surprise some people."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:549
+#: ../../ext/commands/commands.rst:552
 msgid ""
 "For example, a signature expecting a :data:`typing.Optional` of a "
 ":class:`discord.Member` followed by a :class:`int` could catch a member "
@@ -686,25 +701,25 @@ msgid ""
 "clashes."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:555
+#: ../../ext/commands/commands.rst:558
 msgid ""
 "To help aid with some parsing ambiguities, :class:`str`, ``None``, "
 ":data:`typing.Optional` and :data:`~ext.commands.Greedy` are forbidden as"
 " parameters for the :data:`~ext.commands.Greedy` converter."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:561
+#: ../../ext/commands/commands.rst:564
 msgid "Error Handling"
 msgstr "에러 다루기"
 
-#: ../../ext/commands/commands.rst:563
+#: ../../ext/commands/commands.rst:566
 msgid ""
 "When our commands fail to parse we will, by default, receive a noisy "
 "error in ``stderr`` of our console that tells us that an error has "
 "happened and has been silently ignored."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:566
+#: ../../ext/commands/commands.rst:569
 msgid ""
 "In order to handle our errors, we must use something called an error "
 "handler. There is a global error handler, called :func:`on_command_error`"
@@ -712,7 +727,7 @@ msgid ""
 "global error handler is called for every error reached."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:570
+#: ../../ext/commands/commands.rst:573
 msgid ""
 "Most of the time however, we want to handle an error local to the command"
 " itself. Luckily, commands come with local error handlers that allow us "
@@ -720,7 +735,7 @@ msgid ""
 ":meth:`.Command.error`:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:586
+#: ../../ext/commands/commands.rst:589
 msgid ""
 "The first parameter of the error handler is the :class:`.Context` while "
 "the second one is an exception that is derived from "
@@ -728,11 +743,11 @@ msgid ""
 ":ref:`ext_commands_api_errors` page of the documentation."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:590
+#: ../../ext/commands/commands.rst:593
 msgid "Checks"
 msgstr "체크"
 
-#: ../../ext/commands/commands.rst:592
+#: ../../ext/commands/commands.rst:595
 msgid ""
 "There are cases when we don't want a user to use our commands. They don't"
 " have permissions to do so or maybe we blocked them from using our bot "
@@ -743,7 +758,7 @@ msgstr ""
 "못하도록 막았었을 수도 있습니다. 명령어 확장자는 이것들을 위한 완전한 지원이 "
 ":ref:`ext_commands_api_checks`\\로 함께 옵니다."
 
-#: ../../ext/commands/commands.rst:596
+#: ../../ext/commands/commands.rst:599
 msgid ""
 "A check is a basic predicate that can take in a :class:`.Context` as its "
 "sole parameter. Within it, you have the following options:"
@@ -751,21 +766,21 @@ msgstr ""
 "체크는 :class:`.Context`\\에서 단독 매개 변수로 자리잡는 기본적인 서술자입니다. 이 안에서, 당신에게는 이런 "
 "옵션들이 있습니다:"
 
-#: ../../ext/commands/commands.rst:599
+#: ../../ext/commands/commands.rst:602
 msgid "Return ``True`` to signal that the person can run the command."
 msgstr "이 사람이 명령어를 사용할 수 있다고 ``True``\\를 시그널에 반환."
 
-#: ../../ext/commands/commands.rst:600
+#: ../../ext/commands/commands.rst:603
 msgid "Return ``False`` to signal that the person cannot run the command."
 msgstr "이 사람이 명령어를 사용할 수 없다고 ``False``\\를 시그널에 반환."
 
-#: ../../ext/commands/commands.rst:601
+#: ../../ext/commands/commands.rst:604
 msgid ""
 "Raise a :exc:`~ext.commands.CommandError` derived exception to signal the"
 " person cannot run the command."
 msgstr "이 사람이 명령어를 사용할 수 없다고 :exc:`~ext.commands.CommandError` 예외를 일으키기."
 
-#: ../../ext/commands/commands.rst:603
+#: ../../ext/commands/commands.rst:606
 msgid ""
 "This allows you to have custom error messages for you to handle in the "
 ":ref:`error handlers <ext_commands_error_handler>`."
@@ -773,7 +788,7 @@ msgstr ""
 "이는 당신이 :ref:`error handlers <ext_commands_error_handler>`\\를 다루기 위해 당신만을 "
 "위한 커스텀 오류 메시지를 만들 수 있게 합니다."
 
-#: ../../ext/commands/commands.rst:606
+#: ../../ext/commands/commands.rst:609
 msgid ""
 "To register a check for a command, we would have two ways of doing so. "
 "The first is using the :meth:`~ext.commands.check` decorator. For "
@@ -782,30 +797,30 @@ msgstr ""
 "명령어에 체크를 등록하기 위해, 우리는 2가지 방법으로 할 수 있습니다. 첫번째 방법은 "
 ":meth:`~ext.commands.check` 데코레이터를 사용하는 것입니다. 예를 들어:"
 
-#: ../../ext/commands/commands.rst:620
+#: ../../ext/commands/commands.rst:623
 msgid ""
 "This would only evaluate the command if the function ``is_owner`` returns"
 " ``True``. Sometimes we re-use a check often and want to split it into "
 "its own decorator. To do that we can just add another level of depth:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:637
+#: ../../ext/commands/commands.rst:640
 msgid ""
 "Since an owner check is so common, the library provides it for you "
 "(:func:`~ext.commands.is_owner`):"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:647
+#: ../../ext/commands/commands.rst:650
 msgid "When multiple checks are specified, **all** of them must be ``True``:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:663
+#: ../../ext/commands/commands.rst:666
 msgid ""
 "If any of those checks fail in the example above, then the command will "
 "not be run."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:665
+#: ../../ext/commands/commands.rst:668
 msgid ""
 "When an error happens, the error is propagated to the :ref:`error "
 "handlers <ext_commands_error_handler>`. If you do not raise a custom "
@@ -813,23 +828,23 @@ msgid ""
 "wrapped up into a :exc:`~ext.commands.CheckFailure` exception as so:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:683
+#: ../../ext/commands/commands.rst:686
 msgid ""
 "If you want a more robust error system, you can derive from the exception"
 " and raise it instead of returning ``False``:"
 msgstr ""
 
-#: ../../ext/commands/commands.rst:708
+#: ../../ext/commands/commands.rst:711
 msgid ""
 "Since having a ``guild_only`` decorator is pretty common, it comes built-"
 "in via :func:`~ext.commands.guild_only`."
 msgstr ""
 
-#: ../../ext/commands/commands.rst:711
+#: ../../ext/commands/commands.rst:714
 msgid "Global Checks"
 msgstr "글로벌 체크"
 
-#: ../../ext/commands/commands.rst:713
+#: ../../ext/commands/commands.rst:716
 msgid ""
 "Sometimes we want to apply a check to **every** command, not just certain"
 " commands. The library supports this as well using the global check "
@@ -838,17 +853,18 @@ msgstr ""
 "가끔 우리는 특정 명령어 말고 **모든** 명령어에 체크를 적용하고 싶을때가 있습니다. 이 라이브러리는 글로벌 체크를 통해 이 "
 "기능을 지원합니다."
 
-#: ../../ext/commands/commands.rst:716
+#: ../../ext/commands/commands.rst:719
+#, fuzzy
 msgid ""
 "Global checks work similarly to regular checks except they are registered"
-" with the :func:`.Bot.check` decorator."
+" with the :meth:`.Bot.check` decorator."
 msgstr "글로벌 체크는 :func:`.Bot.check` 데코레이터와 함께 등록된다는 것을 제외하면 기본 체크들과 동일하게 작동합니다."
 
-#: ../../ext/commands/commands.rst:718
+#: ../../ext/commands/commands.rst:721
 msgid "For example, to block all DMs we could do the following:"
 msgstr "예를 들면, 모든 DM을 막기 위해 이렇게 할 수도 있습니다:"
 
-#: ../../ext/commands/commands.rst:728
+#: ../../ext/commands/commands.rst:731
 msgid ""
 "Be careful on how you write your global checks, as it could also lock you"
 " out of your own bot."
